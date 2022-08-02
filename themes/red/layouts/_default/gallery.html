@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+{{ $art := site.Data.art.art }}
+
+{{ range $art.categories }}
+    <h2>{{ .name }}</h2>
+    {{ range sort .years "year" "desc" }}
+        <h3>{{ .year }}</h3>
+        {{ range .pieces }}
+        <figure>
+            {{ $local := resources.Get (printf "art-thumbs/%s" .filename) }}
+            {{ $full :=resources.Get (printf "art/%s" .filename) }}
+            <a href="{{ $full.Permalink }}">
+            <img width="128px" height="128px" src="{{ $local.Permalink }}"/>
+            </a>
+            <figcaption>"{{ .title }}"</figcaption>
+        </figure>
+        {{ end }}
+    {{ end }}
+{{ end }}
+
+{{ end }}
