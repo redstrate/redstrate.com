@@ -1,19 +1,25 @@
 {{ define "main" }}
     {{ .Content }}
 
-    {{ $art := site.Data.art }}
+    {{ $art := (index site.Data ($.Param "json")) }}
 
     {{ range $art.categories }}
         <h2>{{ .name }}</h2>
+        <p>{{ .description }}</p>
         {{ range sort .years "year" "desc" }}
             <h3>{{ .year }}</h3>
+
             {{ range .pieces }}
             <figure>
-                {{ $thumb := resources.Get (printf "art-thumbs/%s" .filename) }}
-                {{ $full := resources.Get (printf "art/%s" .filename) }}
+                {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
 
                 <a href="{{ $full.Permalink }}">
-                    <img width="128px" height="128px" src="{{ $thumb.Permalink }}"/>
+                    {{ if $.Params.thumbnails }}
+                        {{ $thumb := resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
+                        <img width="128px" height="128px" src="{{ $thumb.Permalink }}"/>
+                    {{ else }}
+                        <img src="{{ $full.Permalink }}"/>
+                    {{ end }}
                 </a>
 
                 <figcaption>"{{ .title }}"</figcaption>

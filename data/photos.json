@@ -1,0 +1,19 @@
+{
+    "categories": [
+        {
+            "name": "Figures",
+            "description": "This is a photo collection of my figure collection.",
+            "years": [
+                {
+                    "year": 2022,
+                    "pieces": [
+                        {
+                            "title": "2B",
+                            "filename": "20220519_0001.webp"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
