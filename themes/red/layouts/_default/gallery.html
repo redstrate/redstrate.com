@@ -10,20 +10,20 @@
             <h3>{{ .year }}</h3>
 
             {{ range .pieces }}
-            <figure>
-                {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+                <figure>
+                    {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
 
-                <a href="{{ $full.Permalink }}">
-                    {{ if $.Params.thumbnails }}
-                        {{ $thumb := resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
-                        <img width="128px" height="128px" src="{{ $thumb.Permalink }}"/>
-                    {{ else }}
-                        <img src="{{ $full.Permalink }}"/>
-                    {{ end }}
-                </a>
+                    <a href="{{ $full.Permalink }}">
+                        {{ if $.Params.thumbnails }}
+                            {{ $thumb := resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
+                            <img alt="{{ .title }}" width="128px" height="128px" src="{{ $thumb.Permalink }}"/>
+                        {{ else }}
+                            <img alt="{{ .title }}" src="{{ $full.Permalink }}"/>
+                        {{ end }}
+                    </a>
 
-                <figcaption>"{{ .title }}"</figcaption>
-            </figure>
+                    <figcaption>"{{ .title }}"</figcaption>
+                </figure>
             {{ end }}
         {{ end }}
     {{ end }}
