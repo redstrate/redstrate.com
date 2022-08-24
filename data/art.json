@@ -1,46 +1,46 @@
 {
-    "categories": [
+  "categories": [
+    {
+      "name": "2D Art",
+      "description": "This is a collection of my “finished” work, sorted by year originally posted.",
+      "years": [
         {
-            "name": "2D Art",
-            "description": "This is a collection of my “finished” work, sorted by year originally posted.",
-            "years": [
-                {
-                    "year": 2016,
-                    "pieces": [
-                        {
-                            "title": "Old Stuff",
-                            "filename": "summer-byleth.webp"
-                        },
-                        {
-                            "title": "Another old thing",
-                            "filename": "summer-byleth.webp"
-                        }
-                    ]
-                },
-                {
-                    "year": 2022,
-                    "pieces": [
-                        {
-                            "title": "summer byleth",
-                            "filename": "summer-byleth.webp",
-                            "pixiv_url": "test"
-                        },
-                        {
-                            "title": "summer eva girls",
-                            "filename": "summer-eva-girls.webp",
-                            "newgrounds_url": "test"
-                        },
-                        {
-                            "title": "office date",
-                            "filename": "office-date.webp"
-                        },
-                        {
-                            "title": "after school",
-                            "filename": "after-school.webp"
-                        }
-                    ]
-                }
-            ]
+          "year": 2016,
+          "pieces": [
+            {
+              "title": "Old Stuff",
+              "filename": "summer-byleth.webp"
+            },
+            {
+              "title": "Another old thing",
+              "filename": "summer-byleth.webp"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "pieces": [
+            {
+              "title": "summer byleth",
+              "filename": "summer-byleth.webp",
+              "pixiv_url": "test"
+            },
+            {
+              "title": "summer eva girls",
+              "filename": "summer-eva-girls.webp",
+              "newgrounds_url": "test"
+            },
+            {
+              "title": "office date",
+              "filename": "office-date.webp"
+            },
+            {
+              "title": "after school",
+              "filename": "after-school.webp"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
