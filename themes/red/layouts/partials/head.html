@@ -1,5 +1,5 @@
 <head>
-    <title>{{ .Title }}</title>
+    <title>{{ .Site.Title }}</title>
 
     {{ $style := resources.Get "css/site.css" }}
     <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet" >
