@@ -1,0 +1,34 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+
+    {{ $art := (index site.Data ($.Param "json")) }}
+
+    {{ range $art.categories }}
+        <h2>{{ .name }}</h2>
+        <p>{{ .description }}</p>
+        {{ range sort .years "year" "desc" }}
+            <h3>{{ .year }}</h3>
+
+            <div class="gallery">
+                {{ range .pieces }}
+                    <figure>
+                        {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+
+                        <audio controls>
+                            <source src="{{ $full.Permalink }}" type="audio/ogg">
+                        </audio>
+
+                        <figcaption>
+                            "{{ .title }}"
+                            {{ if .newgrounds_url }}
+                                <a href="{{ .newgrounds_url }}">Newgrounds</a>
+                            {{ end }}
+                        </figcaption>
+                    </figure>
+                {{ end }}
+            </div>
+        {{ end }}
+    {{ end }}
+{{ end }}
