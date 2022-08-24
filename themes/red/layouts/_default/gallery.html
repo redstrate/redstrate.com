@@ -6,10 +6,10 @@
     {{ $art := (index site.Data ($.Param "json")) }}
 
     {{ range $art.categories }}
-        <h2>{{ .name }}</h2>
+        <h3>{{ .name }}</h3>
         <p>{{ .description }}</p>
         {{ range sort .years "year" "desc" }}
-            <h3>{{ .year }}</h3>
+            <h4>{{ .year }}</h4>
 
             {{ range .pieces }}
                 <figure>
