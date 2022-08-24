@@ -35,9 +35,9 @@ theme = 'red'
     weight = 4
 
     [[menu.main]]
-    identifier = 'projects'
-    name = 'Projects'
-    url = '/projects'
+    identifier = 'software'
+    name = 'Software'
+    url = '/software'
     weight = 6
 
     [[menu.main]]
