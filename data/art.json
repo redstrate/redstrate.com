@@ -22,11 +22,13 @@
                     "pieces": [
                         {
                             "title": "summer byleth",
-                            "filename": "summer-byleth.webp"
+                            "filename": "summer-byleth.webp",
+                            "pixiv_url": "test"
                         },
                         {
                             "title": "summer eva girls",
-                            "filename": "summer-eva-girls.webp"
+                            "filename": "summer-eva-girls.webp",
+                            "newgrounds_url": "test"
                         },
                         {
                             "title": "office date",
