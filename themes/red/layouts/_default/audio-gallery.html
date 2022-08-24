@@ -16,8 +16,8 @@
                     <figure>
                         {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
 
-                        <audio controls>
-                            <source src="{{ $full.Permalink }}" type="audio/ogg">
+                        <audio controls src="{{ $full.Permalink }}" preload="metadata">
+                            Your browser does not support audio.
                         </audio>
 
                         <figcaption>
