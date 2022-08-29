@@ -9,6 +9,7 @@ tags:
 resources:
 - src: img/IMG_0160 copy.png
   name: Screenshot
+layout: "project"
 ---
 
 My first OpenGL based game engine.

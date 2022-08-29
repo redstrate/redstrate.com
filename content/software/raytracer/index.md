@@ -10,6 +10,7 @@ tags:
 resources:
 - src: img/output.png
   name: Screenshot
+layout: "project"
 ---
 
 CPU raytracer.

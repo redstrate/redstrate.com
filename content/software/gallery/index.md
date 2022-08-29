@@ -12,6 +12,7 @@ tags:
 resources:
 - src: img/mobilefort.png
   name: Screenshot
+layout: "project"
 ---
 
 Local booru for macOS and iOS devices.

@@ -11,6 +11,7 @@ tags:
 resources:
 - src: img/screenshot.png
   name: Screenshot
+layout: "project"
 ---
 
 Fire Emblem clone for a course final project.

@@ -8,6 +8,7 @@ tags:
 - Mastodon
 - Twitter
 draft: false
+layout: "project"
 ---
 
 Mastodon to Twitter cross-poster designed for mirroring my art account.

@@ -9,6 +9,7 @@ tags:
 - C++
 - Vulkan
 - Qt
+layout: "project"
 ---
 
 Game engine utilizing Vulkan and Qt.

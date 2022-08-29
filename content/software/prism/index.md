@@ -20,6 +20,7 @@ resources:
 - src: img/sponza.png
   name: Sponza example scene
 featured: yes
+layout: "project"
 ---
 
 Cross-platform game engine specializing in the real-time rendering of physically-based graphics.

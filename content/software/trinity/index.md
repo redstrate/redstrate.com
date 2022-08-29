@@ -10,6 +10,7 @@ tags:
 resources:
 - src: img/screenshot.png
   name: Screenshot
+layout: "project"
 ---
 
 Discord-like Matrix client using QML and Qt.

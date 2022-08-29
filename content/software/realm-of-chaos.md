@@ -7,7 +7,8 @@ license: GPLv3
 license-url: "https://git.sr.ht/~redstrate/realm-of-chaos/tree/master/item/LICENSE"
 tags:
 - C++
-- Game
+- Game 
+layout: "project"
 ---
 
 Rogue-like game with a couple of interesting features.

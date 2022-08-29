@@ -1,0 +1,29 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+
+<table>
+  <tr>
+    <td>Source Code</td>
+    <td><a href='{{ $.Param "source" }}'>{{ $.Param "source" }}</a></td>
+  </tr>
+  <tr>
+    <td>License</td>
+    <td><a href='{{ $.Param "license-url" }}'>{{ $.Param "license" }}</a></td>
+  </tr>
+  <tr>
+    <td>Year Created</td>
+    <td><time datetime='{{ .Date.Format "2006" }}'>{{ .Date.Format "2006"}}</time></td>
+  </tr>
+  <tr>
+    <td>Tags</td>
+    <td>
+      {{ $len := (len .Params.tags) }}
+      {{ range $index, $element := .Params.tags }}
+      <a href="/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+      {{ end }}
+    </td>
+  </tr>
+</table>
+
+{{ .Content }}
+{{ end }}
