@@ -1,0 +1,24 @@
+---
+title: "chip8"
+date: 2020-01-25T22:29:22-05:00
+draft: false
+source: "https://git.sr.ht/~redstrate/chip8"
+license: MIT
+tags:
+- C++
+- Emulation
+resources:
+- src: img/output.png
+  name: Screenshot
+---
+
+Basic Chip-8 emulator.
+
+<!--more-->
+---
+
+This is my first ever (working) emulator, of the simple CHIP-8 system. I'm pretty proud of this, because apart from the sprite collision logic I was able to implement most of the opcodes just looking at a basic overview of the instruction set.
+
+Technically, this implements the SCHIP type of instructions but can still play many of the ROMs you can find online. I also added a cute debugger window and a memory viewer. The emulator also comes with a built-in deflicker for the display.
+
+For funsies, I included a basic parser that can spit out valid CHIP-8 instructions for a C-style language!

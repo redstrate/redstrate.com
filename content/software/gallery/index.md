@@ -1,0 +1,24 @@
+---
+title: "Gallery"
+date: 2020-01-25T22:29:22-05:00
+draft: false
+source: "https://git.sr.ht/~redstrate/gallery"
+license: MIT
+tags:
+- Swift
+- UIKit
+- iOS
+- macOS
+resources:
+- src: img/mobilefort.png
+  name: Screenshot
+---
+
+Local booru for macOS and iOS devices.
+
+<!--more-->
+---
+
+I had always wanted to build a local booru application, especially for Apple devices. This was also an experiment in Mac Catalyst, which released the same year. 
+
+This utilizes UIKit for it's GUI, and uses Apple's own Core Data framework to actually build relationships between tags, images, etc. To run on macOS, it uses Mac Catalyst. The actual functionality of this is incredibly basic, but it does work!
