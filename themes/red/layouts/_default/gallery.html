@@ -17,8 +17,12 @@
 
                     <a href="{{ $full.Permalink }}">
                         {{ if $.Params.thumbnails }}
-                            {{ $thumb := resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
-                            <img alt="{{ .title }}" width="128px" height="128px" src="{{ $thumb.Permalink }}"/>
+                            {{ $title := .title }}
+                            {{ with resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
+                            <img alt="{{ $title }}" width="128px" height="128px" src="{{ .Permalink }}"/>
+                            {{ else }}
+                            <p>Thumbnail not found!</p>
+                            {{ end }}
                         {{ else }}
                             <img alt="{{ .title }}" src="{{ $full.Permalink }}"/>
                         {{ end }}

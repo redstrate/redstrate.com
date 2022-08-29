@@ -8,12 +8,33 @@
           "year": 2016,
           "pieces": [
             {
-              "title": "Old Stuff",
-              "filename": "summer-byleth.webp"
-            },
+              "title": "Vinesauce Hill",
+              "filename": "vinesauce.webp"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "pieces": [
             {
-              "title": "Another old thing",
-              "filename": "summer-byleth.webp"
+              "title": "Sword Buying",
+              "filename": "sword.jpeg.webp"
+            }
+          ]
+        },
+        {
+          "year": 2019
+        },
+        {
+          "year": 2020
+        },
+        {
+          "year": 2021,
+          "pieces": [
+            {
+              "title": "eva girls",
+              "filename": "eva.webp",
+              "pixiv_url": "blah"
             }
           ]
         },
@@ -21,14 +42,9 @@
           "year": 2022,
           "pieces": [
             {
-              "title": "summer byleth",
-              "filename": "summer-byleth.webp",
-              "pixiv_url": "test"
-            },
-            {
-              "title": "summer eva girls",
-              "filename": "summer-eva-girls.webp",
-              "newgrounds_url": "test"
+              "title": "bard in the black shroud",
+              "filename": "after-school.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud"
             },
             {
               "title": "office date",
@@ -37,6 +53,23 @@
             {
               "title": "after school",
               "filename": "after-school.webp"
+            },
+            {
+              "title": "summer eva girls",
+              "filename": "summer-eva-girls.webp",
+              "newgrounds_url": "test"
+            },
+            {
+              "title": "summer byleth",
+              "filename": "summer-byleth.webp",
+              "pixiv_url": "test",
+              "newgrounds_url": "bb"
+            },
+            {
+              "title": "after the rain",
+              "filename": "summer-byleth.webp",
+              "newgrounds_url": "",
+              "pixiv_url": "test"
             }
           ]
         }
