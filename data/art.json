@@ -26,15 +26,36 @@
           "year": 2019
         },
         {
-          "year": 2020
+          "year": 2020,
+          "pieces": [
+            {
+              "title": "woman knight",
+              "filename": "knight.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/woman-knight",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100096631"
+            }
+          ]
         },
         {
           "year": 2021,
           "pieces": [
             {
+              "title": "mari & asuka",
+              "filename": "eva.webp",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/95031741",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mari-asuka"
+            },
+            {
               "title": "eva girls",
               "filename": "eva.webp",
-              "pixiv_url": "blah"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/94953596",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
+            },
+            {
+              "title": "let's get fit!",
+              "filename": "Let's_Get_Fit!.webp",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/94953574",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/let-s-get-fit"
             }
           ]
         },
@@ -43,33 +64,39 @@
           "pieces": [
             {
               "title": "bard in the black shroud",
-              "filename": "after-school.webp",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud"
+              "filename": "bard.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100622631"
             },
             {
               "title": "office date",
-              "filename": "office-date.webp"
+              "filename": "office-date.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/office-date",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100150299"
             },
             {
               "title": "after school",
-              "filename": "after-school.webp"
+              "filename": "after-school.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/after-school",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100147156"
             },
             {
               "title": "summer eva girls",
               "filename": "summer-eva-girls.webp",
-              "newgrounds_url": "test"
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-eva-girls",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100026963"
             },
             {
               "title": "summer byleth",
               "filename": "summer-byleth.webp",
-              "pixiv_url": "test",
-              "newgrounds_url": "bb"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/98726204",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-byleth"
             },
             {
               "title": "after the rain",
               "filename": "summer-byleth.webp",
-              "newgrounds_url": "",
-              "pixiv_url": "test"
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/after-the-rain",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/97911950"
             }
           ]
         }

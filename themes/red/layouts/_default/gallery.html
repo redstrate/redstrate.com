@@ -4,6 +4,8 @@
     {{ .Content }}
 
     {{ $art := (index site.Data ($.Param "json")) }}
+    {{ $pixiv_icon := resources.Get "pixiv.png" }}
+    {{ $newgrounds_icon := resources.Get "newgrounds.png" }}
 
     {{ range $art.categories }}
         <h3>{{ .name }}</h3>
@@ -31,10 +33,10 @@
                     <figcaption>
                         "{{ .title }}"
                         {{ if .newgrounds_url }}
-                            <a href="{{ .newgrounds_url }}">Newgrounds</a>
+                            <a href="{{ .newgrounds_url }}"><img alt="Newgrounds Icon" width="16" height="16" src="{{ $newgrounds_icon.Permalink }}"></a>
                         {{ end }}
                         {{ if .pixiv_url }}
-                            <a href="{{ .pixiv_url }}">Pixiv</a>
+                            <a href="{{ .pixiv_url }}"><img alt="Pixiv Icon" width="16" height="16" src="{{ $pixiv_icon.Permalink }}"></a>
                         {{ end }}
                     </figcaption>
                 </figure>
