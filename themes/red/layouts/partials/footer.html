@@ -1,11 +1,13 @@
 <footer>
     Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .File.Path }}?view-source">View Source</a>
 
-    {{ with resources.Get "cc-by-nc-sa.gif" }}
-        <img src="{{ .Permalink }}">
-    {{ end }}
+    <div>
+        {{ with resources.Get "cc-by-nc-sa.gif" }}
+            <img src="{{ .Permalink }}">
+        {{ end }}
 
-    {{ with resources.Get "rss-button.gif" }}
-        <img src="{{ .Permalink }}">
-    {{ end }}
+        {{ with resources.Get "rss-button.gif" }}
+            <img src="{{ .Permalink }}">
+        {{ end }}
+    </div>
 </footer>
