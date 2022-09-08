@@ -2,9 +2,9 @@
 <html lang="en">
     {{- partial "head.html" . -}}
     <body>
-        {{- partial "header.html" . -}}
-        {{- partial "sidebar.html" . -}}
-        {{- block "main" . }}{{- end }}
-        {{- partial "footer.html" . -}}
+        <header>{{- partial "header.html" . -}}</header>
+        <aside>{{- partial "sidebar.html" . -}}</aside>
+        <article>{{- block "main" . }}{{- end }}</article>
+        <footer>{{- partial "footer.html" . -}}</footer>
     </body>
 </html>
