@@ -5,7 +5,13 @@ Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/mas
         <img src="{{ .Permalink }}">
     {{ end }}
 
-    {{ with resources.Get "rss-button.gif" }}
-        <img src="{{ .Permalink }}">
+    {{ with .OutputFormats.Get "RSS" }}
+    <a href="{{ .RelPermalink }}">
+        {{ with resources.Get "rss-button.gif" }}
+            <img src="{{ .Permalink }}">
+        {{ end }}
+    </a>
     {{ end }}
+
+
 </div>
