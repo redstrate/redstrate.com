@@ -2,7 +2,9 @@ Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/mas
 
 <div>
     {{ with resources.Get "cc-by-nc-sa.gif" }}
+        <a href="/license">
         <img src="{{ .Permalink }}">
+        </a>
     {{ end }}
 
     {{ with .OutputFormats.Get "RSS" }}
