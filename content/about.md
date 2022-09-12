@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-Hello this is my about page :-)
+**note** You can find my resume [here]({{< ref "resume" >}}). 
