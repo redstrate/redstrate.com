@@ -5,4 +5,3 @@ json: "photos"
 thumbnails: false
 ---
 
-{{< toc >}}
