@@ -58,3 +58,7 @@ theme = 'red'
     url = '/about'
     weight = 9
 
+[outputs]
+    home = ["HTML"]
+    page = ["HTML"]
+    section = ["HTML", "RSS"]
