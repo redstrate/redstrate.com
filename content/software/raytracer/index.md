@@ -17,7 +17,7 @@ CPU raytracer.
 
 This is a CPU-based raytracer, and also my first! This features things such as:
 
-![Screenshot of a raytraced Suzanne](output.png)
+![Screenshot of a raytraced Suzanne](output.webp)
 
 * Naive multi-threading support based on tiles and utilizing C++ futures.
 * Ability to load arbitrary OBJs and render them.

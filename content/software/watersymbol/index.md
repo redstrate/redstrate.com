@@ -18,7 +18,7 @@ Fire Emblem clone for a course final project.
 
 A Fire Emblem clone using libGDX and Java. This is for a course final project, and it features stuff like:
 
-![Screenshot of the main (and only) game area](screenshot.png)
+![Screenshot of the main (and only) game area](screenshot.webp)
 
 It features:
 * Proper A* navigation for enemies, and is also player unit pathing.

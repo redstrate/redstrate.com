@@ -19,7 +19,7 @@ Cross-platform game engine specializing in the real-time rendering of physically
 <!--more-->
 ---
 
-![PCSS in action](pcss.png)
+![PCSS in action](pcss.webp)
 
 This engine is the summation of all of my graphics developer knowledge. The list of features is not limited to:
 
