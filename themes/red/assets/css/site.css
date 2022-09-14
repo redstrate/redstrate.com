@@ -6,6 +6,10 @@
         "nav  main"
         "nav  foot";
     }
+
+    aside {
+        width: 250px;
+    }
 }
 
 /* mobile devices */
@@ -16,6 +20,10 @@
         "nav"
         "main"
         "foot";
+    }
+
+    aside {
+        width: 100%;
     }
 }
 
@@ -34,8 +42,6 @@ header {
 
 aside {
     background-color: white;
-
-    width: 250px;
 
     grid-area: nav;
 }
