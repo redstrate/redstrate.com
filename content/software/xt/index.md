@@ -20,7 +20,7 @@ This was one of my first custom game engines, and my first foray into using Open
 
 From what I remember, it had the following features:
 * Custom editor using dear imgui 
-  * the tabbing library was based off of XYZ's engine since the docking branch did not exist at the time.
+  * The dear imgui tabs were based off of the [Lumix engine](https://github.com/nem0/lumixengine) since the docking branch did not exist at the time.
   * The editor also had auto-generated previews as shown for models, textures, and materials.
 * Skybox support using cubemapping, this was also used for lighting my "PBR shader" (hint: as you can tell in the screenshot, I didn't know how to gamma correct anything in 2016.)
 
