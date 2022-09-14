@@ -1,0 +1,31 @@
+body {
+    background-color: #eebebe;
+
+    display: grid;
+    grid-template:
+        "head head"
+        "nav  main"
+        "nav  foot";
+}
+
+header {
+    grid-area: head;
+}
+
+aside {
+    background-color: #e3e3e3;
+
+    width: 250px;
+
+    grid-area: nav;
+}
+
+article {
+    background-color: #e3e3e3;
+    grid-area: main;
+}
+
+footer {
+    grid-area: foot;
+}
+
