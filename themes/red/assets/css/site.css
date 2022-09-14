@@ -20,7 +20,10 @@
 }
 
 body {
-    background-color: #eebebe;
+    --accent-color: #d26c6c;
+
+    background-color: #e3e3e3;
+    accent-color: var(--accent-color);
 
     display: grid;
 }
@@ -30,7 +33,7 @@ header {
 }
 
 aside {
-    background-color: #e3e3e3;
+    background-color: white;
 
     width: 250px;
 
@@ -38,11 +41,14 @@ aside {
 }
 
 article {
-    background-color: #e3e3e3;
+    background-color: white;
+
     grid-area: main;
 }
 
 footer {
+    background-color: white;
+
     grid-area: foot;
 }
 
