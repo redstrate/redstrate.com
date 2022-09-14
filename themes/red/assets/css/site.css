@@ -1,11 +1,28 @@
+/* desktop devices */
+@media (min-width: 768px) {
+    body {
+        grid-template:
+        "head head"
+        "nav  main"
+        "nav  foot";
+    }
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    body {
+        grid-template:
+        "head"
+        "nav"
+        "main"
+        "foot";
+    }
+}
+
 body {
     background-color: #eebebe;
 
     display: grid;
-    grid-template:
-        "head head"
-        "nav  main"
-        "nav  foot";
 }
 
 header {
