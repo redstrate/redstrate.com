@@ -44,6 +44,8 @@ aside {
     background-color: white;
 
     grid-area: nav;
+
+    text-align: center;
 }
 
 article {
