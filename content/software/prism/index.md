@@ -10,15 +10,6 @@ tags:
 - C++
 - Vulkan
 - Metal
-resources:
-- src: img/buddha.png
-  name: Buddha Statue
-- src: img/custom models.png
-  name: Custom Models with Sphere
-- src: img/pcss.png
-  name: PCSS in action
-- src: img/sponza.png
-  name: Sponza example scene
 featured: yes
 layout: "project"
 ---
@@ -28,7 +19,7 @@ Cross-platform game engine specializing in the real-time rendering of physically
 <!--more-->
 ---
 
-{{< resource page="projects/prism" name="PCSS in action" >}}
+![PCSS in action](pcss.png)
 
 This engine is the summation of all of my graphics developer knowledge. The list of features is not limited to:
 

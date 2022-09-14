@@ -8,9 +8,6 @@ license-url: https://git.sr.ht/~redstrate/watersymbol/tree/main/item/LICENSE
 tags:
 - Java
 - Game
-resources:
-- src: img/screenshot.png
-  name: Screenshot
 layout: "project"
 ---
 
@@ -21,9 +18,10 @@ Fire Emblem clone for a course final project.
 
 A Fire Emblem clone using libGDX and Java. This is for a course final project, and it features stuff like:
 
+![Screenshot of the main (and only) game area](screenshot.png)
+
+It features:
 * Proper A* navigation for enemies, and is also player unit pathing.
 * All the assets are wholly created by me, except for the default Arial font included in libGDX.
 * Working gameplay loop, allowing you to kill or be killed by the enemy units on a test map.
 * Maps can be created in Tiled, allowing for easy authoring.
-
-![screenshot](screenshot.png)

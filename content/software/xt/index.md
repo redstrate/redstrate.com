@@ -6,9 +6,6 @@ tags:
 - OpenGL
 - C++
 - 3D
-resources:
-- src: img/IMG_0160 copy.png
-  name: Screenshot
 layout: "project"
 ---
 
@@ -18,6 +15,8 @@ My first OpenGL based game engine.
 ---
 
 This was one of my first custom game engines, and my first foray into using OpenGL for a serious project. Unfortunately, I have lost all of the source code, but the image below is what I was able to save from a dear imgui screenshot thread.
+
+![Screenshot of XT, containing the editor](screenshot.png)
 
 From what I remember, it had the following features:
 * Custom editor using dear imgui 
