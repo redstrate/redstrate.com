@@ -6,7 +6,7 @@ tags:
 - Prism
 ---
 
-These two months contain some pretty big changes I made to Prism, following a short hiatus from the project. These include some pretty important changes to the project moving forward and I hope to keep documenting these in this nice and concise, visual way in the future! Also before you ask, this is Feburary _and_ April, I only made one small commit in March which is why it's not Feburary _to_ April.
+These two months contain some pretty big changes I made to Prism, following a short hiatus from the project. These include some pretty important changes to the project moving forward and I hope to keep documenting these in this nice and concise, visual way in the future! <!--more--> Also before you ask, this is Feburary _and_ April, I only made one small commit in March which is why it's not Feburary _to_ April.
 
 If you've never heard of Prism before, it's my ultimate graphics study project that is the culmination of everything I've learned in graphics development so far. It is built upon years of hard effort/learning and also extremely valuable help from multiple people in the graphics community. You can find the complete source code and even more information on it's [Github repository](https://www.github.com/redstrate/prism).
 
@@ -16,7 +16,7 @@ The Vulkan backend is moving very quickly to reach feature parity soon with the 
 fully usuable for most tasks on Windows and Linux! The main roadblock right now is implementing the last of the
 functionality required for IBL and some other graphical features.
 
-![Screenshot of the material editor](/articles/img/PrismEditor_BT44VWksFY.png)
+![Screenshot of the material editor](/blog/img/PrismEditor_BT44VWksFY.png)
 _This is the Material editor running on Vulkan, on Windows_
 
 ### SDL2 is the new default windowing system for Windows and Linux
@@ -41,7 +41,7 @@ This is a pretty and clear nice benefit from using the SDL backend, because now 
 
 Before if you wanted to render to another window, static image, viewport you were required to create a whole new renderer instance. This was bad design for a multitude of reasons - duplicated work, resources and lack of proper cohesion or synchronization. This was because a single renderer instance only supported rendering to one target. Now everything is reworked and I can use just one renderer instance for the whole engine, even down to the tooling!
 
-![Screenshot of two viewports open at the same time](/articles/img/PrismEditor_Okvgr9cuI3.png)
+![Screenshot of two viewports open at the same time](/blog/img/PrismEditor_Okvgr9cuI3.png)
 _This is two editor viewports running at the same time in two different windows, something not possible before under the old system._
 
 The new render target system is also the backbone of the new cross platform dear imgui multi-viewport support (try saying that 5x fast!) The API is also extremely easy to use:

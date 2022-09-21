@@ -4,7 +4,7 @@ date: 2022-06-28
 draft: false
 ---
 
-In my series of purging my content on propietary platforms I don't align with anymore, the next on the chopping block is Twitter. Just like GitHub, I have several personal reasons why I'm not supporting Twitter any longer:
+In my series of purging my content on propietary platforms I don't align with anymore, the next on the chopping block is Twitter. Just like GitHub, I have several personal reasons why I'm not supporting Twitter any longer. <!--more-->
 
 * Focus on alogrithmic discovery as opposed to a simple, linear timeline.
 * Supporting NFTs which I don't personally agree with.

@@ -7,8 +7,7 @@ tags:
 - sourcehut
 ---
 
-Recently I've moved pretty much all of my repositories over to sourcehut! This is a huge change, as I haven't changed
-my primary code hosting provider, Github, since 2-3 years ago.
+Recently I've moved pretty much all of my repositories over to sourcehut! <!--more--> This is a huge change, as I haven't changed my primary code hosting provider, Github, since 2-3 years ago.
 
 **Edit:** There is a follow up to my sourcehut migration located [here]({{<ref "moving-to-sourcehut-followup">}})!
 

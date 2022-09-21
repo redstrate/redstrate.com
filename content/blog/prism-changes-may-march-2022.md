@@ -22,7 +22,7 @@ It wasn't unitl I realized that I'm pulling apart my engine for no good reason j
 
 I recently was able to get a [nice Windows setup going](https://knockout.chat/thread/25747/28#post-1207745), so now DX12 support is going to finally begin. This is one of the last APIs I plan to support officially, so this is exciting. Now I don't have any real excuse to not support this API.
 
-![Picture of my Linux/Windows desktop](/articles/img/IMG_0246.jpg)
+![Picture of my Linux/Windows desktop](/blog/img/IMG_0246.jpg)
 
 ### Moving away from Objective-C
 
@@ -52,7 +52,7 @@ right in the source code repository. This has technically been around since the 
 {{< rawhtml >}}
 
 <video width=100% controls>
-<source src="/articles/img/JezVKVk.mp4">
+<source src="/blog/img/JezVKVk.mp4">
 </video>
 
 {{< /rawhtml >}}

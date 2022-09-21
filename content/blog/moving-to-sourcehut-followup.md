@@ -7,7 +7,7 @@ tags:
 - sourcehut
 ---
 
-This is a follow-up post to my blog post detailing the changes I've made to how my source code is hosted. Basically, I'm trying to
+This is a follow-up post to my blog post detailing the changes I've made to how my source code is hosted. <!--more--> Basically, I'm trying to
 move away from GitHub for my primary code hosting to a (in my opinion, better suited for me) platform. After some deliberation, I
 ultimately landed on sourcehut, and plan to detail the benefits I've gained, and the things I've losted. Hint, it works pretty well,
 so I'm excited to dig into my new workflow :-)

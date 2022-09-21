@@ -7,7 +7,7 @@ tags:
 - Review
 ---
 
-Hello again! This is my figure review of the [Mari Figure from Sega](https://myfigurecollection.net/item/945032). She was released around 2020 as a prize
+Hello again! This is my figure review of the [Mari Figure from Sega](https://myfigurecollection.net/item/945032). <!--more--> She was released around 2020 as a prize
 figure celebrating the launch of "Evangelion 3.0+1.0", before it got pushed back to 2021. I
 didn't preorder her on your typical reseller website but instead got her a little bit earlier by buying her on [buyee.jp](https://buyee.jp).
 

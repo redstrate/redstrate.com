@@ -7,9 +7,7 @@ draft: false
 date: 2022-06-23
 ---
 
-Over the past few hours I did some serious cleaning up on my [GitHub account](https://github.com/redstrate), I basically removed every single original repository I had. I still need GitHub in order to contribute to some projects, so my forks are kept.
-
-For people trying to find my missing repositories, I added a profile README to direct people to my sourcehut instead.
+Over the past few hours I did some serious cleaning up on my [GitHub account](https://github.com/redstrate), I basically removed every single original repository I had. <!--more--> I still need GitHub in order to contribute to some projects, so my forks are kept. For people trying to find my missing repositories, I added a profile README to direct people to my sourcehut instead.
 
 There were many reasons why I ditched GitHub, a couple are detailed below:
 * I disliked the “social media” features that were just getting more and more prominent. I didn’t really care for these and I just saw it as introducing bloat and spam to the platform (cue small PRs just for a one line README change just to get a contribution award).
