@@ -5,6 +5,8 @@ draft: false
 tags:
 - Figures
 - Review
+aliases:
+- /articles/figure1/
 ---
 
 Hello again! This is my figure review of the [Mari Figure from Sega](https://myfigurecollection.net/item/945032). <!--more--> She was released around 2020 as a prize
@@ -17,7 +19,7 @@ didn't preorder her on your typical reseller website but instead got her a littl
 ![Side view of Mari](figure-review-mari-side.webp)
 ![Backside view of Mari](figure-review-mari-back.webp)
 
-This is one ofthe few times that I think the figure looks much better than it does in real life than the photos provided by the company:
+This is one of the few times that I think the figure looks much better than it does in real life than the photos provided by the company:
 
 ![The photo Sega provided](figure-review-mari-sega.jpg)
 (Seriously?? Why doesn't she have _any_ background? I understand she is a prize figure but come on.)

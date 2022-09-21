@@ -4,6 +4,8 @@ date: 2022-02-01
 draft: false
 tags:
 - KDE
+aliases:
+- /articles/opening-kaddressbook-addresses-with-kde-marble/
 ---
 
 This is probably the most specific use case I'll ever post on this blog :-p I noticed whenever I click an address in [KAddressBook](https://apps.kde.org/kaddressbook/), it opens it in [OpenStreetMap](https://www.openstreetmap.org/) in your web browser by default. Huh? <!--more-->

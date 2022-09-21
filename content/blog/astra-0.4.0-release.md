@@ -2,6 +2,8 @@
 title: "Astra 0.4.0 is released!"
 date: 2022-05-04
 draft: false
+aliases:
+- /notes/astra-0.4.0-release/
 ---
 
 I'm very sorry about the delay, but a new release of Astra is upon us!

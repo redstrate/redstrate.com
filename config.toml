@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = '~redstrate'
 theme = 'red'
 
+[permalinks]
+  blog = '/:year/:month/:title/'
+
 [menu]
     [[menu.main]]
     identifier = 'home'

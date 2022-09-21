@@ -5,6 +5,8 @@ draft: false
 tags:
 - GitHub
 - sourcehut
+aliases:
+- /notes/move-to-sourcehut/
 ---
 
 Recently I've moved pretty much all of my repositories over to sourcehut! <!--more--> This is a huge change, as I haven't changed my primary code hosting provider, Github, since 2-3 years ago.

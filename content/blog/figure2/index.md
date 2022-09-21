@@ -5,6 +5,8 @@ draft: false
 tags:
 - Figures
 - Review
+aliases:
+- /articles/figure2
 ---
 
 Today we're reviewing the Flare reissue of the YoRHa No. 2 Type B released by Square Enix, a company that despite being very, very controlling of their merchandise has the absolute worst online store ever. <!--more--> This isn't just a single case, you can read online where people have similiar experiences with Square Enix's online store.

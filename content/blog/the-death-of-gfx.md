@@ -6,6 +6,8 @@ tags:
 - Prism
 - Vulkan
 - Metal
+aliases:
+- /articles/the-death-of-gfx/
 ---
 
 In under an hour, I was able to port my already existing Vulkan code from [Prism](/projects/prism)

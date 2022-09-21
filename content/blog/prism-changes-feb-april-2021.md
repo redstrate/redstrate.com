@@ -4,6 +4,8 @@ date: 2021-04-04
 draft: false
 tags:
 - Prism
+aliases:
+- /articles/prism-changes-feb-april-2021/
 ---
 
 These two months contain some pretty big changes I made to Prism, following a short hiatus from the project. These include some pretty important changes to the project moving forward and I hope to keep documenting these in this nice and concise, visual way in the future! <!--more--> Also before you ask, this is Feburary _and_ April, I only made one small commit in March which is why it's not Feburary _to_ April.

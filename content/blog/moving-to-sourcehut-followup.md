@@ -5,6 +5,8 @@ draft: false
 tags:
 - GitHub
 - sourcehut
+aliases:
+- /notes/moving-to-sourcehut-followup/
 ---
 
 This is a follow-up post to my blog post detailing the changes I've made to how my source code is hosted. <!--more--> Basically, I'm trying to

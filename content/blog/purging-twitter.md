@@ -2,6 +2,8 @@
 title: "Purging Twitter"
 date: 2022-06-28
 draft: false
+aliases:
+- /notes/purging-twitter/
 ---
 
 In my series of purging my content on propietary platforms I don't align with anymore, the next on the chopping block is Twitter. Just like GitHub, I have several personal reasons why I'm not supporting Twitter any longer. <!--more-->
