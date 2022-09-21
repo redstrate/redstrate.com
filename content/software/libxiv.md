@@ -1,6 +1,6 @@
 ---
 title: "libxiv"
-date: 2022-01-05T22:29:22-05:00
+date: 2022-01-05
 draft: false
 tags:
 - FFXIV

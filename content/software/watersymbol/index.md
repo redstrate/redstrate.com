@@ -1,6 +1,6 @@
 ---
 title: "Water Symbol"
-date: 2022-05-01T12:00:00-05:00
+date: 2022-05-01
 draft: false
 source: "https://git.sr.ht/~redstrate/watersymbol"
 license: GPLv3

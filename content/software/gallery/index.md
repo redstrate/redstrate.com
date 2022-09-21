@@ -1,6 +1,6 @@
 ---
 title: "Gallery"
-date: 2020-01-25T22:29:22-05:00
+date: 2020-01-25
 draft: false
 source: "https://git.sr.ht/~redstrate/gallery"
 license: MIT

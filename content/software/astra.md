@@ -1,6 +1,6 @@
 ---
 title: "Astra"
-date: 2021-12-01T22:29:22-05:00
+date: 2021-12-01
 draft: false
 tags:
 - FFXIV

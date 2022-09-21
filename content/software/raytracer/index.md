@@ -1,6 +1,6 @@
 ---
 title: "Raytracer"
-date: 2020-02-17T22:29:22-05:00
+date: 2020-02-17
 draft: false
 source: "https://git.sr.ht/~redstrate/raytracer"
 license: MIT

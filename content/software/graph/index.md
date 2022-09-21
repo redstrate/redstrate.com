@@ -1,6 +1,6 @@
 ---
 title: "Graph"
-date: 2018-08-11T22:29:22-05:00
+date: 2018-08-11
 draft: false
 source: "https://git.sr.ht/~redstrate/graph"
 license: MIT

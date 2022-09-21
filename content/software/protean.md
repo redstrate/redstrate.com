@@ -1,6 +1,6 @@
 ---
 title: "Protean"
-date: 2021-08-25T10:29:22-05:00
+date: 2021-08-25
 source: "https://git.sr.ht/~redstrate/protean"
 license: MIT
 tags:

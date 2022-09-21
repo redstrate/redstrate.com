@@ -1,6 +1,6 @@
 ---
 title: "Prism"
-date: 2020-08-11T22:29:22-05:00
+date: 2020-08-11
 draft: false
 source: "https://git.sr.ht/~redstrate/prism"
 license: MIT

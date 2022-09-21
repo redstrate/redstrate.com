@@ -1,6 +1,6 @@
 ---
 title: "Trinity"
-date: 2018-03-18T12:00:00-05:00
+date: 2018-03-18
 draft: false
 source: "https://git.sr.ht/~redstrate/trinity"
 license: GPLv3

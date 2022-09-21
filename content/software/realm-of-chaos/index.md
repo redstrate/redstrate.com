@@ -1,6 +1,6 @@
 ---
 title: "Realm of Chaos"
-date: 2020-02-19T22:29:22-05:00
+date: 2020-02-19
 draft: false
 source: "https://git.sr.ht/~redstrate/realm-of-chaos"
 license: GPLv3

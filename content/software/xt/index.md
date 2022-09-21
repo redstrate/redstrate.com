@@ -1,6 +1,6 @@
 ---
 title: "XT"
-date: 2016-01-25T22:29:22-05:00
+date: 2016-01-25
 draft: false
 tags:
 - OpenGL

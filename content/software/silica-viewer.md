@@ -1,6 +1,6 @@
 ---
 title: "Silica Viewer"
-date: 2021-09-10T22:29:22-05:00
+date: 2021-09-10
 draft: false
 tags:
 - Swift

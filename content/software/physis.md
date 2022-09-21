@@ -1,6 +1,6 @@
 ---
 title: "Physis"
-date: 2022-07-19T22:29:22-05:00
+date: 2022-07-19
 draft: false
 tags:
 - FFXIV
