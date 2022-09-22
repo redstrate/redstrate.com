@@ -1,7 +1,9 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
 
+    <div class="blog-img">
     {{ .Content }}
+    </div>
 
     {{ $related := .Site.RegularPages.Related . | first 5 }}
     {{ with $related }}
