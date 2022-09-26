@@ -3,14 +3,14 @@ Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/mas
 <div>
     {{ with resources.Get "cc-by-nc-sa.gif" }}
         <a href="/license">
-        <img src="{{ .Permalink }}" alt="CC NC SA">
+        <img width="88" height="31" src="{{ .Permalink }}" alt="CC NC SA">
         </a>
     {{ end }}
 
     {{ with .OutputFormats.Get "RSS" }}
     <a href="{{ .RelPermalink }}">
         {{ with resources.Get "rss-button.gif" }}
-            <img src="{{ .Permalink }}" alt="RSS Feed">
+            <img width="88" height="31" src="{{ .Permalink }}" alt="RSS Feed">
         {{ end }}
     </a>
     {{ end }}
