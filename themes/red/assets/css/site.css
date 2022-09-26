@@ -10,6 +10,14 @@
     aside {
         width: 100%;
     }
+
+    aside div {
+        padding: 2px;
+    }
+
+    aside div a {
+        font-size: 125%;
+    }
 }
 
 body {
@@ -63,7 +71,8 @@ footer {
     margin: 10px;
 }
 
-blog-img img {
+.article-img {
     width: 100%;
+    height: auto;
 }
 
