@@ -1,0 +1,17 @@
+{{- $url := .Destination | safeURL -}}
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+
+{{- if and (not $img) .Page.File -}}
+        {{ $path := path.Join .Page.File.Dir .Destination }}
+        {{- $img = resources.Get $path -}}
+{{- end -}}
+{{- with $img -}}
+
+<figure>
+<a href="{{ $img.RelPermalink }}" data-download="true">
+<img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height}}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+</a>
+<figcaption>{{ $.Text }}</figcaption>
+</figure>
+
+{{- end -}}
