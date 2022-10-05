@@ -1,6 +1,6 @@
 ---
 title: "Camera Review: Canon EOS Rebel T7"
-date: 2022-05-03
+date: 2022-10-05
 draft: true
 tags:
 - Camera
