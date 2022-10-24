@@ -25,6 +25,8 @@ This is a
 
 ## Image Quality
 
+The only frame of reference I have for this section is phone cameras, so apologises.
+
 ## Included Lens
 
 ## Video
