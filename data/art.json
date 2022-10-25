@@ -150,11 +150,116 @@
           ]
         },
         {
+          "year": 2021,
+          "pieces": [
+            {
+              "title": "FF7R Airbuster Fight",
+              "filename": "ff7r-airbuster-fight.webp"
+            },
+            {
+              "filename": "drawpile-snippet.webp"
+            },
+            {
+              "filename": "gun-lady.webp"
+            },
+            {
+              "filename": "swordlady-comp.webp"
+            }
+          ]
+        },
+        {
           "year": 2022,
           "pieces": [
             {
               "title": "Knocky-Chan",
               "filename": "knocky-chan.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "3D",
+      "description": "All of my 3D stuff!",
+      "years": [
+        {
+          "year": 2016,
+          "pieces": [
+            {
+              "title": "Lantern",
+              "filename": "lantern.webp"
+            },
+            {
+              "title": "Cool-looking Monitor",
+              "filename": "production-monitor.webp"
+            },
+            {
+              "title": "Spaceship",
+              "filename": "space.webp"
+            },
+            {
+              "title": "Sniper Rifle",
+              "filename": "sniper-rifle.webp"
+            }
+          ]
+        },
+        {
+          "year": 2017,
+          "pieces": [
+            {
+              "title": "Unfinished Samus Wallpaper",
+              "filename": "samus.webp"
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "pieces": [
+            {
+              "title": "Alley",
+              "filename": "alley.webp"
+            },
+            {
+              "title": "City Train",
+              "filename": "city-train.webp"
+            },
+            {
+              "title": "Glass",
+              "filename": "glass.webp"
+            },
+            {
+              "title": "Hallway",
+              "filename": "hallway.webp"
+            },
+            {
+              "title": "Lemon",
+              "filename": "lemon.webp"
+            },
+            {
+              "title": "Classroom",
+              "filename": "room.webp"
+            },
+            {
+              "title": "TV",
+              "filename": "tv.webp"
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "pieces": [
+            {
+              "title": "Sniper Girl",
+              "filename": "sniper-girl.webp"
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "pieces": [
+            {
+              "title": "Sakura (PC vs Quest poly)",
+              "filename": "pc-vs-quest.webp"
             }
           ]
         }
