@@ -85,3 +85,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
 }
+
+td {
+    text-align: center;
+}
