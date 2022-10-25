@@ -5,9 +5,7 @@ draft: false
 tags:
 - Swift
 - Procreate
-layout: "redirect"
-new-url: "/silica-viewer"
-featured: yes
+layout: "project"
 ---
 
 macOS app to view Procreate© Silica documents.
