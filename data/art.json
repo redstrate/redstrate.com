@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "name": "2D Art",
+      "name": "Finished Works",
       "description": "This is a collection of my “finished” work, sorted by year originally posted.",
       "years": [
         {
@@ -18,12 +18,30 @@
           "pieces": [
             {
               "title": "Sword Buying",
-              "filename": "sword.jpeg.webp"
+              "filename": "sword-buying.webp"
+            },
+            {
+              "title": "Girl Drinking Water",
+              "filename": "girl-drinking-water.webp"
             }
           ]
         },
         {
-          "year": 2019
+          "year": 2019,
+          "pieces": [
+            {
+              "title": "Chains",
+              "filename": "chains.webp"
+            },
+            {
+              "title": "Desert",
+              "filename": "desert.webp"
+            },
+            {
+              "title": "Eleanor",
+              "filename": "eleanor.webp"
+            }
+          ]
         },
         {
           "year": 2020,
@@ -33,6 +51,10 @@
               "filename": "knight.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/woman-knight",
               "pixiv_url": "https://www.pixiv.net/en/artworks/100096631"
+            },
+            {
+              "title": "Nook Cat",
+              "filename": "nook-cat.webp"
             }
           ]
         },
@@ -41,19 +63,19 @@
           "pieces": [
             {
               "title": "mari & asuka",
-              "filename": "eva.webp",
+              "filename": "mari-and-asuka.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/95031741",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mari-asuka"
             },
             {
               "title": "eva girls",
-              "filename": "eva.webp",
+              "filename": "eva-girls.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/94953596",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
             },
             {
               "title": "let's get fit!",
-              "filename": "Let's_Get_Fit!.webp",
+              "filename": "lets-get-fit.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/94953574",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/let-s-get-fit"
             }
@@ -94,9 +116,33 @@
             },
             {
               "title": "after the rain",
-              "filename": "summer-byleth.webp",
+              "filename": "after-the-rain.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/after-the-rain",
               "pixiv_url": "https://www.pixiv.net/en/artworks/97911950"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sketches",
+      "description": "More sketchy, incomplete but otherwise nice drawings I made!",
+      "years": [
+        {
+          "year": 2020,
+          "pieces": [
+            {
+              "title": "Miq'ote in a Swimsuit",
+              "filename": "miqote-swimsuit.webp"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "pieces": [
+            {
+              "title": "Knocky-Chan",
+              "filename": "knocky-chan.webp"
             }
           ]
         }

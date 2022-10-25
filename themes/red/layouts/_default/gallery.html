@@ -21,7 +21,7 @@
                         {{ if $.Params.thumbnails }}
                             {{ $title := .title }}
                             {{ with resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
-                            <img alt="{{ $title }}" width="128" height="128" src="{{ .Permalink }}"/>
+                            <img class="gallery-img" alt="{{ $title }}" width="128" height="128" src="{{ .Permalink }}"/>
                             {{ else }}
                             <p>Thumbnail not found!</p>
                             {{ end }}
