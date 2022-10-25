@@ -89,3 +89,7 @@ footer {
 td {
     text-align: center;
 }
+
+table {
+    width: 100%;
+}
