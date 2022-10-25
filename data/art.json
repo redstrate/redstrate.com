@@ -129,11 +129,23 @@
       "description": "More sketchy, incomplete but otherwise nice drawings I made!",
       "years": [
         {
+          "year": 2019,
+          "pieces": [
+            {
+              "filename": "sep-2019.webp"
+            }
+          ]
+        },
+        {
           "year": 2020,
           "pieces": [
             {
               "title": "Miq'ote in a Swimsuit",
               "filename": "miqote-swimsuit.webp"
+            },
+            {
+              "title": "Trainwatching",
+              "filename": "trainwatching.webp"
             }
           ]
         },

@@ -32,7 +32,9 @@
                     </a>
 
                     <figcaption>
-                        "{{ .title }}"
+                        {{ with .title }}
+                        "{{ . }}"
+                        {{ end }}
                         {{ if .newgrounds_url }}
                             <a href="{{ .newgrounds_url }}"><img alt="Newgrounds Icon" width="16" height="16" src="{{ $newgrounds_icon.Permalink }}"></a>
                         {{ end }}
