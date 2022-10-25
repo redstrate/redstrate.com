@@ -9,6 +9,7 @@ tags:
 
 Collection of FFXIV modding and data-mining tools.
 
+<!--more-->
 ---
 
 You can read more on it's dedicated webpage on xiv.zone.

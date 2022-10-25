@@ -14,7 +14,7 @@ featured: yes
 layout: "project"
 ---
 
-Cross-platform game engine specializing in the real-time rendering of physically-based graphics.
+My latest cross-platform game engine.
 
 <!--more-->
 ---

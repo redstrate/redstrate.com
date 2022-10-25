@@ -7,7 +7,7 @@ tags:
 - FFXIV
 ---
 
-Collection of FFXIV modding and data-mining tools. Rust-based, and aiming for a stable C API.
+Modding and data framework for FFXIV.
 
 <!--more-->
 ---
