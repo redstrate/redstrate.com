@@ -13,8 +13,9 @@
         {{ range sort .years "year" "desc" }}
             <h4>{{ .year }}</h4>
 
+            <div class="gallery-con">
             {{ range .pieces }}
-                <figure>
+                <figure class="gallery-fig">
                     {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
 
                     <a href="{{ $full.Permalink }}">
@@ -41,6 +42,8 @@
                     </figcaption>
                 </figure>
             {{ end }}
+
+            </div>
         {{ end }}
     {{ end }}
 {{ end }}

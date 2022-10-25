@@ -80,3 +80,8 @@ footer {
     border: 1px black solid;
     border-radius: 5px;
 }
+
+.gallery-con {
+    display: flex;
+    flex-wrap: wrap;
+}
