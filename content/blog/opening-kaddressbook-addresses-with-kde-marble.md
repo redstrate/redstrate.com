@@ -38,13 +38,13 @@ p = Point(loc.latitude, loc.longitude)
 print(p.format(deg_char='°', min_char='\'', sec_char=''))
 ```
 
-3. Then, simply click an address in KAddressBook and it'll open up in KDE Marble!
+3. Then, simply click an address in KAddressBook, and it'll open up in KDE Marble!
 
 ## More Details
 
 This is actually quite interesting, as I would think KAddressBook would have this functionality out of the box, however it is more work than you might think it is. First, KAddressBook stores the address of your contacts literally, like a string - it stores the Address, Region, and Location separately (this is the `%s`, `%l`, `%r` variables as shown above). However, KDE Marble only accepts longitude and latitude as command line arguments.
 
-So this is where Nominatim comes in, which as said before - is a service run by OpenStreetMap. It's API is extremely simple, which is perfect. I originally tried to only do this in Shell and CURL, but it turned out to be much easier just to use GeoPy and Python.
+So this is where Nominatim comes in, which as said before - is a service run by OpenStreetMap. Its API is extremely simple, which is perfect. I originally tried to only do this in Shell and CURL, but it turned out to be much easier just to use GeoPy and Python.
 
 ![KDE Marble without the extra arguments](/blog/img/kdemarble-faraway.png)
 

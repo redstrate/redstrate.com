@@ -25,7 +25,7 @@ the details.
 This is something I've been wanting to cover for a long time, because despite still being popular in games, there is very
 little information out there on how to accomplish this. For clarity, this is an extension of cubemap-based realtime (or offline) reflections
 using some kind of probe globally or locally. The main difference is for regular reflections, there is no concept of it occupying
-any real physical space, it's free-standing and doesn't look correct. For really rough or small reflections, it works okay but
+any real physical space, it's freestanding and doesn't look correct. For really rough or small reflections, it works okay but
 look at how it looks in a watery environment:
 
 And now with parallax-corrected:

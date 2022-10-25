@@ -27,8 +27,8 @@ Game engine which can render on top of the custom implemented RHI (Render Hardwa
 
 ### Silica Viewer: https://redstrate.com/projects/silica-viewer
 
-Written to fill my own niche of viewing art canvases from a propietary art program that only runs on iOS devices called Procreate. Initial software was implemented using knowledge gleaned from other open source projects (credited in the repository) but quickly evolved into a much more complex application, involving replicating the original Procreate drawing engine including clipping layers, rendering masks and blending modes. An existing PSD writing library (called PSDWriter) was modified in order to support the more complex feature set I needed. The app is also currently published on the macOS App Store.
+Written to fill my own niche of viewing art canvases from a proprietary art program that only runs on iOS devices called Procreate. Initial software was implemented using knowledge gleaned from other open source projects (credited in the repository) but quickly evolved into a much more complex application, involving replicating the original Procreate drawing engine including clipping layers, rendering masks and blending modes. An existing PSD writing library (called PSDWriter) was modified in order to support the more complex feature set I needed. The app is also currently published on the macOS App Store.
 
 ### Trinity: https://redstrate.com/projects/trinity
 
-Also written to fill a niche of a nice looking Matrix client that copied Discord's interface. Does not use any pre-existing Matrix library, and was written solely on the Matrix specification. Originally written in 2018, but I revived it in 2022 by implementing some basic end-to-end encryption support which involved using libolm - a cryptography library.
+Also written to fill a niche with a nice looking Matrix client that copied Discord's interface. Does not use any pre-existing Matrix library, and was written solely on the Matrix specification. Originally written in 2018, but I revived it in 2022 by implementing some basic end-to-end encryption support which involved using libolm - a cryptography library.

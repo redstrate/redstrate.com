@@ -17,4 +17,4 @@ There were many reasons why I ditched GitHub, a couple are detailed below:
 * GitHub is not [free software](https://drewdevault.com/2022/03/29/free-software-free-infrastructure.html).
 * Complexity in working, (this is my own fault) but having three remotes to worry about was getting in my way.
 
-I will also be retiring [git.ryne.moe](https://git.ryne.moe/) (as a code archive) in order to reduce friction while working. I plan on making changes so I can have it pull my changes on sourcehut automatically, but that will come later. If you're wondering why did I choose sourcehut over my own GitLab, it's mostly because I don't want to lose everything due to my own incompetence ;-)
+I will also be retiring [git.ryne.moe](https://git.ryne.moe/) (as a code archive) in order to reduce friction while working. I plan on making changes, so I can have it pull my changes on sourcehut automatically, but that will come later. If you're wondering why did I choose sourcehut over my own GitLab, it's mostly because I don't want to lose everything due to my own incompetence ;-)

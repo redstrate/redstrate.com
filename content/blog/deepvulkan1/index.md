@@ -11,7 +11,7 @@ tags:
 Hello and welcome to the first of many "Vulkan Deep Dives" I plan on writing this year. What are these?
 
 Well to put it simply, there is _a lot_ of Vulkan content on the Internet now. Which is great, but what ends up
-happening is that someone gets knee deep in writing their tutorial and end up losing steam once they get past the
+happening is that someone gets knee-deep in writing their tutorial and end up losing steam once they get past the
 "really basic 90%". This is stuff like initialization (boring), device creation (snooze), render passes (eugh) and pipeline creation (woo?).
 There is a **lot** of these kind of tutorials out there, and I don't want to add to that pile. What I want to do instead, is show
 you the 10% of your Vulkan renderer, the one that implements these cool techniques! I will also cover how
@@ -21,7 +21,7 @@ Today we'll be covering PCSS, or Percentage Close Soft Shadows.
 
 ## Theory
 
-For most naive soft shadow mapping techniques, there is usually a PCF or other similiar kernel
+For most naive soft shadow mapping techniques, there is usually a PCF or other similar kernel
 applied uniformly to the whole map. This works if the shadows are far away, and not supposed to be
 extremely detailed, but as games are becoming more "realistic" and the camera zooms farther and farther in - this becomes an issue.
 
@@ -37,7 +37,7 @@ I recommend reading the paper beforehand, as it's an incredibly simple technique
 * Use manually adjusted light sizes.
 
 The first and last points are extremely easy, use a 32-bit floating point depth map, and you must be able to 
-pass another light parameter to your shader. Where it get's interesting is how PCSS actually determines how to make
+pass another light parameter to your shader. Where it gets interesting is how PCSS actually determines how to make
 shadows soft, or hard.
 
 <example PCSS>
@@ -63,9 +63,9 @@ in darkness!
 Alright, that's enough - we care about soft shadowing. If you remember, the farther away from the object, the softer
 the shadow should be. Actually, let's call that object the "blocker". PCSS is broken up into these steps:
 
-* Find the blocker for that pixel/fragment. This is of course, impossible so we get the average.
+* Find the blocker for that pixel/fragment. This is of course, impossible, so we get the average.
     * The search width is dependent on the light size, which is tied to how large your shadow map is.
-* If there is something blocking, then we must figure out the proper shadow penumbra, based off of the (average) blocker depth
+* If there is something blocking, then we must figure out the proper shadow penumbra, based off of the (average) blocker depth,
   and then we calculate a proper filter radius.
 * Pass this new filter radius to PCF, or your favorite kernel .
 
@@ -76,12 +76,12 @@ And the results are _amazing_, let's take a look at a comparison between hard sh
 Just this small change to calculate the blocker average depth gives a ton of realism to the scene, even
 when nothing else has changed. However, there is a couple of drawbacks:
 
-* The PCSS whitepaper only covers sun-type, infinite distance lights. How does PCSS integrate into say, point and spot lights?
+* The PCSS whitepaper only covers sun-type, infinite distance lights. How does PCSS integrate into say, point and spotlights?
 * What is the cost of running PCSS compared to PCF?
 * What is the correct "light size"?
 
 Unfortunately the PCSS paper only covers light sources that are assumed to be infinitely far away, which is fine
-but this technique is useful for things like spot lights. Thankfully, I have the relevant code below:
+but this technique is useful for things like spotlights. Thankfully, I have the relevant code below:
 
 
 There are a few changes related to removing the parallel plane estimation, and the changes you have to make
@@ -99,8 +99,8 @@ However, a word of warning, this is _extremely_ expensive. Let's do some really 
 
 PCSS is _not_ cheap, and should be used sparingly. If you only apply it to just the main sun lamp in your
 scene, it would easily be real-time - but scaling it to every kind of light will easily slow everything down. As shown,
-point lights increase your depth samples by 1200%! Of course you might turn down the samples, but imagien having even one more
-point light in your scene. This is a similiar problem with PCF applied to point lights,
+point lights increase your depth samples by 1200%! Of course, you might turn down the samples, but imagien having even one more
+point light in your scene. This is a similar problem with PCF applied to point lights,
 but it is exacerbated with PCSS since we are easily doubling the samples or more.
 
 When it comes to light size, it is not physically based but instead another knob or artists.
@@ -109,5 +109,5 @@ When it comes to light size, it is not physically based but instead another knob
 
 PCSS is an extremely easy way to increase realism for your shadows, but at a possibly heavy
 cost. I highly recommend implementing it into your engine, but definitely watch how many samples
-it's using. Using it for point lights and spot lights result in great
+it's using. Using it for point lights and spotlights result in great
 looking scenery but is still not really possible in real-time.

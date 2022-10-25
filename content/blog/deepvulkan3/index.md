@@ -15,7 +15,7 @@ we're just worrying about a Vulkan implementation here.
 
 ## How SMAA Works
 
-Compared to FXAA, SMAA requires extra post processing passes, let's go over all of them and their purpose.
+Compared to FXAA, SMAA requires extra post-processing passes, let's go over all of them and their purpose.
 
 ## Implementation
 

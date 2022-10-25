@@ -20,7 +20,7 @@ and want to give you the nitty gitty, especially for those who don't know what a
 
 Let's begin by making a very simple Vulkan program, say - drawing a triangle. This is good because it covers a lot of
 interesting stuff, picking a device to draw with, creating pipelines, render passes and issuing a draw call. I specifically
-picked Vulkan for this article _because_ it makes swapchain managment explicit which will be covered later.
+picked Vulkan for this article _because_ it makes swapchain management explicit which will be covered later.
 
 So the first thing that should be noted is that under most circumstances, the first system in line when you call a Vulkan function
 is actually not related to Linux graphics at all. It is called the Vulkan Loader.
@@ -28,7 +28,7 @@ is actually not related to Linux graphics at all. It is called the Vulkan Loader
 _Note:_ This is true in most cases, but in some systems (say, a Nintendo Switch) you might link directly to the driver's Vulkan library.
 
 The Vulkan Loader has a few jobs, but the one that is relevant to us is that handles ICDs. An ICD is an "Installable Client Driver",
-because Vulkan is not specific to one vendor - and one system may have devices from multiple vendors (say, a integrated Intel
+because Vulkan is not specific to one vendor - and one system may have devices from multiple vendors (say, an integrated Intel
 chipset and a dedicated AMD or Nvidia GPU), the Vulkan loader must send the right function calls to the right ICDs. The loader
 also has a couple of more important jobs such as handling layers, but that is Vulkan-specific and will not be covered.
 
@@ -108,7 +108,7 @@ and the Mesa stack is our userspace driver. Specifically, we care about RADV.
 
 ### Mesa Drivers
 
-Mesa comes with many drivers, which confusingly can be mix and matched because they handle supporting different APIs.
+Mesa comes with many drivers, which confusingly can be mixed and matched because they handle supporting different APIs.
 
 * RADV is their AMD driver _for_ Vulkan. It has nothing to do with OpenGL support for this hardware (unless you use Zink ;-))
 * ANV is their Intel driver _for_ Vulkan. As usual, it has nothing to do with OpenGL support for Intel chipsets.
@@ -173,13 +173,13 @@ If we take a look at the Mesa RADV `meson.build` we get our answer:
 
 Jackpot! This `dep_libdrm_amdgpu` bit is specifically referring to the libdrm project under the Mesa umbrella (https://gitlab.freedesktop.org/mesa/drm)
 To get more confusing, this is _not_ DRM (the Linux subsystem) but rather a library sitting on top of it. Yes, really. To get even more
-confusing, freedesktop.org also calls this library DRI for some reason. I told you the acronyms were going to get really bad.
+confusing, freedesktop.org also calls this library DRI for some reason. I told you the acronyms were going to get awful.
 
-So, the Mesa RADV driver doesn't interface with the kernel directly, but rather access all of the AMD-related
+So, the Mesa RADV driver doesn't interface with the kernel directly, but rather access all the AMD-related
 gubbins _through_ libdrm.
 
 I won't be covering how the AMDGPU kernel driver actually works, partially because I don't know but the main idea is that
-it basically operates on top of some propietary firmware that's loaded on startup for the GPU. The DRM kernel driver is basically
+it basically operates on top of some proprietary firmware that's loaded on startup for the GPU. The DRM kernel driver is basically
 responsible for creating a suitable interface, initializing firmware, memory and doing I/O between that and the userspace.
 
 ## Windowing
@@ -188,16 +188,16 @@ This is a huge topic just by itself, but it's incredibly interesting as everythi
 either running your Vulkan program without any graphics output (_specifically_ presentation, as you can totally run the graphics
 part of Vulkan headless).
 
-For _brevity_ sake, and because there's already a lot of X11 information out there - I want to cover what specifically
+For _brevity’s_ sake, and because there's already a lot of X11 information out there - I want to cover what specifically
 happens on **Wayland**. This is especially troubling because there is a lot of misinformation on the web, especially around Wayland.
 
 ### On the Vulkan Side
 
-Let's momentarily mention what exactly you need to do on Vulkan to get presentation working. We'll keep this short but
+Let's momentarily mention what exactly you need to do on Vulkan to get presentation working. We'll keep this short, but
 it's important to get our bearings straight.
 
 This may be a surprise to some, but Vulkan has nothing to do with presentation. This is pretty on par with Khronos APIs
-actually, as OpenGL also did not concern itself with presentation (GLX, EGL, and other similiar stuff is _not_ related).
+actually, as OpenGL also did not concern itself with presentation (GLX, EGL, and other similar stuff is _not_ related).
 
 In Vulkan, to get presentation you must enable a device extension, specifically `VK_KHR_swapchain`. This is not the only
 piece of the puzzle, as you also need a surface to render to. There is a lot of options, but we are only concerning ourselves with two:

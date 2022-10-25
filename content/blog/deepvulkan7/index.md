@@ -21,7 +21,7 @@ will go over more than just that here.
 
 When I first attempted to implement transform handles, I _struggled_. Since then, there has
 been a few articles going over how to implement transform handles but none of them I really liked,
-as I could copy and paste code from them all day but I still don't understand the math behind it.
+as I could copy and paste code from them all day, but I still don't understand the math behind it.
 
 ### Theory
 
@@ -55,13 +55,13 @@ handling this:
 ## Graphical Interface
 
 This is something not strictly graphics related, but I want to point out some common choices
-for building the user interface outside of the viewport.
+for building the user interface outside the viewport.
 
 ### Qt
 
 Qt is still a popular choice for building editor programs, for example - Source Filmmaker and the Source 2 SDK.
 
-However there is a huge upfront cost related to Qt, it requires a _lot_ of code to get running. Once you do the hard work though,
+However, there is a huge upfront cost related to Qt, it requires a _lot_ of code to get running. Once you do the hard work though,
 it's an extremely robust, supported and battle tested user interface. Performance is almost never an issue, and it supports
 a lot of platforms out of the box. 
 
@@ -79,7 +79,7 @@ While "dear imgui" is suited to debug UIs for developers, it tends to fall apart
 however it is continuing to keep improving in this regard, especially with the docking branch.
 With enough work, it can get pretty enough too, which you check out in the screenshot thread.
 
-However remember that it is meant for debugging UI's, so including images, icons, among other smaller
+However, remember that it is meant for debugging UI's, so including images, icons, among other smaller
 UI elements are more of an afterthought. For many developers though, that's an okay trade-off for how
 easy it is to develop for.
 

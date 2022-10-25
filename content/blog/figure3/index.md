@@ -20,13 +20,13 @@ it has a nice photo on the back, and a nice background. After taking her out, yo
 
 <picture of accessories>
 
-Yes, for some reason all of the bits on the bottom are seperated. I'm no figure maker, but it's
+Yes, for some reason all the bits on the bottom are seperated. I'm no figure maker, but it's
 really strange that they were removable in the first place. I guess if someone doesn't want them on the figure sure, but
-they're small enough in the first place and _they still have imprints on the sand_, I'm just really
+they're small enough in the first place, and _they still have imprints on the sand_, I'm just really
 confused why they weren't just glued on. Anyway, the figure itself:
 
 The figure is really well sculpted, and I like the material _a lot_. It's of those weirdly
-textured PVCs they like to use in more expensive figures, that feels like it's _soft_ almost but it's clearly just plastic.
+textured PVCs they like to use in more expensive figures, that feels like it's _soft_ almost, but it's clearly just plastic.
 Just like other figures of this caliber, they take some liberties in the proportions of Ryza, namely making her more "human sized" and
 making her head less large, which makes her body look bigger. I kind of wish Ryza looked like this in the second game, which is _supposed_ to be 3
 years after the first one, yet it just looks like she's in a different out. Curiously Ryza 3 fixes this issue, but that's only

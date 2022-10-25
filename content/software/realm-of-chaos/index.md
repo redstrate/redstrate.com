@@ -16,7 +16,7 @@ Rogue-like game with a couple of interesting features.
 <!--more-->
 ---
 
-This is my attempt at building a rogue-like game for the first time, but I'm pretty happy with it's feature set. The whole thing is still full of programmer art.
+This is my attempt at building a rogue-like game for the first time, but I'm pretty happy with its feature set. The whole thing is still full of programmer art.
 
 ![Screenshot of one the game areas](screenshot.webp)
 

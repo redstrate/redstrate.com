@@ -1,5 +1,5 @@
 ---
-title: "Steam Offline Achivements and Why They Sometimes Don't work"
+title: "Steam Offline Achievements and Why They Sometimes Don't work"
 date: 2022-10-05
 draft: true
 tags:
@@ -19,11 +19,11 @@ once you enter Online Mode again. This is fine, and it's been working this way f
 
 ## What doesn't work
 
-However in some cases, it doesn't always end up this way. Let's take for example, Nier Automata
+However, in some cases, it doesn't always end up this way. Let's take for example, Nier Automata
 as this is what tipped me off to this issue. I sometimes take my Steam Deck willingly offline because
 I share my library with my girlfriend, but remember that this will happen sooner or later on a handheld. I haven't
 gotten too far on the PC version of Automata, so I'm still in the beginning part of the game. I enter the Amusement Park and 
-beat the boss there, and much to my surprise.... nothing? Now I normally don't get too worked up about achivements but it's
+beat the boss there, and much to my surprise.... nothing? Now I normally don't get too worked up about achivements, but it's
 kind of insane that I earned one, and now I have no easy way to get it back without cheating or restarting the game again. Eugh. Let's figure out what's going on.
 
 ## Theory
@@ -40,10 +40,9 @@ INSERT IMAGE
 
 ## Reverse Engineering
 
-First, we need to break the Steam DRM. The DRM is quite simple, and it's been broken before. Much more knowledgable people
-have written up about this format, but in short the actual executable is wrapped within a Steam stub that checks whether
-or not it's launched through Steam and then decrypts the binary.
+First, we need to break the Steam DRM. The DRM is quite simple, and it's been broken before. Much more knowledgeable people
+have written up about this format, but in short the actual executable is wrapped within a Steam stub that checks whether it's launched through Steam and then decrypts the binary.
 
-I tried Steamless to decrpyt the game, but that didn't work, so I opted to dump the binary when the game was running. Then,
-I threw the execuable into Ghidra:
+I tried Steamless to decrypt the game, but that didn't work, so I opted to dump the binary when the game was running. Then,
+I threw the executable into Ghidra:
 

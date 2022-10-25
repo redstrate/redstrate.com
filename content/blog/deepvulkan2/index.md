@@ -38,7 +38,7 @@ Logs are very important, but some don't know that you can get more information f
 
 Paying attention to shader warnings is also important, as it might point out stuff like missing shader inputs.
 
-How you enable logs depends on how you compile your shaders. If you use GLSlang, simply get the log out:
+How you enable logs depends on how you compile your shaders. If you use GLSlang, simply get the log-out:
 
 ```cpp
 ```
@@ -79,7 +79,7 @@ back out on the host.
 
 ## Example 1
 
-Now let's dig into a real-world examples of how to use all of the methods above to our advantage to solve
+Now let's dig into a real-world examples of how to use all the methods above to our advantage to solve
 tough graphics issues. For this first example, lets begin with the most common issue - nothing is displaying on
 the screen! If you can, run the example code and work through it yourself. If you're new to this, I recommend attempting to find solution first before spoiling yourself.
 
@@ -92,7 +92,7 @@ are printed to stdout. As you can see, I already see an issue:
 validation error: blah blah
 ```
 
-Alright, so let's dig into the source code and figure out where this error might be coming from. Thankfully, I used object naming
+Alright, so let's dig into the source code and figure out where this error might be coming from. Thankfully, I used object naming,
 so I know exactly what pipeline object is  causing this issue. It is on L1221:
 
 ```cpp
@@ -107,7 +107,7 @@ pipeline.alrisaffa = VK_TRUE;
 
 Alright, so we fixed that issue - but it's still black! Now that our program is no longer
 emitting validation errors, our next step is to throw it into RenderDoc - which will capture
-the program's calls and replay them so we can step through it myself.
+the program's calls and replay them, so we can step through it myself.
 
 <renderdoc img>
 
@@ -153,7 +153,7 @@ RenderDoc a little more closely.
 
 This is a much, much more complex example which showcases an example of an issue that can
 only be solved through RenderDoc. Download the example application source code,
-compile it and you will discover a very obvious graphical artifact:
+compile it, and you will discover a very obvious graphical artifact:
 
 <img1>
 

@@ -16,5 +16,5 @@ Mastodon to Twitter cross-poster!
 <!--more-->
 ---
 
-This is one of my first Go and Twitter projects, and i'm actually using it
+This is one of my first Go and Twitter projects, and I'm actually using it
 for [@redstrate](https://www.twitter.com/redstrate)!

@@ -17,7 +17,7 @@ to Metal using [MoltenVK](https://github.com/KhronosGroup/MoltenVK). <!--more-->
 
 To clarify, Prism running on macOS is nothing new. In fact, a large portion of the engine was
 developed natively on macOS using Metal. Vulkan was actually added after the fact, and since I already had plenty of
-Vulkan experience it was no trouble. I initially chose to use Metal natively (over MoltenVK at the time) because the tooling was still too new, and I wanted to learn Metal. However something big has come along since then, the rise of the [Vulkan Portability Initiative](https://www.vulkan.org/portability)!
+Vulkan experience it was no trouble. I initially chose to use Metal natively (over MoltenVK at the time) because the tooling was still too new, and I wanted to learn Metal. However, something big has come along since then, the rise of the [Vulkan Portability Initiative](https://www.vulkan.org/portability)!
 
 ![Vulkan Portability Logo](/blog/img/Vulkan-Portability.svg)
 
@@ -25,12 +25,12 @@ The biggest thing to come out of this is the introduction of _first class macOS 
 
 ![Screenshot of Vulkan configurator running on macOS](/blog/img/vkconfig-mac.png)
 
-What does this mean for Prism? .. Not much yet except that it's awesome that it works pretty much of the box. However for any future graphics endaveours for me **I unfortunately won't be supporting Metal anymore**, there just isn't a reason to. I learned as much Metal as I wanted, and the Metal backend fullfilled that purpose. However, there's still a purpose to abstracting GFX away in Prism, _to make way for DirectX support_ :-)
+What does this mean for Prism? Not much yet except that it's awesome that it works pretty much of the box. However, for any future graphics endaveours for me, **I unfortunately won't be supporting Metal anymore**, there just isn't a reason to. I learned as much Metal as I wanted, and the Metal backend fulfilled that purpose. However, there's still a purpose to abstracting GFX away in Prism, _to make way for DirectX support_ :-)
 
 ---
 
 By the way, I would be interested to see if anyone develops a Vulkan Portable Subset -> WebGPU translation layer (maybe implementing it as a vulkan driver ala MoltenVK?) This would be amazing, but I have yet to find
-anyone interested in doing this. I would be especially interested as I'm not interested in learning _yet another_ API with it's own quirks, and... WSL - ugh. ~~Insert XKCD comic reference here~~
+anyone interested in doing this. I would be especially interested as I'm not interested in learning _yet another_ API with its own quirks, and... WSL - ugh. ~~Insert XKCD comic reference here~~
 
 ---
 
