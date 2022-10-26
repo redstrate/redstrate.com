@@ -28,7 +28,7 @@ have any intermediate experience in graphics development, you're probably scream
 
 To solve this issue, smarter people have figured out the way to avoid these issues is two-fold:
 
-* Limit the size of the bokeh to a balanace between reasonably looking, and performant.
+* Limit the size of the bokeh to a balance between reasonably looking, and performant.
 * Split the bokeh fields into near and far fields.
 
 

@@ -14,7 +14,7 @@ teaching here:
 
 _Parallax-corrected_ reflections and _Real-time_ Image-based Lighting. In most tutorials, they might cover
 simple screen space reflections, or if you're lucky - cubemap-based solutions. Most image-based lighting tutorials also
-limit themselves to existing HDRIs for simplicty, but doing it in real-time or offline when building levels
+limit themselves to existing HDRIs for simplicity, but doing it in real-time or offline when building levels
 is arguably the more popular option in games, so it's harder to figure out that yourself. As always, let's dig in!
 
 Although I'm covering two topics this time, I did it because they're tangentially related, but I won't be compromising on

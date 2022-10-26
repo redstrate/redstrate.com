@@ -99,7 +99,7 @@ However, a word of warning, this is _extremely_ expensive. Let's do some really 
 
 PCSS is _not_ cheap, and should be used sparingly. If you only apply it to just the main sun lamp in your
 scene, it would easily be real-time - but scaling it to every kind of light will easily slow everything down. As shown,
-point lights increase your depth samples by 1200%! Of course, you might turn down the samples, but imagien having even one more
+point lights increase your depth samples by 1200%! Of course, you might turn down the samples, but imagine having even one more
 point light in your scene. This is a similar problem with PCF applied to point lights,
 but it is exacerbated with PCSS since we are easily doubling the samples or more.
 

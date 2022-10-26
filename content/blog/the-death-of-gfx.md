@@ -25,7 +25,7 @@ The biggest thing to come out of this is the introduction of _first class macOS 
 
 ![Screenshot of Vulkan configurator running on macOS](/blog/img/vkconfig-mac.png)
 
-What does this mean for Prism? Not much yet except that it's awesome that it works pretty much of the box. However, for any future graphics endaveours for me, **I unfortunately won't be supporting Metal anymore**, there just isn't a reason to. I learned as much Metal as I wanted, and the Metal backend fulfilled that purpose. However, there's still a purpose to abstracting GFX away in Prism, _to make way for DirectX support_ :-)
+What does this mean for Prism? Not much yet except that it's awesome that it works pretty much of the box. However, for any future graphics endeavours for me, **I unfortunately won't be supporting Metal anymore**, there just isn't a reason to. I learned as much Metal as I wanted, and the Metal backend fulfilled that purpose. However, there's still a purpose to abstracting GFX away in Prism, _to make way for DirectX support_ :-)
 
 ---
 

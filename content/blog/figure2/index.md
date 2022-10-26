@@ -38,7 +38,7 @@ The Pod included in the deluxe version is pretty cool, and even posable. 2B hers
 ![POD](pod.webp)
 ![back](cool-back.webp)
 
-And here's a couple of more photos, specificially on the deluxe version, and it's exclusive self-destructing feature:
+And here's a couple of more photos, specifically on the deluxe version, and it's exclusive self-destructing feature:
 
 ![front](deluxe-front.webp)
 ![back](deluxe-back.webp)

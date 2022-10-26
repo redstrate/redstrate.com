@@ -212,7 +212,7 @@ We'll be exclusively talking about how Vulkan applications under Wayland functio
 One will be through a typical desktop environment - in this case - KDE Plasma as well as a more barebones example, bare KMS.
 For both cases I will be using SDL2 instead of interacting with the Wayland layer itself,
 which will be the case for many games. This does not change much though, because unlike OpenGL - SDL2 does not really interact
-or intecept Vulkan functionality, apart from creating a Vulkan surface.
+or intercept Vulkan functionality, apart from creating a Vulkan surface.
 
 I chose these two situations because one is your more typical desktop environment, where the compositor has to juggle many
 windows vying for presentation. The bare KMS example is more relevant to something like a game system, and we can see if

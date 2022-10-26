@@ -89,7 +89,7 @@ Now everything is `snake_case`, following the function naming I'm already using.
 
 In the short term I want to keep working on polishing the Vulkan stuff, so I can eventually start working on some cooler things like VR support. I also plan to keep working on the example app more, so it can serve as a better showcase.
 
-Some longer-term goals include DirectX support, an Android version, and eventually some form of raytracing/global illumination. I also want some easily accessible online documentation, leveraging the preexisting doxy docs that are included in the source code already.
+Some longer-term goals include DirectX support, an Android version, and eventually some form of raytracing/global illumination. I also want some easily accessible online documentation, leveraging the preexisting docs that are included in the source code already.
 
 Very soon I plan on working on the CI stuff some more so releases can be automatically built and published which would really help testing this on other people's machines (and also stop me from breaking other platform builds!)
 

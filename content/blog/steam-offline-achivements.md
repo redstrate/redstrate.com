@@ -7,7 +7,7 @@ tags:
 ---
 
 If you've been paying attention these last couple of months, the Steam Deck is now in people's hands
-and peple are starting to discover how bad Steam Offline mode is. Thankfully Valve is improving the situation
+and people are starting to discover how bad Steam Offline mode is. Thankfully Valve is improving the situation
 in every update but there is one thing they cant fix: Why do some games require you to be online for achievements
 and some don't?
 
@@ -23,7 +23,7 @@ However, in some cases, it doesn't always end up this way. Let's take for exampl
 as this is what tipped me off to this issue. I sometimes take my Steam Deck willingly offline because
 I share my library with my girlfriend, but remember that this will happen sooner or later on a handheld. I haven't
 gotten too far on the PC version of Automata, so I'm still in the beginning part of the game. I enter the Amusement Park and 
-beat the boss there, and much to my surprise.... nothing? Now I normally don't get too worked up about achivements, but it's
+beat the boss there, and much to my surprise.... nothing? Now I normally don't get too worked up about achievements, but it's
 kind of insane that I earned one, and now I have no easy way to get it back without cheating or restarting the game again. Eugh. Let's figure out what's going on.
 
 ## Theory

@@ -26,7 +26,7 @@ This is one of the few times that I think the figure looks much better than it d
 
 The materials are surprisingly decent, and it has a nice premium feel to it, but she doesn't end up looking too glossy. The paint
 job is also well done on mine, even on and behind the glasses. In my photos, you can see the glasses have the whole thing filled in
-with transparent plastic, which is something not a lot of ther Mari figures do. Unfortunately, this figure has a structural issue on the hair, which required me to glue it back on (hopefully I got it looking "just right"!)
+with transparent plastic, which is something not a lot of these Mari figures do. Unfortunately, this figure has a structural issue on the hair, which required me to glue it back on (hopefully I got it looking "just right"!)
 
 The pose is excellent as well, it captures the "playful" aspect of her character, and it doesn't look "stiff" like many Eva figures fall into the trap of. The base has a multicolored effect to it, and is very reflective as you can see in the photos. Unfortunately, it also collects fingerprints.
 

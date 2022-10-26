@@ -31,7 +31,7 @@ I recently was able to get a [nice Windows setup going](https://knockout.chat/th
 In an effort to reduce my usage of Objective-c in the Metal backend, the whole backend is now C++ and uses metal-cpp which is Apple's official C++ wrapper. It works pretty great, and now my static analysis tools work great with it too.
 
 ### Move to sourcehut
-Prism now is primarily hosted on sourcehut, with mirrors on GitHub and ryne.moe. This is a pretty important goal for reducing my need on centralized serivces, and I'll be putting in some work to move off of GitHub wiki as well - just like I did with astra.
+Prism now is primarily hosted on sourcehut, with mirrors on GitHub and ryne.moe. This is a pretty important goal for reducing my need on centralized services, and I'll be putting in some work to move off of GitHub wiki as well - just like I did with astra.
 
 ### Multiple GFX support
 There is now support for using more than one GFX backend (although not at the same time), and is now supported by the SDL backend and the offline shader compiler will automatically pick out which shader files to compile for you. This is important, as some platforms are now capable of using more than one. Right now, the priority is as follows:
