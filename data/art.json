@@ -47,14 +47,14 @@
           "year": 2020,
           "pieces": [
             {
-              "title": "woman knight",
-              "filename": "knight.webp",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/woman-knight",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/100096631"
-            },
-            {
               "title": "Nook Cat",
               "filename": "nook-cat.webp"
+            },
+            {
+              "title": "let's get fit!",
+              "filename": "lets-get-fit.webp",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/94953574",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/let-s-get-fit"
             }
           ]
         },
@@ -74,10 +74,10 @@
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
             },
             {
-              "title": "let's get fit!",
-              "filename": "lets-get-fit.webp",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/94953574",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/let-s-get-fit"
+              "title": "woman knight",
+              "filename": "knight.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/woman-knight",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100096631"
             }
           ]
         },
