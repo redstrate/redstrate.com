@@ -89,9 +89,20 @@ footer {
     border-radius: 5px;
 }
 
+figure {
+    flex-grow: 1;
+    text-align: center;
+    margin: 25px;
+}
+
+figure figcaption {
+    text-align: center;
+}
+
 .gallery-con {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid gray;
 }
 
 td {
