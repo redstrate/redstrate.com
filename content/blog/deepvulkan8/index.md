@@ -9,6 +9,7 @@ tags:
 ---
 
 Before we get into the technique we'll implement later, let's take a look down memory lane with depth of field in games:
+<!--more-->
 
 ## Theory
 

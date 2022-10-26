@@ -7,8 +7,9 @@ tags:
 - Review
 ---
 
-It's time for another figure review, this time with Ryza! Funnily enough, this figure
-actually convinced me to try Atelier Ryza (1) again, which runs great on the Steam Deck thanks
+It's time for another figure review, this time with Ryza!
+<!--more-->
+Funnily enough, this figure actually convinced me to try Atelier Ryza (1) again, which runs great on the Steam Deck thanks
 to the atelier-sync-fix created by doujistin, who created DXVK. Games aside, here's the figure.
 
 The figure is around average price ($150) and was already released by the time I got around to purchasing it.

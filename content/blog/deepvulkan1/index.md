@@ -9,7 +9,7 @@ tags:
 ---
 
 Hello and welcome to the first of many "Vulkan Deep Dives" I plan on writing this year. What are these?
-
+<!--more-->
 Well to put it simply, there is _a lot_ of Vulkan content on the Internet now. Which is great, but what ends up
 happening is that someone gets knee-deep in writing their tutorial and end up losing steam once they get past the
 "really basic 90%". This is stuff like initialization (boring), device creation (snooze), render passes (eugh) and pipeline creation (woo?).

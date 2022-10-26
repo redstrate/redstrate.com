@@ -9,7 +9,9 @@ tags:
 ---
 
 Culling is an important part of modern graphics, you definitely don't want anything you aren't looking at wasting
-valuable resources. Now wait... what's the purpose of doing it ourselves? I think I read somewhere that GPUs will cull
+valuable resources.
+<!--more-->
+Now wait... what's the purpose of doing it ourselves? I think I read somewhere that GPUs will cull
 objects itself, and won't try to rasterize them...
 
 ## Theory

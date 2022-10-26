@@ -8,9 +8,10 @@ tags:
 - Deep Dive
 ---
 
-This topic is
-something that trips a lot of developers up, and they don't really know where to look, or don't know how to use existing
-tools properly. Even worse, is that a lot of 
+This is a topic that trips a lot of developers up, and they don't really know where to look, or don't know how to use existing
+tools properly.
+<!--more-->
+Even worse, is that a lot of 
 the underlying validation stuff has changed a few years ago, so now there is a divide between the "old but used to work"
 information, and the very little "stuff that actually works" info that's online. Let's solve both issues today.
 

@@ -7,7 +7,9 @@ tags:
 ---
 
 If you've been paying attention these last couple of months, the Steam Deck is now in people's hands
-and people are starting to discover how bad Steam Offline mode is. Thankfully Valve is improving the situation
+and people are starting to discover how bad Steam Offline mode is.
+<!--more-->
+Thankfully Valve is improving the situation
 in every update but there is one thing they cant fix: Why do some games require you to be online for achievements
 and some don't?
 

@@ -9,7 +9,9 @@ tags:
 ---
 
 You might be wondering why I'm covering reflections and IBLs in this series, as there
-is tutorials covering these already online. However, there is two important distinctions in what I'm
+is tutorials covering these already online.
+<!--more-->
+However, there is two important distinctions in what I'm
 teaching here:
 
 _Parallax-corrected_ reflections and _Real-time_ Image-based Lighting. In most tutorials, they might cover

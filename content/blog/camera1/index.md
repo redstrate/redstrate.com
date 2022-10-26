@@ -8,8 +8,9 @@ tags:
 - Review
 ---
 
-Alright so I'm trying to do something new, and review a camera. I don't plan on buying another camera
-body right now, so I cannot compare to any other cameras. This is just my experience with it as I've
+Alright so I'm trying to do something new, and review a camera.
+<!--more-->
+I don't plan on buying another camera  body right now, so I cannot compare to any other cameras. This is just my experience with it as I've
 had this camera for many months now.
 
 ## Verdict

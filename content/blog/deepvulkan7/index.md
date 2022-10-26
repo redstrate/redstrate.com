@@ -9,7 +9,9 @@ tags:
 ---
 
 Building editor and mod tools is something I never expected to find so enjoyable, and
-it's another rabbit hole of endless programming goals. However, there is a distinct lack
+it's another rabbit hole of endless programming goals.
+<!--more-->
+However, there is a distinct lack
 of editor-focused graphics tutorials. Transform handles especially are troublesome, but we
 will go over more than just that here.
 

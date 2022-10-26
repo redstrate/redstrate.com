@@ -9,7 +9,9 @@ tags:
 ---
 
 The Linux graphics stack is a complex mechanism of many, many projects that function together to
-deliver images to your screen. Since other operating systems hide this away from you, we fortunately have Linux to look
+deliver images to your screen.
+<!--more-->
+Since other operating systems hide this away from you, we fortunately have Linux to look
 at for how a desktop system might deliver graphics.
 
 You probably noticed this already, but this is a very long article. The idea is to give you a true "vertical slice" of a
