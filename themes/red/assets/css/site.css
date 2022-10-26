@@ -109,6 +109,10 @@ td {
     text-align: center;
 }
 
+tr:nth-child(even) {
+    background-color: #e2d9d9;
+}
+
 table {
     width: 100%;
 }
