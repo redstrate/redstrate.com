@@ -9,6 +9,8 @@ tags:
 - Java
 - Game
 layout: "project"
+aliases:
+- /projects/watersymbol
 ---
 
 Fire Emblem clone for a course final project.

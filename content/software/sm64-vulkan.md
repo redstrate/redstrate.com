@@ -1,15 +1,14 @@
 ---
-title: "Novus"
-date: 2022-01-05
+title: "SM64-Vulkan"
+date: 2022-10-03
 draft: false
 layout: "project"
 tags:
-- FFXIV
-aliases:
-- /projects/novus
+- SM64
+- N64
 ---
 
-Collection of FFXIV modding and data-mining tools.
+My fork of sm64-port
 
 <!--more-->
 ---

@@ -8,6 +8,8 @@ tags:
 - C++
 - Qt
 layout: "project"
+aliases:
+- /projects/trinity
 ---
 
 Discord-like Matrix client using QML and Qt.

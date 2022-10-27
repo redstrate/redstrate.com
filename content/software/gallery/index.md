@@ -10,6 +10,8 @@ tags:
 - iOS
 - macOS
 layout: "project"
+aliases:
+- /projects/gallery
 ---
 
 Local booru for macOS and iOS devices.

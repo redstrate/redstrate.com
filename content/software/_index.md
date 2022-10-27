@@ -1,5 +1,7 @@
 ---
 title: "Software"
+aliases:
+- /projects
 ---
 
 This is a list of the software I have created and shared, I believe in the spirit of open-source software as well, so

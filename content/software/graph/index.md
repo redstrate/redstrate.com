@@ -10,6 +10,8 @@ tags:
 - Vulkan
 - Qt
 layout: "project"
+aliases:
+- /projects/graph
 ---
 
 Game engine utilizing Vulkan and Qt.

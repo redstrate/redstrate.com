@@ -8,6 +8,8 @@ tags:
 - C++
 - 3D
 layout: "project"
+aliases:
+- /projects/raytracer
 ---
 
 CPU raytracer.

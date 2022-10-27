@@ -11,6 +11,8 @@ resources:
 - src: img/output.png
   name: Screenshot
 layout: "project"
+aliases:
+- /projects/chip8
 ---
 
 Basic Chip-8 emulator.

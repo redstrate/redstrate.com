@@ -9,6 +9,8 @@ tags:
 - C++
 - Game 
 layout: "project"
+aliases:
+- /projects/realm-of-chaos
 ---
 
 Rogue-like game with a couple of interesting features.

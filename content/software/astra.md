@@ -6,6 +6,8 @@ layout: "project"
 tags:
 - FFXIV
 featured: yes
+aliases:
+- /projects/astra
 ---
 
 Cross-platform FFXIV launcher, designed for Wine users.

@@ -5,6 +5,8 @@ draft: false
 layout: "project"
 tags:
 - FFXIV
+aliases:
+- /projects/physis
 ---
 
 Modding and data framework for FFXIV.

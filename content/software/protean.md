@@ -9,6 +9,8 @@ tags:
 - Twitter
 draft: false
 layout: "project"
+aliases:
+- /projects/protean
 ---
 
 Mastodon to Twitter cross-poster!
@@ -16,5 +18,4 @@ Mastodon to Twitter cross-poster!
 <!--more-->
 ---
 
-This is one of my first Go and Twitter projects, and I'm actually using it
-for [@redstrate](https://www.twitter.com/redstrate)!
+This is one of my first Go and Twitter projects, and I used to use on [@redstrate](https://www.twitter.com/redstrate).

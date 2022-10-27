@@ -7,6 +7,8 @@ tags:
 - C++
 - 3D
 layout: "project"
+aliases:
+- /projects/xt
 ---
 
 My first OpenGL based game engine.

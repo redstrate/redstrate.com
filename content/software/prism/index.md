@@ -12,6 +12,8 @@ tags:
 - Metal
 featured: yes
 layout: "project"
+aliases:
+- /projects/prism
 ---
 
 My latest cross-platform game engine.

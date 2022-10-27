@@ -5,6 +5,8 @@ draft: false
 layout: "project"
 tags:
 - FFXIV
+aliases:
+- /projects/libxiv
 ---
 
 Unmaintained FFXIV modding framework.
