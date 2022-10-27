@@ -79,6 +79,11 @@ footer {
 
     flex-grow: 1;
     flex-basis: 100%;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    padding: 15px;
 }
 
 .site-menu {
