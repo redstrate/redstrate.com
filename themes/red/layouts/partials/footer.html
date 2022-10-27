@@ -1,7 +1,7 @@
 Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .File.Path }}?view-source">View Source</a>
 
 <div>
-    {{ with resources.Get "cc-by-nc-sa.gif" }}
+    {{ with resources.Get "cc-by-nc-sa.webp" }}
         <a href="/license">
         <img width="88" height="32" src="{{ .Permalink }}" alt="CC NC SA">
         </a>
@@ -9,7 +9,7 @@ Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/mas
 
     {{ with .OutputFormats.Get "RSS" }}
     <a href="{{ .RelPermalink }}">
-        {{ with resources.Get "rss-button.gif" }}
+        {{ with resources.Get "rss-button.webp" }}
             <img width="88" height="32" src="{{ .Permalink }}" alt="RSS Feed">
         {{ end }}
     </a>

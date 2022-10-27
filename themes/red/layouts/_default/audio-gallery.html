@@ -4,7 +4,7 @@
     {{ .Content }}
 
     {{ $art := (index site.Data ($.Param "json")) }}
-    {{ $newgrounds_icon := resources.Get "newgrounds.png" }}
+    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
     {{ range $art.categories }}
         <h3>{{ .name }}</h3>

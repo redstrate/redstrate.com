@@ -4,8 +4,8 @@
     {{ .Content }}
 
     {{ $art := (index site.Data ($.Param "json")) }}
-    {{ $pixiv_icon := resources.Get "pixiv.png" }}
-    {{ $newgrounds_icon := resources.Get "newgrounds.png" }}
+    {{ $pixiv_icon := resources.Get "pixiv.webp" }}
+    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
     {{ range $art.categories }}
         <h3>{{ .name }}</h3>
@@ -19,7 +19,7 @@
                     {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
                     {{ if $full }}
 
-                    <a href="{{ $full.Permalink }}">
+                    <a href="{{ $full.Permalink }}" aria-label="Click to view full-size image">
                         {{ if $.Params.thumbnails }}
                             {{ $title := .title }}
                             {{ with resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
