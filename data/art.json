@@ -23,6 +23,10 @@
             {
               "title": "Girl Drinking Water",
               "filename": "girl-drinking-water.webp"
+            },
+            {
+              "title": "Lifeguard",
+              "filename": "lifeguard.webp"
             }
           ]
         },
@@ -40,6 +44,26 @@
             {
               "title": "Eleanor",
               "filename": "eleanor.webp"
+            },
+            {
+              "title": "Duo",
+              "filename": "duo.webp"
+            },
+            {
+              "title": "Gunpoint",
+              "filename": "gunpoint.webp"
+            },
+            {
+              "title": "Luca",
+              "filename": "luca.webp"
+            },
+            {
+              "title": "Sniper",
+              "filename": "sniper.webp"
+            },
+            {
+              "title": "Sleeping Witch",
+              "filename": "sleeping.webp"
             }
           ]
         },
@@ -133,6 +157,12 @@
           "pieces": [
             {
               "filename": "sep-2019.webp"
+            },
+            {
+              "filename": "some-swords.webp"
+            },
+            {
+              "filename": "fantasyfolks.webp"
             }
           ]
         },
@@ -146,6 +176,9 @@
             {
               "title": "Trainwatching",
               "filename": "trainwatching.webp"
+            },
+            {
+              "filename": "genshin-amber.webp"
             }
           ]
         },
@@ -164,6 +197,21 @@
             },
             {
               "filename": "swordlady-comp.webp"
+            },
+            {
+              "filename": "castle.webp"
+            },
+            {
+              "filename": "tree.webp"
+            },
+            {
+              "filename": "waiting.webp"
+            },
+            {
+              "filename": "bike.webp"
+            },
+            {
+              "filename": "train.webp"
             }
           ]
         },
