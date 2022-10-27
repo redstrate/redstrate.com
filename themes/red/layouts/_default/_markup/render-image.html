@@ -9,9 +9,17 @@
 
 <figure>
 <a href="{{ $img.RelPermalink }}" data-download="true">
-<img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height}}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+{{ if eq .MediaType.SubType "svg" }}
+<img class="article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+{{ else }}
+<img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+{{ end }}
 </a>
 <figcaption>{{ $.Text }}</figcaption>
 </figure>
+
+{{- else -}}
+
+<em>Unable to find image {{ $url }}!</em>
 
 {{- end -}}

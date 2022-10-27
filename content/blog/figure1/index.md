@@ -21,7 +21,7 @@ didn't preorder her on your typical reseller website but instead got her a littl
 
 This is one of the few times that I think the figure looks much better than it does in real life than the photos provided by the company:
 
-![The photo Sega provided](figure-review-mari-sega.jpg)
+![The photo Sega provided](figure-review-mari-sega.webp)
 (Seriously?? Why doesn't she have _any_ background? I understand she is a prize figure but come on.)
 
 The materials are surprisingly decent, and it has a nice premium feel to it, but she doesn't end up looking too glossy. The paint

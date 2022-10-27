@@ -16,4 +16,6 @@ In my series of purging my content on proprietary platforms I don't align with a
 
 I don't even receive much traffic on the site and I managed to completely cut off my Twitter addiction over the past couple of years, so I think this is the best time to do this. Right now my Twitter profile is set to private, as I still need it for DMs and my Knockout login, but I plan to completely sunset it sometime next year. If you still wish to read my microblogs, you can follow me from any ActivityPub-compliant service such as Mastodon/Pleroma/Pixelfed, etc at [@redstrate@pyra.sh](https://pyra.sh/redstrate).
 
+![Mastodon account](masto-screen.webp)
+
 All of my previous tweets are now deleted however there was some Twitter-exclusive artwork that I didn't realize wasn't posted anywhere else, so I did some reorganizing of my [gallery](/gallery)!

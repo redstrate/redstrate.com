@@ -18,7 +18,7 @@ The Vulkan backend is moving very quickly to reach feature parity soon with the 
 fully usable for most tasks on Windows and Linux! The main roadblock right now is implementing the last of the
 functionality required for IBL and some other graphical features.
 
-![Screenshot of the material editor](/blog/img/PrismEditor_BT44VWksFY.png)
+![Screenshot of the material editor](PrismEditor_BT44VWksFY.webp)
 _This is the Material editor running on Vulkan, on Windows_
 
 ### SDL2 is the new default windowing system for Windows and Linux
@@ -35,7 +35,13 @@ Right now SDL is used for Windows and Linux, and I have no plans on supporting i
 
 ### Windows now has multiviewports!
 
-{{< youtube 1WGRgIb9WJI >}}
+{{< rawhtml >}}
+
+<video width=100% controls>
+<source src="weewoo.webm">
+</video>
+
+{{< /rawhtml >}}
 
 This is a pretty and clear nice benefit from using the SDL backend, because now it gets multiviewport support for free! If you've never seen this [dear imgui feature before](https://github.com/ocornut/imgui/wiki/Multi-Viewports), it's really cool to see it in action. It allows regular imgui windows to be dragged outside the main window, and enables some really cool workflows and use-cases you would normally see in other GUI toolkits like Qt and GTK.
 
@@ -43,7 +49,7 @@ This is a pretty and clear nice benefit from using the SDL backend, because now 
 
 Before if you wanted to render to another window, static image, viewport you were required to create a whole new renderer instance. This was bad design for a multitude of reasons - duplicated work, resources and lack of proper cohesion or synchronization. This was because a single renderer instance only supported rendering to one target. Now everything is reworked and I can use just one renderer instance for the whole engine, even down to the tooling!
 
-![Screenshot of two viewports open at the same time](/blog/img/PrismEditor_Okvgr9cuI3.png)
+![Screenshot of two viewports open at the same time](PrismEditor_Okvgr9cuI3.webp)
 _This is two editor viewports running at the same time in two different windows, something not possible before under the old system._
 
 The new render target system is also the backbone of the new cross-platform dear imgui multi-viewport support (try saying that 5x fast!) The API is also extremely easy to use:

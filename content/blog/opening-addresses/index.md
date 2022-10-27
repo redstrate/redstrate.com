@@ -16,7 +16,7 @@ But I learned that [KDE Marble](https://marble.kde.org/) exists, a native KDE ap
 
 1. We set the "Show Address" to open an "External Application", this is where we'll call our python script `geo.py`:
 
-![KAddressBook settings](/blog/img/kaddressbook-settings.png)
+![KAddressBook settings](kaddressbook-settings.png)
 
 The full command is:
 
@@ -46,7 +46,7 @@ This is actually quite interesting, as I would think KAddressBook would have thi
 
 So this is where Nominatim comes in, which as said before - is a service run by OpenStreetMap. Its API is extremely simple, which is perfect. I originally tried to only do this in Shell and CURL, but it turned out to be much easier just to use GeoPy and Python.
 
-![KDE Marble without the extra arguments](/blog/img/kdemarble-faraway.png)
+![KDE Marble without the extra arguments](kdemarble-faraway.png)
 
 Then, you'll notice if you don't add any extra arguments to Marble, it'll open up super far away and also in a weird default view that's not suitable for viewing addresses. Luckily, the developers already added some nice arguments to allow us to change this default behavior:
 
@@ -54,4 +54,4 @@ Then, you'll notice if you don't add any extra arguments to Marble, it'll open u
 
 This will set the initial distance to "0 km" and also changes the map view to OpenStreetMap, perfect!
 
-![KDE Marble in it's ideal view for streets](/blog/img/kdemarble-fixed.png)
+![KDE Marble in it's ideal view for streets](kdemarble-fixed.png)
