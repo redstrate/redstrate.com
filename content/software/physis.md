@@ -7,6 +7,8 @@ tags:
 - FFXIV
 aliases:
 - /projects/physis
+source: "https://git.sr.ht/~redstrate/physis"
+license: GPLv3
 ---
 
 Modding and data framework for FFXIV.

@@ -7,6 +7,8 @@ tags:
 - FFXIV
 aliases:
 - /projects/libxiv
+license: GPLv3
+source: "https://git.sr.ht/~redstrate/libxiv"
 ---
 
 Unmaintained FFXIV modding framework.

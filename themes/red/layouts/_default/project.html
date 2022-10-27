@@ -2,14 +2,18 @@
 <h2>{{ .Title }}</h2>
 
 <table>
+  {{ with $.Param "source" }}
   <tr>
     <td>Source Code</td>
-    <td><a href='{{ $.Param "source" }}'>{{ $.Param "source" }}</a></td>
+    <td><a href='{{ . }}'>{{ . }}</a></td>
   </tr>
+  {{ end }}
+  {{ with $.Param "license" }}
   <tr>
     <td>License</td>
-    <td><a href='{{ $.Param "license-url" }}'>{{ $.Param "license" }}</a></td>
+    <td>{{ . }}</td>
   </tr>
+  {{ end }}
   <tr>
     <td>Year Created</td>
     <td><time datetime='{{ .Date.Format "2006" }}'>{{ .Date.Format "2006"}}</time></td>
