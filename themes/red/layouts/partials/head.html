@@ -30,4 +30,6 @@
         {{ $style = $style | minify | fingerprint | resources.PostProcess }}
     {{ end }}
     <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet" >
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
