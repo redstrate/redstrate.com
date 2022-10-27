@@ -17,6 +17,7 @@
             {{ range .pieces }}
                 <figure class="gallery-fig">
                     {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+                    {{ if $full }}
 
                     <a href="{{ $full.Permalink }}">
                         {{ if $.Params.thumbnails }}
@@ -42,6 +43,12 @@
                             <a href="{{ .pixiv_url }}"><img alt="Pixiv Icon" width="16" height="16" src="{{ $pixiv_icon.Permalink }}"></a>
                         {{ end }}
                     </figcaption>
+
+                    {{ else }}
+
+                    <em>CANNOT FIND {{.filename }}</em>
+
+                    {{ end }}
                 </figure>
             {{ end }}
 
