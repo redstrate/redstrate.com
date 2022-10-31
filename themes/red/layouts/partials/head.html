@@ -17,13 +17,7 @@
         <script async defer data-website-id="2dd74b65-a1b8-41fb-b060-1a062490a823" src="https://salamis.ryne.moe/euripides.js" data-domains="redstrate.com" data-do-not-track="true"></script>
     {{ end }}
 
-    {{ if .IsHome }}
-        <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} / Blog">
-    {{ else }}
-        {{ with .OutputFormats.Get "RSS" }}
-        <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }} / {{ $.Title }}">
-        {{ end }}
-    {{ end }}
+    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Author.name }}'s blog">
 
     {{ $style := resources.Get "css/site.css" }}
     {{ if  hugo.IsProduction  }}
