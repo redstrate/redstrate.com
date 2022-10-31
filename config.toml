@@ -8,7 +8,7 @@ copyright = 'This work is licensed under a Creative Commons Attribution-NonComme
     name = 'redstrate'
 
 [permalinks]
-  blog = '/:year/:month/:title/'
+  blog = 'blog/:year/:month/:title/'
 
 [menu]
     [[menu.main]]
