@@ -14,4 +14,4 @@ tasks:
   - deploy: |
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
-      rsync -Wvr public/ deploy@ryne.moe:/var/ryne/sync/redstrate.com
+      rsync -e 'ssh -p 38901' -Wvr public/ deploy@ryne.moe:/srv/http/redstrate.com
