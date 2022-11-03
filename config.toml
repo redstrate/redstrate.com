@@ -3,8 +3,10 @@ languageCode = 'en-us'
 title = '~redstrate'
 theme = 'red'
 enableGitInfo = true
+[params]
+    description = "My personal corner of the Internet!"
 
-copyright = 'This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0.'
+copyright = 'This content is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0.'
 [author]
     name = 'redstrate'
 
