@@ -8,7 +8,10 @@ tags:
 ---
 
 I have been transferring all of my websites and services from my Arch Docker setup to a baremetal Gentoo box, but
-got tripped up when setting up [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page). By default, the fail2ban config (on Gentoo) is set up like this:
+got tripped up when setting up [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page). 
+<!--more-->
+
+By default, the fail2ban config (on Gentoo) is set up like this:
 
 ```
 [INCLUDES]
