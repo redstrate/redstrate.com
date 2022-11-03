@@ -6,11 +6,11 @@ I host downloads for things that I either want to archive, or worried we might l
 
 {{< toc >}}
 
-## TF2 Map Archive 
+## Source Map Archive 
 
-https://maps.ryne.moe/
+https://archive.ryne.moe/source
 
-I host a mirror of the TF2 Map Archive, hosted kindly by some users on Knockout.
+I host a mirror of the [Source Map Archive](https://knockout.chat/thread/32805), provided by some users on Knockout!
 
 ## TF2 2012 Main Menu
 
