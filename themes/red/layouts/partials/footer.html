@@ -1,17 +1,28 @@
-Copyright (c) 2022. <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .File.Path }}?view-source">View Source</a>
-
-<div>
-    {{ with resources.Get "cc-by-nc-sa.webp" }}
-        <a href="/license">
-        <img width="88" height="32" src="{{ .Permalink }}" alt="CC NC SA">
-        </a>
+<div id="f-badges">
+    {{ with resources.Get "by-nc-sa.webp" }}
+        <img height="15" src="{{ .Permalink }}" alt="CC NC SA">
     {{ end }}
 
-    {{ with .OutputFormats.Get "RSS" }}
-    <a href="{{ .RelPermalink }}">
-        {{ with resources.Get "rss-button.webp" }}
-            <img width="88" height="32" src="{{ .Permalink }}" alt="RSS Feed">
-        {{ end }}
-    </a>
+    {{ with resources.Get "rssbanner.webp" }}
+        <img height="15" src="{{ .Permalink }}" alt="RSS Feed">
+    {{ end }}
+
+    {{ with resources.Get "gentoo-badge2.webp" }}
+    <img height="15" src="{{ .Permalink }}" alt="Powered by Gentoo">
+    {{ end }}
+
+    {{ with resources.Get "nerv_button.webp" }}
+    <img height="15" src="{{ .Permalink }}" alt="Evangelion">
     {{ end }}
 </div>
+
+<div id="f-list">
+    <a href="/blog/index.xml">RSS Feed</a>
+
+    <a href="/license">License</a>
+
+    <a href="/imprint">Imprint</a>
+
+    <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .File.Path }}?view-source">Source</a>
+</div>
+

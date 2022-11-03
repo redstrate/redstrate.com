@@ -131,3 +131,23 @@ tr:nth-child(even) {
 table {
     width: 100%;
 }
+
+#f-badges {
+    text-align: center;
+}
+
+#f-badges * {
+    display: inline;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+}
+
+#f-list {
+    text-align: center;
+}
+
+#f-list * {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+}
