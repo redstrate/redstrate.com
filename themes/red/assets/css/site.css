@@ -39,13 +39,49 @@
 }
 
 body {
-    --accent-color: #d26c6c;
-
-    background-color: #e3e3e3;
+    background-color: var(--background-primary);
     accent-color: var(--accent-color);
 
     display: flex;
     flex-flow: row wrap;
+
+    color: var(--text-color);
+}
+
+:root {
+    --primary-accent: #9f5858;
+    --secondary-accent: #c99192;
+    --border-color: #325e8d;
+    --background-primary: #eff1ff;
+    --background-secondary: #ffffff;
+    --text-color: #363131;
+    --link-visited: #460b0b;
+    --extra-color: #efe4e4;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-accent: #ce4545;
+        --secondary-accent: #c99192;
+        --background-primary: #34313a;
+        --background-secondary: #3c3a44;
+        --border-color: #515860;
+        --text-color: #fbeded;
+        --link-visited: #ad1616;
+        --extra-color: #504e5a;
+    }
+
+    .ext-link {
+        filter: invert(100%);
+    }
+}
+
+a:link {
+    color: var(--primary-accent);
+}
+
+a:visited {
+    color: var(--link-visited);
 }
 
 header {
@@ -54,19 +90,19 @@ header {
 }
 
 aside {
-    background-color: white;
+    background-color: var(--background-secondary);
 
     text-align: center;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 3px;
     padding: 15px;
 }
 
 article {
-    background-color: white;
+    background-color: var(--background-secondary);
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 3px;
 
     padding: 15px;
@@ -75,12 +111,12 @@ article {
 }
 
 footer {
-    background-color: white;
+    background-color: var(--background-secondary);
 
     flex-grow: 1;
     flex-basis: 100%;
 
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     border-radius: 3px;
 
     padding: 15px;
@@ -125,7 +161,7 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #e2d9d9;
+    background-color: var(--extra-color);
 }
 
 table {

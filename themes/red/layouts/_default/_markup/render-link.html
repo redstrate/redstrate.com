@@ -1,4 +1,4 @@
 {{ $icon := resources.Get "external-link.svg" }}
 
-<a href="{{ .Destination | safeURL }}" {{ if strings.HasPrefix .Destination "http" }}
+<a class="ext-link" href="{{ .Destination | safeURL }}" {{ if strings.HasPrefix .Destination "http" }}
 target="_blank"{{ end }}>{{ .PlainText }}{{ if strings.HasPrefix .Destination "http" }}<img aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.Permalink }}"/>{{- end -}}</a>
