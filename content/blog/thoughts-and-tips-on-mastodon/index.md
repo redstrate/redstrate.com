@@ -4,6 +4,10 @@ date: 2022-11-06
 tags:
 - Mastodon
 - Twitter
+comments:
+  host: mastodon.art
+  username: redstrate
+  id: 109299418236130979
 ---
 
 Seeing the "collapse" of Twitter (although that's overstated) means a lot more people are joining Mastodon so I wanted to collect all of my thoughts.
