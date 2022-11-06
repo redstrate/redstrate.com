@@ -51,13 +51,7 @@ Also part of this slew of changes is MoltenVK being fully supported by the Vulka
 There's now a real, working example application available
 right in the source code repository. This has technically been around since the last changelog, but now it's way more involved and focused around recreating some nice screenshots in the README.
 
-{{< rawhtml >}}
-
-<video width=100% controls>
-<source src="JezVKVk.webm">
-</video>
-
-{{< /rawhtml >}}
+{{< video "JezVKVk.webm" >}}
 
 ### Material system is being reworked
 I ripped out the old material system, and now it's going to be replaced with something way, way simpler. It was insanely complex, and had really no reason to exist. It was also the cause of a bunch of bugs.

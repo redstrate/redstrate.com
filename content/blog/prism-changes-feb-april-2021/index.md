@@ -35,13 +35,7 @@ Right now SDL is used for Windows and Linux, and I have no plans on supporting i
 
 ### Windows now has multiviewports!
 
-{{< rawhtml >}}
-
-<video width=100% controls>
-<source src="weewoo.webm">
-</video>
-
-{{< /rawhtml >}}
+{{< video "weewoo.webm" >}}
 
 This is a pretty and clear nice benefit from using the SDL backend, because now it gets multiviewport support for free! If you've never seen this [dear imgui feature before](https://github.com/ocornut/imgui/wiki/Multi-Viewports), it's really cool to see it in action. It allows regular imgui windows to be dragged outside the main window, and enables some really cool workflows and use-cases you would normally see in other GUI toolkits like Qt and GTK.
 
