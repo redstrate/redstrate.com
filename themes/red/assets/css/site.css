@@ -1,15 +1,13 @@
 /* desktop devices */
 @media (min-width: 768px) {
-    aside {
-        flex: 200px 0 0;
-    }
-
     header {
         margin: 10px;
     }
 
     aside {
         margin: 10px;
+
+        flex: 15em 0 0;
     }
 
     article {
@@ -19,14 +17,17 @@
     footer {
         margin: 10px;
     }
+
+    #content {
+        display: flex;
+        flex-direction: row;
+        max-width: 100em;
+
+    }
 }
 
 /* mobile devices */
 @media (max-width: 768px) {
-    aside {
-        width: 100%;
-    }
-
     aside div {
         padding: 2px;
     }
@@ -42,11 +43,9 @@ body {
     background-color: var(--background-primary);
     accent-color: var(--accent-color);
 
-    display: flex;
-    flex-flow: row wrap;
-
     color: var(--text-color);
 }
+
 
 :root {
     --primary-accent: #9f5858;
@@ -107,7 +106,8 @@ article {
 
     padding: 15px;
 
-    flex: 2 0;
+    min-width: 0;
+    flex: 1 1 auto;
 }
 
 footer {
@@ -130,14 +130,15 @@ footer {
     margin-bottom: 5px;
 }
 
-.article-img {
-    width: 100%;
-    height: auto;
-}
-
 .gallery-img {
     border: 1px black solid;
     border-radius: 5px;
+}
+
+.article-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
 }
 
 figure {
