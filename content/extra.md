@@ -7,12 +7,14 @@ title: "Extras"
 This is my personal Gentoo overlay that I use on my Gentoo computers. It contains ebuilds for some of my software, but
 also some ebuilds I wrote myself for certain third-party software. You can find it [here](https://git.sr.ht/~redstrate/ebuilds).
 
-## Arch Linux Repository
+~~Arch Linux Repository~~
 
-I host my own Arch Linux repository called elysium at https://pkgs.pyra.sh. The database and all packages are GPG signed
-with the key located at https://pkgs.pyra.sh/key.txt which you must import with pacman-key first.
+~~I host my own Arch Linux repository called elysium at https://pkgs.pyra.sh. The database and all packages are GPG signed~~
+~~with the key located at https://pkgs.pyra.sh/key.txt which you must import with pacman-key first.~~
 
-You can find some of the original PKGBUILDs [here](https://git.sr.ht/~redstrate/pkgbuilds).
+~~You can find some of the original PKGBUILDs [here](https://git.sr.ht/~redstrate/pkgbuilds).~~
+
+**The repository is currently defunct and I don't know when I'll bring it back online. You can still find [my PKGBUILDs](https://git.sr.ht/~redstrate/pkgbuilds) though.**
 
 ## Guestbook
 
