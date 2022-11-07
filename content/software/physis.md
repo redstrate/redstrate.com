@@ -5,6 +5,7 @@ draft: false
 layout: "project"
 tags:
 - FFXIV
+- Rust
 aliases:
 - /projects/physis
 source: "https://git.sr.ht/~redstrate/physis"

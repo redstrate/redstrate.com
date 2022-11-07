@@ -5,6 +5,7 @@ draft: false
 layout: "project"
 tags:
 - Hydrus
+- Rust
 license: GPLv3
 source: "https://git.sr.ht/~redstrate/hydrus-sync-client/"
 ---
