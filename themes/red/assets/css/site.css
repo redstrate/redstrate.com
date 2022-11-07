@@ -68,8 +68,8 @@ body {
 :root {
     --primary-accent: #9f5858;
     --secondary-accent: #c99192;
-    --border-color: #325e8d;
-    --background-primary: #eff1ff;
+    --border-color: #b57f7f;
+    --background-primary: #fffbf9;
     --background-secondary: #ffffff;
     --text-color: #363131;
     --link-visited: #460b0b;
@@ -213,4 +213,10 @@ h2 {
 
 iframe {
     border: 1px solid gray;
+}
+
+hr {
+    background-color: var(--border-color);
+    height: 1px;
+    border: 0;
 }
