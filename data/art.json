@@ -10,23 +10,10 @@
             {
               "title": "Vinesauce Hill",
               "filename": "vinesauce.webp"
-            }
-          ]
-        },
-        {
-          "year": 2018,
-          "pieces": [
-            {
-              "title": "Sword Buying",
-              "filename": "sword-buying.webp"
             },
             {
-              "title": "Girl Drinking Water",
-              "filename": "girl-drinking-water.webp"
-            },
-            {
-              "title": "Lifeguard",
-              "filename": "lifeguard.webp"
+              "title": "Angry Gibus",
+              "filename": "angry-gibus.webp"
             }
           ]
         },
@@ -64,6 +51,22 @@
             {
               "title": "Sleeping Witch",
               "filename": "sleeping.webp"
+            },
+            {
+              "title": "Sword Buying",
+              "filename": "sword-buying.webp"
+            },
+            {
+              "title": "Girl Drinking Water",
+              "filename": "girl-drinking-water.webp"
+            },
+            {
+              "title": "Lifeguard",
+              "filename": "lifeguard.webp"
+            },
+            {
+              "title": "Clock",
+              "filename": "clock.webp"
             }
           ]
         },
@@ -71,14 +74,14 @@
           "year": 2020,
           "pieces": [
             {
-              "title": "Nook Cat",
-              "filename": "nook-cat.webp"
-            },
-            {
               "title": "let's get fit!",
               "filename": "lets-get-fit.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/94953574",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/let-s-get-fit"
+            },
+            {
+              "title": "Nook Cat",
+              "filename": "nook-cat.webp"
             }
           ]
         },
@@ -92,16 +95,16 @@
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mari-asuka"
             },
             {
-              "title": "eva girls",
-              "filename": "eva-girls.webp",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/94953596",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
-            },
-            {
               "title": "woman knight",
               "filename": "knight.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/woman-knight",
               "pixiv_url": "https://www.pixiv.net/en/artworks/100096631"
+            },
+            {
+              "title": "eva girls",
+              "filename": "eva-girls.webp",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/94953596",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
             }
           ]
         },
@@ -162,7 +165,16 @@
               "filename": "some-swords.webp"
             },
             {
-              "filename": "fantasyfolks.webp"
+              "filename": "madman.webp"
+            },
+            {
+              "filename": "witch.webp"
+            },
+            {
+              "filename": "scythe.webp"
+            },
+            {
+              "filename": "tree2.webp"
             }
           ]
         },
@@ -170,15 +182,45 @@
           "year": 2020,
           "pieces": [
             {
-              "title": "Miq'ote in a Swimsuit",
-              "filename": "miqote-swimsuit.webp"
+              "title": "Water Render Test",
+              "filename": "water-test.webp"
+            },
+            {
+              "filename": "ffxiv-swim.webp"
             },
             {
               "title": "Trainwatching",
               "filename": "trainwatching.webp"
             },
             {
-              "filename": "genshin-amber.webp"
+              "filename": "king.webp"
+            },
+            {
+              "filename": "genshin-amber.webp",
+              "title": "Eternally unfinished Genshin background"
+            },
+            {
+              "title": "Swordswoman (Concept)",
+              "filename": "swordwoman-concept.webp"
+            },
+            {
+              "title": "Chains",
+              "filename": "chains-sketch.webp"
+            },
+            {
+              "filename": "bike.webp"
+            },
+            {
+              "filename": "waiting.webp"
+            },
+            {
+              "filename": "gun-lady.webp"
+            },
+            {
+              "filename": "fitness.webp"
+            },
+            {
+              "filename": "fantasyfolks.webp"
             }
           ]
         },
@@ -190,10 +232,14 @@
               "filename": "ff7r-airbuster-fight.webp"
             },
             {
-              "filename": "drawpile-snippet.webp"
+              "filename": "beachball.webp"
             },
             {
-              "filename": "gun-lady.webp"
+              "title": "Miq'ote in a Swimsuit",
+              "filename": "miqote-swimsuit.webp"
+            },
+            {
+              "filename": "drawpile-snippet.webp"
             },
             {
               "filename": "swordlady-comp.webp"
@@ -205,13 +251,10 @@
               "filename": "tree.webp"
             },
             {
-              "filename": "waiting.webp"
-            },
-            {
-              "filename": "bike.webp"
-            },
-            {
               "filename": "train.webp"
+            },
+            {
+              "filename": "ma-casual.webp"
             }
           ]
         },
