@@ -86,6 +86,10 @@
             {
               "title": "Ray Concept",
               "filename": "ray-concept.webp"
+            },
+            {
+              "title": "Duel",
+              "filename": "duel.webp"
             }
           ]
         },
@@ -185,6 +189,9 @@
             },
             {
               "filename": "sketch-collect.webp"
+            },
+            {
+              "filename": "naked.webp"
             }
           ]
         },
@@ -237,6 +244,15 @@
             },
             {
               "filename": "casual-elf.webp"
+            },
+            {
+              "filename": "bench.webp"
+            },
+            {
+              "filename": "ma-sketch.webp"
+            },
+            {
+              "filename": "viera-sketch.webp"
             }
           ]
         },
@@ -271,6 +287,36 @@
             },
             {
               "filename": "ma-casual.webp"
+            },
+            {
+              "filename": "aerith.webp"
+            },
+            {
+              "filename": "ffxiv-sketches.webp"
+            },
+            {
+              "filename": "futaba.webp"
+            },
+            {
+              "filename": "girl-sketch.webp"
+            },
+            {
+              "filename": "mona-wip.webp"
+            },
+            {
+              "filename": "pyra-sketch.webp"
+            },
+            {
+              "filename": "mythra-sketch.webp"
+            },
+            {
+              "filename": "viera-dancer.webp"
+            },
+            {
+              "filename": "tifa-sketch.webp"
+            },
+            {
+              "filename": "sakura.webp"
             }
           ]
         },
@@ -280,6 +326,9 @@
             {
               "title": "Knocky-Chan",
               "filename": "knocky-chan.webp"
+            },
+            {
+              "filename": "ko-girl.webp"
             }
           ]
         }
