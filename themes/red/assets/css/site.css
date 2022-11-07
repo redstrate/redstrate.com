@@ -39,6 +39,22 @@
         margin-top: 13px;
         margin-bottom: 13px;
     }
+
+    header {
+        margin: 10px;
+    }
+
+    aside {
+        margin: 10px;
+    }
+
+    article {
+        margin: 10px;
+    }
+
+    footer {
+        margin: 10px;
+    }
 }
 
 body {
