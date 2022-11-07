@@ -25,6 +25,7 @@ and moving onto basic grammar and counting (hence why the rest of this sentence 
 |----------|------------------|
 | Adrastea | Gentoo Linux     |
 | Amalthea | macOS            |
+| Rhea     | Gentoo Linux     |
 
 As you can probably tell, I like working with Linux, and using alternative operating systems in general. My preferred desktop environment is
 KDE and I enjoy using both Gentoo and Arch Linux.
@@ -35,7 +36,7 @@ The primary reason why I develop software is that I find a niche or a problem th
 want to learn how to do it myself. I don't like developing software just to "develop" it, like mindlessly following a trend
 or a tutorial. 
 
-I like working in C, C++, and Rust - and that's what you'll find most of the projects using!
+I like working in [C](/tags/c), [C++](/tags/c++), and [Rust](/tags/rust) - and that's what you'll find most of the projects using!
 
 ###  Art
 
