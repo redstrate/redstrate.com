@@ -82,6 +82,10 @@
             {
               "title": "Nook Cat",
               "filename": "nook-cat.webp"
+            },
+            {
+              "title": "Ray Concept",
+              "filename": "ray-concept.webp"
             }
           ]
         },
@@ -175,6 +179,12 @@
             },
             {
               "filename": "tree2.webp"
+            },
+            {
+              "filename": "naked-elf.webp"
+            },
+            {
+              "filename": "sketch-collect.webp"
             }
           ]
         },
@@ -221,6 +231,12 @@
             },
             {
               "filename": "fantasyfolks.webp"
+            },
+            {
+              "filename": "goblin-mines.webp"
+            },
+            {
+              "filename": "casual-elf.webp"
             }
           ]
         },
