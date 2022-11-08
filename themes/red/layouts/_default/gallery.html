@@ -33,14 +33,15 @@
                     </a>
 
                     <figcaption>
+
                         {{ with .title }}
                         "{{ . }}"
                         {{ end }}
                         {{ if .newgrounds_url }}
-                            <a href="{{ .newgrounds_url }}"><img alt="Newgrounds Icon" width="16" height="16" src="{{ $newgrounds_icon.Permalink }}"></a>
+                            <a href="{{ .newgrounds_url }}"><img alt="Newgrounds Icon" width="19" height="19" src="{{ $newgrounds_icon.Permalink }}"></a>
                         {{ end }}
                         {{ if .pixiv_url }}
-                            <a href="{{ .pixiv_url }}"><img alt="Pixiv Icon" width="16" height="16" src="{{ $pixiv_icon.Permalink }}"></a>
+                            <a href="{{ .pixiv_url }}"><img alt="Pixiv Icon" width="19" height="19" src="{{ $pixiv_icon.Permalink }}"></a>
                         {{ end }}
                     </figcaption>
 
