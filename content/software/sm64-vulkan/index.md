@@ -6,6 +6,8 @@ layout: "project"
 tags:
 - SM64
 - N64
+- C
+- C++
 license: Unknown
 source: https://git.sr.ht/~redstrate/sm64
 ---
