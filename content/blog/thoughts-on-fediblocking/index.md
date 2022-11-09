@@ -7,7 +7,7 @@ tags:
 comments:
   host: mastodon.art
   username: redstrate
-  id: 109299418236130979
+  id: 109314837864740597
 ---
 
 This is a continuation of my ['Thoughts and Tips on Mastodon"]({{<ref "blog/thoughts-and-tips-on-mastodon">}}), today we'll focus on blocking servers from federation.
