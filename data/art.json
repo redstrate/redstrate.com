@@ -120,6 +120,12 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "working out",
+              "filename": "workingout.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/working-out",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/102641828"
+            },
+            {
               "title": "bard in the black shroud",
               "filename": "bard.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud",
