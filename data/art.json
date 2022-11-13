@@ -120,6 +120,12 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "torigoth",
+              "filename": "mythra.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/torigoth",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/102692392"
+            },
+            {
               "title": "working out",
               "filename": "workingout.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/working-out",
@@ -338,6 +344,9 @@
             },
             {
               "filename": "knockout-background.webp"
+            },
+            {
+              "filename": "girls.webp"
             }
           ]
         }
