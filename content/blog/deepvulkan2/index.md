@@ -6,6 +6,10 @@ tags:
 - Vulkan
 - C++
 - Deep Dive
+comments:
+  host: mastodon.art
+  username: redstrate
+  id: 109349980860736142
 ---
 
 This is a topic that trips a lot of developers up, and they don't really know where to look, or don't know how to use existing
