@@ -220,3 +220,13 @@ hr {
     height: 1px;
     border: 0;
 }
+
+code {
+    white-space: pre-wrap;
+}
+
+pre {
+    background-color: var(--background-primary);
+
+    padding: 5px;
+}
