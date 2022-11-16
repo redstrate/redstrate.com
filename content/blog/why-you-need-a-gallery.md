@@ -2,6 +2,10 @@
 title: "Artists Need More Personal Websites"
 date: 2022-11-16
 draft: false
+comments:
+  host: mastodon.art
+  username: redstrate
+  id: 109354491225553675
 ---
 
 As an artist, I didn't really see the value of burdening myself with a website until I actually did it.
