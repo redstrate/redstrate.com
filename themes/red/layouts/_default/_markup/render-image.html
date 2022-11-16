@@ -15,7 +15,7 @@
 <img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
 {{ end }}
 </a>
-<figcaption>{{ $.Text }}</figcaption>
+<figcaption>{{ $.Text | safeHTML }}</figcaption>
 </figure>
 
 {{- else -}}
