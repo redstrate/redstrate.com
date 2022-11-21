@@ -6,6 +6,6 @@ title: "Home"
 
 Welcome to my personal corner of the Internet!
 
-I really like creating software, art, among other things. You can find my own, personal collection here.
+I really like creating software, art, among other things. You can find my own, personal collection [here](/art).
 
 If you like my website, consider signing the [guestbook](/guestbook)!

@@ -1,5 +1,6 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
+    {{ if in .File.Dir "blog" }}
     <p> 
     Posted on 
     <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
@@ -10,6 +11,7 @@
         {{ $.Page.Lastmod.Format "January 02, 2006" }}
     </time>)
     </p>
+    {{ end }}
 
     <div>
     {{ .Content }}
@@ -24,10 +26,6 @@
             {{ end }}
         </ul>
     {{ end }}
-
-    <h3>Contact Me</h3>
-
-    The easiest and fastest way you can contact me is via <a href="mailto:josh@redstrate.com">josh@redstrate.com</a>.
 
     {{ with .Params.comments }}
     <h3>Comments</h3>
