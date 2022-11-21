@@ -5,6 +5,10 @@ draft: false
 tags:
 - Linux
 - Open Source
+comments:
+  host: mastodon.art
+  username: redstrate
+  id: 109383664258489248
 ---
 
 If you've been a part of any language that upheaves the traditional C way of pulling in dependencies,
