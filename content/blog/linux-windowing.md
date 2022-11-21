@@ -1,4 +1,12 @@
-Windowing
+---
+title: "Graphics Dump"
+date: 2022-11-15
+draft: true
+tags:
+- Vulkan
+- Linux
+- Graphics Dump
+---
 
 This is a huge topic just by itself, but it's incredibly interesting as everything we said before is assuming that you're
 either running your Vulkan program without any graphics output (_specifically_ presentation, as you can totally run the graphics
