@@ -6,6 +6,10 @@ tags:
 - macOS
 - Procreate
 - Apple
+comments:
+  host: mastodon.art
+  username: redstrate
+  id: 109422348646223110
 ---
 
 This is a retrospective of one of my more successful projects and first paid program, Silica Viewer.
