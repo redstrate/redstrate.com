@@ -27,7 +27,7 @@ In Vulkan, to get presentation you must enable a device extension, specifically 
 piece of the puzzle, as you also need a surface to render to. There is a lot of options, but we are only concerning ourselves with two:
 
 * `VK_KHR_surface` - this is the base surface extension
-* `VK_KHR_wayland_surface` - needed to interface with the wayland client
+* `VK_KHR_wayland_surface` - needed to interface with the Wayland client
 * `VK_KHR_directfb_surface` - we will get into this later, as it provides a way to display vulkan directly to the framebuffer.
 
 ### Wayland

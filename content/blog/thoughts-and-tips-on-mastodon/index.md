@@ -12,14 +12,14 @@ comments:
 
 Seeing the "collapse" of Twitter (although that's overstated) means a lot more people are joining Mastodon so I wanted to collect all of my thoughts.
 <!--more-->
-The focus isn't what's going wrong with Twitter right now, but trying to clear up some common misconceptions about Mastodon and the fediverse in general, following questions I've seen in the relevant Knockout thread.
+The focus isn't what's going wrong with Twitter right now, but trying to clear up some common misconceptions about Mastodon and the Fediverse in general, following questions I've seen in the relevant Knockout thread.
 
 ## Mastodon is siloed, and general server moderation thoughts
 
-A lot of people are naturally worried about the state of server ownership in the fediverse world, and "siloing". To put it simply, people
+A lot of people are naturally worried about the state of server ownership in the Fediverse world, and "siloing". To put it simply, people
 don't trust server owners and they are generally worried about how some servers are blocked. A lot of people tend to go for the "email" approach to
-explaining how servers work in the fediverse, but it doesn't always work. In my opinion, the centralization of email (like social media) means that
-people don't really know what to expect when you say "fediverse servers work like email". I saw one person alluded to the fact that you have to be worried that servers might shut down, or be blocked randomly - but this works exactly the same as email. Let's look at this comparison:
+explaining how servers work in the Fediverse, but it doesn't always work. In my opinion, the centralization of email (like social media) means that
+people don't really know what to expect when you say "Fediverse servers work like email". I saw one person alluded to the fact that you have to be worried that servers might shut down, or be blocked randomly - but this works exactly the same as email. Let's look at this comparison:
 
 * Imagine you are a "Birdsite" user, a popular mainstream and proprietary (as in you can only access it's users through it's own systems.) You are reported, banned or otherwise prevented from accessing the website. Thus, the website and consequently your user data is useless.
 * Now imagine you are a Mastodon/Pleroma/Pixelfed user, and your server is blocked or you are reported and your account is disabled in some way. No matter, simply archive your data and restore it.
@@ -27,7 +27,7 @@ people don't really know what to expect when you say "fediverse servers work lik
 ![Importing data screen on Mastodon](import.webp)
 
 This is **why I think Mastodon wins**: If you don't have access to Twitter, there is basically no other way to interoperate with it. If your Mastodon server
-gets theoretically blocked, whatever - just import your following list (or if your server is still accessible, transfer your followers too - a native feature of Mastodon) and keep going on with your day. Bookmarks, block lists, and other similiar data can be imported as shown above. In most cases though, servers are blocked for a good reason (white supremasicasts, nazis, loli and other content usually make up most block lists). Most of the time the good of the server system outweights the negatives, and again if you ever feel like you don't fit in with your server - you can always move and take most of your things with you!
+gets theoretically blocked, whatever - just import your following list (or if your server is still accessible, transfer your followers too - a native feature of Mastodon) and keep going on with your day. Bookmarks, block lists, and other similar data can be imported as shown above. In most cases though, servers are blocked for a good reason (white supremacists, nazis, loli and other content usually make up most block lists). Most of the time the good of the server system outweights the negatives, and again if you ever feel like you don't fit in with your server - you can always move and take most of your things with you!
 
 ## Should I run my own server? Is it worth it?
 

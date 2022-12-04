@@ -5,7 +5,7 @@ title: "Fund"
 I'm in between work - _not related to my own projects or hobbies_ - and school. I'm always balancing between what I do in my
 free time, but donations help me do the stuff I want and possibly the things you enjoy! As always, **donations are never required but appreciated**.
 
-If you wish to recieve something material in return for your money, I'm [open for art commissions!](/commission)
+If you wish to receive something material in return for your money, I'm [open for art commissions!](/commission)
 
 ## Ko-Fi
 

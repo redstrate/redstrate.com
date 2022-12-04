@@ -13,7 +13,7 @@ Today we're reviewing the Flare reissue of the YoRHa No. 2 Type B released by Sq
 
 ## The Buying Process
 
-Buying through the (USA) Square Enix store is usually more expensive than what you can find elsewhere, and they take **forever to ship**. Not only this, but coincidentally, **the day after I received the figure** - a _better_, and _cheaper_ (overall) one showed up in the preorder listings on AmiAmi. Excuse me? Better as in this is the normally-$220-deluxe version. For **$129.** Of course, I'm picking that up! Despite the price tag difference, and a couple of accessories the two figures are virtually the same, so I'll be using them interchangably between photos.
+Buying through the (USA) Square Enix store is usually more expensive than what you can find elsewhere, and they take **forever to ship**. Not only this, but coincidentally, **the day after I received the figure** - a _better_, and _cheaper_ (overall) one showed up in the preorder listings on AmiAmi. Excuse me? Better as in this is the normally-$220-deluxe version. For **$129.** Of course, I'm picking that up! Despite the price tag difference, and a couple of accessories the two figures are virtually the same, so I'll be using them interchangeably between photos.
 
 ## The Figure
 

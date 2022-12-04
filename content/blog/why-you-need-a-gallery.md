@@ -17,7 +17,7 @@ using them as portfolios, galleries and in some cases - a personal backup soluti
 
 Just so we're clear, websites and services like Mastodon, Twitter, Pixiv, Newgrounds and such are _ephemeral_. That is, that in most cases you have _no_ control over your account or where the service goes as a whole. A really great example of this is the Tumblr exodus, where they slammed the book on so many artists on that platform and by extension, and they never recovered since. I distinctly remember one artist lost so much work during that ban that they quit art entirely, and most of their art is now _lost media_. The problem is that they never created backups, and they just assumed Tumblr will just host their art forever.
 
-This is the crux of the issue - many of these websites fizzle out after a decade or so - or if they don't then you're beholden to adminstration changes. The current set of popular art websites exist _today_ but there's no reason why they would continue existing, after all a lot of them are backed by businesses who live or die by profit. However, these art websites have their place - there is no better way right now to present your art to your niche, recieve interactions[^2] or meet similiar artists.
+This is the crux of the issue - many of these websites fizzle out after a decade or so - or if they don't then you're beholden to administration changes. The current set of popular art websites exist _today_ but there's no reason why they would continue existing, after all a lot of them are backed by businesses who live or die by profit. However, these art websites have their place - there is no better way right now to present your art to your niche, receive interactions[^2] or meet similar artists.
 
 However the problem is that artists _depend_ on them too much, and they especially build _their identity_ around them. How many artists are sticking to Twitter because thats where they get the most likes? What will happen if Twitter _does_ disappear by the end of the year[^3]? What I suggest to artists is simple: **build your own website.**
 
@@ -25,7 +25,7 @@ However the problem is that artists _depend_ on them too much, and they especial
 
 **NO!** This is probably the biggest hurdle for most artists to understand, that hosting a website can either be very cheap or completely free. There are lots of drag-and-drop website builders[^4], but if you're more technically minded there are very cheap servers available from reputable providers to host something like [WordPress](https://wordpress.org) or even build a website in something like [Hugo](https://gohugo.io) (hi!)
 
-However one of the more expensive costs is a _domain name_[^5], which is a fancy TLD like `myart.com` instead of your hosting provider like `myart.wordpress.com`. I highly suggest buying a domain name if you have an alias, but this is optional - what's important is that you're hosting your content on your terms and a domain name is just one part of strengthing your identity.
+However one of the more expensive costs is a _domain name_[^5], which is a fancy TLD like `myart.com` instead of your hosting provider like `myart.wordpress.com`. I highly suggest buying a domain name if you have an alias, but this is optional - what's important is that you're hosting your content on your terms and a domain name is just one part of strengthening your identity.
 
 ## Is it hard?
 

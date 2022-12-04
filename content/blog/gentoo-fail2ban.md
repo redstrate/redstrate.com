@@ -7,7 +7,7 @@ tags:
 - Gentoo
 ---
 
-I have been transferring all of my websites and services from my Arch Docker setup to a baremetal Gentoo box, but
+I have been transferring all of my websites and services from my Arch Docker setup to a bare-metal Gentoo box, but
 got tripped up when setting up [fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page). 
 <!--more-->
 

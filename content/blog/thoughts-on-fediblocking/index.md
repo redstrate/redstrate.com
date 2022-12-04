@@ -35,7 +35,7 @@ As you can tell, they do not want any interaction with "fascist", "alt-right" se
 
 > 1. Federating with Mastodon.ART is not guaranteed. Links between federated instances are temporary and may change or disappear at any time.
 
-> 7. We will block, suspend, or silence any instance which permits any of the content or behaviour prohibited by this instance.
+> 7. We will block, suspend, or silence any instance which permits any of the content or behavior prohibited by this instance.
 
 (Excerpt from [Mastodon.ART's Federation Policy](https://mastodon.art/about/more#federation-policy))
 
