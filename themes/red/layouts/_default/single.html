@@ -27,6 +27,15 @@
         </ul>
     {{ end }}
 
+    <h3>Test Comments</h3>
+    <script data-isso="//comments.redstrate.com/"
+        src="//comments.redstrate.com/js/embed.min.js"></script>
+
+    <section id="isso-thread">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+
+
     {{ with .Params.comments }}
     <h3>Comments</h3>
     <p>I <a href="https://{{ .host }}/@{{ .username }}/{{ .id }}">posted this</a> to my Mastodon! You can use any Fediverse account (Mastodon, Pleroma, etc) to <a class="button" href="https://{{ .host }}/interact/{{ .id }}?type=reply">reply</a>.</p>
