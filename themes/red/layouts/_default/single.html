@@ -27,6 +27,7 @@
         </ul>
     {{ end }}
 
+    {{ if in .File.Dir "blog" }}
     <h3>Comments</h3>
     <script 
         data-isso="//comments.redstrate.com/"
@@ -36,9 +37,10 @@
         data-isso-reveal-on-click="5"
         src="//comments.redstrate.com/js/embed.min.js"></script>
 
-    <section id="isso-thread">
+    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
         <noscript>Javascript needs to be activated to view comments.</noscript>
     </section>
+    {{ end }}
 
     {{ with .Params.comments }}
     <h3>Mastodon Comments</h3>
