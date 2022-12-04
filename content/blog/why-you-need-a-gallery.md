@@ -1,5 +1,5 @@
 ---
-title: "Artists Need More Personal Websites"
+title: "Artists need more personal websites"
 date: 2022-11-16
 draft: false
 comments:

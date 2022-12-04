@@ -1,5 +1,5 @@
 ---
-title: "Thoughts and Tips on Mastodon"
+title: "Thoughts and tips on Mastodon"
 date: 2022-11-06
 tags:
 - Mastodon

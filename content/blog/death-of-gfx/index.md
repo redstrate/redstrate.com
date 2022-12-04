@@ -1,5 +1,5 @@
 ---
-title: "Vulkan Portability Initiative: The Death of My GFX Abstractions?"
+title: "Vulkan Portability Initiative: The death of my GFX abstractions?"
 date: 2021-09-12
 draft: false
 tags:

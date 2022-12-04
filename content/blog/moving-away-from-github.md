@@ -1,5 +1,5 @@
 ---
-title: "Moving Away from GitHub"
+title: "Moving away from GitHub"
 tags:
 - GitHub
 - sourcehut

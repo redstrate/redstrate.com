@@ -1,5 +1,5 @@
 ---
-title: "Opening KAddressBook Addresses With KDE Marble"
+title: "Opening KAddressBook addresses with KDE Marble"
 date: 2022-02-01
 draft: false
 tags:
