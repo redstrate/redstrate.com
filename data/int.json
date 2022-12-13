@@ -1,0 +1,54 @@
+{
+    "categories": [
+      {
+        "name": "Assignments",
+        "description": "These are interfaces designed with a specific goal in mind for each assignment.",
+        "years": [
+          {
+            "year": "Assignment 2",
+            "pieces": [
+              {
+                "title": "Redesigned Interface",
+                "filename": "assg2redesign.webp"
+              }
+            ]
+          },
+          {
+            "year": "Assignment 4",
+            "pieces": [
+                {
+                    "title": "Home Page",
+                    "filename": "HomePage.webp"
+                },
+                {
+                    "title": "Product Page",
+                    "filename": "ProductPage.webp"
+                },
+                {
+                    "title": "Shopping Cart Page",
+                    "filename": "ShoppingCartPage.webp"
+                }
+            ]
+          },
+          {
+            "year": "Assignment 8",
+            "pieces": [
+                {
+                    "title": "Login Page",
+                    "filename": "Signup-Login.webp"
+                },
+                {
+                    "title": "Dashboard",
+                    "filename": "Dashboard.webp"
+                },
+                {
+                    "title": "Scanner",
+                    "filename": "Scanner.webp"
+                }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
