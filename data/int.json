@@ -31,7 +31,7 @@
             ]
           },
           {
-            "year": "Assignment 8",
+            "year": "Assignment 8 - Final",
             "pieces": [
                 {
                     "title": "Login Page",
@@ -45,6 +45,23 @@
                     "title": "Scanner",
                     "filename": "Scanner.webp"
                 }
+            ]
+          },
+          {
+            "year": "Assignment 8 - Prototype",
+            "pieces": [
+              {
+                "title": "Login Page",
+                "filename": "Signup-Login-old.webp"
+              },
+              {
+                "title": "Dashboard",
+                "filename": "Dashboard-old.webp"
+              },
+              {
+                "title": "Scanner",
+                "filename": "Scanner-old.webp"
+              }
             ]
           }
         ]
