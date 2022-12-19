@@ -67,6 +67,10 @@
             {
               "title": "Clock",
               "filename": "clock.webp"
+            },
+            {
+              "title": "Great Subject",
+              "filename": "great-subject.webp"
             }
           ]
         },
@@ -210,6 +214,27 @@
             },
             {
               "filename": "naked.webp"
+            },
+            {
+              "filename": "2019.webp"
+            },
+            {
+              "filename": "sep29.webp"
+            },
+            {
+              "filename": "eccentric-girl.webp"
+            },
+            {
+              "filename": "dec7.webp"
+            },
+            {
+              "filename": "cup.webp"
+            },
+            {
+              "filename": "dec1.webp"
+            },
+            {
+              "filename": "dec1-2.webp"
             }
           ]
         },
@@ -335,6 +360,9 @@
             },
             {
               "filename": "sakura.webp"
+            },
+            {
+              "filename": "jan1.webp"
             }
           ]
         },
