@@ -7,11 +7,25 @@
     {{ $pixiv_icon := resources.Get "pixiv.webp" }}
     {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
+    <details>
+    <summary>Table of Contents</summary>
+    <ul>
     {{ range $art.categories }}
-        <h3>{{ .name }}</h3>
+        {{ $without_space :=  replaceRE "(\\s)" "" .name }}
+        <li><a href="#{{ $without_space }}">{{ .name }}</a></li>
+        <ul>{{ range sort .years "year" "desc" }}
+            <li><a href="#{{ $without_space}}{{ .year }}">{{ .year }}</a></li>
+        {{ end }}</ul>
+    {{ end }}
+    </ul>
+    </details>
+
+    {{ range $art.categories }}
+        {{ $without_space :=  replaceRE "(\\s)" "" .name }}
+        <h3 id="{{ $without_space }}">{{ .name }}</h3>
         <p>{{ .description }}</p>
         {{ range sort .years "year" "desc" }}
-            <h4>{{ .year }}</h4>
+            <h4 id="{{$without_space}}{{ .year }}">{{ .year }}</h4>
 
             <div class="gallery-con">
             {{ range .pieces }}
