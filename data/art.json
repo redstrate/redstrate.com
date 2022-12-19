@@ -443,6 +443,44 @@
       ]
     },
     {
+      "name": "Oil Paintings",
+      "description": "I took an oil painting class once, and I ended up making some cool stuff.",
+      "years": [
+        {
+          "year": 2019,
+          "pieces": [
+            {
+              "title": "Museum",
+              "filename": "museum.webp"
+            },
+            {
+              "title": "Object Study",
+              "filename": "object-study.webp"
+            },
+            {
+              "title": "Whatever (WIP)",
+              "filename": "whatever.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Physical Sketches",
+      "description": "I also took a drawing course too!",
+      "years": [
+        {
+          "year": 2020,
+          "pieces": [
+            {
+              "title": "Shading Study",
+              "filename": "shading-study.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "3D",
       "description": "All of my 3D stuff! These are made in Blender.",
       "years": [
