@@ -342,6 +342,90 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "Pencil",
+              "filename": "pencil.webp"
+            },
+            {
+              "title": "Sketch Dump",
+              "filename": "sketch-dump.webp"
+            },
+            {
+              "title": "Sketch Dump #2",
+              "filename": "sketch-dump2.webp"
+            },
+            {
+              "title": "Sketch Dump #3",
+              "filename": "sketch-dump3.webp"
+            },
+            {
+              "title": "Mona",
+              "filename": "mona.webp"
+            },
+            {
+              "title": "Shading Test",
+              "filename": "shading-test.webp"
+            },
+            {
+              "title": "Viera #1",
+              "filename": "viera1.webp"
+            },
+            {
+              "title": "Viera #2",
+              "filename": "viera2.webp"
+            },
+            {
+              "title": "Two Girls",
+              "filename": "two-girls.webp"
+            },
+            {
+              "title": "Overalls",
+              "filename": "overalls.webp"
+            },
+            {
+              "title": "Warrior",
+              "filename": "warrior.webp"
+            },
+            {
+              "title": "Demonness",
+              "filename": "demon.webp"
+            },
+            {
+              "title": "Guns",
+              "filename": "guns.webp"
+            },
+            {
+              "title": "Viera Streetwear",
+              "filename": "viera-street.webp"
+            },
+            {
+              "title": "Working Out",
+              "filename": "working-out.webp"
+            },
+            {
+              "title": "Funny",
+              "filename": "funny.webp"
+            },
+            {
+              "title": "Cactaur",
+              "filename": "cactaur.webp"
+            },
+            {
+              "title": "Well Fed",
+              "filename": "well-fed.webp"
+            },
+            {
+              "title": "Ship",
+              "filename": "ship.webp"
+            },
+            {
+              "title": "Pot",
+              "filename": "pot.webp"
+            },
+            {
+              "title": "Mythra Sketch #2",
+              "filename": "mythra-sketch2.webp"
+            },
+            {
               "title": "Knocky-Chan",
               "filename": "knocky-chan.webp"
             },
