@@ -71,6 +71,10 @@
             {
               "title": "Great Subject",
               "filename": "great-subject.webp"
+            },
+            {
+              "title": "Candle Light",
+              "filename": "candle-light.webp"
             }
           ]
         },
@@ -186,6 +190,14 @@
       "description": "More sketchy, incomplete but otherwise nice drawings I made! These are categorized by year, but otherwise sorted semi-randomly.",
       "years": [
         {
+          "year": 2016,
+          "pieces": [
+              {
+                "filename": "cactus-border.webp"
+              }
+          ]
+        },
+        {
           "year": 2019,
           "pieces": [
             {
@@ -235,6 +247,87 @@
             },
             {
               "filename": "dec1-2.webp"
+            },
+            {
+              "filename": "plan.webp"
+            },
+            {
+              "filename": "scythe-monster.webp"
+            },
+            {
+              "filename": "refill.webp"
+            },
+            {
+              "filename": "day4.webp"
+            },
+            {
+              "filename": "day6.webp"
+            },
+            {
+              "filename": "hey-baby.webp"
+            },
+            {
+              "filename": "shorts-girl.webp"
+            },
+            {
+              "filename": "mothman.webp"
+            },
+            {
+              "filename": "dr-bob.webp"
+            },
+            {
+              "filename": "question.webp"
+            },
+            {
+              "filename": "wooden-boy.webp"
+            },
+            {
+              "filename": "duel2.webp"
+            },
+            {
+              "filename": "witch2.webp"
+            },
+            {
+              "filename": "descent.webp"
+            },
+            {
+              "filename": "toys.webp"
+            },
+            {
+              "filename": "waiting2.webp"
+            },
+            {
+              "filename": "loss.webp"
+            },
+            {
+              "filename": "dorks.webp"
+            },
+            {
+              "filename": "drink.webp"
+            },
+            {
+              "filename": "pair.webp"
+            },
+            {
+              "filename": "fitgirl2.webp"
+            },
+            {
+              "filename": "fitgirl1.webp"
+            },
+            {
+              "filename": "sand.webp"
+            },
+            {
+              "filename": "back.webp"
+            },
+            {
+              "filename": "pokegirls.webp"
+            },
+            {
+              "filename": "shoot-ghost.webp"
+            },
+            {
+              "filename": "elisanne.webp"
             }
           ]
         },
@@ -296,6 +389,30 @@
             },
             {
               "filename": "viera-sketch.webp"
+            },
+            {
+              "filename": "naga2020.webp"
+            },
+            {
+              "filename": "chair2020.webp"
+            },
+            {
+              "filename": "chars2020.webp"
+            },
+            {
+              "filename": "wip2020.webp"
+            },
+            {
+              "filename": "fight2020.webp"
+            },
+            {
+              "filename": "town2020.webp"
+            },
+            {
+              "filename": "bike2020.webp"
+            },
+            {
+              "filename": "dump2020.webp"
             }
           ]
         },
