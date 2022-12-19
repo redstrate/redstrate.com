@@ -2,7 +2,7 @@
   "categories": [
     {
       "name": "Finished Works",
-      "description": "This is a collection of my “finished” work, sorted by year originally posted.",
+      "description": "This is a collection of my “finished” work, categorized by year and sorted by date of creation!",
       "years": [
         {
           "year": 2016,
@@ -179,7 +179,7 @@
     },
     {
       "name": "Sketches",
-      "description": "More sketchy, incomplete but otherwise nice drawings I made!",
+      "description": "More sketchy, incomplete but otherwise nice drawings I made! These are categorized by year, but otherwise sorted semi-randomly.",
       "years": [
         {
           "year": 2019,
@@ -444,7 +444,7 @@
     },
     {
       "name": "3D",
-      "description": "All of my 3D stuff!",
+      "description": "All of my 3D stuff! These are made in Blender.",
       "years": [
         {
           "year": 2016,
