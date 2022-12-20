@@ -14,6 +14,7 @@ copyright = 'This content is licensed under a Creative Commons Attribution-NonCo
 
 [permalinks]
   blog = 'blog/:year/:month/:title/'
+  art = 'art/:year/:month/:slugorfilename'
 
 [menu]
     [[menu.main]]
@@ -53,22 +54,28 @@ copyright = 'This content is licensed under a Creative Commons Attribution-NonCo
     weight = 6
 
     [[menu.main]]
+    identifier = 'videos'
+    name = 'Videos'
+    url = 'https://tube.ryne.moe/@redchannel'
+    weight = 7
+
+    [[menu.main]]
     identifier = 'downloads'
     name = 'Downloads'
     url = '/downloads'
-    weight = 7
+    weight = 8
 
     [[menu.main]]
     identifier = 'extra'
     name = 'Extras'
     url = '/extra'
-    weight = 8
+    weight = 9
 
     [[menu.main]]
     identifier = 'about'
     name = 'About'
     url = '/about'
-    weight = 9
+    weight = 10
 
 [outputs]
     home = ["HTML"]
