@@ -3,7 +3,7 @@
 
 {{- if and (not $img) .Page.File -}}
         {{ with .Page.File }}
-                {{ $path := path.Join .Dir .Destination }}
+                {{ $path := path.Join .Dir $url }}
                 {{- $img = resources.Get $path -}}
         {{ end }}
 {{- end -}}
