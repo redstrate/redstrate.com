@@ -2,8 +2,10 @@
 {{- $img := .Page.Resources.GetMatch .Destination -}}
 
 {{- if and (not $img) .Page.File -}}
-        {{ $path := path.Join .Page.File.Dir .Destination }}
-        {{- $img = resources.Get $path -}}
+        {{ with .Page.File }}
+                {{ $path := path.Join .Dir .Destination }}
+                {{- $img = resources.Get $path -}}
+        {{ end }}
 {{- end -}}
 
 {{- if and (not $img) .Page.File -}}

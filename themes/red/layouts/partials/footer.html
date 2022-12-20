@@ -23,7 +23,9 @@
 
     <a href="/imprint">Imprint</a>
 
-    <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .File.Path }}?view-source">Source</a>
+    {{ with .File }}
+    <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .Path }}?view-source">Source</a>
+    {{ end }}
 </div>
 
 <hr>
