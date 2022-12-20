@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = '~redstrate'
 theme = 'red'
 enableGitInfo = true
+enableRobotsTXT = true
+
 [params]
     description = "My personal corner of the Internet!"
 
