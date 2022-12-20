@@ -128,6 +128,12 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "orbit correction",
+              "filename": "orbit-correction.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/orbit-correction",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/103753611"
+            },
+            {
               "title": "grocery shopping",
               "filename": "grocery-shopping.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/grocery-shopping",
@@ -489,6 +495,14 @@
             {
               "title": "Pencil",
               "filename": "pencil.webp"
+            },
+            {
+              "title": "Chips",
+              "filename": "chips.webp"
+            },
+            {
+              "title": "Underwear",
+              "filename": "underwear.webp"
             },
             {
               "title": "Sketch Dump",
