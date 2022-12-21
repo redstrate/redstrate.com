@@ -1,6 +1,7 @@
 ---
 title: Art
 layout: art
+summary: My personal art gallery.
 aliases:
 - /gallery
 featured:

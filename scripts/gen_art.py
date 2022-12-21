@@ -115,6 +115,8 @@ with open('../data/art.json', 'r') as f:
         write_field(f, 'title', 'Art')
         write_field(f, 'layout', 'art')
 
+        write_field(f, 'summary', 'My personal art gallery.')
+
         f.write('aliases:\n')
         f.write('- /gallery\n')
 
