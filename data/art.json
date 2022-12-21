@@ -1,4 +1,9 @@
 {
+  "featured": [
+    "orbit-correction",
+    "grocery-shopping",
+    "mythra"
+  ],
   "categories": [
     {
       "name": "Finished Works",
@@ -108,7 +113,8 @@
               "title": "mari & asuka",
               "filename": "mari-and-asuka.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/95031741",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mari-asuka"
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mari-asuka",
+              "date": "12-25"
             },
             {
               "title": "woman knight",
@@ -120,7 +126,8 @@
               "title": "eva girls",
               "filename": "eva-girls.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/94953596",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls"
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/eva-girls",
+              "date": "12-23"
             }
           ]
         },
@@ -131,61 +138,71 @@
               "title": "orbit correction",
               "filename": "orbit-correction.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/orbit-correction",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/103753611"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/103753611",
+              "date": "12-20"
             },
             {
               "title": "grocery shopping",
               "filename": "grocery-shopping.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/grocery-shopping",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/103269375"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/103269375",
+              "date": "12-2"
             },
             {
               "title": "torigoth",
               "filename": "mythra.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/torigoth",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/102692392"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/102692392",
+              "date": "11-11"
             },
             {
               "title": "working out",
               "filename": "workingout.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/working-out",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/102641828"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/102641828",
+              "date": "11-9"
             },
             {
               "title": "bard in the black shroud",
               "filename": "bard.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/100622631"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100622631",
+              "date": "8-20"
             },
             {
               "title": "office date",
               "filename": "office-date.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/office-date",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/100150299"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100150299",
+              "date": "8-1"
             },
             {
               "title": "after school",
               "filename": "after-school.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/after-school",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/100147156"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100147156",
+              "date": "7-31"
             },
             {
               "title": "summer eva girls",
               "filename": "summer-eva-girls.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-eva-girls",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/100026963"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/100026963",
+              "date": "7-27"
             },
             {
               "title": "summer byleth",
               "filename": "summer-byleth.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/98726204",
-              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-byleth"
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-byleth",
+              "date": "5-30"
             },
             {
               "title": "after the rain",
               "filename": "after-the-rain.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/after-the-rain",
-              "pixiv_url": "https://www.pixiv.net/en/artworks/97911950"
+              "pixiv_url": "https://www.pixiv.net/en/artworks/97911950",
+              "date": "4-27"
             }
           ]
         }

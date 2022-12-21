@@ -1,0 +1,27 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <div>
+    {{ .Content }}
+    </div>
+
+    <p>
+    Posted on
+    <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
+        {{ $.Date.Format "January 02, 2006" }}
+    </time>
+    </p>
+
+    <h3>Comments</h3>
+    <script
+        data-isso="//comments.redstrate.com/"
+        data-isso-title=""
+        data-isso-avatar="false"
+        data-isso-vote="false"
+        data-isso-reveal-on-click="5"
+        src="//comments.redstrate.com/js/embed.min.js"></script>
+
+    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
+{{ end }}
