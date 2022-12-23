@@ -5,6 +5,10 @@ summary: My personal art gallery.
 aliases:
 - /gallery
 featured:
+- filename: goinghome.webp
+  date: 12-22
+  year: 2022
+  title: going home
 - filename: orbit-correction.webp
   date: 12-20
   year: 2022
@@ -13,10 +17,6 @@ featured:
   date: 12-2
   year: 2022
   title: grocery shopping
-- filename: mythra.webp
-  date: 11-11
-  year: 2022
-  title: torigoth
 years:
 - 2022
 - 2021

@@ -1,8 +1,8 @@
 {
   "featured": [
+    "goinghome",
     "orbit-correction",
-    "grocery-shopping",
-    "mythra"
+    "grocery-shopping"
   ],
   "categories": [
     {
@@ -134,6 +134,13 @@
         {
           "year": 2022,
           "pieces": [
+            {
+              "title": "going home",
+              "filename": "goinghome.webp",
+              "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/going-home",
+              "pixiv_url": "https://www.pixiv.net/en/artworks/103827572",
+              "date": "12-22"
+            },
             {
               "title": "orbit correction",
               "filename": "orbit-correction.webp",
