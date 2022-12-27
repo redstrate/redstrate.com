@@ -11,11 +11,11 @@ tags:
 Some more progress has been made on fixing my newest drawing tablet!
 <!--more-->
 
+## Fixing up the patch
+
 So as described in the [original post]({{< ref "fixing-22r" >}}), I have to patch
 the uclogic HID driver. Let's start by going through the process of submitting a
 patch upstream!
-
-## Fixing up the patch
 
 Before we even think about sending this patch upstream, I have to first - fix it.
 While the patch is mostly fine in it's original form, there is one big issue I
@@ -64,9 +64,98 @@ pad_button_set_down(struct pad_dispatch *pad,
 ```
 
 So this file seems to be handling "tablet pad" devices, which I didn't even
-know were considered a separate device until now. We'll come back to this file
-later as we need to map buttons, but first I wanted to figure out why libinput
-was not considering my tablet pad... as a tablet pad.
+know were considered a separate device until now. Looking through the code
+reveals logic that libinput uses to decide what buttons reported by the device
+are meant for tablet pad usage:
+
+```c
+...
+
+static void
+pad_init_buttons_from_kernel(struct pad_dispatch *pad,
+			       struct evdev_device *device)
+{
+	unsigned int code;
+	int map = 0;
+
+	/* we match wacom_report_numbered_buttons() from the kernel */
+	for (code = BTN_0; code < BTN_0 + 10; code++) {
+		if (libevdev_has_event_code(device->evdev, EV_KEY, code))
+			map_set_button_map(pad->button_map[code], map++);
+	}
+
+	for (code = BTN_BASE; code < BTN_BASE + 2; code++) {
+		if (libevdev_has_event_code(device->evdev, EV_KEY, code))
+			map_set_button_map(pad->button_map[code], map++);
+	}
+
+	for (code = BTN_A; code < BTN_A + 6; code++) {
+		if (libevdev_has_event_code(device->evdev, EV_KEY, code))
+			map_set_button_map(pad->button_map[code], map++);
+	}
+
+	for (code = BTN_LEFT; code < BTN_LEFT + 7; code++) {
+		if (libevdev_has_event_code(device->evdev, EV_KEY, code))
+			map_set_button_map(pad->button_map[code], map++);
+	}
+
+	pad->nbuttons = map;
+}
+...
+```
+
+So I created a list of valid pad inputs and used those to remap all of the pad
+buttons to valid inputs. This shouldn't affect existing tablets (especially considering
+I don't think anyone has used a tablet with this driver with more than a couple buttons).
+
+```c
+...
+/* Buttons considered valid tablet pad inputs. */
+const unsigned int uclogic_extra_input_mapping[] = {
+	BTN_0,
+	BTN_1,
+	BTN_2,
+	BTN_3,
+	BTN_4,
+	BTN_5,
+	BTN_6,
+	BTN_7,
+	BTN_8,
+	BTN_RIGHT,
+	BTN_MIDDLE,
+	BTN_SIDE,
+	BTN_EXTRA,
+	BTN_FORWARD,
+	BTN_BACK,
+	BTN_B,
+	BTN_A,
+	BTN_BASE,
+	BTN_BASE2,
+	BTN_X
+};
+...
+/*
+* Remap input buttons to sensible ones that are not invalid.
+* This only affects previous behavior for devices with more than ten or so buttons.
+*/
+const int key = (usage->hid & HID_USAGE) - 1;
+
+if (key > 0 && key < ARRAY_SIZE(uclogic_extra_input_mapping)) {
+        hid_map_usage(hi,
+                        usage,
+                        bit,
+                        max,
+                        EV_KEY,
+                        uclogic_extra_input_mapping[key]);
+        return 1;
+}
+```
+
+And that's pretty much the only major change I did to the original patch! You can
+see the [patch in linux-input here](https://lore.kernel.org/all/2068502.VLH7GnMWUR@adrastea/).
+
+However that isn't the end of the story, as there's one issue - libinput doesn't
+think my tablet pad is a... tablet pad?
 
 ```
 # libinput record /dev/input/event12
