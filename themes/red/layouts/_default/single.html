@@ -1,106 +1,26 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
+
     {{ if in .File.Dir "blog" }}
-    <p> 
-    Posted on 
-    <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
-        {{ $.Date.Format "January 02, 2006" }}
-    </time>
-    (Updated on
-    <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
-        {{ $.Page.Lastmod.Format "January 02, 2006" }}
-    </time>)
-    </p>
+        <p>
+        Posted on
+        <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
+            {{ $.Date.Format "January 02, 2006" }}
+        </time>
+        (Updated on
+        <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
+            {{ $.Page.Lastmod.Format "January 02, 2006" }}
+        </time>)
+        </p>
     {{ end }}
 
     <div>
-    {{ .Content }}
+        {{ .Content }}
     </div>
 
-    {{ $related := .Site.RegularPages.Related . | first 5 }}
-    {{ with $related }}
-        <h3>See Also</h3>
-        <ul>
-            {{ range . }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-            {{ end }}
-        </ul>
-    {{ end }}
+    {{ partial "related" . }}
 
     {{ if in .File.Dir "blog" }}
-    <h3>Comments</h3>
-    <script 
-        data-isso="//comments.redstrate.com/"
-        data-isso-title=""
-        data-isso-avatar="false"
-        data-isso-vote="false"
-        data-isso-reveal-on-click="5"
-        src="//comments.redstrate.com/js/embed.min.js" async crossorigin></script>
-
-    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
-        <noscript>Javascript needs to be activated to view comments.</noscript>
-    </section>
-    {{ end }}
-
-    {{ with .Params.comments }}
-    <h3>Mastodon Comments</h3>
-    <p>I <a href="https://{{ .host }}/@{{ .username }}/{{ .id }}">posted this</a> to my Mastodon! You can use any Fediverse account (Mastodon, Pleroma, etc) to <a class="button" href="https://{{ .host }}/interact/{{ .id }}?type=reply">reply</a>.</p>
-    <p id="mastodon-comments-list"><button id="load-comment">Load comments</button></p>
-    <noscript><p>You need JavaScript to view the comments.</p></noscript>
-    {{ $domscript := resources.Get "js/purify.min.js" }}
-    <script src="{{ $domscript.Permalink }}" type="text/javascript"></script>
-    <script type="text/javascript">
-        function escapeHtml(unsafe) {
-        return unsafe
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
-    }
-
-        document.getElementById("load-comment").addEventListener("click", function() {
-        document.getElementById("load-comment").innerHTML = "Loading";
-        fetch('https://{{ .host }}/api/v1/statuses/{{ .id }}/context')
-            .then(function(response) {
-            return response.json();
-            })
-            .then(function(data) {
-            if(data['descendants'] &&
-                Array.isArray(data['descendants']) &&
-                data['descendants'].length > 0) {
-                document.getElementById('mastodon-comments-list').innerHTML = "";
-                data['descendants'].forEach(function(reply) {
-                    reply.account.display_name = escapeHtml(reply.account.display_name);
-                    reply.account.emojis.forEach(emoji => {
-                    reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
-                        `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
-                    });
-                    mastodonComment =
-                    `<div class="mastodon-comment">
-                        <div class="avatar">
-                        <img src="${escapeHtml(reply.account.avatar_static)}" height=60 width=60 alt="">
-                        </div>
-                        <div class="content">
-                        <div class="author">
-                            <a href="${reply.account.url}" rel="nofollow">
-                            <span>${reply.account.display_name}</span>
-                            <span class="disabled">${escapeHtml(reply.account.acct)}</span>
-                            </a>
-                            <a class="date" href="${reply.uri}" rel="nofollow">
-                            ${reply.created_at.substr(0, 10)}
-                            </a>
-                        </div>
-                        <div class="mastodon-comment-content">${reply.content}</div>
-                        </div>
-                    </div>`;
-                    document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true}));
-                });
-            } else {
-                document.getElementById('mastodon-comments-list').innerHTML = "<p>Not comments found</p>";
-            }
-            });
-        });
-    </script>
+        {{ partial "comments" . }}
     {{ end }}
 {{ end }}

@@ -13,20 +13,17 @@
 {{- end -}}
 
 {{- with $img -}}
+        <figure>
+                <a href="{{ $img.RelPermalink }}" data-download="true">
+                {{ if eq .MediaType.SubType "svg" }}
+                        <img class="article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+                {{ else }}
+                        <img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
+                {{ end }}
+                </a>
 
-<figure>
-<a href="{{ $img.RelPermalink }}" data-download="true">
-{{ if eq .MediaType.SubType "svg" }}
-<img class="article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
-{{ else }}
-<img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" />
-{{ end }}
-</a>
-<figcaption>{{ $.Text | safeHTML }}</figcaption>
-</figure>
-
+                <figcaption>{{ $.Text | safeHTML }}</figcaption>
+        </figure>
 {{- else -}}
-
-<em>Unable to find image {{ $url }}!</em>
-
+        <em>Unable to find image {{ $url }}!</em>
 {{- end -}}

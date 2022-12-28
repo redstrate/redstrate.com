@@ -10,7 +10,7 @@ arttags:
 ![
 A blonde-haired knight is looking at the viewer. She is leaning on her trusty sword, and has some chestplates and basic armor on.
 ](/art/knight.webp)
-## Commentary
+### Commentary
 
 Looks like this knight is ready for anything! It doesn't look like her legs are very protected though...
 

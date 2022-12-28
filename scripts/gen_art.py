@@ -43,7 +43,7 @@ def parse_art(title, year, date, original_filename, filename, file):
         f.write(filename)
         f.write('.webp)\n')
 
-        f.write('## Commentary\n')
+        f.write('### Commentary\n')
 
         f.write(document.field('Description').required_string_value())
         f.write('\n')

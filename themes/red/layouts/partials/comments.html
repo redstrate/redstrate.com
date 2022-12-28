@@ -1,0 +1,17 @@
+<h3>Comments</h3>
+
+{{ if hugo.IsProduction }}
+<script
+    data-isso="//comments.redstrate.com/"
+    data-isso-title=""
+    data-isso-avatar="false"
+    data-isso-vote="false"
+    data-isso-reveal-on-click="5"
+    src="//comments.redstrate.com/js/embed.min.js" async crossorigin></script>
+
+<section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
+    <noscript>Javascript needs to be activated to view comments.</noscript>
+</section>
+{{ else }}
+<p>Comments are disabled in development mode.</p>
+{{ end }}

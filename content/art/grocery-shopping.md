@@ -12,7 +12,7 @@ A young succubus is opening up the door to her apartment. She has pale blue hair
 She has four arms, one of which is turning the knob to the door. Another two hands are holding grocery bags, and the last
 is inside of her jacket pocket. She is wearing a red jacket, and dark gray shorts.
 ](/art/grocery-shopping.webp)
-## Commentary
+### Commentary
 
 This is the first proper "finished" drawing of Merume. I love multiarm designs so I finally broke down and came up with
 a concept for her. Her initial name was going to be Meru, but a quick google search showed another succubus under

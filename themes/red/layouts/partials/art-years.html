@@ -1,0 +1,12 @@
+<h3>Years</h3>
+<div class="generic-con year-con">
+{{ range $.Param "years" }}
+    {{ $year := . }}
+    <a href="/art/{{ . }}">
+        {{ $thumbp := printf "/year-thumbs/%s.webp" . }}
+        {{ with resources.Get $thumbp }}
+        <img width="512" height="256" alt="{{ $year }}" class="gallery-img article-img" src="{{ .RelPermalink }}">
+        {{ end }}
+    </a>
+{{ end }}
+</div>

@@ -12,7 +12,6 @@ and moving onto basic grammar and counting (hence why the rest of this sentence 
 
 ### Links
 
-* [Resume](/resume) - hire me!
 * [Mastodon](https://mastodon.art/@redstrate) - my microblogging... blog
 * [sourcehut](https://sr.ht/~redstrate) - lovely code forge containing my lovely code
 * [Newgrounds](https://redstrate.newgrounds.com/) - collection of my recent art

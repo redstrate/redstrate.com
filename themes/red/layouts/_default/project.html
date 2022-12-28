@@ -1,44 +1,38 @@
 {{ define "main" }}
-<h2>{{ .Title }}</h2>
+    <h2>{{ .Title }}</h2>
 
-<table>
-  {{ with $.Param "source" }}
-  <tr>
-    <td>Source Code</td>
-    <td><a href='{{ . }}'>{{ . }}</a></td>
-  </tr>
-  {{ end }}
-  {{ with $.Param "license" }}
-  <tr>
-    <td>License</td>
-    <td>{{ . }}</td>
-  </tr>
-  {{ end }}
-  <tr>
-    <td>Year Created</td>
-    <td><time datetime='{{ .Date.Format "2006" }}'>{{ .Date.Format "2006"}}</time></td>
-  </tr>
-  <tr>
-    <td>Tags</td>
-    <td>
-      {{ $len := (len .Params.tags) }}
-      {{ range $index, $element := .Params.tags }}
-      <a href="/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-      {{ end }}
-    </td>
-  </tr>
-</table>
+    <table>
+        {{ with $.Param "source" }}
+            <tr>
+                <td>Source Code</td>
+                <td><a href='{{ . }}'>{{ . }}</a></td>
+            </tr>
+        {{ end }}
 
-{{ .Content }}
+        {{ with $.Param "license" }}
+            <tr>
+                <td>License</td>
+                <td>{{ . }}</td>
+            </tr>
+        {{ end }}
 
-{{ $related := .Site.RegularPages.Related . | first 5 }}
-{{ with $related }}
-<h3>See Also</h3>
-<ul>
-  {{ range . }}
-  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-  {{ end }}
-</ul>
-{{ end }}
+        <tr>
+            <td>Year Created</td>
+            <td><time datetime='{{ .Date.Format "2006" }}'>{{ .Date.Format "2006"}}</time></td>
+        </tr>
 
+        <tr>
+            <td>Tags</td>
+            <td>
+            {{ $len := (len .Params.tags) }}
+            {{ range $index, $element := .Params.tags }}
+            <a href="/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+            {{ end }}
+            </td>
+        </tr>
+    </table>
+
+    {{ .Content }}
+
+    {{ partial "related" . }}
 {{ end }}

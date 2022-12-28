@@ -2,7 +2,7 @@
     <h2>{{ .Title }}</h2>
 
     <div>
-    {{ .Content }}
+        {{ .Content }}
     </div>
 
     <table>
@@ -14,40 +14,31 @@
             </time>
         </td>
     </tr>
+
     {{ with .Params.arttags }}
-    <tr>
-        <th>Tags</th>
-        <td>
-            {{ $len := (len .) }}
-            {{ range $index, $element := . }}
-            <a href="/art/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-            {{ end }}
-        </td>
-    </tr>
+        <tr>
+            <th>Tags</th>
+            <td>
+                {{ $len := (len .) }}
+                {{ range $index, $element := . }}
+                <a href="/art/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                {{ end }}
+            </td>
+        </tr>
     {{ end }}
+
     {{ with .Params.characters }}
-    <tr>
-        <th>Characters</th>
-        <td>
-            {{ $len := (len .) }}
-            {{ range $index, $element := . }}
-            <a href="/art/characters/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-            {{ end }}
-        </td>
-    </tr>
+        <tr>
+            <th>Characters</th>
+            <td>
+                {{ $len := (len .) }}
+                {{ range $index, $element := . }}
+                <a href="/art/characters/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                {{ end }}
+            </td>
+        </tr>
     {{ end }}
     </table>
 
-    <h3>Comments</h3>
-    <script
-        data-isso="//comments.redstrate.com/"
-        data-isso-title=""
-        data-isso-avatar="false"
-        data-isso-vote="false"
-        data-isso-reveal-on-click="5"
-        src="//comments.redstrate.com/js/embed.min.js" async crossorigin></script>
-
-    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
-        <noscript>Javascript needs to be activated to view comments.</noscript>
-    </section>
+    {{ partial "comments" . }}
 {{ end }}

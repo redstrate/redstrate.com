@@ -12,7 +12,7 @@ A woman sits against a fence, looking at the viewer. She has golden hair, a crow
 white armor adorned with black and neon green accents. Her hair is flowing in the wind, and she is currently sat against
 a fence on a bridge. In the background is the rest of the town, sitting above the sea of clouds.
 ](/art/mythra.webp)
-## Commentary
+### Commentary
 
 I always wanted to draw some Xenoblade Chronicles 2 fan art, but unfortunately it took a
 while before I got around to it! This is Mythra, while she's standing around in Torigoth.
