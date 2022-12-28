@@ -85,7 +85,7 @@
             <a href="{{ .Permalink }}">
             {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
                     {{ $title := .Params.title }}
-                    {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "600x" }}
+                    {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "300x" }}
                     {{ with $image }}
                     <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" src="{{ .Permalink }}"/>
                     {{ else }}
