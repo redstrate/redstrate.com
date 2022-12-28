@@ -4,9 +4,9 @@ layout: art-detail
 date: 2022-07-27
 slug: summer-eva-girls
 characters:
-- mari
-- asuka
-- rei
+- Mari
+- Asuka
+- Rei
 arttags:
 ---
 ![

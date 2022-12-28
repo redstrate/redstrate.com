@@ -5,7 +5,6 @@ date: 2022-07-31
 slug: after-school
 characters:
 arttags:
-- landscape
 ---
 ![
 Two young girls are facing towards the viewer. The one on the left has blond hair, and doing a peace sign. The other girl is laughing and laying her hands on her skirt. They're in the street, with a stone wall and houses in the distance.

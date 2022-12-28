@@ -29,7 +29,7 @@ def parse_art(title, year, date, original_filename, filename, file):
 
         f.write("characters:\n")
         for character in document.list('Characters').items():
-            f.write("- " + character.required_string_value().lower() + "\n")
+            f.write("- " + character.required_string_value() + "\n")
 
         f.write("arttags:\n")
         for tag in document.list('Tags').items():
@@ -43,10 +43,11 @@ def parse_art(title, year, date, original_filename, filename, file):
         f.write(filename)
         f.write('.webp)\n')
 
-        f.write('### Commentary\n')
+        if document.optional_field('Description'):
+            f.write('### Commentary\n')
 
-        f.write(document.field('Description').required_string_value())
-        f.write('\n')
+            f.write(document.field('Description').required_string_value())
+            f.write('\n')
 
 def parse_art_piece(json, year, date):
     filename_without_ext = os.path.splitext(json["filename"])[0]
@@ -138,6 +139,9 @@ with open('../data/art.json', 'r') as f:
 
         f.write('---\n')
 
+    num_eno = 0
+    num_noneno = 0
+
     for category in art_data["categories"]:
         for year in category["years"]:
             for piece in year["pieces"]:
@@ -146,14 +150,18 @@ with open('../data/art.json', 'r') as f:
                 path = os.path.join(art_data_directory, filename_without_ext + ".eno")
 
                 if os.path.isfile(path):
+                    num_eno = num_eno + 1
                     with open(path) as f:
                         if "date" in piece.keys():
                             parse_art(piece["title"], year["year"], piece["date"], art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
                         else:
                             parse_art(piece["title"], year["year"], None, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
                 else:
+                    num_noneno = num_noneno + 1
                     if "date" in piece.keys():
                         parse_art_piece(piece, year["year"], piece["date"])
                     else:
                         parse_art_piece(piece, year["year"], None)
+
+    print("Art coverage: {}/{}".format(num_eno, num_eno + num_noneno));
 

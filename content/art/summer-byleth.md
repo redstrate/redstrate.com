@@ -4,7 +4,7 @@ layout: art-detail
 date: 2022-05-30
 slug: summer-byleth
 characters:
-- byleth
+- Byleth
 arttags:
 ---
 ![

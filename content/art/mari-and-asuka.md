@@ -4,8 +4,8 @@ layout: art-detail
 date: 2021-12-25
 slug: mari-and-asuka
 characters:
-- mari
-- asuka
+- Mari
+- Asuka
 arttags:
 ---
 ![

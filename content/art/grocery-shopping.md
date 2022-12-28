@@ -4,7 +4,7 @@ layout: art-detail
 date: 2022-12-02
 slug: grocery-shopping
 characters:
-- merume
+- Merume
 arttags:
 ---
 ![

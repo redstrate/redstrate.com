@@ -4,7 +4,8 @@ layout: art-detail
 date: 2022-08-20
 slug: bard
 characters:
-- juritta
+- Juritta
+- FFXIV
 arttags:
 ---
 ![

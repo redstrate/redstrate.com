@@ -4,7 +4,7 @@ layout: art-detail
 date: 2022-04-27
 slug: after-the-rain
 characters:
-- mysterious swordswoman
+- Mysterious Swordswoman
 arttags:
 ---
 ![

@@ -4,7 +4,7 @@ layout: art-detail
 date: 2022-11-11
 slug: mythra
 characters:
-- mythra
+- Mythra
 arttags:
 ---
 ![

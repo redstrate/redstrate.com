@@ -4,9 +4,9 @@ layout: art-detail
 date: 2021-12-23
 slug: eva-girls
 characters:
-- asuka
-- rei
-- mari
+- Asuka
+- Rei
+- Mari
 arttags:
 ---
 ![
