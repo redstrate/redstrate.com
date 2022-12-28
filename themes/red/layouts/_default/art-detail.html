@@ -21,7 +21,7 @@
             <td>
                 {{ $len := (len .) }}
                 {{ range $index, $element := . }}
-                <a href="/art/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                <a href="/art/tags/{{ urlize . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
                 {{ end }}
             </td>
         </tr>
@@ -33,7 +33,7 @@
             <td>
                 {{ $len := (len .) }}
                 {{ range $index, $element := . }}
-                <a href="/art/characters/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                <a href="/art/characters/{{ urlize .}}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
                 {{ end }}
             </td>
         </tr>
