@@ -1,6 +1,15 @@
 {{ if not .IsHome }}
         {{- range .Ancestors.Reverse }}
-                <a href="{{ .Permalink }}">{{ .Title }}</a><span> / </span>
+                {{ if eq .Title "Arttags" }}
+                <a href="/art/tags">Tags</a>
+                {{ else }}
+                        {{ if eq .Title "Characters" }}
+                                <a href="/art/characters">Characters</a>
+                        {{ else }}
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        {{ end }}
+                {{ end }}
+                <span> / </span>
         {{- end }}
         <a href="{{ .Permalink }}">{{ .Title }}</a>
 {{ end }}

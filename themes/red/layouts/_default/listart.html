@@ -3,7 +3,7 @@
 
     <ul id="all-tags">
     {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
-        <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+        <li><a href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
     {{ end }}
     </ul>
 {{ end }}
