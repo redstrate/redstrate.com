@@ -108,15 +108,9 @@
     <a href="{{ .URL }}">Next</a>
     {{ end }}
 
-    <script>
-    imagesLoaded(document.querySelector('.grid'), function(instance) {
-        new Masonry('.grid', {
-            itemSelector: '.grid-item',
-            columnWidth: 300,
-            fitWidth: true,
-            gutter: 10
-        });
-    });
-    </script>
-
+    {{ $site := resources.Get "js/site.js" }}
+    {{ if hugo.IsProduction }}
+        {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
 {{ end }}

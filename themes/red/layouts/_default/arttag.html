@@ -40,16 +40,9 @@
         </div>
     {{ template "_internal/pagination.html" . }}
 
-    <script>
-    imagesLoaded( document.querySelector('.grid'), function( instance ) {
-    console.log('all images are loaded');
-    var msnry = new Masonry( '.grid', {
-        itemSelector: '.grid-item',
-        columnWidth: 200,
-        fitWidth: true,
-        gutter: 10
-    });
-    });
-    </script>
-
+    {{ $site := resources.Get "js/site.js" }}
+    {{ if hugo.IsProduction }}
+        {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
 {{ end }}
