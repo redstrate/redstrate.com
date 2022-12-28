@@ -27,9 +27,13 @@ def parse_art(title, year, date, original_filename, filename, file):
 
         write_field(f, 'slug', filename)
 
-        f.write("tags:\n")
+        f.write("characters:\n")
         for character in document.list('Characters').items():
             f.write("- " + character.required_string_value().lower() + "\n")
+
+        f.write("arttags:\n")
+        for tag in document.list('Tags').items():
+            f.write("- " + tag.required_string_value().lower() + "\n")
 
         f.write('---\n')
 
@@ -43,11 +47,6 @@ def parse_art(title, year, date, original_filename, filename, file):
 
         f.write(document.field('Description').required_string_value())
         f.write('\n')
-
-        f.write('## Characters\n')
-
-        for character in document.list('Characters').items():
-            f.write('* [' + character.required_string_value() + '](' + '/tags/' + character.required_string_value().lower() + ')\n')
 
 def parse_art_piece(json, year, date):
     filename_without_ext = os.path.splitext(json["filename"])[0]

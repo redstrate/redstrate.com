@@ -10,6 +10,8 @@ comments:
   host: mastodon.art
   username: redstrate
   id: 109349980860736142
+series:
+- Graphics Dump
 ---
 
 The Linux graphics stack is a complex mechanism of many projects that function in unison to deliver images to your screen. How do they work?

@@ -7,6 +7,9 @@
 
     <p>If you wish to follow me when I post new art, you can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a> or my <a href="/art/index.xml">Art RSS Feed!</a></p>
 
+    {{ $paginator := .Paginate (where .Pages "Type" "art") 50 }}
+
+    {{ if eq $paginator.PageNumber 1}}
     <h3>Featured Artwork</h3>
     <div class="gallery-con">
         {{ range $.Param "featured" }}
@@ -50,6 +53,7 @@
     </div>
 
     <h3>Years</h3>
+    <div class="generic-con year-con">
     {{ range $.Param "years" }}
         {{ $year := . }}
         <a href="/art/{{ . }}">
@@ -59,4 +63,60 @@
             {{ end }}
         </a>
     {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="grid">
+    {{ range $paginator.Pages }}
+            {{ $full := resources.Get (printf "art/%s.webp" .Params.slug) }}
+            {{ if $full }}
+
+            {{ $filename_without_ext := .Params.slug }}
+
+            {{ $month := 1 }}
+            {{ $year := 1 }}
+
+            {{ if .Params.date }}
+                {{ $split := split .Params.date "-" }}
+                {{ $month = index $split 0 }}
+                {{ $year = index $split 3 }}
+            {{ end }}
+
+            <a href="{{ .Permalink }}">
+            {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
+                    {{ $title := .Params.title }}
+                    {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "600x" }}
+                    {{ with $image }}
+                    <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" src="{{ .Permalink }}"/>
+                    {{ else }}
+                    <p>Thumbnail not found!</p>
+                    {{ end }}
+            {{ else }}
+            </a>
+
+            <em>CANNOT FIND {{.Params.slug }}</em>
+
+            {{ end }}
+    {{ end }}
+    </div>
+
+    {{ with $paginator.Prev }}
+    <a href="{{ .URL }}">Prev</a>
+    {{ end }}
+
+    {{ with $paginator.Next }}
+    <a href="{{ .URL }}">Next</a>
+    {{ end }}
+
+    <script>
+    imagesLoaded(document.querySelector('.grid'), function(instance) {
+        new Masonry('.grid', {
+            itemSelector: '.grid-item',
+            columnWidth: 300,
+            fitWidth: true,
+            gutter: 10
+        });
+    });
+    </script>
+
 {{ end }}

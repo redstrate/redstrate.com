@@ -5,6 +5,8 @@ draft: false
 tags:
 - Figures
 - Review
+series:
+- Figure Reviews
 aliases:
 - /articles/figure1/
 ---

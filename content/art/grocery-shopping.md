@@ -3,8 +3,9 @@ title: grocery shopping
 layout: art-detail
 date: 2022-12-02
 slug: grocery-shopping
-tags:
+characters:
 - merume
+arttags:
 ---
 ![
 A young succubus is opening up the door to her apartment. She has pale blue hair, red eyes and is looking out in the distance.
@@ -20,5 +21,3 @@ that name!
 Right now she's heading back to her apartment, and back from a quick grocery trip. She's probably the only
 one who could comfortably make "one trip" ;-)
 
-## Characters
-* [Merume](/tags/merume)

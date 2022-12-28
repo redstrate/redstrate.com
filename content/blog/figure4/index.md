@@ -5,6 +5,8 @@ draft: false
 tags:
 - Figures
 - Review
+series:
+- Figure Reviews
 ---
 
 It's time to review another Rebuild of Evangelion figure, and this time it's Mari again! I was specifically drawn to [this figure](https://myfigurecollection.net/item/1090742) because it's not another plugsuit one[^1]. Yes, plugsuits are cool but I'm getting tired of seeing them in figure form. I purchased this one from AmiAmi as usual. This figure is also based off of a Takeshi Honda drawing used in a 2011 calendar:

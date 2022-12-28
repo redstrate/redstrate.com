@@ -15,6 +15,15 @@ copyright = 'This content is licensed under a Creative Commons Attribution-NonCo
 [permalinks]
   blog = 'blog/:year/:month/:title/'
   art = 'art/:year/:month/:slugorfilename'
+  arttags = 'art/tags/:title'
+  characters = 'art/characters/:title'
+  characters_listpath = "art/characters/"
+
+[taxonomies]
+  series = 'series'
+  tag = 'tags'
+  arttag = 'arttags'
+  character = 'characters'
 
 [menu]
     [[menu.main]]

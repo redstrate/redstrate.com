@@ -2,13 +2,11 @@
 title: "Home"
 ---
 
-**new** My website has received a makeover, and features a few new sections for you to explore.
+Welcome to my personal corner of the Internet! I'm an independent artist and programmer, and this is my own personal collection
+of my work. I also make [blog posts sometimes]({{< ref "blog" >}}). You an find more of [my art here]({{< ref "art" >}}).
 
-Welcome to my personal corner of the Internet!
+If you like my website, consider signing the [guestbook]({{< ref "guestbook" >}})!
 
-I really like creating software, art, among other things. You can find my own, personal collection [here](/art).
+{{< featured-art >}}
 
-If you like my website, consider signing the [guestbook](/guestbook)!
-
-![Banner](/banner.webp)
-![Banner 2](/banner2.webp)
+{{< recent-posts >}}

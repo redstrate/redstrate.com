@@ -175,6 +175,28 @@ figure figcaption {
     border: 1px solid gray;
 }
 
+.generic-con {
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.year-con {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.grid-item {
+    height: auto;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
 td {
     text-align: center;
 }

@@ -5,6 +5,8 @@ draft: true
 tags:
 - Figures
 - Review
+series:
+- Figure Reviews
 ---
 
 It's time for another figure review, this time with Ryza!

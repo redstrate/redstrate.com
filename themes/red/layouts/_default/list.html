@@ -3,34 +3,34 @@
 
     {{ .Content }}
 
-<table class="w-full table-auto mt-4">
-    <tr>
-        {{ if and (.File) (in .File.Dir "software") }}
-        <th>Name</th>
-        <th>Description</th>
-        <th>Year Created</th>
-        {{ else }}
-        <th>Title</th>
-        <th>Summary</th>
-        <th>Date</th>
-        {{ end }}
-    </tr>
-    {{ range .Data.Pages.ByDate.Reverse }}
-    <tr>
-        <td class="border-t"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-
-        <td class="border-t">
-            {{ .Summary }}
-        </td>
-
-        <td class="border-t">
+    <table class="w-full table-auto mt-4">
+        <tr>
             {{ if and (.File) (in .File.Dir "software") }}
-            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format " 2006"}}</time>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Year Created</th>
             {{ else }}
-            <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "Jan 2, 2006"}}</time>
+            <th>Title</th>
+            <th>Summary</th>
+            <th>Date</th>
             {{ end }}
-        </td>
-    </tr>
-    {{ end }}
-</table>
+        </tr>
+        {{ range .Data.Pages.ByDate.Reverse }}
+        <tr>
+            <td class="border-t"><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+
+            <td class="border-t">
+                {{ .Summary }}
+            </td>
+
+            <td class="border-t">
+                {{ if and (.File) (in .File.Dir "software") }}
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format " 2006"}}</time>
+                {{ else }}
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}'>{{ .Date.Format "Jan 2, 2006"}}</time>
+                {{ end }}
+            </td>
+        </tr>
+        {{ end }}
+    </table>
 {{ end }}

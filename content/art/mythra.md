@@ -3,8 +3,9 @@ title: torigoth
 layout: art-detail
 date: 2022-11-11
 slug: mythra
-tags:
+characters:
 - mythra
+arttags:
 ---
 ![
 A woman sits against a fence, looking at the viewer. She has golden hair, a crown adorned with a green jewel and wears slim
@@ -31,5 +32,3 @@ a pretty okay result. I had split up each shading layer based on the material, o
 etc. While the best looking bits are the cloth and metal bits, the skin in retrospect could've used some more
 love. In the future I should just do a quick paint-over pass...
 
-## Characters
-* [Mythra](/tags/mythra)

@@ -3,92 +3,95 @@
 
     {{ .Content }}
 
-    {{ $selected_year := $.Param "selectedyear" }}
-    {{ $art := (index site.Data ($.Param "json")) }}
-    {{ $pixiv_icon := resources.Get "pixiv.webp" }}
-    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
+    {{ if in .File.Dir "art" }}
 
-    <details>
-    <summary>Table of Contents</summary>
-    <ul>
-    {{ range $art.categories }}
-        {{ $without_space :=  replaceRE "(\\s)" "" .name }}
-        <li><a href="#{{ $without_space }}">{{ .name }}</a></li>
-    {{ end }}
-    </ul>
-    </details>
+    {{ else }}
+        {{ $selected_year := $.Param "selectedyear" }}
+        {{ $art := (index site.Data ($.Param "json")) }}
+        {{ $pixiv_icon := resources.Get "pixiv.webp" }}
+        {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
-    {{ range $art.categories }}
-        {{ $should_include := false }}
-
-        {{ range sort .years "year" "desc" }}
-            {{ if eq (int .year) (int $selected_year) }}
-                {{ $should_include = true }}
-            {{ end }}
-        {{ end }}
-
-        {{ if $should_include }}
+        <details>
+        <summary>Table of Contents</summary>
+        <ul>
+        {{ range $art.categories }}
             {{ $without_space :=  replaceRE "(\\s)" "" .name }}
-            <h3 id="{{ $without_space }}">{{ .name }}</h3>
+            <li><a href="#{{ $without_space }}">{{ .name }}</a></li>
+        {{ end }}
+        </ul>
+        </details>
+
+        {{ range $art.categories }}
+            {{ $should_include := false }}
+
             {{ range sort .years "year" "desc" }}
                 {{ if eq (int .year) (int $selected_year) }}
-                    {{ $year := .year }}
+                    {{ $should_include = true }}
+                {{ end }}
+            {{ end }}
 
-                    <div class="gallery-con">
-                    {{ range .pieces }}
-                        <figure class="gallery-fig">
-                            {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
-                            {{ if $full }}
+            {{ if $should_include }}
+                {{ $without_space :=  replaceRE "(\\s)" "" .name }}
+                <h3 id="{{ $without_space }}">{{ .name }}</h3>
+                {{ range sort .years "year" "desc" }}
+                    {{ if eq (int .year) (int $selected_year) }}
+                        {{ $year := .year }}
 
-                            {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
+                        <div class="gallery-con">
+                        {{ range .pieces }}
+                            <figure class="gallery-fig">
+                                {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+                                {{ if $full }}
 
-                            {{ $month := 1 }}
+                                {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
 
-                            {{ if .date }}
-                                {{ $split := split .date "-" }}
-                                {{ $month = index $split 0 }}
-                            {{ end }}
+                                {{ $month := 1 }}
 
-                            {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
+                                {{ if .date }}
+                                    {{ $split := split .date "-" }}
+                                    {{ $month = index $split 0 }}
+                                {{ end }}
 
-                            <a href="{{ $path }}" aria-label="Click to view details">
-                                {{ if $.Params.thumbnails }}
-                                    {{ $title := .title }}
-                                    {{ with resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
-                                    <img class="gallery-img" alt="{{ $title }}" width="128" height="128" src="{{ .Permalink }}"/>
+                                {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
+
+                                <a href="{{ $path }}" aria-label="Click to view details">
+                                    {{ if $.Params.thumbnails }}
+                                        {{ $title := .title }}
+                                        {{ with resources.Get (printf "%s-thumbs/%s" ($.Param "json") .filename) }}
+                                        <img class="gallery-img" alt="{{ $title }}" width="128" height="128" src="{{ .Permalink }}"/>
+                                        {{ else }}
+                                        <p>Thumbnail not found!</p>
+                                        {{ end }}
                                     {{ else }}
-                                    <p>Thumbnail not found!</p>
+                                        <img alt="{{ .title }}" src="{{ $full.Permalink }}"/>
                                     {{ end }}
+                                </a>
+
+                                <figcaption>
+
+                                    {{ with .title }}
+                                    "{{ . }}"
+                                    {{ end }}
+                                    {{ if .newgrounds_url }}
+                                        <a href="{{ .newgrounds_url }}" style="vertical-align: bottom"><img alt="Newgrounds Icon" style="vertical-align: bottom" width="19" height="19" src="{{ $newgrounds_icon.Permalink }}"></a>
+                                    {{ end }}
+                                    {{ if .pixiv_url }}
+                                        <a href="{{ .pixiv_url }}" style="vertical-align: bottom"><img alt="Pixiv Icon" style="vertical-align: bottom" width="19" height="19" src="{{ $pixiv_icon.Permalink }}"></a>
+                                    {{ end }}
+                                </figcaption>
+
                                 {{ else }}
-                                    <img alt="{{ .title }}" src="{{ $full.Permalink }}"/>
+
+                                <em>CANNOT FIND {{.filename }}</em>
+
                                 {{ end }}
-                            </a>
-
-                            <figcaption>
-
-                                {{ with .title }}
-                                "{{ . }}"
-                                {{ end }}
-                                {{ if .newgrounds_url }}
-                                    <a href="{{ .newgrounds_url }}" style="vertical-align: bottom"><img alt="Newgrounds Icon" style="vertical-align: bottom" width="19" height="19" src="{{ $newgrounds_icon.Permalink }}"></a>
-                                {{ end }}
-                                {{ if .pixiv_url }}
-                                    <a href="{{ .pixiv_url }}" style="vertical-align: bottom"><img alt="Pixiv Icon" style="vertical-align: bottom" width="19" height="19" src="{{ $pixiv_icon.Permalink }}"></a>
-                                {{ end }}
-                            </figcaption>
-
-                            {{ else }}
-
-                            <em>CANNOT FIND {{.filename }}</em>
-
+                            </figure>
                             {{ end }}
-                        </figure>
-                        {{ end }}
 
-                    </div>
+                        </div>
+                    {{ end }}
                 {{ end }}
             {{ end }}
         {{ end }}
-
     {{ end }}
 {{ end }}
