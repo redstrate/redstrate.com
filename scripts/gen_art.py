@@ -14,6 +14,8 @@ def parse_art(title, year, date, original_filename, filename, file):
 
         write_field(f, 'title', title)
         write_field(f, 'layout', 'art-detail')
+        write_field(f, 'filename', '/art/' + filename + '.webp')
+        write_field(f, 'alt_text', "\"" + document.field('Alt Text').required_string_value().replace('\n','') + "\"")
 
         if date is None:
             write_field(f, 'date', str(year) + '-01-01')
@@ -37,15 +39,7 @@ def parse_art(title, year, date, original_filename, filename, file):
 
         f.write('---\n')
 
-        f.write('![')
-        f.write(document.field('Alt Text').required_string_value())
-        f.write('](/art/')
-        f.write(filename)
-        f.write('.webp)\n')
-
         if document.optional_field('Description'):
-            f.write('### Commentary\n')
-
             f.write(document.field('Description').required_string_value())
             f.write('\n')
 
@@ -59,6 +53,7 @@ def parse_art_piece(json, year, date):
 
         if "title" in json.keys():
             write_field(f, 'title', json['title'])
+            write_field(f, 'alt_text', json['title'])
 
         if date is None:
             write_field(f, 'date', str(year) + '-01-01')
@@ -71,13 +66,9 @@ def parse_art_piece(json, year, date):
             write_field(f, 'date', str(year) + '-' + month.zfill(2) + "-" + day.zfill(2))
 
         write_field(f, 'layout', 'art-detail')
+        write_field(f, 'filename', '/art/' + json['filename'])
 
         f.write('---\n')
-
-        f.write('![')
-        f.write('](/art/')
-        f.write(json["filename"])
-        f.write(')\n')
 
 art_data_directory = '../art'
 art_output_directory = '../content/art'

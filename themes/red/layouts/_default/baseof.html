@@ -5,7 +5,12 @@
         <header>{{- partial "header.html" . -}}</header>
         <div id="content">
         <aside>{{- partial "sidebar.html" . -}}</aside>
-        <article>{{- block "main" . }}{{- end }}</article>
+        <article>
+        <div class="breadcrumbs">
+            {{ partial "breadcrumbs.html" . }}
+        </div>
+        {{- block "main" . }}{{- end }}
+        </article>
         </div>
         <footer>{{- partial "footer.html" . -}}</footer>
     </body>

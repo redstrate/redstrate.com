@@ -3,5 +3,5 @@ slug: scythe-monster
 date: 2019-01-01
 excludefeed: true
 layout: art-detail
+filename: /art/scythe-monster.webp
 ---
-![](/art/scythe-monster.webp)

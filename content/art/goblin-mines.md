@@ -3,5 +3,5 @@ slug: goblin-mines
 date: 2020-01-01
 excludefeed: true
 layout: art-detail
+filename: /art/goblin-mines.webp
 ---
-![](/art/goblin-mines.webp)

@@ -1,0 +1,6 @@
+{{ if not .IsHome }}
+        {{- range .Ancestors.Reverse }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a><span> / </span>
+        {{- end }}
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}

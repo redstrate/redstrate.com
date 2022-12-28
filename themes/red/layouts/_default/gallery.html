@@ -5,19 +5,8 @@
 
     {{ $selected_year := $.Param "selectedyear" }}
     {{ $art := (index site.Data ($.Param "json")) }}
-    {{ $pixiv_icon := resources.Get "pixiv.webp" }}
-    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
-    <details>
-    <summary>Table of Contents</summary>
-    <ul>
-    {{ range $art.categories }}
-        {{ $without_space :=  replaceRE "(\\s)" "" .name }}
-        <li><a href="#{{ $without_space }}">{{ .name }}</a></li>
-    {{ end }}
-    </ul>
-    </details>
-
+    <div class="grid">
     {{ range $art.categories }}
         {{ $should_include := false }}
 
@@ -29,12 +18,10 @@
 
         {{ if $should_include }}
             {{ $without_space :=  replaceRE "(\\s)" "" .name }}
-            <h3 id="{{ $without_space }}">{{ .name }}</h3>
             {{ range sort .years "year" "desc" }}
                 {{ if eq (int .year) (int $selected_year) }}
                     {{ $year := .year }}
 
-                    <div class="grid">
                     {{ range .pieces }}
                             {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
 
@@ -43,11 +30,11 @@
                                 {{ partial "render-art" . }}
                             {{ end }}
                         {{ end }}
-                    </div>
                 {{ end }}
             {{ end }}
         {{ end }}
     {{ end }}
+    </div>
 
     {{ $site := resources.Get "js/site.js" }}
     {{ if hugo.IsProduction }}
