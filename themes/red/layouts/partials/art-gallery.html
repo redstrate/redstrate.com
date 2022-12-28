@@ -2,35 +2,7 @@
 
 <div class="grid">
 {{ range $paginator.Pages }}
-        {{ $full := resources.Get (printf "art/%s.webp" .Params.slug) }}
-        {{ if $full }}
-
-        {{ $filename_without_ext := .Params.slug }}
-
-        {{ $month := 1 }}
-        {{ $year := 1 }}
-
-        {{ if .Params.date }}
-            {{ $split := split .Params.date "-" }}
-            {{ $month = index $split 0 }}
-            {{ $year = index $split 3 }}
-        {{ end }}
-
-        <a href="{{ .Permalink }}">
-        {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
-                {{ $title := .Params.title }}
-                {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "300x" }}
-                {{ with $image }}
-                <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" src="{{ .Permalink }}"/>
-                {{ else }}
-                <p>Thumbnail not found!</p>
-                {{ end }}
-        {{ else }}
-        </a>
-
-        <em>CANNOT FIND {{.Params.slug }}</em>
-
-        {{ end }}
+        {{ partial "render-art" . }}
 {{ end }}
 </div>
 
