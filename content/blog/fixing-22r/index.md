@@ -13,10 +13,9 @@ So I bought an art tablet this year, the XP-Pen Artist 22R Pro which comes with 
 
 ![My dirty, dusty 22R tablet.](tablet.webp)
 
-
 While almost every part of the tablet works, only one of the two stylus buttons is functional. One button is middle mouse click, and the other one is right mouse click. For some reason, only the first stylus button works! This is obviously troublesome, so where do we begin to fix this issue? Let me take you on a journey, if you have no experience with how input works on Linux - well that makes two of us!
 
-## Figuring Out The Problem
+### Figuring Out The Problem
 
 I work in Krita, so the first place to check is Krita's tablet testing tool first. Looking at the log yields us something like this:
 
@@ -142,7 +141,7 @@ As you can see, whenever I press the first stylus button it reports `BTN_STYLUS`
 
 Now before we go further, I just wanted to confirm whether or not the pen _actually worked at all_ so I booted up Windows real quick to test. And it does work as expected, darn.
 
-## Going Deeper
+### Going Deeper
 
 Now it's easy to assume libinput is the culprit and the one to be fixed, [like I did](https://gitlab.freedesktop.org/libinput/libinput/-/issues/842). At first, I wrote up a quick patch to remap the wrong `BTN_TOUCH` inputs and inject proper `BTN_STYLUS2` events but honestly that's dirty. So what is beneath libinput? **evdev**!
 
@@ -184,7 +183,7 @@ It looks like the "usbhid" driver which makes sense, this is a USB HID device af
 
 So what is the proper HID driver for this device? Well after some research it turns out to be **uclogic** which handles a bunch of UGTablet, Huion and other misc Asian tablet devices. Unfortunately, they haven't added any support for this model but someone has.
 
-## Digimend Project
+### Digimend Project
 
 Luckily there is a project dedicated to upstreaming device drivers for these tablets, and Aren Villanuvea (also known as "kurikaesu") known for userspace-tablet-driver-daemon has [reverse engineered the tablet already](https://github.com/kurikaesu/DIGImend-research/blob/main/xp-pen-22r-pro.md). Better yet, he even implemented **most of the work in uclogic already**! You can see the [PR here](https://github.com/DIGImend/digimend-kernel-drivers/pull/557/).
 
@@ -192,7 +191,7 @@ Now that's where the story ends, yay - except that my device still doesn't work.
 
 The daemon is nice and all, but I would prefer kernel support for this device for numerous reasons. And what's worse is that it's _so close_ to being complete that it sucks that the work hasn't continued. Oh well...
 
-## Kernel Hacking
+### Kernel Hacking
 
 So now I'm **trying to upstream the uclogic patch!** Oh how I wish it was a bug in a higher layer... I'll be taking over Aren's work and trying to clean up the patch and reduce it down to just supporting the 22R Pro, since that's the only tablet I own. Here's what works:
 

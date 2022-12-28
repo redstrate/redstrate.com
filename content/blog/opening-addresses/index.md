@@ -40,7 +40,7 @@ print(p.format(deg_char='°', min_char='\'', sec_char=''))
 
 3. Then, simply click an address in KAddressBook, and it'll open up in KDE Marble!
 
-## More Details
+### More Details
 
 This is actually quite interesting, as I would think KAddressBook would have this functionality out of the box, however it is more work than you might think it is. First, KAddressBook stores the address of your contacts literally, like a string - it stores the Address, Region, and Location separately (this is the `%s`, `%l`, `%r` variables as shown above). However, KDE Marble only accepts longitude and latitude as command line arguments.
 

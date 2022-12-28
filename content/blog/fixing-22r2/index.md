@@ -11,7 +11,7 @@ tags:
 Some more progress has been made on fixing my newest drawing tablet!
 <!--more-->
 
-## Fixing up the patch
+### Fixing up the patch
 
 So as described in the [original post]({{< ref "fixing-22r" >}}), I have to patch
 the uclogic HID driver. Let's start by going through the process of submitting a
@@ -170,7 +170,7 @@ think my tablet pad is a... tablet pad?
 
 Okay, that's interesting - why is this a mouse? Uh oh, don't tell me...
 
-## Fixing udev
+### Fixing udev
 
 So unfortunately before my tablet is fully functional, we have to touch _another_
 piece of critical Linux infrastructure - _great_. I want to dive into how libinput
@@ -301,7 +301,7 @@ hardware database, as this turns out to be a udev bug.
 So I made [a systemd PR](https://github.com/systemd/systemd/pull/25866) fixing the
 logic, maybe that might fix your tablet too!
 
-## Tilt support
+### Tilt support
 
 One more thing I wanted to tackle was tilt support for the pen, which the driver
 says it supported but I haven't tested yet. Simple, right? (you already know the
@@ -423,7 +423,7 @@ which has the unrealistic goal of complete tablet support in just one merge requ
 I cleaned up the relevant tilt support part, and submitted a new [merge request](https://invent.kde.org/plasma/kwin/-/merge_requests/3364)
 which means pen tilt/rotation is supported under KDE Wayland now! Yay!
 
-# Dials
+### Dials
 
 All is well and good now, right? That's what I thought, until I realized my **dials
 don't work**! I was so entrenched in everything else, that I completely neglected

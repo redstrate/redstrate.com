@@ -21,23 +21,23 @@ This is the crux of the issue - many of these websites fizzle out after a decade
 
 However the problem is that artists _depend_ on them too much, and they especially build _their identity_ around them. How many artists are sticking to Twitter because thats where they get the most likes? What will happen if Twitter _does_ disappear by the end of the year[^3]? What I suggest to artists is simple: **build your own website.**
 
-## Is it too expensive?
+### Is it too expensive?
 
 **NO!** This is probably the biggest hurdle for most artists to understand, that hosting a website can either be very cheap or completely free. There are lots of drag-and-drop website builders[^4], but if you're more technically minded there are very cheap servers available from reputable providers to host something like [WordPress](https://wordpress.org) or even build a website in something like [Hugo](https://gohugo.io) (hi!)
 
 However one of the more expensive costs is a _domain name_[^5], which is a fancy TLD like `myart.com` instead of your hosting provider like `myart.wordpress.com`. I highly suggest buying a domain name if you have an alias, but this is optional - what's important is that you're hosting your content on your terms and a domain name is just one part of strengthening your identity.
 
-## Is it hard?
+### Is it hard?
 
 **NO!** Depending on how complex you want to be, it can be tough but for most people their site builder ([Wix](https://www.wix.com), [WordPress.com](https://wordpress.com), etc) will allow them to easily create galleries, link their social media and so on. Even a blank white website with a list of your social media will work.
 
 In my opinion, if you're capable of drawing, making music, pottery or another profession in the first place, then you're perfectly capable of displaying the same passion on a website - it's another skill!
 
-## What's difference between X (Tumblr, Twitter, Newgrounds)?
+### What's difference between X (Tumblr, Twitter, Newgrounds)?
 
 When you choose to host your own website, **you** choose to present your content on your own terms[^6]. There are no _"Site Admins"_, there are no _"Shareholders"_ seeking to remove yet another customization choice from your profile. If Twitter shuts down tomorrow, Pixiv decides to crack down on R-18, or some other major event - you know what you can do? Sit back and enjoy that you're part of the independent web. You don't need to abandon Twitter, but realize that you should get a backup plan.
 
-## Backups
+### Backups
 
 Here's just a small thing partially related to the topic of this article, **please keep backups**! I have (most) of my art backed up since 2016, and every time I access my archive I'm thanking myself over and over. Even if it's some bad sketch or music demo, I highly suggest keeping the source file and/or a rendered copy of it. Make sure to keep a copy on your website but also off-line as well, in case your hosting provider goes off-line or you lose access in some way.
 

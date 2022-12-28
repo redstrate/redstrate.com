@@ -22,7 +22,7 @@ _Graphics Dump_ is a new articles series I'm starting, geared towards tutorials 
 
 {{<toc>}}
 
-## Introduction
+### Introduction
 
 Since other operating systems hide these processes away from you, it is fortunate that Linux exists to easily showcase how typical desktop graphics systems function! Of course other systems like Windows, macOS, and other operating systems function differently - but a lot of the same concepts apply (API call dispatch, userspace graphics drivers, and display planes as some good examples.)
 
@@ -30,7 +30,7 @@ However, the scope of this article has ballooned tremendously, so I had to split
 
 This article is geared towards understanding the Linux graphics stack to graphics developers like me, who primarily work with graphics APIs and sort of is confused by Mesa, DRM and other such projects. As such, I kind of hand-waive over stuff like device creation, low-level GPU functions and other terms I expect you should know already or I'm not qualified to cover.
 
-## Vulkan
+### Vulkan
 
 I don't intend to talk much about Vulkan itself here, as this is an article dedicated to the graphics stack as a whole, not just one API. However I want to clarify some misconceptions about Vulkan first.
 
@@ -40,13 +40,13 @@ I don't intend to talk much about Vulkan itself here, as this is an article dedi
 
 With that out of the way, let's talk about how Vulkan applications typically interact with your system:
 
-### Calling Vulkan
+#### Calling Vulkan
 
 Let's say we have a very simple Vulkan program, all it does is open a window and draw a triangle. The reason why I chose Vulkan as the graphics API for this article is because it is so involved: you need to create a device, create shader pipelines, render passes and submit draw calls and perform explicit presentation sync. Vulkan's explicit swapchain management and synchronization makes it much easier to show what happens for the purpose of these articles. OpenGL and other API hide that information from you.
 
 When we call something like `vkCreatePipeline` (a call that bundles some draw information with one or more shaders) the first library you will encounter is the _"Vulkan Loader"_, not any graphics driver. The Vulkan Loader is an independent project not related to Linux graphics at all.
 
-### Vulkan Loader
+#### Vulkan Loader
 
 The Vulkan Loader does a lot more than wrap Vulkan calls, but the one that is relevant to us is that handling ICDs. "ICD" stands for _"Installable Client Driver"_, this is the actual graphics driver.
 
@@ -66,7 +66,7 @@ On Linux, the Vulkan Loader is installed as `libvulkan.so`, but let's dig a litt
 
 ICDs are defined in plain JSON and we can find the driver library in `library_path`. We're focusing on AMD hardware in this article, but you can apply the same processes to Intel hardware and any other Mesa-supported driver.
 
-### Inside of an ICD
+#### Inside of an ICD
 
 Let's start by running `objdump` on our driver, so we can get a complete list of functions:
 
@@ -91,7 +91,7 @@ However, if you haven't noticed already - there is functionally no difference be
 
 The answer is simple, it just calls all of them! When you call a Vulkan function through the Vulkan Loader system, if it's a device-level call it simply passes it down to the driver that the device belongs to - but if it's an instance-level function, it actually "aggregates" the data from the relevant drivers. This is what is called the "Loader Terminator".
 
-### How the Loader Terminator Works
+#### How the Loader Terminator Works
 
 A good example to showcase this is `vkEnumeratePhysicalDevices`, and as the name implies, gives you a list of the physical devices on the machine. If you have a Intel integrated GPU and say, a  NVIDIA GPU, this is what the loader terminator might do:
 
@@ -102,7 +102,7 @@ A good example to showcase this is `vkEnumeratePhysicalDevices`, and as the name
 
 This is actually a really smart design, since it would be near-useless if `vkEnumeratePhysicalDevices` only listed devices from _one_ ICD. And then once you create the logical device from that ICD's physical device, the Loader takes care of figuring out which ICD you actually want to talk to without you even realizing it. The fact that I didn't even know what a "loader terminator" was or that it even did this in the first place is a testament to how nicely this system functions.
 
-### Overview
+#### Overview
 
 That was a _lot_ of information to parse, so let me give a quick overview of how Vulkan calls eventually each your graphics driver:
 
@@ -113,7 +113,7 @@ That was a _lot_ of information to parse, so let me give a quick overview of how
 
 This is of course assuming there are no layers activated (which are simply other programs that can intercept Vulkan calls) which may change the route your call makes. Now let's take a look at what your graphics driver actually is, and it's more complex than you might think.
 
-## Mesa
+### Mesa
 
 Mesa is the next piece of software in this call stack (the ICD). It does most of the heavy lifting here, and is an important piece of the Linux graphics stack. However, I've seen people confused on _what_ Mesa is - so let's take a look at their [website](https://mesa3d.org):
 
@@ -142,7 +142,7 @@ that sits on top of that kernel layer and interacts with applications. Mesa impl
 
 Let's take a look at how Mesa is structured, and how they can reuse code between many devices and drivers. This will also explain the curious structure of the `objdump` from earlier, and what the `radv` prefix is referring to.
 
-### Mesa Drivers
+#### Mesa Drivers
 
 Mesa comes with many drivers, and each driver has a name (`radv`, `iris`, etc) which is unique even across  different APIs:
 
@@ -154,7 +154,7 @@ Mesa comes with many drivers, and each driver has a name (`radv`, `iris`, etc) w
 
 However Mesa has a _lot_ of drivers, and you might think it become unmaintainable - I mean supporting one graphics API is trouble enough, but Mesa somehow supports all of these drivers and all of these APIs? How do they accomplish such a feat?
 
-### Gallium
+#### Gallium
 
 Let's take a look at how their OpenGL support works first, which is easier to explain. This is so incredibly fascinating because for the longest time - whenever I think of "Gallium", and other people
 probably relate - I think of [Gallium Nine](https://docs.mesa3d.org/gallium-nine.html) which is the way to run DX9 almost natively on your system via Mesa. However, Gallium Nine is simply another frontend to Gallium.
@@ -163,7 +163,7 @@ Gallium is a framework to reduce the amount of driver code needed to write OpenG
 
 However you might be wondering how Mesa structures it's installed OpenGL drivers. Mesa provides `libGL.so` which plays a similar role to `libvulkan.so`, and selects the correct OpenGL driver at runtime[^5].
 
-### Vulkan
+#### Vulkan
 
 Now unfortunately Mesa doesn't have a fancy name for its Vulkan driver framework (as far as I know!) because this is mostly a new development. Previously, a lot of Mesa's Vulkan drivers implemented a whole of duplicate Vulkan work (like in instance-level functions, but also a lot of queue-related things) which wasn't a huge deal, but now that Mesa has way more Vulkan drivers (they have RADV, ANV, and soon NVK - and that's not all of them!) the work was piling up and implementations started to drift apart. Apparently a lot of RADV and subsequent Vulkan drivers were based off of ANV, and then common Vulkan code got lifted outside of the drivers later. As Jason Ekstrand says in ["Introducing NVK"](https://www.collabora.com/news-and-blog/news-and-events/introducing-nvk.html):
 
@@ -173,13 +173,13 @@ As we've seen though, the RADV ICD simply contains _both_ the common Vulkan code
 
 Now that we covered how Mesa separates and abstracts drivers for Vulkan and OpenGL, how do the device drivers actually function? Well depending on the structure of the hardware and its unique quirks, a lot of care has to go into optimizing the API the driver is handling. But how does it actually _interact_ with the hardware?
 
-## DRI
+### DRI
 
 The answer is not so simple. You may have heard terms like DRI, DRM, KMS, DRM KMS and other things but these aren't very well explained. Mesa uses something called DRI.
 
 DRI stands for _"Direct Rendering Infrastructure"_ and is something specific to Linux. The DRI is an umbrella term also covering _DRM_ and _DRM KMS_. 
 
-### DRM
+#### DRM
 
 DRM stands for _"Direct Rendering Manager"_ and refers to the DRM system that exists in the kernel. This is what the AMDGPU kernel module implements, and consequently how Mesa is able to interface with the GPU at all. It basically creates an API for userspace applications to access your GPU. The kernel module handles facilitating I/O, loading firmware and other low level things. To find the in-tree DRM kernel modules, see `drivers/gpu/drm`.
 
@@ -195,17 +195,17 @@ Jackpot! What is this `libdrm` it mentions? It actually is specifically referrin
 
 So, the Mesa drivers doesn't interface with the kernel directly, but rather access all the device-specific functionality _through_ libdrm. This is because kernel interfaces are not truly stable and the interface isn't really meant for application consumption anyway, libdrm handles all of that for Mesa. This is also might be why Mesa doesn't define a specific kernel requirement, because it technically doesn't depend on their DRM interface.
 
-### DRM KMS
+#### DRM KMS
 
 The other major part of the DRI project is "DRM KMS", one part we now know is "Direct Rendering Manager" but what is "KMS"? It stands for "Kernel Mode Setting" and is used on modern Linux systems to initialize and configure the framebuffer. You might think that "DRM KMS" stands for a type of "KMS" but really it can't exist _without_ using DRM. You'll also sometimes see it written as "DRM/KMS" which is weird but I guess it's typical in the Linux world (like GNU/Linux.)
 
 Modesetting refers to initializing the display, handling EDIDs and all of that fun stuff. "KMS" is then referring to doing this in the kernel instead of in user space. You might be thinking that meant that user space was initializing the GPU's connected screen and you'll be right, which was slow especially when switching to things like the TTY (which is handled by the kernel) since it had no idea what the user space was doing.
 
-### Quick Note about DRI versions
+#### Quick Note about DRI versions
 
 You may have noticed this already, but there are things called DRI1, DRI2, DRI3. There are actually three different versions of DRI, which has evolved as the needs of graphics drivers and desktop compositors changed. We're currently on DRI3 and that's what I'll be covering once we get into presentation and synchronization. 
 
-## Conclusion
+### Conclusion
 
 I hope this gives you a nice overview of what libraries are involved when dealing with Linux graphics, and an explanation of some of the terms you might have seen before. As stated in the beginning, this has grew and grew in scope so I'm cutting the article here so I can get it published first.
 
@@ -213,7 +213,7 @@ In the next part we'll be covering how windowing, synchronization and presentati
 
 I'm not a Mesa nor an AMD developer, so if you see any mistakes feel free to contact me! Otherwise please enjoy and make sure to check out these other fine webpages below.
 
-## See Also
+### See Also
 
 * [Mesa Documentation](https://docs.mesa3d.org/index.html)
 * [Mesa Source Code](https://gitlab.freedesktop.org/mesa/mesa)
