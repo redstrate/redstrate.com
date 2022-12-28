@@ -26,7 +26,7 @@ out.
 First I want to set an end goal, which is to be able to set the tablet buttons
 through the new KDE Plasma 5.26 interface, like so:
 
-![Screenshot of the tablet settings page, screenshot by Nicolas Fella.](grafik.png)
+![Screenshot of the tablet settings page, screenshot by Nicolas Fella.](grafik.webp)
 
 Currently if you run my new uclogic patch, for some reason
 it is not considered a "Pad":
