@@ -6,6 +6,7 @@ tags:
 - Vulkan
 - Linux
 - Graphics Dump
+- KDE
 comments:
   host: mastodon.art
   username: redstrate

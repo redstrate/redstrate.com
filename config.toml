@@ -18,6 +18,7 @@ copyright = 'This content is licensed under a Creative Commons Attribution-NonCo
   arttags = 'art/tags/:title'
   characters = 'art/characters/:title'
   characters_listpath = "art/characters/"
+  tags = 'blog/tags/:title'
 
 [taxonomies]
   series = 'series'

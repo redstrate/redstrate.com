@@ -6,6 +6,7 @@ tags:
 - Linux
 - Open Source
 - Kernel
+- KDE
 ---
 
 Some more progress has been made on fixing my newest drawing tablet!
