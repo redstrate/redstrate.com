@@ -49,7 +49,7 @@
                 {{ else }}
                         {{ if eq .type "github" }}
                                 <li><a href="https://github.com/{{ .id }}/commits?author=redstrate">Commits</a></li>
-                                <li><a href="https://github.com/{{ .id }}/pulls/redstrate">PRs</a></li>
+                                <li><a href="https://github.com/{{ .id }}/pulls/pulls?q=is%3Apr+author%3Aredstrate+">PRs</a></li>
                         {{ end }}
                 {{ end }}
                 </ul>
