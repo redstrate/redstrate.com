@@ -1,41 +1,30 @@
 <div id="f-badges">
-    {{ with resources.Get "by-nc-sa.webp" }}
-        <img height="15" width="80" src="{{ .Permalink }}" alt="CC NC SA">
-    {{ end }}
-
-    {{ with resources.Get "rssbanner.webp" }}
-        <img height="15" width="80" src="{{ .Permalink }}" alt="RSS Feed">
-    {{ end }}
-
-    {{ with resources.Get "gentoo-badge2.webp" }}
-    <img height="15" width="80" src="{{ .Permalink }}" alt="Powered by Gentoo">
-    {{ end }}
-
-    {{ with resources.Get "nerv_button.webp" }}
-    <img height="15" width="80" src="{{ .Permalink }}" alt="Evangelion">
+    {{ range $.Site.Menus.badges }}
+        {{ $badgeScope := . }}
+        {{ with resources.Get .URL }}
+            <img width="{{ .Width }}" height="{{ .Height }}" src="{{ .Permalink }}" alt="{{ $badgeScope.Name }}">
+        {{ end }}
     {{ end }}
 </div>
 
 <div id="f-list">
-    <a href="/blog/index.xml">Blog Feed</a>
-
-    <a href="/art/index.xml">Art Feed</a>
-
-    <a href="/license">License</a>
-
-    <a href="/imprint">Imprint</a>
-
-    {{ with .File }}
-    <a href="https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/content/{{ .Path }}?view-source">Source</a>
-    {{ end }}
+    <ul class="nice-list">
+        {{ range $.Site.Menus.footer }}
+            <li>
+                <a href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
 </div>
 
-<hr>
+{{ with .Site.Params.geekring_site_id }}
+    <hr>
 
-<div id="f-list">
-    <b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
-    <a href="http://geekring.net/site/227/previous">Previous site</a> --
-    <a href="http://geekring.net/site/227/random">Random site</a> --
-    <a href="http://geekring.net/site/227/next">Next site</a>
-</div>
+    <div id="f-list">
+        <b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
+        <a href="http://geekring.net/site/{{ . }}/previous">Previous site</a> --
+        <a href="http://geekring.net/site/{{ . }}/random">Random site</a> --
+        <a href="http://geekring.net/site/{{ . }}/next">Next site</a>
+    </div>
+{{ end }}
 

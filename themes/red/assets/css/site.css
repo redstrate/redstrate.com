@@ -223,11 +223,6 @@ table {
     text-align: center;
 }
 
-#f-list * {
-    display: inline;
-    margin-left: 1em;
-    margin-right: 1em;
-}
 
 h2 {
     margin-top: 0.2em;
@@ -267,7 +262,7 @@ pre {
     margin: .5em;
 }
 
-.blurb ul {
+.nice-list {
     display: inline;
     list-style: none;
     padding-left: 0;
@@ -275,12 +270,16 @@ pre {
     margin-top: 0;
 }
 
-.blurb ul li {
+.nice-list li {
     display: inline-block;
+}
+
+.nice-list li:not(:last-child) {
     margin-left: 0;
     margin-right: 0;
 }
 
-.blurb ul li:not(:last-child):not(:only-child)::after {
+
+.nice-list li:not(:last-child):not(:only-child)::after {
     content: "·";
 }

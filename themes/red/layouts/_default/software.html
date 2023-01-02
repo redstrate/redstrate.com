@@ -14,7 +14,7 @@
 
             <p>{{ .Summary }}</p>
 
-            <ul>
+            <ul class="nice-list">
                 <li>
                     <a href="{{ .RelPermalink }}">About</a>
                 </li>
@@ -42,14 +42,22 @@
 
                 <p>{{ .description }}</p>
 
-                <ul>
+                <ul class="nice-list">
                 {{ if eq .type "kde" }}
-                        <li><a href="https://invent.kde.org/{{ .id }}/-/commits/master?author=redstrate">Commits</a></li>
-                        <li><a href="https://invent.kde.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username=redstrate">MRs</a></li>
+                        <li>
+                            <a href="https://invent.kde.org/{{ .id }}/-/commits/master?author={{ $.Site.Params.invent_username }}">Commits</a>
+                        </li>
+                        <li>
+                            <a href="https://invent.kde.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.invent_username }}">MRs</a>
+                        </li>
                 {{ else }}
                         {{ if eq .type "github" }}
-                                <li><a href="https://github.com/{{ .id }}/commits?author=redstrate">Commits</a></li>
-                                <li><a href="https://github.com/{{ .id }}/pulls/pulls?q=is%3Apr+author%3Aredstrate+">PRs</a></li>
+                                <li>
+                                    <a href="https://github.com/{{ .id }}/commits?author={{ $.Site.Params.github_username }}">Commits</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/{{ .id }}/pulls?q=is%3Apr+author%3A{{ $.Site.Params.github_username }}+">PRs</a>
+                                </li>
                         {{ end }}
                 {{ end }}
                 </ul>

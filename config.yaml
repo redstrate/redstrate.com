@@ -1,0 +1,96 @@
+baseURL: 'https://redstrate.com/'
+copyright: 'This content is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0.'
+defaultContentLanguage: 'en'
+disableHugoGeneratorInject: true
+enableGitInfo: true
+enableRobotsTXT: true
+languageCode: 'en-us'
+title: '~redstrate'
+theme: 'red'
+
+params:
+  description: "My personal corner of the Internet!"
+  github_username: "redstrate"
+  invent_username: "redstrate"
+  isso_url: "comments.redstrate.com"
+  geekring_site_id: 227
+
+author:
+  name: 'redstrate'
+
+permalinks:
+  blog: 'blog/:year/:month/:title/'
+  art: 'art/:year/:month/:slugorfilename'
+  arttags: 'art/tags/:title'
+  characters: 'art/characters/:title'
+  characters_listpath: "art/characters/"
+  tags: 'blog/tags/:title'
+
+taxonomies:
+  series: 'series'
+  tag: 'tags'
+  arttag: 'arttags'
+  character: 'characters'
+
+menu:
+  main:
+  - name: 'Home'
+    url: '/'
+    weight: -1
+  - name: 'Blog'
+    url: '/blog'
+    weight: 1
+  - name: 'Art'
+    url: '/art'
+    weight: 2
+  - name: 'Music'
+    url: '/music'
+    weight: 3
+  - name: 'Software'
+    url: '/software'
+    weight: 4
+  - name: 'Videos'
+    url: 'https://tube.ryne.moe/@redchannel'
+    weight: 5
+  - name: 'Downloads'
+    url: '/downloads'
+    weight: 6
+  - name: 'Links'
+    url: '/links'
+    weight: 7
+  - name: 'About'
+    url: '/about'
+    weight: 8
+  footer:
+  - name: 'Blog Feed'
+    url: '/blog/index.xml'
+    weight: -1
+  - name: 'Art Feed'
+    url: '/art/index.xml'
+    weight: 1
+  - name: 'Imprint'
+    url: '/imprint'
+    weight: 2
+  badges:
+  - name: 'CC NC SA'
+    url: 'by-nc-sa.webp'
+    weight: -1
+  - name: 'RSS Feed'
+    url: 'rssbanner.webp'
+    weight: 1
+  - name: 'Powered by Gentoo'
+    url: 'gentoo-badge2.webp'
+    weight: 2
+  - name: 'Evangelion'
+    url: 'nerv_button.webp'
+    weight: 3
+
+outputs:
+  home:
+  - HTML
+  page:
+  - HTML
+  section:
+  - HTML
+  - RSS
+
