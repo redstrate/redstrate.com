@@ -76,9 +76,9 @@ copyright = 'This content is licensed under a Creative Commons Attribution-NonCo
     weight = 8
 
     [[menu.main]]
-    identifier = 'extra'
-    name = 'Extras'
-    url = '/extra'
+    identifier = 'links'
+    name = 'Links'
+    url = '/Links'
     weight = 9
 
     [[menu.main]]

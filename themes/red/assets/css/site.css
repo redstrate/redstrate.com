@@ -252,3 +252,35 @@ pre {
 
     padding: 5px;
 }
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: auto;
+}
+
+.blurb {
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+
+    padding: 1em;
+    margin: .5em;
+}
+
+.blurb ul {
+    display: inline;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.blurb ul li {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blurb ul li:not(:last-child):not(:only-child)::after {
+    content: "·";
+}

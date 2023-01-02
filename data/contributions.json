@@ -1,0 +1,75 @@
+{
+    "contributions": [
+        {
+            "id": "plasma/kwin",
+            "name": "KWin",
+            "description": "Added pen tilt & rotation support.",
+            "type": "kde"
+        },
+        {
+            "id": "graphics/krita",
+            "name": "Krita",
+            "description": "Added pen tilt to the tablet tester.",
+            "type": "kde"
+        },
+        {
+            "id": "network/tokodon",
+            "name": "Tokodon",
+            "description": "Fixed and triaged numerous bugs, misc features.",
+            "type": "kde"
+        },
+        {
+            "id": "gentoo/gentoo",
+            "name": "Gentoo",
+            "description": "Misc proxy maintainer package updates."
+        },
+        {
+            "id": "goatcorp/dalamud",
+            "name": "Dalamud",
+            "description": "Fixed searching for plugins by punchline.",
+            "type": "github"
+        },
+        {
+            "id": "KhronosGroup/MoltenVK",
+            "name": "MoltenVK",
+            "description": "Enable base vertex instance support in shader conversion.",
+            "type": "github"
+        },
+        {
+            "id": "PrismLauncher/PrismLauncher",
+            "name": "PrismLauncher",
+            "description": "Numerous interface changes, notably the about page.",
+            "type": "github"
+        },
+        {
+            "id": "sdk/licentia",
+            "name": "Licentia",
+            "description": "Fixed PinePhone support.",
+            "type": "kde"
+        },
+        {
+            "id": "games/kapman",
+            "name": "Kapman",
+            "description": "Added fullscreen toggle.",
+            "type": "kde"
+        },
+        {
+            "id": "graphics/digikam",
+            "name": "digiKam",
+            "description": "Fixed Darktable RAW imports.",
+            "type": "kde"
+        },
+        {
+            "id": "plasma/plasma-desktop",
+            "name": "Plasma Desktop",
+            "description": "Added activity pins to launchers.",
+            "type": "kde"
+        },
+        {
+            "id": "absolute-quantum/cats-blender-plugin",
+            "name": "CATS",
+            "description": "Minor bug fixes for it's baking.",
+            "type": "github"
+        }
+    ]
+}

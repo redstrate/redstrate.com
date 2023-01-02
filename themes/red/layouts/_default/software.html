@@ -1,0 +1,61 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    {{ .Content }}
+
+    <h3>Personal Projects</h3>
+
+    <p>These are projects I made for my own use, but they're all freely licensed!</p>
+
+    <div class="buttons">
+    {{ range .Data.Pages.ByDate.Reverse }}
+        <div class="blurb">
+            <b>{{ .Title }}</b>
+
+            <p>{{ .Summary }}</p>
+
+            <ul>
+                <li>
+                    <a href="{{ .RelPermalink }}">About</a>
+                </li>
+
+                {{ with .Param "source" }}
+                    <li>
+                        <a href="{{ . }}">Source Code</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+    </div>
+
+    <h3>Contributions</h3>
+
+    <p>This a list of software projects I contributed code to.</p>
+
+    {{ $contrib := (index site.Data "contributions") }}
+
+    <div class="buttons">
+        {{ range $contrib.contributions }}
+        <div class="blurb">
+                <b>{{ .name }}</b>
+
+                <p>{{ .description }}</p>
+
+                <ul>
+                {{ if eq .type "kde" }}
+                        <li><a href="https://invent.kde.org/{{ .id }}/-/commits/master?author=redstrate">Commits</a></li>
+                        <li><a href="https://invent.kde.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username=redstrate">MRs</a></li>
+                {{ else }}
+                        {{ if eq .type "github" }}
+                                <li><a href="https://github.com/{{ .id }}/commits?author=redstrate">Commits</a></li>
+                                <li><a href="https://github.com/{{ .id }}/pulls/redstrate">PRs</a></li>
+                        {{ end }}
+                {{ end }}
+                </ul>
+        </div>
+        {{ end }}
+    </div>
+
+
+{{ end }}

@@ -15,21 +15,6 @@
                 <td>{{ . }}</td>
             </tr>
         {{ end }}
-
-        <tr>
-            <td>Year Created</td>
-            <td><time datetime='{{ .Date.Format "2006" }}'>{{ .Date.Format "2006"}}</time></td>
-        </tr>
-
-        <tr>
-            <td>Tags</td>
-            <td>
-            {{ $len := (len .Params.tags) }}
-            {{ range $index, $element := .Params.tags }}
-            <a href="/tags/{{ lower . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-            {{ end }}
-            </td>
-        </tr>
     </table>
 
     {{ .Content }}
