@@ -5,8 +5,15 @@ disableHugoGeneratorInject: true
 enableGitInfo: true
 enableRobotsTXT: true
 languageCode: 'en-us'
+
+minify:
+  tdewolff:
+    html:
+      keepWhitespace: true
+
 title: '~redstrate'
 theme: 'red'
+timeZone: 'UTC'
 
 params:
   description: "My personal corner of the Internet!"
@@ -84,13 +91,3 @@ menu:
   - name: 'Evangelion'
     url: 'nerv_button.webp'
     weight: 3
-
-outputs:
-  home:
-  - HTML
-  page:
-  - HTML
-  section:
-  - HTML
-  - RSS
-

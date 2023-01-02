@@ -10,7 +10,7 @@ secrets:
 tasks:
   - build: |
       cd redstrate.com
-      hugo --baseURL https://redstrate.com/ --minify
+      hugo
   - deploy: |
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
