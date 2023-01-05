@@ -18,6 +18,7 @@ featured:
   year: 2022
   title: grocery shopping
 years:
+- 2023
 - 2022
 - 2021
 - 2020

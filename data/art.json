@@ -517,6 +517,23 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "PokeWalk",
+              "filename": "pokewalk.webp",
+              "date": "12-30"
+            },
+            {
+              "filename": "mystery-ham.webp",
+              "date": "12-30"
+            },
+            {
+              "filename": "recursive.webp",
+              "date": "12-30"
+            },
+            {
+              "filename": "lifeform.webp",
+              "date": "12-30"
+            },
+            {
               "title": "Pencil",
               "filename": "pencil.webp"
             },
@@ -620,6 +637,15 @@
             },
             {
               "filename": "girls.webp"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "pieces": [
+            {
+              "date": "1-5",
+              "filename": "sword-leftlean.webp"
             }
           ]
         }
