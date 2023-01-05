@@ -21,7 +21,9 @@
     {{ end }}
     <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon180.png" type="image/png">
+    <link rel="mask-icon" href="/safari-mask.svg" color="#9c4c4c">
 
     {{ $masonry := resources.Get "js/masonry.min.js" }}
     {{ if hugo.IsProduction }}
