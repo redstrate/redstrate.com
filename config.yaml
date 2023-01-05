@@ -5,6 +5,7 @@ disableHugoGeneratorInject: true
 enableGitInfo: true
 enableRobotsTXT: true
 languageCode: 'en-us'
+summarylength: 15
 
 minify:
   tdewolff:
@@ -24,6 +25,7 @@ params:
 
 author:
   name: 'redstrate'
+  email: 'josh@redstrate.com'
 
 permalinks:
   blog: 'blog/:year/:month/:title/'

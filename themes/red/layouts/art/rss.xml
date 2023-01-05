@@ -16,30 +16,76 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xml:base="{{ .Site.BaseURL }}">
     <channel>
-        <title>{{ .Site.Author.name }}'s art</title>
+        <title>{{ .Site.Author.name }}'s Art</title>
         <link>{{ .Permalink }}</link>
         <description>Feed of the art that I make!</description>
-        {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
-        <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
-        <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
-        <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-        <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-        {{- with .OutputFormats.Get "RSS" -}}
-        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-        {{- end -}}
-        {{ range $pages }}
-        {{ if not (.Param "excludefeed") }}
-        <item>
-            <title>{{ .Title }}</title>
-            <link>{{ .Permalink }}</link>'
-            {{ with $.Site.Author.name }}<author>{{ . }}</author>{{ end }}
-            <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-            {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
-            <guid>{{ .Permalink }}</guid>
-            <description>{{ "<![CDATA[" | safeHTML }} {{ .Summary }}]]></description>
-            <content:encoded>{{ "<![CDATA[" | safeHTML }} {{ partial "rss.html" . | safeHTML }}]]></content:encoded>
-        </item>
+        {{ with .Site.LanguageCode }}
+        <language>{{.}}</language>
+        {{end}}
+
+        {{ with .Site.Copyright }}
+        <copyright>{{.}}</copyright>
+        {{end}}
+
+        {{ if not .Date.IsZero }}
+        <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
         {{ end }}
+
+        <docs>https://www.rssboard.org/rss-specification</docs>
+
+        {{ with resources.Get "rss-image.png" }}
+        <image>
+            <url>{{ .Permalink }}</url>
+            <title>{{ $.Site.Author.name }}'s Art</title>
+            <link>{{ $.Permalink }}</link>
+            <width>100</width>
+            <height>100</height>
+        </image>
+        {{ end }}
+
+        {{- with .OutputFormats.Get "RSS" -}}
+            {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+        {{- end -}}
+
+        {{ range $pages }}
+            {{ if not (.Param "excludefeed") }}
+                <item>
+                    {{ with .Title }}
+                        <title>{{ . }}</title>
+                    {{ else }}
+                        <title>Untitled Artwork</title>
+                    {{ end }}
+
+                    <link>{{ .Permalink }}</link>
+
+                    <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+
+                    <guid>{{ .Permalink }}</guid>
+
+                    {{ with .Summary }}
+                    <description>{{ "<![CDATA[" | safeHTML }} {{ . | safeHTML }}]]></description>
+                    {{ else }}
+                    <description>This artwork has no description.</description>
+                    {{ end }}
+
+                    {{ with $.Site.Author.name }}
+                        <author>{{ . }}</author>
+                    {{ end }}
+
+                    <content:encoded>{{ "<![CDATA[" | safeHTML }}
+                        {{ $pageScope := . }}
+                        {{ with resources.Get .Params.filename }}
+                            <img alt="{{ $pageScope.Params.alt_text }}" src="{{ .Permalink }}"/>
+                        {{ end }}
+
+                        {{ with .Content }}
+                        <p>{{ . | safeHTML }}</p>
+                        {{ else }}
+                        <p>This artwork has no additional commentary.</p>
+                        {{ end }}]]>
+                    </content:encoded>
+                </item>
+            {{ end }}
         {{ end }}
     </channel>
 </rss>
