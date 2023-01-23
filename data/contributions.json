@@ -1,6 +1,24 @@
 {
     "contributions": [
         {
+            "id": "network/neochat",
+            "name": "NeoChat",
+            "description": "Misc interface changes.",
+            "type": "kde"
+        },
+        {
+            "id": "games/kpat",
+            "name": "KPatience",
+            "description": "Misc fixes.",
+            "type": "kde"
+        },
+        {
+            "id": "libraries/kirigami-addons",
+            "name": "Kirigami Add-ons",
+            "description": "Added About KDE page, misc fixes.",
+            "type": "kde"
+        },
+        {
             "id": "plasma/kwin",
             "name": "KWin",
             "description": "Added pen tilt & rotation support.",
