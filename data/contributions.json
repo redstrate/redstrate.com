@@ -19,6 +19,18 @@
             "type": "kde"
         },
         {
+            "id": "knockout-community/knockout-front",
+            "name": "Knockout Web Client",
+            "description": "Improved embedded content warnings.",
+            "type": "gitlab"
+        },
+        {
+            "id": "systemd/systemd",
+            "name": "systemd",
+            "description": "Reworked tablet detection logic.",
+            "type": "github"
+        },
+        {
             "id": "plasma/kwin",
             "name": "KWin",
             "description": "Added pen tilt & rotation support.",

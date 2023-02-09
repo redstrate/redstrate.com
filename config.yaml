@@ -22,6 +22,7 @@ params:
   invent_username: "redstrate"
   isso_url: "comments.redstrate.com"
   geekring_site_id: 227
+  gitlab_username: "redstrate"
 
 author:
   name: 'redstrate'
