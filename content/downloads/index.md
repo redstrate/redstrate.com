@@ -31,7 +31,3 @@ This is a romfs mod that tweaks the graphics settings of Xenoblade Chronicles 2.
 This work was originally pioneered on [GBATemp](https://gbatemp.net/threads/xenoblade-chronicles-2-graphics-settings.529436/) but I wanted to archive my own version, tweaked specifically for emulation. The original file is based off of the "Raw Image > Max 720p" preset included in the original Profiles.zip.
 
 You can download it [here](https://git.sr.ht/~redstrate/xc2-graphics-mod).
-
-## Vanilla Armor Refit Collection
-
-My first FFXIV mod, to refit all of the badly weight painted female armor in the game. You can read more about it on [xiv.zone](https://xiv.zone/varc)!
