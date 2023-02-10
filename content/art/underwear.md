@@ -9,4 +9,5 @@ slug: underwear
 characters:
 - Merume
 arttags:
+nsfw: true
 ---

@@ -6,13 +6,15 @@ import json
 def write_field(f, key, value):
     f.write(key + ": " + value + "\n")
 
-def parse_art(title, year, date, original_filename, filename, file):
+def parse_art(title, year, date, nsfw, original_filename, filename, file):
     with open(original_filename + '.md', 'w') as f:
         document = enolib.parse(file)
 
         f.write('---\n')
 
-        write_field(f, 'title', title)
+        if title is not None:
+            write_field(f, 'title', title)
+
         write_field(f, 'layout', 'art-detail')
         write_field(f, 'filename', '/art/' + filename + '.webp')
         write_field(f, 'alt_text', "\"" + document.field('Alt Text').required_string_value().replace('\n','') + "\"")
@@ -37,13 +39,16 @@ def parse_art(title, year, date, original_filename, filename, file):
         for tag in document.list('Tags').items():
             f.write("- " + tag.required_string_value().lower() + "\n")
 
+        if nsfw is not None:
+            write_field(f, 'nsfw', str(nsfw).lower())
+
         f.write('---\n')
 
         if document.optional_field('Description'):
             f.write(document.field('Description').required_string_value())
             f.write('\n')
 
-def parse_art_piece(json, year, date):
+def parse_art_piece(json, year, date, nsfw):
     filename_without_ext = os.path.splitext(json["filename"])[0]
 
     with open(art_output_directory + "/" + filename_without_ext + '.md', 'w') as f:
@@ -67,6 +72,9 @@ def parse_art_piece(json, year, date):
 
         write_field(f, 'layout', 'art-detail')
         write_field(f, 'filename', '/art/' + json['filename'])
+
+        if nsfw is not None:
+            write_field(f, 'nsfw', str(nsfw).lower())
 
         f.write('---\n')
 
@@ -140,19 +148,27 @@ with open('../data/art.json', 'r') as f:
 
                 path = os.path.join(art_data_directory, filename_without_ext + ".eno")
 
+                nsfw = None
+                if "nsfw" in piece.keys():
+                    nsfw = piece["nsfw"]
+
+                title = None
+                if "title" in piece.keys():
+                    title = piece["title"]
+
                 if os.path.isfile(path):
                     num_eno = num_eno + 1
                     with open(path) as f:
                         if "date" in piece.keys():
-                            parse_art(piece["title"], year["year"], piece["date"], art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
+                            parse_art(title, year["year"], piece["date"], nsfw, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
                         else:
-                            parse_art(piece["title"], year["year"], None, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
+                            parse_art(title, year["year"], None, nsfw, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
                 else:
                     num_noneno = num_noneno + 1
                     if "date" in piece.keys():
-                        parse_art_piece(piece, year["year"], piece["date"])
+                        parse_art_piece(piece, year["year"], piece["date"], nsfw)
                     else:
-                        parse_art_piece(piece, year["year"], None)
+                        parse_art_piece(piece, year["year"], None, nsfw)
 
     print("Art coverage: {}/{}".format(num_eno, num_eno + num_noneno));
 

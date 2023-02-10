@@ -6,4 +6,5 @@ date: 2022-01-01
 excludefeed: true
 layout: art-detail
 filename: /art/two-girls.webp
+nsfw: true
 ---

@@ -195,14 +195,16 @@
               "filename": "summer-eva-girls.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-eva-girls",
               "pixiv_url": "https://www.pixiv.net/en/artworks/100026963",
-              "date": "7-27"
+              "date": "7-27",
+              "nsfw": true
             },
             {
               "title": "summer byleth",
               "filename": "summer-byleth.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/98726204",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-byleth",
-              "date": "5-30"
+              "date": "5-30",
+              "nsfw": true
             },
             {
               "title": "after the rain",
@@ -249,13 +251,15 @@
               "filename": "tree2.webp"
             },
             {
-              "filename": "naked-elf.webp"
+              "filename": "naked-elf.webp",
+              "nsfw": true
             },
             {
               "filename": "sketch-collect.webp"
             },
             {
-              "filename": "naked.webp"
+              "filename": "naked.webp",
+              "nsfw": true
             },
             {
               "filename": "2019.webp"
@@ -369,7 +373,8 @@
               "filename": "water-test.webp"
             },
             {
-              "filename": "ffxiv-swim.webp"
+              "filename": "ffxiv-swim.webp",
+              "nsfw": true
             },
             {
               "title": "Trainwatching",
@@ -458,7 +463,8 @@
             },
             {
               "title": "Miq'ote in a Swimsuit",
-              "filename": "miqote-swimsuit.webp"
+              "filename": "miqote-swimsuit.webp",
+              "nsfw": true
             },
             {
               "filename": "drawpile-snippet.webp"
@@ -482,7 +488,8 @@
               "filename": "aerith.webp"
             },
             {
-              "filename": "ffxiv-sketches.webp"
+              "filename": "ffxiv-sketches.webp",
+              "nsfw": true
             },
             {
               "filename": "futaba.webp"
@@ -543,7 +550,8 @@
             },
             {
               "title": "Underwear",
-              "filename": "underwear.webp"
+              "filename": "underwear.webp",
+              "nsfw": true
             },
             {
               "title": "Sketch Dump",
@@ -567,15 +575,18 @@
             },
             {
               "title": "Viera #1",
-              "filename": "viera1.webp"
+              "filename": "viera1.webp",
+              "nsfw": true
             },
             {
               "title": "Viera #2",
-              "filename": "viera2.webp"
+              "filename": "viera2.webp",
+              "nsfw": true
             },
             {
               "title": "Two Girls",
-              "filename": "two-girls.webp"
+              "filename": "two-girls.webp",
+              "nsfw": true
             },
             {
               "title": "Overalls",
@@ -587,7 +598,8 @@
             },
             {
               "title": "Demonness",
-              "filename": "demon.webp"
+              "filename": "demon.webp",
+              "nsfw": true
             },
             {
               "title": "Guns",
@@ -599,7 +611,8 @@
             },
             {
               "title": "Working Out",
-              "filename": "working-out.webp"
+              "filename": "working-out.webp",
+              "nsfw": true
             },
             {
               "title": "Funny",
@@ -646,6 +659,10 @@
             {
               "date": "1-5",
               "filename": "sword-leftlean.webp"
+            },
+            {
+              "date": "2-1",
+              "filename": "short-hair.webp"
             }
           ]
         }

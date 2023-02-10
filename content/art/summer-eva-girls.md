@@ -10,6 +10,7 @@ characters:
 - Asuka
 - Rei
 arttags:
+nsfw: true
 ---
 
 I drew this while on a trip, and I thought it was about time to do a summer-themed Evangelion drawing! Mari is of course having some fun with Asuka!

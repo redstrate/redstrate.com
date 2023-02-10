@@ -8,4 +8,5 @@ excludefeed: true
 slug: working-out
 characters:
 arttags:
+nsfw: true
 ---

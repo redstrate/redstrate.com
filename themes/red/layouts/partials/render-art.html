@@ -16,6 +16,11 @@
 {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
         {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "300x" }}
+
+        {{ if .Params.nsfw }}
+                {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
+        {{ end }}
+
         {{ with $image }}
         <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" src="{{ .Permalink }}"/>
         {{ else }}
@@ -27,3 +32,4 @@
 <em>CANNOT FIND {{.Params.slug }}</em>
 
 {{ end }}
+`
