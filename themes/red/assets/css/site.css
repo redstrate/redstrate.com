@@ -1,21 +1,21 @@
 /* desktop devices */
 @media (min-width: 768px) {
     header {
-        margin: 10px;
+        margin: 5px;
     }
 
     aside {
-        margin: 10px;
+        margin: 5px;
 
         flex: 15em 0 0;
     }
 
     article {
-        margin: 10px;
+        margin: 5px;
     }
 
     footer {
-        margin: 10px;
+        margin: 5px;
     }
 
     #content {
@@ -41,19 +41,19 @@
     }
 
     header {
-        margin: 10px;
+        margin: 5px;
     }
 
     aside {
-        margin: 10px;
+        margin: 5px;
     }
 
     article {
-        margin: 10px;
+        margin: 5px;
     }
 
     footer {
-        margin: 10px;
+        margin: 5px;
     }
 }
 
@@ -68,12 +68,14 @@ body {
 :root {
     --primary-accent: #9f5858;
     --secondary-accent: #c99192;
-    --border-color: #b57f7f;
-    --background-primary: #fffbf9;
-    --background-secondary: #ffffff;
+    --border-color: black;
+    --background-primary: #ab4a2f;
+    --background-secondary: #fdfdfd;
     --text-color: #363131;
     --link-visited: #460b0b;
     --extra-color: #efe4e4;
+    --border: 3px double var(--border-color);
+    --shadow: 3px 3px 0px black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -104,6 +106,22 @@ a:visited {
 header {
     flex-grow: 1;
     flex-basis: 100%;
+    color: var(--background-secondary);
+}
+
+header img {
+    height: 3em;
+    width: auto;
+    vertical-align: middle;
+    box-shadow: var(--shadow);
+    border: var(--border);
+    background-color: var(--background-secondary);
+}
+
+header h1 {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.25em;
 }
 
 aside {
@@ -111,7 +129,8 @@ aside {
 
     text-align: center;
 
-    border: 1px solid var(--border-color);
+    border: var(--border);
+    box-shadow: var(--shadow);
     border-radius: 3px;
     padding: 15px;
 }
@@ -119,8 +138,9 @@ aside {
 article {
     background-color: var(--background-secondary);
 
-    border: 1px solid var(--border-color);
+    border: var(--border);
     border-radius: 3px;
+    box-shadow: var(--shadow);
 
     padding: 15px;
 
@@ -134,8 +154,9 @@ footer {
     flex-grow: 1;
     flex-basis: 100%;
 
-    border: 1px solid var(--border-color);
+    border: var(--border);
     border-radius: 3px;
+    box-shadow: var(--shadow);
 
     padding: 15px;
 }
@@ -226,6 +247,7 @@ table {
 
 h2 {
     margin-top: 0.2em;
+    margin-bottom: 0.2em;
 }
 
 iframe {
