@@ -71,6 +71,7 @@ body {
     --border-color: black;
     --background-primary: #ab4a2f;
     --background-secondary: #fdfdfd;
+    --background-tertiary: #f0f0f0;
     --text-color: #363131;
     --link-visited: #460b0b;
     --extra-color: #efe4e4;
@@ -84,6 +85,7 @@ body {
         --secondary-accent: #c99192;
         --background-primary: #34313a;
         --background-secondary: #3c3a44;
+        --background-tertiary: #2e2c34;
         --border-color: #515860;
         --text-color: #fbeded;
         --link-visited: #ad1616;
@@ -170,7 +172,7 @@ footer {
 }
 
 .gallery-img {
-    border: 1px black solid;
+    border: 1px inset black;
     border-radius: 5px;
 }
 
@@ -193,11 +195,16 @@ figure figcaption {
 .gallery-con {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid gray;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    background-color: var(--background-tertiary);
 }
 
 .generic-con {
-    border: 1px solid gray;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    background-color: var(--background-tertiary);
+
     padding: 20px;
 }
 
@@ -211,6 +218,8 @@ figure figcaption {
     height: auto;
     width: 300px;
     margin-bottom: 10px;
+    border: 1px inset black;
+    border-radius: 3px;
 }
 
 .grid {
