@@ -22,7 +22,7 @@
                 {{ end }}
                 </a>
 
-                <figcaption>{{ $.Text | safeHTML }}</figcaption>
+                <figcaption><i>{{ $.Text | safeHTML }}</i></figcaption>
         </figure>
 {{- else -}}
         <em>Unable to find image {{ $url }}!</em>

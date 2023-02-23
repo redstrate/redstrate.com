@@ -232,11 +232,22 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: var(--extra-color);
+    background-color: var(--extra-color) !important;
+}
+
+tbody > tr {
+    background-color: var(--background-secondary);
 }
 
 table {
     width: 100%;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: var(--background-tertiary);
+}
+
+td {
+    border: 1px inset black;
 }
 
 #f-badges {
