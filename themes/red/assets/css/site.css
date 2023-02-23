@@ -325,3 +325,9 @@ pre {
 .nice-list li:not(:last-child):not(:only-child)::after {
     content: "·";
 }
+
+#about-pic {
+    float: left;
+    margin: 10px;
+    border: 1px inset black;
+}
