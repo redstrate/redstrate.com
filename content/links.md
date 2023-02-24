@@ -18,7 +18,7 @@ If you wish to be added and I missed you, or I made a horrific mistake, please [
 
 {{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
 
-{{< out-link banner="nina.png" link="https://misnina.com" label="Nina" >}}
+{{< out-link banner="nina.jpg" link="https://misnina.com" label="Nina" >}}
 
 {{< out-link banner="neuroknives.png" link="https://euroknives.com" label="Neuroknives" >}}
 
