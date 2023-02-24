@@ -1,0 +1,13 @@
+{{ $link := .Get "link" }}
+{{ $banner := .Get "banner" }}
+{{ $label := .Get "label" }}
+
+<a href="{{ $link }}" style="text-decoration: none;">
+
+{{ $path := printf "/links/%s" $banner}}
+{{ $img := resources.Get $path }}
+{{ with $img }}
+<img src="{{ .RelPermalink }}" style="width: auto; height: 31px;" alt="{{ $label }}" width="{{ .Width }}" height="{{ .Height }}"/>
+{{ end }}
+
+</a>
