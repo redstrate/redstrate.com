@@ -1,8 +1,7 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
 
-    <hr>
-
+    {{ if $.Param "source" }}
     <table>
         {{ with $.Param "source" }}
             <tr>
@@ -18,6 +17,11 @@
             </tr>
         {{ end }}
     </table>
+    {{ end }}
+
+    <p>{{ .Summary }}</p>
+
+    <hr>
 
     {{ .Content }}
 

@@ -11,11 +11,8 @@ aliases:
 - /silica-viewer
 source: https://git.sr.ht/~redstrate/silica-viewer
 license: MIT
+summary: "Finally, you can view your Procreate© artwork on your Mac! It also includes thumbnail and Quick Look previews as well for use in Finder."
 ---
-
-Finally, you can view your Procreate© artwork on your Mac! It also includes thumbnail and Quick Look previews as well for use in Finder.
-
-<!--more-->
 
 {{< rawhtml >}}
 

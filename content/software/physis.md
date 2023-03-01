@@ -10,11 +10,7 @@ aliases:
 - /projects/physis
 source: "https://git.sr.ht/~redstrate/physis"
 license: GPLv3
----
-
-Modding and data framework for FFXIV.
-
-<!--more-->
+summary: "Modding and data framework for FFXIV."
 ---
 
 This is the successor to [libxiv]({{< ref "libxiv" >}}), which I originally wrote in C++. The language is not the only

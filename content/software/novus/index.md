@@ -9,11 +9,7 @@ aliases:
 - /projects/novus
 license: GPLv3
 source: "https://git.sr.ht/~redstrate/novus"
----
-
-Collection of FFXIV modding and data-mining tools.
-
-<!--more-->
+summary: "Collection of FFXIV modding and data-mining tools."
 ---
 
 This is a collection of cross-platform, FFXIV modding tools. These don't use any pre-existing modding framework (Lumina,

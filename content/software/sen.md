@@ -8,11 +8,7 @@ tags:
 - C
 license: GPLv3
 source: https://git.sr.ht/~redstrate/sen
----
-
-Kernel for learning purposes
-
-<!--more-->
+summary: "Kernel for learning purposes."
 ---
 
 This is my custom kernel for learning purposes. I'm not a osdev at all, so please excuse the mess.

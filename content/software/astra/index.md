@@ -10,13 +10,8 @@ aliases:
 - /projects/astra
 source: https://sr.ht/~redstrate/astra
 license: GPLv3
+summary: "Cross-platform FFXIV launcher, designed for Wine users."
 ---
-
-Cross-platform FFXIV launcher, designed for Wine users.
-
-<!--more-->
----
-
 
 A custom FFXIV launcher that supports multiple accounts, [Dalamud](https://github.com/goatcorp/Dalamud) plugins and runs
 natively on  Windows, macOS and Linux!

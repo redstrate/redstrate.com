@@ -12,11 +12,7 @@ tags:
 layout: "project"
 aliases:
 - /projects/gallery
----
-
-Local booru for macOS and iOS devices.
-
-<!--more-->
+summary: "Local booru for macOS and iOS devices."
 ---
 
 I had always wanted to build a local booru application, especially for Apple devices. This was also an experiment in Mac Catalyst, which released the same year.

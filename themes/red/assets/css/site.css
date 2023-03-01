@@ -297,11 +297,13 @@ pre {
 }
 
 .blurb {
-    border: 1px solid var(--border-color);
+    border: 1px solid gray;
     border-radius: 3px;
 
     padding: 1em;
     margin: .5em;
+
+    box-shadow: var(--shadow)
 }
 
 .nice-list {

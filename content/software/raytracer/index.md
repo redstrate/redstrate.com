@@ -10,11 +10,7 @@ tags:
 layout: "project"
 aliases:
 - /projects/raytracer
----
-
-CPU raytracer.
-
-<!--more-->
+summary: "CPU raytracer."
 ---
 
 This is a CPU-based raytracer, and also my first! This features things such as:

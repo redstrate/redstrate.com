@@ -10,11 +10,7 @@ tags:
 - C++
 license: Unknown
 source: https://git.sr.ht/~redstrate/sm64
----
-
-My fork of sm64-port
-
-<!--more-->
+summary: "Fork of sm64-port for Linux using Vulkan."
 ---
 
 This is my personal fork of [sm64-port](https://github.com/sm64-port/sm64-port). Why? Because it's fun! I'm simply

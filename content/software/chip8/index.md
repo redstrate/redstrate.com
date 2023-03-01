@@ -13,11 +13,7 @@ resources:
 layout: "project"
 aliases:
 - /projects/chip8
----
-
-Basic Chip-8 emulator.
-
-<!--more-->
+summary: "Basic Chip-8 emulator."
 ---
 
 This is my first ever (working) emulator, of the simple CHIP-8 system. I'm pretty proud of this, because apart from the sprite collision logic I was able to implement most of the opcodes just looking at a basic overview of the instruction set.

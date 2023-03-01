@@ -12,11 +12,7 @@ tags:
 layout: "project"
 aliases:
 - /projects/graph
----
-
-Game engine utilizing Vulkan and Qt.
-
-<!--more-->
+summary: "Game engine utilizing Vulkan and Qt."
 ---
 
 Following up [XT]({{<ref XT>}}), this was my first adventure into Vulkan - which was a relatively new API at the time. This is an ancient project, but this is where the majority of my Vulkan knowledge was born from. Unlike some of my older projects I've recovered recently, this one actually has **all** of my commit history intact!

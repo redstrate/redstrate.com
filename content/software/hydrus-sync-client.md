@@ -8,11 +8,7 @@ tags:
 - Rust
 license: GPLv3
 source: "https://git.sr.ht/~redstrate/hydrus-sync-client/"
----
-
-Sync hydrus databases using rsync
-
-<!--more-->
+summary: "Sync hydrus databases using rsync."
 ---
 
 Ever feel like you need a way to sync Hydrus databases across multiple machines? With `hydrus-sync-client`, you can

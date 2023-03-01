@@ -14,11 +14,7 @@ featured: yes
 layout: "project"
 aliases:
 - /projects/prism
----
-
-My latest cross-platform game engine.
-
-<!--more-->
+summary: "My latest cross-platform game engine."
 ---
 
 ![PCSS in action](pcss.webp)

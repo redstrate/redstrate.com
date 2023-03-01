@@ -11,11 +11,7 @@ tags:
 layout: "project"
 aliases:
 - /projects/watersymbol
----
-
-Fire Emblem clone for a course final project.
-
-<!--more-->
+summary: "Fire Emblem clone for a course final project."
 ---
 
 A Fire Emblem clone using libGDX and Java. This is for a course final project, and it features stuff like:

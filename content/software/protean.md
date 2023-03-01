@@ -11,11 +11,7 @@ draft: false
 layout: "project"
 aliases:
 - /projects/protean
----
-
-Mastodon to Twitter cross-poster!
-
-<!--more-->
+summary: "Mastodon to Twitter cross-poster!"
 ---
 
 This is one of my first Go and Twitter projects, and I used to use on [@redstrate](https://www.twitter.com/redstrate).

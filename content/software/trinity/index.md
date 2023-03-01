@@ -10,11 +10,7 @@ tags:
 layout: "project"
 aliases:
 - /projects/trinity
----
-
-Discord-like Matrix client using QML and Qt.
-
-<!--more-->
+summary: "Discord-like Matrix client using QML and Qt."
 ---
 
 I was super interested in Matrix back in 2018, and thus
