@@ -8,7 +8,6 @@ excludefeed: true
 slug: viera-street
 characters:
 - Juritta
-- FFXIV
 arttags:
 ---
 
