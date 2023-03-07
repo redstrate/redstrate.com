@@ -26,6 +26,11 @@
     body {
         max-width: 100em;
     }
+
+    .featured-art {
+        height: 256px;
+        width: auto;
+    }
 }
 
 /* mobile devices */
@@ -54,6 +59,11 @@
 
     footer {
         margin: 5px;
+    }
+
+    .featured-art {
+        height: auto;
+        width: 100%;
     }
 }
 

@@ -20,7 +20,7 @@
         <a href="{{ $path }}" aria-label="Click to view details">
             {{ $title := .title }}
             {{ with resources.Get (printf "art/%s" .filename) }}
-            <img class="gallery-img" style="height: 256px; width: auto;" alt="{{ $title }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .Permalink }}"/>
+            <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ .Width }}" height="{{ .Height }}" src="{{ .Permalink }}"/>
             {{ else }}
             <p>Thumbnail not found!</p>
             {{ end }}
