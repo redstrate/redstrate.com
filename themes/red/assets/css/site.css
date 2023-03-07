@@ -31,6 +31,10 @@
         height: 256px;
         width: auto;
     }
+
+    .grid-sizer, .grid-item {
+        width: 300px;
+    }
 }
 
 /* mobile devices */
@@ -64,6 +68,11 @@
     .featured-art {
         height: auto;
         width: 100%;
+    }
+
+    .grid-sizer, .grid-item {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -231,8 +240,6 @@ figure figcaption {
 }
 
 .grid-item {
-    height: auto;
-    width: 300px;
     margin-bottom: 10px;
     border: 1px inset black;
     border-radius: 3px;

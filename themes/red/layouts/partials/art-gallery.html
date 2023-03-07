@@ -1,6 +1,8 @@
 {{ $paginator := .Paginate (where .Pages "Type" "art") }}
 
 <div class="grid">
+<div class="grid-sizer"></div>
+
 {{ range $paginator.Pages }}
         {{ partial "render-art" . }}
 {{ end }}

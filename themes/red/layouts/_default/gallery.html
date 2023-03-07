@@ -9,6 +9,8 @@
     {{ $art := (index site.Data ($.Param "json")) }}
 
     <div class="grid">
+    <div class="grid-sizer"></div>
+
     {{ range $art.categories }}
         {{ $should_include := false }}
 
