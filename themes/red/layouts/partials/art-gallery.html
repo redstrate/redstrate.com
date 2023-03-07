@@ -6,13 +6,23 @@
 {{ end }}
 </div>
 
+<div style="text-align: center;">
+
 {{ with $paginator.Prev }}
-<a href="{{ .URL }}">Prev</a>
+<a style="float: left" href="{{ .URL }}">Prev</a>
+{{ else }}
+<span style="float: left">Prev</span>
 {{ end }}
 
+<span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
+
 {{ with $paginator.Next }}
-<a href="{{ .URL }}">Next</a>
+<a style="float: right" href="{{ .URL }}">Next</a>
+{{ else }}
+<span style="float: right">Next</span>
 {{ end }}
+
+</div>
 
 {{ $site := resources.Get "js/site.js" }}
 {{ if hugo.IsProduction }}
