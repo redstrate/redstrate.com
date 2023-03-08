@@ -3,15 +3,15 @@
 
     <hr>
 
-    <p>Welcome to my art gallery! This is the most complete view of my work, which I have archived since 2016.</p>
-
-    <p>This current iteration of the gallery is a work-in-progress, so details and alt-text may be missing for older work.</p>
-
-    <p>If you wish to follow me when I post new art, you can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a> or my <a href="/art/index.xml">Art RSS Feed!</a></p>
-
     {{ $paginator := .Paginate (where .Pages "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
+        <p>Welcome to my art gallery! This is the most complete view of my work, which I have archived since 2016.</p>
+
+        <p>This current iteration of the gallery is a work-in-progress, so details and alt-text may be missing for older work.</p>
+
+        <p>If you wish to follow me when I post new art, you can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a> or my <a href="/art/index.xml">Art RSS Feed!</a></p>
+
         {{ partial "featured-art" . }}
 
         {{ partial "art-years" . }}
