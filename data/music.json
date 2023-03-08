@@ -9,8 +9,35 @@
           "pieces": [
             {
               "title": "you call this a town theme?",
-              "filename": "test.opus",
+              "filename": "towntheme.opus",
               "newgrounds_url": "https://www.newgrounds.com/audio/listen/1153899"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dr. Frizzly's Mega Minigame Collection",
+      "description": "The small amount of music I created for my jam entry!",
+      "years": [
+        {
+          "year": 2023,
+          "pieces": [
+            {
+              "title": "It's time!",
+              "filename": "itstime.opus"
+            },
+            {
+              "title": "Minigame lost",
+              "filename": "lostminigame.opus"
+            },
+            {
+              "title": "Minigame won",
+              "filename": "wonminigame.opus"
+            },
+            {
+              "title": "Menu",
+              "filename": "menu.opus"
             }
           ]
         }
