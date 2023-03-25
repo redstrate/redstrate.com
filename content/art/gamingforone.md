@@ -7,5 +7,8 @@ date: 2023-03-24
 slug: gamingforone
 characters:
 - Merume
-arttags:
+nsfw: false
+mastodon_url: https://mastodon.art/@redstrate/110078510315490732
+pixiv_url: https://www.pixiv.net/en/artworks/106520839
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/gaming-for-one
 ---

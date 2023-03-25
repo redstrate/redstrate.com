@@ -75,7 +75,7 @@
                     <content:encoded>{{ "<![CDATA[" | safeHTML }}
                         {{ $pageScope := . }}
                         {{ with resources.Get .Params.filename }}
-                            <img alt="{{ $pageScope.Params.alt_text }}" src="{{ .Permalink }}"/>
+                            <img width="500" alt="{{ $pageScope.Params.alt_text }}" src="{{ .Permalink }}"/>
                         {{ end }}
 
                         {{ with .Content }}

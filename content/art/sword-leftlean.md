@@ -6,5 +6,5 @@ date: 2023-01-05
 slug: sword-leftlean
 characters:
 - Mysterious Swordswoman
-arttags:
+nsfw: false
 ---

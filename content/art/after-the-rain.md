@@ -7,8 +7,9 @@ date: 2022-04-27
 slug: after-the-rain
 characters:
 - Mysterious Swordswoman
-arttags:
+nsfw: false
+mastodon_url: https://mastodon.art/@redstrate/109359580379856046
+pixiv_url: https://www.pixiv.net/en/artworks/97911950
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/after-the-rain
 ---
-
 Who is this mysterious sword maiden, and where is she going next? I love how the background turned out in this piece.
-

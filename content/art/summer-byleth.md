@@ -7,9 +7,8 @@ date: 2022-05-30
 slug: summer-byleth
 characters:
 - Byleth
-arttags:
-nsfw: true
+nsfw: false
+pixiv_url: https://www.pixiv.net/en/artworks/98726204
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-byleth
 ---
-
 This is my first proper painted character piece, and I'm pretty happy with how it turned out still. Why does she need a knife on the beach though?
-

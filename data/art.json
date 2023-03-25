@@ -1,8 +1,8 @@
 {
   "featured": [
+    "gamingforone",
     "goinghome",
-    "orbit-correction",
-    "grocery-shopping"
+    "orbit-correction"
   ],
   "categories": [
     {
@@ -135,6 +135,11 @@
           "year": 2022,
           "pieces": [
             {
+              "title": "2022 Review",
+              "filename": "2022-review.webp",
+              "date": "12-22"
+            },
+            {
               "title": "going home",
               "filename": "goinghome.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/going-home",
@@ -195,16 +200,14 @@
               "filename": "summer-eva-girls.webp",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-eva-girls",
               "pixiv_url": "https://www.pixiv.net/en/artworks/100026963",
-              "date": "7-27",
-              "nsfw": true
+              "date": "7-27"
             },
             {
               "title": "summer byleth",
               "filename": "summer-byleth.webp",
               "pixiv_url": "https://www.pixiv.net/en/artworks/98726204",
               "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-byleth",
-              "date": "5-30",
-              "nsfw": true
+              "date": "5-30"
             },
             {
               "title": "after the rain",
@@ -261,15 +264,13 @@
               "filename": "tree2.webp"
             },
             {
-              "filename": "naked-elf.webp",
-              "nsfw": true
+              "filename": "naked-elf.webp"
             },
             {
               "filename": "sketch-collect.webp"
             },
             {
-              "filename": "naked.webp",
-              "nsfw": true
+              "filename": "naked.webp"
             },
             {
               "filename": "2019.webp"
@@ -383,8 +384,7 @@
               "filename": "water-test.webp"
             },
             {
-              "filename": "ffxiv-swim.webp",
-              "nsfw": true
+              "filename": "ffxiv-swim.webp"
             },
             {
               "title": "Trainwatching",
@@ -455,15 +455,22 @@
             },
             {
               "filename": "bike2020.webp"
-            },
-            {
-              "filename": "dump2020.webp"
             }
           ]
         },
         {
           "year": 2021,
           "pieces": [
+            {
+              "title": "Sakura Sketches",
+              "filename": "sakura-sketches.webp",
+              "date": "6-21"
+            },
+            {
+              "title": "Sweater Girl",
+              "filename": "sweater-girl.webp",
+              "date": "10-21"
+            },
             {
               "title": "FF7R Airbuster Fight",
               "filename": "ff7r-airbuster-fight.webp"
@@ -473,8 +480,7 @@
             },
             {
               "title": "Miq'ote in a Swimsuit",
-              "filename": "miqote-swimsuit.webp",
-              "nsfw": true
+              "filename": "miqote-swimsuit.webp"
             },
             {
               "filename": "drawpile-snippet.webp"
@@ -498,8 +504,7 @@
               "filename": "aerith.webp"
             },
             {
-              "filename": "ffxiv-sketches.webp",
-              "nsfw": true
+              "filename": "ffxiv-sketches.webp"
             },
             {
               "filename": "futaba.webp"
@@ -527,6 +532,9 @@
             },
             {
               "filename": "jan1.webp"
+            },
+            {
+              "filename": "uneasy.webp"
             }
           ]
         },
@@ -560,8 +568,7 @@
             },
             {
               "title": "Underwear",
-              "filename": "underwear.webp",
-              "nsfw": true
+              "filename": "underwear.webp"
             },
             {
               "title": "Sketch Dump",
@@ -585,18 +592,15 @@
             },
             {
               "title": "Viera #1",
-              "filename": "viera1.webp",
-              "nsfw": true
+              "filename": "viera1.webp"
             },
             {
               "title": "Viera #2",
-              "filename": "viera2.webp",
-              "nsfw": true
+              "filename": "viera2.webp"
             },
             {
               "title": "Two Girls",
-              "filename": "two-girls.webp",
-              "nsfw": true
+              "filename": "two-girls.webp"
             },
             {
               "title": "Overalls",
@@ -608,8 +612,7 @@
             },
             {
               "title": "Demonness",
-              "filename": "demon.webp",
-              "nsfw": true
+              "filename": "demon.webp"
             },
             {
               "title": "Guns",
@@ -621,8 +624,7 @@
             },
             {
               "title": "Working Out",
-              "filename": "working-out.webp",
-              "nsfw": true
+              "filename": "working-out.webp"
             },
             {
               "title": "Funny",
@@ -669,6 +671,10 @@
             {
               "date": "1-5",
               "filename": "sword-leftlean.webp"
+            },
+            {
+              "date": "1-21",
+              "filename": "knockout-background2.webp"
             },
             {
               "date": "2-1",
@@ -806,6 +812,23 @@
             {
               "title": "Sakura (PC vs Quest poly)",
               "filename": "pc-vs-quest.webp"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "pieces": [
+            {
+              "filename": "headsculpt.webp"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "pieces": [
+            {
+              "title": "Dr. Frizzly's Logo and Banner",
+              "filename": "itch-banner.webp"
             }
           ]
         }

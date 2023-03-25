@@ -3,12 +3,10 @@ title: woman knight
 layout: art-detail
 filename: /art/knight.webp
 alt_text: "A blonde-haired knight is looking at the viewer. She is leaning on her trusty sword, and has some chestplates and basic armor on."
-date: 2021-01-01
-excludefeed: true
+date: 2021-09-19
 slug: knight
-characters:
-arttags:
+nsfw: false
+pixiv_url: https://www.pixiv.net/en/artworks/100096631
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/woman-knight
 ---
-
 Looks like this knight is ready for anything! It doesn't look like her legs are very protected though...
-

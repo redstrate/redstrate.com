@@ -6,8 +6,7 @@ date: 2022-12-30
 slug: mystery-ham
 characters:
 - Mysterious Swordswoman
-arttags:
+nsfw: false
+mastodon_url: https://mastodon.art/@redstrate/109605001272963320
 ---
-
 i love big cartoony hams!
-

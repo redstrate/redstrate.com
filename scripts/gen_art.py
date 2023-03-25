@@ -3,8 +3,79 @@ import os
 import shutil
 import json
 
+
 def write_field(f, key, value):
     f.write(key + ": " + value + "\n")
+
+
+def parse_art_json(title, year, date, nsfw, original_filename, filename, json_file):
+    with open(original_filename + '.md', 'w') as f:
+        print(json_file)
+        json_data = json.load(json_file)
+        print(json_data)
+
+        f.write('---\n')
+
+        if "title" in json_data:
+            write_field(f, 'title', json_data["title"])
+        else:
+            if title is not None:
+                write_field(f, 'title', title)
+
+        write_field(f, 'layout', 'art-detail')
+        write_field(f, 'filename', '/art/' + filename + '.webp')
+
+        if "alt_text" in json_data:
+            write_field(f, 'alt_text',
+                        "\"" + json_data["alt_text"].replace('\n', '').replace('"', '\\"') + "\"")
+
+        if "date" in json_data:
+            if "-" in json_data["date"]:
+                write_field(f, 'date', json_data["date"])
+            else:
+                write_field(f, 'date', str(json_data["date"]) + '-01-01')
+                write_field(f, 'excludefeed', "true")
+        else:
+            if date is None:
+                write_field(f, 'date', str(year) + '-01-01')
+                write_field(f, 'excludefeed', "true")
+            else:
+                split = date.split("-")
+                month = split[0]
+                day = split[1]
+
+                write_field(f, 'date', str(year) + '-' + month.zfill(2) + "-" + day.zfill(2))
+
+        write_field(f, 'slug', filename)
+
+        if "characters" in json_data:
+            f.write("characters:\n")
+            for character in json_data["characters"]:
+                f.write("- " + character + "\n")
+
+        if "tags" in json_data:
+            f.write("arttags:\n")
+            for tag in json_data["tags"]:
+                f.write("- " + tag.lower() + "\n")
+
+        if json_data["nsfw"] is not None:
+            write_field(f, 'nsfw', str(json_data["nsfw"]).lower())
+
+        if "mastodon_url" in json_data:
+            write_field(f, 'mastodon_url', json_data["mastodon_url"])
+
+        if "pixiv_url" in json_data:
+            write_field(f, 'pixiv_url', json_data["pixiv_url"])
+
+        if "newgrounds_url" in json_data:
+            write_field(f, 'newgrounds_url', json_data["newgrounds_url"])
+
+        f.write('---\n')
+
+        if "description" in json_data:
+            f.write(json_data["description"])
+            f.write('\n')
+
 
 def parse_art(title, year, date, nsfw, original_filename, filename, file):
     with open(original_filename + '.md', 'w') as f:
@@ -17,7 +88,7 @@ def parse_art(title, year, date, nsfw, original_filename, filename, file):
 
         write_field(f, 'layout', 'art-detail')
         write_field(f, 'filename', '/art/' + filename + '.webp')
-        write_field(f, 'alt_text', "\"" + document.field('Alt Text').required_string_value().replace('\n','') + "\"")
+        write_field(f, 'alt_text', "\"" + document.field('Alt Text').required_string_value().replace('\n', '') + "\"")
 
         if date is None:
             write_field(f, 'date', str(year) + '-01-01')
@@ -48,6 +119,7 @@ def parse_art(title, year, date, nsfw, original_filename, filename, file):
             f.write(document.field('Description').required_string_value())
             f.write('\n')
 
+
 def parse_art_piece(json, year, date, nsfw):
     filename_without_ext = os.path.splitext(json["filename"])[0]
 
@@ -77,6 +149,7 @@ def parse_art_piece(json, year, date, nsfw):
             write_field(f, 'nsfw', str(nsfw).lower())
 
         f.write('---\n')
+
 
 art_data_directory = '../art'
 art_output_directory = '../content/art'
@@ -140,6 +213,7 @@ with open('../data/art.json', 'r') as f:
 
     num_eno = 0
     num_noneno = 0
+    num_json = 0
 
     for category in art_data["categories"]:
         for year in category["years"]:
@@ -147,6 +221,7 @@ with open('../data/art.json', 'r') as f:
                 filename_without_ext = os.path.splitext(piece["filename"])[0]
 
                 path = os.path.join(art_data_directory, filename_without_ext + ".eno")
+                json_path = os.path.join(art_data_directory, filename_without_ext + ".json")
 
                 nsfw = None
                 if "nsfw" in piece.keys():
@@ -156,19 +231,38 @@ with open('../data/art.json', 'r') as f:
                 if "title" in piece.keys():
                     title = piece["title"]
 
-                if os.path.isfile(path):
-                    num_eno = num_eno + 1
-                    with open(path) as f:
+                if os.path.isfile(json_path):
+                    num_json = num_json + 1
+                    with open(json_path, "r") as file:
+                        print(file)
                         if "date" in piece.keys():
-                            parse_art(title, year["year"], piece["date"], nsfw, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
+                            parse_art_json(title, year["year"], piece["date"], nsfw,
+                                           art_output_directory + "/" + filename_without_ext, filename_without_ext,
+                                           file)
                         else:
-                            parse_art(title, year["year"], None, nsfw, art_output_directory + "/" + filename_without_ext, filename_without_ext, f.read())
+                            parse_art_json(title, year["year"], None, nsfw, art_output_directory + "/" + filename_without_ext,
+                                           filename_without_ext, file)
                 else:
-                    num_noneno = num_noneno + 1
-                    if "date" in piece.keys():
-                        parse_art_piece(piece, year["year"], piece["date"], nsfw)
+                    if os.path.isfile(path):
+                        num_eno = num_eno + 1
+                        with open(path) as f:
+                            if "date" in piece.keys():
+                                parse_art(title, year["year"], piece["date"], nsfw,
+                                          art_output_directory + "/" + filename_without_ext, filename_without_ext,
+                                          f.read())
+                            else:
+                                parse_art(title, year["year"], None, nsfw,
+                                          art_output_directory + "/" + filename_without_ext, filename_without_ext,
+                                          f.read())
                     else:
-                        parse_art_piece(piece, year["year"], None, nsfw)
+                        num_noneno = num_noneno + 1
+                        if "date" in piece.keys():
+                            parse_art_piece(piece, year["year"], piece["date"], nsfw)
+                        else:
+                            parse_art_piece(piece, year["year"], None, nsfw)
 
-    print("Art coverage: {}/{}".format(num_eno, num_eno + num_noneno));
+    total = num_eno + num_json + num_noneno
 
+    print("Art coverage: {}/{}".format(num_eno + num_json, total))
+    print("# of JSON: {}/{}".format(num_json, total))
+    print("# of ENO: {}/{}".format(num_eno, total))

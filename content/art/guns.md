@@ -1,9 +1,10 @@
 ---
-slug: guns
 title: Guns
-alt_text: Guns
-date: 2022-01-01
-excludefeed: true
 layout: art-detail
 filename: /art/guns.webp
+alt_text: "a girl holding two badly drawn guns, looking at the viewer (hopefully not shooting AT them). the girl has a small hat, short hair, tank top and jeans?"
+date: 2022-11-26
+slug: guns
+nsfw: false
+mastodon_url: https://mastodon.art/@redstrate/109407183038725910
 ---

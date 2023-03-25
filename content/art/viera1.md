@@ -1,10 +1,12 @@
 ---
-slug: viera1
 title: Viera #1
-alt_text: Viera #1
-date: 2022-01-01
-excludefeed: true
 layout: art-detail
 filename: /art/viera1.webp
-nsfw: true
+alt_text: "viera from final fantasy 14, tall slender bunny race (the best one)"
+date: 2022-11-16
+slug: viera1
+characters:
+- Juritta
+nsfw: false
+mastodon_url: https://mastodon.art/@redstrate/109355077545640729
 ---

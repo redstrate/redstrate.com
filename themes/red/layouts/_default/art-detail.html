@@ -40,6 +40,36 @@
             </td>
         </tr>
     {{ end }}
+
+    {{ with .Params.mastodon_url }}
+        <tr>
+            <th>Mastodon URL</th>
+            <td>
+                <a href="{{ . }}">{{ . }}</a>
+            </td>
+        </tr>
+    {{ end }}
+
+    {{ with .Params.newgrounds_url }}
+        <tr>
+            <th>Newgrounds URL</th>
+            <td>
+                <a href="{{ . }}">{{ . }}</a>
+            </td>
+        </tr>
+    {{ end }}
+
+
+    {{ with .Params.pixiv_url }}
+        <tr>
+            <th>Pixiv URL</th>
+            <td>
+                <a href="{{ . }}">{{ . }}</a>
+            </td>
+        </tr>
+    {{ end }}
+
+
     </table>
 
     {{ with .Content }}

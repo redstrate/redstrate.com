@@ -5,6 +5,10 @@ summary: My personal art gallery.
 aliases:
 - /gallery
 featured:
+- filename: gamingforone.webp
+  date: 03-24
+  year: 2023
+  title: gaming for one
 - filename: goinghome.webp
   date: 12-22
   year: 2022
@@ -13,10 +17,6 @@ featured:
   date: 12-20
   year: 2022
   title: orbit correction
-- filename: grocery-shopping.webp
-  date: 12-2
-  year: 2022
-  title: grocery shopping
 years:
 - 2023
 - 2022

@@ -1,7 +1,8 @@
 ---
-slug: ko-girl
-date: 2022-01-01
-excludefeed: true
 layout: art-detail
 filename: /art/ko-girl.webp
+alt_text: "A girl long brown hair, is making a peace sign at you. She is wearing a blue shirt with the Knockout logo on it."
+date: 2022-09-19
+slug: ko-girl
+nsfw: false
 ---
