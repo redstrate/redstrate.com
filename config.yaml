@@ -15,6 +15,7 @@ minify:
 title: '~redstrate'
 theme: 'red'
 timeZone: 'UTC'
+paginate: 20
 
 params:
   description: "My personal corner of the Internet!"

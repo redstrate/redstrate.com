@@ -15,7 +15,7 @@
 <a href="{{ .Permalink }}">
 {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
-        {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "300x" }}
+        {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "400x" }}
 
         {{ if .Params.nsfw }}
                 {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
