@@ -99,7 +99,7 @@ for year in collected_years:
     with open(os.path.join(art_output_directory, str(year), '_index.md'), 'w') as f:
         f.write('---\n')
 
-        write_field(f, 'title', str(year) + ' Art')
+        write_field(f, 'title', str(year))
         write_field(f, 'layout', 'gallery')
         write_field(f, 'json', 'art')
         write_field(f, 'thumbnails', 'true')

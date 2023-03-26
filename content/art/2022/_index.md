@@ -1,5 +1,5 @@
 ---
-title: 2022 Art
+title: 2022
 layout: gallery
 json: art
 thumbnails: true

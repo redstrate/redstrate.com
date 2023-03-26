@@ -6,11 +6,13 @@
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
-        <p>Welcome to my art gallery! This is the most complete view of my work, which I have archived since 2016.</p>
+        <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
 
-        <p>This current iteration of the gallery is a work-in-progress, so details and alt-text may be missing for older work.</p>
+        <b>Contains risque art, so you should probably not view this on a work computer.</b>
 
-        <p>If you wish to follow me when I post new art, you can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a> or my <a href="/art/index.xml">Art RSS Feed!</a></p>
+        <p>If you want to see other cool artists and their websites, see <a href="/links">the links page</a>.</p>
+
+        <p>You can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a>, or if you like RSS feeds I have an <a href="/art/index.xml">art-only feed</a>!</p>
 
         {{ partial "featured-art" . }}
 

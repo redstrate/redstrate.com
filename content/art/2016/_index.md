@@ -1,5 +1,5 @@
 ---
-title: 2016 Art
+title: 2016
 layout: gallery
 json: art
 thumbnails: true
