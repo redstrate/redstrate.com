@@ -3,7 +3,7 @@
 
     <hr>
 
-    {{ $paginator := .Paginate (where .Pages "Type" "art") }}
+    {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
         <p>Welcome to my art gallery! This is the most complete view of my work, which I have archived since 2016.</p>

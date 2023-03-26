@@ -9,13 +9,15 @@
         {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
 
         {{ $month := 1 }}
+        {{ $year := 1 }}
 
         {{ if .date }}
             {{ $split := split .date "-" }}
-            {{ $month = index $split 0 }}
+            {{ $month = index $split 1 }}
+            {{ $year = index $split 0 }}
         {{ end }}
 
-        {{ $path := printf "/art/%d/%.2d/%s" (int .year) (int $month) $filename_without_ext}}
+        {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
 
         <a href="{{ $path }}" aria-label="Click to view details">
             {{ $title := .title }}

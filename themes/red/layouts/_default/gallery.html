@@ -5,39 +5,13 @@
 
     {{ .Content }}
 
-    {{ $selected_year := $.Param "selectedyear" }}
-    {{ $art := (index site.Data ($.Param "json")) }}
-
     <div class="grid">
     <div class="grid-sizer"></div>
 
-    {{ range $art.categories }}
-        {{ $should_include := false }}
-
-        {{ range sort .years "year" "desc" }}
-            {{ if eq (int .year) (int $selected_year) }}
-                {{ $should_include = true }}
-            {{ end }}
-        {{ end }}
-
-        {{ if $should_include }}
-            {{ $without_space :=  replaceRE "(\\s)" "" .name }}
-            {{ range sort .years "year" "desc" }}
-                {{ if eq (int .year) (int $selected_year) }}
-                    {{ $year := .year }}
-
-                    {{ range .pieces }}
-                            {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
-
-                            {{ $path := printf "/art/%s" $filename_without_ext}}
-                            {{ with $.Site.GetPage $path }}
-                                {{ partial "render-art" . }}
-                            {{ end }}
-                        {{ end }}
-                {{ end }}
-            {{ end }}
-        {{ end }}
+    {{ range .Data.Pages.ByDate.Reverse }}
+        {{ partial "render-art" . }}
     {{ end }}
+
     </div>
 
     {{ $site := resources.Get "js/site.js" }}

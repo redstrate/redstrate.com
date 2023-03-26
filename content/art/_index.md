@@ -6,16 +6,13 @@ aliases:
 - /gallery
 featured:
 - filename: gamingforone.webp
-  date: 03-24
-  year: 2023
+  date: 2023-03-24
   title: gaming for one
 - filename: goinghome.webp
-  date: 12-22
-  year: 2022
+  date: 2022-12-22
   title: going home
 - filename: orbit-correction.webp
-  date: 12-20
-  year: 2022
+  date: 2022-12-20
   title: orbit correction
 years:
 - 2023
