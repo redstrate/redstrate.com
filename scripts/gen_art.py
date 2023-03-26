@@ -1,4 +1,3 @@
-import enolib
 import os
 import shutil
 import json
@@ -58,7 +57,7 @@ def parse_art_json(title, year, date, nsfw, original_filename, filename, json_fi
             for tag in json_data["tags"]:
                 f.write("- " + tag.lower() + "\n")
 
-        if json_data["nsfw"] is not None:
+        if  "nsfw" in json_data:
             write_field(f, 'nsfw', str(json_data["nsfw"]).lower())
 
         if "mastodon_url" in json_data:
@@ -75,50 +74,6 @@ def parse_art_json(title, year, date, nsfw, original_filename, filename, json_fi
         if "description" in json_data:
             f.write(json_data["description"])
             f.write('\n')
-
-
-def parse_art(title, year, date, nsfw, original_filename, filename, file):
-    with open(original_filename + '.md', 'w') as f:
-        document = enolib.parse(file)
-
-        f.write('---\n')
-
-        if title is not None:
-            write_field(f, 'title', title)
-
-        write_field(f, 'layout', 'art-detail')
-        write_field(f, 'filename', '/art/' + filename + '.webp')
-        write_field(f, 'alt_text', "\"" + document.field('Alt Text').required_string_value().replace('\n', '') + "\"")
-
-        if date is None:
-            write_field(f, 'date', str(year) + '-01-01')
-            write_field(f, 'excludefeed', "true")
-        else:
-            split = date.split("-")
-            month = split[0]
-            day = split[1]
-
-            write_field(f, 'date', str(year) + '-' + month.zfill(2) + "-" + day.zfill(2))
-
-        write_field(f, 'slug', filename)
-
-        f.write("characters:\n")
-        for character in document.list('Characters').items():
-            f.write("- " + character.required_string_value() + "\n")
-
-        f.write("arttags:\n")
-        for tag in document.list('Tags').items():
-            f.write("- " + tag.required_string_value().lower() + "\n")
-
-        if nsfw is not None:
-            write_field(f, 'nsfw', str(nsfw).lower())
-
-        f.write('---\n')
-
-        if document.optional_field('Description'):
-            f.write(document.field('Description').required_string_value())
-            f.write('\n')
-
 
 def parse_art_piece(json, year, date, nsfw):
     filename_without_ext = os.path.splitext(json["filename"])[0]
