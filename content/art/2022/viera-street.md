@@ -7,6 +7,6 @@ alt_text: "A bunny girl is looking out into the distance, but breathing out her 
 slug: viera-street
 characters:
 - Juritta
-nsfw: false
+program: Krita
 ---
 As you can probably tell, I LOVE this streetwear set in FFXIV.

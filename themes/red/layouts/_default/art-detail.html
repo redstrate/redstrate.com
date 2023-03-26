@@ -41,6 +41,15 @@
         </tr>
     {{ end }}
 
+    {{ with .Params.program }}
+        <tr>
+            <th>Program</th>
+            <td>
+                {{ . }}
+            </td>
+        </tr>
+    {{ end }}
+
     {{ with .Params.mastodon_url }}
         <tr>
             <th>Mastodon URL</th>

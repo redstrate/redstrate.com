@@ -7,8 +7,8 @@ alt_text: "In the first frame: Merume is sitting in a chair, looking at a monito
 slug: gamingforone
 characters:
 - Merume
-nsfw: false
 mastodon_url: https://mastodon.art/@redstrate/110078510315490732
 pixiv_url: https://www.pixiv.net/en/artworks/106520839
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/gaming-for-one
+program: Krita
 ---

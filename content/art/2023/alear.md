@@ -7,7 +7,7 @@ alt_text: "The protagonist Alear from Fire Emblem Engage. She has brightly color
 slug: alear
 characters:
 - Alear
-nsfw: false
 mastodon_url: https://mastodon.art/@redstrate/109847101066035149
+program: Krita
 ---
 Drew that protagonist from Fire Emblem Engage for a gift letter!It was just a quick thing, but man - she was difficult to draw. I just gave up partly with the hair, and couldn't get a really good shot of the arms.

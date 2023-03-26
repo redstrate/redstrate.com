@@ -5,8 +5,8 @@ layout: art-detail
 filename: /art/headsculpt.webp
 alt_text: "A 3d sculpt of a short, brown haired girl. It’s only a bust."
 slug: headsculpt
-nsfw: false
 mastodon_url: https://mastodon.art/@redstrate/109459311625828312
+program: Nomadsculpt
 ---
 I heard about nomadsculpt so I wanted to try it tonight!
 I don’t really have any sculpting experience, and this is my second attempt at making a human face. I think it turned out pretty good though (but that’s mostly because I chose the angle hehe)

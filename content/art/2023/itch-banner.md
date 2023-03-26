@@ -7,6 +7,6 @@ alt_text: "The words \"Dr. Frizzly's Mega Minigame Collection\" is written in 3D
 slug: itch-banner
 characters:
 - Dr. Frizzly
-nsfw: false
+program: Krita, Blender
 ---
 This is the banner I did for my game jam entry, The 3D Mario-style logo was surprisingly difficult!

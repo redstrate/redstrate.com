@@ -7,5 +7,5 @@ alt_text: "A girl with long brown hair, and a revealing outfit is making a motio
 slug: knockout-background
 characters:
 - Mysterious Swordswoman
-nsfw: false
+program: Krita
 ---

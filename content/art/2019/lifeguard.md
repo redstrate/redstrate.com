@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/lifeguard.webp
 slug: lifeguard
+program: Procreate
 ---

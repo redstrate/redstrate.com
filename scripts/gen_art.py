@@ -66,6 +66,9 @@ def parse_art_json(output_directory, filename, json_file):
         if "newgrounds_url" in json_data:
             write_field(f, 'newgrounds_url', json_data["newgrounds_url"])
 
+        if "program" in json_data:
+            write_field(f, 'program', json_data["program"])
+
         f.write('---\n')
 
         if "description" in json_data:

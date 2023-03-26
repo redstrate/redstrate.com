@@ -7,5 +7,5 @@ alt_text: "A girl with small blue shorts and a tanktop is passed by a blue shiny
 slug: waiting
 arttags:
 - drawpile
-nsfw: false
+program: Drawpile
 ---
