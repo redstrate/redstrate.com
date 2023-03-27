@@ -27,13 +27,14 @@
 		{{ if isset $json "content" }}
 			<blockquote class="generic-con" cite="{{ $tootLink }}">
 				<div class="toot-header">
-					<a class="toot-profile" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
+                    <!-- Disabled due to CORS troubles for now -->
+					<!--<a class="toot-profile" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">
 						<img
 							src="{{ $json.account.avatar }}"
 							alt="Mastodon avatar for {{ $handleInst }}"
 							loading="lazy"
 						/>
-					</a>
+					</a>-->
 					<div class="toot-author">
 						<span class="toot-author-name" rel="noopener">{{ $json.account.display_name }}</span>
 						<a class="toot-author-handle" href="https://{{ $masIns }}/@{{ $json.account.acct }}" rel="noopener">{{ $handleInst }}</a>
