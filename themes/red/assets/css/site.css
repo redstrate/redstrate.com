@@ -346,6 +346,40 @@ pre {
     margin-right: 0;
 }
 
+.toot-header .toot-profile img {
+    border-radius: 9999px;
+    width: 48px;
+    height: auto;
+}
+
+.toot-blockquote {
+    line-height: 1.35em;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 2px solid gray;
+    border-radius: 12px;
+}
+
+.toot-header .toot-author {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.toot-header .toot-author .toot-author-name {
+    font-weight: 700;
+}
+
+.toot-header .toot-author .toot-author-handle {
+    line-height: 1;
+}
+
+.toot-header {
+    display: flex;
+}
 
 .nice-list li:not(:last-child):not(:only-child)::after {
     content: "·";
