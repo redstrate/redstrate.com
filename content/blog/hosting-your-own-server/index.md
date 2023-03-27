@@ -1,5 +1,5 @@
 ---
-title: "Retrospective of three years of self-hosting"
+title: "Retrospective on three years of self-hosting"
 date: 2023-03-27
 draft: false
 summary: "I've been hosting my own infrastructure for almost three years now!"
