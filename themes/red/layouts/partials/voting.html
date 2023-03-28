@@ -1,0 +1,16 @@
+<div style="width: 100px; margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto">
+        <button style="display: block; margin-left: auto; margin-right: auto" onClick="addVote({{ .Slug }})">Cool!</button>
+
+        <p style="text-align: center" id="num-votes">...</p>
+</div>
+
+{{ $site := resources.Get "js/voting.js" }}
+{{ if hugo.IsProduction }}
+    {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+
+
+<script type="text/javascript">
+        refresh({{ .Slug }})
+</script>

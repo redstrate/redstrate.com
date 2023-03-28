@@ -4,7 +4,7 @@
     <hr>
 
     {{ with resources.Get .Params.filename }}
-        <img class="article-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
+        <img class="article-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto;" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
     {{ end }}
 
     <table>
@@ -78,6 +78,7 @@
         </tr>
     {{ end }}
 
+    {{ partial "voting" . }}
 
     </table>
 
