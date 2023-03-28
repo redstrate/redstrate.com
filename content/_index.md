@@ -8,6 +8,7 @@ ground for cool stuff I'm working on.
 
 I make [blog posts sometimes]({{< ref "blog" >}}). You an find more of [my art here]({{< ref "art" >}}). If you like my website, consider signing the [guestbook]({{< ref "guestbook" >}})!
 
+### Featured Artwork
 {{< featured-art >}}
 
 {{< recent-posts >}}
