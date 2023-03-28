@@ -44,15 +44,19 @@ def parse_art_json(output_directory, filename, json_file):
 
         write_field(f, 'slug', filename)
 
+        characters = []
         if "characters" in json_data:
             f.write("characters:\n")
             for character in json_data["characters"]:
                 f.write("- " + character + "\n")
+                characters.append(character)
 
+        tags = []
         if "tags" in json_data:
             f.write("arttags:\n")
             for tag in json_data["tags"]:
                 f.write("- " + tag.lower() + "\n")
+                tags.append(tag.lower())
 
         if "nsfw" in json_data:
             write_field(f, 'nsfw', str(json_data["nsfw"]).lower())
@@ -75,7 +79,7 @@ def parse_art_json(output_directory, filename, json_file):
             f.write(json_data["description"])
             f.write('\n')
 
-        return year
+        return (year, characters, tags)
 
 
 art_data_directory = '../art'
@@ -85,6 +89,10 @@ shutil.rmtree(art_output_directory)
 os.mkdir(art_output_directory)
 
 collected_years = set()
+year_stats = {}
+total_art = 0
+character_stats = {}
+tag_stats = {}
 
 for filename in os.listdir(art_data_directory):
     f = os.path.join(art_data_directory, filename)
@@ -93,7 +101,27 @@ for filename in os.listdir(art_data_directory):
         filename_without_ext = os.path.splitext(filename)[0]
 
         with open(f, "r") as file:
-            collected_years.add(parse_art_json(art_output_directory, filename_without_ext, file))
+            year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file)
+
+            if year in year_stats:
+                year_stats[year] += 1
+            else:
+                year_stats[year] = 1
+
+            for character in characters:
+                if character in character_stats:
+                    character_stats[character] += 1
+                else:
+                    character_stats[character] = 1
+
+            for tag in tags:
+                if tag in tag_stats:
+                    tag_stats[tag] += 1
+                else:
+                    tag_stats[tag] = 1
+
+            collected_years.add(year)
+            total_art += 1
 
 for year in collected_years:
     with open(os.path.join(art_output_directory, str(year), '_index.md'), 'w') as f:
@@ -136,5 +164,32 @@ with open(art_output_directory + '/_index.md', 'w') as f:
     f.write('years:\n')
     for year in reversed(list(collected_years)):
         f.write('- ' + str(year) + '\n')
+
+    f.write('---\n')
+
+os.mkdir(art_output_directory + "/stats")
+
+with open(art_output_directory + '/stats/_index.md', 'w') as f:
+    f.write('---\n')
+
+    write_field(f, 'title', 'Stats')
+    write_field(f, 'layout', 'art-stats')
+
+    write_field(f, 'total', str(total_art))
+
+    f.write('years:\n')
+    for year, num in reversed(sorted(year_stats.items(), key=lambda t: t[1])):
+        f.write('- year: ' + str(year) + '\n')
+        f.write('  num: ' + str(num) + '\n')
+
+    f.write('characters:\n')
+    for name, num in sorted(character_stats.items(), key=lambda t: t[1], reverse=True)[:10]:
+        f.write('- name: ' + str(name) + '\n')
+        f.write('  num: ' + str(num) + '\n')
+
+    f.write('tags:\n')
+    for name, num in sorted(tag_stats.items(), key=lambda t: t[1]):
+        f.write('- name: ' + str(name) + '\n')
+        f.write('  num: ' + str(num) + '\n')
 
     f.write('---\n')
