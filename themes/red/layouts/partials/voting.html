@@ -4,6 +4,7 @@
         <p style="text-align: center" id="num-votes">...</p>
 </div>
 
+{{ if hugo.IsProduction }}
 {{ $site := resources.Get "js/voting.js" }}
 {{ if hugo.IsProduction }}
     {{ $site = $site | minify | fingerprint | resources.PostProcess }}
@@ -14,3 +15,4 @@
 <script type="text/javascript">
         refresh({{ .Slug }})
 </script>
+{{ end }}
