@@ -390,3 +390,8 @@ pre {
     margin: 10px;
     border: 1px inset black;
 }
+
+.external-link {
+    vertical-align: sub;
+    margin-left: 2px;
+}
