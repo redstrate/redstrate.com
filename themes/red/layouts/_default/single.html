@@ -23,6 +23,8 @@
     {{ partial "related" . }}
 
     {{ if in .File.Dir "blog" }}
+        {{ partial "voting" . }}
+
         {{ partial "comments" . }}
     {{ end }}
 {{ end }}

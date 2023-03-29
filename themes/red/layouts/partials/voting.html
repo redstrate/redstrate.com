@@ -1,5 +1,11 @@
+{{ $name := urlize .Title }}
+
+{{ with .Slug }}
+{{ $name = . }}
+{{ end }}
+
 <div style="width: 100px; margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto">
-        <button style="display: block; margin-left: auto; margin-right: auto" onClick="addVote({{ .Slug }})">Cool!</button>
+        <button style="display: block; margin-left: auto; margin-right: auto" onClick="addVote({{ $name }})">Cool!</button>
 
         <p style="text-align: center" id="num-votes">...</p>
 </div>
@@ -13,6 +19,8 @@
 
 
 <script type="text/javascript">
-        refresh({{ .Slug }})
+        refresh({{ $name }})
 </script>
+{{ else }}
+<p>debug: {{ $name }}</p>
 {{ end }}
