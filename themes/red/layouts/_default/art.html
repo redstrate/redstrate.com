@@ -6,6 +6,10 @@
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
+        {{ with $.Params.new_banner }}
+        <div class="new-banner"><b>*new*</b> {{ . }}</div>
+        {{ end }}
+
         <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
 
         <b>Contains risque art, so you should probably not view this on a work computer.</b>
@@ -23,6 +27,10 @@
             <a class="art-button" href="/art/characters">Characters</a>
             <a class="art-button" href="/art/tags">Tags</a>
             <a class="art-button" href="/art/stats">Stats</a>
+
+            {{ if $.Params.commissions }}
+            <a class="art-button" href="/commission">Commissions</a>
+            {{ end }}
         </div>
     {{ end }}
 

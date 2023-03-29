@@ -93,6 +93,8 @@ year_stats = {}
 total_art = 0
 character_stats = {}
 tag_stats = {}
+new_banner = ""
+comissions_enabled = False
 
 for filename in os.listdir(art_data_directory):
     f = os.path.join(art_data_directory, filename)
@@ -140,6 +142,11 @@ with open('../data/art-config.json', 'r') as f:
 
     featured_pieces = json_data["featured"]
 
+    if "new-banner" in json_data:
+        new_banner = json_data["new-banner"]
+
+    comissions_enabled = json_data["commissions"]
+
 with open(art_output_directory + '/_index.md', 'w') as f:
     f.write('---\n')
 
@@ -147,6 +154,9 @@ with open(art_output_directory + '/_index.md', 'w') as f:
     write_field(f, 'layout', 'art')
 
     write_field(f, 'summary', 'My personal art gallery.')
+
+    write_field(f, 'new_banner', new_banner)
+    write_field(f, 'commissions', str(comissions_enabled).lower())
 
     f.write('aliases:\n')
     f.write('- /gallery\n')

@@ -2,6 +2,8 @@
 title: Art
 layout: art
 summary: My personal art gallery.
+new_banner: You can now vote on artwork!
+commissions: true
 aliases:
 - /gallery
 featured:

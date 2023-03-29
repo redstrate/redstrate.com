@@ -3,5 +3,7 @@
                 "gamingforone",
                 "goinghome",
                 "orbit-correction"
-        ]
+        ],
+        "new-banner": "You can now vote on artwork!",
+        "commissions": true
 }
