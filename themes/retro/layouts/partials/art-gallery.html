@@ -1,0 +1,25 @@
+{{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
+
+<div>
+{{ range $paginator.Pages }}
+        {{ partial "render-art" . }}
+{{ end }}
+</div>
+
+<div style="text-align: center;">
+
+{{ with $paginator.Prev }}
+<a style="float: left" href="{{ .URL }}">Prev</a>
+{{ else }}
+<span style="float: left">Prev</span>
+{{ end }}
+
+<span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
+
+{{ with $paginator.Next }}
+<a style="float: right" href="{{ .URL }}">Next</a>
+{{ else }}
+<span style="float: right">Next</span>
+{{ end }}
+
+</div>

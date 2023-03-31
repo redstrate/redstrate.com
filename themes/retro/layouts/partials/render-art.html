@@ -1,0 +1,35 @@
+{{ $full := resources.Get (printf "art/%s.webp" .Params.slug) }}
+{{ if $full }}
+
+{{ $filename_without_ext := .Params.slug }}
+
+{{ $month := 1 }}
+{{ $year := 1 }}
+
+{{ if .Params.date }}
+        {{ $split := split .Params.date "-" }}
+        {{ $month = index $split 0 }}
+        {{ $year = index $split 3 }}
+{{ end }}
+
+<a href="{{ .Permalink }}">
+{{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
+        {{ $title := .Params.title }}
+        {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "400x bmp" }}
+
+        {{ if .Params.nsfw }}
+                {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
+        {{ end }}
+
+        {{ with $image }}
+        <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}"/>
+        {{ else }}
+        <p>Thumbnail not found!</p>
+        {{ end }}
+</a>
+{{ else }}
+
+<em>CANNOT FIND {{.Params.slug }}</em>
+
+{{ end }}
+

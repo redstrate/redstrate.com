@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    {{- partial "head.html" . -}}
+    <body>
+        <header>{{- partial "header.html" . -}}</header>
+        <div id="content">
+        <aside>{{- partial "sidebar.html" . -}}</aside>
+        <article>
+        <div class="breadcrumbs">
+            {{ partial "breadcrumbs.html" . }}
+        </div>
+        {{- block "main" . }}{{- end }}
+        </article>
+        </div>
+        <footer>{{- partial "footer.html" . -}}</footer>
+    </body>
+</html>
