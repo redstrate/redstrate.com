@@ -26,7 +26,7 @@
 
 </div>
 
-{{ $site := resources.Get "js/site.js" }}
+{{ $site := resources.Get "js/gallery.js" }}
 {{ if hugo.IsProduction }}
     {{ $site = $site | minify | fingerprint | resources.PostProcess }}
 {{ end }}

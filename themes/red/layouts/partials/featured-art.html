@@ -18,7 +18,7 @@
 
         {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
 
-        <a href="{{ $path }}" aria-label="Click to view details">
+        <a href="{{ $path }}" aria-label="Click to view details" class="no-decoration">
             {{ $title := .title }}
             {{ with resources.Get (printf "art/%s" .filename) }}
             {{ $image := .Resize "500x" }}

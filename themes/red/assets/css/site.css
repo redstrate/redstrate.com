@@ -419,3 +419,7 @@ pre {
     padding: 5px;
     text-align: center;
 }
+
+.no-decoration {
+    text-decoration: none;
+}

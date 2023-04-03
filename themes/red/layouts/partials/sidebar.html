@@ -1,9 +1,12 @@
 <nav>
-    {{ $icon := resources.Get "external-link.svg" }}
+    <details id="nav-menu" open="true">
+        <summary>Navigation</summary>
+        {{ $icon := resources.Get "external-link.svg" }}
 
-    {{ range .Site.Menus.main }}
-        <div class="site-menu">
-            <a href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.Permalink }}"/>{{- end -}}</a>
-        </div>
-    {{ end }}
+        {{ range .Site.Menus.main }}
+            <div class="site-menu">
+                <a href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.Permalink }}"/>{{- end -}}</a>
+            </div>
+        {{ end }}
+    </details>
 </nav>

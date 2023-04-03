@@ -12,7 +12,7 @@
         {{ $year = index $split 3 }}
 {{ end }}
 
-<a href="{{ .Permalink }}">
+<a class="no-decoration" href="{{ .Permalink }}">
 {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
         {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "400x" }}

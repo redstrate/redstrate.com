@@ -13,5 +13,11 @@
         </article>
         </div>
         <footer>{{- partial "footer.html" . -}}</footer>
+
+        {{ $site := resources.Get "js/site.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
     </body>
 </html>

@@ -1,8 +1,3 @@
-imagesLoaded(document.querySelector('.grid'), function(instance) {
-    new Masonry('.grid', {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        fitWidth: true,
-        gutter: 10,
-    });
-});
+if (window.matchMedia('(max-device-width: 768px)').matches) {
+    document.getElementById("nav-menu").open = false;
+}

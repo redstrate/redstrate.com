@@ -2,7 +2,7 @@
 <div class="generic-con year-con">
 {{ range $.Param "years" }}
     {{ $year := . }}
-    <a href="/art/{{ . }}">
+    <a class="no-decoration" href="/art/{{ . }}">
         {{ $thumbp := printf "/year-thumbs/%d.webp" . }}
         {{ with resources.Get $thumbp }}
         <img width="256" height="128" alt="{{ $year }}" class="gallery-img article-img" src="{{ .RelPermalink }}">
