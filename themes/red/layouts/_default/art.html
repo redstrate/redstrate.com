@@ -8,10 +8,10 @@
     {{ if eq $paginator.PageNumber 1}}
         {{ $alertimg := resources.Get "alert.png" }}
         {{ with $.Params.new_banner }}
-        <div class="new-banner"><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/><b>{{ . }}</b><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/></div>
+        <div class="new-banner"><img width="16" height="16" id="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"/><b>{{ . }}</b><img width="16" height="16" id="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"/></div>
         {{ end }}
 
-        <div class="new-banner"><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/><b>Contains risque art, so you should probably not view this on a work computer.</b><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/></div>
+        <div class="new-banner"><img width="16" height="16" id="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"/><b>Contains risque art, so you should probably not view this on a work computer.</b><img width="16" height="16" id="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"/></div>
 
         <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
 
