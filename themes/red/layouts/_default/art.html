@@ -6,13 +6,14 @@
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
+        {{ $alertimg := resources.Get "alert.png" }}
         {{ with $.Params.new_banner }}
-        <div class="new-banner"><b>*new*</b> {{ . }}</div>
+        <div class="new-banner"><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/><b>{{ . }}</b><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/></div>
         {{ end }}
 
-        <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
+        <div class="new-banner"><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/><b>Contains risque art, so you should probably not view this on a work computer.</b><img width="16" height="16" style="vertical-align: middle;" src="{{ $alertimg.RelPermalink }}"/></div>
 
-        <b>Contains risque art, so you should probably not view this on a work computer.</b>
+        <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
 
         <p>If you want to see other cool artists and their websites, see <a href="/links">the links page</a>.</p>
 
