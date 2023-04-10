@@ -5,7 +5,16 @@ title: "Imprint"
 
 ### This Website and Related Services
 
-Connections to my websites may be checked for abuse, but nothing is permanently logged nor do I care to log you.
+Connections to my server may be logged for abuse, but I do not care to track you.
+
+This website may involve connections to first-party services (in layman's terms, they are hosted by me). These may include:
+* The content of the website, which is hosted on redstrate.com. I don't hotlink often (maybe the odd image in an embedded social media post). I also employ cross-origin policies to prevent leakages. The website source code is [available here](https://git.sr.ht/~redstrate/redstrate.com) and the NGINX configuration simply serves it from a directory on the server.
+* The comments system, which is hosted under comments.redstrate.com. If the page you view has comments enabled, it may make requests if you have Javascript enabled. I run an [unmodified Isso instance](https://isso-comments.de/).
+* The voting system, which is hosted under voting.redstrate.com. If the page you view has voting enabled, it may make requests if you have Javascript enabled. The voting system is currently not open-source.
+
+Links to external websites are clearly marked with an external link icon, although it will incorrectly mark domains that are actually hosted by me.
+
+I do not use any analytics services.
 
 ### Silica Viewer
 
