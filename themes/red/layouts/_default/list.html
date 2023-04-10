@@ -3,7 +3,11 @@
 
     <hr>
 
+    {{ $paginator := .Paginate .Pages 10 }}
+
+    {{ if eq $paginator.PageNumber 1}}
     {{ .Content }}
+    {{ end }}
 
     <table>
         <tr>
@@ -12,7 +16,7 @@
             <th>Date</th>
         </tr>
 
-        {{ range .Data.Pages.ByDate.Reverse }}
+        {{ range $paginator.Pages }}
             <tr>
                 <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
 
@@ -26,4 +30,21 @@
             </tr>
         {{ end }}
     </table>
+
+    <div style="text-align: center; margin-top: 10px;">
+    {{ with $paginator.Prev }}
+    <a style="float: left" href="{{ .URL }}">Prev</a>
+    {{ else }}
+    <span style="float: left">Prev</span>
+    {{ end }}
+
+    <span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
+
+    {{ with $paginator.Next }}
+    <a style="float: right" href="{{ .URL }}">Next</a>
+    {{ else }}
+    <span style="float: right">Next</span>
+    {{ end }}
+
+    </div>
 {{ end }}
