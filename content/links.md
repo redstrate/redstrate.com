@@ -25,3 +25,5 @@ If you wish to be added and I missed you, or I made a horrific mistake, please [
 {{< out-link banner="bigraccoon-logo-white.png" link="https://bigraccoon.ca/" label="Johann Sebastian Staedtler" >}}
 
 {{< out-link banner="tof.png" link="https://toffeee.com" label="toffee" >}}
+
+{{< out-link banner="melps.jpg" link="https://melps.neocities.org" label="melps" >}}
