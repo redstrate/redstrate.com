@@ -1,0 +1,34 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    {{ .Content }}
+
+    {{ $art := (index site.Data ($.Param "json")) }}
+    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
+
+    {{ range $art.categories }}
+        <h3>{{ .name }}</h3>
+        <p>{{ .description }}</p>
+        {{ range sort .years "year" "desc" }}
+            <h4>{{ .year }}</h4>
+
+            <div class="gallery">
+                {{ range .pieces }}
+                    {{ $full := resources.Get (printf "%s/%s" ($.Param "json") .filename) }}
+
+                    {{ with resources.Get $full }}
+                    <model-viewer src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+    {{ end }}
+
+    {{ $site := resources.Get "js/model-viewer.min.js" }}
+    {{ if hugo.IsProduction }}
+    {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+{{ end }}
