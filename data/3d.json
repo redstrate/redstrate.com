@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "name": "Uncategorized",
+      "description": "Test",
+      "years": [
+        {
+          "year": 2016,
+          "pieces": [
+            {
+              "title": "Lantern",
+              "filename": "lantern.glb"
+            }
+          ]
+        },
+        {
+          "year": 2022,
+          "pieces": [
+            {
+              "title": "Sakura",
+              "filename": "sakura.glb"
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "pieces": [
+            {
+              "title": "Planet Express Ship",
+              "filename": "planet-express-ship.glb"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

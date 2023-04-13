@@ -431,3 +431,8 @@ pre {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+model-viewer {
+    width: 640px;
+    height: 480px;
+}
