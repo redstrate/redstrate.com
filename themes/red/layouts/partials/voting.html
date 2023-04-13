@@ -11,7 +11,7 @@
 </div>
 
 {{ if hugo.IsProduction }}
-        {{ $site = resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
+        {{ $site := resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
         <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
 
 
