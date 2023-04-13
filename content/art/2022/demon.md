@@ -7,6 +7,8 @@ alt_text: "a four armed succubus doing some cooking. she has a spoon in one hand
 slug: demon
 characters:
 - Merume
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109413482478998769
+program: Krita
 ---

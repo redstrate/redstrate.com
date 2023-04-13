@@ -7,4 +7,5 @@ filename: /art/desert.webp
 slug: desert
 arttags:
 - landscape
+program: Procreate
 ---

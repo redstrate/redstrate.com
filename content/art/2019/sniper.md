@@ -7,5 +7,5 @@ filename: /art/sniper.webp
 slug: sniper
 characters:
 - Sniper Girl
-nsfw: false
+program: Procreate
 ---

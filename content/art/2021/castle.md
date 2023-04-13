@@ -7,5 +7,5 @@ alt_text: "A gray and boxy castle, painted over a nice blue cloudy sky."
 slug: castle
 arttags:
 - drawpile
-nsfw: false
+program: Drawpile
 ---

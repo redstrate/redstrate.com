@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/sketch-collect.webp
 slug: sketch-collect
+arttags:
+- sketch
+program: Procreate
 ---

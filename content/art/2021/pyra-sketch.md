@@ -6,5 +6,7 @@ filename: /art/pyra-sketch.webp
 slug: pyra-sketch
 characters:
 - Pyra
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

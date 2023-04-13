@@ -5,5 +5,7 @@ layout: art-detail
 filename: /art/sweater-girl.webp
 alt_text: "A girl with short black hair and dim red jacket is looking around."
 slug: sweater-girl
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

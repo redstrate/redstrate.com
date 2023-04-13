@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/whatever.webp
 slug: whatever
+arttags:
+- oil painting
 ---

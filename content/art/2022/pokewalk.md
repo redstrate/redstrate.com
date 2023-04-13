@@ -8,7 +8,10 @@ slug: pokewalk
 characters:
 - Mudkip
 - Quaxly
-nsfw: false
+arttags:
+- sketch
+- request
 mastodon_url: https://mastodon.art/@redstrate/109603563188051783
+program: PRocreate
 ---
 Made on request!

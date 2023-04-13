@@ -6,6 +6,8 @@ alt_text: "a girl, but looking to the left. she's unsure at what she is feeling 
 slug: uneasy
 characters:
 - Mysterious Swordswoman
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109396806793764731
+program: Clip Studio Paint
 ---

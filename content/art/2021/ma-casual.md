@@ -7,5 +7,7 @@ slug: ma-casual
 characters:
 - Mari
 - Asuka
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

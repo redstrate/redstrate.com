@@ -10,5 +10,5 @@ characters:
 - Amber
 arttags:
 - landscape
-nsfw: false
+program: Procreate
 ---

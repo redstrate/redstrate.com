@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/chair2020.webp
 slug: chair2020
+arttags:
+- sketch
+program: Procreate
 ---

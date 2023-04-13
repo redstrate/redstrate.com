@@ -6,4 +6,7 @@ filename: /art/tifa-sketch.webp
 slug: tifa-sketch
 characters:
 - Tifa
+arttags:
+- sketch
+program: Procreate
 ---

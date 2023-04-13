@@ -6,5 +6,5 @@ filename: /art/elisanne.webp
 slug: elisanne
 characters:
 - Elisanne
-nsfw: false
+program: Procreate
 ---

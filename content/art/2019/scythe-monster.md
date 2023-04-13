@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/scythe-monster.webp
 slug: scythe-monster
+arttags:
+- sketch
+program: Procreate
 ---

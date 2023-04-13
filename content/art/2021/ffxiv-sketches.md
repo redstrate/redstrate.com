@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/ffxiv-sketches.webp
 slug: ffxiv-sketches
+arttags:
+- sketch
+program: Procreate
 ---

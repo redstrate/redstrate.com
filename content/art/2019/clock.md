@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/clock.webp
 slug: clock
+program: Procreate
 ---

@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/shoot-ghost.webp
 slug: shoot-ghost
+arttags:
+- sketch
+program: Procreate
 ---

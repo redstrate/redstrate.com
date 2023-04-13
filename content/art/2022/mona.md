@@ -7,6 +7,8 @@ alt_text: "Drawing of a smug cat holding a knife. Next to it, a girl looking up 
 slug: mona
 characters:
 - Morgana
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109421857086877683
+program: Procreate
 ---

@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/day6.webp
 slug: day6
+arttags:
+- sketch
+program: Procreate
 ---

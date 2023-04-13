@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/pair.webp
 slug: pair
+arttags:
+- sketch
+program: Procreate
 ---

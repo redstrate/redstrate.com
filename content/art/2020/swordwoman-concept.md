@@ -8,6 +8,8 @@ alt_text: "A girl with blue clothing, with her stomach and legs exposed. She is 
 slug: swordwoman-concept
 characters:
 - Mysterious Swordswoman
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---
 An earlier iteration of the design!

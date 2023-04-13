@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/madman.webp
 slug: madman
+arttags:
+- sketch
+program: Procreate
 ---

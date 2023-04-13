@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/toys.webp
 slug: toys
+arttags:
+- sketch
+program: Procreate
 ---

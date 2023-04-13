@@ -4,5 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/beachball.webp
 slug: beachball
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

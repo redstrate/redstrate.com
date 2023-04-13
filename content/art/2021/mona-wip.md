@@ -6,5 +6,7 @@ filename: /art/mona-wip.webp
 slug: mona-wip
 characters:
 - Mona
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

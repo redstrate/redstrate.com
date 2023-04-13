@@ -9,8 +9,8 @@ characters:
 - Mari
 - Asuka
 - Rei
-nsfw: false
 pixiv_url: https://www.pixiv.net/en/artworks/100026963
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-eva-girls
+program: Procreate
 ---
 I drew this while on a trip, and I thought it was about time to do a summer-themed Evangelion drawing! Mari is of course having some fun with Asuka!

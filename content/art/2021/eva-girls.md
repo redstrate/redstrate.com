@@ -9,8 +9,8 @@ characters:
 - Asuka
 - Rei
 - Mari
-nsfw: false
 pixiv_url: https://www.pixiv.net/en/artworks/94953596
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/eva-girls
+program: Clip Studio Paint
 ---
 This is one of my more complex pieces in 2021, and I spent many hours toiling away on it. I like the end result, but I kind of wish I slapped some shading on it...

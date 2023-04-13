@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/great-subject.webp
 slug: great-subject
+program: Procreate
 ---

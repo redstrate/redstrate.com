@@ -6,5 +6,7 @@ filename: /art/dec1.webp
 slug: dec1
 characters:
 - Elisanne
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

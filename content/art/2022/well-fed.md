@@ -7,7 +7,9 @@ alt_text: "viera from final fantasy xiv (bunny girl), holding a pot of baked ali
 slug: well-fed
 characters:
 - Juritta
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109394255132277134
+program: Krita
 ---
 dunno why i've been drawing food so much recently... will you eat the Baked Alien Soup?

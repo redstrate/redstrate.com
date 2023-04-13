@@ -5,5 +5,7 @@ layout: art-detail
 filename: /art/king.webp
 alt_text: "A lazy ruler and his assistant (or queen?) is sitting upon their throne."
 slug: king
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

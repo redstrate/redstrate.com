@@ -6,5 +6,7 @@ filename: /art/jan1.webp
 slug: jan1
 characters:
 - Juritta
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

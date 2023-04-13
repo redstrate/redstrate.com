@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/question.webp
 slug: question
+arttags:
+- sketch
+program: Procreate
 ---

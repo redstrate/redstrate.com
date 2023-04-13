@@ -6,4 +6,5 @@ filename: /art/mothman.webp
 slug: mothman
 characters:
 - Mothman
+program: Procreate
 ---

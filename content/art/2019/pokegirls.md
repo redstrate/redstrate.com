@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/pokegirls.webp
 slug: pokegirls
+arttags:
+- sketch
+program: Procreate
 ---

@@ -6,5 +6,7 @@ filename: /art/aerith.webp
 slug: aerith
 characters:
 - Aerith
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

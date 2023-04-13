@@ -6,7 +6,9 @@ alt_text: "A long haired girl is holding a big, cartoon ham. She’s making eye 
 slug: mystery-ham
 characters:
 - Mysterious Swordswoman
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109605001272963320
+program: Procreate
 ---
 i love big cartoony hams!

@@ -4,4 +4,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/cactus-border.webp
 slug: cactus-border
+program: Krita
 ---

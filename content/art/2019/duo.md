@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/duo.webp
 slug: duo
+program: Procreate
 ---

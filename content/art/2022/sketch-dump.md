@@ -8,6 +8,8 @@ slug: sketch-dump
 characters:
 - Merume
 - Juritta
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109434559164546455
+program: Procreate
 ---

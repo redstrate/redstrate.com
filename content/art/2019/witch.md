@@ -5,4 +5,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/witch.webp
 slug: witch
+arttags:
+- sketch
+program: Procreate
 ---

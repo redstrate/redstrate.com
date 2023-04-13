@@ -7,5 +7,7 @@ alt_text: "From top lefrt to bottom right:Sakura is making a dancing motion, to 
 slug: sakura-sketches
 characters:
 - Sakura
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

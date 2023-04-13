@@ -6,4 +6,7 @@ filename: /art/dec1-2.webp
 slug: dec1-2
 characters:
 - Eugen
+arttags:
+- sketch
+program: Procreate
 ---

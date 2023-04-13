@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/sand.webp
 slug: sand
+arttags:
+- sketch
+program: Procreate
 ---

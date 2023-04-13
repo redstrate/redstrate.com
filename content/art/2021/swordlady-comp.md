@@ -9,5 +9,5 @@ characters:
 - Mysterious Swordswoman
 arttags:
 - drawpile
-nsfw: false
+program: Drawpile
 ---

@@ -7,6 +7,8 @@ alt_text: "On the left, Knocky-Chan is punching you. On the right, a dark haired
 slug: sketchmarch2
 characters:
 - Knocky-chan
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/110108997092717607
 program: Procreate
 ---

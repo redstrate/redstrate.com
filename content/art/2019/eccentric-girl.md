@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/eccentric-girl.webp
 slug: eccentric-girl
+arttags:
+- sketch
+program: Procreate
 ---

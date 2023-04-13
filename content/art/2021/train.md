@@ -6,5 +6,5 @@ filename: /art/train.webp
 slug: train
 arttags:
 - drawpile
-nsfw: false
+program: Drawpile
 ---

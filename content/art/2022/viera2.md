@@ -7,6 +7,8 @@ alt_text: "another viera, this time at a table."
 slug: viera2
 characters:
 - Juritta
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109355236564579640
+program: Krita
 ---

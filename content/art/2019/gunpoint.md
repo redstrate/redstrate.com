@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/gunpoint.webp
 slug: gunpoint
+program: Procreate
 ---

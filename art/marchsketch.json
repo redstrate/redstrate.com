@@ -11,7 +11,10 @@
     "description": "Here's a collection of sketches I finally finished! I didn't feel like doing a full piece, so I opted to color each of these instead.",
     "mastodon_url": "https://mastodon.art/@redstrate/109972292267062823",
     "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/march-sketch-dump",
-    "nsfw": false,
     "pixiv_url": "https://www.pixiv.net/en/artworks/105958979",
+    "program": "Krita",
+    "tags": [
+        "New Tag"
+    ],
     "title": "march sketches"
 }

@@ -11,9 +11,11 @@ characters:
 - Gustavo
 - Juritta
 - Rat
-nsfw: false
+arttags:
+- new tag
 mastodon_url: https://mastodon.art/@redstrate/109972292267062823
 pixiv_url: https://www.pixiv.net/en/artworks/105958979
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/march-sketch-dump
+program: Krita
 ---
 Here's a collection of sketches I finally finished! I didn't feel like doing a full piece, so I opted to color each of these instead.

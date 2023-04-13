@@ -7,5 +7,7 @@ alt_text: "Mythra is leaning against a wall, making eye contact with you."
 slug: mythra-sketch2
 characters:
 - Mythra
-nsfw: false
+arttags:
+- sketch
+program: Krita
 ---

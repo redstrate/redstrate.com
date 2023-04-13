@@ -6,5 +6,7 @@ filename: /art/futaba.webp
 slug: futaba
 characters:
 - Futaba
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

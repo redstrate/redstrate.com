@@ -7,6 +7,6 @@ alt_text: "A bunny girl is looking out into the distance, but breathing out her 
 slug: knockout-background2
 characters:
 - Juritta
-nsfw: false
+program: Krita
 ---
 This is my second Knockout background, which is just a slightly touched up drawing I did last year...

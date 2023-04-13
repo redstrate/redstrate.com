@@ -7,5 +7,5 @@ filename: /art/eleanor.webp
 slug: eleanor
 characters:
 - Eleanor
-nsfw: false
+program: Procreate
 ---

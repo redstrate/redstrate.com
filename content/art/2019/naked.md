@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/naked.webp
 slug: naked
+arttags:
+- sketch
+program: Procreate
 ---

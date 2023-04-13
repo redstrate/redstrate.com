@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/girl-drinking-water.webp
 slug: girl-drinking-water
+program: Procreate
 ---

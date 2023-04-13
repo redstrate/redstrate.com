@@ -7,5 +7,5 @@ alt_text: "A rochs looking man is sitting upon a bright red bike, pointing his s
 slug: bike
 characters:
 - drawpile
-nsfw: false
+program: Drawpile
 ---

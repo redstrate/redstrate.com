@@ -7,4 +7,7 @@ slug: ma-sketch
 characters:
 - Mari
 - Asuka
+arttags:
+- sketch
+program: Procreate
 ---

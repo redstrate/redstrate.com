@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/fitgirl1.webp
 slug: fitgirl1
+arttags:
+- sketch
+program: Procreate
 ---

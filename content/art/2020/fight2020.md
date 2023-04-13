@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/fight2020.webp
 slug: fight2020
+arttags:
+- sketch
+program: Procreate
 ---

@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/ray-concept.webp
 slug: ray-concept
+program: Procreate
 ---

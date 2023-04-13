@@ -6,5 +6,7 @@ alt_text: "A girl is looking at you. She has dark brown hair, and pale skin. She
 slug: sword-leftlean
 characters:
 - Mysterious Swordswoman
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

@@ -6,5 +6,6 @@ filename: /art/mythra-sketch.webp
 slug: mythra-sketch
 characters:
 - Mythra
-nsfw: false
+arttags:
+- sketch
 ---

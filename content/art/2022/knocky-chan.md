@@ -7,5 +7,7 @@ alt_text: "Knocky-chan, a girl with bright red hair and equally red gloves, is m
 slug: knocky-chan
 characters:
 - Knocky-chan
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/descent.webp
 slug: descent
+arttags:
+- sketch
+program: Procreate
 ---

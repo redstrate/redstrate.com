@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/dr-bob.webp
 slug: dr-bob
+arttags:
+- sketch
+program: Procreate
 ---

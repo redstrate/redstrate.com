@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/museum.webp
 slug: museum
+arttags:
+- oil painting
 ---

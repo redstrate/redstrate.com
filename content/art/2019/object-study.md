@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/object-study.webp
 slug: object-study
+arttags:
+- oil painting
 ---

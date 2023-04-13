@@ -4,4 +4,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/some-swords.webp
 slug: some-swords
+program: Procreate
 ---

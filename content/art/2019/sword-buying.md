@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/sword-buying.webp
 slug: sword-buying
+program: Procreate
 ---

@@ -4,4 +4,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/dorks.webp
 slug: dorks
+characters:
+- Procreate
 ---

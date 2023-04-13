@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/drink.webp
 slug: drink
+arttags:
+- sketch
+program: Procreate
 ---

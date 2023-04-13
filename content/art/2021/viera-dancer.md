@@ -6,5 +6,7 @@ filename: /art/viera-dancer.webp
 slug: viera-dancer
 characters:
 - Juritta
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

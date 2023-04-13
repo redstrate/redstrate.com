@@ -7,6 +7,8 @@ alt_text: "A four armed succubus is sitting, standing straight and holding her t
 slug: underwear
 characters:
 - Merume
-nsfw: false
+arttags:
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109464613367914600
+program: Procreate
 ---

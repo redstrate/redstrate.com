@@ -7,9 +7,9 @@ alt_text: "A painting of a road split by a two track railway crossing. there are
 slug: goinghome
 arttags:
 - landscape
-nsfw: false
 mastodon_url: https://mastodon.art/@redstrate/109561038526618255
 pixiv_url: https://www.pixiv.net/en/artworks/103827572
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/going-home
+program: Krita
 ---
 My last painting of 2022 (I think). Based on a real photo :-)

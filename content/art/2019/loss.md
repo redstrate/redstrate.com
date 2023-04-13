@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/loss.webp
 slug: loss
+arttags:
+- sketch
+program: Procreate
 ---

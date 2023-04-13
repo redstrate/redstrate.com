@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/refill.webp
 slug: refill
+arttags:
+- sketch
+program: Procreate
 ---

@@ -5,4 +5,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/duel.webp
 slug: duel
+arttags:
+- sketch
+program: Procreate
 ---

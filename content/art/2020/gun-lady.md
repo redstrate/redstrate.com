@@ -6,4 +6,5 @@ filename: /art/gun-lady.webp
 slug: gun-lady
 arttags:
 - drawpile
+program: Drawpile
 ---

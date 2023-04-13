@@ -12,5 +12,5 @@ characters:
 - Cloud
 arttags:
 - drawpile
-nsfw: false
+program: Drawpile
 ---

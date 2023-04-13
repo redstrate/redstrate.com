@@ -6,5 +6,7 @@ filename: /art/sakura.webp
 slug: sakura
 characters:
 - Sakura
-nsfw: false
+arttags:
+- sketch
+program: Procreate
 ---

@@ -5,4 +5,5 @@ excludefeed: true
 layout: art-detail
 filename: /art/angry-gibus.webp
 slug: angry-gibus
+program: Krita
 ---

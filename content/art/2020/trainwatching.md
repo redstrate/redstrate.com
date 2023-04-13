@@ -8,5 +8,6 @@ alt_text: "A couple is trainwatching upon a balcony in the upper echelons of a t
 slug: trainwatching
 arttags:
 - landscape
-nsfw: false
+- sketch
+program: Procreate
 ---

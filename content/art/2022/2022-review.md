@@ -11,7 +11,7 @@ characters:
 - Merume
 - Mythra
 - Byleth
-nsfw: false
 mastodon_url: https://mastodon.art/@redstrate/109557479068052997
+program: Krita
 ---
 This is a collage of all of my 2022 art!

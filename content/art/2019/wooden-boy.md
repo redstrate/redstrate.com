@@ -4,4 +4,7 @@ excludefeed: true
 layout: art-detail
 filename: /art/wooden-boy.webp
 slug: wooden-boy
+arttags:
+- sketch
+program: Procreate
 ---

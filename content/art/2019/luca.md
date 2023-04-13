@@ -7,5 +7,5 @@ filename: /art/luca.webp
 slug: luca
 characters:
 - Luca
-nsfw: false
+program: Procreate
 ---
