@@ -16,4 +16,3 @@ arttags:
 - 3d
 nsfw: false
 ---
-This is a collage of all of my 2022 art!

@@ -8,10 +8,10 @@
             {{ $cameraorbit := $.Params.orbit }}
             {{ $cameratarget := $.Params.target }}
             {{ $fov  := $.Params.fov }}
-            <model-viewer src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
+            <model-viewer alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_texT }}" src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
         {{ else }}
             {{ if $.Params.animation }}
-                <div  style="text-align: center;">
+                <div style="text-align: center;">
                     <video controls>
                         <source src="{{ .RelPermalink }}" type="video/webm">
                     </video>
