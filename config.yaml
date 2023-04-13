@@ -72,9 +72,12 @@ menu:
   - name: 'Links'
     url: '/links'
     weight: 7
+  - name: 'Guestbook'
+    url: '/guestbook'
+    weight: 8
   - name: 'About'
     url: '/about'
-    weight: 8
+    weight: 9
   footer:
   - name: 'Blog Feed'
     url: '/blog/index.xml'
