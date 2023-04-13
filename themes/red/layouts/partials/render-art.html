@@ -1,56 +1,55 @@
 {{ $base := "art" }}
+
 {{ if .Params.threed }}
-{{ $base = "3d" }}
+        {{ $base = "3d" }}
 {{ end }}
 
 {{ if .Params.animation }}
-{{ $base = "animation" }}
+        {{ $base = "animation" }}
 {{ end }}
 
 {{ $full := resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
 {{ if $full }}
+        {{ $filename_without_ext := .Params.slug }}
 
-{{ $filename_without_ext := .Params.slug }}
+        {{ $month := 1 }}
+        {{ $year := 1 }}
 
-{{ $month := 1 }}
-{{ $year := 1 }}
-
-{{ if .Params.date }}
-        {{ $split := split .Params.date "-" }}
-        {{ $month = index $split 0 }}
-        {{ $year = index $split 3 }}
-{{ end }}
-
-<a class="no-decoration grid-item" href="{{ .Permalink }}">
-
-{{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
-        {{ $title := .Params.title }}
-        {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x" }}
-
-        {{ if .Params.nsfw }}
-                {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
+        {{ if .Params.date }}
+                {{ $split := split .Params.date "-" }}
+                {{ $month = index $split 0 }}
+                {{ $year = index $split 3 }}
         {{ end }}
 
-        {{ with $image }}
-                {{ if $.Params.threed }}
-                        {{ with resources.Get "3d.png" }}
-                                <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
-                        {{ end }}
+        <a class="no-decoration grid-item" href="{{ .Permalink }}">
+
+        {{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
+                {{ $title := .Params.title }}
+                {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x" }}
+
+                {{ if .Params.nsfw }}
+                        {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
                 {{ end }}
 
-                {{ if $.Params.animation }}
-                        {{ with resources.Get "play-circle.png" }}
-                                <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
+                {{ with $image }}
+                        {{ if $.Params.threed }}
+                                {{ with resources.Get "3d.png" }}
+                                        <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
+                                {{ end }}
                         {{ end }}
+
+                        {{ if $.Params.animation }}
+                                {{ with resources.Get "play-circle.png" }}
+                                        <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
+                                {{ end }}
+                        {{ end }}
+                        
+                        <img  width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}">
+                {{ else }}
+                        <p>Thumbnail not found!</p>
                 {{ end }}
-        <img  width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}">
-        {{ else }}
-        <p>Thumbnail not found!</p>
-        {{ end }}
-</a>
+        </a>
 {{ else }}
-
-<em>CANNOT FIND {{ .Params.slug }}</em>
-
+        <em>CANNOT FIND {{ .Params.slug }}</em>
 {{ end }}
 

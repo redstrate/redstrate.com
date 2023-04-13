@@ -1,17 +1,17 @@
 <h3>Comments</h3>
 
 {{ if hugo.IsProduction }}
-<script
-    data-isso="//{{ $.Site.Params.isso_url }}/"
-    data-isso-title=""
-    data-isso-avatar="false"
-    data-isso-vote="false"
-    data-isso-reveal-on-click="5"
-    data-isso-page-author-hashes="96ab157c3aaa"
-    src="//{{ $.Site.Params.isso_url }}/js/embed.min.js" async crossorigin></script>
-<section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
-    <noscript>Javascript needs to be activated to view comments.</noscript>
-</section>
+    <script
+        data-isso="//{{ $.Site.Params.isso_url }}/"
+        data-isso-title=""
+        data-isso-avatar="false"
+        data-isso-vote="false"
+        data-isso-reveal-on-click="5"
+        data-isso-page-author-hashes="96ab157c3aaa"
+        src="//{{ $.Site.Params.isso_url }}/js/embed.min.js" async crossorigin></script>
+    <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
+        <noscript>Javascript needs to be activated to view comments.</noscript>
+    </section>
 {{ else }}
-<p>Comments are disabled in development mode.</p>
+    <p>Comments are disabled in development mode.</p>
 {{ end }}

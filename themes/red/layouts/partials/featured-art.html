@@ -30,14 +30,12 @@
 
         <figcaption>
             {{ with .title }}
-            <i>"{{ . }}"</i>
+                <i>"{{ . }}"</i>
             {{ end }}
         </figcaption>
 
         {{ else }}
-
-        <em>CANNOT FIND {{ .filename }}</em>
-
+            <em>CANNOT FIND {{ .filename }}</em>
         {{ end }}
     </figure>
     {{ end }}

@@ -1,7 +1,7 @@
 {{ $name := urlize .Title }}
 
 {{ with .Slug }}
-{{ $name = . }}
+        {{ $name = . }}
 {{ end }}
 
 <div style="width: 100px; margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto">
@@ -11,16 +11,13 @@
 </div>
 
 {{ if hugo.IsProduction }}
-{{ $site := resources.Get "js/voting.js" }}
-{{ if hugo.IsProduction }}
-    {{ $site = $site | minify | fingerprint | resources.PostProcess }}
-{{ end }}
-<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+        {{ $site = resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
+        <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
 
 
-<script type="text/javascript">
-        refresh({{ $name }})
-</script>
+        <script type="text/javascript">
+                refresh({{ $name }})
+        </script>
 {{ else }}
-<p>debug: {{ $name }}</p>
+        <p style="text-align: center">Voting is disabled in development mode.</p>
 {{ end }}

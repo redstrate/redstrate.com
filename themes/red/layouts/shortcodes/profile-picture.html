@@ -1,4 +1,3 @@
-{{ $avatar := resources.Get .Site.Params.profile_picture }}
-{{ with $avatar }}
-<img id="about-pic" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+{{ with resources.Get .Site.Params.profile_picture }}
+	<img id="about-pic" alt="Profile Picture" title="Profile Picture" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
 {{ end }}

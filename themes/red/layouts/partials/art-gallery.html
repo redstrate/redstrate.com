@@ -1,11 +1,11 @@
 {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
 <div class="grid">
-<div class="grid-sizer"></div>
+    <div class="grid-sizer"></div>
 
-{{ range $paginator.Pages }}
-        {{ partial "render-art" . }}
-{{ end }}
+    {{ range $paginator.Pages }}
+            {{ partial "render-art" . }}
+    {{ end }}
 </div>
 
 <div style="text-align: center;">
