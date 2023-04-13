@@ -1,21 +1,21 @@
 ---
 title: Stats
 layout: art-stats
-total: 183
+total: 187
 years:
 - year: 2019
   num: 60
 - year: 2022
-  num: 44
+  num: 46
 - year: 2020
   num: 29
 - year: 2021
-  num: 27
+  num: 28
 - year: 2023
   num: 8
-- year: 2018
-  num: 7
 - year: 2016
+  num: 8
+- year: 2018
   num: 7
 - year: 2017
   num: 1
@@ -26,12 +26,12 @@ characters:
   num: 9
 - name: Merume
   num: 7
+- name: Sakura
+  num: 5
 - name: Mari
   num: 5
 - name: Asuka
   num: 5
-- name: Sakura
-  num: 4
 - name: Mythra
   num: 4
 - name: Elisanne
@@ -47,4 +47,6 @@ tags:
   num: 7
 - name: drawpile
   num: 8
+- name: 3d
+  num: 16
 ---

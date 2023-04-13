@@ -2,9 +2,12 @@
 title: Nomadsculpt test
 date: 2022-12-05
 layout: art-detail
-filename: /art/headsculpt.webp
+filename: /3d/headsculpt.glb
 alt_text: "A 3d sculpt of a short, brown haired girl. It’s only a bust."
 slug: headsculpt
+threed: true
+arttags:
+- 3d
 mastodon_url: https://mastodon.art/@redstrate/109459311625828312
 program: Nomadsculpt
 ---

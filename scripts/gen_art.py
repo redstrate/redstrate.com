@@ -7,7 +7,7 @@ def write_field(f, key, value):
     f.write(key + ": " + value + "\n")
 
 
-def parse_art_json(output_directory, filename, json_file):
+def parse_art_json(output_directory, filename, json_file, threed = False):
     json_data = json.load(json_file)
 
     year = None
@@ -36,13 +36,26 @@ def parse_art_json(output_directory, filename, json_file):
                 write_field(f, 'excludefeed', "true")
 
         write_field(f, 'layout', 'art-detail')
-        write_field(f, 'filename', '/art/' + filename + '.webp')
+
+        if threed:
+            write_field(f, 'filename', '/3d/' + filename + '.glb')
+            if "camera-orbit" in json_data:
+                write_field(f, 'orbit', json_data["camera-orbit"])
+            if "camera-target" in json_data:
+                write_field(f, 'target', json_data["camera-target"])
+            if "camera-fov" in json_data:
+                write_field(f, 'fov', json_data["camera-fov"])
+        else:
+            write_field(f, 'filename', '/art/' + filename + '.webp')
 
         if "alt_text" in json_data:
             write_field(f, 'alt_text',
                         "\"" + json_data["alt_text"].replace('\n', '').replace('"', '\\"') + "\"")
 
         write_field(f, 'slug', filename)
+
+        if threed:
+            write_field(f, 'threed', 'true')
 
         characters = []
         if "characters" in json_data:
@@ -83,6 +96,7 @@ def parse_art_json(output_directory, filename, json_file):
 
 
 art_data_directory = '../art'
+threed_data_directory = '../3d'
 art_output_directory = '../content/art'
 
 shutil.rmtree(art_output_directory)
@@ -104,6 +118,35 @@ for filename in os.listdir(art_data_directory):
 
         with open(f, "r") as file:
             year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file)
+
+            if year in year_stats:
+                year_stats[year] += 1
+            else:
+                year_stats[year] = 1
+
+            for character in characters:
+                if character in character_stats:
+                    character_stats[character] += 1
+                else:
+                    character_stats[character] = 1
+
+            for tag in tags:
+                if tag in tag_stats:
+                    tag_stats[tag] += 1
+                else:
+                    tag_stats[tag] = 1
+
+            collected_years.add(year)
+            total_art += 1
+
+for filename in os.listdir(threed_data_directory):
+    f = os.path.join(threed_data_directory, filename)
+
+    if os.path.isfile(f):
+        filename_without_ext = os.path.splitext(filename)[0]
+
+        with open(f, "r") as file:
+            year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file, True)
 
             if year in year_stats:
                 year_stats[year] += 1

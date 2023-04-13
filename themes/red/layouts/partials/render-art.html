@@ -1,4 +1,9 @@
-{{ $full := resources.Get (printf "art/%s.webp" .Params.slug) }}
+{{ $base := "art" }}
+{{ if .Params.threed }}
+{{ $base = "3d" }}
+{{ end }}
+
+{{ $full := resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
 {{ if $full }}
 
 {{ $filename_without_ext := .Params.slug }}
@@ -13,9 +18,10 @@
 {{ end }}
 
 <a class="no-decoration" href="{{ .Permalink }}">
-{{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
+
+{{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
-        {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "400x" }}
+        {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x" }}
 
         {{ if .Params.nsfw }}
                 {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
@@ -29,7 +35,7 @@
 </a>
 {{ else }}
 
-<em>CANNOT FIND {{.Params.slug }}</em>
+<em>CANNOT FIND {{ .Params.slug }}</em>
 
 {{ end }}
-`
+

@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/alley.webp
 slug: alley
+arttags:
+- 3d
 ---
