@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/samus.webp
 slug: samus
+arttags:
+- 3d
 ---

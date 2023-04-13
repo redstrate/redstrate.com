@@ -7,5 +7,7 @@ filename: /art/sniper-girl.webp
 slug: sniper-girl
 characters:
 - Sniper Girl
+arttags:
+- 3d
 nsfw: false
 ---

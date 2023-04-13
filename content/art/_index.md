@@ -2,7 +2,7 @@
 title: Art
 layout: art
 summary: My personal art gallery.
-new_banner: You can now vote on artwork!
+new_banner: You can now view select 3D pieces in your browser!
 commissions: true
 aliases:
 - /gallery

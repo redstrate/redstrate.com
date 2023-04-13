@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/production-monitor.webp
 slug: production-monitor
+arttags:
+- 3d
 ---

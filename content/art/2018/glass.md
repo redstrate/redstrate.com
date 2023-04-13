@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/glass.webp
 slug: glass
+arttags:
+- 3d
 ---

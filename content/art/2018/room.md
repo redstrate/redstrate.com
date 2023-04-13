@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/room.webp
 slug: room
+arttags:
+- 3d
 ---

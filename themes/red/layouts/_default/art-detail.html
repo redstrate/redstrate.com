@@ -4,7 +4,14 @@
     <hr>
 
     {{ with resources.Get .Params.filename }}
+        {{ if $.Params.threed }}
+        {{ $cameraorbit := $.Params.orbit }}
+        {{ $cameratarget := $.Params.target }}
+        {{ $fov  := $.Params.fov }}
+        <model-viewer src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
+        {{ else }}
         <img class="article-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto;" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
+        {{ end }}
     {{ end }}
 
     <table>
@@ -88,6 +95,14 @@
     <p>
         {{ . }}
     </p>
+    {{ end }}
+
+    {{ if .Params.threed }}
+        {{ $site := resources.Get "js/model-viewer.min.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $site = $site | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
     {{ end }}
 
     {{ partial "comments" . }}

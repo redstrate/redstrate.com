@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/hallway.webp
 slug: hallway
+arttags:
+- 3d
 ---

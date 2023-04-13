@@ -5,4 +5,6 @@ excludefeed: true
 layout: art-detail
 filename: /art/city-train.webp
 slug: city-train
+arttags:
+- 3d
 ---
