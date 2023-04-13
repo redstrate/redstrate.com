@@ -5,4 +5,6 @@ aliases:
 - /notes
 ---
 
-This is my feed of personal thoughts, opinions and stuff I like to discover!
+Posts of [Linux](/blog/tags/linux/), [KDE](/blog/tags/kde), personal thoughts and [reviews](/blog/tags/review/).
+
+_Warning_: most of it is mindlessly technical.

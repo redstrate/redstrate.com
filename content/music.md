@@ -4,7 +4,6 @@ layout: "audio-gallery"
 json: "music"
 ---
 
-This is a collection of music I have created.
+I don't usually make music, but I somehow made enough to warrant it's own page. 
 
-All the music on this page is encoded in Opus format. Almost every modern browser supports it in an OGG container,
-except for **Safari**. Sorry Apple users.
+Every modern browser supports Opus in an OGG container, except for **Safari**. Sorry Apple users.
