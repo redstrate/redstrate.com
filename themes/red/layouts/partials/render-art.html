@@ -3,6 +3,10 @@
 {{ $base = "3d" }}
 {{ end }}
 
+{{ if .Params.animation }}
+{{ $base = "animation" }}
+{{ end }}
+
 {{ $full := resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
 {{ if $full }}
 
@@ -17,7 +21,7 @@
         {{ $year = index $split 3 }}
 {{ end }}
 
-<a class="no-decoration" href="{{ .Permalink }}">
+<a class="no-decoration grid-item" href="{{ .Permalink }}">
 
 {{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
@@ -28,7 +32,18 @@
         {{ end }}
 
         {{ with $image }}
-        <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}"/>
+                {{ if $.Params.threed }}
+                        {{ with resources.Get "3d.png" }}
+                                <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
+                        {{ end }}
+                {{ end }}
+
+                {{ if $.Params.animation }}
+                        {{ with resources.Get "play-circle.png" }}
+                                <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}" />
+                        {{ end }}
+                {{ end }}
+        <img  width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}">
         {{ else }}
         <p>Thumbnail not found!</p>
         {{ end }}

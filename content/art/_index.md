@@ -2,7 +2,7 @@
 title: Art
 layout: art
 summary: My personal art gallery.
-new_banner: You can now view select 3D pieces in your browser!
+new_banner: You can now view select 3D pieces in your browser! Animations are slowly being added back too.
 commissions: true
 aliases:
 - /gallery

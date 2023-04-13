@@ -433,7 +433,7 @@ pre {
 }
 
 model-viewer {
-    height: 100vh;
+    height: 600px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
