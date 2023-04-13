@@ -1,10 +1,12 @@
 <h3>Recent Blog Posts</h3>
 
 <div class="generic-con">
+    <ul style="padding: 0">
     {{ range first 3 (where .Site.Pages "Type" "blog").ByDate.Reverse }}
         <li style="margin-left: 10px; list-style-type: square;">
             <a href="{{ .Permalink }}">{{ .Title }}</a>
             <p><i>{{ .Summary }}</i></p>
         </li>
     {{ end }}
+    </ul>
 </div>

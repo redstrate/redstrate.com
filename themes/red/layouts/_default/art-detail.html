@@ -16,7 +16,7 @@
                     </video>
                 </div>
             {{ else }}
-                <img class="article-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto;" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
+                <img style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
             {{ end }}
         {{ end }}
     {{ end }}

@@ -1,12 +1,12 @@
 ---
 title: Stats
 layout: art-stats
-total: 186
+total: 185
 years:
 - year: 2019
   num: 60
 - year: 2022
-  num: 46
+  num: 45
 - year: 2020
   num: 30
 - year: 2021

@@ -123,6 +123,9 @@ for filename in os.listdir(art_data_directory):
     if os.path.isfile(f):
         filename_without_ext = os.path.splitext(filename)[0]
 
+        if filename_without_ext == ".DS_Store":
+            continue
+
         with open(f, "r") as file:
             year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file)
 

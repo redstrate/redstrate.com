@@ -10,7 +10,12 @@
         <title>{{.Site.Title}}</title>
     {{ else }}
         <title>{{.Site.Title}} / {{ .Title }}</title>
+
+        {{ if .Summary }}
         <meta name="description" content="{{ .Summary }}">
+        {{ else }}
+        <meta name="description" content="{{ .Title }}">
+        {{ end }}
     {{ end }}
 
     <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Author.name }}'s blog">

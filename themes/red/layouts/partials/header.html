@@ -1,4 +1,4 @@
 {{ with resources.Get .Site.Params.profile_picture }}
-	<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
+	<img alt="Profile Picture" title="Profile Picture" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}"/>
 {{ end }}
 <h1>{{ .Site.Title }}</h1>

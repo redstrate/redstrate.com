@@ -101,18 +101,18 @@ body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-accent: #ce4545;
+        --primary-accent: #a3c3ff;
         --secondary-accent: #c99192;
         --background-primary: #34313a;
         --background-secondary: #3c3a44;
         --background-tertiary: #2e2c34;
         --border-color: #515860;
         --text-color: #fbeded;
-        --link-visited: #ad1616;
+        --link-visited: #75A6FF;
         --extra-color: #504e5a;
     }
 
-    .ext-link {
+    .external-link {
         filter: invert(100%);
     }
 }
