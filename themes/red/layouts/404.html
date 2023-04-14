@@ -1,8 +1,8 @@
 {{ define "main" }}
-    <p style="float: left">Page not found!</p>
+    <p >Page not found!</p>
 
     {{ with resources.Get "404.webp" }}
     {{ $alt_text := "Sakura is confused about where the page went, or maybe where you shouldn't go." }}
-    <img title="{{ $alt_text }}" alt="{{ $alt_text }}" style="width: 40%; height: auto; float: right" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}"/>
+    <img title="{{ $alt_text }}" alt="{{ $alt_text }}" style="width: 40%; height: auto; margin-bottom: -20px;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}"/>
     {{ end }}
 {{ end }}
