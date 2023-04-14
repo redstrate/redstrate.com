@@ -6,9 +6,6 @@
         <div id="content">
         <aside>{{- partial "sidebar.html" . -}}</aside>
         <article>
-        <div class="breadcrumbs">
-            {{ partial "breadcrumbs.html" . }}
-        </div>
         {{- block "main" . }}{{- end }}
         </article>
         </div>

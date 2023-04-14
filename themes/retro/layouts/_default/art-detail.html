@@ -3,8 +3,16 @@
 
     <hr>
 
-    {{ with (resources.Get .Params.filename).Resize "400x bmp" }}
-        <img class="article-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto;" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
+    {{ if .Params.animation }}
+        <p>Sorry, animations are not supported.</p>
+    {{ else }}
+        {{ if .Params.threed }}
+            <p>Sorry, 3D models are not supported.</p>
+        {{ else }}
+            {{ with (resources.Get .Params.filename).Resize "400x bmp" }}
+                <img class="article-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto;" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}"/>
+            {{ end }}
+        {{ end }}
     {{ end }}
 
     <table>

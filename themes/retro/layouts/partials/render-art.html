@@ -22,7 +22,7 @@
         {{ end }}
 
         {{ with $image }}
-        <img class="grid-item" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}"/>
+        <img width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}"/>
         {{ else }}
         <p>Thumbnail not found!</p>
         {{ end }}
