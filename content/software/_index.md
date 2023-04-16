@@ -4,4 +4,3 @@ aliases:
 - /projects
 layout: "software"
 ---
-

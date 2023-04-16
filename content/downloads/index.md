@@ -2,6 +2,8 @@
 title: "Downloads"
 ---
 
+{{< insert-pic "pic-downloads.png" "Downloads" >}}
+
 I host downloads for things that I either want to archive, or worried we might lose.
 
 {{< toc >}}

@@ -2,6 +2,8 @@
 title: "Home"
 ---
 
+{{< insert-pic "pic-home.webp" "Home" >}}
+
 Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, retro crud and curating my site. My website is also my portfolio, blog and dumping ground for cool stuff I'm working on or find.
 
 * Want to read? Check out my [blog posts]({{< ref "blog" >}}).

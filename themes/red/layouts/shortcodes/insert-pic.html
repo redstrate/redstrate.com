@@ -1,0 +1,8 @@
+{{ $name := .Get 0 }}
+{{ $alt := .Get 1 }}
+
+{{ $path := printf "pics/%s" $name}}
+
+{{ with resources.Get $path }}
+<img alt="{{ $alt }}" title="{{ $alt }}" class="gallery-img" style="width: 200px; height: 200px; float: right; margin: 10px;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+{{ end }}

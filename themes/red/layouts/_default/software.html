@@ -1,9 +1,12 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
-
     <hr>
 
     {{ .Content }}
+
+    {{ with resources.Get "pics/pic-software.webp" }}
+        <img class="gallery-img" style="width: 200px; height: 200px; float: right" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+    {{ end }}
 
     <h3>Personal Projects</h3>
 
