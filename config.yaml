@@ -12,7 +12,8 @@ markup:
     ordered: true
     startLevel: 1
   goldmark:
-    wrapStandAloneImageWithinParagraph: false
+    parser:
+        wrapStandAloneImageWithinParagraph: false
 
 minify:
   tdewolff:
