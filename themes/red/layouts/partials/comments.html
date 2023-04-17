@@ -1,5 +1,3 @@
-<h3>Comments</h3>
-
 {{ if hugo.IsProduction }}
     <script
         data-isso="//{{ $.Site.Params.isso_url }}/"
@@ -10,6 +8,7 @@
         data-isso-page-author-hashes="96ab157c3aaa"
         src="//{{ $.Site.Params.isso_url }}/js/embed.min.js" async crossorigin></script>
     <section id="isso-thread" data-title="{{ .Title }}" data-isso-id="{{ .File.ContentBaseName }}">
+        <h3>Comments</h3>
         <noscript>Javascript needs to be activated to view comments.</noscript>
     </section>
 {{ else }}
