@@ -22,7 +22,7 @@
             {{ $title := .title }}
             {{ with resources.Get (printf "art/%s" .filename) }}
             {{ $image := .Resize "500x" }}
-            <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}"/>
+            <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
             {{ else }}
             <p>Thumbnail not found!</p>
             {{ end }}
