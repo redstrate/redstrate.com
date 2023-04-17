@@ -77,6 +77,7 @@ via the tray icon, so that's the first thing I opened a [merge request](https://
 Someone pointed out that the margins in the bug reporting wizard was terrible, so I [started a redesign of the whole UI](https://invent.kde.org/plasma/drkonqi/-/merge_requests/96) trying to update it to look similar to our modern applications:
 
 ![WIP Bug Context Page](bugcontext.webp)
+
 ![WIP Backtrace Page](crash.webp)
 
 # Tokodon
