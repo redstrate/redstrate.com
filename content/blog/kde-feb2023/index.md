@@ -7,6 +7,7 @@ tags:
 - Open Source
 - KDE
 - Qt
+toc: true
 ---
 
 # New Gamepad KCM

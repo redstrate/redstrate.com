@@ -1,5 +1,6 @@
 ---
 title: "Downloads"
+toc: true
 ---
 
 {{< insert-pic "pic-downloads.png" "Downloads" >}}

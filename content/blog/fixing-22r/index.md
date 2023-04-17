@@ -7,6 +7,7 @@ tags:
 - Open Source
 - Kernel
 - KDE
+toc: true
 ---
 
 So I bought an art tablet this year, the XP-Pen Artist 22R Pro which comes with a pen. This pen does not work under Linux, sometimes.

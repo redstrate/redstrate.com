@@ -7,6 +7,7 @@ tags:
 - Open Source
 - KDE
 - Qt
+toc: true
 ---
 
 Another month in the year, another collection of bugfixes and features I contributed to KDE!

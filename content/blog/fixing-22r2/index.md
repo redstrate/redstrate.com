@@ -7,6 +7,7 @@ tags:
 - Open Source
 - Kernel
 - KDE
+toc: true
 ---
 
 Some more progress has been made on fixing my newest drawing tablet!

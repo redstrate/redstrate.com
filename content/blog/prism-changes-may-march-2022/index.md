@@ -8,6 +8,7 @@ aliases:
 - /articles/prism-changes-may-march-2022/
 series:
 - Prism Changelog
+toc: true
 ---
 
 It's uh, been a while since the last Prism changelog :-) Haha, well there's as always a ton of interesting changes to go over!
