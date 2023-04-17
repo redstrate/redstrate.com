@@ -13,9 +13,9 @@ years:
   num: 27
 - year: 2023
   num: 8
-- year: 2018
-  num: 7
 - year: 2016
+  num: 7
+- year: 2018
   num: 7
 - year: 2017
   num: 1
@@ -30,19 +30,17 @@ characters:
   num: 5
 - name: Asuka
   num: 5
-- name: Sakura
-  num: 4
 - name: Mythra
   num: 4
-- name: Elisanne
-  num: 2
+- name: Sakura
+  num: 4
 - name: Byleth
   num: 2
-- name: Tifa
+- name: Elisanne
+  num: 2
+- name: Rei
   num: 2
 tags:
-- name: new tag
-  num: 1
 - name: technical
   num: 1
 - name: animation
@@ -51,12 +49,12 @@ tags:
   num: 3
 - name: oil painting
   num: 4
-- name: landscape
-  num: 8
 - name: drawpile
+  num: 8
+- name: landscape
   num: 8
 - name: 3d
   num: 16
 - name: sketch
-  num: 100
+  num: 101
 ---

@@ -12,7 +12,7 @@ characters:
 - Juritta
 - Rat
 arttags:
-- new tag
+- sketch
 mastodon_url: https://mastodon.art/@redstrate/109972292267062823
 pixiv_url: https://www.pixiv.net/en/artworks/105958979
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/march-sketch-dump
