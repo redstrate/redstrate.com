@@ -11,6 +11,8 @@ markup:
   tableOfContents:
     ordered: true
     startLevel: 1
+  goldmark:
+    wrapStandAloneImageWithinParagraph: false
 
 minify:
   tdewolff:
