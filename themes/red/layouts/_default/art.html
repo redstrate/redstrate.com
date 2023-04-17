@@ -4,7 +4,7 @@
     <hr>
 
     {{ with resources.Get "pics/pic-gallery.png" }}
-        <img class="gallery-img" alt="Gallery" title="Gallery" style="width: 200px; height: 200px; float: right" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        <img class="gallery-img page-pic" alt="Gallery" title="Gallery" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
     {{ end }}
 
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}

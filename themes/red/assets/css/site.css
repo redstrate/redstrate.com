@@ -36,6 +36,11 @@
     .grid-sizer, .grid-item {
         width: 400px;
     }
+
+    .page-pic {
+        float: right;
+        margin: 10px;
+    }
 }
 
 /* mobile devices */
@@ -74,6 +79,14 @@
     .grid-sizer, .grid-item {
         width: 100%;
         height: auto;
+    }
+
+    .page-pic {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
@@ -436,4 +449,9 @@ model-viewer {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.page-pic {
+    width: 200px;
+    height: 200px;
 }

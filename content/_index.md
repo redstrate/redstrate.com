@@ -16,4 +16,5 @@ Enjoyed what you see? Consider signing the [guestbook]({{< ref "guestbook" >}})!
 # Featured Artwork
 {{< featured-art >}}
 
+# Recent Blog Posts
 {{< recent-posts >}}
