@@ -14,7 +14,7 @@ These two months contain some pretty big changes I made to Prism, following a sh
 
 If you've never heard of Prism before, it's my ultimate graphics study project that is the culmination of everything I've learned in graphics development so far. It is built upon years of hard effort/learning and also extremely valuable help from multiple people in the graphics community. You can find the complete source code and even more information on it's [GitHub repository](https://www.github.com/redstrate/prism).
 
-### Vulkan is now moving to being a first-class backend
+# Vulkan is now moving to being a first-class backend
 
 The Vulkan backend is moving very quickly to reach feature parity soon with the Metal version, but now it is
 fully usable for most tasks on Windows and Linux! The main roadblock right now is implementing the last of the
@@ -23,7 +23,7 @@ functionality required for IBL and some other graphical features.
 ![Screenshot of the material editor](PrismEditor_BT44VWksFY.webp)
 _This is the Material editor running on Vulkan, on Windows_
 
-### SDL2 is the new default windowing system for Windows and Linux
+# SDL2 is the new default windowing system for Windows and Linux
 
 Previously, I had handwritten Win32 code and XCB/XLib code for the Windows and Linux backends respectively. However, I had run into a few issues:
 
@@ -35,13 +35,13 @@ Thus, this is where using SDL2 became the perfect solution - I could have the _s
 
 Right now SDL is used for Windows and Linux, and I have no plans on supporting it on macOS at the moment (even though it theoretically could). That's just because the macOS backend is the most feature complete, and the SDL2 backend is notably missing automatic theme detection as shown in the Windows screenshot featured above.
 
-### Windows now has multiviewports!
+# Windows now has multiviewports!
 
 {{< video "weewoo.webm" >}}
 
 This is a pretty and clear nice benefit from using the SDL backend, because now it gets multiviewport support for free! If you've never seen this [dear imgui feature before](https://github.com/ocornut/imgui/wiki/Multi-Viewports), it's really cool to see it in action. It allows regular imgui windows to be dragged outside the main window, and enables some really cool workflows and use-cases you would normally see in other GUI toolkits like Qt and GTK.
 
-### The new render target system
+# The new render target system
 
 Before if you wanted to render to another window, static image, viewport you were required to create a whole new renderer instance. This was bad design for a multitude of reasons - duplicated work, resources and lack of proper cohesion or synchronization. This was because a single renderer instance only supported rendering to one target. Now everything is reworked and I can use just one renderer instance for the whole engine, even down to the tooling!
 
@@ -61,7 +61,7 @@ resizing, destruction, etc. When you want to render, simply pass it to the `rend
 renderer->render(commandbuffer, scene, render_target, -1);
 ```
 
-### Shader live editing
+# Shader live editing
 
 As part of my ongoing shader editing effort, I have finally implemented a form of shader editing you can perform in-engine:
 
@@ -77,7 +77,7 @@ associate_shader_reload("sky.vert", [this] {
 
 Not only that, but it's built on top of preexisting GFX and Shader Compiler APIs, meaning that as long as your backend supports both it will happen transparently! This is fully supported by the Vulkan and Metal backends.
 
-### New class and variable naming style
+# New class and variable naming style
 
 I have finally decided on a new, standard naming style for everything in Prism. It is pretty much the same style that the C++ STL uses, and I thought it would be the best going forward:
 
@@ -87,7 +87,7 @@ auto imgui = std::make_unique<prism::imgui_backend>();
 
 Now everything is `snake_case`, following the function naming I'm already using. Private member variables are now changed to remove any underscores. I also used this chance to _finally_ move every class that I own into the `prism` namespace to reduce naming conflicts, which happen more often than you think (believe it or not, a lot of operating systems have a `Rectangle` structure!) It is still an ongoing process, but a lot of the major classes are already refactored.
 
-### What's Next?
+# What's Next?
 
 In the short term I want to keep working on polishing the Vulkan stuff, so I can eventually start working on some cooler things like VR support. I also plan to keep working on the example app more, so it can serve as a better showcase.
 

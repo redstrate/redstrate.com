@@ -11,7 +11,7 @@ tags:
 
 Another month in the year, another collection of bugfixes and features I contributed to KDE!
 
-## Documentation Improvements
+# Documentation Improvements
 
 Something I want to improve for KDE Frameworks 6 is the API documentation, it's pretty bad
 sometimes:
@@ -26,7 +26,7 @@ adding import statement hints to the page:
 
 ![Example of the new doxyqml output](image.png)
 
-## Plasma 6 Porting
+# Plasma 6 Porting
 
 Early this month, I ended up porting most of our applets to Plasma 6! The current
 hitlist is:
@@ -55,7 +55,7 @@ I also [fixed activity switching](https://invent.kde.org/frameworks/kactivities/
 
 For those who are building Plasma 6 for the first time, [extragear modules are now built by default](https://invent.kde.org/sdk/kdesrc-build/-/merge_requests/208)!
 
-## PlasmaTube
+# PlasmaTube
 
 I started using PlasmaTube which is KDE's Youtube Client, to replace FreeTube. I started by
 [cleaning up and overhauling the account management](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/43), so it flows better.
@@ -65,21 +65,21 @@ I started using PlasmaTube which is KDE's Youtube Client, to replace FreeTube. I
 I also made the [info chips non-interactable](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/41), fixed the [spacing on video grid text](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/40), added [more loading placeholders](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/42) and
 [stop desktop users from being able to drag the video page](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/38).
 
-## Ruqola
+# Ruqola
 
 Because of `$work`, I discovered that we have a Rocket.chat client! I miss being able to quickly switch my presence
 via the tray icon, so that's the first thing I opened a [merge request](https://invent.kde.org/network/ruqola/-/merge_requests/110) for.
 
 ![Screenshot of the presence context menu](indicator.webp)
 
-## Dr. Konqi
+# Dr. Konqi
 
 Someone pointed out that the margins in the bug reporting wizard was terrible, so I [started a redesign of the whole UI](https://invent.kde.org/plasma/drkonqi/-/merge_requests/96) trying to update it to look similar to our modern applications:
 
 ![WIP Bug Context Page](bugcontext.webp)
 ![WIP Backtrace Page](crash.webp)
 
-## Tokodon
+# Tokodon
 
 In preparation for the 23.04 gear release, I added a slew of new features and bugfixes!
 
@@ -104,7 +104,7 @@ As a treat for people who manage popular accounts - like our great KDE and Krita
 
 ![Screenshot of the notification grouping (work in progress)](grouping.webp)
 
-## Miscellaneous
+# Miscellaneous
 
 * Finished Nate's work on [hiding separators when the kickoff is sorted alphabetically](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/1433), this will land in 5.27!
 * Added a [unit test to Kalendar](https://invent.kde.org/pim/kalendar/-/merge_requests/325).

@@ -7,6 +7,11 @@ enableRobotsTXT: true
 languageCode: 'en-us'
 summarylength: 15
 
+markup:
+  tableOfContents:
+    ordered: true
+    startLevel: 1
+
 minify:
   tdewolff:
     html:

@@ -14,7 +14,7 @@ Drawing has been a hobby of mine ever since childhood, and I try to draw when I 
 
 I also like to administrate my own servers, and that's what's hosting the website you're reading right now! You can find more details about this setup below.
 
-### Links
+# Links
 
 I'm on plenty of platforms if you want to follow me:
 
@@ -23,11 +23,11 @@ I'm on plenty of platforms if you want to follow me:
 * [Newgrounds](https://redstrate.newgrounds.com/) - collection of my recent art.
 * [Pixiv](https://www.pixiv.net/en/users/58118005) - another collection of my recent art.
 
-### Contact
+# Contact
 
 If you wish to contact me privately about something, the best way is by emailing me at josh@redstrate.com or sending a message through [Matrix](https://matrix.to/@redstrate@pyra.sh#/@redstrate:pyra.sh).
 
-## Languages
+# Languages
 
 English is my first language, but currently learning two new languages. Here is my current progress:
 
@@ -35,7 +35,7 @@ English is my first language, but currently learning two new languages. Here is 
 
 *German*: &#9733; &#9734; &#9734; &#9734; &#9734;
 
-### Machines
+# Machines
 
 | Name     | Purpose        | Model                | Operating System |
 |----------|----------------|----------------------|------------------|

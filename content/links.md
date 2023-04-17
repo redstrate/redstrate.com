@@ -12,7 +12,7 @@ host the image on your own server if you can!
 
 ![Banner 2](/banner2.webp)
 
-## Outgoing
+# Outgoing
 
 If you wish to be added and I missed you, or I made a horrific mistake, please [contact me](/contact). Websites without banners to be added later.
 

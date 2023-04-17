@@ -13,7 +13,7 @@ Welcome to my personal corner of the Internet! My username is **redstrate** and 
 
 Enjoyed what you see? Consider signing the [guestbook]({{< ref "guestbook" >}})! For other cool sites, check out my [outgoing links]({{< ref "links" >}}).
 
-### Featured Artwork
+# Featured Artwork
 {{< featured-art >}}
 
 {{< recent-posts >}}

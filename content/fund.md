@@ -7,11 +7,11 @@ free time, but donations help me do the stuff I want and possibly the things you
 
 If you wish to receive something material in return for your money, I'm [open for art commissions!](/commission)
 
-## Ko-Fi
+# Ko-Fi
 
 [Ko-Fi is preferred](https://ko-fi.com/redstrat) because it's easy, and they take no processing fees. You can even set a little comment to go
 along with your donation!
 
-## PayPal
+# PayPal
 
 You can use [PayPal directly](https://paypal.me/redstrate) too if you want to!

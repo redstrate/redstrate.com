@@ -9,7 +9,7 @@ tags:
 - Qt
 ---
 
-## New Gamepad KCM
+# New Gamepad KCM
 
 The Joystick KCM is pretty bad shape right now, for numerous reasons:
 
@@ -36,11 +36,11 @@ Next month hopefully we'll be able to get a proper UI working, now that mapping 
 
 See my [merge request](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/1370) and Jeremy's UI [merge request](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/1379).
 
-## Tokodon changes
+# Tokodon changes
 
 I landed a bunch of features in Tokodon this month, including some much needed bugfixes for some rough edges of the project.
 
-### Web+ap support
+## Web+ap support
 
 I landed support for the [web+ap url scheme](https://github.com/fedi-to/fedi-to.github.io/blob/main/webap.md) used to open ActivityPub objects in Tokodon! Just like matrix.to links in NeoChat, these allow linking to ActivityPub objects online. Once everything is in place, we will be one of the first clients to natively support it!
 
@@ -48,7 +48,7 @@ If you can't wait, it's also possible to open up regular `https` linked posts in
 
 See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/150) and the [wishlist bug](https://bugs.kde.org/464376).
 
-### Post language support
+## Post language support
 
 You can now select the language you're posting in! You can't view a post's language or filter them from within Tokodon yet, but it's a start[^1]. Your preferred languages (chosen through the Languages & Formats KCM if you're using KDE) is shown at the top of the list.
 
@@ -56,7 +56,7 @@ You can now select the language you're posting in! You can't view a post's langu
 
 See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/156).
 
-### Poll support
+## Poll support
 
 Tokodon has supported viewing polls already, but not posting them. Now you can create polls! All of your usual options are exposed, including some not even shown on Mastodon Web. This is not merged yet, but will be soon.
 
@@ -71,7 +71,7 @@ See the [merge request]https://invent.kde.org/network/tokodon/-/merge_requests/1
 * Posting is much more reliable in general, and it's clearer when an error has occurred. Hopefully no more of your toots get eaten. See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/162).
 * The README finally includes a screenshot! See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/167).
 
-## NeoChat Notification Badge
+# NeoChat Notification Badge
 
 One thing that always irked me with Neochat is the notification badge. The number never feels right, and no matter how many rooms I read it never changes:
 
@@ -79,7 +79,7 @@ One thing that always irked me with Neochat is the notification badge. The numbe
 
 Now the badge will actually update based on your current notification count, hurrah! See the [merge request](https://invent.kde.org/network/neochat/-/merge_requests/810).
 
-## PulseAudio KCM
+# PulseAudio KCM
 
 Last month I redid the Window Decoration KCM, and this month I did the same for the PulseAudio KCM, although the changes needed where much smaller.
 
@@ -87,7 +87,7 @@ Last month I redid the Window Decoration KCM, and this month I did the same for 
 
 See the [merge request](https://invent.kde.org/plasma/plasma-pa/-/merge_requests/157).
 
-## Kirigami and QQC2 Desktop Style
+# Kirigami and QQC2 Desktop Style
 
 For Kirigami, I tried to focus on fixing up Dialog behavior to mixed results. I wanted to change [the dialog closePolicy](https://invent.kde.org/frameworks/kirigami/-/merge_requests/960), but that's been more complex than expected. I attempted to fix [the extra horizontal scrolling bug in Dialogs](https://invent.kde.org/frameworks/kirigami/-/merge_requests/966)[^2], but that has unintended regressions in Discover and I'm not really happy with the solution. I also have [a bunch of OverlaySheet fixes that I need to rebase](https://invent.kde.org/frameworks/kirigami/-/merge_requests/957)[^3] :) So a bunch of half-baked things I should start finishing next month!
 
@@ -95,7 +95,7 @@ I noticed an issue [where Breeze Icons on Android wouldn't work](https://invent.
 
 For qqc2-desktop-style, I [fixed an odd case where you could select text in TextAreas](https://invent.kde.org/frameworks/qqc2-desktop-style/-/merge_requests/230) that explicitly disabled it by using the right-click context menu.
 
-## Plasma Welcome
+# Plasma Welcome
 
 Oliver landed the Plasma Welcome redesign for 6.0, which looks _wonderful_. As with all great features, this has had it's fair share of technical issues which I had the pleasure of helping with, including fixing this bug:
 
@@ -109,7 +109,7 @@ There's one lingering issue -- KDeclarative get's a little bit too greedy with t
 
 See Oliver's [merge request](https://invent.kde.org/plasma/plasma-welcome/-/merge_requests/41).
 
-## Fun with Doxygen
+# Fun with Doxygen
 
 This month we had a strange incident where [api.kde.org](https://invent.kde.org/frameworks/kapidox/-/issues/17) fails to generate a page for IconItem, but why?
 
@@ -127,19 +127,19 @@ With this new caveat in mind, I submitted two MRs to hopefully fix the documenta
 
 ... Except that I forgot about the KF5/KF6 split, which makes this harder. Next month will be focusing on rebasing those into KF5, and then creating KF6-specific MRs if needed (but a lot of fat is being cut here, so it might not be).
 
-## KDevelop.org
+# KDevelop.org
 
 I took the responsibility of converting the bitrotting kdevelop.org site to Hugo, which should be live soon! Most of the old site content is brought over (and converted to Markdown) while pages are updated where needed. The new site is now live at [kdevelop.org](https://kdevelop.org)!
 
 See the [new repository](https://invent.kde.org/websites/kdevelop-org).
 
-## Updating go-kde-org
+# Updating go-kde-org
 
 I opened an MR to update the matrix.to redirector hosted at [go.kde.org](go.kde.org/matrix) which should include a link to open in NeoChat! Once it's merged, I plan on replacing the links on the KDE Community Wiki with these instead of the WebChat links we have now.
 
 See the [merge request](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1).
 
-## Changing Notification History Order
+# Changing Notification History Order
 
 This is something that's been sitting on my backlog, but I'm super annoyed about the ordering of notification history. Whenever I miss a notification[^4] I scroll through my notification history. However, it's ordered seemingly randomly, because it's sorted by "type and urgency". That's not too helpful because neither criteria is really exposed in the UI. I propose changing it to "Date" which makes way more sense for a history view of notifications.
 

@@ -3,7 +3,7 @@ title: "Imprint"
 ---
 
 
-### This Website and Related Services
+# This Website and Related Services
 
 Connections to my server may be logged for abuse, but I do not care to track you.
 
@@ -16,12 +16,12 @@ Links to external websites are clearly marked with an external link icon, althou
 
 I do not use any analytics services.
 
-### Silica Viewer
+# Silica Viewer
 
 Silica Viewer _does not_ collect any information about your device, and doesn't contact any server. The app has no networking functionality and runs inside the secure macOS sandbox. The only analytics collected are those which Apple collects and I
 cannot turn off, such as when you report a crash.
 
-## Licensing
+# Licensing
 
 All work showcased on this site (including images, source code, etc.) are hereby licensed under
 [CC BY-NC-SA 3.0]({{<ref "/license">}}) _unless_ otherwise specified.

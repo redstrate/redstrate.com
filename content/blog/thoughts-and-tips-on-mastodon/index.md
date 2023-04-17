@@ -14,7 +14,7 @@ Seeing the "collapse" of Twitter (although that's overstated) means a lot more p
 <!--more-->
 The focus isn't what's going wrong with Twitter right now, but trying to clear up some common misconceptions about Mastodon and the Fediverse in general, following questions I've seen in the relevant Knockout thread.
 
-### Mastodon is siloed, and general server moderation thoughts
+# Mastodon is siloed, and general server moderation thoughts
 
 A lot of people are naturally worried about the state of server ownership in the Fediverse world, and "siloing". To put it simply, people
 don't trust server owners and they are generally worried about how some servers are blocked. A lot of people tend to go for the "email" approach to
@@ -29,7 +29,7 @@ people don't really know what to expect when you say "Fediverse servers work lik
 This is **why I think Mastodon wins**: If you don't have access to Twitter, there is basically no other way to interoperate with it. If your Mastodon server
 gets theoretically blocked, whatever - just import your following list (or if your server is still accessible, transfer your followers too - a native feature of Mastodon) and keep going on with your day. Bookmarks, block lists, and other similar data can be imported as shown above. In most cases though, servers are blocked for a good reason (white supremacists, nazis, loli and other content usually make up most block lists). Most of the time the good of the server system outweights the negatives, and again if you ever feel like you don't fit in with your server - you can always move and take most of your things with you!
 
-### Should I run my own server? Is it worth it?
+# Should I run my own server? Is it worth it?
 
 I summarized this point in some random thread on Knockout, but wanted to explain it better here. In most cases, which is strange - I recommend not doing so. Here's why:
 
@@ -45,7 +45,7 @@ Also as a single user Mastodon instance, it's going to be really hard to get goi
 
 Mastodon in general is designed (perhaps intentionally or not) for communities to form around multiple servers, and something like a single-user Mastodon instance is niche, and nigh unusable (in my opinion, as someone who has tried to run one before). In this way, it actually differs from hosting your own email.
 
-### Other nice things to know
+# Other nice things to know
 
 Here's some smaller Mastodon features that I think are neat:
 

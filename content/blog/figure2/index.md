@@ -13,11 +13,11 @@ series:
 
 Today we're reviewing the Flare reissue of the YoRHa No. 2 Type B released by Square Enix, a company that despite being very, very controlling of their merchandise has the absolute worst online store ever. <!--more--> This isn't just a single case, you can read online where people have similar experiences with Square Enix's online store.
 
-### The Buying Process
+# The Buying Process
 
 Buying through the (USA) Square Enix store is usually more expensive than what you can find elsewhere, and they take **forever to ship**. Not only this, but coincidentally, **the day after I received the figure** - a _better_, and _cheaper_ (overall) one showed up in the preorder listings on AmiAmi. Excuse me? Better as in this is the normally-$220-deluxe version. For **$129.** Of course, I'm picking that up! Despite the price tag difference, and a couple of accessories the two figures are virtually the same, so I'll be using them interchangeably between photos.
 
-### The Figure
+# The Figure
 
 Despite the horrendous ordering process, the figure itself is very well put together! Starting with the base, which is has a transparent, mirror-like appearance like in this photograph provided on the box:
 
