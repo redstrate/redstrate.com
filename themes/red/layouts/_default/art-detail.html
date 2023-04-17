@@ -16,85 +16,84 @@
                     </video>
                 </div>
             {{ else }}
-                <img style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" />
+                <img style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
             {{ end }}
         {{ end }}
     {{ end }}
 
     <table>
-    <tr>
-        <th>Date</th>
-        <td>
-            <time datetime="{{ .Page.Lastmod.Format "Mon Jan 10 17:13:38 2020 -0700" }}" class="text-muted">
-                {{ $.Date.Format "January 2006" }}
-            </time>
-        </td>
-    </tr>
-
-    {{ with .Params.arttags }}
         <tr>
-            <th>Tags</th>
+            <th>Date</th>
             <td>
-                {{ $len := (len .) }}
-                {{ range $index, $element := . }}
-                <a href="/art/tags/{{ urlize . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                {{ end }}
+                <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+                    {{ $.Date.Format "January 2006" }}
+                </time>
             </td>
         </tr>
-    {{ end }}
 
-    {{ with .Params.characters }}
-        <tr>
-            <th>Characters</th>
-            <td>
-                {{ $len := (len .) }}
-                {{ range $index, $element := . }}
-                <a href="/art/characters/{{ urlize .}}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                {{ end }}
-            </td>
-        </tr>
-    {{ end }}
+        {{ with .Params.arttags }}
+            <tr>
+                <th>Tags</th>
+                <td>
+                    {{ $len := (len .) }}
+                    {{ range $index, $element := . }}
+                    <a href="/art/tags/{{ urlize . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                    {{ end }}
+                </td>
+            </tr>
+        {{ end }}
 
-    {{ with .Params.program }}
-        <tr>
-            <th>Program</th>
-            <td>
-                {{ . }}
-            </td>
-        </tr>
-    {{ end }}
+        {{ with .Params.characters }}
+            <tr>
+                <th>Characters</th>
+                <td>
+                    {{ $len := (len .) }}
+                    {{ range $index, $element := . }}
+                    <a href="/art/characters/{{ urlize .}}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                    {{ end }}
+                </td>
+            </tr>
+        {{ end }}
 
-    {{ with .Params.mastodon_url }}
-        <tr>
-            <th>Mastodon URL</th>
-            <td>
-                <a href="{{ . }}">{{ . }}</a>
-            </td>
-        </tr>
-    {{ end }}
+        {{ with .Params.program }}
+            <tr>
+                <th>Program</th>
+                <td>
+                    {{ . }}
+                </td>
+            </tr>
+        {{ end }}
 
-    {{ with .Params.newgrounds_url }}
-        <tr>
-            <th>Newgrounds URL</th>
-            <td>
-                <a href="{{ . }}">{{ . }}</a>
-            </td>
-        </tr>
-    {{ end }}
+        {{ with .Params.mastodon_url }}
+            <tr>
+                <th>Mastodon URL</th>
+                <td>
+                    <a href="{{ . }}">{{ . }}</a>
+                </td>
+            </tr>
+        {{ end }}
+
+        {{ with .Params.newgrounds_url }}
+            <tr>
+                <th>Newgrounds URL</th>
+                <td>
+                    <a href="{{ . }}">{{ . }}</a>
+                </td>
+            </tr>
+        {{ end }}
 
 
-    {{ with .Params.pixiv_url }}
-        <tr>
-            <th>Pixiv URL</th>
-            <td>
-                <a href="{{ . }}">{{ . }}</a>
-            </td>
-        </tr>
-    {{ end }}
+        {{ with .Params.pixiv_url }}
+            <tr>
+                <th>Pixiv URL</th>
+                <td>
+                    <a href="{{ . }}">{{ . }}</a>
+                </td>
+            </tr>
+        {{ end }}
+    </table>
 
     {{ partial "voting" . }}
-
-    </table>
 
     {{ with .Content }}
         <h3>Commentary</h3>
