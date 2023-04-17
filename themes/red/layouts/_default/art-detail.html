@@ -7,7 +7,7 @@
             {{ $cameraorbit := $.Params.orbit }}
             {{ $cameratarget := $.Params.target }}
             {{ $fov  := $.Params.fov }}
-            <model-viewer alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_texT }}" src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
+            <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
         {{ else }}
             {{ if $.Params.animation }}
                 <div style="text-align: center;">
