@@ -73,7 +73,7 @@ See the [merge request]https://invent.kde.org/network/tokodon/-/merge_requests/1
 
 # NeoChat Notification Badge
 
-One thing that always irked me with Neochat is the notification badge. The number never feels right, and no matter how many rooms I read it never changes:
+One thing that always irked me with NeoChat is the notification badge. The number never feels right, and no matter how many rooms I read it never changes:
 
 ![NeoChat Badge](neochat-badge.webp)
 
@@ -129,7 +129,7 @@ With this new caveat in mind, I submitted two MRs to hopefully fix the documenta
 
 # KDevelop.org
 
-I took the responsibility of converting the bitrotting kdevelop.org site to Hugo, which should be live soon! Most of the old site content is brought over (and converted to Markdown) while pages are updated where needed. The new site is now live at [kdevelop.org](https://kdevelop.org)!
+I took the responsibility of converting the bit-rotting kdevelop.org site to Hugo, which should be live soon! Most of the old site content is brought over (and converted to Markdown) while pages are updated where needed. The new site is now live at [kdevelop.org](https://kdevelop.org)!
 
 See the [new repository](https://invent.kde.org/websites/kdevelop-org).
 

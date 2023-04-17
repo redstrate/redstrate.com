@@ -395,7 +395,7 @@ Using that, we can check for the input events that it records:
 
 Well that's a nice consolation, it looks like KWin is picking up the tilt
 information from libinput too, so at least it's not throwing it out. But why does
-Krita still not receive anything? For some reason,  Krita receives tilt information on X11.
+Krita still not receive anything? For some reason, Krita receives tilt information on X11.
 
 To explain, Krita does not interface with KWin directly. Instead,
 it uses standard protocols - either X or Wayland to communicate with the server or

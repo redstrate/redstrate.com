@@ -2,7 +2,6 @@
 title: "Imprint"
 ---
 
-
 # This Website and Related Services
 
 Connections to my server may be logged for abuse, but I do not care to track you.
