@@ -8,7 +8,7 @@
 {{ $img := resources.Get $path }}
 {{ with $img }}
 <!-- Some browsers (safari) sucks and blocks 88x31, so force them to be 89x31 instead. -->
-<img src="{{ .RelPermalink }}" style="width: auto; height: 31px; image-rendering: pixelated;" alt="{{ $label }}" width="{{ add .Width 1 }}" height="{{ .Height }}"/>
+<img src="{{ .RelPermalink }}" style="width: auto; height: 31px; image-rendering: pixelated;" alt="{{ $label }}" width="{{ add .Width 1 }}" height="{{ .Height }}">
 {{ end }}
 
 </a>
