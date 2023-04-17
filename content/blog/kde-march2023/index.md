@@ -11,7 +11,7 @@ tags:
 
 Another month in the year, another collection of bugfixes and features I contributed to KDE!
 
-# Documentation Improvements
+## Documentation Improvements
 
 Something I want to improve for KDE Frameworks 6 is the API documentation, it's pretty bad
 sometimes:
