@@ -16,9 +16,14 @@
 
     <hr>
 
-    <div>
-        {{ .Content }}
-    </div>
+    {{ if or (gt .WordCount 400 ) (.Params.toc) }}
+    <details>
+        <summary>Table of Contents</summary>
+        {{ .Page.TableOfContents }}
+    </details>
+    {{ end }}
+
+    {{ .Content }}
 
     {{ partial "related" . }}
 

@@ -6,8 +6,6 @@ title: "Downloads"
 
 I host downloads for things that I either want to archive, or worried we might lose.
 
-{{< toc >}}
-
 # Source Map Archive
 
 https://archive.ryne.moe/source

@@ -21,8 +21,6 @@ The Linux graphics stack is a complex mechanism of many projects that function i
 
 _Graphics Dump_ is a new articles series I'm starting, geared towards tutorials and documentation for graphics-related things that are obscure but interesting. There are a thousand graphics tutorials covering how to start drawing in OpenGL, how to implement shadow mapping, and so on - but how many cover how stuff like how _Mesa_ works? I hope these fill someone's weird niche, like they do for me - so please enjoy!
 
-{{<toc>}}
-
 # Introduction
 
 Since other operating systems hide these processes away from you, it is fortunate that Linux exists to easily showcase how typical desktop graphics systems function! Of course other systems like Windows, macOS, and other operating systems function differently - but a lot of the same concepts apply (API call dispatch, userspace graphics drivers, and display planes as some good examples.)
