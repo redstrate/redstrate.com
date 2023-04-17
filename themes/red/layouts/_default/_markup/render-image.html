@@ -16,9 +16,9 @@
         <figure>
                 <a href="{{ $img.RelPermalink }}" data-download="true">
                 {{ if eq .MediaType.SubType "svg" }}
-                        <img class="article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" title="{{ $.Text }}"/>
+                        <img class="article-img" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" title="{{ $.Text }}">
                 {{ else }}
-                        <img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" title="{{ $.Text }}" />
+                        <img class="article-img" width="{{ $img.Width }}" height="{{ $img.Height }}" src="{{ $img.RelPermalink }}" alt="{{ $.Text }}" title="{{ $.Text }}">
                 {{ end }}
                 </a>
 
