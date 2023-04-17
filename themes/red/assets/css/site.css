@@ -253,8 +253,7 @@ figure figcaption {
     white-space: nowrap;
 }
 
-.grid-item {
-    margin-bottom: 10px;
+.grid-item img {
     border: 1px inset black;
     border-radius: 3px;
 }

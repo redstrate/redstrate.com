@@ -34,17 +34,17 @@
                 {{ with $image }}
                         {{ if $.Params.threed }}
                                 {{ with resources.Get "3d.png" }}
-                                        <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}">
+                                        <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .Permalink }}">
                                 {{ end }}
                         {{ end }}
 
                         {{ if $.Params.animation }}
                                 {{ with resources.Get "play-circle.png" }}
-                                        <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px" src="{{ .Permalink }}">
+                                        <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .Permalink }}">
                                 {{ end }}
                         {{ end }}
 
-                        <img  width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}">
+                        <img width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}">
                 {{ else }}
                         <p>Thumbnail not found!</p>
                 {{ end }}
