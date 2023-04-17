@@ -2,7 +2,7 @@
     {{ range $.Site.Menus.badges }}
         {{ $badgeScope := . }}
         {{ with resources.Get .URL }}
-            <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .Permalink }}" alt="{{ $badgeScope.Name }}">
+            <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" alt="{{ $badgeScope.Name }}">
         {{ end }}
     {{ end }}
 </div>
