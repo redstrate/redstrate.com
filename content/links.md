@@ -14,11 +14,11 @@ host the image on your own server if you can!
 
 # Outgoing
 
-If you wish to be added and I missed you, or I made a horrific mistake, please [contact me](/contact). Websites without banners to be added later.
+I'm slowing adding to this list, if you wish to be added and I missed you... or if made a horrific mistake, please [contact me](/contact).
+
+## Artists
 
 {{< out-link banner="goldgust_net.png" link="https://goldgust.net" label="Gold" >}}
-
-{{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
 
 {{< out-link banner="nina.jpg" link="https://misnina.com" label="Nina" >}}
 
@@ -26,6 +26,12 @@ If you wish to be added and I missed you, or I made a horrific mistake, please [
 
 {{< out-link banner="bigraccoon-logo-white.png" link="https://bigraccoon.ca/" label="Johann Sebastian Staedtler" >}}
 
-{{< out-link banner="tof.png" link="https://toffeee.com" label="toffee" >}}
-
 {{< out-link banner="melps.jpg" link="https://melps.neocities.org" label="melps" >}}
+
+{{< out-link banner="cosmix.png" link="https://cosmix.pics/" label="Cosmix" >}}
+
+## Developers
+
+{{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
+
+{{< out-link banner="tof.png" link="https://toffeee.com" label="toffee" >}}
