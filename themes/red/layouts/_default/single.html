@@ -7,10 +7,9 @@
         <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
             {{ $.Date.Format "January 02, 2006" }}
         </time>
-        (Updated on
         <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
-            {{ $.Page.Lastmod.Format "January 02, 2006" }}
-        </time>)
+            (Updated on {{ $.Page.Lastmod.Format "January 02, 2006" }})
+        </time>
         </i>
     {{ end }}
 
