@@ -9,4 +9,4 @@ characters:
 - Juritta
 program: Krita
 ---
-This is my second Knockout background, which is just a slightly touched up drawing I did last year...
+This is my second Knockout background, which is just a slightly touched up drawing I did last year! I still like this set.

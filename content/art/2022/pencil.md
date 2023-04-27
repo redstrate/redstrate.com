@@ -10,3 +10,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109535473989137918
 program: Krita
 ---
+Will you accept it from her?

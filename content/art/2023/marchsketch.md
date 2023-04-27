@@ -19,3 +19,7 @@ newgrounds_url: https://www.newgrounds.com/art/view/redstrate/march-sketch-dump
 program: Krita
 ---
 Here's a collection of sketches I finally finished! I didn't feel like doing a full piece, so I opted to color each of these instead.
+
+I also finished Haunting Ground recently, so of course I had to draw Fiona. I wonder if someday Capcom would remake this game (and hopefully not change around things too much!) Pizza Tower is also awesome, I love Gustavo and his Dumb Rat.
+
+More of my Viera in here too, mostly unused sketches.

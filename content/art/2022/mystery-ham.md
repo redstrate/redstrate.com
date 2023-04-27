@@ -1,4 +1,5 @@
 ---
+title: Cartoony Ham
 date: 2022-12-30
 layout: art-detail
 filename: /art/mystery-ham.webp
@@ -11,4 +12,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109605001272963320
 program: Procreate
 ---
-i love big cartoony hams!
+I love stupidly big cartoony hams, and this one is no exception. She looks pretty happy about to eat it though :-)

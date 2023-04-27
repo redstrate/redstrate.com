@@ -10,3 +10,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109430376846947228
 program: Krita
 ---
+Done this one on stream, while playing Rollercoaster Tycoon 2!

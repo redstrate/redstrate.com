@@ -7,7 +7,12 @@ alt_text: "From top left to bottom right: a girl sitting over the edge of a bed,
 slug: marchsketch4
 characters:
 - Jake the Dog
+- Mysterious Swordswoman
 arttags:
 - sketch
+mastodon_url: https://mastodon.art/@redstrate/110097679535921140
 program: Procreate
 ---
+Ended off the month with another page of sketches! Been watching a lot of Adventure Time recently, and I guess I never really drawn any of their characters before (and yes, that's Tiffany and the Angry Squirrel in the window!)
+
+I also threw in some old Mysterious Swordswoman sketches I had lying around that I liked and colored them.

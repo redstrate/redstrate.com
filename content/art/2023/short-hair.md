@@ -10,3 +10,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109787348636587394
 program: Procreate
 ---
+Had the urge to draw a cute short-haired girl, I quite like how the shading turned out. I tried to do some cool symmetry in the background too...

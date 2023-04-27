@@ -1,4 +1,5 @@
 ---
+title: Hot Bath
 date: 2023-04-26
 layout: art-detail
 filename: /art/bathing.webp
@@ -6,5 +7,10 @@ alt_text: "A young woman is sitting in a water bath, with clouds of smoke surrou
 slug: bathing
 characters:
 - Mysterious Sworswoman
+mastodon_url: https://mastodon.art/@redstrate/110267364853210553
+pixiv_url: https://www.pixiv.net/en/artworks/107564292
 program: Procreate
 ---
+Looks like it's a great time for a hot bath!
+
+I thought this was going to be a quick sketch, but ended up getting carried away a bit.

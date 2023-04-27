@@ -9,3 +9,4 @@ characters:
 - Mysterious Swordswoman
 program: Krita
 ---
+This is my first custom Knockout profile background, which ended up becoming my avatar as well.

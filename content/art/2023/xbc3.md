@@ -12,3 +12,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/110262783603849052
 program: Procreate
 ---
+I just started Xenoblade Chronicles 3, so I wanted to draw two of the characters before I go back to feeding my Xenoblade addiction!

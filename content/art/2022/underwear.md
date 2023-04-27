@@ -12,3 +12,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109464613367914600
 program: Procreate
 ---
+Looks like Merume is getting ready to do something scandalous, but I guess she is a succubus after all...

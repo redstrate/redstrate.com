@@ -10,4 +10,6 @@ pixiv_url: https://www.pixiv.net/en/artworks/102641828
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/working-out
 program: Krita
 ---
-This is a recreation of a sketch I did in 2020, where I tried to do it in my "new style". I actually really liked how this turned out, all of the poses and faces turned out cute!
+This is a recreation of a sketch I did in 2020, where I tried to do it in my "usual style". I actually really liked how this turned out, all of the poses and faces turned out really cute!
+
+(Now if only I could name this character...)

@@ -13,3 +13,6 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109434559164546455
 program: Procreate
 ---
+Just a random mish-mash of sketches I had lying around, so I decided to stick them all in one thing.
+
+(I ended up reusing the scientist design for Dr. Frizzly)

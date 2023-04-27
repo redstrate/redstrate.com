@@ -23,7 +23,7 @@ characters:
 - name: Juritta
   num: 13
 - name: Mysterious Swordswoman
-  num: 9
+  num: 10
 - name: Merume
   num: 7
 - name: Asuka
