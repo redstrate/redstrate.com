@@ -1,5 +1,5 @@
 ---
-title: Knockout Background #1
+title: "Knockout Background #1"
 date: 2022-10-02
 layout: art-detail
 filename: /art/knockout-background.webp

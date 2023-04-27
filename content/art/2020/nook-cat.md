@@ -1,5 +1,5 @@
 ---
-title: Nook Cat
+title: "Nook Cat"
 date: 2020-01-01
 excludefeed: true
 layout: art-detail

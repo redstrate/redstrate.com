@@ -1,5 +1,5 @@
 ---
-title: Miq'ote in a Swimsuit
+title: "Miq'ote in a Swimsuit"
 date: 2021-01-01
 excludefeed: true
 layout: art-detail

@@ -1,5 +1,5 @@
 ---
-title: Hot Bath
+title: "Hot Bath"
 date: 2023-04-26
 layout: art-detail
 filename: /art/bathing.webp

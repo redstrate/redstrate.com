@@ -1,5 +1,5 @@
 ---
-title: Well Fed
+title: "Well Fed"
 date: 2022-11-23
 layout: art-detail
 filename: /art/well-fed.webp

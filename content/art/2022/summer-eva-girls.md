@@ -1,5 +1,5 @@
 ---
-title: summer eva girls
+title: "summer eva girls"
 date: 2022-07-27
 layout: art-detail
 filename: /art/summer-eva-girls.webp

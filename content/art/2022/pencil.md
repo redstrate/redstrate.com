@@ -1,5 +1,5 @@
 ---
-title: Pencil
+title: "Pencil"
 date: 2022-12-18
 layout: art-detail
 filename: /art/pencil.webp

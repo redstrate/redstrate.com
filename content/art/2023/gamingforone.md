@@ -1,5 +1,5 @@
 ---
-title: gaming for one
+title: "gaming for one"
 date: 2023-03-24
 layout: art-detail
 filename: /art/gamingforone.webp

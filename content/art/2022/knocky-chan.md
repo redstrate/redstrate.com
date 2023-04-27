@@ -1,5 +1,5 @@
 ---
-title: Knocky-Chan
+title: "Knocky-Chan"
 date: 2022-07-27
 layout: art-detail
 filename: /art/knocky-chan.webp

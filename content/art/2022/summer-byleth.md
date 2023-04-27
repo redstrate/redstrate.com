@@ -1,5 +1,5 @@
 ---
-title: summer byleth
+title: "summer byleth"
 date: 2022-05-30
 layout: art-detail
 filename: /art/summer-byleth.webp

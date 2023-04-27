@@ -1,5 +1,5 @@
 ---
-title: Underwear
+title: "Underwear"
 date: 2022-11-06
 layout: art-detail
 filename: /art/underwear.webp

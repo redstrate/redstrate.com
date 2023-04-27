@@ -1,5 +1,5 @@
 ---
-title: Funny
+title: "Funny"
 date: 2022-11-24
 layout: art-detail
 filename: /art/funny.webp

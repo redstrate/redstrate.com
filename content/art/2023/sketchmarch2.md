@@ -1,5 +1,5 @@
 ---
-title: 2022 Review
+title: "2022 Review"
 date: 2023-03-29
 layout: art-detail
 filename: /art/sketchmarch2.webp

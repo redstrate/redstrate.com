@@ -1,5 +1,5 @@
 ---
-title: Demonness
+title: "Demonness"
 date: 2022-11-27
 layout: art-detail
 filename: /art/demon.webp

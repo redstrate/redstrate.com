@@ -1,5 +1,5 @@
 ---
-title: Sniper Stand-up Test
+title: "Sniper Stand-up Test"
 date: 2020-12-12
 layout: art-detail
 filename: /animation/sniper-standup.webm

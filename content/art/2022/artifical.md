@@ -1,5 +1,5 @@
 ---
-title: Artifical
+title: "Artifical"
 date: 2022-09-03
 layout: art-detail
 filename: /art/artifical.webp

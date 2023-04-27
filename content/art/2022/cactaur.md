@@ -1,5 +1,5 @@
 ---
-title: Cactaur
+title: "Cactaur"
 date: 2022-11-22
 layout: art-detail
 filename: /art/cactaur.webp

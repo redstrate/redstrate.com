@@ -1,5 +1,5 @@
 ---
-title: Mythra Sketch #2
+title: "Mythra Sketch #2"
 date: 2022-08-23
 layout: art-detail
 filename: /art/mythra-sketch2.webp

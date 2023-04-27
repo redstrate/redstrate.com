@@ -1,5 +1,5 @@
 ---
-title: Chains
+title: "Chains"
 date: 2020-01-01
 excludefeed: true
 layout: art-detail

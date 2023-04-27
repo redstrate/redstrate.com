@@ -1,5 +1,5 @@
 ---
-title: Mona
+title: "Mona"
 date: 2022-11-28
 layout: art-detail
 filename: /art/mona.webp

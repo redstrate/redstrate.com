@@ -1,5 +1,5 @@
 ---
-title: march sketches
+title: "march sketches"
 date: 2023-03-05
 layout: art-detail
 filename: /art/marchsketch.webp

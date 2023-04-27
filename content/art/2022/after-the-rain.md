@@ -1,5 +1,5 @@
 ---
-title: after the rain
+title: "after the rain"
 date: 2022-04-27
 layout: art-detail
 filename: /art/after-the-rain.webp

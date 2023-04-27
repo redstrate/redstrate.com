@@ -1,5 +1,5 @@
 ---
-title: Planet Express Ship
+title: "Planet Express Ship"
 date: 2022-01-01
 excludefeed: true
 layout: art-detail

@@ -1,5 +1,5 @@
 ---
-title: Ship
+title: "Ship"
 date: 2022-11-24
 layout: art-detail
 filename: /art/ship.webp

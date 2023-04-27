@@ -1,5 +1,5 @@
 ---
-title: Alear
+title: "Alear"
 date: 2023-02-11
 layout: art-detail
 filename: /art/alear.webp

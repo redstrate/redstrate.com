@@ -1,5 +1,5 @@
 ---
-title: Nomadsculpt test
+title: "Nomadsculpt test"
 date: 2022-12-05
 layout: art-detail
 filename: /3d/headsculpt.glb

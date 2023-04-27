@@ -1,5 +1,5 @@
 ---
-title: Guns
+title: "Guns"
 date: 2022-11-26
 layout: art-detail
 filename: /art/guns.webp

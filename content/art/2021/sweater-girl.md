@@ -1,5 +1,5 @@
 ---
-title: Sweater Girl
+title: "Sweater Girl"
 date: 2021-10-21
 layout: art-detail
 filename: /art/sweater-girl.webp

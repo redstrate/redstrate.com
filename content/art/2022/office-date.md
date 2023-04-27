@@ -1,5 +1,5 @@
 ---
-title: office date
+title: "office date"
 date: 2022-08-01
 layout: art-detail
 filename: /art/office-date.webp

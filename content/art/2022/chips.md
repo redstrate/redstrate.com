@@ -1,5 +1,5 @@
 ---
-title: Chips
+title: "Chips"
 date: 2022-11-29
 layout: art-detail
 filename: /art/chips.webp

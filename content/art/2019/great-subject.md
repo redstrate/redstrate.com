@@ -1,5 +1,5 @@
 ---
-title: Great Subject
+title: "Great Subject"
 date: 2019-01-01
 excludefeed: true
 layout: art-detail

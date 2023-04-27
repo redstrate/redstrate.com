@@ -1,5 +1,5 @@
 ---
-title: eva girls
+title: "eva girls"
 date: 2021-12-23
 layout: art-detail
 filename: /art/eva-girls.webp

@@ -1,5 +1,5 @@
 ---
-title: Sketch Dump
+title: "Sketch Dump"
 date: 2022-11-30
 layout: art-detail
 filename: /art/sketch-dump.webp

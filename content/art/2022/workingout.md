@@ -1,5 +1,5 @@
 ---
-title: working out
+title: "working out"
 date: 2022-11-09
 layout: art-detail
 filename: /art/workingout.webp

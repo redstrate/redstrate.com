@@ -1,5 +1,5 @@
 ---
-title: Shading Test
+title: "Shading Test"
 date: 2022-12-03
 layout: art-detail
 filename: /art/shading-test.webp

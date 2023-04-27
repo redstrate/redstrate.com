@@ -1,5 +1,5 @@
 ---
-title: grocery shopping
+title: "grocery shopping"
 date: 2022-12-02
 layout: art-detail
 filename: /art/grocery-shopping.webp

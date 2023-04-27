@@ -1,5 +1,5 @@
 ---
-title: Warrior
+title: "Warrior"
 date: 2022-11-29
 layout: art-detail
 filename: /art/warrior.webp

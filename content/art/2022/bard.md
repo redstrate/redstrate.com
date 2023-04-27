@@ -1,5 +1,5 @@
 ---
-title: bard in the black shroud
+title: "bard in the black shroud"
 date: 2022-08-20
 layout: art-detail
 filename: /art/bard.webp

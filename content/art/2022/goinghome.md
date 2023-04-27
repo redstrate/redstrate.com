@@ -1,5 +1,5 @@
 ---
-title: going home
+title: "going home"
 date: 2022-12-22
 layout: art-detail
 filename: /art/goinghome.webp

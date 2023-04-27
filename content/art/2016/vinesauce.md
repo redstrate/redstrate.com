@@ -1,5 +1,5 @@
 ---
-title: Vinesauce Hill
+title: "Vinesauce Hill"
 date: 2016-01-01
 excludefeed: true
 layout: art-detail

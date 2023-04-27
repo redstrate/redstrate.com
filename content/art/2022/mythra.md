@@ -1,5 +1,5 @@
 ---
-title: torigoth
+title: "torigoth"
 date: 2022-11-11
 layout: art-detail
 filename: /art/mythra.webp

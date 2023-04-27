@@ -1,5 +1,5 @@
 ---
-title: Pot
+title: "Pot"
 date: 2022-11-23
 layout: art-detail
 filename: /art/pot.webp

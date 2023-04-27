@@ -1,5 +1,5 @@
 ---
-title: after school
+title: "after school"
 date: 2022-07-31
 layout: art-detail
 filename: /art/after-school.webp

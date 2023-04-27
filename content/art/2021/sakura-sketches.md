@@ -1,5 +1,5 @@
 ---
-title: Sakura Sketches
+title: "Sakura Sketches"
 date: 2021-06-21
 layout: art-detail
 filename: /art/sakura-sketches.webp

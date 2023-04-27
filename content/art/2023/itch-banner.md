@@ -1,5 +1,5 @@
 ---
-title: Dr. Frizzly's Logo and Banner
+title: "Dr. Frizzly's Logo and Banner"
 date: 2023-01-15
 layout: art-detail
 filename: /art/itch-banner.webp

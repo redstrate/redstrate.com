@@ -26,7 +26,7 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
         f.write('---\n')
 
         if "title" in json_data:
-            write_field(f, 'title', json_data["title"])
+            write_field(f, 'title', "\"{}\"".format(json_data["title"]))
 
         if "date" in json_data:
             if "-" in json_data["date"]:

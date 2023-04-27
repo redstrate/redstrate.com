@@ -1,5 +1,5 @@
 ---
-title: 2022 Review
+title: "2022 Review"
 date: 2022-12-22
 layout: art-detail
 filename: /art/2022-review.webp

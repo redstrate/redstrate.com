@@ -1,5 +1,5 @@
 ---
-title: Short Hair
+title: "Short Hair"
 date: 2023-02-01
 layout: art-detail
 filename: /art/short-hair.webp

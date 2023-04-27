@@ -1,5 +1,5 @@
 ---
-title: Viera Streetwear
+title: "Viera Streetwear"
 date: 2022-11-23
 layout: art-detail
 filename: /art/viera-street.webp

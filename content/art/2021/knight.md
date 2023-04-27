@@ -1,5 +1,5 @@
 ---
-title: woman knight
+title: "woman knight"
 date: 2021-09-19
 layout: art-detail
 filename: /art/knight.webp

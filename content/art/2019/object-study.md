@@ -1,5 +1,5 @@
 ---
-title: Object Study
+title: "Object Study"
 date: 2019-01-01
 excludefeed: true
 layout: art-detail

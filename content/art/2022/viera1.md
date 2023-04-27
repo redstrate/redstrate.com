@@ -1,5 +1,5 @@
 ---
-title: Viera #1
+title: "Viera #1"
 date: 2022-11-16
 layout: art-detail
 filename: /art/viera1.webp

@@ -1,5 +1,5 @@
 ---
-title: Two Girls
+title: "Two Girls"
 date: 2022-12-02
 layout: art-detail
 filename: /art/two-girls.webp

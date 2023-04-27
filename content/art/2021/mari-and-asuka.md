@@ -1,5 +1,5 @@
 ---
-title: mari & asuka
+title: "mari & asuka"
 date: 2021-12-25
 layout: art-detail
 filename: /art/mari-and-asuka.webp
