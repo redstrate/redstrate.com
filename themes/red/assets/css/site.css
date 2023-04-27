@@ -429,6 +429,7 @@ pre {
     padding: 5px;
     text-align: center;
     margin-bottom: 10px;
+    width: fit-content;
 }
 
 .no-decoration {
