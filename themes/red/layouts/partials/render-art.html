@@ -25,7 +25,7 @@
 
         {{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
                 {{ $title := .Params.title }}
-                {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x" }}
+                {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x webp q90 drawing" }}
 
                 {{ if .Params.nsfw }}
                         {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
