@@ -44,7 +44,7 @@
                                 {{ end }}
                         {{ end }}
 
-                        <img width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}">
+                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}">
                 {{ else }}
                         <p>Thumbnail not found!</p>
                 {{ end }}
