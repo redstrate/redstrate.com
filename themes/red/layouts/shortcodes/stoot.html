@@ -59,7 +59,7 @@
 							<img
 								src="{{ $media_attachments.url }}"
 								alt="Image {{ $media_attachments.id }} from toot {{ $id }} on {{ $masIns }}"
-								class="toot-media-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} toot-sens-blur{{ end }}"
+								class="toot-media-img actual-article-img img-{{ $mediaMD5 }}{{ if $json.sensitive }} toot-sens-blur{{ end }}"
 								loading="lazy"
 								{{- if $json.sensitive }}onclick="this.classList.toggle('toot-sens-blur-no')"{{- end }}
 							/>

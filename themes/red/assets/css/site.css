@@ -229,6 +229,12 @@ footer {
     height: auto;
 }
 
+.actual-article-img {
+    max-width: 50%;
+    max-height: 100%;
+    height: auto;
+}
+
 figure {
     flex-grow: 1;
     text-align: center;
