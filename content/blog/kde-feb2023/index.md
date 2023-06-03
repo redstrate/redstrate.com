@@ -23,7 +23,7 @@ The Joystick KCM is pretty bad shape right now, for numerous reasons:
 
 So one of my big "Plasma 6" goals is to rewrite the KCM with a few goals in mind:
 
-* Rebrand it around "Gamepads" and "Game Controllers" instead of "Joystick". A lot of people have mentioned they didn't even know it supported regular game controllers.
+* Re-brand it around "Gamepads" and "Game Controllers" instead of "Joystick". A lot of people have mentioned they didn't even know it supported regular game controllers.
 * Based on modern APIs and frameworks such as Solid.
 * QML-based, with clear a symbolic gamepad layout which makes it easier to test a controller. No more tables of buttons!
 * Remap buttons for SDL games along with the regular calibration found in the old KCM.
@@ -43,7 +43,7 @@ I landed a bunch of features in Tokodon this month, including some much needed b
 
 ## Web+ap support
 
-I landed support for the [web+ap url scheme](https://github.com/fedi-to/fedi-to.github.io/blob/main/webap.md) used to open ActivityPub objects in Tokodon! Just like matrix.to links in NeoChat, these allow linking to ActivityPub objects online. Once everything is in place, we will be one of the first clients to natively support it!
+I landed support for the [web+ap url scheme](https://github.com/fedi-to/fedi-to.github.io/blob/main/webap.md) used to open ActivityPub objects in Tokodon! Just like matrix.to links in NeoChat, these allow linking to ActivityPub objects online. Once everything is in place, we will be one of the first clients to support it!
 
 If you can't wait, it's also possible to open up regular `https` linked posts in Tokodon by passing it as an argument, if you want to hook it up somehow in your browser.
 

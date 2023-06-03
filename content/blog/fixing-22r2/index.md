@@ -203,7 +203,7 @@ id-input:*:input:b0003v28BDp091Be0100*
 However I didn't like this solution, and it would be a _pain_ to find the modalias
 for every single tablet that ever existed, that udev mistakenly categorizes. Is
 there a better solution? Instead I changed the logic in `src/udev/udev-builtin-input_id.c`.
-Let's take a look at the original codepath:
+Let's take a look at the original code path:
 
 ```c
 ...

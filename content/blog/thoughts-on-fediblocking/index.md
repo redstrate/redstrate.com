@@ -54,7 +54,7 @@ As you can tell, without proper moderation of either server - it becomes especia
 
 Depending on the country your server is hosted in, this can land you in very, very hot water. Because of this, big Mastodon instances have to be very, very careful with who they interact with. As the Mastodon network grows, this will be a growing issue[^4]. This is why I don't take immediate issue with how Mastodon.ART operates, because as soon as they slip up they could hurt themselves, their users, and by consequence the servers they federate with. The well-being of the whole federation depends on the moderation of its individual servers[^5].
 
-[^1]: Not to say that something like Twitter _isn't_ run by people, who are part of a greater corporation - but stuff like Mastodon.ART are run by people I could easily get in contact to if need be. Getting a hold of a real human on Twitter, Youtube is next to impossible. The moderation team behind Mastodon.ART is also leagues smaller by even the smallest of social media companies.
+[^1]: Not to say that something like Twitter _isn't_ run by people, who are part of a greater corporation - but stuff like Mastodon.ART are run by people I could easily get in contact to if need be. Getting a hold of a real human on Twitter, YouTube is next to impossible. The moderation team behind Mastodon.ART is also leagues smaller by even the smallest of social media companies.
 
 [^2]: I highly suggest not spinning up your own server in order to sidestep blocked servers.Bigger instances now block servers that federate with their blocklist (willingly or not). I highly suggest to bring it up with your homeserver moderator instead, to see if they can reconsider their position if you believe it is in error.
 

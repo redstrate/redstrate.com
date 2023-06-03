@@ -79,7 +79,7 @@ If you run this on your system (and of course substitute the library if you're n
 
 * `wsi` - window screen interface related functions.
 * `radv` - device-specific functions.
-* `vk_common` - common vulkan functions that are not device specific, like `vkFlushMemoryRanges`. We'll get to why these are included here at all later.
+* `vk_common` - common Vulkan functions that are not device specific, like `vkFlushMemoryRanges`. We'll get to why these are included here at all later.
 * Weirdly enough, video game names such as `metro_exodus`. We'll come back to why those are even a thing in a future article.
 
 Seeing this might make you think, _"wait a second, what are some instance-level functions doing there?"_ If you aren't familiar with Vulkan, it's functions have two distinct levels to them:

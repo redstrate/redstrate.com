@@ -199,13 +199,13 @@ So now I'm **trying to upstream the uclogic patch!** Oh how I wish it was a bug 
 
 * Both stylus buttons work!
 * Pen pressure works.
-* Both dials work, although the right one is registered as horizontal scroll which is odd - that might have to be remappable on a higher layer.
+* Both dials work, although the right one is registered as horizontal scroll which is odd - that might have to be re-mappable on a higher layer.
 * The tablet buttons "work" but some of them are not registered properly as there's more buttons than HID definitions for buttons. I might have to split this up into two devices, or something.
 
 Now here's my to-do list:
 
 * Hopefully receive Aren's blessing to release the patches with his original ownership.
-* Figure out a fix with the tablet buttons, and contact Nicolas Fella (who is working on the remappable tablet buttons in 5.27) to see what needs to be done so they're remappable in the new GUI.
+* Figure out a fix with the tablet buttons, and contact Nicolas Fella (who is working on the re-mappable tablet buttons in 5.27) to see what needs to be done so they're re-mappable in the new GUI.
 * Choose whether or not to contribute it directly to upstream (slow?) or back to Digimend.
 
 If anyone is familiar with kernel contributions in the HID subsystem, or know the right people (like the ones mentioned in the article, hi!) I would love to get in [contact](/contact)!

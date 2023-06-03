@@ -15,7 +15,7 @@ Here's my KDE contributions for this month! It's a little bit shorter than I'd l
 ## Extra CMake Modules
 
 I put up MRs for a bunch of small fixes related to the QML module:
-* Plugin initialization files [weren't being prepended a target name, so they were always named `_init.cpp`](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/346).
+* Plugin initialization files [didn't contain a target name, so they were always named `_init.cpp`](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/346).
 * Private QML sources are [now marked as internal in the generated qmldir](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/348).
 * Overhaul static plugin initialization, [to prevent the linker from possibly throwing away important plugin init symbols](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/347).
 

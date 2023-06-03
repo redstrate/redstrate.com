@@ -36,12 +36,12 @@ I worked on my website gallery for years, pretty much [since the site's inceptio
 1. It goes through the `art` directory in the site root, iterating over each and every piece definition.
 2. For each piece, it generates a markdown file containing only Hugo front-matter information which will be needed later. The usual suspects (title, date, slug) used by standard Hugo pages are filled in too.
 3. After it's done with the pieces themselves, two more pages are generated:
-	1. The script keeps track of the set of years of the entire gallery, and generates stub pages so they are navigatable.
+	1. The script keeps track of the set of years of the entire gallery, and generates stub pages so they are navigable.
 	2. It also generates a statistics page, using some other stats calculated during it's run. Eventually I'd like to expand this in the future!
 	
 So each artwork has it's own markdown file (which is just a page) and the whole gallery is decked out in custom layouts. There's a separate layout for the main gallery page, the one used when searching by year, and of course when viewing the artwork individually.
 
-I personally find this setup works really well, and requires very little Javascript or anything dynamic. However, there is Javascript used for properly layouting the gallery, adding comment/voting boxes but these are not required to view the page. Since everything can be fed into Hugo, the rest is statically generated!
+I personally find this setup works really well, and requires very little JavaScript or anything dynamic. However, there is JavaScript used for properly laying out the gallery, adding comment/voting boxes but these are not required to view the page. Since everything can be fed into Hugo, the rest is statically generated!
 
 Another neat thing is that I have three separate tagging systems on my website. One is used for blog tags, another is art tags, and the last are character tags. This was actually really easy to do, here's a snippet of my `config.toml`:
 

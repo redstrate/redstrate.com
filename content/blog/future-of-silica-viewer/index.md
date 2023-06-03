@@ -9,7 +9,7 @@ I will not be renewing my Apple Developer License for various reasons [I've alre
 
 {{< stoot "mastodon.art" "109916077868745391" >}}
 
-If you already bought Silica Viewer, nothing will change - you can continue to redownload it into perpetuity. This just means you can't pay money for it now, although I wouldn't want you to because I don't keep up with active development. As always, Silica Viewer is open source and free to use still.
+If you already bought Silica Viewer, nothing will change - you can continue to re-download it into perpetuity. This just means you can't pay money for it now, although I wouldn't want you to because I don't keep up with active development. As always, Silica Viewer is open source and free to use still.
 
 ![Screenshot of Silicate](macos.png)
 

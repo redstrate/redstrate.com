@@ -16,8 +16,8 @@ to Metal using [MoltenVK](https://github.com/KhronosGroup/MoltenVK). <!--more-->
 ![Screenshot of Prism running on macOS over MoltenVK](prism-on-mac-vulkan.webp)
 
 To clarify, Prism running on macOS is nothing new. In fact, a large portion of the engine was
-developed natively on macOS using Metal. Vulkan was actually added after the fact, and since I already had plenty of
-Vulkan experience it was no trouble. I initially chose to use Metal natively (over MoltenVK at the time) because the tooling was still too new, and I wanted to learn Metal. However, something big has come along since then, the rise of the [Vulkan Portability Initiative](https://www.vulkan.org/portability)!
+developed on macOS using Metal. Vulkan was actually added after the fact, and since I already had plenty of
+Vulkan experience it was no trouble. I initially chose to use Metal (over MoltenVK at the time) because the tooling was still too new, and I wanted to learn Metal. However, something big has come along since then, the rise of the [Vulkan Portability Initiative](https://www.vulkan.org/portability)!
 
 ![Vulkan Portability Logo](Vulkan-Portability.svg)
 
