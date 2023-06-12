@@ -2,20 +2,20 @@
 title: Art
 layout: art
 summary: My personal art gallery.
-new_banner: You can now view select 3D pieces in your browser! Animations are slowly being added back too.
+new_banner: 
 commissions: true
 aliases:
 - /gallery
 featured:
+- filename: mountains.webp
+  date: 2023-05-19
+  title: mountains
+- filename: sketchmarch2.webp
+  date: 2023-03-29
+  title: march sketches #2
 - filename: gamingforone.webp
   date: 2023-03-24
   title: gaming for one
-- filename: goinghome.webp
-  date: 2022-12-22
-  title: going home
-- filename: orbit-correction.webp
-  date: 2022-12-20
-  title: orbit correction
 years:
 - 2023
 - 2022

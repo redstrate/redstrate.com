@@ -1,4 +1,5 @@
 ---
+title: "mountains"
 date: 2023-05-19
 layout: art-detail
 filename: /art/mountains.webp
