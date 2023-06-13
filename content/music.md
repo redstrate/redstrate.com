@@ -4,6 +4,6 @@ layout: "audio-gallery"
 json: "music"
 ---
 
-I don't usually make music, but I somehow made enough to warrant it's own page. 
+I'm really new to the music creation process, but I somehow ended up with enough where I think it warrants it's own page. It's simple beats for now, don't really expect anything special.
 
-Every modern browser supports Opus in an OGG container, except for **Safari**. Sorry Apple users.
+_Note_: Every modern browser supports Opus in an OGG container, except for Safari. _Sigh_, sorry Apple users.

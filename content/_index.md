@@ -18,3 +18,6 @@ Enjoyed what you see? Consider signing the [guestbook]({{< ref "guestbook" >}})!
 
 # Recent Blog Posts
 {{< recent-posts >}}
+
+# Recent Changes
+{{< recent-changes >}}

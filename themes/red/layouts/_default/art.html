@@ -3,40 +3,44 @@
 
     <hr>
 
-    {{ with resources.Get "pics/pic-gallery.png" }}
-        <img class="gallery-img page-pic" alt="Gallery" title="Gallery" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
-    {{ end }}
-
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
-        {{ $alertimg := resources.Get "alert.png" }}
-        {{ with $.Params.new_banner }}
-        <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
-        {{ end }}
-
-        <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>Contains risque art, so you should probably not view this on a work computer.</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
-
-        <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
-
-        <p>If you want to see other cool artists and their websites, see <a href="/links">the links page</a>.</p>
-
-        <p>You can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a>, or if you like RSS feeds I have an <a href="/art/index.xml">art-only feed</a>!</p>
-
-        <h3>Featured</h3>
-        {{ partial "featured-art" . }}
-
-        {{ partial "art-years" . }}
-
-        <div class="art-button-container">
-            <a class="art-button" href="/art/characters">Characters</a>
-            <a class="art-button" href="/art/tags">Tags</a>
-            <a class="art-button" href="/art/stats">Stats</a>
-
-            {{ if $.Params.commissions }}
-            <a class="art-button" href="/commission">Commissions</a>
+    <div class="art-outer">
+        <div class="art-inner">
+            {{ $alertimg := resources.Get "alert.png" }}
+            {{ with $.Params.new_banner }}
+            <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
             {{ end }}
+
+            <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>Contains risque art, so you should probably not view this on a work computer.</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
+
+            <p>Welcome to my art gallery! I have saved my art since 2016, and this site contains the most complete archive of my work.</p>
+
+            <p>If you want to see other cool artists and their websites, see <a href="/links">the links page</a>.</p>
+
+            <p>You can follow me on <a href="https://mastodon.art/@redstrate">Mastodon</a>, <a href="https://www.pixiv.net/en/users/58118005" >Pixiv</a>, <a href="https://redstrate.newgrounds.com/">Newgrounds</a>, or if you like RSS feeds I have an <a href="/art/index.xml">art-only feed</a>!</p>
         </div>
+
+        {{ with resources.Get "pics/pic-gallery.png" }}
+            <img class="gallery-img" alt="Gallery" title="Gallery" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        {{ end }}
+    </div>
+
+    <h3>Featured</h3>
+    {{ partial "featured-art" . }}
+
+    {{ partial "art-years" . }}
+
+    <div class="art-button-container">
+        <a class="art-button" href="/art/characters">Characters</a>
+        <a class="art-button" href="/art/tags">Tags</a>
+        <a class="art-button" href="/art/stats">Stats</a>
+
+        {{ if $.Params.commissions }}
+        <a class="art-button" href="/commission">Commissions</a>
+        {{ end }}
+    </div>
     {{ end }}
 
     {{ partial "art-gallery" . }}

@@ -34,12 +34,23 @@
     }
 
     .grid-sizer, .grid-item {
-        width: 49%;
+        width: 32%;
     }
 
     .page-pic {
         float: right;
-        margin: 10px;
+        margin-bottom: 10px;
+    }
+
+    .art-outer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .art-inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 }
 
@@ -90,6 +101,14 @@
     }
 
     .page-pic {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .art-outer .gallery-img {
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -273,8 +292,8 @@ figure figcaption {
 }
 
 .grid {
-    padding-top: 20px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
 }
 
 td {
@@ -347,18 +366,21 @@ pre {
     border: 1px solid gray;
     border-radius: 3px;
 
-    padding: 1em;
     margin: .5em;
 
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .nice-list {
+    border-top: 1px solid var(--border-color);
     display: inline;
     list-style: none;
-    padding-left: 0;
     margin-bottom: 0;
     margin-top: 0;
+    padding: 0.5em;
 }
 
 .nice-list li {
@@ -434,7 +456,6 @@ pre {
     border: 1px outset black;
     border-radius: 5px;
     margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .new-banner {
@@ -442,8 +463,7 @@ pre {
     border-radius: 5px;
     padding: 5px;
     text-align: center;
-    margin-bottom: 10px;
-    width: fit-content;
+    margin: 10px;
 }
 
 .no-decoration {
@@ -466,4 +486,19 @@ model-viewer {
 .page-pic {
     width: 200px;
     height: 200px;
+}
+
+.project-header {
+    margin: 0;
+    padding: 0.5em;
+    background-color: var(--background-tertiary);
+    background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.01) 50%);
+    background-size: 24px 24px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-desc {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    flex-grow: 1;
 }
