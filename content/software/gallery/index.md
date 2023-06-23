@@ -4,7 +4,7 @@ date: 2020-01-25
 draft: false
 source: "https://git.sr.ht/~redstrate/gallery"
 license: MIT
-tags:
+projtags:
 - Swift
 - UIKit
 - iOS

@@ -1,6 +1,6 @@
 ---
 title: "Figure Review: Atelier Ryza 2"
-date: 2022-10-05
+date: 2023-06-23
 draft: true
 tags:
 - Figures

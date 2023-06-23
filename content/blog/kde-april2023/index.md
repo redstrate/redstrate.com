@@ -8,6 +8,8 @@ tags:
 - KDE
 - Qt
 toc: true
+series:
+- My Work in KDE
 ---
 
 Here's my KDE contributions for this month! It's a little bit shorter than I'd like, but I'm still trying to find a nice balance between **$work** and KDE.
@@ -37,21 +39,21 @@ I finally [merged the improved dark mode I started a while ago](https://invent.k
 
 I added [support for the new Maximize component](https://invent.kde.org/network/tokodon/-/merge_requests/200), which doesn't change anything functionality-wise but makes our code leaner:
 
-![Screenshot of the Maximize component in action!](maximize.png)
+![Screenshot of the Maximize component in action!](maximize.webp)
 
 I also [pushed along the MR to use the SearchPopupField component](https://invent.kde.org/network/tokodon/-/merge_requests/144) from Kirigami Add-ons too, which is another change that doesn't change anything functionally but will make the code much leaner.
 
 [Interaction icons were overhauled, not just visually but also their layout has improved](https://invent.kde.org/network/tokodon/-/merge_requests/211). Below is a screenshot of a mobile sized window, where the icons now spread out which will make them easier to tap (I plan on increasing the size on mobile too!)
 
-![Screenshot of the new icons in mobile layout](new-icons.png)
+![Screenshot of the new icons in mobile layout](new-icons.webp)
 
 The [amount of characters you have left is now shown in the composer](https://invent.kde.org/network/tokodon/-/merge_requests/212), which should load from your server (I don't have anything but a 500-char limit to test with though):
 
-![The character count shows up in the bottom-left](character-count.png)
+![The character count shows up in the bottom-left](character-count.webp)
 
 It's not merged yet, but I'm adding [overhauling how you view posts on profile pages](https://invent.kde.org/network/tokodon/-/merge_requests/214)! It has the usual separation of _"Posts"_, _"Replies"_ and _"Media"_ tabs but you can hide boosts too:
 
-![The new profile tabs and post options](profile-posts.png)
+![The new profile tabs and post options](profile-posts.webp)
 
 As a cherry on top, [I added icons to some of the menus](https://invent.kde.org/network/tokodon/-/merge_requests/217) which makes them easier to quickly navigate:
 
@@ -66,7 +68,7 @@ Some more minor changes:
 
 I did some touching up work for Keysmith late this month: I fixed [a bunch of binding loops](https://invent.kde.org/utilities/keysmith/-/merge_requests/112), and added better keyboard navigation. I also [added a passive notification when you copy the code to your clipboard](https://invent.kde.org/utilities/keysmith/-/merge_requests/113) too:
 
-![Example of the notification](passive.png)
+![Example of the notification](passive.webp)
 
 There doesn't appear to be an active maintainer, so I'll get another reviewer and merge them next month. I also cleaned up some duplicate bugs, and moved some spam off of the tracker.
 

@@ -3,7 +3,7 @@ title: "Protean"
 date: 2021-08-25
 source: "https://git.sr.ht/~redstrate/protean"
 license: MIT
-tags:
+projtags:
 - Go
 - Mastodon
 - Twitter

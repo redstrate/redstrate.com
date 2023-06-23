@@ -1,6 +1,8 @@
 ---
 title: "Breakdown of my static art gallery"
 date: "2023-04-26"
+tags:
+- Website
 ---
 
 I realized today that I had inadvertently created a static art gallery. I think my system is interesting, so I wanted to write down how it works.

@@ -1,10 +1,11 @@
 ---
-title: "Graphics Dump"
+title: "Graphics Dump: The Linux desktop"
 date: 2022-11-15
 draft: true
 tags:
 - Vulkan
 - Linux
+series:
 - Graphics Dump
 ---
 

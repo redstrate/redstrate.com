@@ -3,6 +3,7 @@ title: "Moving away from GitHub"
 tags:
 - GitHub
 - sourcehut
+- Open Source
 draft: false
 date: 2022-06-23
 aliases:

@@ -2,10 +2,9 @@
 title: "Graphics Dump: Mesa, Vulkan and DRM"
 date: 2022-11-15
 draft: false
-tags:
+blogtags:
 - Vulkan
 - Linux
-- Graphics Dump
 - KDE
 comments:
   host: mastodon.art

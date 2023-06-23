@@ -5,7 +5,7 @@ draft: false
 source: "https://git.sr.ht/~redstrate/watersymbol"
 license: GPLv3
 license-url: https://git.sr.ht/~redstrate/watersymbol/tree/main/item/LICENSE
-tags:
+projtags:
 - Java
 - Game
 layout: "project"

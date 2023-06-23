@@ -3,7 +3,7 @@ title: "SM64-Vulkan"
 date: 2022-10-03
 draft: false
 layout: "project"
-tags:
+projtags:
 - SM64
 - N64
 - C

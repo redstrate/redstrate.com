@@ -4,7 +4,7 @@ date: 2018-03-18
 draft: false
 source: "https://git.sr.ht/~redstrate/trinity"
 license: GPLv3
-tags:
+projtags:
 - C++
 - Qt
 layout: "project"

@@ -4,11 +4,13 @@ date: 2023-05-02
 draft: false
 tags:
 - Qt
+series:
+- Obscure Qt
 ---
 
 Outside of Qt Creator, GDB has a hard time understanding Qt times and you'll regularly get garbage or unusable debugging output.
 
-![An example of CLion (which uses GDB) trying to show the contents of a QList.](bad.png)
+![An example of CLion (which uses GDB) trying to show the contents of a QList.](bad.webp)
 
 Luckily, [GDB has a system where you can use Python scripts](https://github.com/ruediger/Boost-Pretty-Printer/blob/master/HACKING.org) to print information from custom types[^1]. The printers we're using is [Ezike Ebuka's GDB_Printers](https://invent.kde.org/ebuka/gdb_printers). First clone the repository, and extract it somewhere where you won't accidentally delete it. Here I copy it into my Development folder:
 
@@ -35,7 +37,7 @@ set print pretty on
 
 Now if you run GDB again, you'll get pretty prints for a lot of Qt types! This includes QString, QVector, and of course QList:
 
-![The same m_attachments variable, but it's actually useful for debugging now!](good.png)
+![The same m_attachments variable, but it's actually useful for debugging now!](good.webp)
 
 If you want a full list of supported types, take a look in [qtprinters.py](https://invent.kde.org/ebuka/gdb_printers/-/blob/master/printers/qtprinters.py).
 

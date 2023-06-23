@@ -8,6 +8,8 @@ tags:
 - KDE
 - Qt
 toc: true
+series:
+- My Work in KDE
 ---
 
 Another month in the year, another collection of bugfixes and features I contributed to KDE!
@@ -25,7 +27,7 @@ too, although I haven't gotten around to opening up a merge request for that.
 I opened a doxyqml[^1] [merge request to make it's output more useful](https://invent.kde.org/sdk/doxyqml/-/merge_requests/16), by automatically
 adding import statement hints to the page:
 
-![Example of the new doxyqml output](image.png)
+![Example of the new doxyqml output](image.webp)
 
 # Plasma 6 Porting
 

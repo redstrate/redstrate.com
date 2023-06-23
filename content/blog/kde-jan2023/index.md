@@ -8,6 +8,8 @@ tags:
 - KDE
 - Qt
 toc: true
+series:
+- My Work in KDE
 ---
 
 This is a non-comprehensive list of all of the major work I've done for KDE this month of January. I think I got a lot done this month! I also was accepted as a KDE Developer near the start of the month, so I'm pretty happy about that.

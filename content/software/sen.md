@@ -3,7 +3,7 @@ title: "Sen"
 date: 2022-06-01
 draft: false
 layout: "project"
-tags:
+projtags:
 - Kernel
 - C
 license: GPLv3

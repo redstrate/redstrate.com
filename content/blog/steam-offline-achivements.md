@@ -4,6 +4,7 @@ date: 2022-10-05
 draft: true
 tags:
 - Steam
+- Gaming
 ---
 
 If you've been paying attention these last couple of months, the Steam Deck is now in people's hands

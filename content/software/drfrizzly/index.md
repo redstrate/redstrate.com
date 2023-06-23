@@ -2,7 +2,7 @@
 title: "Dr. Frizzly's Mega Minigame Collection"
 date: 2023-02-20
 draft: false
-tags:
+projtags:
 - Game
 - Game Jam
 layout: "project"

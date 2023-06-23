@@ -12,3 +12,5 @@ Rambles and writings usually consisting of [Linux](/blog/tags/linux/), [KDE](/bl
 If you're interested, you can follow this blog using [RSS](/blog/index.xml).
 
 _Warning_: most of it is mindlessly technical.
+
+{{< blog-featured >}}

@@ -3,6 +3,8 @@ title: "Retrospective on three years of self-hosting"
 date: 2023-03-27
 draft: false
 summary: "I've been hosting my own infrastructure for almost three years now!"
+tags:
+- Website
 ---
 
 This website has been running almost non-stop [since November 2020](https://web.archive.org/web/20201101074137/https://redstrate.com/), according to archive.org. Since then, I have been running this website and related services myself - not physically but still taking care of admin tasks.[^1]

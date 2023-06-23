@@ -4,7 +4,7 @@ date: 2020-01-25
 draft: false
 source: "https://git.sr.ht/~redstrate/chip8"
 license: MIT
-tags:
+projtags:
 - C++
 - Emulation
 resources:

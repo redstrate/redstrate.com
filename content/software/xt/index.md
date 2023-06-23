@@ -2,7 +2,7 @@
 title: "XT"
 date: 2016-01-25
 draft: false
-tags:
+projtags:
 - OpenGL
 - C++
 - 3D

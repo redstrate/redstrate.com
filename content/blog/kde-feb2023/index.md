@@ -8,6 +8,8 @@ tags:
 - KDE
 - Qt
 toc: true
+series:
+- My Work in KDE
 ---
 
 # New Gamepad KCM
@@ -53,7 +55,7 @@ See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/
 
 You can now select the language you're posting in! You can't view a post's language or filter them from within Tokodon yet, but it's a start[^1]. Your preferred languages (chosen through the Languages & Formats KCM if you're using KDE) is shown at the top of the list.
 
-![Screenshot of the language combo box](post-lang.png)
+![Screenshot of the language combo box](post-lang.webp)
 
 See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/156).
 
@@ -61,7 +63,7 @@ See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/
 
 Tokodon has supported viewing polls already, but not posting them. Now you can create polls! All of your usual options are exposed, including some not even shown on Mastodon Web. This is not merged yet, but will be soon.
 
-![Screenshot of creating a poll](adding-polls.png)
+![Screenshot of creating a poll](adding-polls.webp)
 
 See the [merge request]https://invent.kde.org/network/tokodon/-/merge_requests/152).
 
@@ -84,7 +86,7 @@ Now the badge will actually update based on your current notification count, hur
 
 Last month I redid the Window Decoration KCM, and this month I did the same for the PulseAudio KCM, although the changes needed where much smaller.
 
-![The "new" PulseAudio KCM](pulse-pa.png)
+![The "new" PulseAudio KCM](pulse-pa.webp)
 
 See the [merge request](https://invent.kde.org/plasma/plasma-pa/-/merge_requests/157).
 
@@ -100,11 +102,11 @@ For qqc2-desktop-style, I [fixed an odd case where you could select text in Text
 
 Oliver landed the Plasma Welcome redesign for 6.0, which looks _wonderful_. As with all great features, this has had it's fair share of technical issues which I had the pleasure of helping with, including fixing this bug:
 
-![Broken Plasma Welcome Toolbar](broken-toolbar.png)
+![Broken Plasma Welcome Toolbar](broken-toolbar.webp)
 
 Embedded KCMs create and manage their own QML engine. Objects like `Kirigami.ApplicationWindow` are separated though, because that exists in Plasma Welcome's engine and not the KCMs, which breaks a lot of things including the global toolbar. I figured out that you can inject your own QML engine to KDeclarative, which will fix most of the issues. While doing this, I also simplified embedded KCMs in Plasma Welcome which will help developers creating their custom pages.
 
-![Fixed Plasma Welcome Toolbar](fixed-toolbar.png)
+![Fixed Plasma Welcome Toolbar](fixed-toolbar.webp)
 
 There's one lingering issue -- KDeclarative get's a little bit too greedy with the engine we give it and will try to destroy it to due to `std::shared_ptr` shenanigans, but fixing it will require changes to the framework. Right now we work around the issue by not assigning a parent, but I want to look into changing that soon.
 
@@ -138,13 +140,13 @@ See the [new repository](https://invent.kde.org/websites/kdevelop-org).
 
 I opened an MR to update the matrix.to redirector hosted at [go.kde.org](go.kde.org/matrix) which should include a link to open in NeoChat! Once it's merged, I plan on replacing the links on the KDE Community Wiki with these instead of the WebChat links we have now.
 
-See the [merge request](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1).
+<!-- See the [merge request](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1). -->
 
 # Changing Notification History Order
 
 This is something that's been sitting on my backlog, but I'm super annoyed about the ordering of notification history. Whenever I miss a notification[^4] I scroll through my notification history. However, it's ordered seemingly randomly, because it's sorted by "type and urgency". That's not too helpful because neither criteria is really exposed in the UI. I propose changing it to "Date" which makes way more sense for a history view of notifications.
 
-![The new, much more improved notification order](notifications.png)
+![The new, much more improved notification order](notifications.webp)
 
 See the [merge request](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2659).
 

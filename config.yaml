@@ -45,14 +45,16 @@ permalinks:
   art: 'art/:year/:month/:slugorfilename'
   arttags: 'art/tags/:title'
   characters: 'art/characters/:title'
-  characters_listpath: "art/characters/"
   tags: 'blog/tags/:title'
+  series: 'blog/series/:title'
+  projtags: 'software/tags/:title'
 
 taxonomies:
   series: 'series'
   tag: 'tags'
   arttag: 'arttags'
   character: 'characters'
+  projtag: 'projtags'
 
 menu:
   main:

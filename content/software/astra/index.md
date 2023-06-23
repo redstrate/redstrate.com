@@ -3,7 +3,7 @@ title: "Astra"
 date: 2021-12-01
 draft: false
 layout: "project"
-tags:
+projtags:
 - FFXIV
 featured: yes
 aliases:

@@ -3,7 +3,7 @@ title: "Physis"
 date: 2022-07-19
 draft: false
 layout: "project"
-tags:
+projtags:
 - FFXIV
 - Rust
 aliases:

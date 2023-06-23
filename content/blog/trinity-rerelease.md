@@ -4,6 +4,8 @@ date: 2021-07-21
 draft: false
 aliases:
 - /notes/trinity-rerelease/
+tags:
+- Trinity
 ---
 
 So around 2018 I was busy writing my own Matrix client, as anyone does. It was called Trinity, and it featured a Discord-like interface. <!--more-->

@@ -4,6 +4,8 @@ date: 2022-05-04
 draft: false
 aliases:
 - /notes/astra-0.4.0-release/
+tags:
+- Astra
 ---
 
 I'm very sorry about the delay, but a new release of Astra is upon us!

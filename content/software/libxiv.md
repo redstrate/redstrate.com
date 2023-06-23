@@ -3,7 +3,7 @@ title: "libxiv"
 date: 2022-01-05
 draft: false
 layout: "project"
-tags:
+projtags:
 - FFXIV
 aliases:
 - /projects/libxiv

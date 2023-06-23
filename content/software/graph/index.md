@@ -4,7 +4,7 @@ date: 2018-08-11
 draft: false
 source: "https://git.sr.ht/~redstrate/graph"
 license: MIT
-tags:
+projtags:
 - 3D
 - C++
 - Vulkan

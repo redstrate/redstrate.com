@@ -4,6 +4,8 @@ date: 2023-04-19
 draft: false
 tags:
 - Qt
+series:
+- Obscure Qt
 ---
 
 I decided to start a short series of describing weird, obscure Qt behavior! Because of my new job, I'm working with Qt even more than I did before. As I'm finding new and undocumented behavior, I feel that it's too useful to be posted on something like Mastodon and then forgotten.

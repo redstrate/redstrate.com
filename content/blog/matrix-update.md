@@ -2,6 +2,8 @@
 title: "Matrix Update"
 date: 2022-06-29
 draft: false
+tags:
+- Website
 ---
 
 If any Matrix admins are reading this, I have a quick update at what's happening to my two old matrix servers: redstrate.com and ryne.moe. These servers are now _defunct_ and if you are seeing any users from them, I recommend either blacklisting the servers on an ACL or just kicking them - but there's no current Synapse server actually backing them so they shouldn't be able to perform any actions anyway.

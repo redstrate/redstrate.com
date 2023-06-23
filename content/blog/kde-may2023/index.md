@@ -8,6 +8,8 @@ tags:
 - KDE
 - Qt
 toc: true
+series:
+- My Work in KDE
 ---
 
 I can't believe it's already the end of May! This month turned out a little meatier than last month I think, but I still have a large backlog of merge requests and TODOs to go through.
@@ -16,19 +18,19 @@ I can't believe it's already the end of May! This month turned out a little meat
 
 Now when there isn't enough space to display the QR code in the clipboard applet, there [is a clearer message of what to do next](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2952).
 
-![Screenshot of the new message in action.](better-qr-text.png)
+![Screenshot of the new message in action.](better-qr-text.webp)
 
 On the topic of QR codes, the menu [is now a menu of radio buttons and not checkboxes](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2953) which didn't make sense because it's an exclusive option.
 
-![You can't have two different codes being displayed after all.](qr-radio.png)
+![You can't have two different codes being displayed after all.](qr-radio.webp)
 
 There [is now a separator above the "Close" action](https://invent.kde.org/plasma/kwin/-/merge_requests/4132) in the window menu!
 
-![It now matches other context menus with this action, e.g. the Task Manager](close-action.png)
+![It now matches other context menus with this action, e.g. the Task Manager](close-action.webp)
 
 I added [a metadata extractor for Krita files](https://invent.kde.org/frameworks/kfilemetadata/-/merge_requests/97), which means certain information about your Krita artwork can show up in Dolphin, Baloo and other programs that can take advantage of it! This includes helpful information such as canvas width, height and creation date.
 
-![A slightly outdated screenshot, but showing off some of the metadata it can extract](krita-extract.png)
+![A slightly outdated screenshot, but showing off some of the metadata it can extract](krita-extract.webp)
 
 Soon, the Language and Region settings [will support the `$LANGUAGE` environment variable](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2946). This only affects users who did not configure the language explicitly from KDE, like those coming from another computing environment. We already supported loading your pre-existing language from `$LANG`. Included in that merge request is a fix that stops an erroneous warning message telling you that your language isn't supported, even though it clearly is.
 
@@ -43,7 +45,7 @@ An applet name or path must be specified, e.g. --applet org.kde.plasma.analogclo
 
 I proposed [making the icon name selectable](https://invent.kde.org/plasma/plasma-sdk/-/merge_requests/76), because I can't stop myself from clicking on it!
 
-![Screenshot of selecting the icon name in Cuttlefish.](cuttlefish-select.png)
+![Screenshot of selecting the icon name in Cuttlefish.](cuttlefish-select.webp)
 
 ## Gamepad KCM
 
@@ -63,7 +65,7 @@ Playing videos and GIFs should be less crashy, but with worse scrolling performa
 
 You can now [change certain account preferences](https://invent.kde.org/network/tokodon/-/merge_requests/238), but the selection is limited due to lack of a proper API. These are preferences that were supported before, but now you can change them from within Tokodon.
 
-![The preferences you can tweak in Tokodon](tokodon-prefs.png)
+![The preferences you can tweak in Tokodon](tokodon-prefs.webp)
 
 And a whole slew of smaller stuff, some which are appearing in the next bugfix release:
 
@@ -72,7 +74,7 @@ And a whole slew of smaller stuff, some which are appearing in the next bugfix r
 * The duplicate account [bug should _finally_ be fixed](https://invent.kde.org/network/tokodon/-/merge_requests/229)!
 * [Fix icons on non-KDE environments, such as GNOME](https://invent.kde.org/network/tokodon/-/merge_requests/228).
 
-![Tokodon on GNOME!](gnome-tokodon.png)
+![Tokodon on GNOME!](gnome-tokodon.webp)
 
 For the current and future contributors, I started working on better and more detailed documentation. The first two areas I covered was [timeline models](https://invent.kde.org/network/tokodon/-/merge_requests/237) and the [account classes](https://invent.kde.org/network/tokodon/-/merge_requests/236)!
 
@@ -101,17 +103,17 @@ I started [replacing the old foreach macro](https://invent.kde.org/education/kit
 
 The [go.kde.org Matrix redirector update](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1) is now merged, which I started in February. This means NeoChat is now preferred right below Element Web (which is still pointed towards https://webchat.kde.org/). Thanks to Thiago Sueto, [the Community Wiki has been updated already](https://invent.kde.org/teams/web/wiki-sites/-/issues/2#note_652483) and I sent two merge requests to update [kde.org](https://invent.kde.org/websites/kde-org/-/merge_requests/200) and the [footer](https://invent.kde.org/websites/hugo-kde/-/merge_requests/4).
 
-![The updated matrix.to redirector!](webchat-matrix.png)
+![The updated matrix.to redirector!](webchat-matrix.webp)
 
 To finish off more February work, I got around to working on the two big pieces of API documentation improvements for KDE Frameworks 6. If you don't remember, I wanted to add import statements for components meant to be used in Qt Quick. Doxygen already gives us hints for C++ headers, so QML users shouldn't be left in the dust. For example, how are you even supposed to use this component?
 
-![This is a real example. Not all components are like this, fortunately.](bad-docs.png)
+![This is a real example. Not all components are like this, fortunately.](bad-docs.webp)
 
 In order to accomplish this, subclasses of `QQuickItem` need to have their doc comments modified. The first library to get this treatment is plasma-framework, see the merge requests for [PlasmaCore](https://invent.kde.org/frameworks/plasma-framework/-/merge_requests/783), [PlasmaQuick](https://invent.kde.org/frameworks/plasma-framework/-/merge_requests/785) and [hiding ToolTipDialog](https://invent.kde.org/frameworks/plasma-framework/-/merge_requests/786).
 
 For regular QML-based components, doxyqml (the tool to auto-generate QML documentation, because Doxygen lacks support for the language) needed to spit these out too. The [merge request to add import statements](https://invent.kde.org/sdk/doxyqml/-/merge_requests/16) is cleaned up, the tests fixed and ready for final review!
 
-![Ah! I had to import that module!](good-docs.png)
+![Ah! I had to import that module!](good-docs.webp)
 
 I also spent some time cleaning up [the Community wiki](https://community.kde.org/), which just means I roam around and make sure links aren't dead and the formatting looks nice. If you're interested in some wiki improvement, join us in [#kde-www](https://go.kde.org/matrix/#/#kde-www:kde.org) and the [Issue board](https://invent.kde.org/teams/web/wiki-sites/-/issues)!
 

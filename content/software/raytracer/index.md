@@ -4,7 +4,7 @@ date: 2020-02-17
 draft: false
 source: "https://git.sr.ht/~redstrate/raytracer"
 license: MIT
-tags:
+projtags:
 - C++
 - 3D
 layout: "project"

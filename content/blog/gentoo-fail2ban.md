@@ -2,7 +2,7 @@
 title: "Making fail2ban work on systemd Gentoo"
 date: 2022-11-03
 draft: false
-tags:
+blogtags:
 - Linux
 - Gentoo
 ---

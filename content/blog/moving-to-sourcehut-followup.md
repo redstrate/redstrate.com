@@ -5,6 +5,7 @@ draft: false
 tags:
 - GitHub
 - sourcehut
+- Open Source
 aliases:
 - /notes/moving-to-sourcehut-followup/
 ---
