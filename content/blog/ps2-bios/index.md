@@ -1,6 +1,6 @@
 ---
 title: "Dumping and repacking the Playstation 2 DVD Player"
-date: 2023-06-26
+date: 2023-06-27
 draft: true
 summary: "Earlier this year, me and my partner got a Playstation 2 as a gift. Of course I wanted to softmod it! "
 tags:

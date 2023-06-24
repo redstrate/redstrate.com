@@ -6,7 +6,7 @@ filename: /art/bathing.webp
 alt_text: "A young woman is sitting in a water bath, with clouds of smoke surrounding her. The bath building is built out of wood planks, and sunlight is peeking through the windows."
 slug: bathing
 characters:
-- Mysterious Sworswoman
+- Mysterious Swordswoman
 mastodon_url: https://mastodon.art/@redstrate/110267364853210553
 pixiv_url: https://www.pixiv.net/en/artworks/107564292
 program: Procreate

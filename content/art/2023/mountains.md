@@ -7,5 +7,8 @@ alt_text: "Artwork of a woman holding a sword behind her shoulder, and draped in
 slug: mountains
 characters:
 - Mysterious Swordswoman
+mastodon_url: https://mastodon.art/@redstrate/110397757041747085
+pixiv_url: https://www.pixiv.net/artworks/108274736
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/mountains
 program: Krita
 ---
