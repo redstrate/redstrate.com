@@ -8,7 +8,6 @@ sources:
 secrets:
   - b748582a-5d31-4fe8-94d6-4a63035e97aa
 tasks:
-  - check: git diff --exit-code origin/master
   - build: |
       cd redstrate.com
       hugo
