@@ -8,5 +8,6 @@ characters:
 - Futaba
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

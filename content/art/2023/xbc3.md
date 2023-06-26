@@ -9,6 +9,7 @@ characters:
 - Eunie
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/110262783603849052
 program: Procreate
 ---

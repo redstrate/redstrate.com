@@ -7,6 +7,7 @@ alt_text: "Two rocket boosters, currently firing at full thrust. The ship is try
 slug: orbit-correction
 arttags:
 - technical
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109544278668332564
 pixiv_url: https://www.pixiv.net/en/artworks/103753611
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/orbit-correction

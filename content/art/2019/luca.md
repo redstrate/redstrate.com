@@ -7,5 +7,7 @@ filename: /art/luca.webp
 slug: luca
 characters:
 - Luca
+arttags:
+- fan art
 program: Procreate
 ---

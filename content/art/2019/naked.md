@@ -6,5 +6,6 @@ filename: /art/naked.webp
 slug: naked
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

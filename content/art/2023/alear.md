@@ -7,6 +7,8 @@ alt_text: "The protagonist Alear from Fire Emblem Engage. She has brightly color
 slug: alear
 characters:
 - Alear
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109847101066035149
 program: Krita
 ---

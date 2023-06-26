@@ -8,5 +8,6 @@ characters:
 - Aerith
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

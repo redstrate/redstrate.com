@@ -8,4 +8,5 @@ characters:
 - Mythra
 arttags:
 - sketch
+- fan art
 ---

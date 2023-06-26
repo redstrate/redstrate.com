@@ -11,6 +11,8 @@ characters:
 - Merume
 - Mythra
 - Byleth
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109557479068052997
 program: Krita
 ---

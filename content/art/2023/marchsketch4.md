@@ -10,6 +10,7 @@ characters:
 - Mysterious Swordswoman
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/110097679535921140
 program: Procreate
 ---

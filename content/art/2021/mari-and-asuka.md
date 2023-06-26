@@ -8,7 +8,8 @@ slug: mari-and-asuka
 characters:
 - Mari
 - Asuka
-nsfw: false
+arttags:
+- fan art
 pixiv_url: https://www.pixiv.net/en/artworks/95031741
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/mari-asuka
 ---

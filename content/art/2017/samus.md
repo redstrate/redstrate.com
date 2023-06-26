@@ -7,4 +7,5 @@ filename: /art/samus.webp
 slug: samus
 arttags:
 - 3d
+- fan art
 ---

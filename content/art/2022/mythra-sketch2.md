@@ -9,5 +9,6 @@ characters:
 - Mythra
 arttags:
 - sketch
+- fan art
 program: Krita
 ---

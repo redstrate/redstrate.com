@@ -9,6 +9,7 @@ characters:
 - Knocky-chan
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/110108997092717607
 program: Procreate
 ---

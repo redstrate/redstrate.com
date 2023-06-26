@@ -6,5 +6,7 @@ filename: /art/elisanne.webp
 slug: elisanne
 characters:
 - Elisanne
+arttags:
+- fan art
 program: Procreate
 ---

@@ -9,6 +9,8 @@ characters:
 - Asuka
 - Rei
 - Mari
+arttags:
+- fan art
 pixiv_url: https://www.pixiv.net/en/artworks/94953596
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/eva-girls
 program: Clip Studio Paint

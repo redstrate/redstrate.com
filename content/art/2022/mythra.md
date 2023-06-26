@@ -7,6 +7,8 @@ alt_text: "A woman sits against a fence, looking at the viewer. She has golden h
 slug: mythra
 characters:
 - Mythra
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109323160227319996
 pixiv_url: https://www.pixiv.net/en/artworks/102692392
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/torigoth

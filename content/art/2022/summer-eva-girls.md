@@ -9,6 +9,8 @@ characters:
 - Mari
 - Asuka
 - Rei
+arttags:
+- fan art
 pixiv_url: https://www.pixiv.net/en/artworks/100026963
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-eva-girls
 program: Procreate

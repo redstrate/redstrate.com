@@ -8,5 +8,6 @@ characters:
 - Eugen
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

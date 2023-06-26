@@ -8,5 +8,6 @@ characters:
 - Pyra
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

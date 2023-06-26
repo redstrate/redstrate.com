@@ -7,6 +7,8 @@ alt_text: "Female Byleth is in a swimsuit, a dark bikini with an extra belt and 
 slug: summer-byleth
 characters:
 - Byleth
+arttags:
+- fan art
 pixiv_url: https://www.pixiv.net/en/artworks/98726204
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-byleth
 program: Krita

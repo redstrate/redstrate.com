@@ -1,7 +1,35 @@
+{{ $skip_next := false }}
+
 {{ if not .IsHome }}
+        {{ if .Params.skipparent }}
+                {{ $skip_next = true }}
+        {{ end }}
+
+        {{ $len := len .Ancestors }}
+        {{ $i := 0 }}
         {{- range .Ancestors.Reverse }}
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <span> / </span>
+                {{ if eq .Title "Arttags" }}
+                        <a href="/art/tags">Tags</a>
+                        <span> / </span>
+                {{ else }}
+                        {{ if eq .Title "Characters" }}
+                                <a href="/art/characters">Characters</a>
+                                <span> / </span>
+                        {{ else }}
+                                {{ $end := false }}
+                                {{ if eq (add $i 1) $len }}
+                                        {{ $end = true }}
+                                {{ end }}
+
+                                {{ $needs_skip := $skip_next }}
+
+                                {{ if not (and $needs_skip $end) }}
+                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                        <span> / </span>
+                                {{ end }}
+                        {{ end }}
+                {{ end }}
+                {{ $i = add $i 1 }}
         {{- end }}
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 {{ end }}

@@ -8,5 +8,6 @@ characters:
 - Mona
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

@@ -9,5 +9,6 @@ characters:
 - Asuka
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

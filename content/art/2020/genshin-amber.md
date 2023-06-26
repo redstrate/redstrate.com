@@ -10,5 +10,6 @@ characters:
 - Amber
 arttags:
 - landscape
+- fan art
 program: Procreate
 ---

@@ -11,6 +11,7 @@ characters:
 arttags:
 - sketch
 - request
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109603563188051783
 program: PRocreate
 ---

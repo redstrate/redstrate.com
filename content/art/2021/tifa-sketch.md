@@ -8,5 +8,6 @@ characters:
 - Tifa
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

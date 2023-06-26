@@ -7,5 +7,7 @@ filename: /art/eleanor.webp
 slug: eleanor
 characters:
 - Eleanor
+arttags:
+- fan art
 program: Procreate
 ---

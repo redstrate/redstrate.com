@@ -12,5 +12,6 @@ characters:
 - Cloud
 arttags:
 - drawpile
+- fan art
 program: Drawpile
 ---

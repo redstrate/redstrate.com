@@ -8,5 +8,6 @@ characters:
 - Elisanne
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---
