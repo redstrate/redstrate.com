@@ -1,7 +1,7 @@
 ---
-title: "Dumping and repacking the Playstation 2 DVD Player"
+title: "Dumping and repacking the Playstation 2 DVD player"
 date: 2023-06-27
-draft: true
+draft: false
 summary: "Earlier this year, me and my partner got a Playstation 2 as a gift. Of course I wanted to softmod it! "
 tags:
 - Emulation
@@ -18,6 +18,8 @@ If you aren't familiar with [FreeDVDBoot](https://github.com/CTurt/FreeDVDBoot),
 ![The PS2 in question.](fit_2048.webp)
 
 Me and my partner were gifted a Playstation 2 on Christmas, and I found out it's _extremely easy to mod_! I have a "phat" version of the console, so it's exploitable using [FreeMCBoot](https://israpps.github.io/FreeMcBoot-Installer/) or FreeDVDBoot. Unfortunately, to use FreeMCBoot you need an exploited memory card - the only way to get one is to write one yourself from an already exploited console (or a memory card writer) and I didn't want to spend any extra money. FreeDVDBoot works, but has only had builds for DVD firmware 2.00 and up. Well it's good thing mine is:
+
+![The version of my DVD player: 1.10U.](version.webp)
 
 Huh... **1.10U**!? It looks like my console was a really early US model (_SCPH-30001_). Unfortunately, the only way one of these models could have a higher firmware is flashing via a update disc that comes with the PS2 DVD Control Remote. Again, didn't want to spend any extra money, so I didn't want to go online and buy it.
 
@@ -84,17 +86,13 @@ $ ./kelftool.elf decrypt DVDELF dvd.elf
 
 Now that we have the ELF, we can use the "Run ELF" function in PCSX2 and see if we can load up the DVD player:
 
-Nothing? That's weird... oh wait - why would the PS2 _natively_ read ELF files? I found a tool called [ps2-packer](https://github.com/ps2dev/ps2-packer) which repacks the ELF into something the Playstation 2 can actually read. Doing that and using a real DVD to test, we can find that:
+![Nothing actually launches...](no-elf.webp)
 
-It still doesn't work. Hm. To make sure it isn't the fault of the CDVD plugin I'm using, I'll try booting a real PS2 game too:
+Nothing? That's weird... oh wait - why would the PS2 _natively_ read ELF files? I found a tool called [ps2-packer](https://github.com/ps2dev/ps2-packer) which repacks the ELF into something the Playstation 2 can actually read.
 
-Huh, no that worked. So why is it refusing to load my ELF still? Maybe it was due to the old build I was using of ps2-packer, so I attempted to use the Docker version:
+---
 
-Still no-go there. Time to start delving into forum posts! I came across a certain pastebin (FWZuKcs9) that has already rebuilt DVD ELF files. So I'll be using those instead, since mine were not playing nice with me. If someone knows how to properly repack DVD elfs, please [contact me](/contact) and I'll edit it into the article.
-
-What's nice about the "legally acquired ELF files" that I have, is that it covers all DVD firmware versions so now it will be extremely easy to test! Here's one DVD elf showing that it does in fact, play back real DVDs inside of PCSX2:
-
-One more problem, FreeDVDBoot doesn't seem to work inside of PCSX2.
+This is where I stopped, and I couldn't get the repacked elf to launch still. If you are familiar with this sort of thing, I would be interested to hear what I did wrong :-)
 
 [^1]: Why this is encrypted in the first place is unclear, this might be because the DVD format is proprietary and the standard is paywalled.
 
