@@ -1,7 +1,7 @@
 ---
 title: "Game Review: INFRA"
 date: 2023-06-29
-draft: true
+draft: false
 tags:
 - Review
 - Gaming
