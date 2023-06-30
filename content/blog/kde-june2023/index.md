@@ -1,7 +1,7 @@
 ---
 title: "My work in KDE for June 2023"
 date: 2023-06-30
-draft: false
+draft: true
 tags:
 - Linux
 - Open Source
