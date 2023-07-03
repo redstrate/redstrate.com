@@ -14,7 +14,7 @@
     {{ end }}
 </div>
 
-{{ if $guest }}
+{{ if and $guest (not (isset .Params "years")) }}
 <h3>Guest Art</h3>
 <hr/>
 <div class="second-grid">
