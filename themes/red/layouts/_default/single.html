@@ -31,4 +31,43 @@
 
         {{ partial "comments" . }}
     {{ end }}
+
+    {{ if .Params.threejs }}
+        {{ $imagesloaded := resources.Get "js/three.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $imagesloaded = $imagesloaded | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $imagesloaded.RelPermalink }}" integrity="{{ $imagesloaded.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ if .Params.math }}
+        {{ $math := resources.Get "js/katex.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $math = $math | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $math.RelPermalink }}" integrity="{{ $math.Data.Integrity }}"></script>
+
+        {{ $autorender := resources.Get "js/auto-render.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $autorender = $autorender | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script src="{{ $autorender.RelPermalink }}" integrity="{{ $autorender.Data.Integrity }}"></script>
+
+        {{ $style := resources.Get "css/katex.css" }}
+        {{ if hugo.IsProduction }}
+            {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        {left: "$$", right: "$$", display: true},
+                        {left: "$", right: "$", display: false}
+                    ]
+                });
+            });
+        </script>
+    {{ end }}
 {{ end }}
