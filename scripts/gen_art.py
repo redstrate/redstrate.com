@@ -8,6 +8,8 @@ def write_field(f, key, value):
 
 
 def parse_art_json(output_directory, filename, json_file, threed = False, animation = False):
+    print(filename)
+
     json_data = json.load(json_file)
 
     year = None
@@ -123,7 +125,7 @@ for filename in os.listdir(art_data_directory):
     if os.path.isfile(f):
         filename_without_ext = os.path.splitext(filename)[0]
 
-        if filename_without_ext == ".DS_Store":
+        if filename_without_ext == ".DS_Store" or filename_without_ext == ".directory":
             continue
 
         with open(f, "r") as file:

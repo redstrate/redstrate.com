@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 193
+total: 201
 years:
 - year: 2019
   num: 60
@@ -12,7 +12,7 @@ years:
 - year: 2021
   num: 27
 - year: 2023
-  num: 15
+  num: 23
 - year: 2016
   num: 7
 - year: 2018
@@ -20,10 +20,10 @@ years:
 - year: 2017
   num: 1
 characters:
+- name: Mysterious Swordswoman
+  num: 13
 - name: Juritta
   num: 13
-- name: Mysterious Swordswoman
-  num: 12
 - name: Merume
   num: 7
 - name: Asuka
@@ -31,14 +31,14 @@ characters:
 - name: Mari
   num: 5
 - name: Sakura
-  num: 4
+  num: 5
 - name: Mythra
   num: 4
-- name: Sniper Girl
-  num: 2
 - name: Byleth
   num: 2
 - name: Elisanne
+  num: 2
+- name: Rei
   num: 2
 tags:
 - name: technical
@@ -56,7 +56,7 @@ tags:
 - name: 3d
   num: 16
 - name: fan art
-  num: 34
+  num: 40
 - name: sketch
   num: 103
 ---
