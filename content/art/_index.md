@@ -2,7 +2,7 @@
 title: Art
 layout: art
 summary: My personal art gallery.
-new_banner: 
+new_banner: A new section has been added, Guest Art!
 commissions: true
 aliases:
 - /gallery

@@ -1,13 +1,34 @@
 {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
+{{ $guest := false }}
 
 <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
 
     {{ range $paginator.Pages }}
+        {{ if in .File.Dir "art/guest" }}
+            {{ $guest = true }}
+        {{ else }}
             {{ partial "render-art" . }}
+        {{ end }}
     {{ end }}
 </div>
+
+{{ if $guest }}
+<h3>Guest Art</h3>
+<hr/>
+<div class="second-grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+
+    {{ range $paginator.Pages }}
+        {{ if in .File.Dir "art/guest" }}
+            {{ partial "render-art" . }}
+        {{ end }}
+    {{ end }}
+</div>
+
+{{ end }}
 
 <div style="text-align: center;">
 

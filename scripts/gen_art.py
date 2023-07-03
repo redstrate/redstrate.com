@@ -7,7 +7,7 @@ def write_field(f, key, value):
     f.write(key + ": " + value + "\n")
 
 
-def parse_art_json(output_directory, filename, json_file, threed = False, animation = False):
+def parse_art_json(output_directory, filename, json_file, threed = False, animation = False, guest = False):
     print(filename)
 
     json_data = json.load(json_file)
@@ -20,7 +20,11 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
         else:
             year = int(json_data["date"])
 
-    base_directory = os.path.join(art_output_directory, str(year))
+    directory = str(year)
+    if guest:
+        directory = "guest"
+
+    base_directory = os.path.join(art_output_directory, directory)
     if not os.path.exists(base_directory):
         os.mkdir(base_directory)
 
@@ -29,6 +33,9 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
 
         if "title" in json_data:
             write_field(f, 'title', "\"{}\"".format(json_data["title"]))
+
+        if "artist" in json_data:
+            write_field(f, 'artist', "\"{}\"".format(json_data["artist"]))
 
         if "date" in json_data:
             if "-" in json_data["date"]:
@@ -107,6 +114,7 @@ art_data_directory = '../art'
 threed_data_directory = '../3d'
 animation_data_directory = '../animation'
 art_output_directory = '../content/art'
+guest_art_data_directory = '../guestart'
 
 shutil.rmtree(art_output_directory)
 os.mkdir(art_output_directory)
@@ -287,3 +295,26 @@ with open(art_output_directory + '/stats/_index.md', 'w') as f:
         f.write('  num: ' + str(num) + '\n')
 
     f.write('---\n')
+
+# guest art
+os.mkdir(art_output_directory + "/guest")
+
+with open(art_output_directory + '/guest/_index.md', 'w') as f:
+    f.write('---\n')
+
+    write_field(f, 'title', 'Guest Art')
+    write_field(f, 'layout', 'guestart')
+
+    f.write('---\n')
+
+for filename in os.listdir(guest_art_data_directory):
+    f = os.path.join(guest_art_data_directory, filename)
+
+    if os.path.isfile(f):
+        filename_without_ext = os.path.splitext(filename)[0]
+
+        if filename_without_ext == ".DS_Store" or filename_without_ext == ".directory":
+            continue
+
+        with open(f, "r") as file:
+            year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file, False, False, True)
