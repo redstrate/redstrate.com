@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 201
+total: 202
 years:
 - year: 2019
   num: 60
@@ -12,7 +12,7 @@ years:
 - year: 2021
   num: 27
 - year: 2023
-  num: 23
+  num: 24
 - year: 2016
   num: 7
 - year: 2018
@@ -43,6 +43,8 @@ characters:
 tags:
 - name: technical
   num: 1
+- name: artfight
+  num: 1
 - name: animation
   num: 1
 - name: request
@@ -56,7 +58,7 @@ tags:
 - name: 3d
   num: 16
 - name: fan art
-  num: 40
+  num: 41
 - name: sketch
   num: 103
 ---
