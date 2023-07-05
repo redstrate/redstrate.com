@@ -1,3 +1,5 @@
+<hr>
+
 <div id="f-badges">
     {{ range $.Site.Menus.badges }}
         {{ $badgeScope := . }}
@@ -7,24 +9,14 @@
     {{ end }}
 </div>
 
-<div id="f-list">
-    <ul class="nice-list">
-        {{ range $.Site.Menus.footer }}
-            <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-        {{ end }}
-    </ul>
-</div>
+{{ range $.Site.Menus.footer }}
+    <p><a href="{{ .URL }}">{{ .Name }}</a></p>
+{{ end }}
 
 {{ with .Site.Params.geekring_site_id }}
-    <hr>
-
-    <div id="f-list">
-        <b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
-        <a href="http://geekring.net/site/{{ . }}/previous">Previous site</a> --
-        <a href="http://geekring.net/site/{{ . }}/random">Random site</a> --
-        <a href="http://geekring.net/site/{{ . }}/next">Next site</a>
-    </div>
+    <b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
+    <a href="http://geekring.net/site/{{ . }}/previous">Previous site</a> --
+    <a href="http://geekring.net/site/{{ . }}/random">Random site</a> --
+    <a href="http://geekring.net/site/{{ . }}/next">Next site</a>
 {{ end }}
 

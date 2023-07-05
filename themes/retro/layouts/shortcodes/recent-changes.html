@@ -1,0 +1,8 @@
+<ul style="padding: 0">
+{{ $changes := (index site.Data "recent-changes") }}
+{{ range $changes.changes }}
+<li style="margin-left: 10px; list-style-type: square;">
+    <p>{{ . }}</p>
+</li>
+{{ end }}
+</ul>

@@ -104,6 +104,9 @@ menu:
   - name: 'Downloads'
     url: '/downloads'
     weight: 6
+  - name: 'Links'
+    url: '/links'
+    weight: 7
   - name: 'About'
     url: '/about'
     weight: 9
