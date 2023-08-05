@@ -1,5 +1,5 @@
 baseURL: 'https://redstrate.com/'
-copyright: 'This content is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0.'
+copyright: 'This content is licensed under a Creative Commons Attribution-ShareAlike 4.0.'
 defaultContentLanguage: 'en'
 disableHugoGeneratorInject: true
 enableGitInfo: true

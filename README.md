@@ -23,3 +23,9 @@ $ hugo server
 ### Art
 
 The art gallery is defined via JSON (in `art`, and other directories in site root) and uses Python to generate the front-matter Markdown files that Hugo consumes. To refresh the gallery, re-run `scripts/gen_art.py`.
+
+## License
+
+The content of this website is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). There may be other copyrighted works showcased on this website that are licensed differently.
+
+The Hugo themes of this website is licensed under the MIT license.
