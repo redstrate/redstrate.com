@@ -1,6 +1,6 @@
 # redstrate.com
 
-This is the source code of my personal website hosted [redstrate.com](https://redstrate.com/).
+This is the source code of my personal website hosted at [redstrate.com](https://redstrate.com/).
 
 ## Building
 
