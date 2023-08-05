@@ -4,7 +4,7 @@ date: 2023-06-26
 draft: false
 summary: "Have you ever played Half-Life 2 and infatuated with it's odd, cubic level design like I am? Well, you can use it at home!"
 tags:
-- C++
+- CPlusPlus
 - Math
 toc: true
 series:

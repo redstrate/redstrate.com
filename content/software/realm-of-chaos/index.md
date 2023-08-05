@@ -6,7 +6,7 @@ source: "https://git.sr.ht/~redstrate/realm-of-chaos"
 license: GPLv3
 license-url: "https://git.sr.ht/~redstrate/realm-of-chaos/tree/master/item/LICENSE"
 proj-tags:
-- C++
+- CPlusPlus
 - Game 
 layout: "project"
 aliases:

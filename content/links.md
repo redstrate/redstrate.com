@@ -26,7 +26,7 @@ I'm slowing adding to this list, if you wish to be added and I missed you... or 
 
 {{< out-link banner="nina.jpg" link="https://misnina.com" label="Nina" >}}
 
-{{< out-link banner="neuroknives.png" link="https://euroknives.com" label="Neuroknives" >}}
+{{< out-link banner="neuroknives.png" link="https://neuroknives.com" label="Neuroknives" >}}
 
 {{< out-link banner="bigraccoon-logo-white.png" link="https://bigraccoon.ca/" label="Johann Sebastian Staedtler" >}}
 

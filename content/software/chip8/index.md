@@ -5,7 +5,7 @@ draft: false
 source: "https://git.sr.ht/~redstrate/chip8"
 license: MIT
 projtags:
-- C++
+- CPlusPlus
 - Emulation
 resources:
 - src: img/output.png

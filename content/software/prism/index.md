@@ -7,7 +7,7 @@ license: MIT
 projtags:
 - Prism
 - 3D
-- C++
+- CPlusPlus
 - Vulkan
 - Metal
 featured: yes

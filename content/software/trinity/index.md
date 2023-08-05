@@ -5,7 +5,7 @@ draft: false
 source: "https://git.sr.ht/~redstrate/trinity"
 license: GPLv3
 projtags:
-- C++
+- CPlusPlus
 - Qt
 layout: "project"
 aliases:

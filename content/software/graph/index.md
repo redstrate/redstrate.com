@@ -6,7 +6,7 @@ source: "https://git.sr.ht/~redstrate/graph"
 license: MIT
 projtags:
 - 3D
-- C++
+- CPlusPlus
 - Vulkan
 - Qt
 layout: "project"

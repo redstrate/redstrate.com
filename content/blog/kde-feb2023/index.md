@@ -138,7 +138,7 @@ See the [new repository](https://invent.kde.org/websites/kdevelop-org).
 
 # Updating go-kde-org
 
-I opened an MR to update the matrix.to redirector hosted at [go.kde.org](go.kde.org/matrix) which should include a link to open in NeoChat! Once it's merged, I plan on replacing the links on the KDE Community Wiki with these instead of the WebChat links we have now.
+I opened an MR to update the matrix.to redirector hosted at [go.kde.org](https://go.kde.org/matrix) which should include a link to open in NeoChat! Once it's merged, I plan on replacing the links on the KDE Community Wiki with these instead of the WebChat links we have now.
 
 <!-- See the [merge request](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1). -->
 

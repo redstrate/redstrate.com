@@ -5,7 +5,7 @@ draft: false
 source: "https://git.sr.ht/~redstrate/raytracer"
 license: MIT
 projtags:
-- C++
+- CPlusPlus
 - 3D
 layout: "project"
 aliases:

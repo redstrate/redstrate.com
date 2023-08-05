@@ -4,7 +4,7 @@ date: 2023-06-28
 draft: true
 summary: "When working on my engine, I wanted to clean up my debug gizmos a bit. The first thing to tackle is drawing bounding boxes!"
 tags:
-- C++
+- CPlusPlus
 - Math
 series:
 - Graphics Dump

@@ -7,14 +7,6 @@ toc: true
 
 I host downloads for things that I either want to archive, or worried we might lose.
 
-# Source Map Archive
-
-~~https://archive.ryne.moe/source~~
-
-~~I host a mirror of the [Source Map Archive](https://knockout.chat/thread/32805), provided by some users on Knockout!~~
-
-**Currently offline until I order some more storage space.**
-
 # TF2 2012 Main Menu
 
 This is a redistribution of CblpBoPTy's TF2 mod series unofficially called "PotatoHud".

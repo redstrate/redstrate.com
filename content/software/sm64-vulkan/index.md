@@ -7,7 +7,7 @@ projtags:
 - SM64
 - N64
 - C
-- C++
+- CPlusPlus
 license: Unknown
 source: https://git.sr.ht/~redstrate/sm64
 summary: "Fork of sm64-port for Linux using Vulkan."

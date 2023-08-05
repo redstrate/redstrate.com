@@ -4,7 +4,7 @@ date: 2022-10-05
 draft: true
 tags:
 - Vulkan
-- C++
+- CPlusPlus
 - Deep Dive
 comments:
   host: mastodon.art

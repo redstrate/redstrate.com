@@ -4,7 +4,7 @@ date: 2016-01-25
 draft: false
 projtags:
 - OpenGL
-- C++
+- CPlusPlus
 - 3D
 layout: "project"
 aliases:

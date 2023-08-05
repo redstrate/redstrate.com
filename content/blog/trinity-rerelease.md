@@ -16,6 +16,6 @@ _Note: This is a very old screenshot, and later versions of the client looked mu
 
 This was written in Qt5 and QML, and even though I'm testing this ~3 years later - the codebase will still work! Yes that's right, that's a testament to _my old programming ability_, Qt backwards compatibility, and Matrix's specification conformance. Pretty nice! For some reason, the directory and communities tab doesn't work, but I haven't looked into why.
 
-For historical purposes, it is now archived on my [sourcehut](https://git.sr.ht/~redstrate/trinity), along with its old [AUR package](https://git.sr.ht/~redstrate/pkgbuilds/tree/main/item/trinity-git/PKGBUILD). You can read more on its project page.
+For historical purposes, it is now archived on my [sourcehut](https://git.sr.ht/~redstrate/trinity), along with its old [AUR package](https://git.sr.ht/~redstrate/pkgbuilds/tree/main/item/trinity-matrix-git/PKGBUILD). You can read more on its project page.
 
 **Edit:** I updated the source code links to their new home at sourcehut.

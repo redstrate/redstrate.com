@@ -101,7 +101,7 @@ I started [replacing the old foreach macro](https://invent.kde.org/education/kit
 
 # Websites and Documentation
 
-The [go.kde.org Matrix redirector update](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1) is now merged, which I started in February. This means NeoChat is now preferred right below Element Web (which is still pointed towards https://webchat.kde.org/). Thanks to Thiago Sueto, [the Community Wiki has been updated already](https://invent.kde.org/teams/web/wiki-sites/-/issues/2#note_652483) and I sent two merge requests to update [kde.org](https://invent.kde.org/websites/kde-org/-/merge_requests/200) and the [footer](https://invent.kde.org/websites/hugo-kde/-/merge_requests/4).
+The [go.kde.org Matrix redirector update](https://invent.kde.org/websites/go-kde-org/-/merge_requests/1) is now merged, which I started in February. This means NeoChat is now preferred right below Element Web (which is still pointed towards https://webchat.kde.org/ ). Thanks to Thiago Sueto, [the Community Wiki has been updated already](https://invent.kde.org/teams/web/wiki-sites/-/issues/2#note_652483) and I sent two merge requests to update [kde.org](https://invent.kde.org/websites/kde-org/-/merge_requests/200) and the [footer](https://invent.kde.org/websites/hugo-kde/-/merge_requests/4).
 
 ![The updated matrix.to redirector!](webchat-matrix.webp)
 

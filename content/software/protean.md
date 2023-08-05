@@ -14,4 +14,4 @@ aliases:
 summary: "Mastodon to Twitter cross-poster!"
 ---
 
-This is one of my first Go and Twitter projects, and I used to use on [@redstrate](https://www.twitter.com/redstrate).
+This is one of my first Go and Twitter projects, and I used to use on @redstrate. This tool is defunct since I no longer use Twitter.

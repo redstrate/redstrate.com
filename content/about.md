@@ -8,7 +8,7 @@ I'm known as **redstrate**, and I create things to fill my own niche. I program,
 make bad music and edit videos. I'm an infrequent contributor to open source projects, and also a KDE developer. In my free time, I like to cook and study languages (the linguistic kind).
 
 I like developing software that I would personally use, and it also fills a niche or problem that either isn't adequately solved, or
-maybe just want to learn how to do it myself. My languages of choice usually are [C](/tags/c), [C++](/tags/c++), and [Rust](/tags/rust) - and that's what you'll find most of the projects using!
+maybe just want to learn how to do it myself. My languages of choice usually are [C](/software/tags/c), [C++](/software/tags/cplusplus), and [Rust](/software/tags/rust) - and that's what you'll find most of the projects using!
 
 Drawing has been a hobby of mine ever since childhood, and I try to draw when I can. I'm not a professional artist (nor ever will be) so my posting schedule is erratic. My preferred software is [Krita](https://krita.org) when I'm at home, and [Procreate](https://procreate.art) on the go. I also like to animate, but I don't really get the chance to sit down and do it anymore.
 

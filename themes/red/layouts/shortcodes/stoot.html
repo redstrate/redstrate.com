@@ -20,7 +20,7 @@
 		{{ $jsonHolder := $json }}{{/* Being safe */}}
 
 		{{ if isset $json "account" }}
-			{{ $tootLink = print "https://" $masIns "@" $json.account.acct "/status/" $id }}
+			{{ $tootLink = print "https://" $masIns "/" "@" $json.account.acct "/status/" $id }}
 			{{ $handleInst = print "@" $json.account.acct "@" $masIns }}
 		{{ end }}
 
