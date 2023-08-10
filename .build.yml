@@ -10,14 +10,14 @@ secrets:
 tasks:
   - build: |
       cd redstrate.com
-      hugo
+      hugo --minify
   - deploy: |
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
       rsync -e 'ssh -p 38901' -Wvr public/ deploy@ryne.moe:/srv/http/redstrate.com
   - build-retro: |
       cd redstrate.com
-      hugo --theme retro
+      hugo --minify --theme retro
   - deploy-retro: |
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
