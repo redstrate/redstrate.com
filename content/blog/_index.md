@@ -9,7 +9,7 @@ aliases:
 
 Rambles and writings usually consisting of [Linux](/blog/tags/linux/), [KDE](/blog/tags/kde), personal thoughts and [reviews](/blog/tags/review/).
 
-If you're interested, you can follow this blog using [RSS](/blog/index.xml).
+If you're interested, you can follow this blog using [RSS](/blog/index.xml). The feed contains the full content (when possible) of articles as well.
 
 _Warning_: most of it is mindlessly technical.
 

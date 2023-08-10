@@ -4,14 +4,14 @@ title: "Home"
 
 {{< insert-pic "pic-home.webp" "Home" >}}
 
-Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, retro crud and curating my site. My website is also my portfolio, blog and dumping ground for cool stuff I'm working on or find.
+Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, taking apart stuff, and spending way too much time curating this site. This website doubles as my portfolio and dumping ground for the things I work on.
 
 * Want to read? Check out my [blog posts]({{< ref "blog" >}}).
-* Interested in my drawings? Check out my [art gallery]({{< ref "art" >}}). I also do some [music]({{< ref "music" >}}).
-* Maybe my [software]({{< ref "software" >}}) is useful to you?
-* I also have a [PeerTube](https://tube.ryne.moe/@redchannel) and a [Owncast](https://owncast.online/) for my videos and livestreams.
+* Interested in [my drawings]({{< ref "art" >}})? I also do some [music]({{< ref "music" >}}), but not seriously.
+* I have a list of the [software I made and maintain]({{< ref "software" >}}) here too!
+* I also have a [PeerTube](https://tube.ryne.moe/@redchannel) and a [Owncast](https://owncast.online/) for my videos and livestreams respectively.
 
-Enjoyed what you see? Consider signing the [guestbook]({{< ref "guestbook" >}})! For other cool sites, check out my [outgoing links]({{< ref "links" >}}).
+Please consider signing the [guestbook]({{< ref "guestbook" >}}) too. For other cool websites, check out the [outgoing links]({{< ref "links" >}}) p!
 
 # Featured Artwork
 {{< featured-art >}}
