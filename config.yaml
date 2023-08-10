@@ -15,11 +15,6 @@ markup:
     parser:
         wrapStandAloneImageWithinParagraph: false
 
-minify:
-  tdewolff:
-    html:
-      keepWhitespace: true
-
 title: '~redstrate'
 theme: 'red'
 timeZone: 'UTC'
