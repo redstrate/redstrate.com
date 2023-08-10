@@ -3,7 +3,7 @@
     <hr>
 
     {{ with resources.Get "pics/pic-software.webp" }}
-        <img class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+        <img alt="Software" class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
     {{ end }}
 
     {{ .Content }}
