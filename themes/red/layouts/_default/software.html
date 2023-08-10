@@ -8,7 +8,9 @@
 
     {{ .Content }}
 
-    <h3>Personal Projects</h3>
+    {{ .Scratch.Set "header-type" "h3" }}
+    {{ .Scratch.Set "header-name" "Personal Projects" }}
+    {{ partial "fake-heading.html" . }}
 
     <p>I really like to start projects in my free time (maybe too often). Here's an almost-comprehensive list of them, most of them are freely licensed as well!</p>
 
@@ -34,7 +36,9 @@
     {{ end }}
     </div>
 
-    <h3>Contributions</h3>
+    {{ .Scratch.Set "header-type" "h3" }}
+    {{ .Scratch.Set "header-name" "Contributions" }}
+    {{ partial "fake-heading.html" . }}
 
     <p>I also do plenty of open-source work, here's a list of some of the projects I contributed to!</p>
 

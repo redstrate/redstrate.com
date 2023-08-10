@@ -9,10 +9,15 @@
     {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
     {{ range $art.categories }}
-        <h3>{{ .name }}</h3>
+        {{ $.Scratch.Set "header-type" "h3" }}
+        {{ $.Scratch.Set "header-name" .name }}
+        {{ partial "fake-heading.html" $ }}
+
         <p>{{ .description }}</p>
         {{ range sort .years "year" "desc" }}
-            <h4>{{ .year }}</h4>
+            {{ $.Scratch.Set "header-type" "h4" }}
+            {{ $.Scratch.Set "header-name" .year}}
+            {{ partial "fake-heading.html" $ }}
 
             <div class="gallery">
                 {{ range .pieces }}

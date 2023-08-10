@@ -109,7 +109,9 @@
     {{ partial "voting" . }}
 
     {{ with .Content }}
-        <h3>Commentary</h3>
+        {{ $.Scratch.Set "header-type" "h3" }}
+        {{ $.Scratch.Set "header-name" "Commentary" }}
+        {{ partial "fake-heading.html" $ }}
 
         {{ . }}
     {{ end }}

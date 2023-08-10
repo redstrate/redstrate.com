@@ -1,5 +1,7 @@
 {{ with .Site.RegularPages.Related . | first 5 }}
-    <h3>See Also</h3>
+    {{ $.Scratch.Set "header-type" "h3" }}
+    {{ $.Scratch.Set "header-name" "See Also" }}
+    {{ partial "fake-heading.html" $ }}
     <ul>
     {{ range . }}
     <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
