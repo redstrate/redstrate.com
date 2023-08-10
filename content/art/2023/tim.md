@@ -9,6 +9,7 @@ characters:
 - Tim
 arttags:
 - fan art
+- artfight
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4170296.tim

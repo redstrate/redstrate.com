@@ -9,6 +9,7 @@ characters:
 - Mel
 arttags:
 - fan art
+- artfight
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4186294.burger-time

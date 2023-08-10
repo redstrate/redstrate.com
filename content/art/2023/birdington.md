@@ -9,6 +9,7 @@ characters:
 - Sir Birdington The Banker
 arttags:
 - fan art
+- artfight
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4167421.robbery

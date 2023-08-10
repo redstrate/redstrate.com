@@ -9,6 +9,7 @@ characters:
 - Nikki
 arttags:
 - fan art
+- artfight
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4149098.does-this-look-cute

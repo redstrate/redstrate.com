@@ -9,6 +9,7 @@ characters:
 - Natasha Kandy
 arttags:
 - fan art
+- artfight
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4092315.want-to-listen

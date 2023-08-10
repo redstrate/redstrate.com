@@ -28,17 +28,17 @@ characters:
   num: 7
 - name: Asuka
   num: 6
-- name: Mari
-  num: 5
 - name: Sakura
+  num: 5
+- name: Mari
   num: 5
 - name: Mythra
   num: 4
+- name: Sniper Girl
+  num: 2
 - name: Byleth
   num: 2
 - name: Elisanne
-  num: 2
-- name: Rei
   num: 2
 tags:
 - name: technical
@@ -51,6 +51,8 @@ tags:
   num: 3
 - name: oil painting
   num: 4
+- name: artfight
+  num: 6
 - name: drawpile
   num: 8
 - name: landscape
