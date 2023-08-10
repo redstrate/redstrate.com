@@ -1,5 +1,9 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
+    {{ with .Title }}
+        <h2>{{ . }}</h2>
+    {{ else }}
+        <h2>Untitled Artwork</h2>
+    {{ end }}
     <hr>
 
     {{ with resources.Get .Params.filename }}
@@ -107,7 +111,7 @@
     {{ with .Content }}
         <h3>Commentary</h3>
 
-        <p>{{ . }}</p>
+        {{ . }}
     {{ end }}
 
     {{ if .Params.threed }}
