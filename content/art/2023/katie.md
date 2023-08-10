@@ -9,6 +9,7 @@ characters:
 - Katie
 arttags:
 - fan art
+mastodon_url: https://mastodon.art/@redstrate/110606818674511646
 program: Krita
 ---
 Fan art of Bourbon's character :-)

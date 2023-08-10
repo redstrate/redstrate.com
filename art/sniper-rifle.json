@@ -1,5 +1,8 @@
 {
+    "alt_text": "A really basic sniper rifle, untextured and has no material.",
     "date": "2016",
-    "title": "Sniper Rifle",
-    "tags": ["3D"]
+    "tags": [
+        "3D"
+    ],
+    "title": "Sniper Rifle"
 }

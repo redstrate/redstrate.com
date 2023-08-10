@@ -9,7 +9,7 @@
         {{ $i := 0 }}
         {{- range .Ancestors.Reverse }}
                 {{ if eq .Title "Arttags" }}
-                        <a href="/art/tags">Tags</a>
+                        <a href="/art/tags">Art Tags</a>
                         <span> / </span>
                 {{ else }}
                         {{ if eq .Title "Characters" }}

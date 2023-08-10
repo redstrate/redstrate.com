@@ -10,6 +10,8 @@ characters:
 arttags:
 - fan art
 - artfight
+mastodon_url: https://mastodon.art/@redstrate/110646280771834242
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/tim
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/4170296.tim

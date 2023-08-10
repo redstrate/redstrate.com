@@ -7,5 +7,6 @@ alt_text: "Drawing of a blonde-haired catgirl, doing an A-Pose. She has a red cr
 slug: sakura-sheet
 characters:
 - Sakura
+mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 program: Krita
 ---

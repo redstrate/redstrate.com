@@ -7,5 +7,6 @@ alt_text: "Several drawings of the same woman, front, side and rendered versions
 slug: swordswoman-sheet
 characters:
 - Mysterious Swordswoman
+mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 program: Krita
 ---
