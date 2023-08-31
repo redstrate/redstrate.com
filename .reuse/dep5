@@ -1,0 +1,26 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: redstrate.com
+Upstream-Contact: Joshua Goins <josh@redstrate.com>
+Source: https://git.sr.ht/~redstrate/redstrate.com
+
+# Sample paragraph, commented out:
+#
+# Files: src/*
+# Copyright: $YEAR $NAME <$CONTACT>
+# License: ...
+
+Files: content/* assets/* static/* resources/*
+Copyright: 2023 Joshua Goins <josh@redstrate.com>
+License: CC-BY-SA-4.0
+
+Files: README.md .build.yml .gitignore .htmltest.yml config.yaml art/* 3d/* animation/* data/*
+Copyright: 2023 Joshua Goins <josh@redstrate.com>
+License: CC0-1.0
+
+Files: themes/*
+Copyright: 2023 Joshua Goins <josh@redstrate.com>
+License: MIT
+
+Files: guestart/* assets/links/*
+Copyright: Respective Authors
+License: CC0-1.0
