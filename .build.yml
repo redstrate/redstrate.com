@@ -3,6 +3,7 @@ packages:
   - rsync
   - git
   - hugo
+  - reuse
 sources:
   - https://git.sr.ht/~redstrate/redstrate.com
 secrets:
@@ -22,6 +23,9 @@ tasks:
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
       rsync -e 'ssh -p 38901' -Wvr public/ deploy@ryne.moe:/srv/http/retro.redstrate.com
+  - reuse: |
+      cd redstrate.com
+      reuse lint
   - htmltest: |
       cd redstrate.com
       curl https://htmltest.wjdp.uk | bash
