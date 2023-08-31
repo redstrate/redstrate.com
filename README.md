@@ -1,5 +1,7 @@
 # redstrate.com
 
+[![builds.sr.ht status](https://builds.sr.ht/~redstrate/redstrate.com.svg)](https://builds.sr.ht/~redstrate/redstrate.com?)
+
 This is the source code of my personal website hosted at [redstrate.com](https://redstrate.com/).
 
 ## Building
