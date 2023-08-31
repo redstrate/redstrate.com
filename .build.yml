@@ -22,3 +22,7 @@ tasks:
       cd redstrate.com
       echo "StrictHostKeyChecking=no" >> ~/.ssh/config
       rsync -e 'ssh -p 38901' -Wvr public/ deploy@ryne.moe:/srv/http/retro.redstrate.com
+  - htmltest: |
+      cd redstrate.com
+      curl https://htmltest.wjdp.uk | bash
+      bin/htmltest -c .htmltest.yml public
