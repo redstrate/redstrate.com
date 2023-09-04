@@ -5,9 +5,9 @@
     {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 
     {{ if eq $paginator.PageNumber 1}}
-    <p>This is a collection of guest art made by other artists. The artist is listed in the details page of the artwork!</p>
+    <p>This is a collection of guest artwork made by other artists. The name of the artist is located on the details page of each artwork!</p>
 
-    <p>If you draw one of my characters, it will be featured on this page! If you want me to remove it for any reason (or maybe I forgot to add yours), please <a href="/contact">contact me</a>.</p>
+    <p>If you draw one of my characters, it can be featured on this page! If you want me to remove it for any reason (or maybe I forgot to add yours), please <a href="/contact">contact me</a>.</p>
     {{ end }}
 
     {{ partial "art-gallery" . }}

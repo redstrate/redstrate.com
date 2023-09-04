@@ -4,13 +4,11 @@
         {{ $name = . }}
 {{ end }}
 
-<div style="width: 100px; margin-top: 20px; margin-bottom: 20px; margin-left: auto; margin-right: auto">
-        <button style="display: block; margin-left: auto; margin-right: auto" onClick="addVote({{ $name }})">Cool!</button>
-
-        <p style="text-align: center" id="num-votes">...</p>
-</div>
-
 {{ if hugo.IsProduction }}
+        <div class="voting-container">
+                <button class="voting-button" id="num-votes" onClick="addVote({{ $name }})">❤️</button>
+        </div>
+
         {{ $site := resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
         <script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
 
@@ -18,5 +16,7 @@
                 refresh({{ $name }})
         </script>
 {{ else }}
-        <p class="text-muted" style="text-align: center">Voting is disabled in development mode.</p>
+        <div class="voting-container">
+                <button disabled class="voting-button" onClick="addVote({{ $name }})">❤️ ?</button>
+        </div>
 {{ end }}

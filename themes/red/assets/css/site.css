@@ -374,6 +374,28 @@ pre {
     flex-direction: column;
 }
 
+.blurb-button {
+    padding: 1em;
+    border-radius: 7px;
+    margin: 0.5em;
+    text-decoration: none;
+}
+
+.blurb-button:hover {
+    background-color: #eaeaea;
+}
+
+.blurb-button h4, .blurb h4 {
+    margin: 0 0 3px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: auto;
+}
+
 .nice-list {
     border-top: 1px solid var(--border-color);
     display: inline;
@@ -507,4 +529,19 @@ model-viewer {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.voting-container {
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.voting-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20pt;
 }

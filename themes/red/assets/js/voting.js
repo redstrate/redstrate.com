@@ -4,8 +4,7 @@ function refresh(slug) {
                 return response.json();
         })
         .then(function(data) {
-                console.log(data)
-                document.getElementById("num-votes").innerHTML = data["votes"] + " votes";
+                document.getElementById("num-votes").innerHTML = "❤️ " + data["votes"];
         });
 }
 

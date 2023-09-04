@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
-- filename: mountains.webp
-  date: 2023-05-19
-  title: mountains
-- filename: sketchmarch2.webp
-  date: 2023-03-29
-  title: march sketches #2
-- filename: gamingforone.webp
-  date: 2023-03-24
-  title: gaming for one
+- filename: sanae.webp
+  date: 2023-07-04
+  title: relaxation
+- filename: mel.webp
+  date: 2023-07-02
+  title: burger time
+- filename: katie.webp
+  date: 2023-06-25
+  title: katie
 years:
 - 2023
 - 2022
