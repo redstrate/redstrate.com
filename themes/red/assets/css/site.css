@@ -397,7 +397,6 @@ pre {
 }
 
 .nice-list {
-    border-top: 1px solid var(--border-color);
     display: inline;
     list-style: none;
     margin-bottom: 0;

@@ -1,9 +1,9 @@
 {
-        "featured": [
-                "mountains",
-                "sketchmarch2",
-                "gamingforone"
-        ],
-        "new-banner": "",
-        "commissions": true
+    "commissions": true,
+    "featured": [
+        "sanae",
+        "mel",
+        "katie"
+    ],
+    "new-banner": ""
 }
