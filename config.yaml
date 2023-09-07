@@ -68,21 +68,24 @@ menu:
   - name: 'Software'
     url: '/software'
     weight: 4
+  - name: 'Games'
+    url: 'https://redstrate.itch.io/'
+    weight: 5
   - name: 'Videos'
     url: 'https://tube.ryne.moe/@redchannel'
-    weight: 5
+    weight: 6
   - name: 'Downloads'
     url: '/downloads'
-    weight: 6
+    weight: 7
   - name: 'Links'
     url: '/links'
-    weight: 7
+    weight: 8
   - name: 'Guestbook'
     url: '/guestbook'
-    weight: 8
+    weight: 9
   - name: 'About'
     url: '/about'
-    weight: 9
+    weight: 10
   retromain:
   - name: 'Home'
     url: '/'
