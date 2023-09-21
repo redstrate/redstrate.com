@@ -1,15 +1,15 @@
 ---
 title: Stats
 layout: art-stats
-total: 206
+total: 208
 years:
 - year: 2019
   num: 60
 - year: 2022
   num: 46
-- year: 2020
-  num: 29
 - year: 2023
+  num: 31
+- year: 2020
   num: 29
 - year: 2021
   num: 27
@@ -25,7 +25,7 @@ characters:
 - name: Mysterious Swordswoman
   num: 13
 - name: Merume
-  num: 7
+  num: 8
 - name: Asuka
   num: 6
 - name: Sakura
@@ -58,7 +58,7 @@ tags:
 - name: 3d
   num: 16
 - name: fan art
-  num: 46
+  num: 47
 - name: sketch
   num: 102
 ---
