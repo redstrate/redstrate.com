@@ -38,6 +38,10 @@ There's just way too many quality of life improvements to list:
 * There's options to change some of the hardcoded server URLs, such as ffxiv.com. This isn't terribly useful yet.
 * Passwords and other secrets can now be saved on the Steam Deck.
 
+There's also a very new feature that I'm excited to announce, **Steam support!** Not "Steam account" support unfortunately, but support for launching the _launcher through Steam!_ What it does is install a new compatibility tool called "Astra" in Steam, and you use that in place of Proton. It will still call into the latest Proton version it can find. This will make it extremely easy to use on the Steam Deck, without having to launch a separate executable.
+
+![How to activate Steam support for Astra.](steam.webp)
+
 I'm very close to tagging a new version but due to the KF6 requirement, it will have to wait until it's disseminated to distributions. I'm currently setting up some repositories for the few distributions I do use (Arch, Gentoo, and Fedora) and will eventually update the Flatpak too.
 
 # Physis
