@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
+- filename: newsakura.webp
+  date: 2023-09-24
+  title: new sakura
+- filename: acrocatabro.webp
+  date: 2023-09-05
+  title: Acro's request
 - filename: sanae.webp
   date: 2023-07-04
   title: relaxation
-- filename: mel.webp
-  date: 2023-07-02
-  title: burger time
-- filename: katie.webp
-  date: 2023-06-25
-  title: katie
 years:
 - 2023
 - 2022
