@@ -16,7 +16,7 @@
             {{ $year = index $split 0 }}
         {{ end }}
 
-        {{ $path := printf "/art/%d/%.2d/%s" $year $month $filename_without_ext}}
+        {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
 
         <a href="{{ $path }}" aria-label="Click to view details" class="no-decoration">
             {{ $title := .title }}
