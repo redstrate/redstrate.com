@@ -9,7 +9,7 @@ If you wish to receive something material in return for your money, I'm [open fo
 
 # Ko-Fi
 
-[Ko-Fi is preferred](https://ko-fi.com/redstrat) because it's easy, and they take no processing fees. You can even set a little comment to go
+[Ko-Fi is preferred](https://ko-fi.com/redstrate) because it's easy, and they take no processing fees. You can even set a little comment to go
 along with your donation!
 
 # PayPal
