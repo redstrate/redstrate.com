@@ -18,7 +18,7 @@ Sorry about the shoddiness of some of the screenshots. We are the midst of our Q
 
 # Plasma
 
-I redid the [Accessibility KCM](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/1737) to make it look a bit nicer, by using the newer sidebar view we use in other KCMs. This still needs some in the oven, though.
+I redid the [Accessibility KCM](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/1737) to make it look a bit nicer, by using the newer sidebar view we use in other KCMs. This still needs some time in the oven, though.
 
 ![The "new" Accessibility KCM!](access.png)
 
