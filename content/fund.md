@@ -2,15 +2,15 @@
 title: "Fund"
 ---
 
-I'm in between work - _not related to my own projects or hobbies_ - and school. I'm always balancing between what I do in my
-free time, but donations help me do the stuff I want and possibly the things you enjoy! As always, **donations are never required but appreciated**.
+I'm balancing between what the projects I do in my free time, but donations can help fund possible hardware costs and a tip is always appreciated.
 
-If you wish to receive something material in return for your money, I'm [open for art commissions!](/commission)
+If you wish to instead receive something material in return, I'm [open for art commissions](/commission)!
 
 # Ko-Fi
 
-[Ko-Fi is preferred](https://ko-fi.com/redstrate) because it's easy, and they take no processing fees. You can even set a little comment to go
-along with your donation!
+[Ko-Fi is preferred](https://ko-fi.com/redstrate) because it's easy, and they take no processing fees. You can even set a little comment to go along with your donation!
+
+{{< kofi >}}
 
 # PayPal
 
