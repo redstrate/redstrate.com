@@ -28,6 +28,8 @@ The art gallery is defined via JSON (in `art`, and other directories in site roo
 
 ## License
 
+![License](https://licensebuttons.net/l/by-sa/3.0/88x31.png)
+
 The content of this website is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). There may be other copyrighted works showcased on this website that are licensed differently.
 
 The Hugo themes of this website is licensed under the MIT license.
