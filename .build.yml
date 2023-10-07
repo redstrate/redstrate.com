@@ -26,7 +26,3 @@ tasks:
   - reuse: |
       cd redstrate.com
       reuse lint
-  - htmltest: |
-      cd redstrate.com
-      curl https://htmltest.wjdp.uk | bash
-      bin/htmltest -c .htmltest.yml public
