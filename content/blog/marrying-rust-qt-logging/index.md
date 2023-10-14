@@ -1,7 +1,7 @@
 ---
 title: "Marrying Qt and Tracing message output"
 date: 2023-10-14
-draft: true
+draft: false
 tags:
 - Qt
 - Rust
