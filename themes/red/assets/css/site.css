@@ -544,3 +544,22 @@ model-viewer {
     margin-right: auto;
     font-size: 20pt;
 }
+
+.add {
+    padding: 0.2em;
+    border-radius: 7px;
+    display: inline-block;'
+}
+
+.add-bugfix {
+    background-color: #e16060;
+}
+
+.add-feature {
+    background-color: #45a83d;
+    color: black;
+}
+
+.add-release {
+    background-color: #65bbdd;
+}
