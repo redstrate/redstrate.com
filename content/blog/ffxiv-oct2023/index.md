@@ -118,3 +118,5 @@ I overhauled [the documentation site](https://docs.xiv.zone) again, this time wi
 # Other work
 
 {{< add "bugfix" >}} Fixed the [libcotp CMake, which was causing troubles when integrated into Astra](https://github.com/paolostivanin/libcotp/pull/49). Now we can use upstream instead of my fork! {{< release "2.0.2" >}}
+
+I also have begun [reverse engineering the current Square Enix login system](https://git.sr.ht/~redstrate/kawari) which is currently used for testing Astra without hammering the official servers. Do note that I don't plan on extending the project much further than that.
