@@ -1,6 +1,6 @@
 {{ range first 3 (where .Site.Pages "Type" "blog").ByDate.Reverse }}
     <li style="margin-left: 10px; list-style-type: square;">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         <p><i>{{ .Summary }}</i></p>
     </li>
 {{ end }}

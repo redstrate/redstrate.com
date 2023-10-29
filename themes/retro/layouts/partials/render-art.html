@@ -12,7 +12,7 @@
         {{ $year = index $split 3 }}
 {{ end }}
 
-<a href="{{ .Permalink }}">
+<a href="{{ .RelPermalink }}">
 {{ $path := printf "/art/%d/%.2d/%s" (int $year) (int $month) $filename_without_ext}}
         {{ $title := .Params.title }}
         {{ $image := (resources.Get (printf "art/%s.webp" .Params.slug)).Resize "400x bmp" }}
@@ -22,7 +22,7 @@
         {{ end }}
 
         {{ with $image }}
-        <img width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .Permalink }}"/>
+        <img width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}"/>
         {{ else }}
         <p>Thumbnail not found!</p>
         {{ end }}
