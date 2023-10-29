@@ -1,14 +1,14 @@
 ---
 title: Stats
 layout: art-stats
-total: 211
+total: 212
 years:
 - year: 2019
   num: 60
 - year: 2022
   num: 46
 - year: 2023
-  num: 34
+  num: 35
 - year: 2020
   num: 29
 - year: 2021
@@ -26,12 +26,12 @@ characters:
   num: 13
 - name: Merume
   num: 8
-- name: Asuka
-  num: 6
 - name: Sakura
   num: 6
+- name: Asuka
+  num: 6
 - name: Mari
-  num: 5
+  num: 6
 - name: Mythra
   num: 4
 - name: Byleth
@@ -60,5 +60,5 @@ tags:
 - name: fan art
   num: 47
 - name: sketch
-  num: 103
+  num: 104
 ---
