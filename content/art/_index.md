@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
+- filename: bringontheketchup.webp
+  date: 2023-11-26
+  title: Bring on the ketchup!
 - filename: newsakura.webp
   date: 2023-09-24
   title: new sakura
-- filename: acrocatabro.webp
-  date: 2023-09-05
-  title: Acro's request
-- filename: sanae.webp
-  date: 2023-07-04
-  title: relaxation
+- filename: mel.webp
+  date: 2023-07-02
+  title: burger time
 years:
 - 2023
 - 2022
