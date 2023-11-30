@@ -13,9 +13,9 @@ years:
   num: 29
 - year: 2021
   num: 27
-- year: 2018
-  num: 7
 - year: 2016
+  num: 7
+- year: 2018
   num: 7
 - year: 2017
   num: 1

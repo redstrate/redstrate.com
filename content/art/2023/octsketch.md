@@ -1,5 +1,5 @@
 ---
-title: "shirts"
+title: "October 2023 Sketches"
 date: 2023-10-29
 layout: art-detail
 filename: /art/octsketch.webp
