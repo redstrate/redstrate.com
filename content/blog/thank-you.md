@@ -1,6 +1,7 @@
 ---
 title: "Thank you!"
 date: "2023-11-02"
+draft: true
 ---
 
 A couple of years ago at my previous job, my manager pulled me aside one day to ask to do something. He was worried about one of the other employees, specifically about how I treated her. (It also happened to be his sister!) It wasn't anything bad, no - but a suggestion. He asked me to start saying "thank you" more. It seems kinda ridiculous looking back at it, what a weird reason to pull someone aside for, right?
