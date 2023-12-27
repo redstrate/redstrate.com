@@ -45,7 +45,7 @@ I landed a bunch of features in Tokodon this month, including some much needed b
 
 ## Web+ap support
 
-I landed support for the [web+ap url scheme](https://github.com/fedi-to/fedi-to.github.io/blob/main/webap.md) used to open ActivityPub objects in Tokodon! Just like matrix.to links in NeoChat, these allow linking to ActivityPub objects online. Once everything is in place, we will be one of the first clients to support it!
+{{< add "feature" >}} I landed support for the [web+ap url scheme](https://github.com/fedi-to/fedi-to.github.io/blob/main/webap.md) used to open ActivityPub objects in Tokodon! Just like matrix.to links in NeoChat, these allow linking to ActivityPub objects online. Once everything is in place, we will be one of the first clients to support it!
 
 If you can't wait, it's also possible to open up regular `https` linked posts in Tokodon by passing it as an argument, if you want to hook it up somehow in your browser.
 
@@ -53,7 +53,7 @@ See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/
 
 ## Post language support
 
-You can now select the language you're posting in! You can't view a post's language or filter them from within Tokodon yet, but it's a start[^1]. Your preferred languages (chosen through the Languages & Formats KCM if you're using KDE) is shown at the top of the list.
+{{< add "feature" >}} You can now select the language you're posting in! You can't view a post's language or filter them from within Tokodon yet, but it's a start[^1]. Your preferred languages (chosen through the Languages & Formats KCM if you're using KDE) is shown at the top of the list.
 
 ![Screenshot of the language combo box](post-lang.webp)
 
@@ -61,7 +61,7 @@ See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/
 
 ## Poll support
 
-Tokodon has supported viewing polls already, but not posting them. Now you can create polls! All of your usual options are exposed, including some not even shown on Mastodon Web. This is not merged yet, but will be soon.
+{{< add "feature" >}} Tokodon has supported viewing polls already, but not posting them. Now you can create polls! All of your usual options are exposed, including some not even shown on Mastodon Web. This is not merged yet, but will be soon.
 
 ![Screenshot of creating a poll](adding-polls.webp)
 
@@ -69,14 +69,14 @@ See the [merge request]https://invent.kde.org/network/tokodon/-/merge_requests/1
 
 ## More Changes
 
-* A bunch of Android bugs are squashed, including links not working. I just recently got my PinePhone working again too, so expect more mobile-related work soon! :) See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/163).
-* Soon you'll be able to configure the network proxy on the login page. See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/165).
-* Posting is much more reliable in general, and it's clearer when an error has occurred. Hopefully no more of your toots get eaten. See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/162).
+* {{< add "bugfix" >}} A bunch of Android bugs are squashed, including links not working. I just recently got my PinePhone working again too, so expect more mobile-related work soon! :) See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/163).
+* {{< add "feature" >}} Soon you'll be able to configure the network proxy on the login page. See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/165).
+* {{< add "bugfix" >}} Posting is much more reliable in general, and it's clearer when an error has occurred. Hopefully no more of your toots get eaten. See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/162).
 * The README finally includes a screenshot! See the [merge request](https://invent.kde.org/network/tokodon/-/merge_requests/167).
 
 # NeoChat Notification Badge
 
-One thing that always irked me with NeoChat is the notification badge. The number never feels right, and no matter how many rooms I read it never changes:
+{{< add "bugfix" >}} One thing that always irked me with NeoChat is the notification badge. The number never feels right, and no matter how many rooms I read it never changes:
 
 ![NeoChat Badge](neochat-badge.webp)
 
@@ -84,7 +84,7 @@ Now the badge will actually update based on your current notification count, hur
 
 # PulseAudio KCM
 
-Last month I redid the Window Decoration KCM, and this month I did the same for the PulseAudio KCM, although the changes needed where much smaller.
+{{< add "feature" >}} Last month I redid the Window Decoration KCM, and this month I did the same for the PulseAudio KCM, although the changes needed where much smaller.
 
 ![The "new" PulseAudio KCM](pulse-pa.webp)
 
@@ -92,11 +92,11 @@ See the [merge request](https://invent.kde.org/plasma/plasma-pa/-/merge_requests
 
 # Kirigami and QQC2 Desktop Style
 
-For Kirigami, I tried to focus on fixing up Dialog behavior to mixed results. I wanted to change [the dialog closePolicy](https://invent.kde.org/frameworks/kirigami/-/merge_requests/960), but that's been more complex than expected. I attempted to fix [the extra horizontal scrolling bug in Dialogs](https://invent.kde.org/frameworks/kirigami/-/merge_requests/966)[^2], but that has unintended regressions in Discover and I'm not really happy with the solution. I also have [a bunch of OverlaySheet fixes that I need to rebase](https://invent.kde.org/frameworks/kirigami/-/merge_requests/957)[^3] :) So a bunch of half-baked things I should start finishing next month!
+{{< add "bugfix" >}} For Kirigami, I tried to focus on fixing up Dialog behavior to mixed results. I wanted to change [the dialog closePolicy](https://invent.kde.org/frameworks/kirigami/-/merge_requests/960), but that's been more complex than expected. I attempted to fix [the extra horizontal scrolling bug in Dialogs](https://invent.kde.org/frameworks/kirigami/-/merge_requests/966)[^2], but that has unintended regressions in Discover and I'm not really happy with the solution. I also have [a bunch of OverlaySheet fixes that I need to rebase](https://invent.kde.org/frameworks/kirigami/-/merge_requests/957)[^3] :) So a bunch of half-baked things I should start finishing next month!
 
-I noticed an issue [where Breeze Icons on Android wouldn't work](https://invent.kde.org/frameworks/kirigami/-/merge_requests/976) if you had a custom icon theme in your application - which I tried to fix but I'm not happy with the solution. It looks like the built-in icons index.theme is not installed properly, and I want to figure out if we can fix that first.
+{{< add "bugfix" >}} I noticed an issue [where Breeze Icons on Android wouldn't work](https://invent.kde.org/frameworks/kirigami/-/merge_requests/976) if you had a custom icon theme in your application - which I tried to fix but I'm not happy with the solution. It looks like the built-in icons index.theme is not installed properly, and I want to figure out if we can fix that first.
 
-For qqc2-desktop-style, I [fixed an odd case where you could select text in TextAreas](https://invent.kde.org/frameworks/qqc2-desktop-style/-/merge_requests/230) that explicitly disabled it by using the right-click context menu.
+{{< add "bugfix" >}} For qqc2-desktop-style, I [fixed an odd case where you could select text in TextAreas](https://invent.kde.org/frameworks/qqc2-desktop-style/-/merge_requests/230) that explicitly disabled it by using the right-click context menu.
 
 # Plasma Welcome
 
@@ -149,6 +149,8 @@ This is something that's been sitting on my backlog, but I'm super annoyed about
 ![The new, much more improved notification order](notifications.webp)
 
 See the [merge request](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2659).
+
+{{< series-nav "kde-jan2023" "kde-march2023" >}}
 
 [^1]: If you're looking for a way to configure the default posting language, it's unfortunately not exposed in the Mastodon API yet, including some other preferences. Since the issue hasn't moved much, I want to look into another way to easily access those settings.
 

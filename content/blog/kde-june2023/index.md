@@ -124,3 +124,6 @@ I'm also working on sharing _through_ Tokodon! It still needs some work. My curr
 {{< video "share.webm" >}}
 
 See you next month!
+
+{{< series-nav "kde-may2023" "kde-july2023" >}}
+

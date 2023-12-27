@@ -73,3 +73,5 @@ On Thursday, I attended Carl's Accessibility BoF. I learned how to use [Accercis
 
 It was nice meeting everyone at Akademy, I wish I came sooner because I didn't have
 the chance to talk to some people. See you next month!
+
+{{< series-nav "kde-june2023" "kde-aug2023" >}}

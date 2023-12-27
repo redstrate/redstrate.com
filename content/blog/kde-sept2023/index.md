@@ -135,3 +135,6 @@ Oh yeah, and [object declarations in arrays should look less insane](https://cod
 If you use spaces to delineate groups of import statements, [qmlformat should now try to preserve that instead of destroying it](https://codereview.qt-project.org/c/qt/qtdeclarative/+/503775).
 
 And two more small things: [fixing the command line arguments not overriding anything](https://codereview.qt-project.org/c/qt/qtdeclarative/+/502966?usp=dashboard) and [fixing the QML coding conventions documentation](https://codereview.qt-project.org/c/qt/qtdoc/+/502965?usp=dashboard).
+
+{{< series-nav "kde-aug2023" "kde-oct2023" >}}
+

@@ -16,34 +16,34 @@ I can't believe it's already the end of May! This month turned out a little meat
 
 # Plasma
 
-Now when there isn't enough space to display the QR code in the clipboard applet, there [is a clearer message of what to do next](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2952).
+{{< add "feature" >}} Now when there isn't enough space to display the QR code in the clipboard applet, there [is a clearer message of what to do next](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2952).
 
 ![Screenshot of the new message in action.](better-qr-text.webp)
 
-On the topic of QR codes, the menu [is now a menu of radio buttons and not checkboxes](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2953) which didn't make sense because it's an exclusive option.
+{{< add "bugfix" >}} On the topic of QR codes, the menu [is now a menu of radio buttons and not checkboxes](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2953) which didn't make sense because it's an exclusive option.
 
 ![You can't have two different codes being displayed after all.](qr-radio.webp)
 
-There [is now a separator above the "Close" action](https://invent.kde.org/plasma/kwin/-/merge_requests/4132) in the window menu!
+{{< add "feature" >}} There [is now a separator above the "Close" action](https://invent.kde.org/plasma/kwin/-/merge_requests/4132) in the window menu!
 
 ![It now matches other context menus with this action, e.g. the Task Manager](close-action.webp)
 
-I added [a metadata extractor for Krita files](https://invent.kde.org/frameworks/kfilemetadata/-/merge_requests/97), which means certain information about your Krita artwork can show up in Dolphin, Baloo and other programs that can take advantage of it! This includes helpful information such as canvas width, height and creation date.
+{{< add "feature" >}} I added [a metadata extractor for Krita files](https://invent.kde.org/frameworks/kfilemetadata/-/merge_requests/97), which means certain information about your Krita artwork can show up in Dolphin, Baloo and other programs that can take advantage of it! This includes helpful information such as canvas width, height and creation date.
 
 ![A slightly outdated screenshot, but showing off some of the metadata it can extract](krita-extract.webp)
 
-Soon, the Language and Region settings [will support the `$LANGUAGE` environment variable](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2946). This only affects users who did not configure the language explicitly from KDE, like those coming from another computing environment. We already supported loading your pre-existing language from `$LANG`. Included in that merge request is a fix that stops an erroneous warning message telling you that your language isn't supported, even though it clearly is.
+{{< add "feature" >}} Soon, the Language and Region settings [will support the `$LANGUAGE` environment variable](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2946). This only affects users who did not configure the language explicitly from KDE, like those coming from another computing environment. We already supported loading your pre-existing language from `$LANG`. Included in that merge request is a fix that stops an erroneous warning message telling you that your language isn't supported, even though it clearly is.
 
 ## Plasma SDK
 
-For new users of the Plasma SDK, [there is now a clearer and more helpful message when you start](https://invent.kde.org/plasma/plasma-sdk/-/merge_requests/75) `plasmoidviewer` without an applet specified.
+{{< add "feature" >}} For new users of the Plasma SDK, [there is now a clearer and more helpful message when you start](https://invent.kde.org/plasma/plasma-sdk/-/merge_requests/75) `plasmoidviewer` without an applet specified.
 
 ```
 $ plasmoidviewer
 An applet name or path must be specified, e.g. --applet org.kde.plasma.analogclock
 ````
 
-I proposed [making the icon name selectable](https://invent.kde.org/plasma/plasma-sdk/-/merge_requests/76), because I can't stop myself from clicking on it!
+{{< add "feature" >}} I proposed [making the icon name selectable](https://invent.kde.org/plasma/plasma-sdk/-/merge_requests/76), because I can't stop myself from clicking on it!
 
 ![Screenshot of selecting the icon name in Cuttlefish.](cuttlefish-select.webp)
 
@@ -59,26 +59,26 @@ The concept is already working in the KCM, but it looks a little off right now a
 
 # Tokodon
 
-Many users (including myself) have been experiencing crashes because of the video support added in the last release. QtMultimedia - the library we used for video support - in Qt5 is frustratingly buggy, but has improved in Qt6. Unfortunately, we still have a few more months before KDE Gear applications like Tokodon can switch to Qt6 only and we need a solution for the crashes _now_. I started [porting Tokodon's video support to mpv](https://invent.kde.org/network/tokodon/-/merge_requests/222) which is also used in PlasmaTube!
+{{< add "feature" >}} Many users (including myself) have been experiencing crashes because of the video support added in the last release. QtMultimedia - the library we used for video support - in Qt5 is frustratingly buggy, but has improved in Qt6. Unfortunately, we still have a few more months before KDE Gear applications like Tokodon can switch to Qt6 only and we need a solution for the crashes _now_. I started [porting Tokodon's video support to mpv](https://invent.kde.org/network/tokodon/-/merge_requests/222) which is also used in PlasmaTube!
 
 Playing videos and GIFs should be less crashy, but with worse scrolling performance. However, I worked hard to make sure this only affects auto-play, so if you don't that option enabled then you shouldn't notice a difference. This change is almost ready and should appear in the next release, but it lacks testing on Android.
 
-You can now [change certain account preferences](https://invent.kde.org/network/tokodon/-/merge_requests/238), but the selection is limited due to lack of a proper API. These are preferences that were supported before, but now you can change them from within Tokodon.
+{{< add "feature" >}} You can now [change certain account preferences](https://invent.kde.org/network/tokodon/-/merge_requests/238), but the selection is limited due to lack of a proper API. These are preferences that were supported before, but now you can change them from within Tokodon.
 
 ![The preferences you can tweak in Tokodon](tokodon-prefs.webp)
 
 And a whole slew of smaller stuff, some which are appearing in the next bugfix release:
 
-* [Link previews are no longer broken](https://invent.kde.org/network/tokodon/-/merge_requests/246).
-* When switching between toplevel pages (Home, Explore, etc), [clear the entire page stack instead of part of it](https://invent.kde.org/network/tokodon/-/merge_requests/244).
-* The duplicate account [bug should _finally_ be fixed](https://invent.kde.org/network/tokodon/-/merge_requests/229)!
-* [Fix icons on non-KDE environments, such as GNOME](https://invent.kde.org/network/tokodon/-/merge_requests/228).
+* {{< add "bugfix" >}} [Link previews are no longer broken](https://invent.kde.org/network/tokodon/-/merge_requests/246).
+* {{< add "bugfix" >}} When switching between toplevel pages (Home, Explore, etc), [clear the entire page stack instead of part of it](https://invent.kde.org/network/tokodon/-/merge_requests/244).
+* {{< add "bugfix" >}} The duplicate account [bug should _finally_ be fixed](https://invent.kde.org/network/tokodon/-/merge_requests/229)!
+* {{< add "bugfix" >}} [Fix icons on non-KDE environments, such as GNOME](https://invent.kde.org/network/tokodon/-/merge_requests/228).
 
 ![Tokodon on GNOME!](gnome-tokodon.webp)
 
-For the current and future contributors, I started working on better and more detailed documentation. The first two areas I covered was [timeline models](https://invent.kde.org/network/tokodon/-/merge_requests/237) and the [account classes](https://invent.kde.org/network/tokodon/-/merge_requests/236)!
+{{< add "feature" >}} For the current and future contributors, I started working on better and more detailed documentation. The first two areas I covered was [timeline models](https://invent.kde.org/network/tokodon/-/merge_requests/237) and the [account classes](https://invent.kde.org/network/tokodon/-/merge_requests/236)!
 
-In terms of starting even more future work, I started implementing [QtKeychain support, and rewriting the current, and buggy, account saving mechanism with KConfig](https://invent.kde.org/network/tokodon/-/merge_requests/248). This will hopefully land in the next release, and fix a whole slew of nagging security and account duplication bugs.
+{{< add "feature" >}} In terms of starting even more future work, I started implementing [QtKeychain support, and rewriting the current, and buggy, account saving mechanism with KConfig](https://invent.kde.org/network/tokodon/-/merge_requests/248). This will hopefully land in the next release, and fix a whole slew of nagging security and account duplication bugs.
 
 # qqc2-desktop-style
 
@@ -91,7 +91,7 @@ Warning: file:///home/josh/kde6/usr/lib/qml/org/kde/desktop/private/MobileCursor
 Warning: file:///home/josh/kde6/usr/lib/qml/org/kde/desktop/private/MobileCursor.qml:33:13: Unable to assign [undefined] to bool (file:///home/josh/kde6/usr/lib/qml/org/kde/desktop/private/MobileCursor.qml:33, )
 ```
 
-I [fixed that](https://invent.kde.org/frameworks/qqc2-desktop-style/-/merge_requests/254)! It also [needs these ECM changes to work](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/359). It turns out ECMQmlModule didn't handle singleton types, and other nagging problems that qqc2-desktop-style needed. I've been dabbling in this module for the past month or so so it's exciting to be able to help here.
+{{< add "bugfix" >}} I [fixed that](https://invent.kde.org/frameworks/qqc2-desktop-style/-/merge_requests/254)! It also [needs these ECM changes to work](https://invent.kde.org/frameworks/extra-cmake-modules/-/merge_requests/359). It turns out ECMQmlModule didn't handle singleton types, and other nagging problems that qqc2-desktop-style needed. I've been dabbling in this module for the past month or so so it's exciting to be able to help here.
 
 # Kiten
 
@@ -127,8 +127,10 @@ In terms of KDE packaging issues in distributions, I opened up two this month:
 
 # Akademy 2023
 
-I'm also attending [Akademy](https://akademy.kde.org/) this year in Thessaloniki! My passport was delivered this month, which is strangely hard to get in the USA (currently).
+I'm also attending [Akademy](https://akademy.kde.org/) this year in Thessaloniki! My passport was delivered this month, which is strangely hard to get in the USA (currently.)
 
 {{< stoot "mastodon.art" "110391772254719472" >}}
 
 I booked my accommodations last week, so I'm excited to see everyone in-person in July! This is my first time traveling outside of the North American continent, and to Europe no less. I'll be documenting my experience traveling and at Akademy, but I'm not sure what format it'll be in yet.
+
+{{< series-nav "kde-april2023" "kde-june2023" >}}

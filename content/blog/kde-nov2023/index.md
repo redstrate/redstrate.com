@@ -140,3 +140,5 @@ Found lots more missing Bugzilla links in Invent, and did some more README updat
 ![The new calibrator](calibrator.webp)
 
 See you in December!
+
+{{< series-nav "kde-oct2023" "kde-dec2023" >}}

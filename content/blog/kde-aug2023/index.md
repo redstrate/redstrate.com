@@ -177,3 +177,5 @@ Thanks to everyone who helped review and push these along!
 For Akkoma users, [I contributed limited support for the Mastodon Preferences API](https://akkoma.dev/AkkomaGang/akkoma/pulls/625)! This is useful for Tokodon and other clients.
 
 I fixed a [qmlformat bug that added an extra space after target bindings](https://codereview.qt-project.org/c/qt/qtdeclarative/+/494976). I hinted at what else we need to work on before qmlformat can be adopted in KDE [here](https://invent.kde.org/teams/automation/issues/-/issues/7#note_743345).
+
+{{< series-nav "kde-july2023" "kde-sept2023" >}}
