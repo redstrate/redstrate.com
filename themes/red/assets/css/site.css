@@ -563,3 +563,7 @@ model-viewer {
 .add-release {
     background-color: #65bbdd;
 }
+
+.toot-card-image-image {
+    width: 50%;
+}

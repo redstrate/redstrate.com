@@ -12,7 +12,9 @@ series:
 - My Work in KDE
 ---
 
-This is a lighter month due to holidays (and also I'm trying not to burn out), but I tried to fit in a bit of KDE anyway. Oops, it's all bugfixes due to feature freeze!
+This is a lighter month due to holidays (and also I'm trying not to burn out), but I tried to fit in a bit of KDE anyway. I's all bugfixes anyway because of the feature freeze!
+
+Not mentioned is a bunch of really boring busywork like unbreaking the stable branches of Gear applications due to the CI format changing.
 
 # Tokodon
 
@@ -50,7 +52,7 @@ I also went around and fixed up a bunch of other mobile applications with Androi
 
 # Outside of KDE
 
-[Nagged for a new QtKeychain release](https://github.com/frankosterfeld/qtkeychain/issues/244) due to a critical bug that would cause applications to never open KWallet5. Please also nag your distributions to package 0.14.2 soon! Anything using QtKeychain 0.14.1 or below won't work in Plasma 6. This doesn't affect people in the dev session, because QtKeychain is built from git.
+[Nagged for a new QtKeychain release](https://github.com/frankosterfeld/qtkeychain/issues/244) due to a critical bug that would cause applications to never open KWallet5. Please also nag your distributions to package 0.14.2 soon! Anything using QtKeychain 0.14.1 or below won't work in Plasma 6. This doesn't affect people in the dev session, because QtKeychain should be built from git.
 
 Helping the Gentoo KDE Team with packaging Plasma 6 and KDE Gear 6. I managed to update my desktop to Plasma 6 and submitted fixes to get it closer to working. I also added [Arianna](https://github.com/gentoo/kde/pull/954), [PlasmaTube](https://github.com/gentoo/kde/pull/952) and [MpvQt](https://github.com/gentoo/kde/pull/945) packages.
 
