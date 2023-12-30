@@ -83,3 +83,5 @@ I recently had some trouble attempting to decompile the DX11 DXBC shader bytecod
 {{< stoot "mastodon.art" "111110339774483271" >}}
 
 So I took the time to splice together a new library called [dxbc](https://git.sr.ht/~redstrate/dxbc) (yes, I know very creative name!) It's the DXBC decompiler used in DXVK, usable in library form. I plan on integrating this with Novus soon, so it can load the shader files from the game.
+
+{{< series-nav "" "ffxiv-oct2023" >}}

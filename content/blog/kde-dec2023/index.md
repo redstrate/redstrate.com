@@ -1,7 +1,7 @@
 ---
 title: "My work in KDE for December 2023"
 date: 2023-12-30
-draft: true
+draft: false
 tags:
 - Linux
 - Open Source
@@ -12,7 +12,7 @@ series:
 - My Work in KDE
 ---
 
-This is a lighter month due to holidays (and also I'm trying not to burn out), but I tried to fit in a bit of KDE anyway. I's all bugfixes anyway because of the feature freeze!
+This is a lighter month due to holidays (and also I'm trying not to burn out), but I tried to fit in a bit of KDE anyway. It's all bugfixes anyway because of the feature freeze!
 
 Not mentioned is a bunch of really boring busywork like unbreaking the stable branches of Gear applications due to the CI format changing.
 
