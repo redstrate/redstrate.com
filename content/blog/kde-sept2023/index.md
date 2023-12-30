@@ -66,7 +66,7 @@ Finally, a few [media attachment improvements](https://invent.kde.org/network/to
 
 I'm attempting to fix the [lack of formatting when re-editing messages](https://invent.kde.org/network/neochat/-/merge_requests/1283). It won't be finished this month, but I'm close!
 
-{{< video "fixed.webm" >}}
+{{< tube "https://tube.ryne.moe/videos/embed/5cf875b8-737f-4fe5-866b-5309c53c00b9" >}}
 
 Two event source dialog changes, including it [not showing any data](https://invent.kde.org/network/neochat/-/merge_requests/1284) and [only showing the option if you have developer tools enabled](https://invent.kde.org/network/neochat/-/merge_requests/1285).
 

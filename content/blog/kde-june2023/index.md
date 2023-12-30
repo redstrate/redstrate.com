@@ -70,7 +70,7 @@ The two player modes (minimized and maximized) [are now stored as a binary flag]
 
 I improved [the video loading experience a bit](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/47). Now when you explicitly stop a video it doesn't momentarily reappear too soon when you click on another one. This doesn't affect clicking between videos while it's still playing or paused though.
 
-{{< video "loading.webm" >}}
+{{< tube "https://tube.ryne.moe/videos/embed/4c9413c9-6ad2-47ef-8ef3-ff0d27bafb12" >}}
 
 The [videos on a channel page](https://invent.kde.org/multimedia/plasmatube/-/merge_requests/44) load now! It's not categorized or anything yet, but it's a good start.
 
@@ -121,7 +121,7 @@ Now you can [share posts, images, and profiles directly from Tokodon](https://in
 
 I'm also working on sharing _through_ Tokodon! It still needs some work. My current plan is to have it open the composer if already running, or open in a standalone composer window if it isn't.
 
-{{< video "share.webm" >}}
+{{< tube "https://tube.ryne.moe/videos/embed/c6297c5a-26a6-4fd8-9c0e-055e66522bdc" >}}
 
 See you next month!
 

@@ -44,15 +44,15 @@ I added support for [focal points in media attachments](https://invent.kde.org/n
 
 You can set the focal points in Tokodon as well! I really needed this feature because I post art on Mastodon, and had to use Mastodon Web because that was the only place I could set focal points.
 
-{{< video "focus-editor.webm" >}}
+{{< tube "https://tube.ryne.moe/w/wiUG3bnkbKzuussxWznvUz" >}}
 
 I added a new floating button on the timeline [to scroll back to the beginning](https://invent.kde.org/network/tokodon/-/merge_requests/323). This feature will appear in 23.12.
 
 ![The new scroll back button.](floating-button.webp)
 
-Now you can [now share to the Fediverse via Tokodon](https://invent.kde.org/network/tokodon/-/merge_requests/324)!. Right now it only supports URLs, but this can be expanded in the future. This feature will appear in 23.12.
+Now you can [now share to the Fediverse via Tokodon](https://invent.kde.org/network/tokodon/-/merge_requests/324)! Right now it only supports URLs, but this can be expanded in the future. This feature will appear in 23.12.
 
-{{< video "share.webm" >}}
+{{< tube "https://tube.ryne.moe/videos/embed/c6297c5a-26a6-4fd8-9c0e-055e66522bdc" >}}
 
 When it comes to media in posts, it should be much easier to add them. Now [you can drop or paste them into the composer](https://invent.kde.org/network/tokodon/-/merge_requests/325)! This feature will appear in 23.12.
 
@@ -87,7 +87,7 @@ Sometimes I wonder if it's worth describing each bug I fix, but I think it's imp
 
 Here's a list of features I'm working on, but are not quite finished yet. The first is **Cross-account actions!** This means you can interact with a post from another account, without the hassle of searching for it again and losing your place on the timeline.
 
-{{< video "cross-account.mp4" >}}
+{{< tube "https://tube.ryne.moe/videos/embed/81249d54-4207-42cc-a57c-e09ba7232c43" >}}
 
 Ever wanted to still receive notifications, even though Tokodon is closed? Say hello to **Push Notifications!** (powered by [KUnifiedPush](https://api.kde.org/kunifiedpush/html/index.html). There's also going to be more granular notification settings, and the ability to turn off all notifications for an account.
 
