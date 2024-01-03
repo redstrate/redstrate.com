@@ -17,7 +17,8 @@
     <div class="buttons">
     {{ range .Data.Pages.ByDate.Reverse }}
         <div class="blurb">
-            <h3 class="project-header">{{ .Title }}</h3>
+            <h3 class="project-header">{{ .Title }}<p style="float:right;margin:0">{{ .Date.Format "2006" }}</p></h3>
+
 
             <p class="project-desc">{{ .Summary }}</p>
 
