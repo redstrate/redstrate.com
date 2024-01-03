@@ -3,7 +3,7 @@
         {
             "id": "network/neochat",
             "name": "NeoChat",
-            "description": "Misc interface changes.",
+            "description": "Added UnifiedPush support, misc bugs and interface changes.",
             "type": "kde"
         },
         {
@@ -15,13 +15,13 @@
         {
             "id": "libraries/kirigami-addons",
             "name": "Kirigami Add-ons",
-            "description": "Added About KDE page, misc fixes.",
+            "description": "About KDE page, lots of bug fixes.",
             "type": "kde"
         },
         {
             "id": "knockout-community/knockout-front",
             "name": "Knockout Web Client",
-            "description": "Improved embedded content warnings.",
+            "description": "Added Mastodon embeds, improved embedded content warnings.",
             "type": "gitlab"
         },
         {
@@ -33,7 +33,7 @@
         {
             "id": "plasma/kwin",
             "name": "KWin",
-            "description": "Added pen tilt & rotation support.",
+            "description": "Fixed pen tilt, other misc bug fixes.",
             "type": "kde"
         },
         {
@@ -45,13 +45,13 @@
         {
             "id": "network/tokodon",
             "name": "Tokodon",
-            "description": "Fixed and triaged numerous bugs, misc features.",
+            "description": "Maintainer, added numerous features and fixed bugs.",
             "type": "kde"
         },
         {
             "id": "gentoo/gentoo",
             "name": "Gentoo",
-            "description": "Misc proxy maintainer package updates."
+            "description": "Proxy maintainer package updates."
         },
         {
             "id": "goatcorp/dalamud",
@@ -68,7 +68,7 @@
         {
             "id": "PrismLauncher/PrismLauncher",
             "name": "PrismLauncher",
-            "description": "Numerous interface changes, notably the about page.",
+            "description": "The about page, icon fixes, and cmark support for better Markdown rendering.",
             "type": "github"
         },
         {
@@ -92,7 +92,7 @@
         {
             "id": "plasma/plasma-desktop",
             "name": "Plasma Desktop",
-            "description": "Added activity pins to launchers.",
+            "description": "Plasma 6 applet porting, added activity pins to launchers, bugfixing.",
             "type": "kde"
         },
         {
