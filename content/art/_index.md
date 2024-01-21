@@ -17,6 +17,7 @@ featured:
   date: 2023-07-02
   title: burger time
 years:
+- 2024
 - 2023
 - 2022
 - 2021

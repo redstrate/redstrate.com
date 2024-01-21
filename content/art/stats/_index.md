@@ -8,7 +8,7 @@ years:
 - year: 2022
   num: 47
 - year: 2023
-  num: 41
+  num: 40
 - year: 2020
   num: 29
 - year: 2021
@@ -17,6 +17,8 @@ years:
   num: 7
 - year: 2016
   num: 7
+- year: 2024
+  num: 1
 - year: 2017
   num: 1
 characters:
