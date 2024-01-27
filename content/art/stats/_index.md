@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 220
+total: 224
 years:
 - year: 2019
   num: 60
@@ -18,7 +18,7 @@ years:
 - year: 2016
   num: 7
 - year: 2024
-  num: 2
+  num: 6
 - year: 2017
   num: 1
 characters:
@@ -28,20 +28,20 @@ characters:
   num: 14
 - name: Merume
   num: 10
+- name: Mari
+  num: 8
 - name: Sakura
   num: 7
 - name: Asuka
   num: 6
-- name: Mari
-  num: 6
 - name: Mythra
+  num: 4
+- name: Mario
   num: 4
 - name: Knocky-chan
   num: 3
-- name: Byleth
-  num: 2
-- name: Elisanne
-  num: 2
+- name: Vineshroom
+  num: 3
 tags:
 - name: technical
   num: 1
@@ -62,5 +62,5 @@ tags:
 - name: fan art
   num: 47
 - name: sketch
-  num: 105
+  num: 107
 ---
