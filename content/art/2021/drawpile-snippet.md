@@ -7,5 +7,6 @@ alt_text: "From top left to bottom right:An adventurer finding a key in a chest.
 slug: drawpile-snippet
 arttags:
 - drawpile
+- sketch
 program: Drawpile
 ---

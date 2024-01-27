@@ -8,5 +8,6 @@ alt_text: "catgirl in a swimsuit"
 slug: miqote-swimsuit
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

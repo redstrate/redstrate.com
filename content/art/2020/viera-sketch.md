@@ -8,5 +8,6 @@ characters:
 - Juritta
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

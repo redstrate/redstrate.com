@@ -7,5 +7,6 @@ alt_text: "A woman with shoulder length black hair is holding a book, ready to c
 slug: ffxiv-sketches
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

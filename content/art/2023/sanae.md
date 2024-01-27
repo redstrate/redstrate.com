@@ -8,7 +8,6 @@ slug: sanae
 characters:
 - Sanae
 arttags:
-- fan art
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/110657265743066536
 pixiv_url: https://www.pixiv.net/artworks/109630406

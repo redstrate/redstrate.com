@@ -8,7 +8,6 @@ slug: mel
 characters:
 - Mel
 arttags:
-- fan art
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 pixiv_url: https://www.pixiv.net/artworks/109600265

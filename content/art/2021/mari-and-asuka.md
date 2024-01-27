@@ -12,5 +12,6 @@ arttags:
 - fan art
 pixiv_url: https://www.pixiv.net/en/artworks/95031741
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/mari-asuka
+program: Procreate
 ---
 This is my first proper painted character piece, and I'm pretty happy with how it turned out still. Why does she need a knife on the beach though?

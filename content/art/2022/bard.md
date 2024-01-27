@@ -7,6 +7,8 @@ alt_text: "A bunny girl is looking at the viewer, and pulling back a bow towards
 slug: bard
 characters:
 - Juritta
+arttags:
+- fan art
 pixiv_url: https://www.pixiv.net/en/artworks/100622631
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud
 program: Krita

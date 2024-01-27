@@ -8,6 +8,5 @@ alt_text: "In an alleyway, a river is cutting through it with rushing water when
 slug: water-test
 arttags:
 - landscape
-- sketch
 program: Procreate
 ---

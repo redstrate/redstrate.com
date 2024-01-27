@@ -7,5 +7,6 @@ alt_text: "A 3D model of a desk, and a really round chair. A picture of catnip i
 slug: businesscat
 arttags:
 - 3d
+- fan art
 program: Blender
 ---

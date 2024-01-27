@@ -7,6 +7,8 @@ alt_text: "Drawing of a Viera from FFXIV, with short dark brown hair tied up in 
 slug: itscoldhere
 characters:
 - Juritta
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/111794271545458755
 program: Krita
 ---

@@ -7,6 +7,7 @@ alt_text: "two catgirls (miqote), the left one is poking a small cactus enemy. t
 slug: cactaur
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109389204898858000
 program: Krita
 ---

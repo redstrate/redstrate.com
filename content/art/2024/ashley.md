@@ -7,6 +7,8 @@ alt_text: "Drawing of Ashley Graham, a character in Resident Evil 4. She has sho
 slug: ashley
 characters:
 - Ashley
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/111316396570430914
 pixiv_url: https://www.pixiv.net/en/artworks/115516304
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/president-s-daughter

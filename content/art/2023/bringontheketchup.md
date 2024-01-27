@@ -8,6 +8,8 @@ slug: bringontheketchup
 characters:
 - PaRappa the Rapper
 - Beard Burger Master
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/111480082526592412
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/bring-on-the-ketchup
 program: Krita

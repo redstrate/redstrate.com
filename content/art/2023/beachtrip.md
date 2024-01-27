@@ -7,7 +7,10 @@ alt_text: "A comic featuring a young woman with long hair, in a pale yellow two 
 slug: beachtrip
 characters:
 - Mysterious Swordswoman
+arttags:
+- comic
 mastodon_url: https://mastodon.art/@redstrate/111162313187012517
+pixiv_url: https://www.pixiv.net/en/artworks/112209810
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/beach-trip
 program: Krita
 ---

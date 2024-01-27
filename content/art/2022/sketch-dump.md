@@ -8,6 +8,7 @@ slug: sketch-dump
 characters:
 - Merume
 - Juritta
+- Dr. Frizzly
 arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109434559164546455

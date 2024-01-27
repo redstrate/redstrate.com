@@ -8,7 +8,6 @@ slug: nikki
 characters:
 - Nikki
 arttags:
-- fan art
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/110646280771834242
 pixiv_url: https://www.pixiv.net/en/artworks/109600265

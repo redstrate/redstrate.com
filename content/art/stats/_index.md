@@ -36,31 +36,35 @@ characters:
   num: 6
 - name: Mythra
   num: 4
+- name: Dr. Frizzly
+  num: 3
 - name: Knocky-chan
   num: 3
 - name: Byleth
   num: 2
-- name: Elisanne
-  num: 2
 tags:
 - name: technical
   num: 1
+- name: comic
+  num: 2
+- name: character sheet
+  num: 2
 - name: animation
   num: 2
-- name: request
-  num: 3
 - name: oil painting
   num: 4
 - name: artfight
   num: 7
 - name: landscape
   num: 8
+- name: request
+  num: 9
 - name: drawpile
   num: 10
 - name: 3d
   num: 19
 - name: fan art
-  num: 47
+  num: 50
 - name: sketch
-  num: 105
+  num: 109
 ---

@@ -7,5 +7,6 @@ alt_text: "A very softly painted tree, complete with nice snowy mountains in the
 slug: tree
 arttags:
 - drawpile
+- landscape
 program: Drawpile
 ---

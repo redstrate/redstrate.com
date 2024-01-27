@@ -8,7 +8,6 @@ slug: hunter
 characters:
 - Hunter
 arttags:
-- fan art
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/snow-hunting

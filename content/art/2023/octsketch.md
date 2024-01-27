@@ -17,6 +17,7 @@ characters:
 - Pomni
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/111316396570430914
 program: Krita
 ---

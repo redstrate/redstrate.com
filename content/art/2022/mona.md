@@ -9,6 +9,7 @@ characters:
 - Morgana
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109421857086877683
 program: Procreate
 ---

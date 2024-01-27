@@ -9,6 +9,7 @@ characters:
 - Juritta
 arttags:
 - sketch
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/109355077545640729
 program: Krita
 ---

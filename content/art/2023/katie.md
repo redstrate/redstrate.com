@@ -7,8 +7,6 @@ alt_text: "A woman with her arms crossed, holding her chest up. She has medium l
 slug: katie
 characters:
 - Katie
-arttags:
-- fan art
 mastodon_url: https://mastodon.art/@redstrate/110606818674511646
 program: Krita
 ---

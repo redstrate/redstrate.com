@@ -6,7 +6,7 @@ filename: /art/emily.webp
 alt_text: "A drawing of a dog, wallaby thing. They are riding a skateboard in a skate park during sunset and holding a pizza. They are grimacing at you, holding a slice of pizza half eaten."
 slug: emily
 arttags:
-- fan art
+- request
 mastodon_url: https://mastodon.art/@redstrate/111041558452790638
 program: Krita
 ---

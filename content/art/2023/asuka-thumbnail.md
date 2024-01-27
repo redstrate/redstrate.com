@@ -7,6 +7,8 @@ alt_text: "A plastic Asuka is getting mishandled (by me). She looks very worried
 slug: asuka-thumbnail
 characters:
 - Asuka
+arttags:
+- fan art
 program: Krita
 ---
 The thumbnail for my video "Ruining a $80 figure by putting it together badly"

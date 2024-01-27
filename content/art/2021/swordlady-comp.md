@@ -9,5 +9,6 @@ characters:
 - Mysterious Swordswoman
 arttags:
 - drawpile
+- sketch
 program: Drawpile
 ---

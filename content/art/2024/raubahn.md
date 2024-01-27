@@ -7,6 +7,8 @@ alt_text: "Drawing of Raubahn, a character in Final Fantasy XIV. He's a dark ski
 slug: raubahn
 characters:
 - Raubahn
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/111825144287076706
 pixiv_url: https://www.pixiv.net/artworks/115516281
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/the-bull-of-ala-mhigo

@@ -9,6 +9,5 @@ characters:
 - Knocky-chan
 arttags:
 - sketch
-- fan art
 program: Procreate
 ---

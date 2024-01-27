@@ -8,7 +8,6 @@ slug: birdington
 characters:
 - Sir Birdington The Banker
 arttags:
-- fan art
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/110646280771834242
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/robbery
