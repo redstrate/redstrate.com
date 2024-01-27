@@ -1,8 +1,8 @@
 {
     "alt_text": "A rochs looking man is sitting upon a bright red bike, pointing his sword at you cockily.",
-    "characters": [
-        "drawpile"
-    ],
     "date": "2020",
-    "program": "Drawpile"
+    "program": "Drawpile",
+    "tags": [
+        "drawpile"
+    ]
 }

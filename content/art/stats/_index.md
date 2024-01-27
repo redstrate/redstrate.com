@@ -28,20 +28,20 @@ characters:
   num: 14
 - name: Merume
   num: 10
-- name: Mari
-  num: 8
 - name: Sakura
   num: 7
 - name: Asuka
   num: 6
+- name: Mari
+  num: 6
 - name: Mythra
-  num: 4
-- name: Mario
   num: 4
 - name: Knocky-chan
   num: 3
-- name: Vineshroom
-  num: 3
+- name: Byleth
+  num: 2
+- name: Elisanne
+  num: 2
 tags:
 - name: technical
   num: 1
@@ -56,11 +56,11 @@ tags:
 - name: landscape
   num: 8
 - name: drawpile
-  num: 9
+  num: 10
 - name: 3d
   num: 19
 - name: fan art
   num: 47
 - name: sketch
-  num: 107
+  num: 105
 ---
