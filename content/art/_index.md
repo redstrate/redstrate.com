@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
-- filename: bringontheketchup.webp
-  date: 2023-11-26
-  title: Bring on the ketchup!
-- filename: newsakura.webp
-  date: 2023-09-24
-  title: new sakura
-- filename: mel.webp
-  date: 2023-07-02
-  title: burger time
+- filename: raubahn.webp
+  date: 2024-01-26
+  title: Bull of Ala Mhigo
+- filename: electrical.webp
+  date: 2024-01-26
+  title: Electrical
+- filename: moonlight.webp
+  date: 2023-11-29
+  title: Moonlight
 years:
 - 2024
 - 2023
