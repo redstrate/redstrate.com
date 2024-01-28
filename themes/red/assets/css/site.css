@@ -153,8 +153,8 @@ body {
         filter: invert(100%);
     }
 
-    .isso-thread-heading {
-        color: #fbeded;
+    .isso-thread-heading, .isso-author {
+        color: #fbeded !important;
     }
 }
 
