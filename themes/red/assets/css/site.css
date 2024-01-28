@@ -152,6 +152,10 @@ body {
     .external-link {
         filter: invert(100%);
     }
+
+    .isso-thread-heading {
+        color: #fbeded;
+    }
 }
 
 a:link {
