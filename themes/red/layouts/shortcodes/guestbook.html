@@ -1,4 +1,16 @@
 {{ if hugo.IsProduction }}
+
+<style>
+#isso-root {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.isso-comment {
+    flex: 0;
+    width: 100%;
+}
+</style>
+
 <script
     data-isso="//{{ $.Site.Params.isso_url }}/"
     data-isso-title=""
