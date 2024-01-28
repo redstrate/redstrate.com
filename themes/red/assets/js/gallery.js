@@ -2,7 +2,9 @@ imagesLoaded(document.querySelector('.grid'), function(instance) {
     new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer'
+        gutter: '.gutter-sizer',
+        transitionDuration: 0,
+        resize: true
     });
 });
 
@@ -12,7 +14,9 @@ if (element.length > 0) {
         new Masonry('.second-grid', {
             itemSelector: '.grid-item',
             columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer'
+            gutter: '.gutter-sizer',
+            transitionDuration: 0,
+            resize: true
         });
     });
 }
