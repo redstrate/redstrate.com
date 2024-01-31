@@ -56,4 +56,4 @@ I also went around and fixed up a bunch of other mobile applications with Androi
 
 Helping the Gentoo KDE Team with packaging Plasma 6 and KDE Gear 6. I managed to update my desktop to Plasma 6 and submitted fixes to get it closer to working. I also added [Arianna](https://github.com/gentoo/kde/pull/954), [PlasmaTube](https://github.com/gentoo/kde/pull/952) and [MpvQt](https://github.com/gentoo/kde/pull/945) packages.
 
-{{< series-nav "kde-nov2023" >}}
+{{< series-nav "kde-nov2023" "kde-jan2024" >}}
