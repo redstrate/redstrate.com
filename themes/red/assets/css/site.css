@@ -53,6 +53,11 @@
         flex-direction: column;
         flex-grow: 1;
     }
+
+    #nav-menu > summary {
+        visibility: hidden;
+        height: 0;
+    }
 }
 
 .gutter-sizer {
