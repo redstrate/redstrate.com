@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 224
+total: 225
 years:
 - year: 2019
   num: 60
@@ -13,12 +13,12 @@ years:
   num: 29
 - year: 2021
   num: 27
+- year: 2024
+  num: 7
 - year: 2018
   num: 7
 - year: 2016
   num: 7
-- year: 2024
-  num: 6
 - year: 2017
   num: 1
 characters:
@@ -36,12 +36,12 @@ characters:
   num: 6
 - name: Mythra
   num: 4
+- name: Tifa
+  num: 3
 - name: Dr. Frizzly
   num: 3
 - name: Knocky-chan
   num: 3
-- name: Byleth
-  num: 2
 tags:
 - name: technical
   num: 1

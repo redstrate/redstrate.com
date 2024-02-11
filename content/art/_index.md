@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
-- filename: raubahn.webp
-  date: 2024-01-26
-  title: Bull of Ala Mhigo
+- filename: costadelsol.webp
+  date: 2024-02-10
+  title: Costa del Sol
 - filename: electrical.webp
   date: 2024-01-26
   title: Electrical
-- filename: moonlight.webp
-  date: 2023-11-29
-  title: Moonlight
+- filename: raubahn.webp
+  date: 2024-01-26
+  title: Bull of Ala Mhigo
 years:
 - 2024
 - 2023
