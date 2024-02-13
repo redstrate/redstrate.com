@@ -8,48 +8,62 @@
         {{ $base = "animation" }}
 {{ end }}
 
-{{ $full := resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
+{{ $month := 1 }}
+{{ $year := 1 }}
+
+{{ if .Params.date }}
+        {{ $split := split .Params.date "-" }}
+        {{ $year = int (index $split 0) }}
+        {{ $month = int (index $split 3) }}
+{{ end }}
+
+{{ $use_newformat := false }}
+{{ if ge (int $year) 2023 }}
+        {{ $use_newformat = true }}
+{{ end }}
+
+{{ $full := "" }}
+{{ $jpeg := "" }}
+{{ if and $use_newformat (eq $base "art") }}
+        {{ $full = printf "https://images.redstrate.com/thumb/%s.avif" .Params.slug }}
+        {{ $jpeg = printf "https://images.redstrate.com/thumb/%s.jpg" .Params.slug }}
+{{ else }}
+        {{ $full = resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
+{{ end }}
+
 {{ if $full }}
         {{ $filename_without_ext := .Params.slug }}
 
-        {{ $month := 1 }}
-        {{ $year := 1 }}
-
-        {{ if .Params.date }}
-                {{ $split := split .Params.date "-" }}
-                {{ $month = index $split 0 }}
-                {{ $year = index $split 3 }}
-        {{ end }}
-
         <a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
 
-        {{ $path := printf "/%s/%d/%.2d/%s" $base (int $year) (int $month) $filename_without_ext}}
-                {{ $title := .Params.title }}
-                {{ $image := (resources.Get (printf "%s/%s.webp" $base .Params.slug)).Resize "400x webp q90 drawing" }}
+        {{ $title := .Params.title }}
 
-                {{ if .Params.nsfw }}
-                        {{ $image = $image | images.Filter (images.GaussianBlur 6) (images.Pixelate 8) }}
+        {{ with $full }}
+                {{ if $.Params.threed }}
+                        {{ with resources.Get "3d.png" }}
+                                <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        {{ end }}
                 {{ end }}
 
-                {{ with $image }}
-                        {{ if $.Params.threed }}
-                                {{ with resources.Get "3d.png" }}
-                                        <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
-                                {{ end }}
+                {{ if $.Params.animation }}
+                        {{ with resources.Get "play-circle.png" }}
+                                <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                         {{ end }}
+                {{ end }}
 
-                        {{ if $.Params.animation }}
-                                {{ with resources.Get "play-circle.png" }}
-                                        <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
-                                {{ end }}
-                        {{ end }}
-
-                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}">
+                {{ if and $use_newformat (eq $base "art") }}
+                        <picture>
+                                <source srcset="{{ $full }}" type="image/avif"/>
+                                <img style="width: 100%; height: auto;" alt="{{ $title }}" title="{{ $title }}" src="{{ $jpeg }}"/>
+                        </picture>
                 {{ else }}
-                        <p>Thumbnail not found!</p>
+                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}">
                 {{ end }}
+        {{ else }}
+                <p>Thumbnail not found!</p>
+        {{ end }}
         </a>
 {{ else }}
-        <em>CANNOT FIND {{ .Params.slug }}</em>
+        <em>CANNOT FIND {{ .Params.slug }} {{ $use_newformat }}</em>
 {{ end }}
 
