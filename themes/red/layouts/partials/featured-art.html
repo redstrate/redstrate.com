@@ -2,9 +2,6 @@
 {{ with .Site.GetPage "/art" }}
     {{ range .Param "featured" }}
     <figure class="gallery-fig">
-        {{ $full := resources.Get (printf "art/%s" .filename) }}
-        {{ if $full }}
-
         {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
 
         {{ $month := "1" }}
@@ -16,15 +13,31 @@
             {{ $year = index $split 0 }}
         {{ end }}
 
+        {{ $use_newformat := false }}
+        {{ if ge (int $year) 2023 }}
+                {{ $use_newformat = true }}
+        {{ end }}
+
         {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
 
-        <a href="{{ $path }}" aria-label="Click to view details" class="no-decoration">
+        <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
             {{ $title := .title }}
-            {{ with resources.Get (printf "art/%s" .filename) }}
-            {{ $image := .Resize "500x" }}
-            <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
+
+            {{ if $use_newformat }}
+                    {{ $full := printf "https://images.redstrate.com/thumb/%s.avif" $filename_without_ext }}
+                    {{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" $filename_without_ext }}
+
+                    <picture>
+                        <source srcset="{{ $full }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
             {{ else }}
-            <p>Thumbnail not found!</p>
+                {{ with resources.Get (printf "art/%s" .filename) }}
+                {{ $image := .Resize "500x" }}
+                <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
+                {{ else }}
+                <p>Thumbnail not found!</p>
+                {{ end }}
             {{ end }}
         </a>
 
@@ -33,10 +46,6 @@
                 <i>"{{ . }}"</i>
             {{ end }}
         </figcaption>
-
-        {{ else }}
-            <em>CANNOT FIND {{ .filename }}</em>
-        {{ end }}
     </figure>
     {{ end }}
 {{ end }}
