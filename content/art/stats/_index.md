@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 222
+total: 223
 years:
 - year: 2019
   num: 60
@@ -14,7 +14,7 @@ years:
 - year: 2021
   num: 27
 - year: 2024
-  num: 8
+  num: 9
 - year: 2018
   num: 7
 - year: 2016
@@ -27,7 +27,7 @@ characters:
 - name: Juritta
   num: 14
 - name: Merume
-  num: 10
+  num: 11
 - name: Asuka
   num: 6
 - name: Mari

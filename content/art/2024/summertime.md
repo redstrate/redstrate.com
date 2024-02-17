@@ -7,7 +7,11 @@ alt_text: "Drawing of a young woman with long brown hair, holding a huge sword w
 slug: summertime
 characters:
 - Mysterious Swordswoman
+mastodon_url: https://mastodon.art/@redstrate/111941678917447592
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summertime-in-winter-entry
 program: Krita
 ---
-rushed the background since it's supposed to be transparent :)
+My entry for the Summertime in Winter collab, and rushed the background since it's supposed to be transparent :-)
+
+
+I also made a few mistakes like forgetting her scar which is fixed in this standalone version
