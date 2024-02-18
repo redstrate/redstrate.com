@@ -1,3 +1,17 @@
 {{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    <table>
+        <tr>
+            <th>Age</th>
+            <td>{{ .Params.age }}</td>
+        </tr>
+        <tr>
+            <th>Pronouns</th>
+            <td>{{ .Params.pronouns }}</td>
+        </tr>
+    </table>
+
     {{ partial "art-tag" . }}
 {{ end }}

@@ -113,14 +113,49 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
         return (year, characters, tags)
 
 
+def parse_character_json(output_directory, filename, json_file):
+    print(f"parsed character: {filename}")
+
+    json_data = json.load(json_file)
+
+    base_directory = os.path.join(characters_output_directory, filename)
+    if not os.path.exists(base_directory):
+        os.mkdir(base_directory)
+
+    with open(os.path.join(base_directory, '_index.md'), 'w') as f:
+        f.write('---\n')
+
+        write_field(f, 'layout', 'art-character')
+
+        write_field(f, 'title', json_data["name"])
+
+        if "age" in json_data:
+            write_field(f, 'age', json_data["age"])
+
+        if "pronouns" in json_data:
+            write_field(f, 'pronouns', json_data["pronouns"])
+
+        write_field(f, 'slug', filename)
+
+        f.write('---\n')
+
+        if "description" in json_data:
+            f.write(json_data["description"])
+            f.write('\n')
+
 art_data_directory = '../art'
 threed_data_directory = '../3d'
 animation_data_directory = '../animation'
+characters_data_directory = '../characters'
 art_output_directory = '../content/art'
 guest_art_data_directory = '../guestart'
+characters_output_directory = '../content/characters'
 
 shutil.rmtree(art_output_directory)
 os.mkdir(art_output_directory)
+
+shutil.rmtree(characters_output_directory)
+os.mkdir(characters_output_directory)
 
 collected_years = set()
 year_stats = {}
@@ -161,6 +196,18 @@ for filename in os.listdir(art_data_directory):
 
             collected_years.add(year)
             total_art += 1
+
+for filename in os.listdir(characters_data_directory):
+    f = os.path.join(characters_data_directory, filename)
+
+    if os.path.isfile(f):
+        filename_without_ext = os.path.splitext(filename)[0]
+
+        if filename_without_ext == ".DS_Store" or filename_without_ext == ".directory":
+            continue
+
+        with open(f, "r") as file:
+            parse_character_json(characters_data_directory, filename_without_ext, file)
 
 for filename in os.listdir(threed_data_directory):
     f = os.path.join(threed_data_directory, filename)
