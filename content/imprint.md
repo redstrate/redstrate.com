@@ -23,4 +23,4 @@ cannot turn off, such as when you report a crash.
 # Licensing
 
 All work showcased on this site (including images, source code, etc.) are hereby licensed under
-[CC BY-NC-SA 3.0]({{<ref "/license">}}) _unless_ otherwise specified.
+[CC BY-NC-SA 4.0]({{<ref "/license">}}) _unless_ otherwise specified.
