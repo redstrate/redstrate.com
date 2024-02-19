@@ -9,11 +9,11 @@ Source: https://git.sr.ht/~redstrate/redstrate.com
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
 
-Files: content/* assets/* static/* resources/*
+Files: content/* assets/* static/* resources/* characters/* art/* 3d/* animation/* data/*
 Copyright: 2023 Joshua Goins <josh@redstrate.com>
 License: CC-BY-SA-4.0
 
-Files: README.md .build.yml .gitignore .htmltest.yml config.yaml art/* 3d/* animation/* data/*
+Files: README.md .build.yml .gitignore .htmltest.yml config.yaml
 Copyright: 2023 Joshua Goins <josh@redstrate.com>
 License: CC0-1.0
 
