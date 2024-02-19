@@ -271,11 +271,10 @@ figure figcaption {
 }
 
 .gallery-con {
-    display: flex;
-    flex-wrap: wrap;
     border: 1px dashed gray;
     border-radius: 5px;
     background-color: var(--background-tertiary);
+    padding: 20px;
 }
 
 .generic-con {
