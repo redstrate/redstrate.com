@@ -135,6 +135,9 @@ def parse_character_json(output_directory, filename, json_file):
         if "pronouns" in json_data:
             write_field(f, 'pronouns', json_data["pronouns"])
 
+        if "origin" in json_data:
+            write_field(f, 'origin', json_data["origin"])
+
         write_field(f, 'slug', filename)
 
         f.write('---\n')

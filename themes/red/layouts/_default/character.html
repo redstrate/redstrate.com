@@ -2,16 +2,32 @@
     <h2>{{ .Title }}</h2>
     <hr>
 
+    {{ $has_age := .Params.age }}
+    {{ $has_pronouns := .Params.pronouns }}
+    {{ $has_origin := .Params.origin }}
+
+    {{ if or $has_origin (or $has_age $has_pronouns) }}
     <table>
+        {{ if $has_age }}
         <tr>
             <th>Age</th>
             <td>{{ .Params.age }}</td>
         </tr>
+        {{ end }}
+        {{ if $has_pronouns }}
         <tr>
             <th>Pronouns</th>
             <td>{{ .Params.pronouns }}</td>
         </tr>
+        {{ end }}
+        {{ if $has_origin }}
+        <tr>
+            <th>Origin</th>
+            <td>{{ .Params.origin }}</td>
+        </tr>
+        {{ end }}
     </table>
+    {{ end }}
 
     {{ partial "art-tag" . }}
 {{ end }}

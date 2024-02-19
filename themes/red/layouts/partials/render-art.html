@@ -22,6 +22,10 @@
         {{ $use_newformat = true }}
 {{ end }}
 
+{{ if in .File.Dir "art/guest" }}
+        {{ $use_newformat = false }}
+{{ end }}
+
 {{ $full := "" }}
 {{ $jpeg := "" }}
 {{ if and $use_newformat (eq $base "art") }}

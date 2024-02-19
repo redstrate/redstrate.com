@@ -3,7 +3,7 @@
 
     <hr>
 
-    {{ $paginator := .Paginate .Pages 10 }}
+    {{ $paginator := .Paginate .Pages }}
 
     {{ if eq $paginator.PageNumber 1}}
     {{ .Content }}

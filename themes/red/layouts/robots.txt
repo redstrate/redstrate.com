@@ -18,3 +18,14 @@ Disallow: /
 
 User-agent: FacebookBot
 Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Pinterestbot
+Disallow: /
+
+Sitemap: https://redstrate.com/sitemap.xml

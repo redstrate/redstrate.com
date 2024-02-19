@@ -9,7 +9,9 @@
         {{ $i := 0 }}
         {{- range .Ancestors.Reverse }}
                 {{ if eq .Title "Arttags" }}
-                        <a href="/art/tags">Art Tags</a>
+                        <a href="/art">Art</a>
+                        <span> / </span>
+                        <a href="/art/tags">Tags</a>
                         <span> / </span>
                 {{ else }}
                         {{ if eq .Title "Characters" }}
@@ -31,5 +33,4 @@
                 {{ end }}
                 {{ $i = add $i 1 }}
         {{- end }}
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
 {{ end }}

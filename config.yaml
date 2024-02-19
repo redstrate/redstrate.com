@@ -74,18 +74,21 @@ menu:
   - name: 'Videos'
     url: 'https://tube.ryne.moe/@redchannel'
     weight: 6
+  - name: 'Shrines'
+    url: '/shrines'
+    weight: 7
   - name: 'Downloads'
     url: '/downloads'
-    weight: 7
+    weight: 8
   - name: 'Links'
     url: '/links'
-    weight: 8
+    weight: 9
   - name: 'Guestbook'
     url: '/guestbook'
-    weight: 9
+    weight: 10
   - name: 'About'
     url: '/about'
-    weight: 10
+    weight: 11
   retromain:
   - name: 'Home'
     url: '/'

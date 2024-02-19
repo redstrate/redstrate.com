@@ -1,0 +1,17 @@
+<div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+
+    {{ $p := slice "Juritta" }}
+    {{ range where .Site.RegularPages "Params.characters" "intersect" $p }}
+        {{ if not (in .File.Dir "art/guest") }}
+            {{ partial "render-art" . }}
+        {{ end }}
+    {{ end }}
+</div>
+
+{{ $site := resources.Get "js/gallery.js" }}
+{{ if hugo.IsProduction }}
+{{ $site = $site | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>

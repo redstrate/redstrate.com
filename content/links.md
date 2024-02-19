@@ -48,12 +48,12 @@ I'm slowing adding to this list, if you wish to be added and I missed you... or 
 
 {{< out-link banner="cherrypixelbun.gif" link="https://cherrypixelbun.neocities.org/" label="Kirsche's Webzone" >}}
 
-{{< out-link banner="ko.gif" link="https://knockout.chat/" label="Knockout" >}}
-
 {{< out-link banner="animaritides.png" link="https://animaritides.neocities.org/" label="Animaritides" >}}
 
 {{< out-link banner="darksdomain.gif" link="https://darksdomain.neocities.org/" label="Dark's Domain" >}}
 
 {{< out-link banner="scoop.gif" link="https://kaleidescoop.neocities.org/" label="The Kal Zone" >}}
 
+## Communities
 
+{{< out-link banner="ko.gif" link="https://knockout.chat/" label="Knockout" >}}
