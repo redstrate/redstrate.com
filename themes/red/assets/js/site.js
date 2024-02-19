@@ -2,7 +2,7 @@ function checkWidth() {
     let navmenu = document.getElementById("nav-menu");
 
     // If the device somehow gains the stick sidebar, make sure it's open
-    if (window.matchMedia('(max-device-width: 768px)').matches) {
+    if (!window.matchMedia('(max-device-width: 768px)').matches) {
         navmenu.open = true;
     }
 }
