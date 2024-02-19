@@ -21,7 +21,7 @@
 
         <picture>
                 <source srcset="{{ $full }}" type="image/avif"/>
-                <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ $jpeg }}"/>
+                <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" src="{{ $jpeg }}"/>
         </picture>
     {{ else }}
         {{ with resources.Get .Params.filename }}
@@ -38,7 +38,7 @@
                         </video>
                     </div>
                 {{ else }}
-                    <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+                    <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                 {{ end }}
             {{ end }}
         {{ end }}

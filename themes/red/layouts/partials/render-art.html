@@ -45,23 +45,23 @@
         {{ with $full }}
                 {{ if $.Params.threed }}
                         {{ with resources.Get "3d.png" }}
-                                <img alt="Viewable 3D" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                                <img alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                         {{ end }}
                 {{ end }}
 
                 {{ if $.Params.animation }}
                         {{ with resources.Get "play-circle.png" }}
-                                <img alt="Viewable Animation" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                                <img alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                         {{ end }}
                 {{ end }}
 
                 {{ if and $use_newformat (eq $base "art") }}
                         <picture>
                                 <source srcset="{{ $full }}" type="image/avif"/>
-                                <img style="width: 100%; height: auto;" alt="{{ $title }}" title="{{ $title }}" src="{{ $jpeg }}"/>
+                                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }}" src="{{ $jpeg }}"/>
                         </picture>
                 {{ else }}
-                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $title }}" title="{{ $title }}" src="{{ .RelPermalink }}">
+                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.alt_text }}" title="{{ $title }}" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ else }}
                 <p>Thumbnail not found!</p>

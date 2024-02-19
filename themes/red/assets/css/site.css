@@ -128,7 +128,7 @@ body {
 
 
 :root {
-    --primary-accent: #9f5858;
+    --link: #6a3434;
     --secondary-accent: #c99192;
     --border-color: black;
     --background-primary: #ab4a2f;
@@ -143,7 +143,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-accent: #a3c3ff;
+        --link: #a3c3ff;
         --secondary-accent: #c99192;
         --background-primary: #34313a;
         --background-secondary: #3c3a44;
@@ -164,7 +164,7 @@ body {
 }
 
 a:link {
-    color: var(--primary-accent);
+    color: var(--link);
 }
 
 a:visited {
@@ -522,6 +522,8 @@ model-viewer {
     background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.01) 50%);
     background-size: 24px 24px;
     border-bottom: 1px solid var(--border-color);
+    font-weight: bold;
+
 }
 
 .project-desc {
