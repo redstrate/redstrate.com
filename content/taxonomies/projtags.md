@@ -4,4 +4,5 @@ url: /software/tags/
 layout: listart
 listtag: 'projtags'
 skipparent: true
+trueparent: '/software'
 ---

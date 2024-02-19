@@ -6,6 +6,8 @@ enableGitInfo: true
 enableRobotsTXT: true
 languageCode: 'en-us'
 summarylength: 15
+disableKinds:
+- taxonomy
 
 markup:
   tableOfContents:

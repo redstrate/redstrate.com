@@ -15,7 +15,7 @@
             {{ $month = int (index $split 3) }}
     {{ end }}
 
-    {{ if and (ge (int $year) 2023) (and (not $.Params.animation) (not $.Params.threed) ) }}
+    {{ if and (ge (int $year) 2023) (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (not $.Params.threed)) ) }}
         {{ $full := printf "https://images.redstrate.com/art/%s.avif" $.Params.slug }}
         {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" $.Params.slug }}
 

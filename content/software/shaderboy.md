@@ -4,7 +4,7 @@ date: 2016-02-01
 draft: false
 layout: "project"
 projtags:
-- C++
+- CPlusPlus
 source: "https://git.sr.ht/~redstrate/shaderboy"
 license: MIT
 summary: "Allows you to view shadertoy shaders offline"

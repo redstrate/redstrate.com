@@ -5,7 +5,7 @@ draft: false
 tags:
 - KDE
 - Qt
-- C++
+- CPlusPlus
 - Open Source
 ---
 

@@ -4,7 +4,7 @@ date: 2016-12-01
 draft: false
 layout: "project"
 projtags:
-- C++
+- CPlusPlus
 source: "https://git.sr.ht/~redstrate/graphite"
 license: MIT
 summary: "Game engine from 2017"
