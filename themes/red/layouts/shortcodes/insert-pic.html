@@ -4,5 +4,5 @@
 {{ $path := printf "pics/%s" $name}}
 
 {{ with resources.Get $path }}
-<img alt="{{ $alt }}" title="{{ $alt }}" class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+<img class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
 {{ end }}
