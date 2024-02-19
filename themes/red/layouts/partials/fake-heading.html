@@ -4,6 +4,6 @@
 {{ $id := urlize $header_name }}
 {{ printf "<%s id=\"%s\">" $header_type $id | safeHTML }}
 {{ $header_name }}
-<a href="#{{ $id }}">#</a>
+<a class="header-link" href="#{{ $id }}">#</a>
 {{ printf "</%s>" $header_type | safeHTML }}
 
