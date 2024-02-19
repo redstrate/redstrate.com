@@ -2,7 +2,7 @@
 title: "Home"
 ---
 
-{{< insert-pic "pic-home.webp" "Home" >}}
+{{< insert-pic "pic-home.webp" "Drawing of a landscape with mountains in the distance, sunlight peeking through clouds. There is a small cottage in the middle of some green hills." >}}
 
 Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, taking apart stuff, and spending too much time curating this site. This website functions as my portfolio and dumping ground for the things I work on.
 
