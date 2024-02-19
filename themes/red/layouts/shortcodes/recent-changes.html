@@ -1,7 +1,7 @@
 <div class="generic-con">
     <ul style="padding: 0">
     {{ $changes := (index site.Data "recent-changes") }}
-    {{ range $changes.changes | last 5 }}
+    {{ range $changes.changes | first 5 }}
     <li style="margin-left: 10px; list-style-type: square;">
         <p>{{ . }}</p>
     </li>

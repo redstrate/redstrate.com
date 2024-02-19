@@ -1,6 +1,9 @@
 <nav>
     <details id="nav-menu" open>
-        <summary>Navigation</summary>
+        <summary>Menu</summary>
+
+        <strong>Navigation</strong>
+
         {{ $icon := resources.Get "external-link.svg" }}
 
         {{ range .Site.Menus.main }}
@@ -9,19 +12,17 @@
             </div>
         {{ end }}
 
-        <hr>
+        <br/>
 
-        <a href="https://mastodon.art/@redstrate">Mastodon</a>
-        <br>
-        <a href="https://www.pixiv.net/en/users/58118005">Pixiv</a>
-        <br>
-        <a href="https://redstrate.newgrounds.com">Newgrounds</a>
+        <strong>Accounts</strong>
 
-        <hr>
-
-        <ul class="nice-list">
-            <li><a href="http://pux5gj5lnd6x4ztapmrqvvkihcfiq2lkz56yhalmvvskja6eqwdunwyd.onion/">Tor</a></li>
-            <li><a href="http://retro.redstrate.com/">Retro</a></li>
-        </ul>
+        {{ range .Site.Menus.socials }}
+            <div class="site-menu">
+                {{ with resources.Get .Params.img }}
+                    <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+                {{ end }}
+                <a rel="me" href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
     </details>
 </nav>

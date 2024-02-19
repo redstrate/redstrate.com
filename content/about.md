@@ -12,19 +12,6 @@ Drawing has been a hobby of mine ever since childhood, and I try to draw when I 
 
 I also like to administrate my own servers, and that's what's hosting the website you're reading right now! You can find more details about this setup below.
 
-# Links
-
-I'm on plenty of platforms if you want to follow me:
-
-* [Mastodon](https://mastodon.art/@redstrate) - my microblogging... blog.
-* [sourcehut](https://sr.ht/~redstrate) - lovely code forge containing my lovely code.
-* [Newgrounds](https://redstrate.newgrounds.com/) - collection of my recent art.
-* [Pixiv](https://www.pixiv.net/en/users/58118005) - another collection of my recent art.
-
-# Contact
-
-See [this page](/contact) for contact information and details.
-
 # Languages
 
 English is my first language, but currently learning two new languages. Here is my current progress:
