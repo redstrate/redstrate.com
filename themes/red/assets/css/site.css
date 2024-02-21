@@ -103,19 +103,9 @@
     }
 
     .page-pic {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .art-outer .gallery-img {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        visibility: hidden;
+        height: 0 !important;
+        width: 0 !important;
     }
 }
 
@@ -365,6 +355,15 @@ figure figcaption {
     overflow-y: hidden;
     white-space: nowrap;
 }
+
+.year-con > a:last-child {
+    margin-right: 20px;
+}
+
+.year-con > a:not(:last-child) {
+    margin-right: 5px;
+}
+
 
 .grid-item img {
     border: 1px inset black;
@@ -649,4 +648,16 @@ model-viewer {
 
 .toot-card-image-image {
     width: 50%;
+}
+
+.page-item {
+     display: inline-block;
+     border: 1px solid gray;
+     border-radius: 2px;
+     padding: 5px;
+}
+
+.pagination {
+    text-align: center;
+    padding-left: 0;
 }

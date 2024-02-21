@@ -4,7 +4,7 @@
     <a class="no-decoration" href="/art/{{ . }}">
         {{ $thumbp := printf "/year-thumbs/%d.webp" . }}
         {{ with resources.Get $thumbp }}
-        <img style="margin-right: 5px" width="256" height="128" title="{{ $year }}" alt="A thumbnail of {{ $year }}'s art with the text in the center." class="gallery-img article-img" src="{{ .RelPermalink }}">
+        <img width="256" height="128" title="{{ $year }}" alt="A thumbnail of {{ $year }}'s art with the text in the center." class="gallery-img article-img" src="{{ .RelPermalink }}">
         {{ end }}
     </a>
 {{ end }}

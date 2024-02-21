@@ -4,7 +4,7 @@ title: "Home"
 
 {{< insert-pic "pic-home.webp" "Drawing of a landscape bathed in sunlight. There's a small cottage in the middle of green hills." >}}
 
-Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, taking apart stuff, and spending too much time curating this site. This website functions as my portfolio and dumping ground for the things I work on.
+Welcome to my personal corner of the Internet! My username is **redstrate** and I'm a software engineer, KDE developer and artist. I like Linux, taking apart stuff, and wasting time working on my website. This place functions as my portfolio and dumping ground for the things I like to work on.
 
 * Check out my [blog posts]({{< ref "blog" >}}) for Linux, KDE, and technical talks.
 * If you're into art, I have a gallery of [my drawings]({{< ref "art" >}})! I also do some [music]({{< ref "music" >}}), but not often.

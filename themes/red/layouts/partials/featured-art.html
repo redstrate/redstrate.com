@@ -51,5 +51,7 @@
         {{ end }}
     {{ end }}
     </div>
-    <a href="/art">View all art</a>
+    {{ if not (eq (.Scratch.Get "skip_all") "true") }}
+        <a href="/art">View all art</a>
+    {{ end }}
 </div>

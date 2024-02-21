@@ -1,6 +1,8 @@
 {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
 {{ $guest := false }}
 
+{{ template "_internal/pagination.html" . }}
+
 <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
@@ -30,23 +32,7 @@
 
 {{ end }}
 
-<div style="text-align: center;">
-
-{{ with $paginator.Prev }}
-<a style="float: left" href="{{ .URL }}">Prev</a>
-{{ else }}
-<span style="float: left">Prev</span>
-{{ end }}
-
-<span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
-
-{{ with $paginator.Next }}
-<a style="float: right" href="{{ .URL }}">Next</a>
-{{ else }}
-<span style="float: right">Next</span>
-{{ end }}
-
-</div>
+{{ template "_internal/pagination.html" . }}
 
 {{ $site := resources.Get "js/gallery.js" }}
 {{ if hugo.IsProduction }}

@@ -13,8 +13,6 @@
             <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
             {{ end }}
 
-            <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>Art may be risque, browse with caution.</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
-
             <p>Welcome to my art gallery! I have been saving my work since 2016, and this is the most complete archive of my work online. You also might be interested in <a href="/blog/2023/04/breakdown-of-my-static-art-gallery/">how this gallery works and how I maintain it</a>.</p>
 
             <p>The gallery is sorted by date, but there's other sections to check out such as <a href="/art/guest">Guest Art</a> and <a href="/art/stats/">Stats</a>! You can also filter by <a href="/art/tags">tags</a>, or by <a href="/art/characters">characters</a>.</p>
@@ -23,33 +21,19 @@
         </div>
 
         {{ with resources.Get "pics/pic-gallery.png" }}
-            <img class="gallery-img" alt="Drawing of an art gallery with several people standing around a piece hanging on the wall." width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+            <img class="gallery-img page-pic" alt="Drawing of an art gallery with several people standing around a piece hanging on the wall." width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
         {{ end }}
     </div>
-
-    {{ .Scratch.Set "header-type" "h3" }}
-    {{ .Scratch.Set "header-name" "Featured" }}
-    {{ partial "fake-heading.html" . }}
-
-    {{ partial "featured-art" . }}
-
-    {{ .Scratch.Set "header-type" "h3" }}
-    {{ .Scratch.Set "header-name" "Years" }}
-    {{ partial "fake-heading.html" . }}
-
-    {{ partial "art-years" . }}
 
     <div class="art-button-container">
         <a class="art-button" href="/art/characters">Characters</a>
         <a class="art-button" href="/art/tags">Tags</a>
-        <a class="art-button" href="/art/stats">Stats</a>
+        <a class="art-button" href="/art/stats">Statistics</a>
         <a class="art-button" href="/art/guest">Guest Art</a>
-
-        {{ if $.Params.commissions }}
-        <a class="art-button" href="/commission">Commissions</a>
-        {{ end }}
     </div>
     {{ end }}
 
     {{ partial "art-gallery" . }}
+
+    {{ partial "art-years" . }}
 {{ end }}
