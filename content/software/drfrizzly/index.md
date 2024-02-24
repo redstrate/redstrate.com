@@ -5,6 +5,7 @@ draft: false
 projtags:
 - Game
 - Game Jam
+- Godot
 layout: "project"
 summary: "Game jam entry for KO Slam Jam."
 ---

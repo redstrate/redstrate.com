@@ -1,13 +1,15 @@
 ---
-title: "SM64-Vulkan"
+title: "SM64 Vulkan"
 date: 2022-10-03
 draft: false
 layout: "project"
 projtags:
-- SM64
 - N64
 - C
 - CPlusPlus
+- Reverse Engineering
+- Vulkan
+- 3D
 license: Unknown
 source: https://git.sr.ht/~redstrate/sm64
 summary: "Fork of sm64-port for Linux using Vulkan."
@@ -18,7 +20,7 @@ building on the great work already done by other people.
 
 ![Older WIP screenshot without blending support](13090-477b1a5c-8d3e-45e8-a77a-36e866a0c7b0.webp)
 
-## Differences from sm64-port
+# Differences from sm64-port
 
 Since I'm primarily a Linux user, I'm prioritizing Linux usage above everything else. I have already fixed a bunch of
 Linux-specific bugs that I encountered (vsync timer issues, pulseaudio sync issues, and more). Stuff that does not

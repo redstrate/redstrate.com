@@ -5,6 +5,8 @@ draft: false
 layout: "project"
 projtags:
 - CPlusPlus
+- Reverse Engineering
+- 3D
 source: "https://git.sr.ht/~redstrate/shaderboy"
 license: MIT
 summary: "Allows you to view shadertoy shaders offline"

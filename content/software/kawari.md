@@ -6,6 +6,7 @@ layout: "project"
 projtags:
 - FFXIV
 - Rust
+- Reverse Engineering
 source: "https://git.sr.ht/~redstrate/kawari"
 license: GPLv3
 summary: "Substitute for some official FFXIV servers"

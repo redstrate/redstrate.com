@@ -4,8 +4,8 @@ date: 2017-10-01
 draft: false
 layout: "project"
 projtags:
-- FFXIV
-- Rust
+- Reverse Engineering
+- Android
 source: "https://git.sr.ht/~redstrate/neostream"
 license: GPLv3
 summary: "Open-source Android Twitch client"

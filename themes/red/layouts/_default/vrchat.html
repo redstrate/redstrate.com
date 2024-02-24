@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    <p>I played over 200 hours of VRChat (somehow) and it's probably one of my favorite VR games.</p>
+
+    <div class="container">
+        <div class="box">
+            <h2>Avatars</h2>
+
+            <p>I ended up trying to make my own avatars for VRChat, based off of my <a href="/art/characters/sakura">OC</a>.</p>
+
+            <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;" src="char.png" />
+        </div>
+
+        <div class="box">
+            <h2>Favorite Worlds</h2>
+        </div>
+    </div>
+
+    <style>
+        .container {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        .box {
+            display: block;
+            width: 100%;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+    </style>
+{{ end }}

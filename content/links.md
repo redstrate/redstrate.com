@@ -4,17 +4,19 @@ title: "Links"
 
 {{< insert-pic "pic-links.webp" >}}
 
+Here's some cool like-minded people, websites and communities you should check out!
+
+# Incoming
+
 If you want to link back to my website, you can use one of the two banners
-below. You have an option depending on your website's color scheme :-) Please
-host the image on your own server if you can!
+below. You have an option depending on your website's color scheme :-)
 
-![Banner 1](/banner.webp)
-
-![Banner 2](/banner2.webp)
-
-![Button 1](/button-light.png)
-
-![Button 2](/button-dark.png)
+| Type | Preview | HTML |
+| -----|---------|--------|
+| 200x40 Banner | ![](/banner.webp) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/banner.webp"/></a>``` |
+| 200x40 Banner | ![](/banner2.webp) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/banner2.webp"/></a>``` |
+| 88x31 Button | ![](/button-light.png) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/button-light.png"/></a>``` |
+| 88x31 Button |![](/button-dark.png) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/button-dark.png"/></a>``` |
 
 # Outgoing
 

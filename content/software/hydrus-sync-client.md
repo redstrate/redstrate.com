@@ -1,5 +1,5 @@
 ---
-title: "hydrus-sync-client"
+title: "Hydrus Sync Client"
 date: 2022-10-12
 draft: false
 layout: "project"
@@ -12,11 +12,9 @@ summary: "Sync hydrus databases using rsync."
 ---
 
 Ever feel like you need a way to sync Hydrus databases across multiple machines? With `hydrus-sync-client`, you can
-easily synchronize your Hydrus database with a rsync server.
+easily synchronize your Hydrus database with a rsync server. This was originally a Bash script that I decided to rewrite in Rust, so it's pretty ugly.
 
-This was originally a Bash script that I decided to rewrite in Rust, so please excuse how ugly it is right now :-)
-
-## Process
+# Process
 
 1. The program first checks the last hostname that synchronized, this is used later to decide whether to sync first.
 2. Then the lockfile is checked, if it is locked - the program exits.

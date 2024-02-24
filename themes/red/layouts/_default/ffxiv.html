@@ -4,8 +4,10 @@
     <hr>
 
     <div class="container">
-        <div class="box">
+        <div class="box" style="width: 50%">
             <h2>Character</h2>
+
+            <p>Here's my WoL, and she's stayed consistent shortly after I purchased Shadowbringers.</p>
 
             <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;" src="char.png" />
 
@@ -37,10 +39,25 @@
             </table>
         </div>
 
-        <div class="box">
-            <h2>Artwork</h2>
+        <div style="width: 50%">
+            <div class="box" style="height: 600px">
+                <h2>Artwork</h2>
 
-            {{ partial "art-section" . }}
+                <p>Here's some fan art of my WoL, I want to do more general FFXIV fan art in the future too!</p>
+
+                <div style="height: 500px; overflow: auto">
+                {{ partial "art-section" . }}
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Notable Achievements</h2>
+
+                <ul>
+                    <li>Completed my Sightseeing Log</li>
+                    <li>Found all Aether Currents</li>
+                </ul>
+            </div>
         </div>
     </div>
 

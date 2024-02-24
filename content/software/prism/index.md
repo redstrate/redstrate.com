@@ -5,7 +5,6 @@ draft: false
 source: "https://git.sr.ht/~redstrate/prism"
 license: MIT
 projtags:
-- Prism
 - 3D
 - CPlusPlus
 - Vulkan

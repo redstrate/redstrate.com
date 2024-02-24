@@ -7,6 +7,7 @@ license: GPLv3
 projtags:
 - CPlusPlus
 - Qt
+- Matrix
 layout: "project"
 aliases:
 - /projects/trinity

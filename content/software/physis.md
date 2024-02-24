@@ -6,6 +6,7 @@ layout: "project"
 projtags:
 - FFXIV
 - Rust
+- Reverse Engineering
 aliases:
 - /projects/physis
 source: "https://git.sr.ht/~redstrate/physis"

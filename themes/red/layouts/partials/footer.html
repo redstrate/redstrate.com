@@ -5,6 +5,15 @@
             <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" alt="{{ $badgeScope.Name }}">
         {{ end }}
     {{ end }}
+
+    <br/>
+
+    {{ range $.Site.Menus.otherbadges }}
+        {{ $badgeScope := . }}
+        {{ with resources.Get .URL }}
+            <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" alt="{{ $badgeScope.Name }}">
+        {{ end }}
+    {{ end }}
 </div>
 
 <div class="f-list">

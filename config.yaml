@@ -139,6 +139,13 @@ menu:
   - name: 'Evangelion'
     url: 'nerv_button.webp'
     weight: 3
+  otherbadges:
+  - name: 'THE SKULL'
+    url: 'theskull.gif'
+    weight: -1
+  - name: 'amogus?'
+    url: 'amogus.gif'
+    weight: 1
   socials:
   - name: 'Mastodon'
     params:
