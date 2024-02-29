@@ -114,5 +114,5 @@ I spent some time trying to put in some small improvements to our [Human Interfa
 
 I hope to see you next month with more KDE stuff!
 
-{{< series-nav "kde-dec2023" >}}
+{{< series-nav "kde-dec2023" "kde-feb2024" >}}
 
