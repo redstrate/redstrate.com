@@ -47,5 +47,5 @@ For a while now, people have been asking about funding work on important Wayland
 
 {{< add "bugfix" >}} Add the [missing and new Breeze icons dependency to kiconthemes](https://invent.kde.org/frameworks/kiconthemes/-/merge_requests/121). {{< release "6.1" >}}
 
-{{< series-nav "kde-jan2024" >}}
+{{< series-nav "kde-jan2024" "kde-march2024" >}}
 
