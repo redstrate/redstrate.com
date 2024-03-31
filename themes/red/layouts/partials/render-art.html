@@ -49,6 +49,12 @@
                         {{ end }}
                 {{ end }}
 
+                {{ if $.Params.comic }}
+                        {{ with resources.Get "comic.png" }}
+                                <img alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        {{ end }}
+                {{ end }}
+
                 {{ if $.Params.animation }}
                         {{ with resources.Get "play-circle.png" }}
                                 <img alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">

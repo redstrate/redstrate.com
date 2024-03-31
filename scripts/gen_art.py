@@ -10,7 +10,7 @@ def write_field(f, key, value):
     f.write(key + ": " + value + "\n")
 
 
-def parse_art_json(output_directory, filename, json_file, threed = False, animation = False, guest = False):
+def parse_art_json(output_directory, filename, json_file, threed = False, animation = False, guest = False, comic = False):
     print(filename)
 
     json_data = json.load(json_file)
@@ -62,6 +62,13 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
                 write_field(f, 'filename', '/animation/' + filename + '.webm')
             else:
                 write_field(f, 'filename', '/art/' + filename + '.webp')
+
+        if comic:
+            write_field(f, 'comic', 'true')
+            f.write('pages:\n')
+            for page in json_data["pages"]:
+                f.write('- filename: ' + page["filename"] + "\n")
+                f.write('  alt_text: ' + page["alt_text"] + "\n")
 
         if "alt_text" in json_data:
             write_field(f, 'alt_text',
@@ -153,6 +160,7 @@ characters_data_directory = '../characters'
 art_output_directory = '../content/art'
 guest_art_data_directory = '../guestart'
 characters_output_directory = '../content/characters'
+comic_data_directory = '../comic'
 
 shutil.rmtree(art_output_directory)
 os.mkdir(art_output_directory)
@@ -249,6 +257,35 @@ for filename in os.listdir(animation_data_directory):
 
         with open(f, "r") as file:
             year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file, False, True)
+
+            if year in year_stats:
+                year_stats[year] += 1
+            else:
+                year_stats[year] = 1
+
+            for character in characters:
+                if character in character_stats:
+                    character_stats[character] += 1
+                else:
+                    character_stats[character] = 1
+
+            for tag in tags:
+                if tag in tag_stats:
+                    tag_stats[tag] += 1
+                else:
+                    tag_stats[tag] = 1
+
+            collected_years.add(year)
+            total_art += 1
+
+for filename in os.listdir(comic_data_directory):
+    f = os.path.join(comic_data_directory, filename)
+
+    if os.path.isfile(f):
+        filename_without_ext = os.path.splitext(filename)[0]
+
+        with open(f, "r") as file:
+            year, characters, tags = parse_art_json(art_output_directory, filename_without_ext, file, False, False, False, True)
 
             if year in year_stats:
                 year_stats[year] += 1

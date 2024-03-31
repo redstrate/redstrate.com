@@ -15,7 +15,7 @@
             {{ $month = int (index $split 3) }}
     {{ end }}
 
-    {{ if and (ge (int $year) 2023) (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (not $.Params.threed)) ) }}
+    {{ if and (ge (int $year) 2023) (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
         {{ $full := printf "https://images.redstrate.com/art/%s.avif" $.Params.slug }}
         {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" $.Params.slug }}
 
@@ -44,6 +44,17 @@
         {{ end }}
     {{ end }}
 
+    {{ if $.Params.comic }}
+        {{ range $.Params.pages }}
+            {{ $full := printf "https://images.redstrate.com/art/%s.avif" .filename }}
+            {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" .filename}}
+
+            <picture>
+                    <source srcset="{{ $full }}" type="image/avif"/>
+                    <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ .alt_text }}" src="{{ $jpeg }}"/>
+            </picture>
+        {{ end }}
+    {{ end }}
 
     {{ partial "voting" . }}
 
