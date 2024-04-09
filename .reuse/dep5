@@ -9,7 +9,7 @@ Source: https://git.sr.ht/~redstrate/redstrate.com
 # Copyright: $YEAR $NAME <$CONTACT>
 # License: ...
 
-Files: content/* assets/* static/* resources/* characters/* art/* 3d/* animation/* data/*
+Files: content/* assets/* static/* resources/* characters/* art/* 3d/* animation/* data/* comic/*
 Copyright: 2023 Joshua Goins <josh@redstrate.com>
 License: CC-BY-SA-4.0
 
