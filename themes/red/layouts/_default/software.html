@@ -41,7 +41,7 @@
     {{ .Scratch.Set "header-name" "Contributions" }}
     {{ partial "fake-heading.html" . }}
 
-    <p>I also do plenty of open-source work, here's a list of some of the projects I contributed to!</p>
+    <p>I also do plenty of open-source work, here's a list of some of the projects I contributed to! This is stuff I did in my free time and not part of employment or paid work.</p>
 
     {{ $contrib := (index site.Data "contributions") }}
 
@@ -77,12 +77,21 @@
                                     <a href="https://gitlab.com/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.gitlab_username }}">MRs</a>
                                 </li>
                             {{ else }}
-                                <li>
-                                    <a href="https://github.com/search?q=repo%3Agentoo%2Fgentoo+{{ $.Site.Params.github_username }}&type=commits">Commits</a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/gentoo/gentoo/pulls?q=is%3Apr+is%3Aclosed+author%3A{{ $.Site.Params.github_username }}">PRs</a>
-                                </li>
+                                {{ if eq .type "xdg" }}
+                                    <li>
+                                        <a href="https://gitlab.freedesktop.org/{{ .id }}/-/commits/main?author={{ $.Site.Params.gitlab_username }}">Commits</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://gitlab.freedesktop.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.gitlab_username }}">MRs</a>
+                                    </li>
+                                {{ else }}
+                                    <li>
+                                        <a href="https://github.com/search?q=repo%3Agentoo%2Fgentoo+{{ $.Site.Params.github_username }}&type=commits">Commits</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/gentoo/gentoo/pulls?q=is%3Apr+is%3Aclosed+author%3A{{ $.Site.Params.github_username }}">PRs</a>
+                                    </li>
+                                {{ end }}
                             {{ end }}
                         {{ end }}
                 {{ end }}

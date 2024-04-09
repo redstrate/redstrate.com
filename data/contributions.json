@@ -1,6 +1,18 @@
 {
     "contributions": [
         {
+            "id": "libinput/libinput",
+            "name": "libinput",
+            "description": "Added support for tablet dials.",
+            "type": "xdg"
+        },
+        {
+            "id": "multimedia/plasmatube",
+            "name": "PlasmaTube",
+            "description": "Maintainer, and added support for multiple video sources. Also features like Picture-in-Picture.",
+            "type": "kde"
+        },
+        {
             "id": "network/neochat",
             "name": "NeoChat",
             "description": "Added UnifiedPush support, misc bugs and interface changes.",
@@ -45,7 +57,7 @@
         {
             "id": "network/tokodon",
             "name": "Tokodon",
-            "description": "Maintainer, added numerous features and fixed bugs.",
+            "description": "Maintainer, added numerous features and fixed lots of bugs.",
             "type": "kde"
         },
         {
@@ -56,7 +68,7 @@
         {
             "id": "goatcorp/dalamud",
             "name": "Dalamud",
-            "description": "Fixed searching for plugins by punchline.",
+            "description": "Fixed searching for plugins by punchline and other boring bugfixes.",
             "type": "github"
         },
         {
