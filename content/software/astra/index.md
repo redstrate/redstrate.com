@@ -11,7 +11,7 @@ projtags:
 featured: yes
 aliases:
 - /projects/astra
-source: https://sr.ht/~redstrate/astra
+source: https://github.com/redstrate/Astra
 license: GPLv3
 summary: "Cross-platform FFXIV launcher, designed for Wine users."
 target: https://xiv.zone/astra

@@ -11,7 +11,7 @@ projtags:
 aliases:
 - /projects/novus
 license: GPLv3
-source: "https://git.sr.ht/~redstrate/novus"
+source: "https://github.com/redstrate/Novus"
 summary: "Collection of FFXIV modding and data-mining tools."
 target: https://xiv.zone/novus
 ---

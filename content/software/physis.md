@@ -9,7 +9,7 @@ projtags:
 - Reverse Engineering
 aliases:
 - /projects/physis
-source: "https://git.sr.ht/~redstrate/physis"
+source: "https://github.com/redstrate/Physis"
 license: GPLv3
 summary: "Modding and data framework for FFXIV."
 ---
