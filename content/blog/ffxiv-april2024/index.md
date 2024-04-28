@@ -129,11 +129,11 @@ A simple program to [view the material's shaders, parameters, etc](https://githu
 
 ## Renderer
 
-As I discussed in [the last blog post]({{< ref "ffxiv-dec2023" >}}), a big goal of mine this year was to re-create FFXIV's rendering system and I'm happy to say I was successful!
+As I discussed in [the last blog post]({{< ref "ffxiv-dec2023" >}}), a big goal of mine this year was to re-create FFXIV's rendering system and I'm happy to say I was successful! Not all shaders are supported yet, but some gear now render as expected:
 
 ![A piece of armor rendered like the game](renderer.webp)
 
-Here's a piece of armor being rendered without any custom shaders[^1], it's all read from game data. Big thanks to [Ouroboros](https://github.com/Shaderlayan/Ouroboros/) and the people in the FFXIV Discords for helping me along. Oh yeah, and [RenderDoc](https://renderdoc.org) for being a fantastic tool as always.
+This is rendered with Vulkan and without using any custom shaders[^1], it's all read from game data. Big thanks to [Ouroboros](https://github.com/Shaderlayan/Ouroboros/) and the people in the FFXIV Discords for helping me along. Oh yeah, and [RenderDoc](https://renderdoc.org) for being a fantastic tool as always.
 
 I'm working on adding support for Dawntrail shaders next, you can follow along [here](https://github.com/redstrate/Novus/issues/6).
 
