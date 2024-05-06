@@ -20,9 +20,9 @@ Anyway, let's get into the changes!
 
 I originally wanted to bring some of the "power-user" features from KSysGuard into the new System Monitor. I was rightfully turned down because they were hesitant of there being any use for most people and to prevent feature creep.
 
-They suggested creating a seperate application instead. So [Kensa, the detailed process viewer](https://invent.kde.org/redstrate/kensa) is born! It's still mostly copy & pasted from old KSysGuard/libksysguard code, but updated for Qt6/KF6.
+They suggested creating a seperate application instead. So [Kensa, the detailed process viewer](https://invent.kde.org/redstrate/kensa) is born! It's still mostly copy & pasted from old KSysGuard/libksysguard code, but updated for Qt6/KF6. And to make it clear, It's very clearly modeled after the Window's Process Explorer.
 
-n so I brought back the general tab for viewing some basic information about the process. Said tab also includes an "Open With" so you can quickly open the executable in a hex viewer like Okteta.
+I have the general tab for viewing some basic information about the process. Said tab also includes an "Open With" so you can quickly open the executable in a hex viewer like Okteta.
 
 ![The general tab](general.webp)
 
