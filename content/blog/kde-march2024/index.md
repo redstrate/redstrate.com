@@ -84,4 +84,4 @@ Clarify that the default alignment for Kirigami's ActionToolbar is [AlignLeft, n
 
 That's all for this month!
 
-{{< series-nav "kde-feb2024" >}}
+{{< series-nav "kde-feb2024" "kde-april2024" >}}
