@@ -1,7 +1,6 @@
 ---
 title: "Wiring up my new home network"
 date: 2024-05-11
-draft: true
 tags:
 - Networking
 - Home Improvement
