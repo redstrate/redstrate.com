@@ -76,7 +76,7 @@ Note that Kensa is very early in development and not user-friendly. You currentl
 
 # Gwenview
 
-{{< add "feature" >}} I changed the old save bar to [use the standard KMessageWidget widget](https://invent.kde.org/graphics/gwenview/-/merge_requests/265). This isn't just for looks, it fixes a lot of odd visual bugs and removes a ton of cruft in the process. {{< release "6.1.0" >}}
+{{< add "feature" >}} I changed the old save bar to [use the standard KMessageWidget widget](https://invent.kde.org/graphics/gwenview/-/merge_requests/265). This isn't just for looks, it fixes a lot of odd visual bugs and removes a ton of cruft in the process. {{< release "24.08" >}}
 
 ![The new Gwenview save bar. If it doesn't look "out of place", then my patch did it's job!](gwenview.webp)
 
