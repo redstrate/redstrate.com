@@ -7,15 +7,15 @@ commissions: true
 aliases:
 - /gallery
 featured:
-- filename: costadelsol.webp
-  date: 2024-02-10
-  title: Costa del Sol
-- filename: electrical.webp
-  date: 2024-01-26
-  title: Electrical
-- filename: raubahn.webp
-  date: 2024-01-26
-  title: Bull of Ala Mhigo
+- filename: l1.webp
+  date: 2024-05-12
+  title: L1 📷
+- filename: konqi.webp
+  date: 2024-04-09
+  title: Konqi 📀
+- filename: acrocatabro.webp
+  date: 2023-09-05
+  title: Acro's request
 years:
 - 2024
 - 2023
