@@ -36,4 +36,4 @@ On this note: my analytics checkbox is off (presumably because I had it off befo
 
 ![Is this a bug?](analytics.webp)
 
-[^1]: I would argue they should focus less on "enforcing license compliance" and actually making good IDEs, you know - the thing they used to do. If they're so worried about people freeloading and letting them bleed money, they should consider stop wasting money on AI instead.
+[^1]: I would argue they should focus less on "enforcing license compliance" and actually making good IDEs, you know - the thing they used to do. If they're so worried about people freeloading and letting them bleed money, they could stop wasting money on AI instead.
