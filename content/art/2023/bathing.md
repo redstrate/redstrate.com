@@ -7,6 +7,7 @@ alt_text: "A young woman is sitting in a water bath, with clouds of smoke surrou
 slug: bathing
 characters:
 - Mysterious Swordswoman
+nsfw: true
 mastodon_url: https://mastodon.art/@redstrate/110267364853210553
 pixiv_url: https://www.pixiv.net/en/artworks/107564292
 program: Procreate

@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 233
+total: 235
 years:
 - year: 2019
   num: 60
@@ -14,7 +14,7 @@ years:
 - year: 2021
   num: 27
 - year: 2024
-  num: 19
+  num: 21
 - year: 2016
   num: 7
 - year: 2018
@@ -23,22 +23,22 @@ years:
   num: 1
 characters:
 - name: Mysterious Swordswoman
-  num: 16
+  num: 17
 - name: Juritta
   num: 15
 - name: Merume
   num: 12
-- name: Asuka
-  num: 6
 - name: Mari
+  num: 6
+- name: Asuka
   num: 6
 - name: Sakura
   num: 5
 - name: Mythra
   num: 4
-- name: Tifa
-  num: 3
 - name: Knocky-chan
+  num: 3
+- name: Tifa
   num: 3
 - name: Byleth
   num: 2
