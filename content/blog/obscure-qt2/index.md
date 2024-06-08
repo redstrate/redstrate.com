@@ -8,6 +8,8 @@ series:
 - Obscure Qt
 ---
 
+**Edit:** This was written before my projects were switched to Qt6, and I'm not aware of a Qt6 pretty printer solution (if you do, let me know in a comment below.) If you're using CLion, check out the [Qt6 pretty printer plugin](https://github.com/winseros/Qt6Renderer).
+
 Outside of Qt Creator, GDB has a hard time understanding Qt times and you'll regularly get garbage or unusable debugging output.
 
 ![An example of CLion (which uses GDB) trying to show the contents of a QList.](bad.webp)
