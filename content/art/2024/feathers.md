@@ -7,6 +7,8 @@ alt_text: "Drawing of Feathers McGraw (a clay penguin) from Wallace & Gromit. He
 slug: feathers
 characters:
 - Feathers McGraw
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/112582169263432612
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/he-s-back
 program: Krita

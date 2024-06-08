@@ -7,6 +7,8 @@ alt_text: "Drawing of a Viera from the critically acclaimed MMORPG Final Fantasy
 slug: idcheck
 characters:
 - Juritta
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/112468818118244065
 pixiv_url: https://www.pixiv.net/en/artworks/118886586
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/viera-id-check

@@ -7,6 +7,8 @@ alt_text: "Three drawings of KDE's mascot, the dragon Konqi.The first Konqi is s
 slug: konqi
 characters:
 - Konqi
+arttags:
+- fan art
 mastodon_url: https://mastodon.art/@redstrate/112238971210645004
 ---
 Eating DVDs isn't illegal, right?
