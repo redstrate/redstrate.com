@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 235
+total: 236
 years:
 - year: 2019
   num: 60
@@ -14,7 +14,7 @@ years:
 - year: 2021
   num: 27
 - year: 2024
-  num: 21
+  num: 22
 - year: 2016
   num: 7
 - year: 2018
