@@ -1,21 +1,27 @@
 {
     "contributions": [
         {
+            "id": "aers/FFXIVClientStructs",
+            "name": "FFXIVClientStructs",
+            "description": "Documenting more fields for FFXIV bone simulators.",
+            "type": "github"
+        },
+        {
             "id": "libinput/libinput",
             "name": "libinput",
-            "description": "Added support for tablet dials.",
+            "description": "Added support for tablet dials, like those on XP-PEN tablets.",
             "type": "xdg"
         },
         {
             "id": "multimedia/plasmatube",
             "name": "PlasmaTube",
-            "description": "Maintainer, and added support for multiple video sources. Also features like Picture-in-Picture.",
+            "description": "Maintainer. Added several features such as PeerTube, Piped support and Picture-in-Picture.",
             "type": "kde"
         },
         {
             "id": "network/neochat",
             "name": "NeoChat",
-            "description": "Added UnifiedPush support, misc bugs and interface changes.",
+            "description": "UnifiedPush support, misc bugs and interface changes.",
             "type": "kde"
         },
         {
@@ -45,13 +51,13 @@
         {
             "id": "plasma/kwin",
             "name": "KWin",
-            "description": "Fixed pen tilt, other misc bug fixes.",
+            "description": "Fixed pen tilt on Wayland, other misc bug fixes.",
             "type": "kde"
         },
         {
             "id": "graphics/krita",
             "name": "Krita",
-            "description": "Added pen tilt to the tablet tester.",
+            "description": "Added pen tilt to the tablet tester. Small S-Pen improvements on Android.",
             "type": "kde"
         },
         {
@@ -68,7 +74,7 @@
         {
             "id": "goatcorp/dalamud",
             "name": "Dalamud",
-            "description": "Fixed searching for plugins by punchline and other boring bugfixes.",
+            "description": "Search for plugins by punchline and other bugfixes.",
             "type": "github"
         },
         {
@@ -104,7 +110,7 @@
         {
             "id": "plasma/plasma-desktop",
             "name": "Plasma Desktop",
-            "description": "Plasma 6 applet porting, added activity pins to launchers, bugfixing.",
+            "description": "Currently improving the Drawing Tablet KCM. Plasma 6 applet porting, added activity pins to launchers, and bugfixing.",
             "type": "kde"
         },
         {
