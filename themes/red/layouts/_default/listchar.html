@@ -1,0 +1,33 @@
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+
+    <hr>
+
+    <h3>Original</h3>
+
+    {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
+        {{ $original := false }}
+        {{ if $taxonomy.Page.Params.original }}
+            {{ $original = $taxonomy.Page.Params.original }}
+        {{ end }}
+
+        {{ if $original }}
+        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+        {{ end }}
+    {{ end }}
+
+    <h3>Others</h3>
+
+
+    {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
+        {{ $original := false }}
+        {{ if $taxonomy.Page.Params.original }}
+            {{ $original = $taxonomy.Page.Params.original }}
+        {{ end }}
+
+        {{ if not $original }}
+        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+        {{ end }}
+    {{ end }}
+
+{{ end }}

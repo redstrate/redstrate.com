@@ -145,6 +145,9 @@ def parse_character_json(output_directory, filename, json_file):
         if "origin" in json_data:
             write_field(f, 'origin', json_data["origin"])
 
+        if "original" in json_data:
+            write_field(f, 'original', str(json_data["original"]).lower())
+
         write_field(f, 'slug', filename)
 
         f.write('---\n')

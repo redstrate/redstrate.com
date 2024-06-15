@@ -8,7 +8,7 @@ alt_text: "Really sketchy looking scene including a giant green man, and three s
 slug: ff7r-airbuster-fight
 characters:
 - Tifa
-- Barett
+- Barrett
 - Cloud
 arttags:
 - drawpile

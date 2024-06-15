@@ -3,7 +3,7 @@ title: Art
 layout: art
 summary: My personal art gallery.
 new_banner: 
-commissions: true
+commissions: false
 aliases:
 - /gallery
 featured:

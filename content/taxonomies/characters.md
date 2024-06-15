@@ -1,7 +1,7 @@
 ---
 title: "Characters"
 url: /art/characters/
-layout: listart
+layout: listchar
 listtag: 'characters'
 skipparent: true
 trueparent: "/art"

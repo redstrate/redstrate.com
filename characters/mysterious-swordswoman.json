@@ -1,7 +1,8 @@
 {
-    "name": "Mysterious Swordswoman",
-    "description": "She is a talented swordsman and nomad that travels from town to town in the countryside.",
     "age": "???",
-    "pronouns": "she/her",
-    "origin": "Original Character"
+    "description": "She is a talented swordsman and nomad that travels from town to town in the countryside.",
+    "name": "Mysterious Swordswoman",
+    "origin": "Original Character",
+    "original": true,
+    "pronouns": "she/her"
 }

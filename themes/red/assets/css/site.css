@@ -662,3 +662,12 @@ model-viewer {
     text-align: center;
     padding-left: 0;
 }
+
+.character {
+    display: inline-block;
+    text-align: center;
+}
+
+.character span {
+    display: block;
+}

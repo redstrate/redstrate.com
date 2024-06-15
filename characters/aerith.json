@@ -1,4 +1,5 @@
 {
     "name": "Aerith",
-    "origin": "Final Fantasy 7"
+    "origin": "Final Fantasy 7",
+    "original": false
 }
