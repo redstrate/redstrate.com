@@ -12,7 +12,7 @@
         {{ end }}
 
         {{ if $original }}
-        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
         {{ end }}
     {{ end }}
 
@@ -26,7 +26,7 @@
         {{ end }}
 
         {{ if not $original }}
-        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
+        <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img width=256 height=256 src="https://images.redstrate.com/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
         {{ end }}
     {{ end }}
 
