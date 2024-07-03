@@ -26,4 +26,4 @@ jobs:
     - name: Upload Repository
       if: github.ref == 'refs/heads/main'
       run: |
-        rsync -e "ssh -p 38901 -o StrictHostKeyChecking=no" --recursive public/ deploy@ryne.moe:/srv/http/redstrate.com
+        rsync -e "ssh -p 38901 -o StrictHostKeyChecking=no" --recursive --delete public/ deploy@ryne.moe:/srv/http/redstrate.com

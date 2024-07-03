@@ -6,6 +6,8 @@ filename: /animation/sniper-standup.webm
 alt_text: "A 3d sculpt of a short, brown haired girl. It’s only a bust."
 slug: sniper-standup
 animation: true
+characters:
+- Sniper Girl
 arttags:
 - animation
 ---

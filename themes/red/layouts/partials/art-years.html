@@ -1,11 +1,10 @@
 <div class="generic-con year-con">
-{{ range $.Param "years" }}
+{{ $years := .Param "years" | sort | collections.Reverse }}
+{{ range $years }}
     {{ $year := . }}
     <a class="no-decoration" href="/art/{{ . }}">
-        {{ $thumbp := printf "/year-thumbs/%d.webp" . }}
-        {{ with resources.Get $thumbp }}
-        <img width="256" height="128" title="{{ $year }}" alt="A thumbnail of {{ $year }}'s art with the text in the center." class="gallery-img article-img" src="{{ .RelPermalink }}">
-        {{ end }}
+        {{ $thumbp := printf "https://images.redstrate.com/year-thumbs/%d.webp" . }}
+        <img width="256" height="128" title="{{ $year }}" alt="A thumbnail of {{ $year }}'s art with the text in the center." class="gallery-img article-img" src="{{ $thumbp }}">
     </a>
 {{ end }}
 </div>

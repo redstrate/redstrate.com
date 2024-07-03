@@ -15,7 +15,7 @@
             {{ $month = int (index $split 3) }}
     {{ end }}
 
-    {{ if and (ge (int $year) 2023) (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
+    {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
         {{ $full := printf "https://images.redstrate.com/art/%s.avif" $.Params.slug }}
         {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" $.Params.slug }}
 
@@ -24,21 +24,21 @@
                 <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" src="{{ $jpeg }}"/>
         </picture>
     {{ else }}
-        {{ with resources.Get .Params.filename }}
+        {{ $file := printf "https://images.redstrate.com%s" $.Params.filename }}
+
+        {{ with $file }}
             {{ if $.Params.threed }}
                 {{ $cameraorbit := $.Params.orbit }}
                 {{ $cameratarget := $.Params.target }}
                 {{ $fov  := $.Params.fov }}
-                <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
+                <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ . }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
             {{ else }}
                 {{ if $.Params.animation }}
                     <div style="text-align: center;">
                         <video style="max-width: 100%" class="gallery-img" controls>
-                            <source src="{{ .RelPermalink }}" type="video/webm">
+                            <source src="{{ . }}" type="video/webm">
                         </video>
                     </div>
-                {{ else }}
-                    <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
                 {{ end }}
             {{ end }}
         {{ end }}

@@ -17,23 +17,10 @@
         {{ $month = int (index $split 3) }}
 {{ end }}
 
-{{ $use_newformat := false }}
-{{ if ge (int $year) 2023 }}
-        {{ $use_newformat = true }}
-{{ end }}
-
-{{ if in .File.Dir "art/guest" }}
-        {{ $use_newformat = false }}
-{{ end }}
-
 {{ $full := "" }}
 {{ $jpeg := "" }}
-{{ if and $use_newformat (eq $base "art") }}
-        {{ $full = printf "https://images.redstrate.com/thumb/%s.avif" .Params.slug }}
-        {{ $jpeg = printf "https://images.redstrate.com/thumb/%s.jpg" .Params.slug }}
-{{ else }}
-        {{ $full = resources.Get (printf "%s/%s.webp" $base .Params.slug) }}
-{{ end }}
+{{ $full = printf "https://images.redstrate.com/thumb/%s.avif" .Params.slug }}
+{{ $jpeg = printf "https://images.redstrate.com/thumb/%s.jpg" .Params.slug }}
 
 {{ if $full }}
         {{ $filename_without_ext := .Params.slug }}
@@ -61,19 +48,15 @@
                         {{ end }}
                 {{ end }}
 
-                {{ if and $use_newformat (eq $base "art") }}
-                        <picture>
-                                <source srcset="{{ $full }}" type="image/avif"/>
-                                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }}" src="{{ $jpeg }}"/>
-                        </picture>
-                {{ else }}
-                        <img style="width: 100%; height: auto;" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Params.alt_text }}" title="{{ $title }}" src="{{ .RelPermalink }}">
-                {{ end }}
+                <picture>
+                        <source srcset="{{ $full }}" type="image/avif"/>
+                        <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }}" src="{{ $jpeg }}"/>
+                </picture>
         {{ else }}
                 <p>Thumbnail not found!</p>
         {{ end }}
         </a>
 {{ else }}
-        <em>CANNOT FIND {{ .Params.slug }} {{ $use_newformat }}</em>
+        <em>CANNOT FIND {{ .Params.slug }}</em>
 {{ end }}
 
