@@ -12,3 +12,4 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/112720510735345856
 program: Krita
 ---
+Artfight attack: https://artfight.net/attack/6150059.first-draw
