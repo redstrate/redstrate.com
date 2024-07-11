@@ -1,7 +1,7 @@
 ---
 title: Stats
 layout: art-stats
-total: 246
+total: 247
 years:
 - year: 2019
   num: 60
@@ -10,7 +10,7 @@ years:
 - year: 2023
   num: 38
 - year: 2024
-  num: 32
+  num: 33
 - year: 2020
   num: 29
 - year: 2021
@@ -61,9 +61,9 @@ tags:
   num: 8
 - name: request
   num: 9
-- name: artfight
-  num: 9
 - name: drawpile
+  num: 10
+- name: artfight
   num: 10
 - name: 3d
   num: 20
