@@ -7,15 +7,15 @@ commissions: false
 aliases:
 - /gallery
 featured:
-- filename: l1.webp
-  date: 2024-05-12
-  title: L1 📷
-- filename: konqi.webp
-  date: 2024-04-09
-  title: Konqi 📀
-- filename: acrocatabro.webp
-  date: 2023-09-05
-  title: Acro's request
+- filename: macheo.webp
+  date: 2024-07-11
+  title: MACHEO STRIKE
+- filename: recoverydisk.webp
+  date: 2024-07-05
+  title: Recovery Disk
+- filename: feathers.webp
+  date: 2024-06-08
+  title: he's back...
 years:
 - 2011
 - 2024
