@@ -1,4 +1,5 @@
 ---
+title: "Fan art by AcroCatabro"
 artist: "AcroCatabro"
 date: 2023-10-09
 layout: art-detail

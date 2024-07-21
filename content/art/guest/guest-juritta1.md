@@ -1,4 +1,5 @@
 ---
+title: "Avatar challenge by Snickerpuffs"
 artist: "SnickerPuffs"
 date: 2023-06-27
 layout: art-detail
