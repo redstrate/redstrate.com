@@ -165,3 +165,8 @@ menu:
     - img: 'github.webp'
     url: 'https://github.com/redstrate'
     weight: 4
+  - name: 'Ko-fi'
+    params:
+    - img: 'kofi.webp'
+    url: 'https://ko-fi.com/redstrate'
+    weight: 4

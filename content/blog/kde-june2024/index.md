@@ -84,5 +84,5 @@ I do plan on expanding ktabletconfig's features, as the Wayland session continue
 
 I updated the [Plasma Desktop README](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/2299) in line with the other README things I did this year!
 
-{{< series-nav "kde-april2024" >}}
+{{< series-nav "kde-april2024" "kde-july2024" >}}
 

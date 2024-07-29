@@ -631,7 +631,7 @@ model-viewer {
 .add {
     padding: 0.2em;
     border-radius: 7px;
-    display: inline-block;'
+    display: inline-block;
 }
 
 .add-bugfix {
@@ -643,8 +643,17 @@ model-viewer {
     color: black;
 }
 
+.add-testing {
+    background-color: #3d99a8;
+    color: black;
+}
+
 .add-release {
     background-color: #65bbdd;
+}
+
+.add-nlnet {
+    background-color: #8dce19;
 }
 
 .toot-card-image-image {
