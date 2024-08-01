@@ -1,14 +1,14 @@
 ---
 title: Stats
 layout: art-stats
-total: 256
+total: 257
 years:
 - year: 2019
   num: 60
 - year: 2022
   num: 46
 - year: 2024
-  num: 42
+  num: 43
 - year: 2023
   num: 38
 - year: 2020
@@ -27,7 +27,7 @@ characters:
 - name: Mysterious Swordswoman
   num: 18
 - name: Juritta
-  num: 16
+  num: 17
 - name: Merume
   num: 12
 - name: Mari
@@ -68,7 +68,7 @@ tags:
 - name: 3d
   num: 20
 - name: fan art
-  num: 56
+  num: 57
 - name: sketch
-  num: 108
+  num: 109
 ---
