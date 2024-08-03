@@ -10,5 +10,7 @@ characters:
 arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/112844697188259305
+pixiv_url: https://www.pixiv.net/en/artworks/121097824
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/ffxiv-sketches
 program: Krita
 ---

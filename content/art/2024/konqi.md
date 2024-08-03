@@ -10,5 +10,6 @@ characters:
 arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/112238971210645004
+program: Krita
 ---
 Eating DVDs isn't illegal, right?

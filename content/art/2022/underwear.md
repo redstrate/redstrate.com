@@ -9,6 +9,7 @@ characters:
 - Merume
 arttags:
 - sketch
+nsfw: true
 mastodon_url: https://mastodon.art/@redstrate/109464613367914600
 program: Procreate
 ---

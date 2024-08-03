@@ -6,5 +6,6 @@ filename: /art/pokegirls.webp
 slug: pokegirls
 arttags:
 - sketch
+- fan art
 program: Procreate
 ---

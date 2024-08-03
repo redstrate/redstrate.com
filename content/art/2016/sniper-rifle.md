@@ -8,4 +8,5 @@ alt_text: "A really basic sniper rifle, untextured and has no material."
 slug: sniper-rifle
 arttags:
 - 3d
+program: Blender
 ---

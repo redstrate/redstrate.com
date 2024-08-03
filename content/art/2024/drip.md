@@ -9,6 +9,8 @@ characters:
 - Mysterious Swordswoman
 nsfw: true
 mastodon_url: https://mastodon.art/@redstrate/112567384640633283
+pixiv_url: https://www.pixiv.net/en/artworks/121093210
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/drip
 program: Krita
 ---
 another bath, but i don't care 🙉 ...i have no idea what she's drinking

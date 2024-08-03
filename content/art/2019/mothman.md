@@ -7,5 +7,8 @@ alt_text: "A girl is terrified, not glancing at the enemy behind her. It's the o
 slug: mothman
 characters:
 - Mothman
+arttags:
+- sketch
+- fan art
 program: Procreate
 ---

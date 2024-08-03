@@ -8,4 +8,5 @@ alt_text: "A metal and plastic rack-mounted monitor. It has multiple buttons, kn
 slug: production-monitor
 arttags:
 - 3d
+program: Blender
 ---

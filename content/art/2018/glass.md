@@ -8,4 +8,5 @@ alt_text: "A drinking glass on a plain white backgroud."
 slug: glass
 arttags:
 - 3d
+program: Blender
 ---

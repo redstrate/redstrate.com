@@ -10,6 +10,7 @@ characters:
 arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112720510735345856
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/first-draw
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/6150059.first-draw

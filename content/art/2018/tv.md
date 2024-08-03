@@ -8,4 +8,5 @@ alt_text: "A bright television is sititng on top of a table. Cans, paper and oth
 slug: tv
 arttags:
 - 3d
+program: Blender
 ---

@@ -8,6 +8,7 @@ slug: applebabies
 arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112765290298132276
+newgrounds_url: https://www.newgrounds.com/art/view/redstrate/apple-babies-caterpillar-in-an-apple-a-day
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/7253015.apple-babies-caterpillar-in-an-apple-a-day

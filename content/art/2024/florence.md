@@ -8,6 +8,7 @@ characters:
 - Florence Griffin
 arttags:
 - artfight
+pixiv_url: https://www.pixiv.net/en/artworks/121129316
 program: Krita
 ---
 Artfight attack: https://artfight.net/attack/7549291.farm-hands

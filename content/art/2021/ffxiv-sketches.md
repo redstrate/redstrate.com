@@ -8,5 +8,6 @@ slug: ffxiv-sketches
 arttags:
 - sketch
 - fan art
+nsfw: true
 program: Procreate
 ---

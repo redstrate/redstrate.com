@@ -7,5 +7,6 @@ alt_text: "A bright oak tree is sitting on top of a hill, covered in lots of gra
 slug: tree2
 arttags:
 - landscape
+- sketch
 program: Procreate
 ---

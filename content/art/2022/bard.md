@@ -9,8 +9,7 @@ characters:
 - Juritta
 arttags:
 - fan art
-pixiv_url: https://www.pixiv.net/en/artworks/100622631
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud
-program: Krita
+program: Procreate, Krita
 ---
 This is a full painting I did of my FFXIV character. Overall, I'm pretty happy with how this turned out, but the background isn't fantastic. At the time, I didn't know that filter masks were a thing in Krita, so I ended up pushing it back to Procreate and doing the finishing touches there.

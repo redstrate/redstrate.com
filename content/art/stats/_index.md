@@ -68,7 +68,7 @@ tags:
 - name: 3d
   num: 20
 - name: fan art
-  num: 57
+  num: 61
 - name: sketch
-  num: 109
+  num: 112
 ---

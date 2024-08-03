@@ -7,6 +7,7 @@ alt_text: "A Viera is standing next to a Miqote, in blue swimsuits."
 slug: ffxiv-swim
 characters:
 - Juritta
+- Titania
 arttags:
 - sketch
 - fan art

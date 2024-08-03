@@ -8,7 +8,6 @@ slug: after-the-rain
 characters:
 - Mysterious Swordswoman
 mastodon_url: https://mastodon.art/@redstrate/109359580379856046
-pixiv_url: https://www.pixiv.net/en/artworks/97911950
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/after-the-rain
 program: Procreate
 ---

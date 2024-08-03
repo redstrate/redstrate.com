@@ -9,7 +9,6 @@ slug: lets-get-fit
 characters:
 - Sakura
 mastodon_url: https://mastodon.art/@redstrate/106533538632560503
-pixiv_url: https://www.pixiv.net/en/artworks/94953574
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/let-s-get-fit
 program: Procreate
 ---

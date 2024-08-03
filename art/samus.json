@@ -1,6 +1,10 @@
 {
     "alt_text": "Samus Aran is standing in her blue skin-tight suit, holding her gun. In the background, her suit is visible inside of an inaccessible tube.",
+    "characters": [
+        "Samus"
+    ],
     "date": "2017",
+    "program": "Blender",
     "tags": [
         "3D",
         "fan art"

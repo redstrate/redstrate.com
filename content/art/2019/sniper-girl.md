@@ -10,4 +10,5 @@ characters:
 - Sniper Girl
 arttags:
 - 3d
+program: Blender
 ---
