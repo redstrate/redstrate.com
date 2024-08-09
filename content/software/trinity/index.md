@@ -2,7 +2,7 @@
 title: "Trinity"
 date: 2018-03-18
 draft: false
-source: "https://git.sr.ht/~redstrate/trinity"
+source: "https://codeberg.org/redstrate/trinity"
 license: GPLv3
 projtags:
 - CPlusPlus

@@ -1,7 +1,7 @@
 ---
 title: "Protean"
 date: 2021-08-25
-source: "https://git.sr.ht/~redstrate/protean"
+source: "https://codeberg.org/redstrate/protean"
 license: MIT
 projtags:
 - Go

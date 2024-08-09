@@ -2,9 +2,9 @@
 title: "Water Symbol"
 date: 2022-05-01
 draft: false
-source: "https://git.sr.ht/~redstrate/watersymbol"
+source: "https://codeberg.org/redstrate/watersymbol"
 license: GPLv3
-license-url: https://git.sr.ht/~redstrate/watersymbol/tree/main/item/LICENSE
+license-url: https://codeberg.org/redstrate/WaterSymbol/src/branch/main/LICENSE
 projtags:
 - Java
 - Game

@@ -79,9 +79,6 @@ menu:
   - name: 'Shrines'
     url: '/shrines'
     weight: 7
-  - name: 'Downloads'
-    url: '/downloads'
-    weight: 8
   - name: 'Links'
     url: '/links'
     weight: 9
@@ -94,28 +91,6 @@ menu:
   - name: 'About'
     url: '/about'
     weight: 12
-  retromain:
-  - name: 'Home'
-    url: '/'
-    weight: -1
-  - name: 'Blog'
-    url: '/blog'
-    weight: 1
-  - name: 'Art'
-    url: '/art'
-    weight: 2
-  - name: 'Software'
-    url: '/software'
-    weight: 4
-  - name: 'Downloads'
-    url: '/downloads'
-    weight: 6
-  - name: 'Links'
-    url: '/links'
-    weight: 7
-  - name: 'About'
-    url: '/about'
-    weight: 9
   footer:
   - name: 'Blog Feed'
     url: '/blog/index.xml'
@@ -155,10 +130,10 @@ menu:
     - img: 'pixiv.webp'
     url: 'https://www.pixiv.net/en/users/58118005'
     weight: 2
-  - name: 'sourcehut'
+  - name: 'Codeberg'
     params:
-    - img: 'sourcehut.webp'
-    url: 'https://sr.ht/~redstrate'
+    - img: 'codeberg.webp'
+    url: 'https://codeberg.org/redstrate'
     weight: 3
   - name: 'GitHub'
     params:

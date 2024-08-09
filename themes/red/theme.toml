@@ -1,6 +1,6 @@
 name = "red"
 license = "MIT"
-licenselink = "https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/themes/red/LICENSE"
+licenselink = "https://github.com/redstrate/redstrate.com/tree/main/themes/red/LICENSE"
 description = "Custom Hugo theme for use on redstrate.com"
 homepage = "https://redstrate.com/"
 tags = []

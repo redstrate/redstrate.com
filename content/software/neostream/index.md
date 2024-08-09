@@ -6,7 +6,7 @@ layout: "project"
 projtags:
 - Reverse Engineering
 - Android
-source: "https://git.sr.ht/~redstrate/neostream"
+source: "https://codeberg.org/redstrate/neostream"
 license: GPLv3
 summary: "Open-source Android Twitch client"
 ---

@@ -6,7 +6,7 @@ layout: "project"
 projtags:
 - CPlusPlus
 - Qt
-source: "https://git.sr.ht/~redstrate/redai"
+source: "https://codeberg.org/redstrate/redai"
 license: GPLv3
 summary: "Website gallery manager"
 ---

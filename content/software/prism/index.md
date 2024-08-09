@@ -2,7 +2,7 @@
 title: "Prism"
 date: 2020-08-11
 draft: false
-source: "https://git.sr.ht/~redstrate/prism"
+source: "https://codeberg.org/redstrate/prism"
 license: MIT
 projtags:
 - 3D

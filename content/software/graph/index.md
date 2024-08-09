@@ -2,7 +2,7 @@
 title: "Graph"
 date: 2018-08-11
 draft: false
-source: "https://git.sr.ht/~redstrate/graph"
+source: "https://codeberg.org/redstrate/graph"
 license: MIT
 projtags:
 - 3D

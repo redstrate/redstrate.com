@@ -7,7 +7,7 @@ projtags:
 - CPlusPlus
 - Vulkan
 - 3D
-source: "https://git.sr.ht/~redstrate/graphite"
+source: "https://codeberg.org/redstrate/graphite"
 license: MIT
 summary: "Game engine from 2017"
 ---

@@ -2,7 +2,7 @@
 title: "Gallery"
 date: 2020-01-25
 draft: false
-source: "https://git.sr.ht/~redstrate/gallery"
+source: "https://codeberg.org/redstrate/gallery"
 license: MIT
 projtags:
 - Swift

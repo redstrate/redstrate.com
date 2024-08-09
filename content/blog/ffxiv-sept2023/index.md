@@ -48,7 +48,7 @@ I'm very close to tagging a new version but due to the KF6 requirement, it will 
 
 I added support for [CFG files](https://docs.xiv.zone/docs/physis/cfg/struct.ConfigFile.html) (those plaintext configuration files), [CHARDAT](https://docs.xiv.zone/docs/physis/chardat/struct.CharacterData.html) (character creation save data) and [SHPK](https://docs.xiv.zone/docs/physis/shpk/struct.ShaderPackage.html) (shader packages). More on what those are being used will be expanded on later! I'm trying to get the library in a state for a nice cool 0.2.0 soon.
 
-I'm [almost done with support for writing MDLs](https://git.sr.ht/~redstrate/physis/commit/bbbbb7cd02c00f475ad08e949a486f3bbeccd12f), which is going to be huge! It's close to being complete, but some parts like vertex declarations are still off by some unknown amount of bytes.
+I'm [almost done with support for writing MDLs](https://github.com/redstrate/Physis/commit/bbbbb7cd02c00f475ad08e949a486f3bbeccd12f), which is going to be huge! It's close to being complete, but some parts like vertex declarations are still off by some unknown amount of bytes.
 
 I'm also doing a run-through of my [existing documentation](https://docs.xiv.zone/docs/physis/) and fixing up the new stuff I forgot to add docs for. I also hid a bunch of symbols unnecessary for external use.
 
@@ -82,6 +82,6 @@ I recently had some trouble attempting to decompile the DX11 DXBC shader bytecod
 
 {{< stoot "mastodon.art" "111110339774483271" >}}
 
-So I took the time to splice together a new library called [dxbc](https://git.sr.ht/~redstrate/dxbc) (yes, I know very creative name!) It's the DXBC decompiler used in DXVK, usable in library form. I plan on integrating this with Novus soon, so it can load the shader files from the game.
+So I took the time to splice together a new library called [dxbc](https://github.com/redstrate/dxbc) (yes, I know very creative name!) It's the DXBC decompiler used in DXVK, usable in library form. I plan on integrating this with Novus soon, so it can load the shader files from the game.
 
 {{< series-nav "" "ffxiv-oct2023" >}}

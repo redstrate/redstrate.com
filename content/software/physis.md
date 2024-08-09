@@ -19,7 +19,7 @@ difference however, as I learned a lot since originally writing libxiv which I h
 modding frameworks, this one is aiming to be all "batteries included" instead of exclusively focusing on texture modding,
 data scraping, etc.
 
-Physis features a C api which is accessed through the [libphysis](https://git.sr.ht/~redstrate/libphysis) library. This
+Physis features a C api which is accessed through the [libphysis](https://github.com/redstrate/libphysis) library. This
 library should be usable through any language that can access the C FFI.
 
 You can read more on it's [dedicated webpage on xiv.zone](https://xiv.zone/physis/). It's also published on [crates.io](https://crates.io/crates/physis)!

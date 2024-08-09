@@ -2,7 +2,7 @@
 title: "Raytracer"
 date: 2020-02-17
 draft: false
-source: "https://git.sr.ht/~redstrate/raytracer"
+source: "https://codeberg.org/redstrate/raytracer"
 license: MIT
 projtags:
 - CPlusPlus

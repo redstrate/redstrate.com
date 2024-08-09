@@ -7,7 +7,7 @@ projtags:
 - CPlusPlus
 - Reverse Engineering
 - 3D
-source: "https://git.sr.ht/~redstrate/shaderboy"
+source: "https://codeberg.org/redstrate/shaderboy"
 license: MIT
 summary: "Allows you to view shadertoy shaders offline"
 ---

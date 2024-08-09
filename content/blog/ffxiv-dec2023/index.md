@@ -31,7 +31,7 @@ For the longest time I've been putting off automatic Wine mangement (ala [Bottle
 
 ## Steamwrap
 
-Astra needs to use [Steamworks](https://partner.steamgames.com/doc/sdk) for some current and future functionality. For example, to set the correct Steam app ID[^1] and [eventually to grab the login ticket for Steam account users](https://todo.sr.ht/~redstrate/astra/1). However this is problematic, because you _can't_ easily redistribute the Steamworks SDK[^2]! If I were to build the Flatpak on Flathub CI in the future, it would be almost impossible to because I couldn't point it towards a SDK installation...
+Astra needs to use [Steamworks](https://partner.steamgames.com/doc/sdk) for some current and future functionality. For example, to set the correct Steam app ID[^1] and eventually to grab the login ticket for Steam account users. However this is problematic, because you _can't_ easily redistribute the Steamworks SDK[^2]! If I were to build the Flatpak on Flathub CI in the future, it would be almost impossible to because I couldn't point it towards a SDK installation...
 
 {{< stoot "mastodon.art" "111610316310852487" >}}
 
@@ -39,7 +39,7 @@ So I asked on Mastodon about a possible solution to my condumdrum, and [@NotNite
 
 {{< stoot "coolmathgam.es" "111610324997249357" >}}
 
-This is genius, it's basically pushing all of the parts that connect to the proprietary Steamworks bits to a separate process. That process can also start from another executable that could be compiled separately, which is what I did to create [Steamwrap](https://git.sr.ht/~redstrate/steamwrap). It's basic at the moment and doesn't have IPC yet, but can be expanded in the future.
+This is genius, it's basically pushing all of the parts that connect to the proprietary Steamworks bits to a separate process. That process can also start from another executable that could be compiled separately, which is what I did to create [Steamwrap](https://github.com/redstrate/steamwrap). It's basic at the moment and doesn't have IPC yet, but can be expanded in the future.
 
 So my plan is to build binaries for Linux (ones that are compatible with the Steam Linux Runtime, of course) and upload them to the Astra distribution server. I want to do that during the build process, hopefully.
 
@@ -51,7 +51,7 @@ Working glTF import/export is here! After a year of development, Novus can possi
 
 Yes, it even reloads [Penumbra](https://github.com/xivdev/Penumbra) when you import models... neat! The import/export is almost done, save for a few very weird bugs when loading some vertex data. I've been hammering out fixes though, and I'm confident I can get it to a "good enough" state. Big thanks to [Xande](https://github.com/xivdev/Xande), [Lumina](https://github.com/NotAdam/Lumina), [xivModdingFramework](https://github.com/TexTools/xivModdingFramework) and the rest of the FFXIV modding community for their open source implementations I could reference!
 
-If you're curious about the implementation, the source code for importing is [here](https://git.sr.ht/~redstrate/novus/tree/main/item/parts/mdl/mdlimport.cpp) and exporting is [here](https://git.sr.ht/~redstrate/novus/tree/main/item/parts/mdl/mdlexport.cpp). The model I/O is part of the [Physis source tree](https://git.sr.ht/~redstrate/physis/tree/main/item/src/model.rs).
+If you're curious about the implementation, the source code for importing is [here](https://github.com/redstrate/novus/tree/main/parts/mdl/mdlimport.cpp) and exporting is [here](https://github.com/redstrate/novus/tree/main/parts/mdl/mdlexport.cpp). The model I/O is part of the [Physis source tree](https://github.com/redstrate/physis/tree/main/src/model.rs).
 
 # 2024 Goals
 

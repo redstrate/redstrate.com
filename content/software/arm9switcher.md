@@ -5,7 +5,7 @@ draft: false
 layout: "project"
 projtags:
 - 3DS
-source: "https://git.sr.ht/~redstrate/arm9switcher"
+source: "https://codeberg.org/redstrate/arm9switcher"
 license: MIT
 summary: "A payload switcher for arm9loaderhax"
 ---

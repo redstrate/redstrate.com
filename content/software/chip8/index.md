@@ -2,7 +2,7 @@
 title: "chip8"
 date: 2020-01-25
 draft: false
-source: "https://git.sr.ht/~redstrate/chip8"
+source: "https://codeberg.org/redstrate/chip8"
 license: MIT
 projtags:
 - CPlusPlus

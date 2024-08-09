@@ -25,7 +25,7 @@ The same bragging right from e-mail applies here too, since matrix handles are m
 
 # Websites
 
-My personal website has always been static or statically generated, and need very little maintenance. Since my websites are small and receive very little traffic, I'm able to host them all on the same box. Since I control the server, I can do cool stuff like [automatically updating Rust docs](https://docs.xiv.zone/docs/physis/) for my physis crate [from sourcehut](https://git.sr.ht/~redstrate/physis/tree/main/item/.build.yml#L12) using rsync. I also use builds.sr.ht [to update this website too](https://git.sr.ht/~redstrate/redstrate.com/tree/master/item/.build.yml#L17), once I'm done developing a blog post I simply just commit to the repository and after a minute or so it's live on the Internet!
+My personal website has always been static or statically generated, and need very little maintenance. Since my websites are small and receive very little traffic, I'm able to host them all on the same box. Since I control the server, I can do cool stuff like [automatically updating Rust docs](https://docs.xiv.zone/docs/physis/) for my physis crate [from GitHub](https://github.com/redstrate/physis) using rsync. I also use GitHub [to update this website too](https://github.com/redstrate/redstrate.com), once I'm done developing a blog post I simply just commit to the repository and after a minute or so it's live on the Internet!
 
 # Nextcloud
 

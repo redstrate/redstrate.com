@@ -9,7 +9,7 @@ layout: "project"
 aliases:
 - /projects/silica-viewer
 - /silica-viewer
-source: https://git.sr.ht/~redstrate/silica-viewer
+source: https://codeberg.org/redstrate/silicaviewer
 license: MIT
 summary: "Finally, you can view your Procreate© artwork on your Mac! It also includes thumbnail and Quick Look previews as well for use in Finder."
 ---
@@ -21,7 +21,7 @@ summary: "Finally, you can view your Procreate© artwork on your Mac! It also in
 ## Why is it no longer on the App Store?
 
 I no longer provide the application on the app store [as detailed in this blog post]({{< ref "future-of-silica-viewer" >}}). However, the
-code is fully open-source, and you can find it [here](https://sr.ht/~redstrate/silica-viewer). It should build out of the box in Xcode.
+code is fully open-source, and you can find it [here](https://codeberg.org/redstrate/silicaviewer). It should build out of the box in Xcode.
 
 ## Can I see my timelapse?
 

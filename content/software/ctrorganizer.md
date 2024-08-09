@@ -5,7 +5,7 @@ draft: false
 layout: "project"
 projtags:
 - 3DS
-source: "https://git.sr.ht/~redstrate/ctrorganizer"
+source: "https://codeberg.org/redstrate/ctrorganizer"
 license: MIT
 summary: "A 3DS File Manager"
 ---

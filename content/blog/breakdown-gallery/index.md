@@ -24,7 +24,7 @@ The second step is adding a new JSON file which describes the artwork's attribut
 * Whether the artwork is NSFW.
 * What program was used.
 
-The JSON is simple enough to write with a text editor, but I also made [a graphical application](https://git.sr.ht/~redstrate/redai) which makes mass editing a breeze:
+The JSON is simple enough to write with a text editor, but I also made [a graphical application](https://codeberg.org/redstrate/redai) which makes mass editing a breeze:
 
 ![Screenshot of the art manager program. The previews are helpful for writing good alternative text.](redai.webp)
 

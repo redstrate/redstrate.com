@@ -10,7 +10,7 @@ projtags:
 aliases:
 - /projects/libxiv
 license: GPLv3
-source: "https://git.sr.ht/~redstrate/libxiv"
+source: "https://github.com/redstrate/libxiv"
 summary: "Unmaintained FFXIV modding framework."
 ---
 

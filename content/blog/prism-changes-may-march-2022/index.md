@@ -17,7 +17,7 @@ It's uh, been a while since the last Prism changelog :-) Haha, well there's as a
 
 # To WebGPU and no WebGPU
 
-If you've been paying attention to [my](https://git.sr.ht/~redstrate/prism/commit/a0d92be759450f09343bb04f4da913ccef505bbd) [recent](https://git.sr.ht/~redstrate/prism/commit/3229c4fa2cbb294e6af18649ce826831cd85eada) [commits](https://git.sr.ht/~redstrate/prism/commit/0a95ee2fa8fbf23ba8b3a17c78d6d3dc35ecfcd9), you'll see that I have done a ton of work to support WebGPU, but now I'm probably going to be reverting those changes - for a [myriad of reasons](https://knockout.chat/thread/21724/37#post-1210400).
+If you've been paying attention to [my](https://codeberg.org/redstrate/prism/commit/a0d92be759450f09343bb04f4da913ccef505bbd) [recent](https://codeberg.org/redstrate/prism/commit/3229c4fa2cbb294e6af18649ce826831cd85eada) [commits](https://codeberg.org/redstrate/prism/commit/0a95ee2fa8fbf23ba8b3a17c78d6d3dc35ecfcd9), you'll see that I have done a ton of work to support WebGPU, but now I'm probably going to be reverting those changes - for a [myriad of reasons](https://knockout.chat/thread/21724/37#post-1210400).
 
 First, I'm not a huge fan of the opinionated sense of the WebGPU design at all. From WGSL to weird decisions to omit some common API features such as push/root constants did not mix well with me. Is it weird to say that it actually might be easier to port Prism to WebGL? _Is it?_
 
@@ -32,10 +32,6 @@ I recently was able to get a [nice Windows setup going](https://knockout.chat/th
 # Moving away from Objective-C
 
 In an effort to reduce my usage of Objective-c in the Metal backend, the whole backend is now C++ and uses metal-cpp which is Apple's official C++ wrapper. It works pretty great, and now my static analysis tools work great with it too.
-
-# Move to sourcehut
-
-Prism now is primarily hosted on sourcehut, with mirrors on GitHub and ryne.moe. This is a pretty important goal for reducing my need on centralized services, and I'll be putting in some work to move off of GitHub wiki as well - just like I did with astra.
 
 # Multiple GFX support
 

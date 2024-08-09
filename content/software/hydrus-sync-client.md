@@ -7,7 +7,7 @@ projtags:
 - Hydrus
 - Rust
 license: GPLv3
-source: "https://git.sr.ht/~redstrate/hydrus-sync-client/"
+source: "https://codeberg.org/redstrate/hydrussyncclient/"
 summary: "Sync hydrus databases using rsync."
 ---
 

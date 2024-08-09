@@ -13,7 +13,7 @@ toc: true
 
 These two months contain some pretty big changes I made to Prism, following a short hiatus from the project. These include some pretty important changes to the project moving forward and I hope to keep documenting these in this nice and concise, visual way in the future! <!--more--> Also before you ask, this is February _and_ April, I only made one small commit in March which is why it's not February _to_ April.
 
-If you've never heard of Prism before, it's my ultimate graphics study project that is the culmination of everything I've learned in graphics development so far. It is built upon years of hard effort/learning and also extremely valuable help from multiple people in the graphics community. You can find the complete source code and even more information on it's [GitHub repository](https://git.sr.ht/~redstrate/prism).
+If you've never heard of Prism before, it's my ultimate graphics study project that is the culmination of everything I've learned in graphics development so far. It is built upon years of hard effort/learning and also extremely valuable help from multiple people in the graphics community. You can find the complete source code and even more information on it's [Codeberg repository](https://codeberg.org/redstrate/prism).
 
 # Vulkan is now moving to being a first-class backend
 
@@ -95,6 +95,3 @@ In the short term I want to keep working on polishing the Vulkan stuff, so I can
 Some longer-term goals include DirectX support, an Android version, and eventually some form of raytracing/global illumination. I also want some easily accessible online documentation, leveraging the preexisting docs that are included in the source code already.
 
 Very soon I plan on working on the CI stuff some more so releases can be automatically built and published which would really help testing this on other people's machines (and also stop me from breaking other platform builds!)
-
-**Edit:** I removed some old GitHub issue links that are now dead. Sorry!
-**Edit #2:** I updated the source code links to their new home at sourcehut.

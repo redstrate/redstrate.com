@@ -7,7 +7,7 @@ projtags:
 - Kernel
 - C
 license: GPLv3
-source: https://git.sr.ht/~redstrate/sen
+source: https://codeberg.org/redstrate/sen
 summary: "Kernel for learning purposes."
 ---
 
