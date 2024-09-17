@@ -37,7 +37,7 @@ Astra needs to use [Steamworks](https://partner.steamgames.com/doc/sdk) for some
 
 So I asked on Mastodon about a possible solution to my condumdrum, and [@NotNite](https://notnite.com/) pointed me to [SteamShim](https://github.com/icculus/steamshim):
 
-{{< stoot "coolmathgam.es" "111610324997249357" >}}
+(Embedded post temporarily unavailable.)
 
 This is genius, it's basically pushing all of the parts that connect to the proprietary Steamworks bits to a separate process. That process can also start from another executable that could be compiled separately, which is what I did to create [Steamwrap](https://github.com/redstrate/steamwrap). It's basic at the moment and doesn't have IPC yet, but can be expanded in the future.
 
