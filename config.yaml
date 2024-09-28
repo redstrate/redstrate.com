@@ -20,7 +20,9 @@ markup:
 title: '~redstrate'
 theme: 'red'
 timeZone: 'UTC'
-paginate: 20
+
+pagination:
+    pagerSize: 20
 
 params:
   description: "My personal corner of the Internet!"
@@ -32,10 +34,7 @@ params:
   profile_picture: "/rss-image.png"
   images:
   - rss-image.png
-
-author:
-  name: 'redstrate'
-  email: 'josh@redstrate.com'
+  author: 'redstrate'
 
 permalinks:
   blog: 'blog/:year/:month/:title/'

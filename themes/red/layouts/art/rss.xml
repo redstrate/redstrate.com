@@ -16,7 +16,7 @@
      xmlns:atom="http://www.w3.org/2005/Atom"
      xml:base="{{ .Site.BaseURL }}">
     <channel>
-        <title>{{ .Site.Author.name }}'s Art</title>
+        <title>{{ .Site.Params.author }}'s Art</title>
         <link>{{ .Permalink }}</link>
         <description>Feed of the art that I make!</description>
         {{ with .Site.LanguageCode }}
@@ -36,7 +36,7 @@
         {{ with resources.Get "rss-image.png" }}
         <image>
             <url>{{ .Permalink }}</url>
-            <title>{{ $.Site.Author.name }}'s Art</title>
+            <title>{{ $.Site.Params.author }}'s Art</title>
             <link>{{ $.Permalink }}</link>
             <width>100</width>
             <height>100</height>
@@ -71,7 +71,7 @@
                     <description>This artwork has no description.</description>
                     {{ end }}
 
-                    {{ with $.Site.Author.name }}
+                    {{ with $.Site.Params.author }}
                         <author>{{ . }}</author>
                     {{ end }}
 

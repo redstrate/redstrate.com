@@ -15,7 +15,7 @@
         {{ end }}
     {{ end }}
 
-    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Author.name }}'s blog">
+    <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.author }}'s blog">
 
     {{ $style := resources.Get "css/site.css" }}
     {{ if hugo.IsProduction }}
