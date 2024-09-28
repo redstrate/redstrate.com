@@ -9,7 +9,6 @@ characters:
 - Mysterious Swordswoman
 nsfw: true
 mastodon_url: https://mastodon.art/@redstrate/110267364853210553
-pixiv_url: https://www.pixiv.net/en/artworks/107564292
 program: Procreate
 ---
 Looks like it's a great time for a hot bath!

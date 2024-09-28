@@ -8,7 +8,6 @@ slug: newsakura
 characters:
 - Sakura
 mastodon_url: https://mastodon.art/@redstrate/111123304505140712
-pixiv_url: https://www.pixiv.net/en/artworks/112019046
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/new-sakura
 program: Krita
 ---

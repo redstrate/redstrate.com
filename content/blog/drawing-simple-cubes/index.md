@@ -61,13 +61,13 @@ void main() {
 }
 ```
 
-Let's break this down, first we can simplify the many equality checks in the beginning with [notEqual](https://docs.gl/sl4/notEqual):
+Let's break this down, first we can simplify the many equality checks in the beginning with [notEqual](https://registry.khronos.org/OpenGL-Refpages/gl4/html/notEqual.xhtml):
 
 ```glsl
 notEqual(abs(inPosition), vec3(1.0))
 ```
 
-This is component-wise, so it has the same exact meaning as before. We want to call [length](https://docs.gl/sl4/length) on this, hence the `vec3` cast. Why do we do a length cast? It's the easiest way to detect how many booleans are true, I'm not sure of a better way. For example:
+This is component-wise, so it has the same exact meaning as before. We want to call [length](https://registry.khronos.org/OpenGL-Refpages/gl4/html/length.xhtml) on this, hence the `vec3` cast. Why do we do a length cast? It's the easiest way to detect how many booleans are true, I'm not sure of a better way. For example:
 
 * `(1, 0, 0)` has a length of 1.
 * `(1, 1, 0)` has a length of $\sqrt{2}$.
