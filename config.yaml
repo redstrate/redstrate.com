@@ -105,17 +105,31 @@ menu:
     weight: 2
   badges:
   - name: 'CC NC SA'
+    params:
+    - img: 'by-nc-sa.webp'
     url: 'by-nc-sa.webp'
     weight: -1
   - name: 'RSS Feed'
+    params:
+    - img: 'rssbanner.webp'
     url: 'rssbanner.webp'
     weight: 1
   - name: 'Powered by Gentoo'
+    params:
+    - img: 'gentoo-badge2.webp'
     url: 'gentoo-badge2.webp'
     weight: 2
   - name: 'Evangelion'
+    params:
+    - img: 'nerv_button.webp'
     url: 'nerv_button.webp'
     weight: 3
+  otherbadges:
+  - name: 'Neocreatives Webring'
+    params:
+    - img: 'neocreatives.gif'
+    url: 'http://neocreatives.byethost5.com/directory.php'
+    weight: 4
   socials:
   - name: 'Mastodon'
     params:
