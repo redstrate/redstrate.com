@@ -15,6 +15,18 @@
             <a href="{{ $url }}"><img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}" alt="{{ $badgeScope.Name }}"></a>
         {{ end }}
     {{ end }}
+
+    {{ with .Site.Params.geekring_site_id }}
+     <map name="badge-geekring">
+        <area shape="rect" coords="4,3,13,28" href="http://geekring.net/site/{{ . }}/previous" alt="Previous">
+        <area shape="rect" coords="13,3,22,28" href="http://geekring.net/site/{{ . }}/random" alt="Random">
+        <area shape="rect" coords="76,3,84,28" href="http://geekring.net/site/{{ . }}/next" alt="Next">
+        <area shape="rect" coords="23,3,63,28" href="https://geekring.net/" alt="Geekring">
+    </map>
+    {{ with resources.Get "geek_2.gif" }}
+    <img usemap="#badge-geekring" src="{{ .RelPermalink }}" alt="The Geekring">
+    {{ end }}
+    {{ end }}
 </div>
 
 <div class="f-list">
@@ -27,14 +39,4 @@
     </ul>
 </div>
 
-{{ with .Site.Params.geekring_site_id }}
-    <hr>
-
-    <div class="f-list">
-        <b>This site is a proud member of the geekring! Check some other geeky websites here!</b><br>
-        <a href="http://geekring.net/site/{{ . }}/previous">Previous site</a> --
-        <a href="http://geekring.net/site/{{ . }}/random">Random site</a> --
-        <a href="http://geekring.net/site/{{ . }}/next">Next site</a>
-    </div>
-{{ end }}
 
