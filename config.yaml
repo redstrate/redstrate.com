@@ -69,15 +69,18 @@ menu:
   - name: 'Software'
     url: '/software'
     weight: 4
+  - name: 'Talks'
+    url: '/talks'
+    weight: 5
   - name: 'Games'
     url: 'https://redstrate.itch.io/'
-    weight: 5
+    weight: 6
   - name: 'Videos'
     url: 'https://tube.ryne.moe/@redchannel'
-    weight: 6
+    weight: 7
   - name: 'Shrines'
     url: '/shrines'
-    weight: 7
+    weight: 8
   - name: 'Links'
     url: '/links'
     weight: 9

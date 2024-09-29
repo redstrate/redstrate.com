@@ -55,7 +55,9 @@ My talk [was about integrating C++, Qt, Rust (and KDE Frameworks.)](https://conf
 
 ![A picture of me hastily giving my presentation.](presentation.jpg)
 
-The results of my talk I think were really cool! Within the KDE community, there seems to be some interest in picking up Rust. Lots of KDE developers were in varying stages of Rust interest. No one told me how stupid it was to glue the two together, so the general vibe I think is "it's pretty neat, let's see how well this works." Unfortunately due to technical issues my talk was not recorded properly. A colleague recorded my talk on his phone, and will hand that over to the Akademy organizers soon. So please be patient, but [the slides are available online](https://conf.kde.org/event/6/contributions/203/attachments/133/169/akademy-2024-qt-rust.pdf) while you wait.
+The results of my talk I think were really cool! Within the KDE community, there seems to be some interest in picking up Rust. Lots of KDE developers were in varying stages of Rust interest. No one told me how stupid it was to glue the two together, so the general vibe I think is "it's pretty neat, let's see how well this works." ~~Unfortunately due to technical issues my talk was not recorded properly. A colleague recorded my talk on his phone, and will hand that over to the Akademy organizers soon.~~
+
+The talk is now available on [PeerTube](https://tube.kockatoo.org/w/bdDAWwGXRyWmyVBn9mdbnP). [The slides are also available online](https://conf.kde.org/event/6/contributions/203/attachments/133/169/akademy-2024-qt-rust.pdf).
 
 Oh yeah, and the KDE goal I'm championing ["We care about your Input"](https://phabricator.kde.org/T17433) was selected! I'm pretty excited to keep hacking away on graphics tablets in KDE Plasma. Thanks to [NLnet](https://nlnet.nl/) for sponsoring us to work on that, along with Wayland accessibility improvements.
 
