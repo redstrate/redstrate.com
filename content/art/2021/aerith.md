@@ -11,4 +11,8 @@ arttags:
 - sketch
 - fan art
 program: Procreate
+width: 836
+height: 1783
+thumb_width: 512
+thumb_height: 1092
 ---

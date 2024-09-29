@@ -8,4 +8,8 @@ slug: plan
 arttags:
 - sketch
 program: Procreate
+width: 1701
+height: 2175
+thumb_width: 512
+thumb_height: 655
 ---

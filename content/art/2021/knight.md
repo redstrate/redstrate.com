@@ -7,5 +7,9 @@ alt_text: "A blonde-haired knight is looking at the viewer. She is leaning on he
 slug: knight
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/woman-knight
 program: Procreate
+width: 1920
+height: 1966
+thumb_width: 512
+thumb_height: 524
 ---
 Looks like this knight is ready for anything! It doesn't look like her legs are very protected though...

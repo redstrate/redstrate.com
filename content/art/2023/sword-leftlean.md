@@ -10,5 +10,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109638316928912547
 program: Procreate
+width: 1286
+height: 1622
+thumb_width: 512
+thumb_height: 646
 ---
 I wanted to do a bigger pic of her, but ended up cropping and coloring this part instead. I'm still trying to figure out what to do with her hair...

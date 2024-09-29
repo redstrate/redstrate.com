@@ -10,4 +10,8 @@ characters:
 mastodon_url: https://mastodon.art/@redstrate/111825122306086541
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/slow-day
 program: Krita
+width: 1636
+height: 1710
+thumb_width: 512
+thumb_height: 535
 ---

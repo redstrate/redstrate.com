@@ -11,5 +11,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109394255132277134
 program: Krita
+width: 871
+height: 1742
+thumb_width: 512
+thumb_height: 1024
 ---
 dunno why i've been drawing food so much recently... will you eat the Baked Alien Soup?

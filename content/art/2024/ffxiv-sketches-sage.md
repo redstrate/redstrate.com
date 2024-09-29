@@ -14,4 +14,8 @@ mastodon_url: https://mastodon.art/@redstrate/112883865597297417
 pixiv_url: https://www.pixiv.net/en/artworks/121097824
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/ffxiv-sketches
 program: Krita
+width: 1384
+height: 2847
+thumb_width: 512
+thumb_height: 1053
 ---

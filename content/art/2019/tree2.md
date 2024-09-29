@@ -9,4 +9,8 @@ arttags:
 - landscape
 - sketch
 program: Procreate
+width: 1668
+height: 2388
+thumb_width: 512
+thumb_height: 733
 ---

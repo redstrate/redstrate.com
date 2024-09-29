@@ -12,5 +12,9 @@ arttags:
 - 3d
 mastodon_url: https://mastodon.art/@redstrate/112736580479887700
 program: Blender
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 Artfight attack: https://artfight.net/attack/6647385.recovery-disk

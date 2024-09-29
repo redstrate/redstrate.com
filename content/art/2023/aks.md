@@ -9,5 +9,9 @@ arttags:
 - request
 mastodon_url: https://mastodon.art/@redstrate/111014706460965728
 program: Krita
+width: 1920
+height: 2088
+thumb_width: 512
+thumb_height: 557
 ---
 Request by @aks@fedi.akselmo.dev

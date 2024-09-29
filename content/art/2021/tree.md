@@ -9,4 +9,8 @@ arttags:
 - drawpile
 - landscape
 program: Drawpile
+width: 1200
+height: 1200
+thumb_width: 512
+thumb_height: 512
 ---

@@ -7,4 +7,8 @@ slug: fantasyfolks
 arttags:
 - sketch
 program: Procreate
+width: 1789
+height: 1599
+thumb_width: 512
+thumb_height: 458
 ---

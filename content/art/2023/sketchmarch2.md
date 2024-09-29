@@ -11,5 +11,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/110108997092717607
 program: Procreate
+width: 1497
+height: 1544
+thumb_width: 512
+thumb_height: 528
 ---
 Really happy with how Knocky-chan looks here, and the glasses girl turned out pretty cute too.

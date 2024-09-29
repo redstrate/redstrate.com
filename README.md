@@ -22,7 +22,9 @@ $ hugo server
 
 ### Art
 
-The art gallery is defined via JSON (in `art`, and other directories in site root) and uses Python to generate the front-matter Markdown files that Hugo consumes. To refresh the gallery, re-run `scripts/gen_art.py`.
+The art gallery is defined via JSON (in `art`, and other directories in site root) and uses Python to generate the front-matter Markdown files that Hugo consumes. To refresh the gallery, re-run `scripts/gen_art.py`. The files are rarely edited by hand, I use [Redai](https://codeberg.org/redstrate/Redai) to edit these.
+
+In `data/sizes.json`, the sizes for the images is defined and read by `scripts/gen_art.py`. Currently the script used to generate this is not public, but the format should be straight-forward to figure out.
 
 ## License
 

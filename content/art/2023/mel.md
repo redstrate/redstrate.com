@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 pixiv_url: https://www.pixiv.net/artworks/109600265
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/burger-time
 program: Krita
+width: 1700
+height: 2160
+thumb_width: 512
+thumb_height: 651
 ---
 Artfight attack: https://artfight.net/attack/4186294.burger-time

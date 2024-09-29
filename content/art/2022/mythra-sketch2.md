@@ -11,4 +11,8 @@ arttags:
 - sketch
 - fan art
 program: Krita
+width: 988
+height: 1700
+thumb_width: 512
+thumb_height: 881
 ---

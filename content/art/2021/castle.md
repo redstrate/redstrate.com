@@ -8,4 +8,8 @@ slug: castle
 arttags:
 - drawpile
 program: Drawpile
+width: 1202
+height: 1059
+thumb_width: 512
+thumb_height: 451
 ---

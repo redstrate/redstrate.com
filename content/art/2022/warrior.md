@@ -9,5 +9,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109427768124828010
 program: Krita
+width: 1500
+height: 1077
+thumb_width: 512
+thumb_height: 368
 ---
 Inspired by a certain scene in FFXIV Shadowbringers!

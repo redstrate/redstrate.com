@@ -10,5 +10,9 @@ characters:
 mastodon_url: https://mastodon.art/@redstrate/111123304505140712
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/new-sakura
 program: Krita
+width: 763
+height: 1469
+thumb_width: 512
+thumb_height: 986
 ---
 mew

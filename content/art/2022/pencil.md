@@ -9,5 +9,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109535473989137918
 program: Krita
+width: 1920
+height: 1005
+thumb_width: 512
+thumb_height: 268
 ---
 Will you accept it from her?

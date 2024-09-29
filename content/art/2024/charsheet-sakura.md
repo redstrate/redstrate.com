@@ -10,5 +10,9 @@ characters:
 arttags:
 - character sheet
 mastodon_url: https://mastodon.art/@redstrate/112662299507727427
+width: 764
+height: 1848
+thumb_width: 512
+thumb_height: 1238
 ---
 Artfight preparation :-) Based off of her 2023 sheet

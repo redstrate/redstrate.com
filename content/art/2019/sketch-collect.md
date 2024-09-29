@@ -8,4 +8,8 @@ slug: sketch-collect
 arttags:
 - sketch
 program: Procreate
+width: 907
+height: 884
+thumb_width: 512
+thumb_height: 499
 ---

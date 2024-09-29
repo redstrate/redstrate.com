@@ -8,4 +8,8 @@ slug: waiting
 arttags:
 - drawpile
 program: Drawpile
+width: 1564
+height: 1198
+thumb_width: 512
+thumb_height: 392
 ---

@@ -13,4 +13,8 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/111480082526592412
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/bring-on-the-ketchup
 program: Krita, Blender
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---

@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/112468818118244065
 pixiv_url: https://www.pixiv.net/en/artworks/118886586
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/viera-id-check
 program: Krita
+width: 1559
+height: 2388
+thumb_width: 512
+thumb_height: 784
 ---
 do they even have the concept of a legal drinking age anywhere in Eorzea? 🍺

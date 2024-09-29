@@ -11,5 +11,9 @@ arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112785759056083795
 program: Krita
+width: 1920
+height: 2070
+thumb_width: 512
+thumb_height: 552
 ---
 Artfight attack: https://artfight.net/attack/7534577.early-morning-meeting

@@ -20,8 +20,8 @@
         {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" $.Params.slug }}
 
         <picture>
-                <source srcset="{{ $full }}" type="image/avif"/>
-                <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" src="{{ $jpeg }}"/>
+                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.width }}" height="{{ $.Params.height }}"/>
+                <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" width="{{ $.Params.width }}" height="{{ $.Params.height }}" src="{{ $jpeg }}"/>
         </picture>
     {{ else }}
         {{ $file := printf "https://images.redstrate.com%s" $.Params.filename }}

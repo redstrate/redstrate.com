@@ -12,5 +12,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/112803941103002762
 pixiv_url: https://www.pixiv.net/en/artworks/121097790
 program: Krita, Blender
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 Artfight attack: https://artfight.net/attack/7756662.fallen-angel

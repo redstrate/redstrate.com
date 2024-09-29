@@ -9,5 +9,9 @@ characters:
 - Sakura
 arttags:
 - artfight
+width: 1920
+height: 1920
+thumb_width: 512
+thumb_height: 512
 ---
 Artfight attack: https://artfight.net/attack/8599807.seafoam-vs-stardust-new-age-of-artists

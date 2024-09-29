@@ -11,5 +11,9 @@ arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112827087560658678
 program: Krita
+width: 1258
+height: 2161
+thumb_width: 512
+thumb_height: 880
 ---
 Artfight attack: https://artfight.net/attack/7990837.take-a-look-inside-the-book

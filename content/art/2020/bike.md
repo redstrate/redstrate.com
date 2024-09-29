@@ -9,4 +9,8 @@ arttags:
 - drawpile
 - sketch
 program: Drawpile
+width: 1094
+height: 1224
+thumb_width: 512
+thumb_height: 573
 ---

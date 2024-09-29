@@ -12,4 +12,8 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/109421857086877683
 program: Procreate
+width: 694
+height: 678
+thumb_width: 512
+thumb_height: 500
 ---

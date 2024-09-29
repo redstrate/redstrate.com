@@ -8,4 +8,8 @@ animation: true
 arttags:
 - animation
 - flipnote
+width: 793
+height: 597
+thumb_width: 512
+thumb_height: 385
 ---

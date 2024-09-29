@@ -7,4 +7,8 @@ filename: /art/sword-buying.webp
 alt_text: "A blonde boy is trying to a buy a new sword from a red-haired merchant. \"This sword looks amazing!\" he says, and she replies \"It's going to cost you...\""
 slug: sword-buying
 program: Procreate
+width: 1920
+height: 2388
+thumb_width: 512
+thumb_height: 637
 ---

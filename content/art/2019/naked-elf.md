@@ -8,4 +8,8 @@ slug: naked-elf
 arttags:
 - sketch
 program: Procreate
+width: 449
+height: 1001
+thumb_width: 449
+thumb_height: 1001
 ---

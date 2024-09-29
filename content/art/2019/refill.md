@@ -8,4 +8,8 @@ slug: refill
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 893
+thumb_width: 512
+thumb_height: 447
 ---

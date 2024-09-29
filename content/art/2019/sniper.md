@@ -9,4 +9,8 @@ slug: sniper
 characters:
 - Sniper Girl
 program: Procreate
+width: 1750
+height: 2553
+thumb_width: 512
+thumb_height: 747
 ---

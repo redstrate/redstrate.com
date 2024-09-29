@@ -8,4 +8,8 @@ slug: loss
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 767
+thumb_width: 512
+thumb_height: 384
 ---

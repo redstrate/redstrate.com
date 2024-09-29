@@ -8,4 +8,8 @@ slug: pair
 arttags:
 - sketch
 program: Procreate
+width: 766
+height: 1024
+thumb_width: 512
+thumb_height: 684
 ---

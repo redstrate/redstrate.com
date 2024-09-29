@@ -7,4 +7,8 @@ filename: /art/sleeping.webp
 alt_text: "A witch is sleeping on her work table, with many potions and drinks sitting around her."
 slug: sleeping
 program: Procreate
+width: 1024
+height: 695
+thumb_width: 512
+thumb_height: 348
 ---

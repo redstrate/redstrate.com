@@ -10,5 +10,9 @@ characters:
 arttags:
 - fan art
 program: Krita
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 The thumbnail for my video "Ruining a $80 figure by putting it together badly"

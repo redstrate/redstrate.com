@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/110078510315490732
 pixiv_url: https://www.pixiv.net/en/artworks/106520839
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/gaming-for-one
 program: Krita
+width: 1920
+height: 4135
+thumb_width: 512
+thumb_height: 1103
 ---
 Merume takes the best course of action when getting bullied online, by treating herself to not one but two Steam Decks in order to beat them in a online game!

@@ -11,5 +11,9 @@ mastodon_url: https://mastodon.art/@redstrate/109441062876997355
 pixiv_url: https://www.pixiv.net/en/artworks/103269375
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/grocery-shopping
 program: Procreate
+width: 1000
+height: 1426
+thumb_width: 512
+thumb_height: 730
 ---
 This is the first proper "finished" drawing of Merume. I love multiarm designs so I finally broke down and came up witha concept for her. Her initial name was going to be Meru, but a quick google search showed another succubus underthat name!Right now she's heading back to her apartment, and back from a quick grocery trip. She's probably the onlyone who could comfortably make "one trip" ;-)

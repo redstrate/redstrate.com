@@ -7,4 +7,8 @@ slug: fediseum-interior
 arttags:
 - 3d
 program: Blender, Godot
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---

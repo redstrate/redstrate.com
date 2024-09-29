@@ -8,4 +8,8 @@ slug: hey-baby
 arttags:
 - sketch
 program: Procreate
+width: 1020
+height: 1024
+thumb_width: 512
+thumb_height: 514
 ---

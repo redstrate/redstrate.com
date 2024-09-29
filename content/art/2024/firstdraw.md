@@ -12,5 +12,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/112720510735345856
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/first-draw
 program: Krita
+width: 1920
+height: 1348
+thumb_width: 512
+thumb_height: 359
 ---
 Artfight attack: https://artfight.net/attack/6150059.first-draw

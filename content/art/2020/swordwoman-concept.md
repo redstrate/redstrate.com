@@ -11,5 +11,9 @@ characters:
 arttags:
 - sketch
 program: Procreate
+width: 896
+height: 1420
+thumb_width: 512
+thumb_height: 811
 ---
 An earlier iteration of the design!

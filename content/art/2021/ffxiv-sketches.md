@@ -10,4 +10,8 @@ arttags:
 - fan art
 nsfw: true
 program: Procreate
+width: 1835
+height: 1095
+thumb_width: 512
+thumb_height: 306
 ---

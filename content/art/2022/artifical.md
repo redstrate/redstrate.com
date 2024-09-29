@@ -7,5 +7,9 @@ alt_text: "A large face dominants the image, showing two beady red eyes at you w
 slug: artifical
 mastodon_url: https://mastodon.art/@redstrate/110216271361374152
 program: Procreate
+width: 1920
+height: 1446
+thumb_width: 512
+thumb_height: 386
 ---
 Cleaned up version of a piece I made reflecting a short depression when "AI Art" started making rounds.

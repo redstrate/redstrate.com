@@ -9,4 +9,8 @@ characters:
 arttags:
 - fan art
 program: Procreate
+width: 982
+height: 2852
+thumb_width: 512
+thumb_height: 1487
 ---

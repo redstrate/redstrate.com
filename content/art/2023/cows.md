@@ -7,4 +7,8 @@ slug: cows
 nsfw: true
 pixiv_url: https://www.pixiv.net/en/artworks/121093091
 program: Krita
+width: 1449
+height: 2649
+thumb_width: 512
+thumb_height: 936
 ---

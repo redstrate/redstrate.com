@@ -9,5 +9,9 @@ arttags:
 - request
 mastodon_url: https://mastodon.art/@redstrate/111041558452790638
 program: Krita
+width: 1158
+height: 2196
+thumb_width: 512
+thumb_height: 971
 ---
 Request by Emily Vasquez from Knockout.

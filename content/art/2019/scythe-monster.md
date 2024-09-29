@@ -8,4 +8,8 @@ slug: scythe-monster
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 516
+thumb_width: 512
+thumb_height: 258
 ---

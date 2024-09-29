@@ -12,5 +12,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/110646304883440696
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/snow-hunting
 program: Krita
+width: 1655
+height: 2005
+thumb_width: 512
+thumb_height: 620
 ---
 Artfight attack: https://artfight.net/attack/4192573.snow-hunting

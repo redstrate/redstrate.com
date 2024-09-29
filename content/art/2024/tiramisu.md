@@ -9,4 +9,8 @@ characters:
 - Terra Missu
 mastodon_url: https://mastodon.art/@redstrate/112306487333726274
 program: Krita
+width: 1575
+height: 2034
+thumb_width: 512
+thumb_height: 661
 ---

@@ -9,6 +9,10 @@ mastodon_url: https://mastodon.art/@redstrate/109312136100100717
 pixiv_url: https://www.pixiv.net/en/artworks/102641828
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/working-out
 program: Krita
+width: 1272
+height: 2027
+thumb_width: 512
+thumb_height: 816
 ---
 This is a recreation of a sketch I did in 2020, where I tried to do it in my "usual style". I actually really liked how this turned out, all of the poses and faces turned out really cute!
 

@@ -9,4 +9,8 @@ slug: alley
 arttags:
 - 3d
 program: Blender
+width: 899
+height: 1206
+thumb_width: 512
+thumb_height: 687
 ---

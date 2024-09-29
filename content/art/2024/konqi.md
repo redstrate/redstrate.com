@@ -11,5 +11,9 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/112238971210645004
 program: Krita
+width: 1920
+height: 2257
+thumb_width: 512
+thumb_height: 602
 ---
 Eating DVDs isn't illegal, right?

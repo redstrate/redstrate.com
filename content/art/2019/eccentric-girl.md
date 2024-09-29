@@ -8,4 +8,8 @@ slug: eccentric-girl
 arttags:
 - sketch
 program: Procreate
+width: 934
+height: 1598
+thumb_width: 512
+thumb_height: 876
 ---

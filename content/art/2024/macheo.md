@@ -11,5 +11,9 @@ arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112771154075649547
 program: Krita
+width: 1920
+height: 1440
+thumb_width: 512
+thumb_height: 384
 ---
 Artfight attack: https://artfight.net/attack/7350831.macheo-strike

@@ -10,5 +10,9 @@ characters:
 mastodon_url: https://mastodon.art/@redstrate/109359580379856046
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/after-the-rain
 program: Procreate
+width: 1320
+height: 2690
+thumb_width: 512
+thumb_height: 1043
 ---
 Who is this mysterious sword maiden, and where is she going next? I love how the background turned out in this piece.

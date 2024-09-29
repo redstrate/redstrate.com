@@ -9,4 +9,8 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109447816922944564
 program: Procreate
+width: 1049
+height: 1280
+thumb_width: 512
+thumb_height: 625
 ---

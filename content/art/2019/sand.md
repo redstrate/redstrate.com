@@ -8,4 +8,8 @@ slug: sand
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 668
+thumb_width: 512
+thumb_height: 334
 ---

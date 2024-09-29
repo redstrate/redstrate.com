@@ -9,5 +9,9 @@ characters:
 - Katie
 mastodon_url: https://mastodon.art/@redstrate/110606818674511646
 program: Krita
+width: 1108
+height: 1793
+thumb_width: 512
+thumb_height: 829
 ---
 Fan art of Bourbon's character :-)

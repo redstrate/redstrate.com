@@ -7,4 +7,8 @@ slug: descent
 arttags:
 - sketch
 program: Procreate
+width: 472
+height: 844
+thumb_width: 472
+thumb_height: 844
 ---

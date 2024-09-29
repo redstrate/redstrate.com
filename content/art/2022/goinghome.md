@@ -11,5 +11,9 @@ mastodon_url: https://mastodon.art/@redstrate/109561038526618255
 pixiv_url: https://www.pixiv.net/en/artworks/103827572
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/going-home
 program: Krita
+width: 1200
+height: 1697
+thumb_width: 512
+thumb_height: 724
 ---
 Based on a real photo! I really like how this turned out, on a general scale of perspective and colors, and all of that.

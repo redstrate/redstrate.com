@@ -13,5 +13,9 @@ threed: true
 arttags:
 - 3d
 nsfw: false
+width: 511
+height: 512
+thumb_width: 511
+thumb_height: 512
 ---
 I attempted to make the Planet Express ship!

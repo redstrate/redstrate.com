@@ -7,4 +7,8 @@ slug: day4
 arttags:
 - sketch
 program: Procreate
+width: 678
+height: 1024
+thumb_width: 512
+thumb_height: 773
 ---

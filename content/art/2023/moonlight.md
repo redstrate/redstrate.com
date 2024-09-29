@@ -10,5 +10,9 @@ characters:
 mastodon_url: https://mastodon.art/@redstrate/111494666961164400
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/moonlight
 program: Krita
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 I hate drawing grass

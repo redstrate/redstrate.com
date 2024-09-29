@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/110657265743066536
 pixiv_url: https://www.pixiv.net/artworks/109630406
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/relaxation
 program: Krita
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 Artfight attack: https://artfight.net/attack/4421745.relaxation

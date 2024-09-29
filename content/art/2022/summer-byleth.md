@@ -12,5 +12,9 @@ arttags:
 pixiv_url: https://www.pixiv.net/en/artworks/98726204
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-byleth
 program: Krita
+width: 1000
+height: 1586
+thumb_width: 512
+thumb_height: 812
 ---
 This is my first proper painted character piece, and I'm pretty happy with how it turned out still. Why does she need a knife on the beach though?

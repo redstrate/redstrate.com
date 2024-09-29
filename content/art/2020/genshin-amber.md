@@ -12,4 +12,8 @@ arttags:
 - landscape
 - fan art
 program: Procreate
+width: 1920
+height: 1439
+thumb_width: 512
+thumb_height: 384
 ---

@@ -11,5 +11,9 @@ arttags:
 - character sheet
 mastodon_url: https://mastodon.art/@redstrate/112662289434324901
 program: Krita
+width: 615
+height: 1805
+thumb_width: 512
+thumb_height: 1503
 ---
 Artfight preparation :-)

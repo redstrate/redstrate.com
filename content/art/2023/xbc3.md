@@ -12,5 +12,9 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/110262783603849052
 program: Procreate
+width: 1920
+height: 1439
+thumb_width: 512
+thumb_height: 384
 ---
 I just started Xenoblade Chronicles 3, so I wanted to draw two of the characters before I go back to feeding my Xenoblade addiction!

@@ -11,5 +11,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109605001272963320
 program: Procreate
+width: 1062
+height: 1273
+thumb_width: 512
+thumb_height: 614
 ---
 I love stupidly big cartoony hams, and this one is no exception. She looks pretty happy about to eat it though :-)

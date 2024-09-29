@@ -11,5 +11,9 @@ arttags:
 - fan art
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/bard-in-the-black-shroud
 program: Procreate, Krita
+width: 1500
+height: 2333
+thumb_width: 512
+thumb_height: 796
 ---
 This is a full painting I did of my FFXIV character. Overall, I'm pretty happy with how this turned out, but the background isn't fantastic. At the time, I didn't know that filter masks were a thing in Krita, so I ended up pushing it back to Procreate and doing the finishing touches there.

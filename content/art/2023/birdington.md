@@ -12,5 +12,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/110646280771834242
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/robbery
 program: Krita
+width: 1920
+height: 2322
+thumb_width: 512
+thumb_height: 619
 ---
 Artfight attack: https://artfight.net/attack/4167421.robbery

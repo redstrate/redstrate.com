@@ -9,4 +9,8 @@ slug: dec7
 arttags:
 - sketch
 program: Procreate
+width: 1920
+height: 1822
+thumb_width: 512
+thumb_height: 486
 ---

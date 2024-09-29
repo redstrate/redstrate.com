@@ -9,4 +9,8 @@ slug: city-train
 arttags:
 - 3d
 program: Blender
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---

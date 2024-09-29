@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/110646280771834242
 pixiv_url: https://www.pixiv.net/en/artworks/109600265
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/want-to-listen
 program: Krita
+width: 1460
+height: 1962
+thumb_width: 512
+thumb_height: 688
 ---
 Artfight attack: https://artfight.net/attack/4092315.want-to-listen

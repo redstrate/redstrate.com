@@ -9,4 +9,8 @@ slug: chains-sketch
 arttags:
 - sketch
 program: Procreate
+width: 1686
+height: 1475
+thumb_width: 512
+thumb_height: 448
 ---

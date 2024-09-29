@@ -8,4 +8,8 @@ slug: train
 arttags:
 - drawpile
 program: Drawpile
+width: 982
+height: 1214
+thumb_width: 512
+thumb_height: 633
 ---

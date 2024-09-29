@@ -9,5 +9,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109430376846947228
 program: Krita
+width: 1920
+height: 1870
+thumb_width: 512
+thumb_height: 499
 ---
 Done this one on stream, while playing Rollercoaster Tycoon 2!

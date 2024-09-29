@@ -8,4 +8,8 @@ slug: wooden-boy
 arttags:
 - sketch
 program: Procreate
+width: 480
+height: 653
+thumb_width: 480
+thumb_height: 653
 ---

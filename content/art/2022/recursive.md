@@ -10,5 +10,9 @@ arttags:
 - request
 mastodon_url: https://mastodon.art/@redstrate/109603550044669688
 program: Procreate
+width: 1493
+height: 1389
+thumb_width: 512
+thumb_height: 476
 ---
 Made on request!

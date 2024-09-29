@@ -8,4 +8,8 @@ slug: balloonshroom
 mastodon_url: https://mastodon.art/@redstrate/111958219719666913
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/oc-plaza-1
 program: Krita
+width: 1920
+height: 1598
+thumb_width: 512
+thumb_height: 426
 ---

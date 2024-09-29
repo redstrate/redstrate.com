@@ -17,6 +17,10 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/109972292267062823
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/march-sketch-dump
 program: Krita
+width: 1920
+height: 2300
+thumb_width: 512
+thumb_height: 613
 ---
 Here's a collection of sketches I finally finished! I didn't feel like doing a full piece, so I opted to color each of these instead.
 

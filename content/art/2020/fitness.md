@@ -7,4 +7,8 @@ slug: fitness
 arttags:
 - sketch
 program: Procreate
+width: 783
+height: 920
+thumb_width: 512
+thumb_height: 602
 ---

@@ -11,5 +11,9 @@ arttags:
 - artfight
 mastodon_url: https://mastodon.art/@redstrate/112849990662603680
 program: Krita
+width: 1920
+height: 2715
+thumb_width: 512
+thumb_height: 724
 ---
 Artfight attack: https://artfight.net/attack/8207900.the-chromosomes-live

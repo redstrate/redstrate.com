@@ -12,4 +12,8 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/109355236564579640
 program: Krita
+width: 1068
+height: 1386
+thumb_width: 512
+thumb_height: 664
 ---

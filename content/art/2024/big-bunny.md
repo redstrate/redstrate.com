@@ -20,4 +20,8 @@ mastodon_url: https://mastodon.art/@redstrate/112187076950789997
 pixiv_url: https://www.pixiv.net/artworks/117405970
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/big-bunny
 program: Krita
+width: 1920
+height: 3055
+thumb_width: 512
+thumb_height: 815
 ---

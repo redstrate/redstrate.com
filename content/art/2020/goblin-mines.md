@@ -7,4 +7,8 @@ slug: goblin-mines
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 766
+thumb_width: 512
+thumb_height: 383
 ---

@@ -12,5 +12,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/110646280771834242
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/tim
 program: Krita
+width: 1248
+height: 1490
+thumb_width: 512
+thumb_height: 611
 ---
 Artfight attack: https://artfight.net/attack/4170296.tim

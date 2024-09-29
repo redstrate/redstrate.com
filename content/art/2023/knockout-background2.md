@@ -10,5 +10,9 @@ characters:
 arttags:
 - fan art
 program: Krita
+width: 460
+height: 920
+thumb_width: 460
+thumb_height: 920
 ---
 This is my second Knockout background, which is just a slightly touched up drawing I did last year! I still like this set.

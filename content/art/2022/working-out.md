@@ -7,5 +7,9 @@ alt_text: "A young woman is looking to the right, and stretching out her black l
 slug: working-out
 mastodon_url: https://mastodon.art/@redstrate/109408258380892520
 program: Krita
+width: 1000
+height: 1527
+thumb_width: 512
+thumb_height: 782
 ---
 I was initially just going to do it in grayscale like the rest of my sketches, but ended up enjoying it so much that I colored it!

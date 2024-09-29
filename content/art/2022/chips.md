@@ -11,5 +11,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109425310196116427
 program: Procreate
+width: 1195
+height: 1280
+thumb_width: 512
+thumb_height: 548
 ---
 She looks pretty comfy on that couch, don't you think?

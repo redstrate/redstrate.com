@@ -10,6 +10,10 @@ characters:
 mastodon_url: https://mastodon.art/@redstrate/111941678917447592
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summertime-in-winter-entry
 program: Krita
+width: 1920
+height: 2545
+thumb_width: 512
+thumb_height: 679
 ---
 My entry for the Summertime in Winter collab, and rushed the background since it's supposed to be transparent :-)
 

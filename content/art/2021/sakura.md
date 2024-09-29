@@ -10,4 +10,8 @@ characters:
 arttags:
 - sketch
 program: Procreate
+width: 1125
+height: 1984
+thumb_width: 512
+thumb_height: 903
 ---

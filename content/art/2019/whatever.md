@@ -8,4 +8,8 @@ alt_text: "An oil painting with an abstract layout, featuring plastic parts of a
 slug: whatever
 arttags:
 - oil painting
+width: 1000
+height: 1333
+thumb_width: 512
+thumb_height: 682
 ---

@@ -8,4 +8,8 @@ slug: waiting2
 arttags:
 - sketch
 program: Procreate
+width: 434
+height: 1024
+thumb_width: 434
+thumb_height: 1024
 ---

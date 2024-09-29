@@ -20,6 +20,10 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/111316396570430914
 program: Krita
+width: 1920
+height: 1440
+thumb_width: 512
+thumb_height: 384
 ---
 Here's a sketch dump since it's unlikely I'm going to finish anything else before October ends!
 

@@ -12,5 +12,9 @@ mastodon_url: https://mastodon.art/@redstrate/112567384640633283
 pixiv_url: https://www.pixiv.net/en/artworks/121093210
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/drip
 program: Krita
+width: 1920
+height: 2455
+thumb_width: 512
+thumb_height: 655
 ---
 another bath, but i don't care 🙉 ...i have no idea what she's drinking

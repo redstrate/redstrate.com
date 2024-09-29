@@ -13,5 +13,9 @@ mastodon_url: https://mastodon.art/@redstrate/111162313187012517
 pixiv_url: https://www.pixiv.net/en/artworks/112209810
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/beach-trip
 program: Krita
+width: 1920
+height: 5198
+thumb_width: 512
+thumb_height: 1386
 ---
 it's still summer, right?

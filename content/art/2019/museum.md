@@ -8,4 +8,8 @@ alt_text: "An oil painting of the outside area of a museum. The building is clad
 slug: museum
 arttags:
 - oil painting
+width: 1000
+height: 1333
+thumb_width: 512
+thumb_height: 682
 ---

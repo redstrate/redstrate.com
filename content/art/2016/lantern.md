@@ -11,4 +11,8 @@ threed: true
 arttags:
 - 3d
 nsfw: false
+width: 225
+height: 512
+thumb_width: 225
+thumb_height: 512
 ---

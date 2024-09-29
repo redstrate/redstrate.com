@@ -11,5 +11,9 @@ mastodon_url: https://mastodon.art/@redstrate/112746286808881766
 pixiv_url: https://www.pixiv.net/en/artworks/121129321
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/mai-outfit
 program: Krita
+width: 1920
+height: 2694
+thumb_width: 512
+thumb_height: 718
 ---
 (a sort of combination, this outfit makes no sense)

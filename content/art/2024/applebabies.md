@@ -10,5 +10,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/112765290298132276
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/apple-babies-caterpillar-in-an-apple-a-day
 program: Krita
+width: 1920
+height: 1401
+thumb_width: 512
+thumb_height: 374
 ---
 Artfight attack: https://artfight.net/attack/7253015.apple-babies-caterpillar-in-an-apple-a-day

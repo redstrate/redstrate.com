@@ -12,4 +12,8 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/112582169263432612
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/he-s-back
 program: Krita
+width: 1808
+height: 2480
+thumb_width: 512
+thumb_height: 702
 ---

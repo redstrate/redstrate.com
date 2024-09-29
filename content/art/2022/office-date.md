@@ -7,5 +7,9 @@ alt_text: "An office worker lady looks at the viewer. She has a can of a non-des
 slug: office-date
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/office-date
 program: Procreate
+width: 1077
+height: 1448
+thumb_width: 512
+thumb_height: 688
 ---
 This is actually a much older piece, but I touched it up to make it look more "modern" and fit in with the rest of my work. It looks like she might be a little intoxicated!

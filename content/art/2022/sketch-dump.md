@@ -13,6 +13,10 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109434559164546455
 program: Procreate
+width: 1000
+height: 936
+thumb_width: 512
+thumb_height: 479
 ---
 Just a random mish-mash of sketches I had lying around, so I decided to stick them all in one thing.
 

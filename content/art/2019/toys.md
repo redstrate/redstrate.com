@@ -8,4 +8,8 @@ slug: toys
 arttags:
 - sketch
 program: Procreate
+width: 486
+height: 1024
+thumb_width: 486
+thumb_height: 1024
 ---

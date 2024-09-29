@@ -9,5 +9,9 @@ slug: vinesauce
 arttags:
 - fan art
 program: Krita
+width: 1280
+height: 720
+thumb_width: 512
+thumb_height: 288
 ---
 One of the earliest digital drawings I've kept, and of course it's Vinesauce!

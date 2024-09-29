@@ -14,4 +14,8 @@ mastodon_url: https://mastodon.art/@redstrate/111909720876173011
 pixiv_url: https://www.pixiv.net/artworks/115946355
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/costa-del-sol
 program: Krita
+width: 1920
+height: 3413
+thumb_width: 512
+thumb_height: 910
 ---

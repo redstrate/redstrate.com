@@ -11,4 +11,8 @@ mastodon_url: https://mastodon.art/@redstrate/111825151599392193
 pixiv_url: https://www.pixiv.net/artworks/115516345
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/electrical
 program: Krita
+width: 1125
+height: 2291
+thumb_width: 512
+thumb_height: 1043
 ---

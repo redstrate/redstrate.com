@@ -8,4 +8,8 @@ slug: beachball
 arttags:
 - sketch
 program: Procreate
+width: 1378
+height: 1724
+thumb_width: 512
+thumb_height: 641
 ---

@@ -7,4 +7,8 @@ alt_text: "A mature woman dressed in a blazer that has an insanely low neckline.
 slug: glare
 mastodon_url: https://mastodon.art/@redstrate/112306487333726274
 program: Krita
+width: 1001
+height: 1417
+thumb_width: 512
+thumb_height: 725
 ---

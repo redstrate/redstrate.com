@@ -10,4 +10,8 @@ characters:
 - Sniper Girl
 arttags:
 - animation
+width: 480
+height: 472
+thumb_width: 480
+thumb_height: 472
 ---

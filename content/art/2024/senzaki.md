@@ -11,4 +11,8 @@ arttags:
 nsfw: true
 pixiv_url: https://www.pixiv.net/en/artworks/119356674
 program: Krita
+width: 1920
+height: 2857
+thumb_width: 512
+thumb_height: 762
 ---

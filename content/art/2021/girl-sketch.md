@@ -8,4 +8,8 @@ slug: girl-sketch
 arttags:
 - sketch
 program: Procreate
+width: 1016
+height: 1600
+thumb_width: 512
+thumb_height: 806
 ---

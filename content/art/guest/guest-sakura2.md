@@ -9,5 +9,9 @@ characters:
 - Sakura
 arttags:
 - artfight
+width: 732
+height: 1129
+thumb_width: 512
+thumb_height: 790
 ---
 Artfight attack: https://artfight.net/attack/6364032.sakura

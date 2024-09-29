@@ -8,4 +8,8 @@ alt_text: "An oil painting practice, consisting of: the back of a skull, a dark 
 slug: object-study
 arttags:
 - oil painting
+width: 1000
+height: 1333
+thumb_width: 512
+thumb_height: 682
 ---

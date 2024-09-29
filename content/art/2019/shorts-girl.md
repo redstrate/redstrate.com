@@ -8,4 +8,8 @@ slug: shorts-girl
 arttags:
 - sketch
 program: Procreate
+width: 425
+height: 1024
+thumb_width: 425
+thumb_height: 1024
 ---

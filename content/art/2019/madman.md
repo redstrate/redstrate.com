@@ -8,4 +8,8 @@ slug: madman
 arttags:
 - sketch
 program: Procreate
+width: 1920
+height: 1495
+thumb_width: 512
+thumb_height: 399
 ---

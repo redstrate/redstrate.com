@@ -9,5 +9,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109423739412971072
 program: Krita
+width: 1714
+height: 2345
+thumb_width: 512
+thumb_height: 700
 ---
 the fruits of my stream today! i tried to do some more action-y poses from memory and i think they turned out pretty good!

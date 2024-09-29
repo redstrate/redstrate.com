@@ -11,5 +11,9 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/113150414242267426
 program: Krita
+width: 1920
+height: 3346
+thumb_width: 512
+thumb_height: 892
 ---
 unblocking my block

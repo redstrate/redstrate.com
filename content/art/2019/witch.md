@@ -9,4 +9,8 @@ slug: witch
 arttags:
 - sketch
 program: Procreate
+width: 1019
+height: 1515
+thumb_width: 512
+thumb_height: 761
 ---

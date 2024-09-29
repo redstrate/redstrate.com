@@ -11,5 +11,9 @@ characters:
 arttags:
 - animation
 - artfight
+width: 200
+height: 200
+thumb_width: 200
+thumb_height: 200
 ---
 Artfight attack: https://artfight.net/attack/8002019.bart-incoming

@@ -9,4 +9,8 @@ arttags:
 - sketch
 mastodon_url: https://mastodon.art/@redstrate/109391188169483376
 program: Krita
+width: 1253
+height: 1185
+thumb_width: 512
+thumb_height: 484
 ---

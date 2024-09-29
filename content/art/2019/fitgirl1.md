@@ -8,4 +8,8 @@ slug: fitgirl1
 arttags:
 - sketch
 program: Procreate
+width: 615
+height: 1024
+thumb_width: 512
+thumb_height: 853
 ---

@@ -11,4 +11,8 @@ characters:
 arttags:
 - 3d
 program: Blender
+width: 1031
+height: 1256
+thumb_width: 512
+thumb_height: 624
 ---

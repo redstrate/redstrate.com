@@ -7,4 +7,8 @@ slug: ko-girl
 arttags:
 - sketch
 program: Procreate
+width: 282
+height: 449
+thumb_width: 282
+thumb_height: 449
 ---

@@ -10,6 +10,10 @@ arttags:
 - 3d
 mastodon_url: https://mastodon.art/@redstrate/109459311625828312
 program: Nomadsculpt
+width: 1920
+height: 1080
+thumb_width: 512
+thumb_height: 288
 ---
 I heard about nomadsculpt so I wanted to try it tonight!
 I don’t really have any sculpting experience, and this is my second attempt at making a human face. I think it turned out pretty good though (but that’s mostly because I chose the angle hehe)

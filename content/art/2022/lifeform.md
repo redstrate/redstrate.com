@@ -9,5 +9,9 @@ arttags:
 - sketch
 - request
 program: Procreate
+width: 1920
+height: 1868
+thumb_width: 512
+thumb_height: 498
 ---
 Made on request!

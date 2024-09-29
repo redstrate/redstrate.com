@@ -11,5 +11,9 @@ mastodon_url: https://mastodon.art/@redstrate/111103995005205179
 pixiv_url: https://www.pixiv.net/en/artworks/111921549
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/summer-fun
 program: Krita
+width: 1920
+height: 2413
+thumb_width: 512
+thumb_height: 643
 ---
 i guess it makes sense for them to hang out together!		

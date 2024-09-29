@@ -11,5 +11,9 @@ arttags:
 - fan art
 mastodon_url: https://mastodon.art/@redstrate/109847101066035149
 program: Krita
+width: 1200
+height: 1033
+thumb_width: 512
+thumb_height: 441
 ---
 Drew that protagonist from Fire Emblem Engage for a gift letter!It was just a quick thing, but man - she was difficult to draw. I just gave up partly with the hair, and couldn't get a really good shot of the arms.

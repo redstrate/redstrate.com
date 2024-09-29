@@ -15,4 +15,8 @@ characters:
 arttags:
 - 3d
 nsfw: false
+width: 256
+height: 512
+thumb_width: 256
+thumb_height: 512
 ---

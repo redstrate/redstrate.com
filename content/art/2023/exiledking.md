@@ -9,5 +9,9 @@ arttags:
 - request
 mastodon_url: https://mastodon.art/@redstrate/111008636606551962
 program: Krita
+width: 1168
+height: 1492
+thumb_width: 512
+thumb_height: 654
 ---
 request by @ExiledKing@mastodon.gamedev.place

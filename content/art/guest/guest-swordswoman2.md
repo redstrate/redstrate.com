@@ -9,5 +9,9 @@ characters:
 - Mysterious Swordswoman
 arttags:
 - artfight
+width: 600
+height: 1000
+thumb_width: 512
+thumb_height: 853
 ---
 Artfight Attack: https://artfight.net/attack/4178956.mysterious-swordswoman

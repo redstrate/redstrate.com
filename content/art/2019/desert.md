@@ -8,4 +8,8 @@ slug: desert
 arttags:
 - landscape
 program: Procreate
+width: 1920
+height: 1342
+thumb_width: 512
+thumb_height: 358
 ---

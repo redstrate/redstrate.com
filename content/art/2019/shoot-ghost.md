@@ -8,4 +8,8 @@ slug: shoot-ghost
 arttags:
 - sketch
 program: Procreate
+width: 1024
+height: 715
+thumb_width: 512
+thumb_height: 358
 ---

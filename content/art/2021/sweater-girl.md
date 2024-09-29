@@ -8,4 +8,8 @@ slug: sweater-girl
 arttags:
 - sketch
 program: Procreate
+width: 795
+height: 1535
+thumb_width: 512
+thumb_height: 989
 ---

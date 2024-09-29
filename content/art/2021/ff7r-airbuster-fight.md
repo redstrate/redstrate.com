@@ -14,4 +14,8 @@ arttags:
 - drawpile
 - fan art
 program: Drawpile
+width: 1590
+height: 1212
+thumb_width: 512
+thumb_height: 390
 ---

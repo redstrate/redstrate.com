@@ -111,6 +111,11 @@ def parse_art_json(output_directory, filename, json_file, threed = False, animat
         if "program" in json_data:
             write_field(f, 'program', json_data["program"])
 
+        write_field(f, 'width', str(sizes["full"][filename]["width"]))
+        write_field(f, 'height', str(sizes["full"][filename]["height"]))
+        write_field(f, 'thumb_width', str(sizes["thumb"][filename]["width"]))
+        write_field(f, 'thumb_height', str(sizes["thumb"][filename]["height"]))
+
         f.write('---\n')
 
         if "description" in json_data:
@@ -178,6 +183,10 @@ character_stats = {}
 tag_stats = {}
 new_banner = ""
 comissions_enabled = False
+sizes = {}
+
+with open('../data/sizes.json', 'r') as f:
+    sizes = json.load(f)
 
 for filename in os.listdir(art_data_directory):
     f = os.path.join(art_data_directory, filename)

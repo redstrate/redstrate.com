@@ -13,4 +13,8 @@ mastodon_url: https://mastodon.art/@redstrate/111825144287076706
 pixiv_url: https://www.pixiv.net/artworks/115516281
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/the-bull-of-ala-mhigo
 program: Krita
+width: 1392
+height: 1798
+thumb_width: 512
+thumb_height: 661
 ---

@@ -11,5 +11,9 @@ mastodon_url: https://mastodon.art/@redstrate/111941678917447592
 pixiv_url: https://www.pixiv.net/artworks/116104991
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/winter-merume
 program: Krita
+width: 1840
+height: 3104
+thumb_width: 512
+thumb_height: 864
 ---
 entry for the sandwich collab

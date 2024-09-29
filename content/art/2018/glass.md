@@ -9,4 +9,8 @@ slug: glass
 arttags:
 - 3d
 program: Blender
+width: 960
+height: 540
+thumb_width: 512
+thumb_height: 288
 ---

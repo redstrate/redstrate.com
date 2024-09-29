@@ -7,4 +7,8 @@ slug: casual-elf
 arttags:
 - sketch
 program: Procreate
+width: 241
+height: 680
+thumb_width: 241
+thumb_height: 680
 ---

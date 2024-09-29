@@ -12,5 +12,9 @@ arttags:
 nsfw: true
 mastodon_url: https://mastodon.art/@redstrate/109464613367914600
 program: Procreate
+width: 743
+height: 1280
+thumb_width: 512
+thumb_height: 882
 ---
 Looks like Merume is getting ready to do something scandalous, but I guess she is a succubus after all...

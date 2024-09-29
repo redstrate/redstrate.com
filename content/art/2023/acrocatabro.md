@@ -10,5 +10,9 @@ arttags:
 mastodon_url: https://mastodon.art/@redstrate/111015374479312669
 newgrounds_url: https://www.newgrounds.com/art/view/redstrate/acrocatabro-equest
 program: Krita
+width: 1920
+height: 3413
+thumb_width: 512
+thumb_height: 910
 ---
 Request by @AcroCatabro@mastodon.gamedev.place

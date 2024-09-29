@@ -10,5 +10,9 @@ characters:
 arttags:
 - fan art
 program: Krita
+width: 1000
+height: 2600
+thumb_width: 512
+thumb_height: 1331
 ---
 As you can probably tell, I LOVE this streetwear set in FFXIV.

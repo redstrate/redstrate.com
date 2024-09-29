@@ -9,4 +9,8 @@ slug: lemon
 arttags:
 - 3d
 program: Blender
+width: 1024
+height: 1024
+thumb_width: 512
+thumb_height: 512
 ---

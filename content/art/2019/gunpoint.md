@@ -7,4 +7,8 @@ filename: /art/gunpoint.webp
 alt_text: "A man is holding a gun visible behind your view. He seems to be distressed."
 slug: gunpoint
 program: Procreate
+width: 1024
+height: 715
+thumb_width: 512
+thumb_height: 358
 ---
