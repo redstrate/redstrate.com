@@ -50,7 +50,7 @@
 
                 <picture>
                         <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
-                        <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }}" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
+                        <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }} ({{$year}})" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
                 </picture>
         {{ else }}
                 <p>Thumbnail not found!</p>
