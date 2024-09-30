@@ -1,41 +1,20 @@
+{{/* Partial used to display a grid of artwork. */}}
+
 {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
-{{ $guest := false }}
 
 {{ template "_internal/pagination.html" . }}
+{{ $on_guest := eq .Title "Guest Art" }}
 
 <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
 
     {{ range $paginator.Pages }}
-        {{ if in .File.Dir "art/guest" }}
-            {{ $guest = true }}
-        {{ else }}
+        {{ $is_guest := .Params.guest }}
+        {{ if eq $on_guest $is_guest }}
             {{ partial "render-art" . }}
         {{ end }}
     {{ end }}
 </div>
-
-{{ if and $guest (not (isset .Params "years")) }}
-<h3>Guest Art</h3>
-<hr/>
-<div class="second-grid">
-    <div class="grid-sizer"></div>
-    <div class="gutter-sizer"></div>
-
-    {{ range $paginator.Pages }}
-        {{ if in .File.Dir "art/guest" }}
-            {{ partial "render-art" . }}
-        {{ end }}
-    {{ end }}
-</div>
-
-{{ end }}
 
 {{ template "_internal/pagination.html" . }}
-
-{{ $site := resources.Get "js/gallery.js" }}
-{{ if hugo.IsProduction }}
-    {{ $site = $site | minify | fingerprint | resources.PostProcess }}
-{{ end }}
-<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>

@@ -1,0 +1,30 @@
+{{ range readDir "/data/characters" }}
+  {{ if eq (path.Ext .Name) ".json" }}
+    {{ $file := readFile ( printf "/data/characters/%s" .Name ) }}
+    {{ $data := unmarshal $file }}
+    {{ $basename := strings.TrimSuffix (path.Ext .Name) .Name }}
+
+    {{ $content := dict "mediaType" "text/markdown" "value" $data.description }}
+
+    {{ $title := $data.name }}
+
+    {{ $params := dict
+      "slug" $basename
+      "original" $data.original
+      "age" $data.age
+      "pronouns" $data.pronouns
+      "origin" $data.origin
+    }}
+
+    {{ $page := dict
+      "content" $content
+      "kind" "term"
+      "path" $basename
+      "title" $title
+      "params" $params
+      "layout" "character"
+      "slug" $basename
+    }}
+    {{ $.AddPage $page }}
+  {{ end }}
+{{ end }}

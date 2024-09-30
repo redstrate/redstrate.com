@@ -1,19 +1,9 @@
+{{/* Page layout used for art details view, when visiting a specific artwork. */}}
+
 {{ define "main" }}
-    {{ with .Title }}
-        <h2>{{ . }}</h2>
-    {{ else }}
-        <h2>Untitled Artwork</h2>
-    {{ end }}
+    <h2>{{ .Title }}</h2>
+
     <hr>
-
-    {{ $month := 1 }}
-    {{ $year := 1 }}
-
-    {{ if .Params.date }}
-            {{ $split := split .Params.date "-" }}
-            {{ $year = int (index $split 0) }}
-            {{ $month = int (index $split 3) }}
-    {{ end }}
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
         {{ $full := printf "https://images.redstrate.com/art/%s.avif" $.Params.slug }}
@@ -24,15 +14,18 @@
                 <img class="gallery-img" style="display: block; max-height: 1000px; margin-left: auto; margin-right: auto; width: auto; margin-top: 10px; margin-bottom: 10px; max-width: 100%; height: auto" alt="{{ $.Params.alt_text }}" width="{{ $.Params.width }}" height="{{ $.Params.height }}" src="{{ $jpeg }}"/>
         </picture>
     {{ else }}
-        {{ $file := printf "https://images.redstrate.com%s" $.Params.filename }}
 
-        {{ with $file }}
-            {{ if $.Params.threed }}
+        {{ if $.Params.threed }}
+            {{ $file := printf "https://images.redstrate.com/3d/%s.glb" $.Params.slug }}
+            {{ with $file }}
                 {{ $cameraorbit := $.Params.orbit }}
                 {{ $cameratarget := $.Params.target }}
                 {{ $fov  := $.Params.fov }}
                 <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ . }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
-            {{ else }}
+            {{ end }}
+        {{ else }}
+            {{ $file := printf "https://images.redstrate.com/animation/%s.webm" $.Params.slug }}
+            {{ with $file }}
                 {{ if $.Params.animation }}
                     <div style="text-align: center;">
                         <video style="max-width: 100%" class="gallery-img" controls>
@@ -74,7 +67,7 @@
                 <td>
                     {{ $len := (len .) }}
                     {{ range $index, $element := . }}
-                    <a href="/art/tags/{{ urlize . }}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+                    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
                     {{ end }}
                 </td>
             </tr>

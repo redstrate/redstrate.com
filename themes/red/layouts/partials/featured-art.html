@@ -1,57 +1,59 @@
+{{/* Partial used to display a list of featured artwork. */}}
+
+{{ $art_config := index .Site.Data "art-config" }}
+
 <div class="gallery-con">
     <div style="display: flex; flex-wrap: wrap;">
     {{ with .Site.GetPage "/art" }}
-        {{ range .Param "featured" }}
-        <figure class="gallery-fig">
-            {{ $filename_without_ext := strings.TrimSuffix (path.Ext .filename) .filename }}
+        {{ range (where (where .RegularPagesRecursive "Type" "art") "Params.slug" "in" $art_config.featured) }}
+            <figure class="gallery-fig">
+                {{ $filename_without_ext := .Params.slug }}
 
-            {{ $month := "1" }}
-            {{ $year := "1" }}
+                {{ $month := "1" }}
+                {{ $year := "1" }}
 
-            {{ if .date }}
-                {{ $split := split .date "-" }}
-                {{ $month = index $split 1 }}
-                {{ $year = index $split 0 }}
-            {{ end }}
+                {{ if .Date }}
+                    {{ $split := split .Date "-" }}
+                    {{ $month = index $split 1 }}
+                    {{ $year = index $split 0 }}
+                {{ end }}
 
-            {{ $use_newformat := false }}
-            {{ if ge (int $year) 2023 }}
-                    {{ $use_newformat = true }}
-            {{ end }}
+                {{ $use_newformat := false }}
+                {{ if ge (int $year) 2023 }}
+                        {{ $use_newformat = true }}
+                {{ end }}
 
-            {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
+                {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
 
-            <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
-                {{ $title := .title }}
+                <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
+                    {{ $title := .Title }}
 
-                {{ if $use_newformat }}
-                        {{ $full := printf "https://images.redstrate.com/thumb/%s.avif" $filename_without_ext }}
-                        {{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" $filename_without_ext }}
+                    {{ if $use_newformat }}
+                            {{ $full := printf "https://images.redstrate.com/thumb/%s.avif" $filename_without_ext }}
+                            {{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" $filename_without_ext }}
 
-                        <picture>
-                            <source srcset="{{ $full }}" type="image/avif"/>
-                            <img class="gallery-img featured-art" alt="{{ $title }}" src="{{ $jpeg }}">
-                        </picture>
-                {{ else }}
-                    {{ with resources.Get (printf "art/%s" .filename) }}
-                    {{ $image := .Resize "500x" }}
-                    <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
+                            <picture>
+                                <source srcset="{{ $full }}" type="image/avif"/>
+                                <img class="gallery-img featured-art" alt="{{ $title }}" src="{{ $jpeg }}">
+                            </picture>
                     {{ else }}
-                    <p>Thumbnail not found!</p>
+                        {{ with resources.Get (printf "art/%s" .filename) }}
+                        {{ $image := .Resize "500x" }}
+                        <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
+                        {{ else }}
+                        <p>Thumbnail not found!</p>
+                        {{ end }}
                     {{ end }}
-                {{ end }}
-            </a>
+                </a>
 
-            <figcaption>
-                {{ with .title }}
-                    <i>"{{ . }}"</i>
-                {{ end }}
-            </figcaption>
-        </figure>
+                <figcaption>
+                    {{ with .Title }}
+                        <i>"{{ . }}"</i>
+                    {{ end }}
+                </figcaption>
+            </figure>
         {{ end }}
     {{ end }}
     </div>
-    {{ if not (eq (.Scratch.Get "skip_all") "true") }}
-        <a href="/art">View all art</a>
-    {{ end }}
+    <a href="/art">View all art</a>
 </div>

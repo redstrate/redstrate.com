@@ -1,8 +1,0 @@
----
-layout: art-character
-title: Aerith
-age: 22
-origin: Final Fantasy VII
-original: false
-slug: aerith
----

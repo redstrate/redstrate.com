@@ -1,30 +1,11 @@
 ---
-title: Art
-layout: art
-summary: My personal art gallery.
-new_banner: 
-commissions: true
-aliases:
-- /gallery
-featured:
-- filename: macheo.webp
-  date: 2024-07-11
-  title: MACHEO STRIKE
-- filename: recoverydisk.webp
-  date: 2024-07-05
-  title: Recovery Disk
-- filename: feathers.webp
-  date: 2024-06-08
-  title: he's back...
-years:
-- 2011
-- 2024
-- 2023
-- 2022
-- 2021
-- 2020
-- 2019
-- 2018
-- 2017
-- 2016
+title: "Art"
 ---
+
+Welcome to my art gallery! This is the most complete archive of my work online. You might also be interested in [how this gallery works and how I maintain it](/blog/2023/04/breakdown-of-my-static-art-gallery/).
+
+The gallery is sorted by date, but there's other sections to check out such as [Guest Art](/art/guest) and [Stats](/art/stats/)! You can filter by [tags](/art/tags), or by [characters](/art/characters).
+
+I've also been [participating in Artfight](https://artfight.net/~redstrate) since 2023. You can view my attacks and defenses [here](/art/tags/artfight).
+
+You can follow me on [Mastodon](https://mastodon.art/@redstrate), [Pixiv](https://www.pixiv.net/en/users/58118005), [Newgrounds](https://redstrate.newgrounds.com/), or [RSS](/art/index.xml)!

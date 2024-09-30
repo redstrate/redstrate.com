@@ -1,62 +1,37 @@
-{{ $base := "art" }}
+{{/* Partial used to display a thumbnail of an artwork. */}}
 
-{{ if .Params.threed }}
-        {{ $base = "3d" }}
-{{ end }}
+{{ $full := printf "https://images.redstrate.com/thumb/%s.avif" .Params.slug }}
+{{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" .Params.slug }}
 
-{{ if .Params.animation }}
-        {{ $base = "animation" }}
-{{ end }}
+<a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
 
-{{ $month := 1 }}
-{{ $year := 1 }}
+{{ $title := .Title }}
+{{ $year := .Date.Format "2006" }}
 
-{{ if .Params.date }}
-        {{ $split := split .Params.date "-" }}
-        {{ $year = int (index $split 0) }}
-        {{ $month = int (index $split 3) }}
-{{ end }}
-
-{{ $full := "" }}
-{{ $jpeg := "" }}
-{{ $full = printf "https://images.redstrate.com/thumb/%s.avif" .Params.slug }}
-{{ $jpeg = printf "https://images.redstrate.com/thumb/%s.jpg" .Params.slug }}
-
-{{ if $full }}
-        {{ $filename_without_ext := .Params.slug }}
-
-        <a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
-
-        {{ $title := .Params.title }}
-
-        {{ with $full }}
-                {{ if $.Params.threed }}
-                        {{ with resources.Get "3d.png" }}
-                                <img alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
-                        {{ end }}
+{{ with $full }}
+        {{ if $.Params.threed }}
+                {{ with resources.Get "3d.png" }}
+                        <img alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                 {{ end }}
-
-                {{ if $.Params.comic }}
-                        {{ with resources.Get "comic.png" }}
-                                <img alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
-                        {{ end }}
-                {{ end }}
-
-                {{ if $.Params.animation }}
-                        {{ with resources.Get "play-circle.png" }}
-                                <img alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
-                        {{ end }}
-                {{ end }}
-
-                <picture>
-                        <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
-                        <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }} ({{$year}})" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
-                </picture>
-        {{ else }}
-                <p>Thumbnail not found!</p>
         {{ end }}
-        </a>
-{{ else }}
-        <em>CANNOT FIND {{ .Params.slug }}</em>
+
+        {{ if $.Params.comic }}
+                {{ with resources.Get "comic.png" }}
+                        <img alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                {{ end }}
+        {{ end }}
+
+        {{ if $.Params.animation }}
+                {{ with resources.Get "play-circle.png" }}
+                        <img alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                {{ end }}
+        {{ end }}
+
+        <picture>
+                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
+                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }} ({{ $year }})" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
+        </picture>
 {{ end }}
+</a>
+
 

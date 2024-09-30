@@ -1,0 +1,7 @@
+{{/* Partial used to include the JS for the gallery page's masonry layout. */}}
+
+{{ $site := resources.Get "js/gallery.js" }}
+{{ if hugo.IsProduction }}
+    {{ $site = $site | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
