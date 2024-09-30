@@ -152,6 +152,10 @@ body {
     .isso-thread-heading, .isso-author {
         color: #fbeded !important;
     }
+
+    .symbolic-icon {
+        filter: invert(100%);
+    }
 }
 
 /* printers */

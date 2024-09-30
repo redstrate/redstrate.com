@@ -55,54 +55,80 @@ taxonomies:
 menu:
   main:
   - name: 'Home'
+    params:
+    - img: 'icons/home.svg'
     url: '/'
     weight: -1
   - name: 'Blog'
+    params:
+    - img: 'icons/blog.svg'
     url: '/blog'
     weight: 1
   - name: 'Art'
+    params:
+    - img: 'icons/art.svg'
     url: '/art'
     weight: 2
   - name: 'Music'
+    params:
+    - img: 'icons/music.svg'
     url: '/music'
     weight: 3
   - name: 'Software'
+    params:
+    - img: 'icons/software.svg'
     url: '/software'
     weight: 4
   - name: 'Talks'
+    params:
+    - img: 'icons/talks.svg'
     url: '/talks'
     weight: 5
   - name: 'Games'
+    params:
+    - img: 'icons/game.svg'
     url: 'https://redstrate.itch.io/'
     weight: 6
   - name: 'Videos'
+    params:
+    - img: 'icons/video.svg'
     url: 'https://tube.ryne.moe/@redchannel'
     weight: 7
   - name: 'Shrines'
+    params:
+    - img: 'icons/shrines.svg'
     url: '/shrines'
     weight: 8
   - name: 'Links'
+    params:
+    - img: 'icons/links.svg'
     url: '/links'
     weight: 9
   - name: 'Guestbook'
+    params:
+    - img: 'icons/guestbook.svg'
     url: '/guestbook'
     weight: 10
   - name: 'Contact'
+    params:
+    - img: 'icons/contact.svg'
     url: '/contact'
     weight: 11
   - name: 'About'
+    params:
+    - img: 'icons/about.svg'
     url: '/about'
     weight: 12
   footer:
-  - name: 'Blog Feed'
-    url: '/blog/index.xml'
+  - name: 'Feeds'
+    url: '/feeds'
     weight: -1
-  - name: 'Art Feed'
-    url: '/art/index.xml'
-    weight: 1
   - name: 'Imprint'
     url: '/imprint'
     weight: 2
+  - name: 'Accessibility'
+    url: '/accessibility'
+    weight: 3
   badges:
   - name: 'CC NC SA'
     params:
