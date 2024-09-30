@@ -1,12 +1,12 @@
 ---
 title: Stats
 layout: art-stats
-total: 258
+total: 257
 years:
 - year: 2019
   num: 60
 - year: 2022
-  num: 46
+  num: 45
 - year: 2024
   num: 44
 - year: 2023
@@ -66,7 +66,7 @@ tags:
 - name: artfight
   num: 17
 - name: 3d
-  num: 20
+  num: 19
 - name: fan art
   num: 61
 - name: sketch
