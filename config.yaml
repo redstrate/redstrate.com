@@ -40,7 +40,7 @@ permalinks:
   blog: 'blog/:year/:month/:title/'
   art: 'art/:year/:month/:slugorfilename'
   arttags: 'art/tags/:title'
-  characters: 'art/characters/:title'
+  characters: 'art/characters/:slugorfilename'
   tags: 'blog/tags/:title'
   series: 'blog/series/:title'
   projtags: 'software/tags/:title'

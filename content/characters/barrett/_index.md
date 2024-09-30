@@ -1,8 +1,8 @@
 ---
 layout: art-character
-title: Aerith
-age: 22
+title: Barrett
+age: 34
 origin: Final Fantasy VII
 original: false
-slug: aerith
+slug: barrett
 ---

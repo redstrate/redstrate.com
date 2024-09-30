@@ -1,8 +1,7 @@
 ---
 layout: art-character
-title: Aerith
-age: 22
+title: Rude
 origin: Final Fantasy VII
 original: false
-slug: aerith
+slug: rude
 ---
