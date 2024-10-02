@@ -3,53 +3,72 @@
 
     <hr>
 
-    <div class="container">
-        <div class="box" style="width: 50%">
-            <h2>Character</h2>
+    <div class="tabs-container">
+        <input type="radio" id="tab-1" name="my-tabs" checked>
+        <label for="tab-1" class="tab-label">Warrior of Light</label>
+        <div class="container">
+            <div class="box" style="width: 50%">
+                <h2>Character</h2>
 
-            <p>Here's my WoL, and she's stayed consistent shortly after I purchased Shadowbringers.</p>
+                <p>Here's my WoL, and she's stayed consistent shortly after I purchased Shadowbringers.</p>
 
-            <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;width:50%" src="char.jpg" />
+                <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;width:50%" src="char.jpg" />
 
-            <table>
-                <tr>
-                    <th>Gender</th>
-                    <td>Female♀</td>
-                </tr>
-                <tr>
-                    <th>Race</th>
-                    <td>Viera/Veena</td>
-                </tr>
-                <tr>
-                    <th>Height</th>
-                    <td>6' 3" (191 cm)</td>
-                </tr>
-                <tr>
-                    <th>Nameday</th>
-                    <td>14th Sun of the 4th Umbral Moon</td>
-                </tr>
-                <tr>
-                    <th>City-state</th>
-                    <td>Gridania</td>
-                </tr>
-                <tr>
-                    <th>Guardian Deity</th>
-                    <td>Nophica</td>
-                </tr>
-            </table>
+                <table>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Female♀</td>
+                    </tr>
+                    <tr>
+                        <th>Race</th>
+                        <td>Viera/Veena</td>
+                    </tr>
+                    <tr>
+                        <th>Height</th>
+                        <td>6' 3" (191 cm)</td>
+                    </tr>
+                    <tr>
+                        <th>Nameday</th>
+                        <td>14th Sun of the 4th Umbral Moon</td>
+                    </tr>
+                    <tr>
+                        <th>City-state</th>
+                        <td>Gridania</td>
+                    </tr>
+                    <tr>
+                        <th>Guardian Deity</th>
+                        <td>Nophica</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="width: 50%">
+                <div class="box" style="height: 600px">
+                    <h2>Artwork</h2>
+
+                    <p>Here's some fan art of my WoL, I want to do more general FFXIV fan art in the future too!</p>
+
+                    <div style="height: 500px; overflow: auto">
+                    {{ partial "art-section" . }}
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div style="width: 50%">
-            <div class="box" style="height: 600px">
-                <h2>Artwork</h2>
+        <input type="radio" id="tab-2" name="my-tabs">
+        <label for="tab-2" class="tab-label">Mods</label>
+        <div class="container">
+            <div class="box">
+                <h2>My Mods</h2>
 
-                <p>Here's some fan art of my WoL, I want to do more general FFXIV fan art in the future too!</p>
+                <p>I have created a few mods to enhance the game:</p>
 
-                <div style="height: 500px; overflow: auto">
-                {{ partial "art-section" . }}
-                </div>
-
-            </div>
+                <ul>
+                    <li><a href="https://xiv.zone/mods/rebound">Rebound</a>: Somehow even after the big graphical update, Square Enix hasn't fixed the bug where certain character physics (like the Viera ear wiggle) breaks under high framerates.</li>
+                    <li><a href="https://xiv.zone/mods/refitter">Refitter</a>: I didn't like how some armor fit on my WoL, so I fixed it myself.</li>
+                    <li><a href="https://xiv.zone/mods/hooky">Hooky</a>: I don't use this too much yet, but I really liked making it!</li>
+                </ul>
         </div>
     </div>
 
@@ -57,6 +76,8 @@
         .container {
             display: flex;
             column-gap: 15px;
+            width: 100%;
+            order: 99;
         }
 
         .box {
@@ -64,6 +85,14 @@
             width: 100%;
             border: 1px solid gray;
             padding: 5px;
+        }
+
+        .tabs-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tabs-container > input[type="radio"]:not(:checked)+.tab-label+.container {
+            display: none;
         }
     </style>
 {{ end }}
