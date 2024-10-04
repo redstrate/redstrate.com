@@ -19,10 +19,15 @@
     {{ $.Scratch.Set "header-name" "# of Artworks by Year" }}
     {{ partial "fake-heading.html" $ }}
     <ol>
-    {{ range (where .Site.RegularPages "Section" "=" "art").GroupByDate "2006" }}
+    {{ $years := (where .Site.RegularPages "Section" "=" "art").GroupByDate "2006" }}
+    {{ $year_sorted := slice }}
+    {{ range $years }}
         {{ $year := .Key }}
         {{ $num := len (where .Pages "Params.guest" "=" false) }}
-        <li><a href="/art/{{ $year }}">{{ $year }}</a> ({{ $num }} artworks)</li>
+        {{ $year_sorted = $year_sorted | append (dict "year" $year "num" $num) }}
+    {{ end }}
+    {{ range (sort $year_sorted "num" "desc") }}
+        <li><a href="/art/{{ .year }}">{{ .year }}</a> ({{ .num }} artworks)</li>
     {{ end }}
     </ol>
 {{ end }}
