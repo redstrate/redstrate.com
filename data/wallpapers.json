@@ -1,0 +1,29 @@
+{
+    "wallpapers": [
+        {
+            "art": "another-thursday",
+            "resolution": "3840 x 2160",
+            "size": "6.5 MiB"
+        },
+        {
+            "art": "bringontheketchup",
+            "resolution": "3840 x 2160",
+            "size": "4.4 MiB"
+        },
+        {
+            "art": "moonlight",
+            "resolution": "3840 x 2160",
+            "size": "5.5 MiB"
+        },
+        {
+            "art": "orbit-correction",
+            "resolution": "3840 x 2160",
+            "size": "4.2 MiB"
+        },
+        {
+            "art": "mythra",
+            "resolution": "3840 x 2160",
+            "size": "4.8 MiB"
+        }
+    ]
+}
