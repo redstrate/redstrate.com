@@ -28,7 +28,7 @@
             {{ with $file }}
                 {{ if $.Params.animation }}
                     <div style="text-align: center;">
-                        <video style="max-width: 100%" class="gallery-img" controls>
+                        <video style="max-width: 100%" class="gallery-img" controls loop>
                             <source src="{{ . }}" type="video/webm">
                         </video>
                     </div>
