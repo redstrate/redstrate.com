@@ -1,4 +1,10 @@
 imagesLoaded(document.querySelector('.grid'), function(instance) {
+    var typeIcons = document.getElementsByClassName('gallery-type-icon-hidden');
+
+    for(var i = 0; i < typeIcons.length; i++) {
+        typeIcons[i].classList.remove("gallery-type-icon-hidden");
+    }
+
     new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',

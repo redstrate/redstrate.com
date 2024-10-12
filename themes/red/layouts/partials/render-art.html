@@ -11,19 +11,19 @@
 {{ with $full }}
         {{ if $.Params.threed }}
                 {{ with resources.Get "3d.png" }}
-                        <img alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img class="gallery-type-icon-hidden" alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
 
         {{ if $.Params.comic }}
                 {{ with resources.Get "comic.png" }}
-                        <img alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img class="gallery-type-icon-hidden" alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
 
         {{ if $.Params.animation }}
                 {{ with resources.Get "play-circle.png" }}
-                        <img alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img class="gallery-type-icon-hidden" alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
 

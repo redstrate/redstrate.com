@@ -684,3 +684,7 @@ model-viewer {
 .character span {
     display: block;
 }
+
+.gallery-type-icon-hidden {
+    visibility: hidden;
+}
