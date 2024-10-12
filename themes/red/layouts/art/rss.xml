@@ -48,7 +48,7 @@
         {{- end -}}
 
         {{ range $pages }}
-            {{ $isguest := (in .File.Dir "art/guest") }}
+            {{ $isguest := (.Param "guest") }}
             {{ $exclude := (.Param "excludefeed") }}
 
             {{ if and (not $isguest) (not $exclude) }}
