@@ -29,8 +29,8 @@
                     {{ $title := .Title }}
 
                     {{ if $use_newformat }}
-                            {{ $full := printf "https://images.redstrate.com/thumb/%s.avif" $filename_without_ext }}
-                            {{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" $filename_without_ext }}
+                            {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                            {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
 
                             <picture>
                                 <source srcset="{{ $full }}" type="image/avif"/>

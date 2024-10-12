@@ -12,7 +12,7 @@
     {{ range first 10 (index site.Taxonomies "characters").ByCount }}
         {{ $year := .Page.Title }}
         {{ $num := .Count }}
-        <a class="character" href="/art/characters/{{ urlize $year }}"><img class="gallery-img" width=256 height=256 src="https://images.redstrate.com/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br>({{ $num }} artworks)</span></a>
+        <a class="character" href="/art/characters/{{ urlize $year }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br>({{ $num }} artworks)</span></a>
     {{ end }}
     </ol>
 

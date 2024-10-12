@@ -36,6 +36,8 @@ params:
   - rss-image.png
   author: 'redstrate'
   fediverse_url: "@redstrate@mastodon.art"
+  image_host: "https://images.redstrate.com"
+  kofi_username: 'redstrate'
 
 permalinks:
   blog: 'blog/:year/:month/:title/'

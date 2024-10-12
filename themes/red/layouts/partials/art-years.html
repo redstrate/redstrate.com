@@ -4,7 +4,7 @@
 {{ range (where .Site.RegularPages "Type" "in" "art").GroupByDate "2006" }}
   {{ with .Key }}
     <a class="no-decoration" href="/art/{{ . }}">
-        {{ $thumbp := printf "https://images.redstrate.com/year-thumbs/%s.webp" . }}
+        {{ $thumbp := printf "%s/year-thumbs/%s.webp" $.Site.Params.image_host . }}
         <img width="256" height="128" title="{{ . }}" alt="A thumbnail of {{ . }}'s art with the text in the center." class="gallery-img article-img" src="{{ $thumbp }}">
     </a>
   {{ end }}

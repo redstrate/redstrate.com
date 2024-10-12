@@ -31,8 +31,8 @@
                 <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
                     {{ $title := .Title }}
 
-                    {{ $full := printf "https://images.redstrate.com/thumb/%s.avif" $filename_without_ext }}
-                    {{ $jpeg := printf "https://images.redstrate.com/thumb/%s.jpg" $filename_without_ext }}
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
 
                     <picture>
                         <source srcset="{{ $full }}" type="image/avif"/>
@@ -48,6 +48,6 @@
             </figure>
         {{ end }}
         <p style="text-align: center">{{ .resolution }}</p>
-        <p style="text-align: center"><a href="https://images.redstrate.com/wallpapers/{{ .art }}.png">Download PNG ({{ .size }})</a></p>
+        <p style="text-align: center"><a href="{{ $.Site.Params.image_host }}/wallpapers/{{ .art }}.png">Download PNG ({{ .size }})</a></p>
     {{ end }}
 {{ end }}

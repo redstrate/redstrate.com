@@ -6,8 +6,8 @@
     <hr>
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
-        {{ $full := printf "https://images.redstrate.com/art/%s.avif" $.Params.slug }}
-        {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" $.Params.slug }}
+        {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.slug }}
+        {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host $.Params.slug }}
 
         <picture>
                 <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.width }}" height="{{ $.Params.height }}"/>
@@ -16,7 +16,7 @@
     {{ else }}
 
         {{ if $.Params.threed }}
-            {{ $file := printf "https://images.redstrate.com/3d/%s.glb" $.Params.slug }}
+            {{ $file := printf "%s/3d/%s.glb" $.Site.Params.image_host $.Params.slug }}
             {{ with $file }}
                 {{ $cameraorbit := $.Params.orbit }}
                 {{ $cameratarget := $.Params.target }}
@@ -24,7 +24,7 @@
                 <model-viewer style="margin-top: 10px; margin-bottom: 10px;" class="gallery-img" alt="{{ $.Params.alt_text }}" title="{{ $.Params.alt_text }}" src="{{ . }}" shadow-intensity="1" camera-controls touch-action="pan-y" camera-orbit="{{ $cameraorbit }}" camera-target="{{ $cameratarget }}" field-of-view="{{ $fov }}"></model-viewer>
             {{ end }}
         {{ else }}
-            {{ $file := printf "https://images.redstrate.com/animation/%s.webm" $.Params.slug }}
+            {{ $file := printf "%s/animation/%s.webm" $.Site.Params.image_host $.Params.slug }}
             {{ with $file }}
                 {{ if $.Params.animation }}
                     <div style="text-align: center;">
@@ -39,8 +39,8 @@
 
     {{ if $.Params.comic }}
         {{ range $.Params.pages }}
-            {{ $full := printf "https://images.redstrate.com/art/%s.avif" .filename }}
-            {{ $jpeg := printf "https://images.redstrate.com/art/%s.jpg" .filename}}
+            {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host .filename }}
+            {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host .filename}}
 
             <picture>
                     <source srcset="{{ $full }}" type="image/avif"/>
