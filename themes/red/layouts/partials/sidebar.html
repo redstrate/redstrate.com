@@ -9,7 +9,7 @@
         {{ range .Site.Menus.main }}
             <div class="site-menu">
                 {{ with resources.Get .Params.img }}
-                    <img class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
+                    <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
                 {{ end }}
                 <a href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
             </div>
@@ -22,7 +22,7 @@
         {{ range .Site.Menus.socials }}
             <div class="site-menu">
                 {{ with resources.Get .Params.img }}
-                    <img style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+                    <img alt="" style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
                 {{ end }}
                 <a rel="me" href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
             </div>

@@ -4,8 +4,9 @@
 
 <div class="gallery-con">
     <div style="display: flex; flex-wrap: wrap;">
-    {{ with .Site.GetPage "/art" }}
-        {{ range (where (where .RegularPagesRecursive "Type" "art") "Params.slug" "in" $art_config.featured) }}
+    {{ $art := .Site.GetPage "/art" }}
+    {{ range (where (where $art.RegularPagesRecursive "Type" "art") "Params.slug" "in" $art_config.featured) }}
+        {{ with ($art.GetPage .Params.slug) }}
             <figure class="gallery-fig">
                 {{ $filename_without_ext := .Params.slug }}
 
@@ -18,32 +19,18 @@
                     {{ $year = index $split 0 }}
                 {{ end }}
 
-                {{ $use_newformat := false }}
-                {{ if ge (int $year) 2023 }}
-                        {{ $use_newformat = true }}
-                {{ end }}
-
                 {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
 
                 <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
                     {{ $title := .Title }}
 
-                    {{ if $use_newformat }}
-                            {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
-                            {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
 
-                            <picture>
-                                <source srcset="{{ $full }}" type="image/avif"/>
-                                <img class="gallery-img featured-art" alt="{{ $title }}" src="{{ $jpeg }}">
-                            </picture>
-                    {{ else }}
-                        {{ with resources.Get (printf "art/%s" .filename) }}
-                        {{ $image := .Resize "500x" }}
-                        <img class="gallery-img featured-art" alt="{{ $title }}" width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}">
-                        {{ else }}
-                        <p>Thumbnail not found!</p>
-                        {{ end }}
-                    {{ end }}
+                    <picture>
+                        <source srcset="{{ $full }}" width="{{ .Params.thumb_width }}" height="{{ .Params.thumb_height }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" width="{{ .Params.thumb_width }}" height="{{ .Params.thumb_height }}" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
                 </a>
 
                 <figcaption>

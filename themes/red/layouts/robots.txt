@@ -12,6 +12,9 @@ User-agent: DuckDuckBot
 User-agent: Synapse
 User-agent: Mastodon
 
+# Allow archive.org
+User-agent: archive.org_bot
+
 # Non-important pages I don't want indexed or one reason or another
 Disallow: /shrines/
 Disallow: /layout-archive/
