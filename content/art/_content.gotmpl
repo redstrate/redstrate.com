@@ -22,7 +22,7 @@
             {{ $dates = dict "date" (time.AsTime $data.date) }}
         {{ else }}
             {{ $dates = dict "date" (time.AsTime (printf "%s-01-01" $data.date)) }}
-            {{ $exclude_feed := true }}
+            {{ $exclude_feed = true }}
         {{ end }}
 
         {{ $title := "Untitled Artwork" }}

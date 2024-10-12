@@ -50,8 +50,9 @@
         {{ range $pages }}
             {{ $isguest := (.Param "guest") }}
             {{ $exclude := (.Param "excludefeed") }}
+            {{ $isnsfw := (.Param "nsfw") }}
 
-            {{ if and (not $isguest) (not $exclude) }}
+            {{ if and (and (not $isguest) (not $exclude)) (not $isnsfw) }}
                 <item>
                     {{ with .Title }}
                         <title>{{ . }}</title>
@@ -76,8 +77,20 @@
                     {{ end }}
 
                     <content:encoded>{{ "<![CDATA[" | safeHTML }}
-                        {{ $pageScope := . }}
-                        {{ partial "render-art" . }}
+                        {{/* Partial used to display a thumbnail of an artwork. */}}
+
+                        {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host .Params.slug }}
+                        {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host .Params.slug }}
+
+                        <a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
+
+                            {{ $title := .Title }}
+                            {{ $year := .Date.Format "2006" }}
+                            <picture>
+                                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
+                                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }} ({{ $year }})" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
+                            </picture>
+                        </a>
 
                         {{ with .Content }}
                         <p>{{ . | safeHTML }}</p>
