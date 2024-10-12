@@ -35,6 +35,7 @@ params:
   images:
   - rss-image.png
   author: 'redstrate'
+  fediverse_url: "@redstrate@mastodon.art"
 
 permalinks:
   blog: 'blog/:year/:month/:title/'
