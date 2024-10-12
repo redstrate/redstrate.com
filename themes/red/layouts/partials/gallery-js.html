@@ -1,5 +1,17 @@
 {{/* Partial used to include the JS for the gallery page's masonry layout. */}}
 
+{{ $masonry := resources.Get "js/masonry.min.js" }}
+{{ if hugo.IsProduction }}
+    {{ $masonry = $masonry | fingerprint | resources.PostProcess }}
+{{ end }}
+<script src="{{ $masonry.RelPermalink }}" integrity="{{ $masonry.Data.Integrity }}"></script>
+
+{{ $imagesloaded := resources.Get "js/imagesloaded.min.js" }}
+{{ if hugo.IsProduction }}
+    {{ $imagesloaded = $imagesloaded | fingerprint | resources.PostProcess }}
+{{ end }}
+<script src="{{ $imagesloaded.RelPermalink }}" integrity="{{ $imagesloaded.Data.Integrity }}"></script>
+
 {{ $site := resources.Get "js/gallery.js" }}
 {{ if hugo.IsProduction }}
     {{ $site = $site | minify | fingerprint | resources.PostProcess }}

@@ -12,8 +12,4 @@
     {{ end }}
 </div>
 
-{{ $site := resources.Get "js/gallery.js" }}
-{{ if hugo.IsProduction }}
-{{ $site = $site | minify | fingerprint | resources.PostProcess }}
-{{ end }}
-<script src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+{{ partial "gallery-js" . }}
