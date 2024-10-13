@@ -8,7 +8,7 @@ Here's some cool like-minded people, websites and communities you should check o
 
 # Outgoing
 
-I'm slowing adding to this list, if you wish to be added and I missed you... or if made a horrific mistake, please [contact me](/contact).
+If you wish to be added to the list, [contact me](/contact). Personal websites only, cardd/linktree also work if you customize it enough.
 
 ## Artists
 
@@ -24,11 +24,19 @@ I'm slowing adding to this list, if you wish to be added and I missed you... or 
 
 {{< out-link banner="cosmix.png" link="https://cosmix.pics/" label="Cosmix" >}}
 
+{{< out-link banner="aioi.gif" link="https://aioi.neocities.org/" label="AIOI!" >}}
+
+{{< out-link banner="drakonic.gif" link="https://drakonic.zone/" label="DRAKONIC" >}}
+
+{{< out-link banner="pepperly.png" link="https://www.pepperly.art/" label="Pepperly" >}}
+
 ## Developers
 
 {{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
 
 {{< out-link banner="tof.png" link="https://toffeee.com" label="toffee" >}}
+
+{{< out-link banner="notnite.png" link="https://notnite.com/" label="notnite" >}}
 
 ## Other Cool Sites
 
@@ -44,9 +52,61 @@ I'm slowing adding to this list, if you wish to be added and I missed you... or 
 
 {{< out-link banner="scoop.gif" link="https://kaleidescoop.neocities.org/" label="The Kal Zone" >}}
 
+{{< out-link banner="elles.webp" link="https://ellesho.me/page/" label="elle's homepage" >}}
+
+{{< out-link banner="eightyeightthirtyone.png" link="https://eightyeightthirty.one" label="eightyeightthirtyone" >}}
+
 ## Communities
 
 {{< out-link banner="ko.gif" link="https://knockout.chat/" label="Knockout" >}}
+
+{{< out-link banner="krita.png" link="https://krita.org/" label="Krita" >}}
+
+{{< out-link banner="kde.gif" link="https://kde.org/" label="KDE" >}}
+
+## The button-less
+
+Want out of the button-less shame list? Make a button!
+
+* [Jens](https://neon.moe/)
+* [Carl S.](https://carlschwan.eu/)
+* [Sara B.](https://sarahduck.ca/)
+* [SaKo](https://sako.neocities.org/)
+* [Lina C.](https://udomyon.com/)
+* [Devin L.](https://espi.dev/)
+* [Halla R.](https://valdyas.org/fading/)
+* [Felipe K.](https://ffkkinos.com/)
+* [misyl](https://froggi.es/)
+* [Nrok](https://nrok.carrd.co/)
+* [Sonia L.](http://fyredrake.net/)
+* [maksu](https://maksu.codeberg.page/)
+* [Mikael M.](https://molentum.me/)
+* [Juank P.](https://juankprada.net/)
+* [ghostcatte](https://ghostcatte.art/)
+* [AuZL](https://blog.au27.net/)
+* [Caludio C.](https://claudiocambra.com/)
+* [Nicolas F.](https://nicolasfella.de/)
+* [Enkou](https://oolongnoon.carrd.co/)
+* [RetroHeart](https://retroheart.net/)
+* [Victoria F.](https://hackerbots.net/)
+* [Tobias F.](https://tobiasfella.de/)
+* [Carrots (in a car)](https://carrotsinacar.carrd.co/)
+* [Puka M.](https://puka-muriska.neocities.org/)
+* [Rishi K.](https://rishikumar.dev/)
+* [Volker K.](https://volkerkrause.eu/)
+* [David R.](https://www.davidrevoy.com/)
+* [leilei](https://lei-lei.neocities.org/)
+* [Gabriel L.](https://www.tiopalada.art/)
+* [megumumpkin](https://megumumpkin.github.io/)
+* [Kiri](https://expiredpopsicle.com/)
+* [amki](https://amkitakk.com/)
+* [Dimestore Novel](https://dimestore.fun/)
+* [Nattokinnaise](https://natto.neocities.org/)
+* [Michal](https://onelastsketch.wordpress.com/)
+* [Maskdt](https://darkandstormyart.com/)
+* [MatchaJoeJoe](https://matchajoejoe.games/)
+* [Sam P.](https://sam.pavot.ca/)
+* [moocube](https://www.mooncube.space/)
 
 # Incoming
 
