@@ -42,6 +42,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="melankorin.gif" link="https://melankorin.net/" label="melankorin" >}}
 
+{{< out-link banner="retroheart.gif" link="https://retroheart.net" label="RetroHeart" >}}
+
 {{< end-con >}}
 
 ## Developers
@@ -121,7 +123,6 @@ Want out of the button-less shame list? Make a button!
 * [Caludio C.](https://claudiocambra.com/)
 * [Nicolas F.](https://nicolasfella.de/)
 * [Enkou](https://oolongnoon.carrd.co/)
-* [RetroHeart](https://retroheart.net/)
 * [Victoria F.](https://hackerbots.net/)
 * [Tobias F.](https://tobiasfella.de/)
 * [Carrots (in a car)](https://carrotsinacar.carrd.co/)
