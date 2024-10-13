@@ -151,8 +151,6 @@ below. You have an option depending on your website's color scheme :-)
 
 | Type | Preview | HTML |
 | -----|---------|--------|
-| 200x40 Banner | ![](/banner.webp) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/banner.webp"/></a>``` |
-| 200x40 Banner | ![](/banner2.webp) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/banner2.webp"/></a>``` |
-| 88x31 Button | ![](/button-light.png) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/button-light.png"/></a>``` |
-| 88x31 Button |![](/button-dark.png) | ```<a href="https://redstrate.com/"><img src="https://redstrate.com/button-dark.png"/></a>``` |
+| 88x31 Button | {{< out-link banner="https://images.redstrate.com/misc/button.png" link="" label="" >}} | ```<a href="https://redstrate.com/"><img src="button.png"/></a>``` |
+| 88x31 Button (Text-only) | {{< out-link banner="https://images.redstrate.com/misc/button2.png" link="" label="" >}} | ```<a href="https://redstrate.com/"><img src="button2.png"/></a>``` |
 
