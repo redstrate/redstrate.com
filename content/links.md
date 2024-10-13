@@ -30,6 +30,12 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="pepperly.png" link="https://www.pepperly.art/" label="Pepperly" >}}
 
+{{< out-link banner="mana.png" link="https://www.illusionofmana.art/" label="IllusionOfMana" >}}
+
+{{< out-link banner="thilinky.gif" link="https://thilinky.neocities.org/" label="thilinky" >}}
+
+{{< out-link banner="freakbutton2.gif" link="https://freakphone.net/" label="freakphone" >}}
+
 ## Developers
 
 {{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
@@ -37,6 +43,10 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 {{< out-link banner="tof.png" link="https://toffeee.com" label="toffee" >}}
 
 {{< out-link banner="notnite.png" link="https://notnite.com/" label="notnite" >}}
+
+{{< out-link banner="kokoscript.gif" link="https://kokoscript.com/index.html" label="koko" >}}
+
+{{< out-link banner="daikonet.gif" link="https://daikonet.neocities.org/" label="daikonet" >}}
 
 ## Other Cool Sites
 
@@ -55,6 +65,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 {{< out-link banner="elles.webp" link="https://ellesho.me/page/" label="elle's homepage" >}}
 
 {{< out-link banner="eightyeightthirtyone.png" link="https://eightyeightthirty.one" label="eightyeightthirtyone" >}}
+
+{{< out-link banner="caitbutton.gif" link="https://caitsith.neocities.org/myhomepage" label="caitsith" >}}
 
 ## Communities
 
