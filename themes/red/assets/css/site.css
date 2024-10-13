@@ -434,6 +434,9 @@ hr {
 
 code {
     white-space: pre-wrap;
+    background-color: var(--background-tertiary);
+    border-radius: 5px;
+    padding: 3px;
 }
 
 pre {
