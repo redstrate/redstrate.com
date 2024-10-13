@@ -10,5 +10,10 @@
     "nsfw": true,
     "pixiv_url": "https://www.pixiv.net/en/artworks/121093210",
     "program": "Krita",
-    "title": "Drip"
+    "title": "Drip",
+    "languages": {
+        "jp": {
+            "title": "ポタリ"
+        }
+    }
 }

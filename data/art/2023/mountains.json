@@ -8,5 +8,10 @@
     "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/mountains",
     "pixiv_url": "https://www.pixiv.net/artworks/108274736",
     "program": "Krita",
-    "title": "mountains"
+    "title": "mountains",
+    "languages": {
+        "jp": {
+            "title": "山"
+        }
+    }
 }

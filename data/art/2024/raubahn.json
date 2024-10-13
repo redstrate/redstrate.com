@@ -11,5 +11,10 @@
     "tags": [
         "fan art"
     ],
-    "title": "Bull of Ala Mhigo"
+    "title": "Bull of Ala Mhigo",
+    "languages": {
+        "jp": {
+            "title": "ラウバーン"
+        }
+    }
 }

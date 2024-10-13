@@ -10,5 +10,10 @@
     "tags": [
         "sketch"
     ],
-    "title": "Merume's Night Out"
+    "title": "Merume's Night Out",
+    "languages": {
+        "jp": {
+            "title": "めるめ外出!"
+        }
+    }
 }

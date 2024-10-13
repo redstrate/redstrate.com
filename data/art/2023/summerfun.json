@@ -9,5 +9,10 @@
     "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/summer-fun",
     "pixiv_url": "https://www.pixiv.net/en/artworks/111921549",
     "program": "Krita",
-    "title": "summer fun"
+    "title": "summer fun",
+    "languages": {
+        "jp": {
+            "title": "夏は迚も面白い"
+        }
+    }
 }

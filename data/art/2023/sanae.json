@@ -12,5 +12,10 @@
     "tags": [
         "artfight"
     ],
-    "title": "relaxation"
+    "title": "relaxation",
+    "languages": {
+        "jp": {
+            "title": "くつろい"
+        }
+    }
 }

@@ -12,5 +12,10 @@
     "tags": [
         "Fan Art"
     ],
-    "title": "Viera ID Check"
+    "title": "Viera ID Check",
+    "languages": {
+        "jp": {
+            "title": "ヴィエラそ して 彼女 身分証明書"
+        }
+    }
 }

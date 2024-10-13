@@ -5,5 +5,10 @@
     "mastodon_url": "https://mastodon.art/@redstrate/110529001103381634",
     "pixiv_url": "https://www.pixiv.net/artworks/108996390",
     "program": "Procreate",
-    "title": "want to join?"
+    "title": "want to join?",
+    "languages": {
+        "jp": {
+            "title": "参加する？"
+        }
+    }
 }

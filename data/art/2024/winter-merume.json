@@ -9,5 +9,10 @@
     "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/winter-merume",
     "pixiv_url": "https://www.pixiv.net/artworks/116104991",
     "program": "Krita",
-    "title": "Winter Merume"
+    "title": "Winter Merume",
+    "languages": {
+        "jp": {
+            "title": "めるめ冬"
+        }
+    }
 }

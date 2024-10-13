@@ -4,5 +4,10 @@
     "title": "merume animation",
     "tags": ["Animation"],
     "characters": ["Merume"],
-    "type": "Animation"
+    "type": "Animation",
+    "languages": {
+        "jp": {
+            "title": "めるめアニメ"
+        }
+    }
 }

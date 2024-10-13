@@ -2,5 +2,10 @@
     "date": "2024-04-24",
     "program": "Krita",
     "title": "Awkward",
-    "nsfw": true
+    "nsfw": true,
+    "languages": {
+        "jp": {
+            "title": "気まずく..."
+        }
+    }
 }

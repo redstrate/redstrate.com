@@ -8,5 +8,10 @@
     "newgrounds_url": "https://www.newgrounds.com/art/view/redstrate/electrical",
     "pixiv_url": "https://www.pixiv.net/artworks/115516345",
     "program": "Krita",
-    "title": "Electrical"
+    "title": "Electrical",
+    "languages": {
+        "jp": {
+            "title": "電気式"
+        }
+    }
 }

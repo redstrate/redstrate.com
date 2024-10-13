@@ -12,5 +12,10 @@
     "tags": [
         "fan art"
     ],
-    "title": "Costa del Sol"
+    "title": "Costa del Sol",
+    "languages": {
+        "jp": {
+            "title": "コスタ・デル・ソル"
+        }
+    }
 }

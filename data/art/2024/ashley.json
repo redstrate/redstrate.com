@@ -11,5 +11,10 @@
     "tags": [
         "fan art"
     ],
-    "title": "President's Daughter"
+    "title": "President's Daughter",
+    "languages": {
+        "jp": {
+            "title": "アシュリ"
+        }
+    }
 }

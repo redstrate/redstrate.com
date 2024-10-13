@@ -11,5 +11,10 @@
     "tags": [
         "sketch"
     ],
-    "title": "L1 📷"
+    "title": "L1 📷",
+    "languages": {
+        "jp": {
+            "title": "LX-1 📷"
+        }
+    }
 }

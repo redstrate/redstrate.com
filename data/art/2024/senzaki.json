@@ -9,5 +9,10 @@
     "tags": [
         "Fan Art"
     ],
-    "title": "Senzaki"
+    "title": "Senzaki",
+    "languages": {
+        "jp": {
+            "title": "仙崎"
+        }
+    }
 }
