@@ -12,6 +12,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 ## Artists
 
+{{< begin-con >}}
+
 {{< out-link banner="goldgust_net.png" link="https://goldgust.net" label="Gold" >}}
 
 {{< out-link banner="nina.jpg" link="https://misnina.com" label="Nina" >}}
@@ -36,7 +38,15 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="freakbutton2.gif" link="https://freakphone.net/" label="freakphone" >}}
 
+{{< out-link banner="lovesick.png" link="https://lovesick.cafe/" label="lovesick" >}}
+
+{{< out-link banner="melankorin.gif" link="https://melankorin.net/" label="melankorin" >}}
+
+{{< end-con >}}
+
 ## Developers
+
+{{< begin-con >}}
 
 {{< out-link banner="aks.png" link="https://www.akselmo.dev" label="Aks" >}}
 
@@ -48,7 +58,11 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="daikonet.gif" link="https://daikonet.neocities.org/" label="daikonet" >}}
 
+{{< end-con >}}
+
 ## Other Cool Sites
+
+{{< begin-con >}}
 
 {{< out-link banner="wishesforfishes.gif" link="https://wishesforfishes.neocities.org/" label="Wishes for Fishes" >}}
 
@@ -68,7 +82,11 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="caitbutton.gif" link="https://caitsith.neocities.org/myhomepage" label="caitsith" >}}
 
+{{< end-con >}}
+
 ## Communities
+
+{{< begin-con >}}
 
 {{< out-link banner="ko.gif" link="https://knockout.chat/" label="Knockout" >}}
 
@@ -76,9 +94,13 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="kde.gif" link="https://kde.org/" label="KDE" >}}
 
+{{< end-con >}}
+
 ## The button-less
 
 Want out of the button-less shame list? Make a button!
+
+{{< begin-con >}}
 
 * [Jens](https://neon.moe/)
 * [Carl S.](https://carlschwan.eu/)
@@ -120,9 +142,11 @@ Want out of the button-less shame list? Make a button!
 * [Sam P.](https://sam.pavot.ca/)
 * [moocube](https://www.mooncube.space/)
 
+{{< end-con >}}
+
 # Incoming
 
-If you want to link back to my website, you can use one of the two banners
+If you want to link back to my website, you can use one of the two buttons
 below. You have an option depending on your website's color scheme :-)
 
 | Type | Preview | HTML |
