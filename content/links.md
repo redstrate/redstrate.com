@@ -146,8 +146,7 @@ Want out of the button-less shame list? Make a button!
 
 # Incoming
 
-If you want to link back to my website, you can use one of the two buttons
-below. You have an option depending on your website's color scheme :-)
+Please host these images yourself. I have two options depending on your preference:
 
 | Type | Preview | HTML |
 | -----|---------|--------|
