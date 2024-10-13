@@ -8,5 +8,10 @@
     "characters": [
         "Merume"
     ],
-    "title": "Another Thursday"
+    "title": "Another Thursday",
+    "languages": {
+        "jp": {
+            "title": "めるめ外出!"
+        }
+    }
 }

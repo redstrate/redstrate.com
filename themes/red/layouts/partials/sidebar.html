@@ -2,7 +2,7 @@
     <details id="nav-menu" open>
         <summary>Menu</summary>
 
-        <strong>Navigation</strong>
+        <strong>{{ lang.Translate "navigation" }}</strong>
 
         {{ $icon := resources.Get "external-link.svg" }}
 
@@ -11,13 +11,17 @@
                 {{ with resources.Get .Params.img }}
                     <img alt="" class="symbolic-icon" style="image-rendering: pixelated;" width="16" height="16" src="{{ .RelPermalink }}">
                 {{ end }}
-                <a href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+                {{ $url := .URL }}
+                {{ if not (strings.Contains $url "https") }}
+                    {{ $url = printf "%s%s" $.Site.Home.Permalink .URL }}
+                {{ end }}
+                <a href="{{ $url }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
             </div>
         {{ end }}
 
         <br/>
 
-        <strong>Accounts</strong>
+        <strong>{{ lang.Translate "social_media" }}</strong>
 
         {{ range .Site.Menus.socials }}
             <div class="site-menu">
@@ -25,6 +29,22 @@
                     <img alt="" style="image-rendering: pixelated;" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
                 {{ end }}
                 <a rel="me" href="{{ .URL  }}">{{ .Name }}{{ if strings.HasPrefix .URL "http" }}<img class="external-link" aria-hidden="true" alt="External link" width="16" height="16" src="{{ $icon.RelPermalink }}">{{- end -}}</a>
+            </div>
+        {{ end }}
+
+        {{ if .IsTranslated }}
+            <br>
+            <strong>Available Languages</strong>
+            <div class="site-meni">
+                {{ $currentPage := . }}
+                {{ range .Translations }}
+                    {{ $specificLang := .Lang }}
+                    {{ range $currentPage.Translations }}
+                        {{ if (eq .Lang $specificLang) }}
+                            <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
             </div>
         {{ end }}
     </details>

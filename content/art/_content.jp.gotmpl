@@ -1,0 +1,103 @@
+{{ $sizes := unmarshal (readFile "/data/sizes.json") }}
+
+{{ range readDir "/data/art" }}
+  {{ if .IsDir }}
+    {{ $year := .Name }}
+    {{ range readDir ( printf "/data/art/%s" .Name ) }}
+      {{ if eq (path.Ext .Name) ".json" }}
+        {{ $file := readFile ( printf "/data/art/%s/%s" $year .Name ) }}
+        {{ $data := unmarshal $file }}
+        {{ $basename := strings.TrimSuffix (path.Ext .Name) .Name }}
+
+        {{ $content := dict
+          "mediaType" "text/markdown"
+          "value" $data.description
+        }}
+
+        {{ $split := split $data.date "-" }}
+        {{ $split_len := $split | len }}
+        {{ $dates := dict "date" (time.Now) }}
+        {{ $exclude_feed := false }}
+        {{ if gt $split_len 1 }}
+            {{ $dates = dict "date" (time.AsTime $data.date) }}
+        {{ else }}
+            {{ $dates = dict "date" (time.AsTime (printf "%s-01-01" $data.date)) }}
+            {{ $exclude_feed = true }}
+        {{ end }}
+
+        {{ $title := "Untitled Artwork" }}
+        {{ with $data.title }}
+          {{ $title = . }}
+        {{ end }}
+
+        {{ $params := dict
+          "slug" $basename
+          "alt_text" $data.alt_text
+          "artist" $data.artist
+          "excludefeed" $exclude_feed
+          "arttags" $data.tags
+          "characters" $data.characters
+          "nsfw" $data.nsfw
+          "mastodon_url" $data.mastodon_url
+          "pixiv_url" $data.pixiv_url
+          "newgrounds_url" $data.newgrounds_url
+          "program" $data.program
+          "guest" (eq $year "guest")
+          "threed" (eq $data.type "3D")
+          "animation" (eq $data.type "Animation")
+          "orbit" (index $data "camera-orbit")
+          "target" (index $data "camera-target")
+          "fov" (index $data "camera-fov")
+          "comic" (eq $data.type "Comic")
+          "pages" $data.pages
+          "width" (index $sizes.full $basename).width
+          "height" (index $sizes.full $basename).height
+          "thumb_width" (index $sizes.thumb $basename).width
+          "thumb_height" (index $sizes.thumb $basename).height
+        }}
+
+        {{ $path := $basename }}
+        {{ if eq $year "guest" }}
+          {{ $path = (printf "guest/%s" $basename) }}
+        {{ end }}
+
+        {{ $languages := $data.languages }}
+        {{ range $key, $val := $languages }}
+            {{/* This is needed because art is placed under a different URL based on permalinks, and those aren't localized. */}}
+            {{ $month := "1" }}
+            {{ $year := "1" }}
+
+            {{ if $data.date }}
+              {{ $split := split $data.date "-" }}
+              {{ $month = index $split 1 }}
+              {{ $year = index $split 0 }}
+            {{ end }}
+
+            {{ $langPage := dict
+              "slug" $basename
+              "content" $content
+              "dates" $dates
+              "kind" "page"
+              "path" $path
+              "title" $val.title
+              "params" $params
+              "layout" "art-detail"
+            }}
+            {{ warnf $langPage.path }}
+            {{ $.AddPage $langPage }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ if not (eq $year "guest") }}
+      {{ $page := dict
+        "slug" $year
+        "kind" "section"
+        "path" $year
+        "title" $year
+        "layout" "year-gallery"
+      }}
+      {{ $.AddPage $page }}
+    {{ end }}
+  {{ end }}
+{{ end }}

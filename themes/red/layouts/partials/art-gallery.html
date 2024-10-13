@@ -1,6 +1,6 @@
 {{/* Partial used to display a grid of artwork. */}}
 
-{{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
+{{ $paginator := .Paginate (where $.Site.Pages "Type" "art") }}
 
 {{ template "_internal/pagination.html" . }}
 {{ $on_guest := eq .Title "Guest Art" }}

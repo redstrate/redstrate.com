@@ -1,10 +1,8 @@
 baseURL: 'https://redstrate.com/'
 copyright: 'This content is licensed under a Creative Commons Attribution-ShareAlike 4.0.'
-defaultContentLanguage: 'en'
 disableHugoGeneratorInject: true
 enableGitInfo: true
 enableRobotsTXT: true
-languageCode: 'en-us'
 summarylength: 15
 disableKinds:
 - taxonomy
@@ -60,32 +58,32 @@ menu:
   - name: 'Home'
     params:
     - img: 'icons/home.svg'
-    url: '/'
+    url: ''
     weight: -1
   - name: 'Blog'
     params:
     - img: 'icons/blog.svg'
-    url: '/blog'
+    url: 'blog'
     weight: 1
   - name: 'Art'
     params:
     - img: 'icons/art.svg'
-    url: '/art'
+    url: 'art'
     weight: 2
   - name: 'Music'
     params:
     - img: 'icons/music.svg'
-    url: '/music'
+    url: 'music'
     weight: 3
   - name: 'Software'
     params:
     - img: 'icons/software.svg'
-    url: '/software'
+    url: 'software'
     weight: 4
   - name: 'Talks'
     params:
     - img: 'icons/talks.svg'
-    url: '/talks'
+    url: 'talks'
     weight: 5
   - name: 'Games'
     params:
@@ -100,37 +98,37 @@ menu:
   - name: 'Shrines'
     params:
     - img: 'icons/shrines.svg'
-    url: '/shrines'
+    url: 'shrines'
     weight: 8
   - name: 'Links'
     params:
     - img: 'icons/links.svg'
-    url: '/links'
+    url: 'links'
     weight: 9
   - name: 'Guestbook'
     params:
     - img: 'icons/guestbook.svg'
-    url: '/guestbook'
+    url: 'guestbook'
     weight: 10
   - name: 'Contact'
     params:
     - img: 'icons/contact.svg'
-    url: '/contact'
+    url: 'contact'
     weight: 11
   - name: 'About'
     params:
     - img: 'icons/about.svg'
-    url: '/about'
+    url: 'about'
     weight: 12
   footer:
   - name: 'Feeds'
-    url: '/feeds'
+    url: 'feeds'
     weight: -1
   - name: 'Imprint'
-    url: '/imprint'
+    url: 'imprint'
     weight: 2
   - name: 'Accessibility'
-    url: '/accessibility'
+    url: 'accessibility'
     weight: 3
   badges:
   - name: 'CC NC SA'
@@ -190,3 +188,39 @@ menu:
     - img: 'kofi.webp'
     url: 'https://ko-fi.com/redstrate'
     weight: 4
+
+defaultContentLanguage: 'en'
+languageCode: 'en-us'
+defaultContentLanguageInSubdir: false
+
+languages:
+    en:
+        languageName: English
+    tok:
+        contentDir: content/tok
+        languageName: Toki Pona
+        disabled: true
+    de:
+        contentDir: content/de
+        languageName: German
+        disabled: true
+    jp:
+        languageName: Japanese
+        menus:
+            main:
+            - name: 'トップ'
+              params:
+              - img: 'icons/home.svg'
+              url: ''
+              weight: -1
+            - name: '芸術'
+              params:
+              - img: 'icons/art.svg'
+              url: 'art'
+              weight: 2
+            socials:
+            - name: 'pixiv'
+              params:
+              - img: 'pixiv.webp'
+              url: 'https://www.pixiv.net/en/users/58118005'
+              weight: 2
