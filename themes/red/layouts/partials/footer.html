@@ -17,17 +17,24 @@
     {{ end }}
 
     {{ with .Site.Params.geekring_site_id }}
-     <map name="badge-geekring">
-        <area shape="rect" coords="4,3,13,28" href="http://geekring.net/site/{{ . }}/previous" alt="Previous">
-        <area shape="rect" coords="13,3,22,28" href="http://geekring.net/site/{{ . }}/random" alt="Random">
-        <area shape="rect" coords="76,3,84,28" href="http://geekring.net/site/{{ . }}/next" alt="Next">
-        <area shape="rect" coords="23,3,63,28" href="https://geekring.net/" alt="Geekring">
-    </map>
-    {{ with resources.Get "geek_2.gif" }}
-    <img width="88" height="31" usemap="#badge-geekring" src="{{ .RelPermalink }}" alt="The Geekring">
-    {{ end }}
+        <map name="badge-geekring">
+            <area shape="rect" coords="4,3,13,28" href="http://geekring.net/site/{{ . }}/previous" alt="Previous">
+            <area shape="rect" coords="13,3,22,28" href="http://geekring.net/site/{{ . }}/random" alt="Random">
+            <area shape="rect" coords="76,3,84,28" href="http://geekring.net/site/{{ . }}/next" alt="Next">
+            <area shape="rect" coords="23,3,63,28" href="https://geekring.net/" alt="Geekring">
+        </map>
+        {{ with resources.Get "geek_2.gif" }}
+            <img width="88" height="31" usemap="#badge-geekring" src="{{ .RelPermalink }}" alt="The Geekring">
+        {{ end }}
     {{ end }}
 </div>
+
+{{ if .Site.Params.enable_koring }}
+    <div id='koring'>
+        <script type="text/javascript" src="https://ottr.uk/koring/onionring-variables.js"></script>
+        <script type="text/javascript" src="https://ottr.uk/koring/onionring-widget.js"></script>
+    </div>
+{{ end }}
 
 <div class="f-list">
     <ul class="nice-list">

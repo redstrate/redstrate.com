@@ -36,6 +36,7 @@ params:
   fediverse_url: "@redstrate@mastodon.art"
   image_host: "https://images.redstrate.com"
   kofi_username: 'redstrate'
+  enable_koring: true
 
 permalinks:
   blog: 'blog/:year/:month/:title/'
