@@ -1,4 +1,6 @@
 {
     "name": "Titania",
-    "original": false
+    "original": true,
+    "origin": "FINAL FANTASY XIV ONLINE",
+    "pronouns": "she/her"
 }
