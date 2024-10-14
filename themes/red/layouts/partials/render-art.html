@@ -1,7 +1,7 @@
 {{/* Partial used to display a thumbnail of an artwork. */}}
 
-{{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host .Params.slug }}
-{{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host .Params.slug }}
+{{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host .Params.filename }}
+{{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host .Params.filename }}
 
 <a aria-label="Gallery Item" class="no-decoration grid-item" href="{{ .RelPermalink }}">
 

@@ -6,8 +6,8 @@
     <hr>
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
-        {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.slug }}
-        {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host $.Params.slug }}
+        {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.filename }}
+        {{ $jpeg := printf "%s/art/%s.jpg" $.Site.Params.image_host $.Params.filename }}
 
         <picture>
                 <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.width }}" height="{{ $.Params.height }}"/>

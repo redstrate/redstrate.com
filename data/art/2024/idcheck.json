@@ -15,7 +15,8 @@
     "title": "Viera ID Check",
     "languages": {
         "jp": {
-            "title": "ヴィエラそ して 彼女 身分証明書"
+            "title": "ヴィエラそ して 彼女 身分証明書",
+            "filename": "idcheck-jp"
         }
     }
 }
