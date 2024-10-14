@@ -33,7 +33,11 @@
     <ul class="nice-list">
         {{ range $.Site.Menus.footer }}
             <li>
-                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ $url := .URL }}
+                {{ if not (strings.Contains $url "https") }}
+                    {{ $url = printf "%s%s" $.Site.Home.Permalink .URL }}
+                {{ end }}
+                <a href="{{ $url }}">{{ .Name }}</a>
             </li>
         {{ end }}
     </ul>
