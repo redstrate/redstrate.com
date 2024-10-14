@@ -164,11 +164,6 @@ menu:
     - img: 'mastodon.webp'
     url: 'https://mastodon.art/@redstrate'
     weight: -1
-  - name: 'Newgrounds'
-    params:
-    - img: 'newgrounds.webp'
-    url: 'https://redstrate.newgrounds.com'
-    weight: 1
   - name: 'Pixiv'
     params:
     - img: 'pixiv.webp'
@@ -183,11 +178,6 @@ menu:
     params:
     - img: 'github.webp'
     url: 'https://github.com/redstrate'
-    weight: 4
-  - name: 'Ko-fi'
-    params:
-    - img: 'kofi.webp'
-    url: 'https://ko-fi.com/redstrate'
     weight: 4
 
 defaultContentLanguage: 'en'

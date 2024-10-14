@@ -8,7 +8,6 @@
     {{ .Content }}
 
     {{ $art := (index site.Data ($.Param "json")) }}
-    {{ $newgrounds_icon := resources.Get "newgrounds.webp" }}
 
     {{ range $art.categories }}
         {{ $.Scratch.Set "header-type" "h3" }}
@@ -32,9 +31,6 @@
 
                         <figcaption>
                             "{{ .title }}"
-                            {{ if .newgrounds_url }}
-                                <a href="{{ .newgrounds_url }}" style="vertical-align: bottom"><img style="vertical-align: bottom" alt="Newgrounds Icon" width="19" height="19" src="{{ $newgrounds_icon.RelPermalink }}"></a>
-                            {{ end }}
                         </figcaption>
                     </figure>
                 {{ end }}
