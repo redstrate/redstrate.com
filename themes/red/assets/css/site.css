@@ -116,6 +116,11 @@
         width: 25px;
         height: 25px;
     }
+
+    #koring {
+        visibility: hidden;
+        height: 0px;
+    }
 }
 
 body {
