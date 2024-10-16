@@ -10,6 +10,7 @@
         {{ .Content }}
     {{ end }}
 
+    {{ $.Scratch.Set "paginator" (.Paginate ((where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true))) }}
     {{ partial "art-gallery" . }}
 
     {{ partial "gallery-js" . }}

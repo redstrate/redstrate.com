@@ -2,7 +2,12 @@
 
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
-
+    <i style="margin: 0">
+    Posted on
+    <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+        {{ $.Date.Format "January 2006" }}
+    </time>
+    </i>
     <hr>
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
@@ -51,16 +56,47 @@
 
     {{ partial "voting" . }}
 
-    <table>
-        <tr>
-            <th>{{ i18n "date" }}</th>
-            <td>
-                <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
-                    {{ $.Date.Format "January 2006" }}
-                </time>
-            </td>
-        </tr>
+    {{ with .Content }}
+        {{ $.Scratch.Set "header-type" "h3" }}
+        {{ $.Scratch.Set "header-name" "Commentary" }}
+        {{ partial "fake-heading.html" $ }}
 
+        {{ . }}
+    {{ end }}
+
+    {{ if .Params.threed }}
+        {{ $site := resources.Get "js/model-viewer.min.js" }}
+        {{ if hugo.IsProduction }}
+            {{ $site = $site | fingerprint | resources.PostProcess }}
+        {{ end }}
+        <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
+    {{ end }}
+
+    {{ partial "comments" . }}
+{{ end }}
+
+{{ define "details" }}
+    <strong>This artwork was also posted on:</strong>
+
+    <br>
+
+    {{ with .Params.mastodon_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Mastodon icon" title="Mastodon" width="32" height="32" src="/icons/mastodon.svg"/></a>
+    {{ end }}
+
+    {{ with .Params.pixiv_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Pixiv icon" title="Pixiv" width="32" height="32" src="/icons/pixiv.svg"/></a>
+    {{ end }}
+    <br>
+
+    <strong>Created with:</strong>
+    <br>
+
+    {{ with .Params.program }}
+        <span>{{ . }}</span>
+    {{ end }}
+
+    <table>
         {{ with .Params.arttags }}
             <tr>
                 <th>{{ i18n "tags" }}</th>
@@ -93,50 +129,5 @@
                 </td>
             </tr>
         {{ end }}
-
-        {{ with .Params.program }}
-            <tr>
-                <th>{{ i18n "program" }}</th>
-                <td>
-                    {{ . }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.mastodon_url }}
-            <tr>
-                <th>Mastodon URL</th>
-                <td>
-                    <a href="{{ . }}">Mastodon Post</a>
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.pixiv_url }}
-            <tr>
-                <th>Pixiv URL</th>
-                <td>
-                    <a href="{{ . }}">Pixiv Post</a>
-                </td>
-            </tr>
-        {{ end }}
     </table>
-
-    {{ with .Content }}
-        {{ $.Scratch.Set "header-type" "h3" }}
-        {{ $.Scratch.Set "header-name" "Commentary" }}
-        {{ partial "fake-heading.html" $ }}
-
-        {{ . }}
-    {{ end }}
-
-    {{ if .Params.threed }}
-        {{ $site := resources.Get "js/model-viewer.min.js" }}
-        {{ if hugo.IsProduction }}
-            {{ $site = $site | fingerprint | resources.PostProcess }}
-        {{ end }}
-        <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
-    {{ end }}
-
-    {{ partial "comments" . }}
 {{ end }}

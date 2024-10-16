@@ -6,6 +6,7 @@
     <hr>
 
     <h3>Original</h3>
+    <div class="generic-con">
 
     {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
         {{ $original := false }}
@@ -17,10 +18,10 @@
         <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
         {{ end }}
     {{ end }}
+    </div>
 
     <h3>Others</h3>
-
-
+    <div class="generic-con">
     {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
         {{ $original := false }}
         {{ if $taxonomy.Page.Params.original }}
@@ -31,5 +32,5 @@
         <a class="character" href="{{ $.Params.url | relLangURL }}{{ $name | urlize }}"><img class="gallery-img" width=256 height=256 src="{{ $.Site.Params.image_host }}/chars/{{ $name | urlize }}.jpg"/><span>{{ $taxonomy.Page.Title }}</span></a>
         {{ end }}
     {{ end }}
-
+    </div>
 {{ end }}

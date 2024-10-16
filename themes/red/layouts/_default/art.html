@@ -5,9 +5,6 @@
 
     <hr>
 
-    {{ $paginator := .Paginate (where .RegularPagesRecursive "Type" "art") }}
-
-    {{ if eq $paginator.PageNumber 1}}
     <div class="art-outer">
         <div class="art-inner">
             {{ $alertimg := resources.Get "alert.png" }}
@@ -24,15 +21,15 @@
     </div>
 
     <div class="art-button-container">
-        <a class="art-button" href="/art/characters">Characters</a>
-        <a class="art-button" href="/art/tags">Tags</a>
         <a class="art-button" href="/art/stats">Statistics</a>
-        <a class="art-button" href="/art/guest">Guest Art</a>
-        <a class="art-button" href="/commission">Commission</a>
+        <a class="art-button" href="/commission">Commission Info</a>
     </div>
-    {{ end }}
 
-    {{ partial "art-gallery" . }}
+    <a class="art-button" href="/art/original">Original</a><br>
+    <a class="art-button" href="/art/tags/fan-art/">Fanart</a><br>
+    <a class="art-button" href="/art/nsfw">NSFW</a><br>
+    <a class="art-button" href="/art/guest">Guest</a><br>
+    <a class="art-button" href="/art/characters">Characters</a>
 
     {{ partial "art-years" . }}
 

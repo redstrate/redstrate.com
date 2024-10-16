@@ -9,28 +9,33 @@
 {{ $year := .Date.Format "2006" }}
 
 {{ with $full }}
+        <picture>
+                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
+                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
+        </picture>
+
+        <span>
+        {{ $title }}, {{ $year }}
+
         {{ if $.Params.threed }}
                 {{ with resources.Get "3d.png" }}
-                        <img class="gallery-type-icon-hidden" alt="3D cube icon" title="Viewable 3D" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img width="16" height="16" alt="3D cube icon" title="Viewable 3D Model" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
 
         {{ if $.Params.comic }}
                 {{ with resources.Get "comic.png" }}
-                        <img class="gallery-type-icon-hidden" alt="Comic icon" title="Viewable Comic" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img width="16" height="16" alt="Comic icon" title="Viewable Comic" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
+
 
         {{ if $.Params.animation }}
                 {{ with resources.Get "play-circle.png" }}
-                        <img class="gallery-type-icon-hidden" alt="Play animation icon" title="Viewable Animation" style="z-index: 1; position: absolute; left: 10px; top: 10px; border: none" src="{{ .RelPermalink }}">
+                        <img width="16" height="16" alt="Play animation icon" title="Viewable Animation" src="{{ .RelPermalink }}">
                 {{ end }}
         {{ end }}
-
-        <picture>
-                <source srcset="{{ $full }}" type="image/avif" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}"/>
-                <img style="width: 100%; height: auto;" alt="{{ $.Params.alt_text }}" title="{{ $title }} ({{ $year }})" width="{{ $.Params.thumb_width }}" height="{{ $.Params.thumb_height }}" src="{{ $jpeg }}"/>
-        </picture>
+        </span>
 {{ end }}
 </a>
 

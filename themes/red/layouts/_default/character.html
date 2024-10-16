@@ -30,6 +30,7 @@
     <hr>
     {{ end }}
 
+    {{ $paginator := .Paginate (where $.Site.Pages "Type" "art") }}
     {{ partial "art-gallery" . }}
 
     {{ $paginator := (where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true) }}
