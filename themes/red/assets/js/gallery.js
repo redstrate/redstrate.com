@@ -1,7 +1,4 @@
 imagesLoaded(document.querySelector('.grid'), function(instance) {
-    const typeIcons = document.querySelectorAll('.gallery-type-icon-hidden');
-    typeIcons.forEach(element => element.classList.remove('gallery-type-icon-hidden'));
-
     new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',

@@ -7,16 +7,20 @@
 
     {{ .Content }}
 
-    {{ $tags := slice "fan art" "artfight" }}
+    {{ $tags := slice "fan art" "artfight" "3d" }}
     {{ $art := .Site.GetPage "/art" }}
     {{ $artworks := (where $art.RegularPagesRecursive "Type" "art") }}
     {{ $fan_art := (where $artworks "Params.arttags" "intersect" $tags) }}
     {{ $guest_art := (where $artworks "Params.guest" "=" true) }}
-    {{ $nsfw_art := (where $artworks "Params.nsfw" "=" true) }}
-    {{ $originals := complement $fan_art $guest_art $nsfw_art $artworks }}
+    {{ $originals := complement $fan_art $guest_art $artworks }}
 
     {{ $.Scratch.Set "paginator" (.Paginate $originals) }}
     {{ partial "art-gallery" . }}
 
     {{ partial "gallery-js" . }}
 {{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+{{ end }}
+

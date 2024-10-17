@@ -1,6 +1,5 @@
 {{/* Partial used to display a grid of artwork. */}}
 
-{{ template "_internal/pagination.html" . }}
 {{ $paginator := .Scratch.Get "paginator" }}
 
 <div class="grid-container">
@@ -14,4 +13,4 @@
 </div>
 </div>
 
-{{ template "_internal/pagination.html" . }}
+{{ partial "art-pagination" . }}

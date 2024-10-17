@@ -2,16 +2,10 @@
 
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
-
     <hr>
 
     <div class="art-outer">
         <div class="art-inner">
-            {{ $alertimg := resources.Get "alert.png" }}
-            {{ with $.Params.new_banner }}
-                <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
-            {{ end }}
-
             {{ .Content }}
         </div>
 
@@ -20,19 +14,56 @@
         {{ end }}
     </div>
 
-    <div class="art-button-container">
-        <a class="art-button" href="/art/stats">Statistics</a>
-        <a class="art-button" href="/commission">Commission Info</a>
+    <div id="art-button-main-container">
+        {{ with $.Site.GetPage "/art/original" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "original.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/arttags/fan-art" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "fanart.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/arttags/3d" }}
+            {{ .Scratch.Set "title" "3D Art" }}
+            {{ .Scratch.Set "img" "3d.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/guest" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "guest.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/wallpapers" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "wallpapers.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/characters" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "characters.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
     </div>
+{{ end }}
 
-    <a class="art-button" href="/art/original">Original</a><br>
-    <a class="art-button" href="/art/tags/fan-art/">Fanart</a><br>
-    <a class="art-button" href="/art/nsfw">NSFW</a><br>
-    <a class="art-button" href="/art/guest">Guest</a><br>
-    <a class="art-button" href="/art/wallpapers">Wallpapers</a><br>
-    <a class="art-button" href="/art/characters">Characters</a>
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
 
-    {{ partial "art-years" . }}
-
-    {{ partial "gallery-js" . }}
+    <p><strong>Tags</strong></p>
+    {{ range $name, $taxonomy := (index .Site.Taxonomies "arttags") }}
+        <a href="/art/tags/{{ $name | urlize }}">{{ $taxonomy.Page.Title }}</a><br>
+    {{ end }}
 {{ end }}

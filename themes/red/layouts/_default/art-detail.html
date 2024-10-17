@@ -8,7 +8,6 @@
         {{ $.Date.Format "January 2006" }}
     </time>
     </i>
-    <hr>
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
         {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.filename }}
@@ -56,6 +55,9 @@
 
     {{ partial "voting" . }}
 
+    <div class="generic-con" id="art-detail-inline">
+    {{ partial "art-detail" . }}
+
     {{ with .Content }}
         {{ $.Scratch.Set "header-type" "h3" }}
         {{ $.Scratch.Set "header-name" "Commentary" }}
@@ -63,6 +65,7 @@
 
         {{ . }}
     {{ end }}
+    </div>
 
     {{ if .Params.threed }}
         {{ $site := resources.Get "js/model-viewer.min.js" }}
@@ -76,58 +79,9 @@
 {{ end }}
 
 {{ define "details" }}
-    <strong>This artwork was also posted on:</strong>
+    {{ partial "art-sidebar" . }}
 
-    <br>
+    <hr>
 
-    {{ with .Params.mastodon_url }}
-        <a href="{{ . }}"><img class="symbolic-icon" alt="Mastodon icon" title="Mastodon" width="32" height="32" src="/icons/mastodon.svg"/></a>
-    {{ end }}
-
-    {{ with .Params.pixiv_url }}
-        <a href="{{ . }}"><img class="symbolic-icon" alt="Pixiv icon" title="Pixiv" width="32" height="32" src="/icons/pixiv.svg"/></a>
-    {{ end }}
-    <br>
-
-    <strong>Created with:</strong>
-    <br>
-
-    {{ with .Params.program }}
-        <span>{{ . }}</span>
-    {{ end }}
-
-    <table>
-        {{ with .Params.arttags }}
-            <tr>
-                <th>{{ i18n "tags" }}</th>
-                <td>
-                    {{ $len := (len .) }}
-                    {{ range $index, $element := . }}
-                    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                    {{ end }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.characters }}
-            <tr>
-                <th>{{ i18n "characters" }}</th>
-                <td>
-                    {{ $len := (len .) }}
-                    {{ range $index, $element := . }}
-                    <a href="/art/characters/{{ urlize .}}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                    {{ end }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.artist }}
-            <tr>
-                <th>Artist</th>
-                <td>
-                    {{ . }}
-                </td>
-            </tr>
-        {{ end }}
-    </table>
+    {{ partial "art-detail" . }}
 {{ end }}

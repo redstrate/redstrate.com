@@ -2,31 +2,25 @@
     <h2>{{ .Title }}</h2>
     <hr>
 
+    <img id="about-pic" alt="Drawing of a catgirl, with blonde hair and dark eyes." title="Profile Picture" src="{{ $.Site.Params.image_host }}/chars/{{ urlize .Title }}.jpg" width=128 height=128>
+
     {{ $has_age := .Params.age }}
     {{ $has_pronouns := .Params.pronouns }}
     {{ $has_origin := .Params.origin }}
 
     {{ if or $has_origin (or $has_age $has_pronouns) }}
-    <table>
         {{ if $has_age }}
-        <tr>
-            <th>Age</th>
-            <td>{{ .Params.age }}</td>
-        </tr>
+            <p><strong>Age</strong><p>
+            <p>{{ .Params.age }}</p>
         {{ end }}
         {{ if $has_pronouns }}
-        <tr>
-            <th>Pronouns</th>
-            <td>{{ .Params.pronouns }}</td>
-        </tr>
+            <p><strong>Pronouns</strong></p>
+            <p>{{ .Params.pronouns }}</p>
         {{ end }}
         {{ if $has_origin }}
-        <tr>
-            <th>Origin</th>
-            <td>{{ .Params.origin }}</td>
-        </tr>
+            <p><strong>Origin</strong></p>
+            <p>{{ .Params.origin }}</p>
         {{ end }}
-    </table>
     {{ end }}
 
     {{ $tags := slice "fan art" "artfight" }}
