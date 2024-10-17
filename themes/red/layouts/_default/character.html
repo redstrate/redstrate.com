@@ -34,7 +34,7 @@
     {{ $paginator := (where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true) }}
     {{ if gt (len $paginator) 0 }}
         <h3>Guest Art</h3>
-        <hr>
+        <div class="grid-container">
         <div class="second-grid">
             <div class="grid-sizer"></div>
             <div class="gutter-sizer"></div>
@@ -42,6 +42,7 @@
             {{ range $paginator }}
                 {{ partial "render-art" . }}
             {{ end }}
+        </div>
         </div>
     {{ end }}
 
