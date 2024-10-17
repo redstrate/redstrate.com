@@ -11,6 +11,9 @@
         </div>
         {{- block "main" . }}{{- end }}
         </article>
+        {{ if .Params.show_detail_pane }}
+        <aside id="detail-pane">{{- block "details" . }}{{- end }}</aside>
+        {{ end }}
         </div>
         <footer>{{- partial "footer.html" . -}}</footer>
 

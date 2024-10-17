@@ -30,6 +30,8 @@
           {{ $title = . }}
         {{ end }}
 
+        {{ $aspect_ratio := math.Div (index $sizes.full $basename).width (index $sizes.full $basename).height }}
+
         {{ $params := dict
           "slug" $basename
           "alt_text" $data.alt_text
@@ -55,6 +57,8 @@
           "thumb_width" (index $sizes.thumb $basename).width
           "thumb_height" (index $sizes.thumb $basename).height
           "filename" $basename
+          "show_detail_pane" true
+          "aspect_ratio" $aspect_ratio
         }}
 
         {{ $path := $basename }}

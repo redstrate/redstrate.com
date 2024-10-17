@@ -1,20 +1,16 @@
 {{/* Partial used to display a grid of artwork. */}}
 
-{{ $paginator := .Paginate (where $.Site.Pages "Type" "art") }}
+{{ $paginator := .Scratch.Get "paginator" }}
 
-{{ template "_internal/pagination.html" . }}
-{{ $on_guest := eq .Title "Guest Art" }}
-
+<div class="grid-container">
 <div class="grid">
     <div class="grid-sizer"></div>
     <div class="gutter-sizer"></div>
 
     {{ range $paginator.Pages }}
-        {{ $is_guest := .Params.guest }}
-        {{ if eq $on_guest $is_guest }}
-            {{ partial "render-art" . }}
-        {{ end }}
+        {{ partial "render-art" . }}
     {{ end }}
 </div>
+</div>
 
-{{ template "_internal/pagination.html" . }}
+{{ partial "art-pagination" . }}

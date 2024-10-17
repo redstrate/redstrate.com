@@ -212,6 +212,6 @@ languages:
             socials:
             - name: 'pixiv'
               params:
-              - img: 'pixiv.webp'
+              - img: 'icons/pixiv.svg'
               url: 'https://www.pixiv.net/en/users/58118005'
               weight: 2

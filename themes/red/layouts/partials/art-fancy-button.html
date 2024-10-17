@@ -1,0 +1,12 @@
+{{ $img := .Scratch.Get "img" }}
+{{ $title := .Scratch.Get "title" }}
+{{ $link := .Scratch.Get "link" }}
+
+{{ with resources.Get $img }}
+    <a class="art-fancy-button" href="{{ $link }}">
+        <p>{{ $title }}</p>
+        <img src="{{ .RelPermalink }}" width=400 height=150 />
+    </a>
+{{ else }}
+    <strong>Could not find {{ $img }}!</strong>
+{{ end }}

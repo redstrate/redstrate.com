@@ -30,5 +30,10 @@
     <meta name="robots" content="noai">
     <meta name="fediverse:creator" content="{{ $.Site.Params.fediverse_url }}" />
 
+    {{ if .Params.nsfw }}
+        <meta name="robots" content="noindex">
+        <meta name="rating" content="adult">
+    {{ end }}
+
     {{ partial "opengraph.html" . }}
 </head>

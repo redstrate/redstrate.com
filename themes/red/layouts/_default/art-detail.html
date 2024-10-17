@@ -2,8 +2,12 @@
 
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
-
-    <hr>
+    <i style="margin: 0">
+    Posted on
+    <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
+        {{ $.Date.Format "January 2006" }}
+    </time>
+    </i>
 
     {{ if  (and (not $.Params.animation) (and (not (in .File.Dir "art/guest")) (and (not $.Params.threed) (not $.Params.comic) )) ) }}
         {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host $.Params.filename }}
@@ -51,76 +55,8 @@
 
     {{ partial "voting" . }}
 
-    <table>
-        <tr>
-            <th>{{ i18n "date" }}</th>
-            <td>
-                <time datetime="{{ .Page.Lastmod.Format "2006-01-02" }}" class="text-muted">
-                    {{ $.Date.Format "January 2006" }}
-                </time>
-            </td>
-        </tr>
-
-        {{ with .Params.arttags }}
-            <tr>
-                <th>{{ i18n "tags" }}</th>
-                <td>
-                    {{ $len := (len .) }}
-                    {{ range $index, $element := . }}
-                    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                    {{ end }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.characters }}
-            <tr>
-                <th>{{ i18n "characters" }}</th>
-                <td>
-                    {{ $len := (len .) }}
-                    {{ range $index, $element := . }}
-                    <a href="/art/characters/{{ urlize .}}/"><strong>{{ $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
-                    {{ end }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.artist }}
-            <tr>
-                <th>Artist</th>
-                <td>
-                    {{ . }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.program }}
-            <tr>
-                <th>{{ i18n "program" }}</th>
-                <td>
-                    {{ . }}
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.mastodon_url }}
-            <tr>
-                <th>Mastodon URL</th>
-                <td>
-                    <a href="{{ . }}">Mastodon Post</a>
-                </td>
-            </tr>
-        {{ end }}
-
-        {{ with .Params.pixiv_url }}
-            <tr>
-                <th>Pixiv URL</th>
-                <td>
-                    <a href="{{ . }}">Pixiv Post</a>
-                </td>
-            </tr>
-        {{ end }}
-    </table>
+    <div class="generic-con" id="art-detail-inline">
+    {{ partial "art-detail" . }}
 
     {{ with .Content }}
         {{ $.Scratch.Set "header-type" "h3" }}
@@ -129,6 +65,7 @@
 
         {{ . }}
     {{ end }}
+    </div>
 
     {{ if .Params.threed }}
         {{ $site := resources.Get "js/model-viewer.min.js" }}
@@ -139,4 +76,12 @@
     {{ end }}
 
     {{ partial "comments" . }}
+{{ end }}
+
+{{ define "details" }}
+    {{ partial "art-sidebar" . }}
+
+    <hr>
+
+    {{ partial "art-detail" . }}
 {{ end }}

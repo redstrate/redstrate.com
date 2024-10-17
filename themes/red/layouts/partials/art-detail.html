@@ -1,0 +1,41 @@
+{{ with .Params.artist }}
+    <p><strong>Artist</strong></p>
+    {{ . }}
+{{ end }}
+
+{{ with .Params.arttags }}
+    <p><strong>{{ i18n "tags" }}</strong></p>
+    {{ $len := (len .) }}
+    {{ range $index, $element := . }}
+    <a href="/art/tags/{{ urlize . }}/"><strong>{{ strings.Title $element }}</strong></a>{{ if not (eq (add $index 1) $len) }},{{ end }}
+    {{ end }}
+{{ end }}
+
+{{ if or .Params.mastodon_url .Params.pixiv_url }}
+    <p><strong>Also available on</strong></p>
+
+    <div style="margin: 10px; text-align: center">
+    {{ with .Params.mastodon_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Mastodon icon" title="Mastodon" width="32" height="32" src="/icons/mastodon.svg"/></a>
+    {{ end }}
+
+    {{ with .Params.pixiv_url }}
+        <a href="{{ . }}"><img class="symbolic-icon" alt="Pixiv icon" title="Pixiv" width="32" height="32" src="/icons/pixiv.svg"/></a>
+    {{ end }}
+    </div>
+{{ end }}
+
+{{ with .Params.program }}
+    <p><strong>Created with</strong></p>
+    <span>{{ . }}</span>
+{{ end }}
+
+{{ with .Params.characters }}
+    <p><strong>Characters</strong></p>
+    {{ range . }}
+        {{ with $.Site.GetPage "taxonomyTerm" (printf "characters/%s" .) }}
+            {{ $year := .Page.Title }}
+            <a class="character" href="/art/characters/{{ urlize $year }}"><img class="gallery-img" width=128 height=128 src="{{ $.Site.Params.image_host }}/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br></span></a>
+        {{ end }}
+    {{ end }}
+{{ end }}
