@@ -9,7 +9,7 @@
         <div class="art-inner">
             {{ $alertimg := resources.Get "alert.png" }}
             {{ with $.Params.new_banner }}
-            <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
+                <div class="new-banner"><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"><b>{{ . }}</b><img alt="Alert Icon" width="16" height="16" class="banner-alert-icon" src="{{ $alertimg.RelPermalink }}"></div>
             {{ end }}
 
             {{ .Content }}
@@ -29,6 +29,7 @@
     <a class="art-button" href="/art/tags/fan-art/">Fanart</a><br>
     <a class="art-button" href="/art/nsfw">NSFW</a><br>
     <a class="art-button" href="/art/guest">Guest</a><br>
+    <a class="art-button" href="/art/wallpapers">Wallpapers</a><br>
     <a class="art-button" href="/art/characters">Characters</a>
 
     {{ partial "art-years" . }}

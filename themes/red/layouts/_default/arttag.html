@@ -1,7 +1,12 @@
 {{ define "main" }}
     <h2>{{ .Title }}</h2>
     <hr>
-    {{ $.Scratch.Set "paginator" (.Paginate (where .Pages "Type" "art")) }}
+
+    {{ $tags := slice "fan art" "artfight" }}
+    {{ $artworks := (where .Pages "Type" "art") }}
+    {{ $nsfw_art := (where $artworks "Params.nsfw" "=" true) }}
+
+    {{ $.Scratch.Set "paginator" (.Paginate (complement $nsfw_art $artworks)) }}
     {{ partial "art-gallery" . }}
     {{ partial "gallery-js" . }}
 {{ end }}

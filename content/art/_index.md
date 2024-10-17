@@ -8,4 +8,4 @@ The gallery is sorted by date, but there's other sections to check out such as [
 
 I've also been [participating in Artfight](https://artfight.net/~redstrate) since 2023. You can view my attacks and defenses [here](/art/tags/artfight).
 
-You can follow me on [Mastodon](https://mastodon.art/@redstrate), [Pixiv](https://www.pixiv.net/en/users/58118005), [RSS](/art/index.xml)!
+You can follow me on [Mastodon](https://mastodon.art/@redstrate), [Pixiv](https://www.pixiv.net/en/users/58118005), [RSS](/art/index.xml)! The RSS feed is a combination of the "Original" and "Fanart" categories.
