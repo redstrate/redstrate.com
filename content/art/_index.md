@@ -1,6 +1,8 @@
 ---
 title: "Art"
 show_detail_pane: false
+aliases:
+- /gallery
 ---
 
 Welcome to my art gallery! This is the most complete archive of my work online.
