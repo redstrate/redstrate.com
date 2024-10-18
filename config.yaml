@@ -215,3 +215,44 @@ languages:
               - img: 'icons/pixiv.svg'
               url: 'https://www.pixiv.net/en/users/58118005'
               weight: 2
+
+related:
+  includeNewer: true
+  indices:
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: keywords
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 100
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: date
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 10
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 80
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: arttags
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 10
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: characters
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 80
+  threshold: 9
+  toLower: false

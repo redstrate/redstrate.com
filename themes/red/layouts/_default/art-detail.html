@@ -75,6 +75,47 @@
         <script type="module" src="{{ $site.RelPermalink }}" integrity="{{ $site.Data.Integrity }}"></script>
     {{ end }}
 
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+    {{ with $related }}
+        <h3>Related Art</h3>
+        <div class="generic-con" style="display: flex; flex-wrap: wrap;">
+            {{ range . }}
+             <figure class="gallery-fig">
+                {{ $filename_without_ext := .Params.slug }}
+
+                {{ $month := "1" }}
+                {{ $year := "1" }}
+
+                {{ if .Date }}
+                    {{ $split := split .Date "-" }}
+                    {{ $month = index $split 1 }}
+                    {{ $year = index $split 0 }}
+                {{ end }}
+
+                {{ $path := printf "/art/%s/%s/%s" $year $month $filename_without_ext}}
+
+                <a href="{{ $path }}" aria-label="Click to view details {{ $year }}" class="no-decoration">
+                    {{ $title := .Title }}
+
+                    {{ $full := printf "%s/thumb/%s.avif" $.Site.Params.image_host $filename_without_ext }}
+                    {{ $jpeg := printf "%s/thumb/%s.jpg" $.Site.Params.image_host $filename_without_ext }}
+
+                    <picture>
+                        <source srcset="{{ $full }}" width="{{ math.Div .Params.thumb_width 2 }}" height="{{ math.Div .Params.thumb_height 2 }}" type="image/avif"/>
+                        <img class="gallery-img featured-art" width="{{ math.Div .Params.thumb_width 2 }}" height="{{ math.Div .Params.thumb_height 2 }}" alt="{{ $title }}" src="{{ $jpeg }}">
+                    </picture>
+                </a>
+
+                <figcaption>
+                    {{ with .Title }}
+                        <i>"{{ . }}"</i>
+                    {{ end }}
+                </figcaption>
+            </figure>
+            {{ end }}
+        </div>
+    {{ end }}
+
     {{ partial "comments" . }}
 {{ end }}
 
