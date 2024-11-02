@@ -22,4 +22,4 @@ You can use Auracite from [your browser](https://auracite.xiv.zone). Go ahead an
 
 I noticed that unlike other MMOs, FFXIV exposes a ton of information about it's user's publicly through the Lodestone! Not only that, but their CSS selectors aren't complete garbage like a typical modern website and it makes scraping it not a total chore. Otherwise, Auracite is your standard scraper but tuned to work with the Lodestone.
 
-The tool is written in [Rust](https://rust-lang.org), uses [Qt](https://qt.io) through [cxx-qt](https://github.com/KDAB/cxx-qt) and runs on the web thanks to [WebAssembly](https://webassembly.org/). Source code is [available](https://github.com/redstrate/Auracite) as per usual. 
+The tool is written in [Rust](https://rust-lang.org). The desktop version is written in [Qt](https://qt.io) via [cxx-qt](https://github.com/KDAB/cxx-qt). It can run on the web thanks to [WebAssembly](https://webassembly.org/). Source code is [available](https://github.com/redstrate/Auracite) as per usual. 
