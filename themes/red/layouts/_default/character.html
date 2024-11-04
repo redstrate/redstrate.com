@@ -25,10 +25,9 @@
 
     {{ $tags := slice "fan art" "artfight" }}
     {{ $artworks := (where .Pages "Type" "art") }}
-    {{ $nsfw_art := (where $artworks "Params.nsfw" "=" true) }}
     {{ $guest_art := (where $artworks "Params.guest" "=" true) }}
 
-    {{ $.Scratch.Set "paginator" (.Paginate (complement $nsfw_art $guest_art $artworks)) }}
+    {{ $.Scratch.Set "paginator" (.Paginate (complement $guest_art $artworks)) }}
     {{ partial "art-gallery" . }}
 
     {{ $paginator := (where (where .RegularPagesRecursive "Type" "art") "Params.guest" "=" true) }}
