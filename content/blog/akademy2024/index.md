@@ -51,7 +51,7 @@ Akademy was hosted in [Julius-Maximilians-Universität Würzburg](https://www.un
 
 ![The bus screen in some sort of debug mode.](bus.jpg)
 
-My talk [was about integrating C++, Qt, Rust (and KDE Frameworks.)](https://conf.kde.org/event/6/contributions/203/) For proper disclosure, this talk is on behalf of my company for spreading the word of [our cxx-qt library](https://github.com/kdab/cxx-qt) which eases integration of all of these technologies. I think was a bit too rough structurally but lots of people seem to enjoy it. One of my goals was to raise awareness of the usage of Rust you can find in KDE today, and that seemed to be successful! I want to express my gratitude to my fellow colleague Leon Matthes for helping review my slides. Also thanks to [Darshan Phaldesai](https://github.com/mystchonky) for his KDE work featured in the presentation.
+My talk [was about integrating C++, Qt, Rust (and KDE Frameworks.)](https://conf.kde.org/event/6/contributions/203/) For proper disclosure, this talk is on behalf of my company for spreading the word of [our cxx-qt library](https://github.com/kdab/cxx-qt) which eases integration of all of these technologies. I think was a bit too rough structurally but lots of people seem to enjoy it. One of my goals was to raise awareness of the usage of Rust you can find in KDE today, and that seemed to be successful! I want to express my gratitude to my fellow colleague Leon Matthes for helping review my slides. Also thanks to [Darshan Phaldesai](https://github.com/dphaldes) for his KDE work featured in the presentation.
 
 ![A picture of me hastily giving my presentation.](presentation.jpg)
 
