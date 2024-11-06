@@ -6,7 +6,7 @@
 
     {{ $p := slice "Juritta" }}
     {{ range where .Site.RegularPages "Params.characters" "intersect" $p }}
-        {{ if not (in .File.Dir "art/guest") }}
+        {{ if not (.Params.guest) }}
             {{ partial "render-art" . }}
         {{ end }}
     {{ end }}

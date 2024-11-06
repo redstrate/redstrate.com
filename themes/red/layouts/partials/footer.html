@@ -18,10 +18,10 @@
 
     {{ with .Site.Params.geekring_site_id }}
         <map name="badge-geekring">
-            <area shape="rect" coords="4,3,13,28" href="http://geekring.net/site/{{ . }}/previous" alt="Previous">
-            <area shape="rect" coords="13,3,22,28" href="http://geekring.net/site/{{ . }}/random" alt="Random">
-            <area shape="rect" coords="76,3,84,28" href="http://geekring.net/site/{{ . }}/next" alt="Next">
-            <area shape="rect" coords="23,3,63,28" href="https://geekring.net/" alt="Geekring">
+            <area data-proofer-ignore shape="rect" coords="4,3,13,28" href="http://geekring.net/site/{{ . }}/previous" alt="Previous">
+            <area data-proofer-ignore shape="rect" coords="13,3,22,28" href="http://geekring.net/site/{{ . }}/random" alt="Random">
+            <area data-proofer-ignore shape="rect" coords="76,3,84,28" href="http://geekring.net/site/{{ . }}/next" alt="Next">
+            <area data-proofer-ignore shape="rect" coords="23,3,63,28" href="https://geekring.net/" alt="Geekring">
         </map>
         {{ with resources.Get "geek_2.gif" }}
             <img width="88" height="31" usemap="#badge-geekring" src="{{ .RelPermalink }}" alt="The Geekring">
