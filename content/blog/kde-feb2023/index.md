@@ -118,7 +118,7 @@ This month we had a strange incident where [api.kde.org](https://invent.kde.org/
 
 ![The IconItem page is missing!](404.webp)
 
-Of course the first thing I tried was running [kapidox](https://invent.kde.org/frameworks/kapidox) locally for plasma-framework, but there's still a doc page for IconItem generated. Huh. So I started looking into what the [binary factory](https://binary-factory.kde.org/job/Generate_API_Documentation/) actually does to see if there's some inherent issue with our system. What I ended up with is a bash script which emulates what binary factory does, but locally.
+Of course the first thing I tried was running [kapidox](https://invent.kde.org/frameworks/kapidox) locally for plasma-framework, but there's still a doc page for IconItem generated. Huh. So I started looking into what the binary factory actually does to see if there's some inherent issue with our system. What I ended up with is a bash script which emulates what binary factory does, but locally.
 
 What I noticed is terrifying, the _doc page doesn't show up_ here! So I had an idea, what if the problem is that the name is _colliding_? After some quick global code searches using our LXR, I discovered that [Maui recently introduced a new type called IconItem](https://invent.kde.org/maui/mauikit/-/commit/12fd01054aaf40d53729ab2e266f41ea87bb289b) which coincidentally fits within the timeline of IconItem disappearing. How can this even happen in the first place?
 
