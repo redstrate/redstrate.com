@@ -37,7 +37,7 @@ Now it's full circle, a whole year of KDE has started again! This is a bit of a 
 
 # KWin
 
-{{< add "feature" >}} I opened [a merge request for the necessary things]( (https://invent.kde.org/plasma/kwin/-/merge_requests/4920)) on the KWin side needed for configuring pen pressure. {{< release "6.1" >}}
+{{< add "feature" >}} I opened [a merge request for the necessary things](https://invent.kde.org/plasma/kwin/-/merge_requests/4920) on the KWin side needed for configuring pen pressure. {{< release "6.1" >}}
 
 # Tokodon
 

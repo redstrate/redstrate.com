@@ -74,7 +74,7 @@ My hope is that since it's much cleaner and easier to work with, it would invite
 
 ![The new toolbar layout](toolbar.webp)
 
-{{< add "feature" >}} Added [a search function to the Kanji browser]((https://invent.kde.org/education/kiten/-/merge_requests/49)). {{< release "24.02" >}}
+{{< add "feature" >}} Added [a search function to the Kanji browser](https://invent.kde.org/education/kiten/-/merge_requests/49). {{< release "24.02" >}}
 
 # Kirigami
 

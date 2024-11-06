@@ -5,7 +5,9 @@
 
     <hr>
 
-    <h3>Original</h3>
+    {{ $.Scratch.Set "header-type" "h3" }}
+    {{ $.Scratch.Set "header-name" "Original" }}
+    {{ partial "fake-heading.html" $ }}
     <div class="generic-con" style="display: grid; grid-template-columns: 50% 50%;">
 
     {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}
@@ -24,7 +26,9 @@
 
     <details>
         <summary>
-            <strong>Others</strong>
+            {{ $.Scratch.Set "header-type" "strong" }}
+            {{ $.Scratch.Set "header-name" "Others" }}
+            {{ partial "fake-heading.html" $ }}
         </summary>
         <div class="generic-con"  style="display: grid; grid-template-columns: 50% 50%;">
         {{ range $name, $taxonomy := (index .Site.Taxonomies .Params.listtag) }}

@@ -24,13 +24,13 @@ I originally wrote this in C++, but eventually rewrote it in Rust and that turne
 * Can be used on Windows/Linux/macOS and doesn't pull in a huge runtime (C#) or run in Wine.
 
 ## Features
-* Easily extract game files and view excel sheets by name. See [gamedata.h](include/gamedata.h) for usage.
-* Install patches (right now it's limited to boot patches). See [patch.h](include/patch.h) for usage.
-* Install FFXIV by emulating the official installer, bypassing Wine and InstallShield. You can see how to use this in [installextract.h](include/installextract.h).
+* Easily extract game files and view excel sheets by name. See gamedata.h for usage.
+* Install patches (right now it's limited to boot patches). See patch.h for usage.
+* Install FFXIV by emulating the official installer, bypassing Wine and InstallShield. You can see how to use this in installextract.h.
 * Parse some game data:
-  * [EXD](include/exdparser.h)
-  * [EXH](include/exhparser.h)
-  * [EXL](include/exlparser.h)
-  * [FIIN](include/fiinparser.h)
-  * [INDEX/INDEX2](include/indexparser.h)
-  * [MDL](include/mdlparser.h)
+  * EXD
+  * EXH
+  * EXL
+  * FIIN
+  * INDEX/INDEX2
+  * MDL

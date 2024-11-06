@@ -35,7 +35,7 @@
     {{ range . }}
         {{ with $.Site.GetPage "taxonomyTerm" (printf "characters/%s" .) }}
             {{ $year := .Page.Title }}
-            <a class="character" href="/art/characters/{{ urlize $year }}"><img class="gallery-img" width=128 height=128 src="{{ $.Site.Params.image_host }}/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br></span></a>
+            <a class="character" href="{{ .RelPermalink }}"><img class="gallery-img" width=128 height=128 src="{{ $.Site.Params.image_host }}/chars/{{ urlize $year }}.jpg"/><span>{{ $year }}<br></span></a>
         {{ end }}
     {{ end }}
 {{ end }}

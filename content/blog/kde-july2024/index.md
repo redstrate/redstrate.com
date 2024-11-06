@@ -82,7 +82,7 @@ This is a very exciting month if you're waiting for more artist-oriented improve
 
 ![](sponsorblock.webp)
 
-{{< add "feature" >}} Added a [proper error page to the video player]() while my Invidious server is borked due to YouTube changes. It will display the error given by Invidious, and also a button to open the original webpage. {{< release "24.11" >}}
+{{< add "feature" >}} Added a [proper error page to the video player](https://invent.kde.org/multimedia/plasmatube/-/commit/3961d5c2b79866fc27859052256e0520096d5638) while my Invidious server is borked due to YouTube changes. It will display the error given by Invidious, and also a button to open the original webpage. {{< release "24.11" >}}
 
 ![Note that there's a link in there, but even on Invidious it's unclickable.](error.webp)
 

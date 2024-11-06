@@ -151,6 +151,6 @@ Please host these images yourself. I have two options depending on your preferen
 
 | Type | Preview | HTML |
 | -----|---------|--------|
-| 88x31 Button | {{< out-link banner="https://images.redstrate.com/misc/button.png" link="" label="" >}} | ```<a href="https://redstrate.com/"><img src="button.png"/></a>``` |
-| 88x31 Button (Text-only) | {{< out-link banner="https://images.redstrate.com/misc/button2.png" link="" label="" >}} | ```<a href="https://redstrate.com/"><img src="button2.png"/></a>``` |
+| 88x31 Button | {{< out-link banner="https://images.redstrate.com/misc/button.png" link="https://redstrate.com/" label="redstrate" >}} | ```<a href="https://redstrate.com/"><img src="button.png"/></a>``` |
+| 88x31 Button (Text-only) | {{< out-link banner="https://images.redstrate.com/misc/button2.png" link="https://redstrate.com" label="redstrate" >}} | ```<a href="https://redstrate.com/"><img src="button2.png"/></a>``` |
 
