@@ -650,7 +650,7 @@ model-viewer {
     margin: 0;
     padding: 0.5em;
     background-color: var(--background-tertiary);
-    background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.01) 50%);
+    background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 25%, rgba(0, 0, 0, 0.01) 50%);
     background-size: 24px 24px;
     border-bottom: 1px solid var(--border-color);
     font-weight: bold;
@@ -828,4 +828,12 @@ model-viewer {
     #art-button-main-container {
         grid-template-columns: 50% 50%;
     }
+}
+
+.project-maintainer {
+    background-color: #844e4e;
+}
+
+.project-contribution {
+    background-color: #586449;
 }

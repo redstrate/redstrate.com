@@ -24,8 +24,6 @@
 
     {{ .Content }}
 
-    {{ partial "related" . }}
-
     {{ if in .File.Dir "blog" }}
         {{ partial "voting" . }}
 

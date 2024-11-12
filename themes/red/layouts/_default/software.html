@@ -8,47 +8,18 @@
 
     {{ .Content }}
 
-    {{ .Scratch.Set "header-type" "h3" }}
-    {{ .Scratch.Set "header-name" "Personal Projects" }}
-    {{ partial "fake-heading.html" . }}
-
-    <p>I really like to start projects in my free time (maybe too often). Here's an almost-comprehensive list of them, most of them are freely licensed as well!</p>
-
-    <div class="buttons">
-    {{ range .Data.Pages.ByDate.Reverse }}
-        <div class="blurb">
-            <p class="project-header">{{ .Title }}<span style="float:right;margin:0">{{ .Date.Format "2006" }}</span></p>
-
-
-            <p class="project-desc">{{ .Summary }}</p>
-
-            <ul class="nice-list">
-                <li>
-                    <a href="{{ .RelPermalink }}">About</a>
-                </li>
-
-                {{ with .Param "source" }}
-                    <li>
-                        <a href="{{ . }}">Source Code</a>
-                    </li>
-                {{ end }}
-            </ul>
-        </div>
-    {{ end }}
-    </div>
-
-    {{ .Scratch.Set "header-type" "h3" }}
-    {{ .Scratch.Set "header-name" "Contributions" }}
-    {{ partial "fake-heading.html" . }}
-
-    <p>Here's a list of some of the projects I contributed to! This is stuff I did in my free time and not part of my employment. Of course, the exception to this rule is grants to work on open source projects.</p>
-
     {{ $contrib := (index site.Data "contributions") }}
 
+    {{ .Scratch.Set "header-type" "h3" }}
+    {{ .Scratch.Set "header-name" "Maintaining" }}
+    {{ partial "fake-heading.html" . }}
+
+    <p>I'm the "maintainer" for several projects that I did not originally create:</p>
+
     <div class="buttons">
-        {{ range $contrib.contributions }}
+        {{ range $contrib.maintaining }}
         <div class="blurb">
-                <p class="project-header">{{ .name }}</p>
+                <p class="project-header project-maintainer">{{ .name }}</p>
 
                 <p class="project-desc">{{ .description }}</p>
 
@@ -100,5 +71,97 @@
         {{ end }}
     </div>
 
+    {{ .Scratch.Set "header-type" "h3" }}
+    {{ .Scratch.Set "header-name" "Personal Projects" }}
+    {{ partial "fake-heading.html" . }}
+
+    <p>I really like to start projects in my free time (maybe too often). Here's an almost-comprehensive list of them, most of them are freely licensed as well!</p>
+
+    <div class="buttons">
+    {{ range .Data.Pages.ByDate.Reverse }}
+        <div class="blurb">
+            {{ $since_year := (sub now.Year (.Date.Year)) }}
+            {{ $zero_to_one := math.Div (float $since_year) 8.0 }}
+            {{ $opacity := math.Sub 1.0 $zero_to_one }}
+
+            <p class="project-header" style="background-color: rgba(85.0, 121.0, 153.0, {{ $opacity }})">{{ .Title }}<span style="float:right;margin:0">{{ .Date.Format "2006" }}</span></p>
+
+            <p class="project-desc">{{ .Summary }}</p>
+
+            <ul class="nice-list">
+                <li>
+                    <a href="{{ .RelPermalink }}">About</a>
+                </li>
+
+                {{ with .Param "source" }}
+                    <li>
+                        <a href="{{ . }}">Source Code</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+    {{ end }}
+    </div>
+
+    {{ .Scratch.Set "header-type" "h3" }}
+    {{ .Scratch.Set "header-name" "Contributions" }}
+    {{ partial "fake-heading.html" . }}
+
+    <p>Here's a list of some of the projects I contributed to! This is stuff I did in my free time and not part of my employment. Of course, the exception to this rule is grants to work on open source projects.</p>
+
+    <div class="buttons">
+        {{ range $contrib.contributions }}
+        <div class="blurb">
+                <p class="project-header project-contribution">{{ .name }}</p>
+
+                <p class="project-desc">{{ .description }}</p>
+
+                <ul class="nice-list">
+                {{ if eq .type "kde" }}
+                        <li>
+                            <a href="https://invent.kde.org/{{ .id }}/-/commits/master?author={{ $.Site.Params.invent_username }}">Commits</a>
+                        </li>
+                        <li>
+                            <a href="https://invent.kde.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.invent_username }}">Merge Requests</a>
+                        </li>
+                {{ else }}
+                        {{ if eq .type "github" }}
+                                <li>
+                                    <a href="https://github.com/{{ .id }}/commits?author={{ $.Site.Params.github_username }}">Commits</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/{{ .id }}/pulls?q=is%3Apr+author%3A{{ $.Site.Params.github_username }}+">Pull Requests</a>
+                                </li>
+                        {{ else }}
+                            {{ if eq .type "gitlab" }}
+                                <li>
+                                    <a href="https://gitlab.com/{{ .id }}/-/commits/master?author={{ $.Site.Params.gitlab_username }}">Commits</a>
+                                </li>
+                                <li>
+                                    <a href="https://gitlab.com/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.gitlab_username }}">Merge Requests</a>
+                                </li>
+                            {{ else }}
+                                {{ if eq .type "xdg" }}
+                                    <li>
+                                        <a href="https://gitlab.freedesktop.org/{{ .id }}/-/commits/main?author={{ $.Site.Params.gitlab_username }}">Commits</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://gitlab.freedesktop.org/{{ .id }}/merge_requests?scope=all&utf8=%E2%9C%93&state=all&author_username={{ $.Site.Params.gitlab_username }}">Merge Requests</a>
+                                    </li>
+                                {{ else }}
+                                    <li>
+                                        <a href="https://github.com/search?q=repo%3Agentoo%2Fgentoo+{{ $.Site.Params.github_username }}&type=commits">Commits</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/gentoo/gentoo/pulls?q=is%3Apr+is%3Aclosed+author%3A{{ $.Site.Params.github_username }}">Pull Requests</a>
+                                    </li>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                {{ end }}
+                </ul>
+        </div>
+        {{ end }}
+    </div>
 
 {{ end }}

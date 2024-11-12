@@ -1,16 +1,16 @@
 {
-    "contributions": [
-        {
-            "id": "aers/FFXIVClientStructs",
-            "name": "FFXIVClientStructs",
-            "description": "Documenting more fields for FFXIV bone simulators.",
-            "type": "github"
+    "maintaining": [
+       {
+            "id": "network/tokodon",
+            "name": "Tokodon",
+            "description": "Co-maintainer, added numerous features and fixed lots of bugs.",
+            "type": "kde"
         },
         {
-            "id": "libinput/libinput",
-            "name": "libinput",
-            "description": "Added support for tablet dials, like those on XP-PEN tablets.",
-            "type": "xdg"
+            "id": "network/neochat",
+            "name": "NeoChat",
+            "description": "Newly co-maintaining. Recently added support for UnifiedPush, making it one of the first of it's kind on desktop.",
+            "type": "kde"
         },
         {
             "id": "multimedia/plasmatube",
@@ -19,10 +19,24 @@
             "type": "kde"
         },
         {
-            "id": "network/neochat",
-            "name": "NeoChat",
-            "description": "UnifiedPush support, misc bugs and interface changes.",
+            "id": "plasma/plasma-desktop",
+            "name": "Plasma Desktop",
+            "description": "Currently maintaining and improving the Drawing Tablet KCM. Also bugfixing.",
             "type": "kde"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "aers/FFXIVClientStructs",
+            "name": "FFXIVClientStructs",
+            "description": "Documenting and reverse-engineering new stuff in the hit MMO.",
+            "type": "github"
+        },
+        {
+            "id": "libinput/libinput",
+            "name": "libinput",
+            "description": "Added support for tablet dials, like those on XP-PEN tablets.",
+            "type": "xdg"
         },
         {
             "id": "games/kpat",
@@ -33,7 +47,7 @@
         {
             "id": "libraries/kirigami-addons",
             "name": "Kirigami Add-ons",
-            "description": "About KDE page, lots of bug fixes.",
+            "description": "The About KDE page, lots of bug fixes.",
             "type": "kde"
         },
         {
@@ -51,19 +65,13 @@
         {
             "id": "plasma/kwin",
             "name": "KWin",
-            "description": "Fixed pen tilt on Wayland, other misc bug fixes.",
+            "description": "Improving drawing tablet support, and other misc bug fixes.",
             "type": "kde"
         },
         {
             "id": "graphics/krita",
             "name": "Krita",
             "description": "Added pen tilt to the tablet tester. Small S-Pen improvements on Android.",
-            "type": "kde"
-        },
-        {
-            "id": "network/tokodon",
-            "name": "Tokodon",
-            "description": "Maintainer, added numerous features and fixed lots of bugs.",
             "type": "kde"
         },
         {
@@ -86,13 +94,13 @@
         {
             "id": "PrismLauncher/PrismLauncher",
             "name": "PrismLauncher",
-            "description": "The about page, icon fixes, and cmark support for better Markdown rendering.",
+            "description": "The about page, icon fixes, cmark support for better Markdown rendering.",
             "type": "github"
         },
         {
             "id": "sdk/licentia",
             "name": "Licentia",
-            "description": "Fixed PinePhone support.",
+            "description": "Improved support for mobile devices.",
             "type": "kde"
         },
         {
@@ -108,15 +116,21 @@
             "type": "kde"
         },
         {
-            "id": "plasma/plasma-desktop",
-            "name": "Plasma Desktop",
-            "description": "Currently improving the Drawing Tablet KCM. Plasma 6 applet porting, added activity pins to launchers, and bugfixing.",
-            "type": "kde"
-        },
-        {
             "id": "absolute-quantum/cats-blender-plugin",
             "name": "CATS",
             "description": "Minor bug fixes for it's baking.",
+            "type": "github"
+        },
+        {
+            "id": "quotient-im/libQuotient",
+            "name": "libQuotient",
+            "description": "Misc bugfixes, hoping to do more in the future!",
+            "type": "github"
+        },
+        {
+            "id": "linuxwacom/libwacom",
+            "name": "libwacom",
+            "description": "Added support for the XP-Pen 22R/24 Pro.",
             "type": "github"
         }
     ]
