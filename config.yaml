@@ -169,16 +169,21 @@ menu:
     - img: 'icons/pixiv.svg'
     url: 'https://www.pixiv.net/en/users/58118005'
     weight: 2
+  - name: 'Bluesky'
+    params:
+    - img: 'icons/bluesky.svg'
+    url: 'https://bsky.app/profile/redstrate.com'
+    weight: 3
   - name: 'Codeberg'
     params:
     - img: 'icons/codeberg.svg'
     url: 'https://codeberg.org/redstrate'
-    weight: 3
+    weight: 4
   - name: 'GitHub'
     params:
     - img: 'icons/github.svg'
     url: 'https://github.com/redstrate'
-    weight: 4
+    weight: 5
 
 defaultContentLanguage: 'en'
 languageCode: 'en-us'
