@@ -215,11 +215,16 @@ languages:
               url: 'art'
               weight: 2
             socials:
+            - name: 'bluesky'
+              params:
+              - img: 'icons/bluesky.svg'
+              url: 'https://bsky.app/profile/redstrate.com'
+              weight: 2
             - name: 'pixiv'
               params:
               - img: 'icons/pixiv.svg'
               url: 'https://www.pixiv.net/en/users/58118005'
-              weight: 2
+              weight: 3
 
 related:
   includeNewer: true

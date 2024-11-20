@@ -11,12 +11,17 @@
     {{ end }}
 {{ end }}
 
-{{ if or .Params.mastodon_url .Params.pixiv_url }}
+{{ if or (or .Params.mastodon_url .Params.pixiv_url) .Params.bluesky_url }}
     <p><strong>Also available on</strong></p>
 
     <div style="margin: 10px; text-align: center">
+
     {{ with .Params.mastodon_url }}
         <a href="{{ . }}"><img class="symbolic-icon" alt="Mastodon icon" title="Mastodon" width="32" height="32" src="/icons/mastodon.svg"/></a>
+    {{ end }}
+
+    {{ with .Params.bluesky_url }}
+    <a href="{{ . }}"><img class="symbolic-icon" alt="Bluesky icon" title="Bluesky" width="32" height="32" src="/icons/bluesky.svg"/></a>
     {{ end }}
 
     {{ with .Params.pixiv_url }}
