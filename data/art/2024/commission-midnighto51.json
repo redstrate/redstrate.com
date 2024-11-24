@@ -6,5 +6,10 @@
     "bluesky_url": "https://bsky.app/profile/redstrate.com/post/3lbmxvdfrhk2t",
     "program": "Krita, Blender",
     "title": "commission for midnighto51",
-    "tags": ["fan art", "request"]
+    "tags": ["fan art", "request"],
+    "languages": {
+        "jp": {
+            "title": "commission for midnighto51"
+        }
+    }
 }

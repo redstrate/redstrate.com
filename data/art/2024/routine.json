@@ -7,5 +7,10 @@
     "program": "Krita",
     "title": "Everyday Routine",
     "tags": ["Sketch"],
-    "nsfw": true
+    "nsfw": true,
+    "languages": {
+        "jp": {
+            "title": "毎朝"
+        }
+    }
 }
