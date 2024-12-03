@@ -60,6 +60,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="daikonet.gif" link="https://daikonet.neocities.org/" label="daikonet" >}}
 
+{{< out-link banner="datagirl.gif" link="https://datagirl.xyz" label="datagirl" >}}
+
 {{< end-con >}}
 
 ## Other Cool Sites
