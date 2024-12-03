@@ -7,7 +7,7 @@
 
     {{ .Content }}
 
-    {{ $tags := slice "fan art" "artfight" "3d" }}
+    {{ $tags := slice "fan art" "artfight" "3d" "3D" }}
     {{ $art := .Site.GetPage "/art" }}
     {{ $artworks := (where $art.RegularPagesRecursive "Type" "art") }}
     {{ $fan_art := (where $artworks "Params.arttags" "intersect" $tags) }}
