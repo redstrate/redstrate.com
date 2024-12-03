@@ -62,6 +62,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="datagirl.gif" link="https://datagirl.xyz" label="datagirl" >}}
 
+{{< out-link banner="neon.gif" link="https://neon.moe" label="Jens" >}}
+
 {{< end-con >}}
 
 ## Other Cool Sites
@@ -106,7 +108,6 @@ Want out of the button-less shame list? Make a button!
 
 {{< begin-con >}}
 
-* [Jens](https://neon.moe/)
 * [Carl S.](https://carlschwan.eu/)
 * [Sara B.](https://sarahduck.ca/)
 * [SaKo](https://sako.neocities.org/)
