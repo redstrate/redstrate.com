@@ -3,6 +3,8 @@
 
     <hr>
 
+    {{ $char := index .Site.Data "character" }}
+
     <div class="tabs-container">
         <input type="radio" id="tab-1" name="my-tabs" checked>
         <label for="tab-1" class="tab-label">Warrior of Light</label>
@@ -12,16 +14,16 @@
 
                 <p>Here's my WoL, and she's stayed consistent shortly after I purchased Shadowbringers.</p>
 
-                <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;width:50%" src="char.jpg" />
+                <img style="display: block; margin-left: auto; margin-right: auto;margin-bottom:10px;width:50%" src="plate-portrait.png" />
 
                 <table>
                     <tr>
                         <th>Gender</th>
-                        <td>Female♀</td>
+                        <td>{{ $char.appearance.gender }}</td>
                     </tr>
                     <tr>
                         <th>Race</th>
-                        <td>Viera/Veena</td>
+                        <td>{{ $char.appearance.race }} / {{ $char.appearance.tribe }}</td>
                     </tr>
                     <tr>
                         <th>Height</th>
@@ -29,15 +31,15 @@
                     </tr>
                     <tr>
                         <th>Nameday</th>
-                        <td>14th Sun of the 4th Umbral Moon</td>
+                        <td>{{ $char.nameday }}</td>
                     </tr>
                     <tr>
                         <th>City-state</th>
-                        <td>Gridania</td>
+                        <td>{{ $char.city_state }}</td>
                     </tr>
                     <tr>
                         <th>Guardian Deity</th>
-                        <td>Nophica</td>
+                        <td>{{ $char.guardian }}</td>
                     </tr>
                 </table>
             </div>
