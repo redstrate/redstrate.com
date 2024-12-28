@@ -135,8 +135,7 @@
     }
 
     #koring {
-        visibility: hidden;
-        height: 0px;
+        display: none;
     }
 }
 
@@ -802,6 +801,8 @@ model-viewer {
 
     img {
         border: 1px solid var(--border-color);
+        width: 100%;
+        margin: -1px;
     }
 }
 
