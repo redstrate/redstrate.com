@@ -121,9 +121,7 @@
     }
 
     .page-pic {
-        visibility: hidden;
-        height: 0 !important;
-        width: 0 !important;
+        display: none;
     }
 
     .site-menu > img {
