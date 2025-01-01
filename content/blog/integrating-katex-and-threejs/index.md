@@ -1,23 +1,23 @@
 ---
 title: "Integrating KaTeX and Three.js into Hugo"
-date: 2023-07-04
-draft: true
+date: 2025-01-01
+draft: false
 tags:
 - GLSL
 - WebGL
 - Math
 - Hugo
-threejs: true
-math: true
 ---
 
-My [last blog post]({{< ref "drawing-simple-cubes" >}}) integrates three.js and KaTeX into the article itself, which was a first for me. I want to use these libraries in future posts, so I want it to be easy and reusable.
+One of my [Graphics Dump posts]({{< ref "drawing-simple-cubes" >}}) integrates three.js and KaTeX into the article itself, which was a first for me. I want to use these libraries in future posts, so I want it to be easy and reusable.
+
+**Note:** I had written this setup in 2023, and now [in modern Hugo there is built-in LaTeX support](https://gohugo.io/content-management/mathematics/).
 
 # Three.js
 
 If you aren't familiar, [three.js](https://threejs.org/) is an easy to use WebGL framework/engine and does a lot of useful work out of the box. When you just want to display a mesh, or a primitive and slap some materials on it you can't really get anything better. However, it wasn't very straightforward to integrate it and I also want to use custom GLSL shaders that complicates things a bit.
 
-I self-host my own JavaScript files, and the easiest way to grab a ready-to-use distribution of three.js is from the repository under the "build" directory. Three.js complains in the console that it's not supported, although I'm not familiar what's the better way. To enable three.js for a specific post, I enable it via a parameter in the frontmatter:
+I self-host my own JavaScript files, and the easiest way to grab a ready-to-use distribution of three.js is from the repository under the "build" directory. To enable three.js for a specific post, I enable it via a parameter in the frontmatter:
 
 ```yaml
 ---
@@ -26,7 +26,7 @@ threejs: true
 ---
 ```
 
-And then in `single.html` (or the layout you're using for posts) I check for the parameter and insert the JavaScript:
+And then in `single.html` (or whatever layout you're using for posts) I check for the parameter and insert the JavaScript:
 
 ```go
 {{ if .Params.threejs }}
@@ -49,7 +49,7 @@ That's only half the battle, as we still need to set up the scene and the render
 
 This adds a container and the script itself, and can be used as so:
 
-```
+```go
 { {< three-scene "scene.js" "scene" >} }
 ```
 ("scene.js" is of course the script path, and "scene" is the name of the container.)
@@ -82,11 +82,57 @@ function resize() {
 }
 ```
 
-Right now this has to be set up for each and every JavaScript file, but I should move it into a common file for all of them later down the road. If you want to
+Right now this has to be set up for each and every JavaScript file, but I should move it into a common file for all of them later down the road.
 
 ## KaTeX
 
 [KaTeX](https://katex.org/) is a LaTeX-compatible JavaScript math renderer, and so much easier to integrate than three.js. There's three files we need to include, `katex.js`, `katex.css` and `auto-render.js` (from the `contrib` folder).
+
+Like with three.js, I have an explicit toggle to enable it in the front-matter:
+
+```yaml
+---
+title: "Integrating KaTeX and Three.js into Hugo"
+math: true
+---
+```
+
+And then I have this in my template:
+
+```go
+{{ if .Params.math }}
+    {{ $math := resources.Get "js/katex.js" }}
+    {{ if hugo.IsProduction }}
+        {{ $math = $math | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <script src="{{ $math.RelPermalink }}" integrity="{{ $math.Data.Integrity }}"></script>
+
+    {{ $autorender := resources.Get "js/auto-render.js" }}
+    {{ if hugo.IsProduction }}
+        {{ $autorender = $autorender | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <script src="{{ $autorender.RelPermalink }}" integrity="{{ $autorender.Data.Integrity }}"></script>
+
+    {{ $style := resources.Get "css/katex.css" }}
+    {{ if hugo.IsProduction }}
+        {{ $style = $style | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+{{ end }}
+```
+
+The actual code itself is simple, and is just a `<script>` block waiting for the DOM to load. The rest of the snippet is all of the bits of KaTeX you need to actually use it.
 
 # Credits
 
