@@ -34,7 +34,7 @@
             </div>
         </div>
 
-        <input type="radio" id="tab-2" name="my-tabs">
+        <input type="radio" id="tab-2" name="my-tabs" onChange="relayout()">
         <label for="tab-2" class="tab-label">Artwork</label>
         <div class="container">
             <div class="box">
@@ -43,7 +43,7 @@
                 <p>Here's some fan art of my WoL, I want to do more general FFXIV fan art in the future too!</p>
 
                 <div style="height: 500px; overflow: auto">
-                {{ partial "art-section" . }}
+                    {{ partial "art-section" . }}
                 </div>
             </div>
         </div>

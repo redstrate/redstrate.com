@@ -1,5 +1,7 @@
+var masonry;
+
 imagesLoaded(document.querySelector('.grid'), function(instance) {
-    new Masonry('.grid', {
+    masonry = new Masonry('.grid', {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         gutter: '.gutter-sizer',
@@ -19,4 +21,8 @@ if (element.length > 0) {
             resize: true
         });
     });
+}
+
+function relayout() {
+    masonry.layout();
 }
