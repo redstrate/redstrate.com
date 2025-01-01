@@ -612,6 +612,9 @@ pre {
     border: 1px outset black;
     border-radius: 5px;
     margin-top: 10px;
+    background-color: var(--extra-color);
+    color: var(--text-color) !important;
+    text-decoration: none;
 }
 
 .new-banner {
