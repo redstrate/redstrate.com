@@ -98,5 +98,3 @@ I once again sat down and fixed a ton of build and runtime issues for our Androi
 
 That's all this month!
 
-{{< series-nav "kde-feb2024" "kde-june2024" >}}
-

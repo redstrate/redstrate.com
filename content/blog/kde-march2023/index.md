@@ -114,5 +114,3 @@ And of course, there are of course many bugfixes:
 * {{< add "feature" >}} Added a [unit test to Kalendar](https://invent.kde.org/pim/kalendar/-/merge_requests/325).
 
 [^1]: Doxygen doesn't support QML natively, so doxyqml is a plugin to help generate doxygen pages for QML types.
-
-{{< series-nav "kde-feb2023" "kde-april2023 ">}}

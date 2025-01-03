@@ -150,8 +150,6 @@ This is something that's been sitting on my backlog, but I'm super annoyed about
 
 See the [merge request](https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/2659).
 
-{{< series-nav "kde-jan2023" "kde-march2023" >}}
-
 [^1]: If you're looking for a way to configure the default posting language, it's unfortunately not exposed in the Mastodon API yet, including some other preferences. Since the issue hasn't moved much, I want to look into another way to easily access those settings.
 
 [^2]: Ivan looked into this issue recently and is fixing the issue on the Flatpak KCM end, so my fix may not be needed after all.

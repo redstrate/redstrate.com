@@ -132,5 +132,3 @@ I'm also attending [Akademy](https://akademy.kde.org/) this year in Thessaloniki
 {{< stoot "mastodon.art" "110391772254719472" >}}
 
 I booked my accommodations last week, so I'm excited to see everyone in-person in July! This is my first time traveling outside of the North American continent, and to Europe no less. I'll be documenting my experience traveling and at Akademy, but I'm not sure what format it'll be in yet.
-
-{{< series-nav "kde-april2023" "kde-june2023" >}}

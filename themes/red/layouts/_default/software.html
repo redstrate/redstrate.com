@@ -14,6 +14,10 @@
 
     {{ .Content }}
 
+    <div class="art-button-container" style="padding-right: 10px">
+        <a class="art-button" href="/software/tags">Tags</a>
+    </div>
+
     {{ $contrib := (index site.Data "contributions") }}
 
     {{ .Scratch.Set "header-type" "h3" }}

@@ -186,5 +186,3 @@ I also attended Akademy this year! You can read [more about it in it's dedicated
 It's [been almost a year]({{< ref "kde-jan2023" >}}) since I started this series, and I can't believe I've done almost a dozen of these. People seem to really like them, and I'm really appreciative of that! Like I said in the beginning, there will most likely not be a next part as it will be rolled into someone else's blog posts now.
 
 If you want a hint as to what I'll be about blogging next, you might want [to remember where this all began]({{< ref "fixing-22r" >}}).
-
-{{< series-nav "kde-july2024" "" >}}

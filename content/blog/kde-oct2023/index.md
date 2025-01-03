@@ -134,5 +134,3 @@ I did a _ton_ of work improving PlasmaTube this month. If you haven't been using
 {{< add "bugfix" >}} Prevent [a crash when calculating initials in names that _only_ have parenthesis](https://invent.kde.org/libraries/kirigami-addons/-/merge_requests/183), such as "(gobble)". This affects the new Avatar component. {{< release "0.12" >}}
 
 See you next month!
-
-{{< series-nav "kde-sept2023" "kde-nov2023" >}}

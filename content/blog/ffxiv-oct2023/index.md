@@ -121,5 +121,3 @@ I overhauled [the documentation site](https://docs.xiv.zone) again, this time wi
 
 I also have begun [reverse engineering the current Square Enix login system](https://github.com/redstrate/kawari) which is currently used for testing Astra without hammering the official servers. Do note that I don't plan on extending the project much further than that.
 
-{{< series-nav "ffxiv-sept2023" "ffxiv-dec2023" >}}
-

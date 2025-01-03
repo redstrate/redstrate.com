@@ -136,5 +136,3 @@ If you use spaces to delineate groups of import statements, [qmlformat should no
 
 And two more small things: [fixing the command line arguments not overriding anything](https://codereview.qt-project.org/c/qt/qtdeclarative/+/502966?usp=dashboard) and [fixing the QML coding conventions documentation](https://codereview.qt-project.org/c/qt/qtdoc/+/502965?usp=dashboard).
 
-{{< series-nav "kde-aug2023" "kde-oct2023" >}}
-

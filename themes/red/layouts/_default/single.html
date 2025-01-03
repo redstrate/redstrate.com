@@ -24,6 +24,64 @@
 
     {{ .Content }}
 
+    {{ $series_name := "" }}
+    {{ with .Page.GetTerms "series" }}
+        {{ range . }}
+            {{ $series_name = (string .Title) }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $series_name }}
+        {{ $series_pages := slice }}
+        {{ range $name, $pages := $.Site.Taxonomies.series }}
+            {{ if eq (lower $series_name) $name }}
+                {{ $series_pages = $pages }}
+            {{ end }}
+        {{ end }}
+
+
+        {{ $prev := "" }}
+        {{ $next := "" }}
+
+        {{ range (sort $series_pages "Date" "desc") }}
+            {{ if gt $.Date.Unix .Date.Unix }}
+                {{ $prev = .Path }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+
+        {{ range (sort $series_pages "Date" "asc") }}
+            {{ if lt $.Date.Unix .Date.Unix }}
+                {{ $next = .Path }}
+                {{ break }}
+            {{ end }}
+        {{ end }}
+
+        <div class="art-button-container">
+            {{ if $prev }}
+                {{ with $.Page.GetPage $prev }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+            {{ else }}
+                <a class="art-button disabled">End</a>
+            {{ end }}
+
+            {{ with $.Page.GetTerms "series" }}
+                {{ range . }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</p>
+                {{ end }}
+            {{ end }}
+
+            {{ if $next }}
+                {{ with $.Page.GetPage $next }}
+                    <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                {{ end }}
+            {{ else }}
+                <a class="art-button disabled">End</a>
+            {{ end }}
+        </div>
+    {{ end }}
+
     {{ if in .File.Dir "blog" }}
         {{ partial "voting" . }}
 

@@ -83,6 +83,3 @@ I do plan on expanding ktabletconfig's features, as the Wayland session continue
 {{< add "bugfix" >}} Fixed [keyboard navigation for Kirigami Add-on's FormComboBoxDelegate](https://invent.kde.org/libraries/kirigami-addons/-/merge_requests/248), which improves keyboard navigation in lots of Kirigami applications! {{< release "1.3.0" >}}
 
 I updated the [Plasma Desktop README](https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/2299) in line with the other README things I did this year!
-
-{{< series-nav "kde-april2024" "kde-july2024" >}}
-

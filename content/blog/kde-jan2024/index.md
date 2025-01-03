@@ -113,6 +113,3 @@ I spent some time trying to put in some small improvements to our [Human Interfa
 * Rebased and integrated lots of fixes that were stalling due to lack of an author around to rebase.
 
 I hope to see you next month with more KDE stuff!
-
-{{< series-nav "kde-dec2023" "kde-feb2024" >}}
-

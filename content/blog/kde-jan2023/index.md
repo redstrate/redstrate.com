@@ -71,5 +71,3 @@ I made some misc changes to the Community Wiki this month, mostly centered aroun
 {{< add "feature" >}} This isn't merged yet (but it's close!) so it barely misses the mark for January, but I'll include it anyway. I'm working on making the Window Decoration KCM frameless and give it a new look that matches the other KCMs. See the [merge request](https://invent.kde.org/plasma/kwin/-/merge_requests/3524).
 
 ![New Window Decoration KCM](kcm_window.webp)
-
-{{< series-nav "/" "kde-feb2023" >}}

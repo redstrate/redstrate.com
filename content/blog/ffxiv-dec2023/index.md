@@ -67,5 +67,3 @@ See you in the next status update!
 
 [^2]: You're not supposed to, because it requires you to explicitly agree to a Steamworks Developer agreement. There's no public downloads for the SDK either, of course. This doesn't stop Valve from intentionally/unintentionally [shipping parts of the SDK in Proton, I guess](https://github.com/ValveSoftware/Proton/tree/proton_8.0/lsteamclient).
 
-{{< series-nav "ffxiv-oct2023" >}}
-

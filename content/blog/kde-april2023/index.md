@@ -86,5 +86,3 @@ There doesn't appear to be an active maintainer, so I'll get another reviewer an
 ![New page thumbnail in Kirigami Gallery](new-page.webp)
 
 {{< add "bugfix" >}} I'm still looking for people who might know why [PlaceholderMessage fails handling overflow, which creates some recursive rearranges](https://invent.kde.org/frameworks/kirigami/-/merge_requests/1034). It might be a Qt upstream issue, so it's another thing to investigate soon!
-
-{{< series-nav "kde-march2023" "kde-may2023" >}}

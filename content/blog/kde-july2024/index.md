@@ -89,5 +89,3 @@ This is a very exciting month if you're waiting for more artist-oriented improve
 ---
 
 That's all for this month!
-
-{{< series-nav "kde-june2024" "kde-oct2024" >}}
