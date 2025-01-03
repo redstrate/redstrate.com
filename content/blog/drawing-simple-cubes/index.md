@@ -8,7 +8,6 @@ tags:
 - GLSL
 series:
 - Graphics Dump
-threejs: true
 math: true
 ---
 

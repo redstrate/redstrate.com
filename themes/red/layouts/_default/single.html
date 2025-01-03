@@ -30,7 +30,7 @@
         {{ partial "comments" . }}
     {{ end }}
 
-    {{ if .Params.threejs }}
+    {{ if .HasShortcode "three-scene" }}
         {{ $imagesloaded := resources.Get "js/three.js" }}
         {{ if hugo.IsProduction }}
             {{ $imagesloaded = $imagesloaded | minify | fingerprint | resources.PostProcess }}
