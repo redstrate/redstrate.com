@@ -1,4 +1,10 @@
 {{ with resources.Get .Site.Params.profile_picture }}
-	<img alt="Profile Picture" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+	<picture>
+		{{ $avif_path := replace . ".png" ".avif "}}
+		{{ with resources.Get (strings.TrimSpace $avif_path) }}
+			<source srcset="{{ .RelPermalink }}" type="image/avif">
+		{{ end }}
+		<img alt="Profile Picture" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}">
+	</picture>
 {{ end }}
 <h1>{{ .Site.Title }}</h1>

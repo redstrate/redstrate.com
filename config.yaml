@@ -29,9 +29,9 @@ params:
   isso_url: "comments.redstrate.com"
   geekring_site_id: 227
   gitlab_username: "redstrate"
-  profile_picture: "/rss-image.png"
+  profile_picture: "/rss-image.jpg"
   images:
-  - rss-image.png
+  - rss-image.jpg
   author: 'redstrate'
   fediverse_url: "@redstrate@mastodon.art"
   image_host: "https://images.redstrate.com"
