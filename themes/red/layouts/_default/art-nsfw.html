@@ -14,6 +14,9 @@
 
     {{ $.Scratch.Set "paginator" (.Paginate $nsfw_art) }}
     {{ partial "art-gallery" . }}
+{{ end }}
 
+{{ define "head" }}
     {{ partial "gallery-js" . }}
 {{ end }}
+

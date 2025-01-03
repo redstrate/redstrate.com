@@ -16,11 +16,13 @@
 
     {{ $.Scratch.Set "paginator" (.Paginate $originals) }}
     {{ partial "art-gallery" . }}
-
-    {{ partial "gallery-js" . }}
 {{ end }}
 
 {{ define "details" }}
     {{ partial "art-sidebar" . }}
+{{ end }}
+
+{{ define "head" }}
+    {{ partial "gallery-js" . }}
 {{ end }}
 

@@ -16,6 +16,7 @@
     {{ end }}
 
     <link href="/blog/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.author }}'s blog">
+    <link href="/art/index.xml" rel="alternate" type="application/rss+xml" title="{{ $.Site.Params.author }}'s art">
 
     {{ $style := resources.Get "css/site.css" }}
     {{ if hugo.IsProduction }}
@@ -34,6 +35,20 @@
         <meta name="robots" content="noindex">
         <meta name="rating" content="adult">
     {{ end }}
+
+    <meta name="author" content="{{ $.Site.Params.author }}">
+    <meta name="creator" content="{{ $.Site.Params.author }}">
+
+    <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+    {{ with .Params.tags }}
+        {{ $tags := delimit . "," }}
+        <meta name="keywords" content="{{ $tags }}">
+    {{ end }}
+    {{ with .Params.arttags }}
+        {{ $tags := delimit . "," }}
+        <meta name="keywords" content="{{ $tags }}">
+    {{ end }}
+    <meta name="color-scheme" content="dark light">
 
     {{ partial "opengraph.html" . }}
 </head>

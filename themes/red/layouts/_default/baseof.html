@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    {{- partial "head.html" . -}}
+    <head>
+        {{- partial "head.html" . -}}
+
+        {{- block "head" . }}{{- end }}
+    </head>
     <body>
         <header>{{- partial "header.html" . -}}</header>
         <div id="content">
