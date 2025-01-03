@@ -5,6 +5,16 @@
 
     <hr>
 
+    {{ with resources.Get "pics/pic-music.jpg" }}
+    <picture>
+        {{ $avif_path := replace . ".jpg" ".avif "}}
+		{{ with resources.Get (strings.TrimSpace $avif_path) }}
+			<source srcset="{{ .RelPermalink }}" type="image/avif">
+		{{ end }}
+        <img class="gallery-img page-pic" alt="Drawing of an art gallery with several people standing around a piece hanging on the wall." width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+    </picture>
+    {{ end }}
+
     {{ .Content }}
 
     {{ $art := (index site.Data ($.Param "json")) }}

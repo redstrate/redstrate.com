@@ -5,7 +5,7 @@ aliases:
 - /notes
 ---
 
-{{< insert-pic "pic-blog.webp" "Drawing of a grocery list with the words Linux and Review and KDE written." >}}
+{{< insert-pic "pic-blog.jpg" "Drawing of a grocery list with the words Linux and Review and KDE written." >}}
 
 Rambles and writings usually consisting of [Linux](/blog/tags/linux/), [KDE](/blog/tags/kde), personal thoughts and [reviews](/blog/tags/review/).
 

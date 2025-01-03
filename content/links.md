@@ -2,7 +2,7 @@
 title: "Links"
 ---
 
-{{< insert-pic "pic-links.webp" >}}
+{{< insert-pic "pic-links.jpg" >}}
 
 Here's some cool like-minded people, websites and communities you should check out!
 

@@ -2,6 +2,8 @@
 title: "Contact"
 ---
 
+{{< insert-pic "pic-contact.jpg" "3D rendering of mail flying through the void." >}}
+
 The easiest and fastest way to contact me for personal matters is e-mail me via josh@redstrate.com.
 
 Other services that support direct messaging:

@@ -2,7 +2,7 @@
 title: "About"
 ---
 
-{{< profile-picture >}}
+{{< insert-pic "profile.jpg" "Guestbook" >}}
 
 I'm known online as **redstrate**, and I create things to fill my own niche. I program, draw, and occasionally make bad music and edit videos. I'm a contributor to open source projects, and also a [KDE](https://kde.org) developer and [KDE e.V.](https://ev.kde.org) member. In my free time, I like to cook and study languages (real world and programming ones!) Of course, also play way too many video games!
 

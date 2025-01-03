@@ -2,8 +2,14 @@
     <h2>{{ .Title }}</h2>
     <hr>
 
-    {{ with resources.Get "pics/pic-software.webp" }}
+    {{ with resources.Get "pics/pic-software.jpg" }}
+    <picture>
+        {{ $avif_path := replace . ".jpg" ".avif "}}
+		{{ with resources.Get (strings.TrimSpace $avif_path) }}
+			<source srcset="{{ .RelPermalink }}" type="image/avif">
+		{{ end }}
         <img alt="Software" class="gallery-img page-pic" width="{{ .Width }}" height="{{ .Height }}" src="{{ .RelPermalink }}">
+    </picture>
     {{ end }}
 
     {{ .Content }}
