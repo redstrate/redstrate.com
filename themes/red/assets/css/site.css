@@ -186,6 +186,31 @@ body {
     }
 }
 
+.isso-textarea {
+    background-color: var(--background-tertiary) !important;
+}
+
+.isso-input-wrapper input {
+    background-color: var(--background-tertiary) !important;
+}
+
+.isso-post-action > input {
+    border: 1px outset black !important;
+    border-radius: 5px !important;
+    margin-top: 10px !important;
+    background-color: var(--extra-color) !important;
+    color: var(--text-color) !important !important;
+}
+
+.isso-preview {
+    background-color: var(--background-tertiary) !important;
+    background-image: repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 10px, transparent 10px, transparent 10px, rgba(0, 0, 0, 0.01) 20px) !important;
+}
+
+.isso-page-author-suffix {
+    color: #db7979 !important;
+}
+
 /* printers */
 @media print {
     :root {
