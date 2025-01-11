@@ -7,6 +7,7 @@
 {{ if hugo.IsProduction }}
         <div class="voting-container">
                 <button class="voting-button" id="num-votes" onClick="addVote({{ $name }})">❤️</button>
+                <noscript>Javascript is required to vote.</noscript>
         </div>
 
         {{ $site := resources.Get "js/voting.js" | minify | fingerprint | resources.PostProcess }}
