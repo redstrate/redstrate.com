@@ -33,20 +33,28 @@
         {{ end }}
     </table>
 
-    <div style="text-align: center; margin-top: 10px;">
+    <ul class="pagination">
     {{ with $paginator.Prev }}
+    <li class="page-item">
     <a style="float: left" href="{{ .URL }}">Prev</a>
+    </li>
     {{ else }}
+    <li class="page-item disabled">
     <span style="float: left">Prev</span>
+    </li>
     {{ end }}
 
     <span style="display: inline-block;">{{ printf "Page %d" $paginator.PageNumber }}</span>
 
     {{ with $paginator.Next }}
+    <li class="page-item">
     <a style="float: right" href="{{ .URL }}">Next</a>
+    </li>
     {{ else }}
+    <li class="page-item disabled">
     <span style="float: right">Next</span>
+    </li>
     {{ end }}
 
-    </div>
+    </ul>
 {{ end }}
