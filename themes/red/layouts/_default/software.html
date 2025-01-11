@@ -93,8 +93,13 @@
             {{ $since_year := (sub now.Year (.Date.Year)) }}
             {{ $zero_to_one := math.Div (float $since_year) 8.0 }}
             {{ $opacity := math.Sub 1.0 $zero_to_one }}
+            {{ $opacity = math.Max $opacity 0.0 }}
+            {{ $opacity_percentage := 0.0 }}
+            {{ if gt $opacity 0.5 }}
+                {{ $opacity_percentage = 100.0 }}
+            {{ end }}
 
-            <p class="project-header" style="background-color: rgba(85.0, 121.0, 153.0, {{ $opacity }})">{{ .Title }}<span style="float:right;margin:0">{{ .Date.Format "2006" }}</span></p>
+            <p class="project-header" style="background-color: rgba(85.0, 121.0, 153.0, {{ $opacity }}); color: color-mix(in srgb-linear, var(--text-color), white {{ $opacity_percentage }}%)">{{ .Title }}<span style="float:right;margin:0">{{ .Date.Format "2006" }}</span></p>
 
             <p class="project-desc">{{ .Summary }}</p>
 
