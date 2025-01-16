@@ -62,6 +62,21 @@
             {{ .Scratch.Set "link" .RelPermalink }}
             {{ partial "art-fancy-button" . }}
         {{ end }}
+
+        {{ with $.Site.GetPage "/commission" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "commissions.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ .Scratch.Set "commissions" true }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
+
+        {{ with $.Site.GetPage "/art/stats" }}
+            {{ .Scratch.Set "title" .Title }}
+            {{ .Scratch.Set "img" "stats.png" }}
+            {{ .Scratch.Set "link" .RelPermalink }}
+            {{ partial "art-fancy-button" . }}
+        {{ end }}
     </div>
 {{ end }}
 

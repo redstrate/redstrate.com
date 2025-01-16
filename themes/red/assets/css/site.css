@@ -819,10 +819,10 @@ model-viewer {
     margin: 5px;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    display: inline-grid;
     text-decoration: none;
     background-color: var(--background-tertiary);
     box-shadow: var(--shadow);
+    position: relative;
 
     p {
         margin: 0;
@@ -873,4 +873,21 @@ model-viewer {
 
 #character-container {
     display: grid;
+}
+
+.commission-button-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--background-primary);
+    padding: 10px;
+    font-weight: bold;
+}
+
+#commission-open {
+    color: green;
+}
+
+#commission-closed {
+    color: red;
 }
