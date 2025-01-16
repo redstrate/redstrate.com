@@ -20,7 +20,7 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="neuroknives.png" link="https://neuroknives.com" label="Neuroknives" >}}
 
-{{< out-link banner="bigraccoon-logo-white.png" link="https://bigraccoon.ca/" label="Johann Sebastian Staedtler" >}}
+{{< out-link banner="jsstaedtler.png" link="https://bigraccoon.ca/" label="Johann Sebastian Staedtler" >}}
 
 {{< out-link banner="melps.jpg" link="https://melps.neocities.org" label="melps" >}}
 
