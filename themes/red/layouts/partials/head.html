@@ -6,7 +6,7 @@
         <meta name="description" content="{{ $.Site.Params.description }}">
         <title>{{.Site.Title}}</title>
     {{ else }}
-        <title>{{.Site.Title}} / {{ .Title }}</title>
+        <title>{{ .Title }} - {{ .Site.Title }}</title>
 
         {{ if .Summary }}
         <meta name="description" content="{{ .Summary }}">
