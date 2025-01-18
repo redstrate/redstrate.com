@@ -44,6 +44,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="retroheart.gif" link="https://retroheart.net" label="RetroHeart" >}}
 
+{{< out-link banner="zelkova.gif" link="https://zelkova.neocities.org" label="ZelKova" >}}
+
 {{< end-con >}}
 
 ## Developers
