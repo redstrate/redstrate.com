@@ -1,5 +1,5 @@
 function refresh(slug) {
-        fetch('https://voting.redstrate.com/votes/view/' + slug)
+        fetch('https://voting.redstrate.com/votes/' + slug)
         .then(function(response) {
                 return response.json();
         })
@@ -9,7 +9,7 @@ function refresh(slug) {
 }
 
 function addVote(slug) {
-        const request = new Request("https://voting.redstrate.com/votes/submit/" + slug, {
+        const request = new Request("https://voting.redstrate.com/votes/" + slug, {
                 method: "POST"
         });
         fetch(request)
