@@ -66,6 +66,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="neon.gif" link="https://neon.moe" label="Jens" >}}
 
+{{< out-link banner="lyna.webp" link="https://blooym.dev" label="Lyna" >}}
+
 {{< end-con >}}
 
 ## Other Cool Sites
@@ -104,7 +106,7 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< end-con >}}
 
-## The button-less
+## The button-less9
 
 Want out of the button-less shame list? Make a button!
 
@@ -147,6 +149,7 @@ Want out of the button-less shame list? Make a button!
 * [MatchaJoeJoe](https://matchajoejoe.games/)
 * [Sam P.](https://sam.pavot.ca/)
 * [moocube](https://www.mooncube.space/)
+* [loude](https://threefiftyfour.dk/)
 
 {{< end-con >}}
 
