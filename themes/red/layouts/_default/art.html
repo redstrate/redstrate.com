@@ -63,7 +63,7 @@
             {{ partial "art-fancy-button" . }}
         {{ end }}
 
-        {{ with $.Site.GetPage "/commission" }}
+        {{ with $.Site.GetPage "/art/commission" }}
             {{ .Scratch.Set "title" .Title }}
             {{ .Scratch.Set "img" "commissions.png" }}
             {{ .Scratch.Set "link" .RelPermalink }}

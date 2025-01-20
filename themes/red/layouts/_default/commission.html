@@ -1,0 +1,34 @@
+{{/* Page layout used for the art commission page. */}}
+
+{{ define "main" }}
+    <h2>{{ .Title }}</h2>
+    <hr>
+
+    {{ $art_config := index $.Site.Data "art-config" }}
+    {{ if $art_config.commissions }}
+        <p>My commissions are currently <span id="commission-open">OPEN</span>!</p>
+    {{ else }}
+        <p>My commisions are currently <span id="commission-closed">CLOSED</span>!</p>
+    {{ end }}
+
+    <p>I accept commisions for artwork from time to time. You can only commission me through my <a href="https://www.pixiv.net/en/users/58118005/request">Pixiv</a>. If you have a Pixiv account, you can also get a notification when my commissions re-open.</p>
+
+    <h3>Previous Work</h3>
+
+    <div class="grid-container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+
+            {{ $p := slice "commission" }}
+            {{ range where .Site.RegularPages "Params.arttags" "intersect" $p }}
+                {{ if not (.Params.guest) }}
+                    {{ partial "render-art" . }}
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+
+    {{ partial "gallery-js" . }}
+
+{{ end }}
