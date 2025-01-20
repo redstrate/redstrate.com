@@ -92,6 +92,10 @@
                             </picture>
                         </a>
 
+                        {{ with .Params.program }}
+                        <p>Created with: {{ . }}</p>
+                        {{ end }}
+
                         {{ with .Content }}
                         <p>{{ . | safeHTML }}</p>
                         {{ else }}
