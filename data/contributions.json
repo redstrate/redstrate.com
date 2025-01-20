@@ -132,6 +132,12 @@
             "name": "libwacom",
             "description": "Added support for the XP-Pen 22R/24 Pro.",
             "type": "github"
+        },
+        {
+            "id": "pim/kitinerary",
+            "name": "KItinerary",
+            "description": "Added support for extracting data from several American providers, including: United Airlines, American Airlines, Brightline and Southwest.",
+            "type": "kde"
         }
     ]
 }
