@@ -4,6 +4,12 @@
     "date": "2025-01-19",
     "mastodon_url": "https://mastodon.art/@redstrate/113856686664071376",
     "bluesky_url": "https://bsky.app/profile/redstrate.com/post/3lg4kunjwns2x",
+    "pixiv_url": "https://www.pixiv.net/en/artworks/126417046",
     "program": "Krita",
-    "title": "In Transit 🚋"
+    "title": "In Transit 🚋",
+    "languages": {
+        "jp": {
+            "title": "交通機関"
+        }
+    }
 }
