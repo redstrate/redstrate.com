@@ -4,12 +4,10 @@ title: "Contact"
 
 {{< insert-pic "pic-contact.jpg" "3D rendering of mail flying through the void." >}}
 
-The easiest and fastest way to contact me for personal matters is e-mail me via josh@redstrate.com.
+The easiest and fastest way to contact me for personal matters is e-mail me via josh@redstrate.com. 
 
-Other services that support direct messaging:
-* [Mastodon](https://mastodon.art/@redstrate) as `@redstrate@mastodon.art`
+There are other services I use that support direct messaging (in order of preference):
 * [Matrix](https://matrix.to/@redstrate@pyra.sh#/@redstrate:pyra.sh) as `@redstrate:pyra.sh`
-
-## Privacy
-
-I run my own e-mail server, but I don't sign my e-mails with my GPG key. If you require encryption from both sides, Matrix is the preferred option since it supports end-to-end encryption.
+* [Mastodon](https://mastodon.art/@redstrate) as `@redstrate@mastodon.art`
+* [BlueSky](https://bsky.app/profile/redstrate.com) as `@redstrate.com`
+* [Pixiv](https://www.pixiv.net/en/users/58118005) as `redstrate`
