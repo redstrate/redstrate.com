@@ -2,5 +2,6 @@
     "age": "23",
     "name": "Luci",
     "original": true,
-    "pronouns": "she/her"
+    "pronouns": "she/her",
+    "charsheet": "charsheet-luci"
 }

@@ -7,6 +7,7 @@
     {{ $has_age := .Params.age }}
     {{ $has_pronouns := .Params.pronouns }}
     {{ $has_origin := .Params.origin }}
+    {{ $has_charsheet := .Params.charsheet }}
 
     {{ if or $has_origin (or $has_age $has_pronouns) }}
         {{ if $has_age }}
@@ -20,6 +21,10 @@
         {{ if $has_origin }}
             <p><strong>Origin</strong></p>
             <p>{{ .Params.origin }}</p>
+        {{ end }}
+        {{ if $has_charsheet }}
+            {{ $full := printf "%s/art/%s.avif" $.Site.Params.image_host .Params.charsheet }}
+            <a href="{{ $full }}">Character Sheet</a>
         {{ end }}
     {{ end }}
 

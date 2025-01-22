@@ -1,5 +1,6 @@
 {
     "name": "Sakura",
     "original": true,
-    "pronouns": "she/her"
+    "pronouns": "she/her",
+    "charsheet": "charsheet-sakura"
 }
