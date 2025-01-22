@@ -21,3 +21,5 @@ All work showcased on this site (including images, source code, etc.) are hereby
 [CC BY-NC-SA 4.0]({{<ref "/license">}}) _unless_ otherwise specified. If you have doubts about licensing, please [contact me]({{< ref "contact" >}}) and I can help clear up any ambiguities.
 
 Some icons on this site are from [KDE's Breeze icons](https://invent.kde.org/frameworks/breeze-icons) which are licensed under [GPLv3](https://invent.kde.org/frameworks/breeze-icons/-/blob/master/COPYING-ICONS?ref_type=heads).
+
+The default font used is [Inclusive Sans](https://github.com/LivKing/Inclusive-Sans).
