@@ -21,7 +21,7 @@ You need to press enter/return once to enable input, which we need to use to run
 Osi.CrimeClearAll()
 ```
 
-And also remove the status from your Tav (if you're trying to clear murder.) This status is called `GB_GUARDKILLER`:
+And also remove the status from your Tav (if you're trying to clear murder.) The status is called `GB_GUARDKILLER`:
 
 ```lua
 RemoveStatus(GetHostCharacter(), "GB_GUARDKILLER")
@@ -31,6 +31,6 @@ And that's it! You can now walk back up to guards, and your character isn't stuc
 
 ---
 
-Side-tangent: The actual solution to getting rid of the "Enemy of Justice" status is becoming lost knowledge.. for some reason. [This Reddit post](https://www.reddit.com/r/BaldursGate3/comments/168v4ct/fix_for_enemy_of_justic) inspired my solution (it uses more commands, mine just uses the `CrimeClearAll` function. The original post content is lost to time, not even the Internet Archive has it.
+Side-tangent: The actual solution to getting rid of the "Enemy of Justice" status is becoming lost knowledge.. for some reason. [This Reddit post](https://www.reddit.com/r/BaldursGate3/comments/168v4ct/fix_for_enemy_of_justic) inspired my solution (it uses more commands, mine just uses the `CrimeClearAll` function.) The original post content is now gone, not even the Internet Archive has it.
 
 There's a couple of mods too, for example ["Ring of No Justice"](https://www.nexusmods.com/baldursgate3/mods/7067) (this mod is deleted) and ["Enemy of Justice"](https://mod.io/g/baldursgate3/m/enemy-of-justice) (this mod doesn't work.)
