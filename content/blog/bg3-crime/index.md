@@ -7,7 +7,7 @@ tags:
 - Modding
 ---
 
-In Act 2, there's a battle with a big group of enemies and you fight alongside a group of allies. Said allies are infamously known for walking and dying to your own attacks (like a big stinky cloud). If an ally dies in your stink cloud, it's considered murdering a guard and they'll throw you in prison once the battle is over. There's apparently no way to get out of this situation in the vanilla game (as of Patch #7.) Your Tav is marked with an "Enemy of Justice" debuff which seems permanent:
+In Act 2, there's a battle with a big group of enemies and you fight alongside a group of allies. Said allies are infamously known for walking and dying to your own attacks (like a big stinky cloud.) If an ally dies in your stink cloud, it's considered murdering a guard and they'll throw you in prison once the battle is over. There's apparently no way to get out of this situation in the vanilla game (as of Patch #7.) Your Tav is marked with an "Enemy of Justice" debuff which seems permanent:
 
 ![The status effect in-game.](status.jpg)
 
