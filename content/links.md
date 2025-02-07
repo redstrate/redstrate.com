@@ -46,6 +46,8 @@ If you wish to be added to the list, [contact me](/contact). Personal websites o
 
 {{< out-link banner="zelkova.gif" link="https://zelkova.neocities.org" label="ZelKova" >}}
 
+{{< out-link banner="stylus_ara.jpg" link="https://danceofthestylus.com" label="Dance of the Stylus" >}}
+
 {{< end-con >}}
 
 ## Developers
