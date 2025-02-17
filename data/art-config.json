@@ -1,5 +1,5 @@
 {
-    "commissions": false,
+    "commissions": true,
     "featured": [
         "sunset-on-the-hills",
         "intransit",
