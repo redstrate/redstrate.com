@@ -7,7 +7,7 @@ tags:
 - Gaming
 ---
 
-Doll's Nest [released a demo recently](https://store.steampowered.com/app/1839430/Dolls_Nest/), and I'm enjoying playing it (but it's still rough.) I wanted to crack open it's save data just to play around with and what's better than a recently released demo? I haven't touched Unreal Engine at all so I think this might be a good learning experience.
+Doll's Nest [released a demo recently](https://store.steampowered.com/app/1839430/Dolls_Nest/), and I'm enjoying playing it (but it's still rough.) I wanted to crack open it's save data just to play around with and what's better than a recently released demo? I haven't reverse engineered Unreal Engine games before so I think this might be a good learning experience.
 
 ![The beginning area of the demo. It overlooks a giant pit, with several disjointed walkways leading to a giant cable in the middle of the space.](screenshot.webp)
 
@@ -44,6 +44,7 @@ For reference, this is the first 64 bytes of `Slot.sav`:
 0000:0010 | 9B 01 00 00  00 00 00 00  8C 03 00 00  00 00 00 00 | ................
 0000:0020 | 9B 01 00 00  00 00 00 00  8C 03 00 00  00 00 00 00 | ................
 0000:0030 | 78 9C A5 52  CD 4E C2 40  10 5E A2 18  54 D4 68 3C | x.¥RÍNÂ@.^¢.TÔh<
+...
 ```
 
 The previous work on figuring out this format doesn't completely match up with this version of EasyMultiSave. I have ended up reading it as so:
@@ -71,7 +72,7 @@ OODLE ERROR : OodleLZ_Decompress: data is either corrupted, not a valid Oodle st
 
 _(If you look at compressed data streams regularly, you probably already know what the problem is 😅)_
 
-OK, let's take a look at the compressed data like I probably _should've_ done in the first place. (In the snippet above, that's the last line.) Almost immediately we see two magic bytes in every file: `78 9C`. That's a zlib header! Once we fix that mistake and decode using zlib, we can get deserialized data.
+OK, let's take a look at the compressed data like I probably _should've_ done in the first place. (In the snippet above, it begins on the last line.) Almost immediately we see two magic bytes in every file: `78 9C`. That's a zlib header! Once we fix that mistake and decode using zlib, we can get deserialized data.
 
 ![Screenshot of Okteta showing the decoded save game.](output.webp)
 
