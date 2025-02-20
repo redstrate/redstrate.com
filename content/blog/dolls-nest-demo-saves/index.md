@@ -1,13 +1,13 @@
 ---
-title: "Reverse Engineering Doll's Nest (Demo) Saves"
+title: "Reverse Engineering Dolls Nest (Demo) Saves"
 date: 2025-02-17 02:00:00
 tags:
 - Reverse Engineering
-- Doll's Nest
+- Dolls Nest
 - Gaming
 ---
 
-Doll's Nest [released a demo recently](https://store.steampowered.com/app/1839430/Dolls_Nest/), and I'm enjoying playing it (but it's still rough.) I wanted to crack open it's save data just to play around with and what's better than a recently released demo? I haven't reverse engineered Unreal Engine games before so I think this might be a good learning experience.
+Dolls Nest [released a demo recently](https://store.steampowered.com/app/1839430/Dolls_Nest/), and I'm enjoying playing it (but it's still rough.) I wanted to crack open it's save data just to play around with and what's better than a recently released demo? I haven't reverse engineered Unreal Engine games before so I think this might be a good learning experience.
 
 ![The beginning area of the demo. It overlooks a giant pit, with several disjointed walkways leading to a giant cable in the middle of the space.](screenshot.webp)
 
@@ -103,3 +103,4 @@ Slot info is always saved automatically when calling one of the save functions."
 
 Their only custom `.sav` file seems to be "Persistent.sav", which if I had to guess without looking is where the majority of the save data lives.
 
+**Update:** I have begun writing a parser for this format, which is [available here](https://github.com/redstrate/Ireko).
