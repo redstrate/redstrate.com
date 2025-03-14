@@ -54,5 +54,7 @@ I didn't attend any protests there unfortunately, there was one on the 14th but 
 
 ![A poster of Elon Musk, consisting of a stylized portrait of his face with the text: "I AM STEALING FROM YOU.". This poster near the Department of Education, and the Department of Health and Human Services.](stupidface.webp)
 
+**Update 3/14/25**: It soon after I posted this, the maintainers of GrapheneOS have been doing tons of work on the location service. I'm happy to report that my location locks *so much quicker* now, so I suppose this isn't an issue anymore. It also works better indoors!
+
 [^1]: Even things like the Wikipedia blurbs were saved, which were neat to read.
 [^2]: I don't consider that to be a real problem though, it's only because I was contributing data at the time.
