@@ -19,6 +19,6 @@ However the project doesn't include a tool (that I could find anyway, maybe [FFX
 
 ![An example of what the extracted directory structure looks like.](directory.webp)
 
-I designed the directory structure (probably not final) to make it easy to grep for existing IPC opcodes. The index of the segment is also the first part of the filename, so it can be easily sorted by a file manager or other tool. Inside of each directory is the data of the packets - with the headers removed - and the IPC header too, if available.
+I designed the directory structure (probably not final) to make it easy to grep for existing IPC opcodes. The index of the segment is also the first part of the filename, so it can be easily sorted by a file manager or any other tool. Inside of each directory is the data of the packets - with the headers removed - and the IPC header too, if available.
 
 [^1]: In case I have ideas for other packet-related tools, so I kept the repository name suitably vague.
