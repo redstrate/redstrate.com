@@ -111,7 +111,7 @@ I wonder why chose to use JSON here, but I suspect I'll get a better understandi
 
 # Documentation
 
-I moved the usage guide into [a separate file](https://github.com/redstrate/Kawari/blob/master/USAGE.md), in preparation for it to have more setups in the future. I also clarified the goals of the project [in the README](https://github.com/redstrate/Kawari/blob/master/README.md), hopefully making it clear that I don't codone hacks, or other kind of griefing on the official servers[^2]. Kawari is meant for fun and research, first and foremost.
+I moved the usage guide into [a separate file](https://github.com/redstrate/Kawari/blob/master/USAGE.md), in preparation for it to have more steps in the future. I also clarified the goals of the project [in the README](https://github.com/redstrate/Kawari/blob/master/README.md), hopefully making it clear that I don't codone hacks, or other kind of griefing on the official servers[^2]. Kawari is meant for fun and research, first and foremost.
 
 [^1]: This is new to me, but I don't really know that much about GMs in FFXIV. I believe I saw somewhere that there's several levels of GM, the highest being 3.
 
