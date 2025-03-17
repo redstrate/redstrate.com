@@ -11,27 +11,13 @@
     {{ .Content }}
     {{ end }}
 
-    <table>
-        <tr>
-            <th>Title</th>
-            <th>Summary</th>
-            <th>Date</th>
-        </tr>
-
-        {{ range $paginator.Pages }}
-            <tr>
-                <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-
-                <td>
-                    {{ .Summary }}
-                </td>
-
-                <td>
-                    <time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "Jan 2, 2006"}}</time>
-                </td>
-            </tr>
-        {{ end }}
-    </table>
+    {{ range $paginator.Pages }}
+        <li style="margin-left: 10px; list-style-type: square;">
+            <h3 style="margin-bottom: 5px"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <i><time datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "Jan 2, 2006"}}</time></i>
+            <p><i>{{ .Summary }}</i></p>
+        </li>
+    {{ end }}
 
     <ul class="pagination">
     {{ with $paginator.Prev }}
