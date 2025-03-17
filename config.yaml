@@ -256,7 +256,21 @@ related:
     pattern: ""
     toLower: false
     type: basic
-    weight: 10
+    weight: 50
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: characters
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 60
+  - applyFilter: false
+    cardinalityThreshold: 0
+    name: tags
+    pattern: ""
+    toLower: false
+    type: basic
+    weight: 50
   - applyFilter: false
     cardinalityThreshold: 0
     name: characters
@@ -264,5 +278,5 @@ related:
     toLower: false
     type: basic
     weight: 80
-  threshold: 9
+  threshold: 50
   toLower: false

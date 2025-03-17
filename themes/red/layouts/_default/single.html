@@ -85,6 +85,8 @@
     {{ if in .File.Dir "blog" }}
         {{ partial "voting" . }}
 
+        {{ partial "related" . }}
+
         {{ partial "comments" . }}
     {{ end }}
 
