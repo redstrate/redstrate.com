@@ -20,7 +20,7 @@ In the last update, the lighting looked bad when loading into a zone. This was b
 
 I know the weather change packets too, so I'll probably implement the weather change GM command next.
 
-# Zone transitions
+# Exits
 
 While you can go to a specific zones using commands, sometimes you just want to walk into one of these things:
 
