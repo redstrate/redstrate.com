@@ -7,6 +7,7 @@ tags:
 - Reverse Engineering
 series:
 - Kawari Progress Report
+summary: "This isn't actually an update _on_ Kawari, but building tools to make my life easier."
 ---
 
 This isn't actually an update _on_ Kawari, but building tools to make my life easier. One of the manual tasks I have to do is collect and dissect packets, and my amateur process is too error prone and time-consuming. I want a neat, structured and ideally automatic process for collecting and organizing these.

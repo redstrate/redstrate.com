@@ -4,6 +4,7 @@ date: 2024-05-11
 tags:
 - Networking
 - Home Improvement
+summary: "Wiring up a network in my new place, including learning how to crimp CAT5 cables."
 ---
 
 I recently moved into a new place, which has a few oddities in it's walls. For one, it does (fortunately) have CAT5 cables running through the walls. But there's a catch, they aren't for a network! When I opened up the patch panel, it revealed it's true purpose - it's for a security camera system.

@@ -5,6 +5,7 @@ draft: false
 tags:
 - Linux
 - Open Source
+summary: "Ranting about the EmuDeck machine, and the implication of trickle-down funding of projects."
 ---
 
 So... [EmuDeck](https://www.emudeck.com/) announced their first hardware product today, in a new line of "EmuDeck machines". I'm not here to talk about this beautiful product that does not exist:

@@ -4,6 +4,7 @@ date: 2024-05-24
 draft: false
 tags:
 - Privacy
+summary: "How to block JetBrains analytics with just one easy setting, already built into their IDE."
 ---
 
 So recently JetBrains "properly" released RustRover (after removing the open source Rust plugin.) I don't work on Rust stuff at the moment in my dayjob, but fortunately they have a free non-commercial version. However there is one catch:

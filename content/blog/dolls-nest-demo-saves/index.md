@@ -5,6 +5,7 @@ tags:
 - Reverse Engineering
 - Dolls Nest
 - Gaming
+summary: "Dolls Nest released a demo recently, and I wanted to crack open it's save data."
 ---
 
 Dolls Nest [released a demo recently](https://store.steampowered.com/app/1839430/Dolls_Nest/), and I'm enjoying playing it (but it's still rough.) I wanted to crack open it's save data just to play around with and what's better than a recently released demo? I haven't reverse engineered Unreal Engine games before so I think this might be a good learning experience.

@@ -6,6 +6,7 @@ tags:
 - Open Source
 - FFXIV
 - Modding
+summary: "I'm excited to announce my next FFXIV-related project, allowing you to archive your character."
 ---
 
 I'm excited to announce my next FFXIV-related project, _Auracite_! It's a tool that allows you to archive your character. I wouldn't call it a "backup" because there's no way to "restore" it... not yet, anyway. Currently the information it collects is limited, but I plan on expanding it further. You can view the [support table here](https://github.com/redstrate/Auracite?tab=readme-ov-file#supported-data).

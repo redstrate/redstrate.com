@@ -2,6 +2,7 @@
 title: "Navigating Washington D.C. with FOSS"
 date: 2025-02-17
 draft: false
+summary: "I visited Washington, D.C. recently and want to discuss the open-source software I used to navigate the city."
 ---
 
 I visited [Washington, D.C.](https://en.wikipedia.org/wiki/Washington,_D.C.) recently and want to discuss the open-source software I used to navigate the city. I think my experiment was successful, although I had no control over what my partner used (e.g. Google and Apple Maps) so it wasn't 100% on me.

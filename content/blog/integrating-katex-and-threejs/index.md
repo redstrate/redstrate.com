@@ -7,6 +7,7 @@ tags:
 - WebGL
 - Math
 - Hugo
+summary: "An (old) guide on how to integrate three,js and KaTeX into a Hugo website."
 ---
 
 One of my [Graphics Dump posts]({{< ref "drawing-simple-cubes" >}}) integrates three.js and KaTeX into the article itself, which was a first for me. I want to use these libraries in future posts, so I want it to be easy and reusable.

@@ -5,6 +5,7 @@ draft: false
 tags:
 - Steam
 - Linux
+summary: "How to fix the annoying \"Unable to retrieve clip information (2)\" error message in Steam."
 ---
 
 I recently wanted to use the new Steam Game Recording feature, but I kept

@@ -7,6 +7,7 @@ tags:
 - Reverse Engineering
 series:
 - Kawari Progress Report
+summary: "I spent some time polishing up the project and implementing more packets."
 ---
 
 After the initial excitement of being able to load into a zone wore off, I spent some time polishing up the project and implementing more packets. I managed to get quite a bit done over the course of a few nights.

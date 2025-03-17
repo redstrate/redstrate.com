@@ -6,6 +6,7 @@ tags:
 - Qt
 series:
 - Obscure Qt
+summary: "A neat trick for iterating through QMaps in Qt5, if you have access to C++20."
 ---
 
 I was working on a project that still uses Qt5 and I wanted to port from [Qt's own `foreach` keyword](https://doc.qt.io/qt-6/foreach-keyword.html). In Qt6 it's possible to write code like this:

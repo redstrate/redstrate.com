@@ -5,6 +5,7 @@ draft: false
 tags:
 - KDE
 - Hugo
+summary: "My workflow for working on Hugo websites in Kate - KDE's Text Editor."
 ---
 
 I use Hugo to build my website (which you can explore the source code to

@@ -5,6 +5,7 @@ draft: false
 tags:
 - Akademy
 - KDE
+summary: "I attended KDE's Akademy and the Qt Contributor Summit that happened this year!"
 ---
 
 I attended [KDE's Akademy](https://akademy.kde.org/2024) and the [Qt Contributor Summit](https://wiki.qt.io/Qt_Contributor_Summit_2024) that happened this year. I also completed my personal goal of giving a talk at a conference! These conferences were back-to-back and were located in [Würzburg, Germany](https://en.wikipedia.org/wiki/W%C3%BCrzburg) during the 5th-8th of September.
