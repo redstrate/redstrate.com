@@ -26,7 +26,7 @@ While you can go to a specific zones using commands, sometimes you just want to 
 
 ![An example of an exit.](exit.webp)
 
-These are exits, and when entered your client sends a packet detailing which exit you used (and it's position, presumably to double check which one it is?) In the zone layout data, each exit has a reference to the destination zone ID and the location to place you in. We are also given the information of which way the player should be facing too, although Kawari doesn't use this information yet. Kawari can now follow exit paths, and you can walk through them:
+These are exits, and when entered your client sends a packet detailing which exit you used (and it's position, presumably to double check which one it is?) In the zone layout data, each exit has a reference to the destination zone ID and the location to place you in. We are also given the information of which way the player should be facing too, although Kawari doesn't use this information yet. But now it can now follow exit paths, so you can walk through them:
 
 {{< tube "https://tube.ryne.moe/videos/embed/addff7ff-b1f5-4755-8b1c-6fe52b04f0af" >}}
 
