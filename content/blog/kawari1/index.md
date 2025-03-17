@@ -9,7 +9,7 @@ series:
 - Kawari Progress Report
 ---
 
-[Kawari](https://github.com/redstrate) is a FFXIV server emulator project that started a few years ago, and today I'm happy to report it can go from login to zone on 7.18 (the latest patch as of writing.) Before I rattle on, it should be noted that the goal of this project is not a "private server" (_sweating profusely as SqEx lawyers put away their pens_.) It's more of a research project, as I have very little interest re-implementing quests and story. I'm basically going to continue this until I get bored.
+[Kawari](https://github.com/redstrate) is a FFXIV server emulator project that I started a few years ago, and today I'm happy to report it can go from login to zone on 7.18h (the latest patch as of writing.) Before I rattle on, it should be noted that the goal of this project is not a "private server" (_sweating profusely as SqEx lawyers put away their pens_.) It's more of a research project, as I have very little interest re-implementing quests and story. I'm basically going to continue this until I get bored.
 
 ![The lobby screen, showing a test character.](lobby.webp)
 
