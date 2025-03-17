@@ -57,7 +57,7 @@
             {{ end }}
         {{ end }}
 
-        <div class="art-button-container">
+        <div id="seriesnav" class="art-button-container">
             {{ if $prev }}
                 {{ with $.Page.GetPage $prev }}
                     <a class="art-button" href="{{ .RelPermalink }}">{{ .Title }}</a>

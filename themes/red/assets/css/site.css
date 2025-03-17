@@ -66,6 +66,10 @@
     #character-container {
         grid-template-columns: 50% 50%;
     }
+
+    .actual-article-img {
+        max-width: 50%;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -138,6 +142,14 @@
 
     #koring {
         display: none;
+    }
+
+    #seriesnav {
+        display: none !important;
+    }
+
+    .actual-article-img {
+        max-width: 100%;
     }
 }
 
@@ -410,7 +422,6 @@ footer {
 }
 
 .actual-article-img {
-    max-width: 50%;
     max-height: 100%;
     height: auto;
 }
